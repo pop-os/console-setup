@@ -24,6 +24,7 @@ case "$1" in
 		;;
 	esac
 
+	echo -n "Setting up font and keyboard on the console... "
 	if [ "$ACTIVE_CONSOLES" ]; then
 	    for console in $ACTIVE_CONSOLES; do
 		if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
@@ -61,6 +62,7 @@ case "$1" in
 	then
 	    eval loadkeys /etc/console-setup/boottime.kmap.gz $verbose
 	fi
+	echo done.
 	;;
     *)
         echo 'Usage: /etc/init.d/console-setup {start|reload|restart|force-reload|stop}'

@@ -35,6 +35,7 @@ clean:
 	dh_testdir
 	-$(MAKE) clean
 	-rm -f build
+	-rm -f debian/config
 	dh_clean
 
 .PHONY : install
@@ -47,6 +48,7 @@ install: build
 	dh_install acm/*.acm.gz usr/share/consoletrans
 	dh_install compose.*.inc etc/console-setup/
 	dh_install ckb/ etc/console-setup/
+	rm -rf `find debian/console-setup/etc/console-setup/ -name .svn`
 	dh_install ckbcomp usr/bin/
 	dh_installinit
 
