@@ -1,0 +1,264 @@
+#!/usr/bin/perl
+
+#     xmlreader -- read xfree86.sml file
+#     Copyright © 2005 Anton Zinoviev <anton@lml.bas.bg>
+
+#     This program is free software; you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation; either version 2 of the License, or
+#     (at your option) any later version.
+
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+
+#     If you have not received a copy of the GNU General Public License
+#     along with this program, write to the Free Software Foundation, Inc.,
+#     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+use warnings 'all';
+use strict;
+use encoding 'utf8';
+
+sub debug {
+    if (1) {
+	print STDERR "@_";
+    }
+}
+
+sub warning {
+    print STDERR  "WARNING: @_";
+}
+
+use XML::Parser;
+
+my $parser = new XML::Parser (Style => 'Tree');
+
+my $tree = $parser->parsefile ('xkb/rules/xfree86.xml');
+
+my %models;
+my %layouts;
+my %variants;
+
+sub parse_text {
+    my $tree = $_[0];
+    my $contents = '';
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag == 0) {
+	    $contents = $contents . $arg;
+	} else {
+	    $contents = $contents . parse_text ($arg);
+	}
+    }
+    return $contents;
+}
+
+sub parse_configItem {
+    my $tree = $_[0];
+    shift @{$tree};
+    my $name;
+    my $description;
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'name') {
+	    $name = parse_text $arg;
+	} elsif ($tag eq 'description') {
+	    if (! %{$arg->[0]}) {
+		$description = parse_text $arg;
+	    }
+	} elsif ($tag == 0) {
+	    warning "Garbage in configItem: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+    $name = '' unless ($name);
+    $description = '' unless ($description);
+    return ($name, $description);
+}
+
+sub parse_model {
+    my $tree = $_[0];
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'configItem') {
+	    my ($name, $description) = parse_configItem $arg;
+	    $models{$description} = $name;
+	} elsif ($tag == 0) {
+	    warning "Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_modelList {
+    my $tree = $_[0];
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'model') {
+	    parse_model $arg;
+	} elsif ($tag == 0) {
+	    warning "Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_variant {
+    my $layout = $_[0];
+    my $tree = $_[1];
+    shift @{$tree};
+    my $name;
+    my $description;
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'configItem') {
+	    ($name, $description) = parse_configItem $arg;
+	    $variants{$layout}{$description} = $name;
+	} elsif ($tag == 0) {
+	    warning "Garbage in variant: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_variantList {
+    my $name = $_[0];
+    my $tree = $_[1];
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'variant') {
+	    parse_variant $name, $arg;
+	} elsif ($tag == 0) {
+	    warning "Garbage in variantList: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_layout {
+    my $tree = $_[0];
+    shift @{$tree};
+    my $name;
+    my $description;
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'configItem') {
+	    ($name, $description) = parse_configItem $arg;
+	    $layouts{$description} = $name;
+	} elsif ($tag eq 'variantList') {
+	    if (! $name) {
+		warning "variantList before configItem\n";
+		next;
+	    }
+	    parse_variantList $name, $arg;
+	} elsif ($tag == 0) {
+	    warning "Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_layoutList {
+    my $tree = $_[0];
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'layout') {
+	    parse_layout $arg;
+	} elsif ($tag == 0) {
+	    warning "Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+sub parse_optionList {
+}
+
+sub parse_xkbConfigRegistry {
+    my $tree = $_[0];
+    shift @{$tree};
+    while (@{$tree}) {
+	my $tag = shift @{$tree};
+	my $arg = shift @{$tree};
+	if ($tag eq 'modelList') {
+	    parse_modelList $arg;
+	} elsif ($tag eq 'layoutList') {
+	    parse_layoutList $arg;
+	} elsif ($tag eq 'optionList') {
+	    parse_optionList $arg;
+	} elsif ($tag == 0) {
+	    warning "Garbage in xkbConfigRegistry: $arg.\n"
+		if ($arg !~ /^\s*$/);
+	} else {
+	    warning "Unknown tag $tag, arg=$arg\n";
+	}
+    }
+}
+
+while (@{$tree}) {
+    my $tag = shift @{$tree};
+    my $arg = shift @{$tree};
+    if ($tag eq 'xkbConfigRegistry') {
+	parse_xkbConfigRegistry $arg;
+    }
+}
+
+print <<'EOT';
+#!/usr/bin/perl -w
+
+package KeyboardNames;
+
+EOT
+
+print "%models = (\n";
+for my $x (sort keys %models) {
+    my $y = $models{$x};
+    $x =~ s/'//g;
+    print "    '$x' => '$y',\n";
+}
+print ");\n\n";
+
+print "%layouts = (\n";
+for my $x (sort keys %layouts) {
+    my $y = $layouts{$x};
+    $x =~ s/'//g;
+    print "    '$x' => '$y',\n";
+}
+print ");\n\n";
+
+print "%variants = (\n";
+for my $x (sort keys %variants) {
+    my $y = $variants{$x};
+    print "    '$x' => {\n";
+    for my $z (sort keys %{$y}) {
+	my $t = $y->{$z};
+	$z =~ s/'//g;
+	print "	'$z' => '$t',\n";
+    }
+    print "    },\n";
+}
+print ");\n\n";
+
+print "1;\n";

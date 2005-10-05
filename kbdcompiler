@@ -1,0 +1,280 @@
+#!/usr/bin/perl
+
+use warnings 'all';
+use strict;
+
+BEGIN {
+    do 'KeyboardNames.pl';
+}
+
+my $keymapsdir = $ARGV[0];
+
+if (! $keymapsdir) {
+    $keymapsdir = 'keymaps';
+}
+
+sub debug {
+    if (1) {
+	print STDERR "@_";
+    }
+}
+
+sub warning {
+    print STDERR  "WARNING: @_";
+}
+my %legacy_charmaps = (
+    'ARMSCII-8' => ['am'],
+    'CP1251' => ['by', 'bg', 'mk', 'ru', 'sr', 'ua'],
+    'CP1255' => ['il', 'il_phonetic'],
+    'CP1256' => ['ar'],
+    'GEORGIAN-ACADEMY' => ['ge_la', 'ge_ru'],
+    'GEORGIAN-PS' => ['ge_la', 'ge_ru'],
+    'IBM1133' => [ 'lo' ],
+    'ISIRI-3342' => [ 'ir' ],
+    'ISO-8859-1' => [ 'al', 'br', 'ca', 'dvorak', 'is', 'la', 'se_NO',
+		      'no', 'ch', 'us', 'en_US', 'us_intl', 'gb' ],
+    'ISO-8859-2' => [ 'bs', 'hr', 'cz', 'cz_qwerty', 'hu', 'pl',
+		      'pl2', 'ro', 'sk', 'sk_qwerty', 'si', 'yu' ],
+    'ISO-8859-3' => ['mt', 'mt_us'],
+    'ISO-8859-5' => ['mk', 'sr'],
+    'ISO-8859-6' => ['ar'],
+    'ISO-8859-7' => ['el'],
+    'ISO-8859-9' => ['tr'],
+    'ISO-8859-8' => ['il', 'il_phonetic'],
+    'ISO-8859-13' => ['ee', 'lv', 'lt_std', 'lt'],
+    'ISO-8859-15' => [ 'be', 'dk', 'dvorak', 'nl', 'ee', 'fi', 'fr',
+		       'fr-latin9', 'de', 'ie', 'it', 'se_FI',
+		       'se_SE', 'pt', 'es', 'se', 'us', 'en_US',
+		       'us_intl', 'gb' ],
+    'KOI8-R' => ['ru', 'ru_yawerty'],
+    'KOI8-U' => ['ua'],
+    'TIS-620' => ['th', 'th_pat', 'th_tis'],
+    'VISCII' => ['vn'],
+);
+
+sub ensuredir {
+    if (! -d $_[0]) {
+	mkdir $_[0] or die "$0: $_[0]: $!\n";
+    }
+}
+
+my %generated;
+
+my %model_dir = (
+    'amiga' => 'amiganew',
+    'ataritt' => 'ataritt',
+    'macintosh' => 'macintosh',
+    'macintosh_old' => 'macintosh_old',
+    'pc105' => 'pc',
+    'sun4' => 'sun4',
+    'sun5' => 'sun5',
+    'abnt2' => 'pc',
+);
+    
+# my %model_prefix = (
+#     'amiga' => 'amiga-',
+#     'ataritt' => 'atari-',
+#     'macintosh' => 'powermac-',
+#     'macintosh_old' => 'mac-',
+#     'pc105' => '',
+#     'sun4' => 'sun4-',
+#     'sun5' => 'sun5-',
+# );
+
+my %model_prefix = (
+    'amiga' => '',
+    'ataritt' => '',
+    'macintosh' => '',
+    'macintosh_old' => '',
+    'pc105' => '',
+    'sun4' => '',
+    'sun5' => '',
+);
+    
+my %keycodes = (
+    'amiga' => 'amiga(de)',
+    'ataritt' => 'ataritt(de)',
+    'macintosh' => 'xfree86',
+    'macintosh_old' => 'macintosh',
+    'pc105' => 'xfree86',
+    'sun4' => 'sun(type4_euro)',
+    'sun5' => 'sun(type5_euro)',
+    'abnt2' => 'xfree86(abnt2)',
+);
+    
+my $nonlatin = ' am ar ben bg by dev el ge_la ge_ru guj gur il il_phonetic 
+                 ir iu kan lo mk mm ml ori ru sr syr syr_phonetic tel th 
+                 tj tml ua ';
+
+sub compile_keymap {
+    my ($encoding, $model, $layout, $variant) = @_;
+#    my $encoding_suffix = ($encoding eq '' ? '' : ".$encoding");
+    my $encoding_suffix = '';
+    my $acm = ($encoding eq 'UTF-8' ? '' : "-charmap $encoding");
+    my $model_dir = (defined $model_dir{$model}
+		     ? "${keymapsdir}/$model_dir{$model}"
+		     : "${keymapsdir}/other");
+    $model_dir =~ s/\/$//;
+    ensuredir $model_dir;
+    ensuredir $model_dir ."/$encoding";
+    my $model_prefix = (defined $model_prefix {$model}
+			? $model_prefix {$model}
+			: "$model-");
+    my $actual_layout = (($layout eq 'sr')
+			 ? 'yu,sr'
+			 : (($nonlatin =~ / $layout /)
+			    ? "en_US,$layout"
+			    : $layout));
+    my $name = $layout;
+    $name =~ s/-/_/g;
+    $name =~ s/\///g;
+#    ensuredir "$model_dir/$encoding/$name";
+    if ($variant) {
+	my $variantname = $variant;
+	$variantname =~ s/-/_/g;
+	$variantname =~ s/\///g;
+	my $filename = ("$model_dir/$encoding/$model_prefix"
+			."$name-$variantname$encoding_suffix.kmap");
+	print "   $filename\n";
+	my $actual_variant = (($actual_layout =~ /,/)
+			      ? ",$variant"
+			      : $variant);
+	system ("./ckbcomp $acm -rules rules -model $model"
+		." -layout $actual_layout -variant $actual_variant"
+		." >$filename")
+	    and die "$0: ckbcomp failed\n"
+	    if (! -f $filename);
+	$generated{"$encoding*$model*$actual_layout*$variant"} = "$filename";
+    } else {
+	my $filename = ("$model_dir/$encoding/$model_prefix"
+			."$name$encoding_suffix.kmap");
+	print "   $filename\n";
+	system ("./ckbcomp $acm -rules rules -model $model"
+		." -layout $actual_layout >$filename")
+	    and die "$0: ckbcomp failed\n"
+	    if (! -f $filename);
+	$generated{"$encoding*$model*$actual_layout"} = "$filename";
+    }
+}
+
+print "Compiling keymaps:\n";
+ensuredir "${keymapsdir}";
+for my $encoding ('UTF-8', keys %legacy_charmaps) {
+    my @layouts = ($encoding eq 'UTF-8'
+		   ? values %KeyboardNames::layouts
+		   : @{$legacy_charmaps{$encoding}});
+    for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
+	for my $layout (@layouts) {
+	    next if ($layout eq 'nec/jp');
+	    for my $variant ('', values %{$KeyboardNames::variants{$layout}}) {
+		compile_keymap $encoding, $model, $layout, $variant;
+	    }
+	}
+    }
+}
+for my $encoding ('UTF-8', 'ISO-8859-1') {
+    for my $variant ('', 'nodeadkeys') {
+	compile_keymap $encoding, 'abnt2', 'br', $variant;
+    }
+}
+
+open GENERATED, '>keymaps.dir' or die "$0: keymaps.dir: $!\n";
+for my $specification (sort keys %generated) {
+    my $file = $generated{$specification};
+    $file =~ s/^keymaps\///;
+    print GENERATED "$specification\t$file\n";
+}
+close GENERATED;
+
+my %options = (
+    'grp:switch' => [ 'ralt' ],
+    'grp:lswitch' => [ 'lalt' ],
+    'grp:win_switch' => [ 'rwin', 'lwin' ],
+    'grp:lwin_switch' => [ 'rwin' ],
+    'grp:rwin_switch' => [ 'lwin' ],
+    'grp:toggle' => [ 'ralt' ],
+    'grp:shift_toggle' => [ 'lshift', 'rshift' ],
+    'grp:ctrls_toggle' => [ 'lctrl', 'rctrl' ],
+    'grp:alts_toggle' => [ 'ralt', 'lalt' ],
+    'grp:ctrl_shift_toggle' => [ 'lshift', 'rshift', 'lctrl', 'rctrl' ],
+    'grp:caps_toggle' => [ 'caps' ],
+    'grp:ctrl_alt_toggle' => [ 'lalt', 'ralt', 'lctrl', 'rctrl' ],
+    'grp:alt_shift_toggle' => [ 'lalt', 'ralt', 'lshift', 'rshift' ],
+    'grp:menu_toggle' => [ 'menu' ],
+    'grp:lwin_toggle' => [ 'lwin' ],
+    'grp:rwin_toggle' => [ 'rwin' ],
+    'grp:sclk_toggle' => [ 'sclk' ],
+    'grp:lshift_toggle' => [ 'lshift' ],
+    'grp:rshift_toggle' => [ 'rshift' ],
+    'grp:lctrl_toggle' => [ 'lctrl' ],
+    'grp:rctrl_toggle' => [ 'rctrl' ],
+    'grp:lalt_toggle' => [ 'lalt' ],
+    'ctrl:nocaps' => [ 'caps', 'lctrl' ],
+    'ctrl:swapcaps' => [ 'caps', 'lctrl' ],
+    'lv3:switch' => [ 'rctrl' ],
+    'lv3:menu_switch' => [ 'menu' ],
+    'lv3:win_switch' => [ 'lwin', 'rwin' ],
+    'lv3:lwin_switch' => [ 'lwin' ],
+    'lv3:rwin_switch' => [ 'rwin' ],
+    'lv3:ralt_switch' => [ 'ralt' ],
+    'lv3:ralt_switch_multikey' => [ 'ralt' ],
+    'compose:ralt' => [ 'ralt' ],
+    'compose:rwin' => [ 'rwin' ],
+    'compose:menu' => [ 'menu' ],
+    'compose:caps' => [ 'caps' ],
+ );
+
+for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
+    my $model_dir = (defined $model_dir {$model}
+		     ? "${keymapsdir}/". $model_dir {$model} .'/include'
+		     : "${keymapsdir}/other/include");
+    ensuredir $model_dir;
+    my $model_prefix = (defined $model_prefix {$model}
+			? $model_prefix {$model}
+			: "$model-");
+    my $keycodes =  (defined $keycodes {$model}
+		     ? $keycodes {$model}
+		     : 'xfree86');
+    for my $option (keys %options) {
+	my $layout = '';
+	for my $mod (@{$options{$option}}) {
+	    $layout = $layout . "+stdmodifiers($mod)";
+	}
+	$layout =~ s/^\+//;
+	if ($option =~ /grp:(.*)/) {
+	    $layout = $layout . "+group($1)";
+	} elsif ($option =~ /ctrl:(.*)/) {
+	    $layout = $layout . "+ctrl($1)";
+	} elsif ($option =~ /lv3:(.*)/) {
+	    $layout = $layout . "+level3($1)";
+	} elsif ($option =~ /compose:(.*)/) {
+	    $layout = $layout . "+compose($1)";
+	}
+	
+	my $filename = "$model_dir/$model_prefix$option.inc";
+	$filename =~ s/:/-/g;
+	print "   $filename\n";
+	
+	system ("./ckbcomp -keycodes '$keycodes' -symbols '$layout' "
+		.">'$filename'")
+	    and die "$0: ckbcomp failed\n"
+	    if (! -f $filename);
+    }
+}
+
+print "done.\n";
+
+open NAMES, '>names.list' or die "$0: names.list: $!\n";
+for my $model (keys %KeyboardNames::models) {
+    my $name = $KeyboardNames::models{$model};
+    print NAMES "model*$name*$model\n"
+}
+for my $layout (keys %KeyboardNames::layouts) {
+    my $name = $KeyboardNames::layouts{$layout};
+    print NAMES "layout*$name*$layout\n";
+    for my $variant (keys %{$KeyboardNames::variants{$name}}) {
+	my $variantname = $KeyboardNames::variants{$name}{$variant};
+	print NAMES "variant*$name*$variantname*$variant\n";
+    }
+}
+close NAMES;

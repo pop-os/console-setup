@@ -1,0 +1,289 @@
+model*logicdp*Logitech Cordless Desktop Pro
+model*omnikey101*Northgate OmniKey 101
+model*abnt2*Brazilian ABNT2
+model*pc101*Generic 101-key PC
+model*logicdo*Logitech Cordless Desktop Optical
+model*hp5181*Hewlett-Packard 5181 Internet Keyboard
+model*microsoftprose*Microsoft Internet Keyboard Pro, Swedish
+model*itouch*Logitech iTouch
+model*yahoo*Yahoo! Internet Keyboard
+model*hpzt11xx*Hewlett-Packard Pavilion ZT11xx
+model*hpxe4xxx*Hewlett-Packard Omnibook XE4xxx and ZE4xxx
+model*dell101*Dell 101-key PC
+model*mx2500*Memorex MX2500 EZ-Access Keyboard
+model*pc98*PC-98xx Series
+model*hp2505*Hewlett-Packard SK-2505 Internet Keyboard
+model*logicdpa*Logitech Cordless Desktop Pro (alternate option)
+model*hp5xx*Hewlett-Packard Omnibook 5xx
+model*dell*Dell
+model*powerpcps2*powerpcps2    -  No decription
+model*microsoftinet*Microsoft Internet Keyboard
+model*ipaq*Compaq iPaq Keyboard
+model*samsung4500*Samsung SDM 4500P
+model*logiik*Logitech Internet Keyboard
+model*sk1300*SK-1300
+model*cherryblue*Cherry Blue Line CyBo@rd
+model*chicony*Chicony Internet Keyboard
+model*mx2750*Memorex MX2750
+model*compaqik13*Compaq Internet Keyboard (13 keys)
+model*scorpius*Advance Scorpius KI
+model*compaqik18*Compaq Internet Keyboard (18 keys)
+model*brother*Brother Internet Keyboard
+model*propeller*Propeller Voyager (KTEZ-1000)
+model*acpi*ACPI Standard
+model*pc105*Generic 105-key (Intl) PC
+model*hp500fa*Hewlett-Packard Omnibook 500 FA
+model*symplon*Symplon PaceBook (tablet PC)
+model*microsoft*Microsoft Natural
+model*logidak*Logitech Deluxe Access Keyboard
+model*ltcd*Logitech Cordless Desktop
+model*rapidaccess2a*IBM Rapid Access II (alternate option)
+model*qtronix*QTronix Scorpius 98N+
+model*logiitc*Logitech iTouch Cordless Keyboard (model Y-RB6)
+model*ennyah_dkb1008*Ennyah DKB-1008
+model*pc102*Generic 102-key (Intl) PC
+model*sk6200*SK-6200
+model*hp2501*Hewlett-Packard SK-2501 Multimedia Keyboard
+model*hpxt1000*Hewlett-Packard Omnibook XT1000
+model*everex*Everex STEPnote
+model*compaqik7*Compaq Internet Keyboard (7 keys)
+model*winbook*Winbook Model XP5
+model*diamond*Diamond 9801 / 9802 series
+model*logicdn*Logitech Cordless Desktop Navigator
+model*samsung4510*Samsung SDM 4510P
+model*pc104*Generic 104-key PC
+model*rapidaccess2*IBM Rapid Access II
+model*armada*Laptop/notebook Compaq (eg. Armada, Evo) Laptop Keyboard
+model*presario*Laptop/notebook Compaq (eg. Presario) Internet Keyboard
+model*logicdpa2*Logitech Cordless Desktop Pro (alternate option2)
+model*itouchin*Logitech iTouch keyboard Internet Navigator
+model*microsoftoffice*Microsoft Office Keyboard
+model*hpxe3gc*Hewlett-Packard Omnibook XE3 GC, GD, GE and Pavilion N5xxx
+model*honeywell_euroboard*Honeywell Euroboard
+model*logicfn*Logitech Cordless Freedom/Desktop Navigator
+model*trustda*Trust Direct Access Keyboard
+model*dexxa*Dexxa Wireless Desktop Keyboard
+model*genius*Genius Comfy KB-16M / Genius MM Keyboard KWD-910
+model*btc5126t*BTC 5126T
+model*rapidaccess*IBM Rapid Access
+model*jp106*Japanese 106-key
+model*chicony9885*Chicony KB-9885
+model*toshiba_s3000*Toshiba Satellite S3000
+model*airkey*Acer AirKey V
+model*sk2500*SK-2500
+model*macintosh_old*macintosh_old -  No decription
+model*hpxe3gf*Hewlett-Packard Omnibook XE3 GF
+model*trust*Trust Wireless Keyboard Classic
+model*mx1998*Memorex MX1998
+model*sk7100*SK-7100
+model*btc9000a*BTC 9000A
+model*btc5113rf*BTC 5113RF Multimedia
+model*microsoftpro*Microsoft Natural Keyboard Pro / Microsoft Internet Keyboard Pro
+model*btc9000*BTC 9000
+model*cherrybluea*Cherry Blue Line CyBo@rd (alternate option)
+model*logicdit*Logitech Cordless Desktop iTouch
+model*hpi6*Hewlett-Packard Internet Keyboard
+model*inspiron*Laptop/notebook Dell Inspiron 8xxx
+model*oretec*Oretec MCK-800 MM/Internet keyboard
+model*macintosh*macintosh     -  No decription
+model*sven*SVEN Ergonomic 2500
+model*compaqeak8*Compaq Easy Access Keyboard
+model*flexpro*Keytronic FlexPro
+model*logiink*Logitech Internet Navigator Keyboard
+layout*sapmi*sapmi         -  No decription
+variant*sapmi*nodeadkeys*Eliminate dead keys
+variant*sapmi*basic*sapmi(basic) -  No decription
+variant*sapmi*sefi*sapmi(sefi) -  No decription
+layout*pl2*Polish (qwertz)
+layout*fr*French
+variant*fr*Sundeadkeys*fr(Sundeadkeys) -  No decription
+variant*fr*nodeadkeys*Eliminate dead keys
+layout*el*Greek
+variant*el*extended*el(extended) -  No decription
+variant*el*nodeadkeys*Eliminate dead keys
+variant*el*polytonic*el(polytonic) -  No decription
+layout*kan*Kannada
+layout*ca*Canadian
+variant*ca*fr*French
+variant*ca*multi*Multilingual
+variant*ca*multi-2gr*Multilingual, second part
+variant*ca*fr-legacy*French (legacy)
+layout*nec/jp*PC-98xx Series
+layout*syr*Syriac
+layout*ben*Bengali
+layout*de*German
+variant*de*nodeadkeys*Eliminate dead keys
+variant*de*deadgraveacute*de(deadgraveacute) -  No decription
+variant*de*basic*de(basic) -  No decription
+variant*de*deadacute*de(deadacute) -  No decription
+layout*ro*Romanian
+variant*ro*ro_us*US keyboard with Romanian letters
+layout*mt*Maltese
+layout*il*Israeli
+variant*il*si1452*il(si1452) -  No decription
+variant*il*lyx*il(lyx) -  No decription
+layout*se_SE*Northern Saami (Sweden)
+layout*ie*Irish
+variant*ie*CloGaelach*ie(CloGaelach) -  No decription
+variant*ie*CloGaelachLaptop*ie(CloGaelachLaptop) -  No decription
+variant*ie*laptop*ie(laptop) -  No decription
+variant*ie*UnicodeExpert*ie(UnicodeExpert) -  No decription
+layout*th_pat*Thai (Pattachote)
+layout*se_NO*Northern Saami (Norway)
+layout*la*Latin America
+variant*la*nodeadkeys*Eliminate dead keys
+variant*la*Sundeadkeys*la(Sundeadkeys) -  No decription
+layout*mm*Burmese
+layout*fr-latin9*French (alternative)
+variant*fr-latin9*nodeadkeys*Eliminate dead keys
+variant*fr-latin9*Sundeadkeys*fr-latin9(Sundeadkeys) -  No decription
+layout*vn*Vietnamese
+layout*us_intl*U.S. English w/ deadkeys
+layout*th*Thai (Kedmanee)
+layout*pl*Polish
+layout*ru_yawerty*Russian (cyrillic phonetic)
+layout*hr*Croatian
+variant*hr*us*US keyboard with Croatian letters
+layout*tj*Tajik
+layout*tr*Turkish 
+variant*tr*tr_f*Turkish (F)
+layout*am*Armenian
+layout*hu*Hungarian
+variant*hu*101_qwerty_comma_dead*101/qwerty/comma/Dead keys
+variant*hu*102_qwerty_dot_dead*102/qwerty/dot/Dead keys
+variant*hu*101_qwertz_dot_dead*101/qwertz/dot/Dead keys
+variant*hu*101_qwertz_comma_dead*101/qwertz/comma/Dead keys
+variant*hu*101_qwertz_dot_nodead*101/qwertz/dot/Eliminate dead keys
+variant*hu*101_qwerty_comma_nodead*101/qwerty/comma/Eliminate dead keys
+variant*hu*101_qwerty_dot_dead*101/qwerty/dot/Dead keys
+variant*hu*101_qwertz_comma_nodead*101/qwertz/comma/Eliminate dead keys
+variant*hu*nodeadkeys*Eliminate dead keys
+variant*hu*102_qwertz_dot_nodead*102/qwertz/dot/Eliminate dead keys
+variant*hu*102_qwerty_dot_nodead*102/qwerty/dot/Eliminate dead keys
+variant*hu*102_qwerty_comma_nodead*102/qwerty/comma/Eliminate dead keys
+variant*hu*102_qwerty_comma_dead*102/qwerty/comma/Dead keys
+variant*hu*standard*Standard
+variant*hu*102_qwertz_comma_nodead*102/qwertz/comma/Eliminate dead keys
+variant*hu*101_qwerty_dot_nodead*101/qwerty/dot/Eliminate dead keys
+variant*hu*102_qwertz_dot_dead*102/qwertz/dot/Dead keys
+variant*hu*qwerty*qwerty
+variant*hu*102_qwertz_comma_dead*102/qwertz/comma/Dead keys
+layout*cz*Czech
+variant*cz*bksl*cz(bksl) -  No decription
+variant*cz*basic*cz(basic) -  No decription
+layout*al*Albanian
+layout*mk*Macedonian
+variant*mk*pc104*mk(pc104) -  No decription
+layout*bg*Bulgarian
+variant*bg*phonetic*bg(phonetic) -  No decription
+layout*yu*Yugoslavian
+layout*lo*Lao
+layout*lv*Latvian
+layout*dvorak*Dvorak
+variant*dvorak*sv*dvorak(sv) -  No decription
+variant*dvorak*se*dvorak(se) -  No decription
+variant*dvorak*no*dvorak(no) -  No decription
+layout*ru*Russian
+variant*ru*phonetic*ru(phonetic) -  No decription
+variant*ru*winkeys*ru(winkeys) -  No decription
+variant*ru*typewriter*ru(typewriter) -  No decription
+layout*gur*Gurmukhi
+layout*no*Norwegian
+variant*no*basic*no(basic) -  No decription
+variant*no*nodeadkeys*Eliminate dead keys
+layout*gb*United Kingdom
+layout*lt_std*Lithuanian azerty standard
+variant*lt_std*nodeadkeys*Eliminate dead keys
+variant*lt_std*Sundeadkeys*lt_std(Sundeadkeys) -  No decription
+layout*lt*Lithuanian qwerty "numeric"
+variant*lt*lt_us*lt(lt_us) -  No decription
+variant*lt*lt_std*lt(lt_std) -  No decription
+layout*ml*Malayalam
+layout*pt*Portuguese
+variant*pt*Sundeadkeys*pt(Sundeadkeys) -  No decription
+variant*pt*nodeadkeys*Eliminate dead keys
+layout*dev*Hindi
+layout*ir*Iranian
+layout*se*Swedish
+variant*se*nodeadkeys*Eliminate dead keys
+variant*se*basic*se(basic) -  No decription
+layout*ar*Arabic
+variant*ar*azerty*ar(azerty) -  No decription
+variant*ar*qwerty_digits*ar(qwerty_digits) -  No decription
+variant*ar*azerty_digits*ar(azerty_digits) -  No decription
+variant*ar*qwerty*ar(qwerty) -  No decription
+variant*ar*digits*ar(digits) -  No decription
+layout*az*Azerbaijani
+variant*az*latin*az(latin) -  No decription
+variant*az*cyrillic*az(cyrillic) -  No decription
+layout*dk*Danish
+variant*dk*nodeadkeys*Eliminate dead keys
+layout*ch*Swiss
+variant*ch*fr_sundeadkeys*French, Sun dead keys
+variant*ch*de*German
+variant*ch*fr*French
+variant*ch*fr_nodeadkeys*French, eliminate dead keys
+variant*ch*de_sundeadkeys*German, Sun dead keys
+variant*ch*de_nodeadkeys*German, eliminate dead keys
+layout*be*Belgian
+variant*be*nodeadkeys*Eliminate dead keys
+variant*be*Sundeadkeys*be(Sundeadkeys) -  No decription
+variant*be*iso-alternate*be(iso-alternate) -  No decription
+layout*ee*Estonian
+variant*ee*nodeadkeys*Eliminate dead keys
+layout*sk*Slovak
+variant*sk*basic*sk(basic) -  No decription
+variant*sk*bksl*sk(bksl) -  No decription
+layout*sk_qwerty*Slovak (qwerty)
+variant*sk_qwerty*basic*sk_qwerty(basic) -  No decription
+variant*sk_qwerty*bksl*sk_qwerty(bksl) -  No decription
+layout*tel*Telugu
+layout*br*Brazilian
+variant*br*nodeadkeys*Eliminate dead keys
+variant*br*abnt2*br(abnt2) -  No decription
+layout*mn*Mongolian
+layout*si*Slovenian
+layout*ge_ru*Georgian (russian)
+layout*ogham*Ogham
+variant*ogham*IS434laptop*ogham(IS434laptop) -  No decription
+variant*ogham*IS434*ogham(IS434) -  No decription
+variant*ogham*laptop*ogham(laptop) -  No decription
+layout*en_US*U.S. English w/ ISO9995-3
+variant*en_US*nodeadkeys*Eliminate dead keys
+layout*es*Spanish
+variant*es*nodeadkeys*Eliminate dead keys
+variant*es*Sundeadkeys*es(Sundeadkeys) -  No decription
+layout*guj*Gujarati
+layout*jp*Japanese
+layout*is*Icelandic
+variant*is*nodeadkeys*Eliminate dead keys
+variant*is*Sundeadkeys*is(Sundeadkeys) -  No decription
+layout*bs*Bosnian
+layout*fi*Finnish
+variant*fi*basic*fi(basic) -  No decription
+layout*iu*Inuktitut
+layout*tml*Tamil
+variant*tml*UNI*A Tamil typewrite-style keymap; Unicode encoding
+variant*tml*TAB*A Tamil typewrite-style keymap; TAB encoding
+variant*tml*INSCRIPT*INSCRIPT layout
+variant*tml*TSCII*A Tamil typewrite-style keymap; TSCII encoding
+layout*nl*Dutch
+layout*cz_qwerty*Czech (qwerty)
+variant*cz_qwerty*basic*cz_qwerty(basic) -  No decription
+variant*cz_qwerty*bksl*cz_qwerty(bksl) -  No decription
+layout*th_tis*Thai (TIS-820.2538)
+layout*il_phonetic*Israeli (phonetic)
+layout*ori*Oriya
+layout*ua*Ukrainian 
+variant*ua*winkeys*ua(winkeys) -  No decription
+variant*ua*typewriter*ua(typewriter) -  No decription
+variant*ua*phonetic*ua(phonetic) -  No decription
+layout*by*Belarusian
+variant*by*winkeys*by(winkeys) -  No decription
+layout*mt_us*Maltese (US layout)
+layout*sr*Serbian
+layout*us*U.S. English
+layout*se_FI*Northern Saami (Finland)
+layout*ge_la*Georgian (latin)
+layout*it*Italian
+variant*it*nodeadkeys*Eliminate dead keys

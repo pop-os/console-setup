@@ -1,0 +1,118 @@
+=============
+CONSOLE FONTS
+=============
+
+The console fonts are named after the scheme CODESET-FONTFACE.psf,
+CODESET might be Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav,
+Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7,
+Thai, Uni1, Uni2, Uni3 and Vietnamese.  The number in the name of the
+font represents the number of scan lines in the font.  The font faces
+with large font matrix are suitable for high resolution framebuffer
+video modes.  They have to be used with the package 'kbd', not
+'console-tools' because the package 'console-tools' does not support
+fonts with large font matrix.
+
+When fonts for code sets with 512 gliphs are used in text video mode
+(not framebuffer) only 8 foreground colours can be displayed.
+
+
+===================
+AVAILABLE CODE SETS
+===================
+
+Please notice that the existence of a font for a particular code set
+means that the font supports only most of it.  Unfortunately some of
+of the fonts support the code sets only partialy.  Please check the
+support for your language.
+
+If you need multilingual environment, take a look at the Uni1, Uni2
+and Uni3 code sets.
+
+Arabic (512 gliphs)
+   For Arabic, Kurdish in Iran, Pashto, Persian and Urdu.
+
+Armenian
+   For Armenian.
+
+CyrAsia
+   Suitable for some of the non-Slavic Cyrillic languages - Abkhazia,
+   Avaric, Azerbaijani, Bashkir, Buryat, Chechen, Chuvash, Inupiaq
+   (Eskimo), Kara-Kalpak, Kazakh, Kirgiz, Komi, Kumyk, Kurdish,
+   Lezghian, Mari (Cheremis), Mongolian, Ossetic, Selkup (Ostyak-
+   Samoyed), Tajik, Tatar, Turkmen, Tuvinian, Uzbek and Yakut.
+
+CyrKoi
+   Covers entirely KOI8-R and KOI8-U.  Suitable for Russian and
+   Ukrainian.
+
+CyrSlav
+   Covers entirely ISO-8859-5 and CP1251.  Suitable for the Slavic
+   Cyrillic languages - Belarusian, Bulgarian, Macedonian, Russian,
+   Serbian and Ukrainian.  For Serbian both the Cyrillic and the Latin
+   alphabets are supported.
+
+Ethiopian (512 gliphs)
+   For Amharic, Ethiopic (Geez), Tigre and Tigrinya.
+
+Georgian
+   For Georgian.
+
+Greek
+   For Greek.
+
+Hebrew
+   For Hebrew and Yiddish.
+
+Lao
+   For Lao.
+
+Lat15
+   Covers entirely ISO-8859-1, ISO-8859-9 and ISO-8859-15.  Suitable
+   for the so called Latin1 and Latin5 languages - Afar, Afrikaans,
+   Albanian, Aragonese, Asturian, Aymara, Basque, Bislama, Breton,
+   Chamorro, Danish, Dutch, English, Estonian, Faroese, Fijian,
+   Finnish, French, Frisian, Friulian, Galician, German, Hiri Motu,
+   Icelandic, Ido, Indonesian, Interlingua, Interlingue, Italian, Low
+   Saxon, Lule Sami, Luxembourgish, Malagasy, Manx Gaelic, Norwegian
+   Bokmal, Norwegian Nynorsk, Occitan, Oromo or Galla, Portuguese,
+   Rhaeto-Romance (Romansch), Scots Gaelic, Somali, South Sami,
+   Spanish, Swahili, Swedish, Tswana, Turkish, Volapuk, Votic,
+   Walloon, Xhosa, Yapese and Zulu.
+
+Lat2
+   Covers entirely ISO-8859-2.  The Euro sign and the Romanian letters
+   with comma below are also supported.  Suitable for the so called
+   Latin2 languages - Bosnian, Croatian, Czech, Hungarian, Polish,
+   Romanian, Slovak, Slovenian and Sorbian (lower and upper).
+
+Lat38
+   Covers entirely ISO-8859-3 and ISO-8859-14.  Suitable for Chichewa
+   Esperanto, Irish, Maltese and Welsh.
+
+Lat7
+   Covers entirely ISO-8859-13.  Suitable for Lithuanian, Latvian,
+   Maori and Marshallese.
+
+Thai
+   For Thai.
+
+Uni1 (512 gliphs)
+   Supports most of the Latin languages, the Slavic Cyrillic
+   languages, Hebrew and barely Arabic.
+
+Uni2 (512 gliphs)
+   Supports most of the Latin languages, the Slavic Cyrillic languages
+   and Greek.
+
+Uni3 (512 gliphs)
+   Supports most of the Latin and Cyrillic languages.
+
+Vietnamese (512 gliphs)
+   For Vietnamese
+
+
+====================
+AVAILABLE FONT FACES
+====================
+
+TODO

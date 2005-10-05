@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+use warnings 'all';
+use strict;
+
+BEGIN {
+    do 'KeyboardNames.pl';
+}
+
+for my $model (keys %KeyboardNames::models) {
+    my $name = $KeyboardNames::models{$model};
+    print "model*$name*$model\n"
+}
+for my $layout (keys %KeyboardNames::layouts) {
+    my $name = $KeyboardNames::layouts{$layout};
+    print "layout*$name*$layout\n";
+    print "variant*$name**$layout\n";
+    for my $variant (keys %{$KeyboardNames::variants{$name}}) {
+	my $variantname = $KeyboardNames::variants{$name}{$variant};
+	print "variant*$name*$variantname*$variant\n";
+    }
+}

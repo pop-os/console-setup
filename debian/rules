@@ -1,0 +1,79 @@
+#!/usr/bin/make -f
+
+SHELL = /bin/bash
+export DH_COMPAT=3
+
+build:
+	$(MAKE)
+	awk ' \
+/## *FONTSETS *##/ { \
+    printf "fontsets='\''"; \
+    system("ls *.psf | sed '\''s/.psf$$//'\''"); \
+    printf "'\''"; \
+    next; \
+} \
+/## *CHARMAPS *##/ { \
+    printf "charmaps='\''"; \
+    system("ls acm/*.acm |sed -e '\''s/^acm.//'\'' -e '\''s/.acm$$//'\''"); \
+    printf "UTF-8\n"; \
+    printf "'\''"; \
+    next; \
+} \
+/## *KBDNAMES *##/ { \
+    printf "kbdnames='\''"; \
+    system("./kbdnames-maker"); \
+    printf "'\''"; \
+    next; \
+} \
+{ \
+   print; \
+}' debian/config.proto >debian/config
+	touch build
+
+.PHONY : clean
+clean:
+	dh_testdir
+	-$(MAKE) clean
+	-rm -f build
+	dh_clean
+
+.PHONY : install
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs etc/console-setup 
+	dh_install *.psf.gz usr/share/consolefonts/
+	dh_install acm/*.acm.gz usr/share/consoletrans
+	dh_install compose.*.inc etc/console-setup/
+	dh_install ckbcomp usr/bin/
+	dh_installinit
+
+# Build architecture-independent files here.
+.PHONY : binary-indep
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installxfonts
+	dh_installdebconf
+	dh_installdocs -A README*
+#	dh_installexamples
+#	dh_installman
+#	dh_installinfo
+#	dh_undocumented
+	dh_installchangelogs
+#	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+.PHONY : binary-arch
+binary-arch : build install
+# We have nothing to do by default.
+
+.PHONY : binary
+binary : binary-indep binary-arch

@@ -1,0 +1,67 @@
+#!/bin/sh
+
+set -e
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+fontdir=/usr/share/consolefonts
+
+if [ "$1" = "configure" ]; then
+    
+    db_get console-setup/codeset
+    codeset="$RET"
+    db_get console-setup/fontface
+    fontface="$RET"
+    db_get console-setup/fontsize
+    fontsize="$RET"
+
+    fontname=$codeset-$fontface$fontsize.psf.gz
+    
+    db_get console-setup/charmap
+    charmap="$RET"
+
+    db_get console-setup/ttys
+    ttys="$RET"
+
+
+    db_get console-setup/modelcode
+    model="$RET"
+
+    db_get console-setup/layoutcode
+    layout="$RET"
+
+    db_get console-setup/variantcode
+    variant="$RET"
+
+    # TODO: behave properly when the local administrator has changed these
+    [ -f /etc/console-setup/$fontname ] \
+	|| cp $fontdir/$fontname /etc/console-setup/
+    if [ "$charmap" != UTF-8 ]; then
+	[ -f /etc/console-setup/$charmap.acm.gz ] \
+	    || cp /usr/share/consoletrans/$charmap.acm.gz /etc/console-setup/
+	acm=/etc/console-setup/$charmap.acm.gz
+	ckbcomp_charmap_option="-charmap $charmap"
+    else
+	acm=''
+	ckbcomp_charmap_option=''
+    fi
+    ckbcomp $ckbcomp_charmap_option -model "$model" "$layout" "$variant" \
+	| gzip -9 >/etc/console-setup/boottime.kmap.gz
+    keymap_md5=`md5sum /etc/console-setup/boottime.kmap.gz | sed 's/ .*//'`
+    cat >/etc/default/console-setup <<EOF
+ACTIVE_CONSOLES=$ttys
+CHARMAP=$charmap
+FONT=/etc/console-setup/$fontname
+ACM=$acm
+BOOTTIME_KMAP_MD5=$keymap_md5
+VERBOSE_OUTPUT=no
+
+XKBMODEL=$model
+XKBLAYOUT=$layout
+XKBVARIANT=$variant
+EOF
+
+fi
+
+#DEBHELPER#

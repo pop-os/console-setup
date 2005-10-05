@@ -1,0 +1,96 @@
+Template: console-setup/codeset
+Type: select
+Choices: Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav, Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7, Thai, Uni1, Uni2, Uni3, Vietnamese
+Default: Uni1
+Description: Which codeset is suitable for your language environment?
+ Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9.  Lat2 covers ISO
+ 8859-2, the Euro sign as well as the Romanian letters with comma
+ below.  Lat38 covers ISO 8859-3 and ISO 8859-13. Lat7 covers ISO
+ 8859-13. CyrSlav covers not only the Slavic Cyrillic letters but also
+ the Serbian Latin letters.
+ .
+ Uni1 supports most of the Latin languages, the Slavic Cyrillic
+ languages, Hebrew and barely Arabic.  Uni2 supports most of the Latin
+ languages, the Slavic Cyrillic languages and Greek.  Uni3 supports
+ most of the Latin and Cyrillic languages.
+
+Template: console-setup/model
+Type: select
+Choices: ${CHOICES}
+Description: What is the model of your keyboard ?
+
+Template: console-setup/layout
+Type: select
+Choices: ${CHOICES}
+Description: What is the keys layout of your keyboard ?
+
+Template: console-setup/variant
+Type: select
+Choices: ${CHOICES}
+Description: Which variant do you have ?
+ The layout you selected has several variants.  Please select the one
+ matching your keyboard.
+
+Template: console-setup/fontface
+Type: select
+Choices: ${CHOICES}
+Default: Fixed
+Description: Choose font for the console.
+ Please choose the font face you would like to use on the text-mode
+ emergency Linux console.
+ .
+ VGA is traditionally looking, it has medium coverage of international
+ scripts.  Fixed has siplistic look and has best coverage of
+ international scripts.  The aim of Terminus is to reduce the
+ eyes-fatigue when one has to read a lot (a note for programmers: some
+ symbols look quiet similar), it supports only the Latin and the
+ Cyrillic scripts.
+
+Template: console-setup/fontsize
+Type: select
+Choices: ${CHOICES}
+Default: 16
+Description: What is your favourite font size?
+ Please select the size of the font on the emergency Linux console.
+ In case you use text-mode videomode the following table shows the
+ correspondence between the fontsize and the number of the characters
+ on the screen:
+  size 18 - for 80x22 and 80x26
+  size 16 - for 80x25 and 80x30 (most standard)
+  size 15 - for 80x26 and 80x32
+  size 14 - for 80x28 and 80x34
+  size 13 - for 80x30 and 80x36
+  size 8 - for 80x43, 80x50 and 80x60 (quiet unreadable).
+  other size - only with framebuffer
+
+Template: console-setup/charmap
+Type: select
+Choices: ${CHOICES}
+Default: UTF-8
+Description: What is your encoding?
+
+Template: console-setup/ttys
+Type: string
+Default: /dev/tty[1-6]
+Description: What virtual consoles do you use?
+ Please enter a space delimited list of virtual consoles you use. The usual
+ Unix filename wildcards are allowed (*, ? and [...]).
+ .
+ If you are unsure, then use the default /dev/tty[1-6], it is for six
+ virtual consoles. If you use devfs, then enter /dev/vc/[1-6] instead.
+
+Template: console-setup/modelcode
+Type: string
+Default: none
+Description: for internal use
+
+Template: console-setup/layoutcode
+Type: string
+Default: none
+Description: for internal use
+
+Template: console-setup/variantcode
+Type: string
+Default: none
+Description: for internal use
+
