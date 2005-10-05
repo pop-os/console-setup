@@ -557,7 +557,8 @@ variant*it*nodeadkeys*Eliminate dead keys
 '
 # kbdnames='model*logicdp*Logitech Cordless Desktop Pro
 # model*omnikey101*Northgate OmniKey 101
-# model*abnt2*Brazilian ABNT2
+# ...
+# layout*el*Greek
 # ...
 # variant*it*nodeadkeys*Eliminate dead keys'
 
@@ -571,39 +572,27 @@ ask_debconf () {
     prefix=$3       # The prefix for $kbdnames
     default_code=$4 # The default choice (optional)
 
-    echo ask_debconf $1 $2 $3 $4 >>/tmp/log
-
     choices=`echo "$kbdnames" | grep "^$prefix\*" | 
         sed -e "s/^$prefix\*[^\*]*\*//" -e 's/,//g' -e 's/$/,/' | sort `
     choices=`echo $choices | sed 's/, *$//'`
 
-    echo choices=$choices >>/tmp/log
-
-    echo Doing db_subst >>/tmp/log
     db_subst $template CHOICES "$choices"
     if [ -n "$default_code" ]; then
 	default_description=`echo "$kbdnames" |  
             grep "^$prefix\*${default_code}\*" |
             sed -e "s/^$prefix\*${default_code}\*//"`
-	echo default_description=$default_description >>/tmp/log
 	if [ -n "$default_description" ]; then
-	    echo Do db_set >>/tmp/log
 	    db_set $template "$default_description"
 	fi
     fi
 
-    echo Doing db_input >>/tmp/log
     db_input $priority $template || true
-    echo Doing db_go >>/tmp/log
     db_go || return 255
-    echo Doing db_get >>/tmp/log
     db_get $template
-    echo Done >>/tmp/log
     RET=`echo "$kbdnames" | grep "^$prefix\*[^\*]*\*" |
              sed 's/  */ /g' |
              grep "\*$RET\$" |
              sed -e "s/^$prefix\*\([^\*]*\)\*.*/\1/" `
-    echo RET=$RET >>/tmp/log
     return 0
 }
 
@@ -681,7 +670,6 @@ guess_arch () {
 }
 
 available_fontfaces () {
-    echo codeset=$codeset >>/tmp/log
     echo "$fontsets" | sort | \
 	grep "^$codeset-" | \
 	sed -e "s/^$codeset-//" -e 's/[0-9]*$//' | \
@@ -1190,7 +1178,6 @@ esac
 
 STATE=1
 while :; do
-    echo ENTERING STATE $STATE >>/tmp/log
     case "$STATE" in
 	1)
 	    if \
@@ -1271,13 +1258,10 @@ while :; do
 	    ;;
 	6)
 	    fontfaces=`available_fontfaces`
-	    echo fontfaces=$fontfaces >>/tmp/log
 	    # add commas
 	    choices=`echo "$fontfaces" | sed -e 's/$/,/g'`
-	    echo choices1=$choices >>/tmp/log
 	    # remove newlines
 	    choices=`echo $choices | sed -e 's/,$//'`
-	    echo choices2=$choices >>/tmp/log
 	    db_subst console-setup/fontface CHOICES "$choices"
 	    db_input medium console-setup/fontface || true
 	    if db_go; then

@@ -248,7 +248,7 @@ compose_files : $(compose_files)
 ##########################################################
 
 
-KeyboardNames.pl : xmlreader xkb/rules/xfree86.xml
+KeyboardNames.pl : xmlreader ckb/rules/xfree86.xml
 	./xmlreader >$@
 
 ##########################################################

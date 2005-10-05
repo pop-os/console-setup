@@ -35,7 +35,7 @@ use XML::Parser;
 
 my $parser = new XML::Parser (Style => 'Tree');
 
-my $tree = $parser->parsefile ('xkb/rules/xfree86.xml');
+my $tree = $parser->parsefile ('ckb/rules/xfree86.xml');
 
 my %models;
 my %layouts;
