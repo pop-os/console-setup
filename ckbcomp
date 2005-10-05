@@ -2883,8 +2883,8 @@ EOT
 
 print "strings as usual\n";
 
-if ($charmap) {
-    print "include \"compose.${charmap}.inc\"\n";
+if ($charmap && -f "/etc/console-setup/compose.${charmap}.inc") {
+    system("cat /etc/console-setup/compose.${charmap}.inc");
 }
 
 exit 0;
