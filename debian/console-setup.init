@@ -36,7 +36,7 @@ case "$1" in
 		    if which consolechars >/dev/null; then
 			eval consolechars -v --tty=$console -f "$FONT" $verbose
 		    elif which setfont >/dev/null; then
-			eval setfont -v "$FONT" $verbose
+			eval setfont -v -C $console "$FONT" $verbose
 		    fi
 		fi
 		if [ "$CHARMAP" != UTF-8 ] && [ -f "$ACM" ]; then
@@ -44,7 +44,7 @@ case "$1" in
 			eval consolechars -v --tty=$console \
 			    --acm "$ACM" $verbose
 		    elif which setfont >/dev/null; then
-			eval setfont -m "$ACM" $verbose
+			eval setfont -v -C -m "$ACM" $verbose
 		    fi	    
 		fi
 	    done
