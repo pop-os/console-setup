@@ -37,8 +37,7 @@ my $acm;
 
 my $verbosity = 0;
 
-my @xdirs = ('.', 'ckb',
-	     '/etc/console-setup/ckb',
+my @xdirs = ('/etc/console-setup/ckb',
 	     '/etc/X11/xkb',
 	     '/usr/X11R6/lib/X11/xkb');
 
