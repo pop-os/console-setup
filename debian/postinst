@@ -9,6 +9,8 @@ fontdir=/usr/share/consolefonts
 
 if [ "$1" = "configure" ]; then
     
+    update-rc.d console-setup start 61 S . >/dev/null
+
     db_get console-setup/codeset
     codeset="$RET"
     db_get console-setup/fontface

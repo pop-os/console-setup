@@ -50,7 +50,7 @@ install: build
 	dh_install ckb/ etc/console-setup/
 	rm -rf `find debian/console-setup/etc/console-setup/ -name .svn`
 	dh_install ckbcomp usr/bin/
-	dh_installinit
+	dh_installinit --noscripts
 
 # Build architecture-independent files here.
 .PHONY : binary-indep
