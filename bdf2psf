@@ -171,7 +171,7 @@ sub equivalence_class {
 sub is_box_drawings {
     my $u = $_[0];
     foreach my $v (@{equivalence_class ($u)}) {
-	if ($v >= 0x2500 && $v <= 0x259f) {
+	if (($v >= 0x2500 && $v <= 0x2590) || ($v >= 0x2594 && $v <= 0x259f)) {
 	    return 1;
 	}
     }
