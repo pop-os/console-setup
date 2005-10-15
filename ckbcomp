@@ -110,7 +110,7 @@ while (@ARGV) {
 	} elsif (/^option$/) {
 	    @options = (@options, split (/,/, $ARGV[0], -1));
 	    shift @ARGV;
-	} elsif (/^help$|^\?$/) {
+	} elsif (/^help$|^-help$|^\?$/) {
 	    print <<EOT;
 Usage: ckbcomp [args] [<layout> [<variant> [<option> ... ]]]
 Where legal args are:
