@@ -440,35 +440,31 @@ if ($framebuffer_font) {
     }    
 } elsif ($width == 9) {
     foreach my $u (keys %gliphs) {
-	if (is_box_drawings ($u)) {
+	my $pixels9 = 0;
+	my $copyed = 0;
+	my $different = 0;
+	for my $i (0 ... $height - 1) {
+	    if (($gliphs{$u}[2 * $i] & 0x01)
+		&& ! ($gliphs{$u}[2 * $i + 1] & 0x80)) {
+		$different++;
+	    }
+	    if ($gliphs{$u}[2 * $i + 1] & 0x80) {
+		$pixels9++;
+		if (! ($gliphs{$u}[2 * $i] & 0x01)) {
+		    $gliphs{$u}[2 * $i] = $gliphs{$u}[2 * $i] | 0x01;
+		    $copyed++;
+		}
+	    }
+	}
+	if ($different < $pixels9) {
 	    $types{$u} = $copy_8th;
+	    $broken_pixels{$u} = $different + $copyed;
+	} elsif ($different > $pixels9) {
+	    $types{$u} = $dont_copy_8th;
+	    $broken_pixels{$u} = $pixels9 + $copyed;
 	} else {
-	    my $pixels9 = 0;
-	    my $copyed = 0;
-	    my $different = 0;
-	    for my $i (0 ... $height - 1) {
-		if (($gliphs{$u}[2 * $i] & 0x01)
-		    && ! ($gliphs{$u}[2 * $i + 1] & 0x80)) {
-		    $different++;
-		}
-		if ($gliphs{$u}[2 * $i + 1] & 0x80) {
-		    $pixels9++;
-		    if (! ($gliphs{$u}[2 * $i] & 0x01)) {
-			$gliphs{$u}[2 * $i] = $gliphs{$u}[2 * $i] | 0x01;
-			$copyed++;
-		    }
-		}
-	    }
-	    if ($different < $pixels9) {
-		$types{$u} = $copy_8th;
-		$broken_pixels{$u} = $different + $copyed;
-	    } elsif ($different > $pixels9) {
-		$types{$u} = $dont_copy_8th;
-		$broken_pixels{$u} = $pixels9 + $copyed;
-	    } else {
-		$types{$u} = $doesnt_matter_8th;
-		$broken_pixels{$u} = $pixels9 + $copyed;
-	    }
+	    $types{$u} = $doesnt_matter_8th;
+	    $broken_pixels{$u} = $pixels9 + $copyed;
 	}
 	for my $i (0 ... $height - 1) {
 	    $gliphs{$u}[$i] = $gliphs{$u}[2 * $i];
