@@ -136,6 +136,7 @@ EOT
 	    @layouts = split (/,/, $_, -1);
 	} elsif (! @variants) {
 	    @variants = split (/,/, $_, -1);
+	    @variants = ('') if (! @variants);
 	} else {
 	    @options = (@options, split (/,/, $_, -1));
 	}
