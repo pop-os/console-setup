@@ -22,6 +22,7 @@ Description: What is the model of your keyboard ?
 Template: console-setup/layout
 Type: select
 Choices: ${CHOICES}
+Default: U.S. English w/ ISO9995-3
 Description: What is the keys layout of your keyboard ?
 
 Template: console-setup/variant
@@ -35,7 +36,7 @@ Template: console-setup/fontface
 Type: select
 Choices: ${CHOICES}
 Default: Fixed
-Description: Choose font for the console.
+Description: Choose a font for the console.
  Please choose the font face you would like to use on the text-mode
  emergency Linux console.
  .
@@ -60,7 +61,7 @@ Description: What is your favourite font size?
   size 15 - for 80x26 and 80x32
   size 14 - for 80x28 and 80x34
   size 13 - for 80x30 and 80x36
-  size 8 - for 80x43, 80x50 and 80x60 (quiet unreadable).
+  size 8 - for 80x43, 80x50 and 80x60 (very unreadable).
   other size - only with framebuffer
 
 Template: console-setup/charmap
@@ -78,6 +79,75 @@ Description: What virtual consoles do you use?
  .
  If you are unsure, then use the default /dev/tty[1-6], it is for six
  virtual consoles. If you use devfs, then enter /dev/vc/[1-6] instead.
+
+Template: console-setup/toggle
+Type: select
+Choices: Caps Lock, Scroll Lock, Right Alt, Right Control, Right Shift, Right Win-key, Menu-key, Alt+Shift, Control+Shift, Control+Alt, Both Shift keys together, Both Control keys together, Both Alt keys together, Left Alt, Left Control, Left Shift, Left Win-key, No toggling
+Default: Alt+Shift
+Description: Toggling between Latin and non-Latin mode
+ Since your keyboard is a non-Latin one, you will need a way to toggle
+ between the Latin and the non-Latin mode.  Several options are
+ available.
+ .
+ The most ergonomic choices seam to be the left Alt and the Caps Lock
+ keys (in the later case use the combination Shift+Caps Lock for
+ normal Caps toggle).  Another popular choice is the Alt+Shift
+ combination; notice however that in this case the combination
+ Alt+Shift (or Control+Shift if you choose it) will loose its usual
+ meaning in Emacs and other programs using it.
+ .
+ Notice that on some keyboards not all listed keys are present.
+
+Template: console-setup/switch
+Type: select
+Choices: No temporary switch, Right Alt, Left Alt, Right Win-key, Left Win-key, Both Win-keys
+Default: No temporary switch,
+Description: Switching temporarily between Latin and non-Latin characters
+ Sometimes the keyboard is in non-Latin mode and you want to type only
+ few Latin letters. In this case it may be desirable to have a key for
+ temporary switching between non-Latin and Latin letters.  While this
+ key is pressed in non-Latin mode the keyboard types Latin letters and
+ in reverse, when the keyboard is in Latin mode and you are pressing
+ this key the keyboard will type non-Latin letters.
+ .
+ If you don't like this feature, choose the option "No temporary switch".
+
+Template: console-setup/altgr
+Type: select
+Choices: No AltGr key, Right Alt, Right Alt (Shift+RightAlt=Compose), Right Control, Menu-key, Right Win-key, Left Win-key, Both Win-keys
+Default: Right Alt
+Description: The AltGr key
+ With some of the keyboard layouts, AltGr is a modifier key used to
+ type many character, primarily ones that are unusual for the language
+ of the keyboard layout, such as foreign currency symbols and accented
+ letters.  If a key has a third symbol on it (on the front vertical
+ face or the bottom right of the key top, sometimes in a different
+ colour), then AltGr is often the means of eliciting that symbol.
+ .
+ In the French and Spanish keyboard layouts AltGr is used extensively
+ to type the accented vowels.  In the British keyboard layouts fewer
+ symbols require the use of AltGr, most notably the Euro currency
+ symbol.  AltGr is often used to type symbols which are commonly used
+ by programmers and technical writers.
+
+Template: console-setup/compose
+Type: select
+Choices: No compose key, Right Alt, Right Win-key, Menu-key, Caps Lock
+Default: No compose key
+Description: The compose key
+ The compose key (known also as Multi_key) is a key which is
+ designated to signal the software to interpret the next keystrokes as
+ a combination in order to produce a character not found on the
+ keyboard.
+ .
+ For example, typing compose, then a, then e may produce the French AE
+ ligature.  Typing compose, then e, then ' can yeld an e with an acute
+ accent.  Typing compose, then o, then c may produce the copyright
+ sign.  Etc.
+ .
+ Regardless of what you choose here, on the text console the
+ Alt+period combination can be used as a Compose key.  On the text
+ console the Compose key does not work in Unicode mode.
 
 Template: console-setup/modelcode
 Type: string

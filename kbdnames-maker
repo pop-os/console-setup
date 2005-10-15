@@ -17,6 +17,6 @@ for my $layout (keys %KeyboardNames::layouts) {
     print "variant*$name**$layout\n";
     for my $variant (keys %{$KeyboardNames::variants{$name}}) {
 	my $variantname = $KeyboardNames::variants{$name}{$variant};
-	print "variant*$name*$variantname*$variant\n";
+	print "variant*$name*$variantname*$layout - $variant\n";
     }
 }

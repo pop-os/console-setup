@@ -667,7 +667,9 @@ case "$arch" in
 esac    
 
 STATE=1
+old_state=0
 while :; do
+    starting_state=$STATE
     case "$STATE" in
 	1)
 	    if \
@@ -706,7 +708,7 @@ while :; do
 	    ;;
 	3)
 	    if \
-		ask_debconf console-setup/variant medium \
+		ask_debconf console-setup/variant high \
 		    "variant\*${layout}" ''
 	    then
 		if [ "$latin" = yes ]; then
@@ -720,6 +722,25 @@ while :; do
 	    fi
 	    ;;
 	4)
+	    if [ "$latin" = yes ]; then
+		db_set console-setup/toggle 'No toggling'
+		db_set console-setup/switch 'No temporary switch'
+	    fi
+	    db_beginblock
+	    if [ "$latin" = no ]; then
+		db_input high console-setup/toggle || true
+		db_input medium console-setup/switch || true
+	    fi
+	    db_input medium console-setup/altgr || true
+	    db_input medium console-setup/compose || true
+	    db_endblock
+	    if db_go; then 
+		STATE=$(($STATE + 1))
+	    else
+		STATE=$(($STATE - 1))
+	    fi
+	    ;;		    
+	5)
 	    # add commas
 	    choices=`echo "$charmaps" | sed -e 's/$/,/g' | sort `
 	    # remove newlines
@@ -735,7 +756,7 @@ while :; do
 	    db_get console-setup/charmap
 	    charmap=$RET
 	    ;;
-	5)
+	6)
 	    db_set console-setup/codeset "$codeset"
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
@@ -746,7 +767,7 @@ while :; do
 	    db_get console-setup/codeset
 	    codeset=$RET
 	    ;;
-	6)
+	7)
 	    fontfaces=`available_fontfaces`
 	    # add commas
 	    choices=`echo "$fontfaces" | sed -e 's/$/,/g'`
@@ -762,7 +783,7 @@ while :; do
 	    db_get console-setup/fontface
 	    fontface=$RET
 	    ;;
-	7)
+	8)
 	    fontsizes=`available_fontsizes`
 	    # add commas
 	    choices=`echo "$fontsizes" | sed -e 's/$/,/g' `
@@ -778,7 +799,7 @@ while :; do
 	    db_get console-setup/fontsize
 	    fontsize=$RET
 	    ;;
-	8)
+	9)
 	    db_input medium console-setup/ttys || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
@@ -792,6 +813,7 @@ while :; do
 	    break
 	    ;;
     esac
+    old_state=$starting_state
 done
 
 if [ $STATE -eq 1 ]; then

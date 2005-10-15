@@ -16,6 +16,9 @@
 #     along with this program, write to the Free Software Foundation, Inc.,
 #     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+# This script would be much simpler if written in perl but that way it can be
+# used in the Installer
+
 set -e
 
 . /usr/share/debconf/confmodule
@@ -274,28 +277,28 @@ model*flexpro*Keytronic FlexPro
 model*logiink*Logitech Internet Navigator Keyboard
 layout*sapmi*sapmi         -  No decription
 variant*sapmi**sapmi         -  No decription
-variant*sapmi*nodeadkeys*Eliminate dead keys
-variant*sapmi*basic*sapmi(basic) -  No decription
-variant*sapmi*sefi*sapmi(sefi) -  No decription
+variant*sapmi*nodeadkeys*sapmi         -  No decription - Eliminate dead keys
+variant*sapmi*basic*sapmi         -  No decription - sapmi(basic) -  No decription
+variant*sapmi*sefi*sapmi         -  No decription - sapmi(sefi) -  No decription
 layout*pl2*Polish (qwertz)
 variant*pl2**Polish (qwertz)
 layout*fr*French
 variant*fr**French
-variant*fr*Sundeadkeys*fr(Sundeadkeys) -  No decription
-variant*fr*nodeadkeys*Eliminate dead keys
+variant*fr*Sundeadkeys*French - fr(Sundeadkeys) -  No decription
+variant*fr*nodeadkeys*French - Eliminate dead keys
 layout*el*Greek
 variant*el**Greek
-variant*el*extended*el(extended) -  No decription
-variant*el*nodeadkeys*Eliminate dead keys
-variant*el*polytonic*el(polytonic) -  No decription
+variant*el*extended*Greek - el(extended) -  No decription
+variant*el*nodeadkeys*Greek - Eliminate dead keys
+variant*el*polytonic*Greek - el(polytonic) -  No decription
 layout*kan*Kannada
 variant*kan**Kannada
 layout*ca*Canadian
 variant*ca**Canadian
-variant*ca*fr*French
-variant*ca*multi*Multilingual
-variant*ca*multi-2gr*Multilingual, second part
-variant*ca*fr-legacy*French (legacy)
+variant*ca*fr*Canadian - French
+variant*ca*multi*Canadian - Multilingual
+variant*ca*multi-2gr*Canadian - Multilingual, second part
+variant*ca*fr-legacy*Canadian - French (legacy)
 layout*nec/jp*PC-98xx Series
 variant*nec/jp**PC-98xx Series
 layout*syr*Syriac
@@ -304,41 +307,41 @@ layout*ben*Bengali
 variant*ben**Bengali
 layout*de*German
 variant*de**German
-variant*de*nodeadkeys*Eliminate dead keys
-variant*de*deadgraveacute*de(deadgraveacute) -  No decription
-variant*de*basic*de(basic) -  No decription
-variant*de*deadacute*de(deadacute) -  No decription
+variant*de*nodeadkeys*German - Eliminate dead keys
+variant*de*deadgraveacute*German - de(deadgraveacute) -  No decription
+variant*de*basic*German - de(basic) -  No decription
+variant*de*deadacute*German - de(deadacute) -  No decription
 layout*ro*Romanian
 variant*ro**Romanian
-variant*ro*ro_us*US keyboard with Romanian letters
+variant*ro*ro_us*Romanian - US keyboard with Romanian letters
 layout*mt*Maltese
 variant*mt**Maltese
 layout*il*Israeli
 variant*il**Israeli
-variant*il*si1452*il(si1452) -  No decription
-variant*il*lyx*il(lyx) -  No decription
+variant*il*si1452*Israeli - il(si1452) -  No decription
+variant*il*lyx*Israeli - il(lyx) -  No decription
 layout*se_SE*Northern Saami (Sweden)
 variant*se_SE**Northern Saami (Sweden)
 layout*ie*Irish
 variant*ie**Irish
-variant*ie*CloGaelach*ie(CloGaelach) -  No decription
-variant*ie*CloGaelachLaptop*ie(CloGaelachLaptop) -  No decription
-variant*ie*laptop*ie(laptop) -  No decription
-variant*ie*UnicodeExpert*ie(UnicodeExpert) -  No decription
+variant*ie*CloGaelach*Irish - ie(CloGaelach) -  No decription
+variant*ie*CloGaelachLaptop*Irish - ie(CloGaelachLaptop) -  No decription
+variant*ie*laptop*Irish - ie(laptop) -  No decription
+variant*ie*UnicodeExpert*Irish - ie(UnicodeExpert) -  No decription
 layout*th_pat*Thai (Pattachote)
 variant*th_pat**Thai (Pattachote)
 layout*se_NO*Northern Saami (Norway)
 variant*se_NO**Northern Saami (Norway)
 layout*la*Latin America
 variant*la**Latin America
-variant*la*nodeadkeys*Eliminate dead keys
-variant*la*Sundeadkeys*la(Sundeadkeys) -  No decription
+variant*la*nodeadkeys*Latin America - Eliminate dead keys
+variant*la*Sundeadkeys*Latin America - la(Sundeadkeys) -  No decription
 layout*mm*Burmese
 variant*mm**Burmese
 layout*fr-latin9*French (alternative)
 variant*fr-latin9**French (alternative)
-variant*fr-latin9*nodeadkeys*Eliminate dead keys
-variant*fr-latin9*Sundeadkeys*fr-latin9(Sundeadkeys) -  No decription
+variant*fr-latin9*nodeadkeys*French (alternative) - Eliminate dead keys
+variant*fr-latin9*Sundeadkeys*French (alternative) - fr-latin9(Sundeadkeys) -  No decription
 layout*vn*Vietnamese
 variant*vn**Vietnamese
 layout*us_intl*U.S. English w/ deadkeys
@@ -351,47 +354,47 @@ layout*ru_yawerty*Russian (cyrillic phonetic)
 variant*ru_yawerty**Russian (cyrillic phonetic)
 layout*hr*Croatian
 variant*hr**Croatian
-variant*hr*us*US keyboard with Croatian letters
+variant*hr*us*Croatian - US keyboard with Croatian letters
 layout*tj*Tajik
 variant*tj**Tajik
 layout*tr*Turkish 
 variant*tr**Turkish 
-variant*tr*tr_f*Turkish (F)
+variant*tr*tr_f*Turkish  - Turkish (F)
 layout*am*Armenian
 variant*am**Armenian
 layout*hu*Hungarian
 variant*hu**Hungarian
-variant*hu*101_qwerty_comma_dead*101/qwerty/comma/Dead keys
-variant*hu*102_qwerty_dot_dead*102/qwerty/dot/Dead keys
-variant*hu*101_qwertz_dot_dead*101/qwertz/dot/Dead keys
-variant*hu*101_qwertz_comma_dead*101/qwertz/comma/Dead keys
-variant*hu*101_qwertz_dot_nodead*101/qwertz/dot/Eliminate dead keys
-variant*hu*101_qwerty_comma_nodead*101/qwerty/comma/Eliminate dead keys
-variant*hu*101_qwerty_dot_dead*101/qwerty/dot/Dead keys
-variant*hu*101_qwertz_comma_nodead*101/qwertz/comma/Eliminate dead keys
-variant*hu*nodeadkeys*Eliminate dead keys
-variant*hu*102_qwertz_dot_nodead*102/qwertz/dot/Eliminate dead keys
-variant*hu*102_qwerty_dot_nodead*102/qwerty/dot/Eliminate dead keys
-variant*hu*102_qwerty_comma_nodead*102/qwerty/comma/Eliminate dead keys
-variant*hu*102_qwerty_comma_dead*102/qwerty/comma/Dead keys
-variant*hu*standard*Standard
-variant*hu*102_qwertz_comma_nodead*102/qwertz/comma/Eliminate dead keys
-variant*hu*101_qwerty_dot_nodead*101/qwerty/dot/Eliminate dead keys
-variant*hu*102_qwertz_dot_dead*102/qwertz/dot/Dead keys
-variant*hu*qwerty*qwerty
-variant*hu*102_qwertz_comma_dead*102/qwertz/comma/Dead keys
+variant*hu*101_qwerty_comma_dead*Hungarian - 101/qwerty/comma/Dead keys
+variant*hu*102_qwerty_dot_dead*Hungarian - 102/qwerty/dot/Dead keys
+variant*hu*101_qwertz_dot_dead*Hungarian - 101/qwertz/dot/Dead keys
+variant*hu*101_qwertz_comma_dead*Hungarian - 101/qwertz/comma/Dead keys
+variant*hu*101_qwertz_dot_nodead*Hungarian - 101/qwertz/dot/Eliminate dead keys
+variant*hu*101_qwerty_comma_nodead*Hungarian - 101/qwerty/comma/Eliminate dead keys
+variant*hu*101_qwerty_dot_dead*Hungarian - 101/qwerty/dot/Dead keys
+variant*hu*101_qwertz_comma_nodead*Hungarian - 101/qwertz/comma/Eliminate dead keys
+variant*hu*nodeadkeys*Hungarian - Eliminate dead keys
+variant*hu*102_qwertz_dot_nodead*Hungarian - 102/qwertz/dot/Eliminate dead keys
+variant*hu*102_qwerty_dot_nodead*Hungarian - 102/qwerty/dot/Eliminate dead keys
+variant*hu*102_qwerty_comma_nodead*Hungarian - 102/qwerty/comma/Eliminate dead keys
+variant*hu*102_qwerty_comma_dead*Hungarian - 102/qwerty/comma/Dead keys
+variant*hu*standard*Hungarian - Standard
+variant*hu*102_qwertz_comma_nodead*Hungarian - 102/qwertz/comma/Eliminate dead keys
+variant*hu*101_qwerty_dot_nodead*Hungarian - 101/qwerty/dot/Eliminate dead keys
+variant*hu*102_qwertz_dot_dead*Hungarian - 102/qwertz/dot/Dead keys
+variant*hu*qwerty*Hungarian - qwerty
+variant*hu*102_qwertz_comma_dead*Hungarian - 102/qwertz/comma/Dead keys
 layout*cz*Czech
 variant*cz**Czech
-variant*cz*bksl*cz(bksl) -  No decription
-variant*cz*basic*cz(basic) -  No decription
+variant*cz*bksl*Czech - cz(bksl) -  No decription
+variant*cz*basic*Czech - cz(basic) -  No decription
 layout*al*Albanian
 variant*al**Albanian
 layout*mk*Macedonian
 variant*mk**Macedonian
-variant*mk*pc104*mk(pc104) -  No decription
+variant*mk*pc104*Macedonian - mk(pc104) -  No decription
 layout*bg*Bulgarian
 variant*bg**Bulgarian
-variant*bg*phonetic*bg(phonetic) -  No decription
+variant*bg*phonetic*Bulgarian - bg(phonetic) -  No decription
 layout*yu*Yugoslavian
 variant*yu**Yugoslavian
 layout*lo*Lao
@@ -400,88 +403,88 @@ layout*lv*Latvian
 variant*lv**Latvian
 layout*dvorak*Dvorak
 variant*dvorak**Dvorak
-variant*dvorak*sv*dvorak(sv) -  No decription
-variant*dvorak*se*dvorak(se) -  No decription
-variant*dvorak*no*dvorak(no) -  No decription
+variant*dvorak*sv*Dvorak - dvorak(sv) -  No decription
+variant*dvorak*se*Dvorak - dvorak(se) -  No decription
+variant*dvorak*no*Dvorak - dvorak(no) -  No decription
 layout*ru*Russian
 variant*ru**Russian
-variant*ru*phonetic*ru(phonetic) -  No decription
-variant*ru*winkeys*ru(winkeys) -  No decription
-variant*ru*typewriter*ru(typewriter) -  No decription
+variant*ru*phonetic*Russian - ru(phonetic) -  No decription
+variant*ru*winkeys*Russian - ru(winkeys) -  No decription
+variant*ru*typewriter*Russian - ru(typewriter) -  No decription
 layout*gur*Gurmukhi
 variant*gur**Gurmukhi
 layout*no*Norwegian
 variant*no**Norwegian
-variant*no*basic*no(basic) -  No decription
-variant*no*nodeadkeys*Eliminate dead keys
+variant*no*basic*Norwegian - no(basic) -  No decription
+variant*no*nodeadkeys*Norwegian - Eliminate dead keys
 layout*gb*United Kingdom
 variant*gb**United Kingdom
 layout*lt_std*Lithuanian azerty standard
 variant*lt_std**Lithuanian azerty standard
-variant*lt_std*nodeadkeys*Eliminate dead keys
-variant*lt_std*Sundeadkeys*lt_std(Sundeadkeys) -  No decription
+variant*lt_std*nodeadkeys*Lithuanian azerty standard - Eliminate dead keys
+variant*lt_std*Sundeadkeys*Lithuanian azerty standard - lt_std(Sundeadkeys) -  No decription
 layout*lt*Lithuanian qwerty "numeric"
 variant*lt**Lithuanian qwerty "numeric"
-variant*lt*lt_us*lt(lt_us) -  No decription
-variant*lt*lt_std*lt(lt_std) -  No decription
+variant*lt*lt_us*Lithuanian qwerty "numeric" - lt(lt_us) -  No decription
+variant*lt*lt_std*Lithuanian qwerty "numeric" - lt(lt_std) -  No decription
 layout*ml*Malayalam
 variant*ml**Malayalam
 layout*pt*Portuguese
 variant*pt**Portuguese
-variant*pt*Sundeadkeys*pt(Sundeadkeys) -  No decription
-variant*pt*nodeadkeys*Eliminate dead keys
+variant*pt*Sundeadkeys*Portuguese - pt(Sundeadkeys) -  No decription
+variant*pt*nodeadkeys*Portuguese - Eliminate dead keys
 layout*dev*Hindi
 variant*dev**Hindi
 layout*ir*Iranian
 variant*ir**Iranian
 layout*se*Swedish
 variant*se**Swedish
-variant*se*nodeadkeys*Eliminate dead keys
-variant*se*basic*se(basic) -  No decription
+variant*se*nodeadkeys*Swedish - Eliminate dead keys
+variant*se*basic*Swedish - se(basic) -  No decription
 layout*ar*Arabic
 variant*ar**Arabic
-variant*ar*azerty*ar(azerty) -  No decription
-variant*ar*qwerty_digits*ar(qwerty_digits) -  No decription
-variant*ar*azerty_digits*ar(azerty_digits) -  No decription
-variant*ar*qwerty*ar(qwerty) -  No decription
-variant*ar*digits*ar(digits) -  No decription
+variant*ar*azerty*Arabic - ar(azerty) -  No decription
+variant*ar*qwerty_digits*Arabic - ar(qwerty_digits) -  No decription
+variant*ar*azerty_digits*Arabic - ar(azerty_digits) -  No decription
+variant*ar*qwerty*Arabic - ar(qwerty) -  No decription
+variant*ar*digits*Arabic - ar(digits) -  No decription
 layout*az*Azerbaijani
 variant*az**Azerbaijani
-variant*az*latin*az(latin) -  No decription
-variant*az*cyrillic*az(cyrillic) -  No decription
+variant*az*latin*Azerbaijani - az(latin) -  No decription
+variant*az*cyrillic*Azerbaijani - az(cyrillic) -  No decription
 layout*dk*Danish
 variant*dk**Danish
-variant*dk*nodeadkeys*Eliminate dead keys
+variant*dk*nodeadkeys*Danish - Eliminate dead keys
 layout*ch*Swiss
 variant*ch**Swiss
-variant*ch*fr_sundeadkeys*French, Sun dead keys
-variant*ch*de*German
-variant*ch*fr*French
-variant*ch*fr_nodeadkeys*French, eliminate dead keys
-variant*ch*de_sundeadkeys*German, Sun dead keys
-variant*ch*de_nodeadkeys*German, eliminate dead keys
+variant*ch*fr_sundeadkeys*Swiss - French, Sun dead keys
+variant*ch*de*Swiss - German
+variant*ch*fr*Swiss - French
+variant*ch*fr_nodeadkeys*Swiss - French, eliminate dead keys
+variant*ch*de_sundeadkeys*Swiss - German, Sun dead keys
+variant*ch*de_nodeadkeys*Swiss - German, eliminate dead keys
 layout*be*Belgian
 variant*be**Belgian
-variant*be*nodeadkeys*Eliminate dead keys
-variant*be*Sundeadkeys*be(Sundeadkeys) -  No decription
-variant*be*iso-alternate*be(iso-alternate) -  No decription
+variant*be*nodeadkeys*Belgian - Eliminate dead keys
+variant*be*Sundeadkeys*Belgian - be(Sundeadkeys) -  No decription
+variant*be*iso-alternate*Belgian - be(iso-alternate) -  No decription
 layout*ee*Estonian
 variant*ee**Estonian
-variant*ee*nodeadkeys*Eliminate dead keys
+variant*ee*nodeadkeys*Estonian - Eliminate dead keys
 layout*sk*Slovak
 variant*sk**Slovak
-variant*sk*basic*sk(basic) -  No decription
-variant*sk*bksl*sk(bksl) -  No decription
+variant*sk*basic*Slovak - sk(basic) -  No decription
+variant*sk*bksl*Slovak - sk(bksl) -  No decription
 layout*sk_qwerty*Slovak (qwerty)
 variant*sk_qwerty**Slovak (qwerty)
-variant*sk_qwerty*basic*sk_qwerty(basic) -  No decription
-variant*sk_qwerty*bksl*sk_qwerty(bksl) -  No decription
+variant*sk_qwerty*basic*Slovak (qwerty) - sk_qwerty(basic) -  No decription
+variant*sk_qwerty*bksl*Slovak (qwerty) - sk_qwerty(bksl) -  No decription
 layout*tel*Telugu
 variant*tel**Telugu
 layout*br*Brazilian
 variant*br**Brazilian
-variant*br*nodeadkeys*Eliminate dead keys
-variant*br*abnt2*br(abnt2) -  No decription
+variant*br*nodeadkeys*Brazilian - Eliminate dead keys
+variant*br*abnt2*Brazilian - br(abnt2) -  No decription
 layout*mn*Mongolian
 variant*mn**Mongolian
 layout*si*Slovenian
@@ -490,43 +493,43 @@ layout*ge_ru*Georgian (russian)
 variant*ge_ru**Georgian (russian)
 layout*ogham*Ogham
 variant*ogham**Ogham
-variant*ogham*IS434laptop*ogham(IS434laptop) -  No decription
-variant*ogham*IS434*ogham(IS434) -  No decription
-variant*ogham*laptop*ogham(laptop) -  No decription
+variant*ogham*IS434laptop*Ogham - ogham(IS434laptop) -  No decription
+variant*ogham*IS434*Ogham - ogham(IS434) -  No decription
+variant*ogham*laptop*Ogham - ogham(laptop) -  No decription
 layout*en_US*U.S. English w/ ISO9995-3
 variant*en_US**U.S. English w/ ISO9995-3
-variant*en_US*nodeadkeys*Eliminate dead keys
+variant*en_US*nodeadkeys*U.S. English w/ ISO9995-3 - Eliminate dead keys
 layout*es*Spanish
 variant*es**Spanish
-variant*es*nodeadkeys*Eliminate dead keys
-variant*es*Sundeadkeys*es(Sundeadkeys) -  No decription
+variant*es*nodeadkeys*Spanish - Eliminate dead keys
+variant*es*Sundeadkeys*Spanish - es(Sundeadkeys) -  No decription
 layout*guj*Gujarati
 variant*guj**Gujarati
 layout*jp*Japanese
 variant*jp**Japanese
 layout*is*Icelandic
 variant*is**Icelandic
-variant*is*nodeadkeys*Eliminate dead keys
-variant*is*Sundeadkeys*is(Sundeadkeys) -  No decription
+variant*is*nodeadkeys*Icelandic - Eliminate dead keys
+variant*is*Sundeadkeys*Icelandic - is(Sundeadkeys) -  No decription
 layout*bs*Bosnian
 variant*bs**Bosnian
 layout*fi*Finnish
 variant*fi**Finnish
-variant*fi*basic*fi(basic) -  No decription
+variant*fi*basic*Finnish - fi(basic) -  No decription
 layout*iu*Inuktitut
 variant*iu**Inuktitut
 layout*tml*Tamil
 variant*tml**Tamil
-variant*tml*UNI*A Tamil typewrite-style keymap; Unicode encoding
-variant*tml*TAB*A Tamil typewrite-style keymap; TAB encoding
-variant*tml*INSCRIPT*INSCRIPT layout
-variant*tml*TSCII*A Tamil typewrite-style keymap; TSCII encoding
+variant*tml*UNI*Tamil - A Tamil typewrite-style keymap; Unicode encoding
+variant*tml*TAB*Tamil - A Tamil typewrite-style keymap; TAB encoding
+variant*tml*INSCRIPT*Tamil - INSCRIPT layout
+variant*tml*TSCII*Tamil - A Tamil typewrite-style keymap; TSCII encoding
 layout*nl*Dutch
 variant*nl**Dutch
 layout*cz_qwerty*Czech (qwerty)
 variant*cz_qwerty**Czech (qwerty)
-variant*cz_qwerty*basic*cz_qwerty(basic) -  No decription
-variant*cz_qwerty*bksl*cz_qwerty(bksl) -  No decription
+variant*cz_qwerty*basic*Czech (qwerty) - cz_qwerty(basic) -  No decription
+variant*cz_qwerty*bksl*Czech (qwerty) - cz_qwerty(bksl) -  No decription
 layout*th_tis*Thai (TIS-820.2538)
 variant*th_tis**Thai (TIS-820.2538)
 layout*il_phonetic*Israeli (phonetic)
@@ -535,12 +538,12 @@ layout*ori*Oriya
 variant*ori**Oriya
 layout*ua*Ukrainian 
 variant*ua**Ukrainian 
-variant*ua*winkeys*ua(winkeys) -  No decription
-variant*ua*typewriter*ua(typewriter) -  No decription
-variant*ua*phonetic*ua(phonetic) -  No decription
+variant*ua*winkeys*Ukrainian  - ua(winkeys) -  No decription
+variant*ua*typewriter*Ukrainian  - ua(typewriter) -  No decription
+variant*ua*phonetic*Ukrainian  - ua(phonetic) -  No decription
 layout*by*Belarusian
 variant*by**Belarusian
-variant*by*winkeys*by(winkeys) -  No decription
+variant*by*winkeys*Belarusian - by(winkeys) -  No decription
 layout*mt_us*Maltese (US layout)
 variant*mt_us**Maltese (US layout)
 layout*sr*Serbian
@@ -553,7 +556,7 @@ layout*ge_la*Georgian (latin)
 variant*ge_la**Georgian (latin)
 layout*it*Italian
 variant*it**Italian
-variant*it*nodeadkeys*Eliminate dead keys
+variant*it*nodeadkeys*Italian - Eliminate dead keys
 '
 # kbdnames='model*logicdp*Logitech Cordless Desktop Pro
 # model*omnikey101*Northgate OmniKey 101
@@ -1094,14 +1097,17 @@ case "$locale" in
 	;;
 esac
 
-charmap=`locale charmap` # TODO: d-i
-if echo "$charmaps" | grep "$charmap" >/dev/null; then
+# TODO: d-i
+charmap=`locale charmap` 
+if [ "$locale" = C ]; then
+    charmap=UTF-8
+    charmap_priority=high
+elif echo "$charmaps" | grep "$charmap" >/dev/null; then
     charmap_priority=low
 else
     charmap=UTF-8
     charmap_priority=medium
 fi
-
 
 arch=`guess_arch`
 
@@ -1177,7 +1183,9 @@ case "$arch" in
 esac    
 
 STATE=1
+old_state=0
 while :; do
+    starting_state=$STATE
     case "$STATE" in
 	1)
 	    if \
@@ -1216,7 +1224,7 @@ while :; do
 	    ;;
 	3)
 	    if \
-		ask_debconf console-setup/variant medium \
+		ask_debconf console-setup/variant high \
 		    "variant\*${layout}" ''
 	    then
 		if [ "$latin" = yes ]; then
@@ -1230,6 +1238,25 @@ while :; do
 	    fi
 	    ;;
 	4)
+	    if [ "$latin" = yes ]; then
+		db_set console-setup/toggle 'No toggling'
+		db_set console-setup/switch 'No temporary switch'
+	    fi
+	    db_beginblock
+	    if [ "$latin" = no ]; then
+		db_input high console-setup/toggle || true
+		db_input medium console-setup/switch || true
+	    fi
+	    db_input medium console-setup/altgr || true
+	    db_input medium console-setup/compose || true
+	    db_endblock
+	    if db_go; then 
+		STATE=$(($STATE + 1))
+	    else
+		STATE=$(($STATE - 1))
+	    fi
+	    ;;		    
+	5)
 	    # add commas
 	    choices=`echo "$charmaps" | sed -e 's/$/,/g' | sort `
 	    # remove newlines
@@ -1245,7 +1272,7 @@ while :; do
 	    db_get console-setup/charmap
 	    charmap=$RET
 	    ;;
-	5)
+	6)
 	    db_set console-setup/codeset "$codeset"
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
@@ -1256,7 +1283,7 @@ while :; do
 	    db_get console-setup/codeset
 	    codeset=$RET
 	    ;;
-	6)
+	7)
 	    fontfaces=`available_fontfaces`
 	    # add commas
 	    choices=`echo "$fontfaces" | sed -e 's/$/,/g'`
@@ -1272,7 +1299,7 @@ while :; do
 	    db_get console-setup/fontface
 	    fontface=$RET
 	    ;;
-	7)
+	8)
 	    fontsizes=`available_fontsizes`
 	    # add commas
 	    choices=`echo "$fontsizes" | sed -e 's/$/,/g' `
@@ -1288,7 +1315,7 @@ while :; do
 	    db_get console-setup/fontsize
 	    fontsize=$RET
 	    ;;
-	8)
+	9)
 	    db_input medium console-setup/ttys || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
@@ -1302,6 +1329,7 @@ while :; do
 	    break
 	    ;;
     esac
+    old_state=$starting_state
 done
 
 if [ $STATE -eq 1 ]; then
