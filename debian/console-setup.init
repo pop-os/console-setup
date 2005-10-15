@@ -16,7 +16,7 @@ case "$1" in
         ;;
     start|force-reload|restart|reload)
 	case `readlink /proc/self/fd/0` in
-	    /dev/tty[0-9]*|/dev/vc/[0-9]*)
+	    /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
 	        ;;
 	    *)
                 # Exit silently when we are not on the Linux console
