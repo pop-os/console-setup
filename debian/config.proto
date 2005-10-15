@@ -581,14 +581,17 @@ case "$locale" in
 	;;
 esac
 
-charmap=`locale charmap` # TODO: d-i
-if echo "$charmaps" | grep "$charmap" >/dev/null; then
+# TODO: d-i
+charmap=`locale charmap` 
+if [ "$locale" = C ]; then
+    charmap=UTF-8
+    charmap_priority=high
+elif echo "$charmaps" | grep "$charmap" >/dev/null; then
     charmap_priority=low
 else
     charmap=UTF-8
     charmap_priority=medium
 fi
-
 
 arch=`guess_arch`
 
