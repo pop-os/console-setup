@@ -257,13 +257,20 @@ VERBOSE_OUTPUT=no
 ACTIVE_CONSOLES="$ttys"
 CHARMAP=$charmap
 FONT=/etc/console-setup/$fontname
-BOOTTIME_KMAP_MD5=$keymap_md5
 
 ACM=$acm
 XKBMODEL=$model
 XKBLAYOUT=$layout
 XKBVARIANT=$variant
 XKBOPTIONS=$options
+
+# Do not update the following md5 sum if you change
+# /etc/console-setup/boottime.kmap.gz and Debconf will not overwrite
+# your custom keymap.  Do not update it even if you want to make
+# Debconf overwrite it.  Instead simply specify the empty string as
+# a md5 sum.
+
+BOOTTIME_KMAP_MD5=$keymap_md5
 EOF
 
 fi
