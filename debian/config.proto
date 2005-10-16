@@ -195,10 +195,6 @@ case "$locale" in
 	codeset=Arabic
 	codeset_priority=low
 	;;
-    ar_*)
-	codeset=Lat15
-	codeset_priority=low
-	;;
     az_*)
 	codeset=Uni3
 	codeset_priority=low
@@ -581,6 +577,213 @@ case "$locale" in
 	;;
 esac
 
+
+
+default_layout=''
+layout_priority=''
+case "$locale" in
+    *_AL*)
+	default_layout=al
+	;;
+    ar_*)
+	default_layout=ar
+	;;
+    *_AM*)
+	default_layout=am
+	;;
+    *_AZ*)
+	default_layout=az
+	;;
+    *_BY*)
+	default_layout=by
+	;;
+    *_BE*)
+	default_layout=be
+	;;
+    *_BD*)
+	default_layout=ben
+	;;
+    bs_*)
+	default_layout=bs
+	;;
+    *_BR*)
+	default_layout=br
+	;;
+    *_BG*)
+	default_layout=bg
+	layout_priority=critical
+	;;
+    *_CA*)
+	default_layout=ca
+	;;
+    *_HR*)
+	default_layout=hr
+	;;
+    *_CZ*)
+	default_layout=cz
+	layout_priority=critical
+	;;
+    *_DK*)
+	default_layout=dk
+	;;
+    *_NL*)
+	default_layout=nl
+	;;
+    *_EE*)
+	default_layout=ee
+	;;
+    fi_FI*)
+	default_layout=fi
+	;;
+    fr_*)
+	default_layout=fr
+	layout_priority=critical
+	;;
+    *_GE*)
+	default_layout=ge
+	layout_priority=critical
+	;;
+    de_*)
+	default_layout=de
+	;;
+    el_*)
+	default_layout=el
+	;;
+    gu_*)
+	default_layout=guj
+	;;
+    pa_*)
+	default_layout=gur
+	;;
+    hi_*)
+	default_layout=dev
+	;;
+    *_HU*)
+	default_layout=hu
+	;;
+    *_IS*)
+	default_layout=is
+	;;
+    *_IR*)
+	default_layout=ir
+	;;
+    *_IE*)
+	default_layout=ie
+	;;
+    *_IL*)
+	layout_priority=critical
+	default_layout=il
+	;;
+    *_IT*)
+	default_layout=it
+	;;
+    *_JP*)
+	default_layout=jp
+	;;
+    kn_*)
+	default_layout=kn
+	;;
+    lo_*)
+	default_layout=lo
+	;;
+    *_AR*|*_BO*|*_CL*|*_CO*|*_CR*|*_DO*|*_EC*|*_GT*|*_HN*|*_MX*|*_NI*|*_PA*|*_PE*|es_PR*|*_PY*|*_SV*|es_US*|*_UY*|*_VE*)
+	default_layout=la
+	;;
+    *_LV*)
+	default_layout=lv
+	;;
+    *_LT*)
+	layout_priority=critical
+	default_layout=lt
+	;;
+    *_MK*)
+	default_layout=mk
+	;;
+    ml_*)
+	default_layout=ml
+	;;
+    *_MT*)
+	default_layout=mt
+	layout_priority=critical
+	;;
+    *_MN*)
+	default_layout=mn
+	;;
+    se_FI)
+	default_layout=se_FI
+	;;
+    se_NO*)
+	default_layout=se_NO
+	;;
+    se_SE*)
+	default_layout=se_SE # TODO: there is also "se" layout
+	;;
+    no_NO*)
+	default_layout=no
+	;;
+    *_PL*)
+	default_layout=pl
+	;;
+    *_PT*)
+	default_layout=pt
+	;;
+    *_RO*)
+	default_layout=ro
+	;;
+    *_RU*)
+	default_layout=ru
+	layout_priority=critical
+	;;
+    sr_*)
+	default_layout=sr
+	;;
+    *_SK*)
+	default_layout=sk
+	;;
+    *_SI*)
+	default_layout=si
+	;;
+    *_ES*)
+	default_layout=es
+	;;
+    *_CH*)
+	default_layout=ch
+	;;
+    *_TJ)
+	default_layout=tj
+	;;
+    ta_*)
+	default_layout=tml
+	;;
+    te_*)
+	default_layout=tel
+	;;
+    *_TH*)
+	default_layout=th
+	layout_priority=critical
+	;;
+    *_TR*)
+	default_layout=tr
+	layout_priority=critical
+	;;
+    en_US*)
+	default_layout=us
+	;;
+    *_UA*)
+	default_layout=ua
+	;;
+    *_GB)
+	default_layout=gb
+	;;
+    *_VN*)
+	default_layout=vn
+	;;
+    *)
+	default_layout=en_US
+	;;
+esac
+
+
 # TODO: d-i
 charmap=`locale charmap` 
 if [ "$locale" = C ]; then
@@ -683,7 +886,10 @@ while :; do
 	    fi
 	    ;;
 	2)
-	    if ask_debconf console-setup/layout critical layout; then
+	    if \
+		ask_debconf console-setup/layout critical \
+		    layout $default_layout
+	    then
 		layout="$RET"
 		case "$layout" in
 		    # TODO: make s.t. to not forget to update this list
