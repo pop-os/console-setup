@@ -16,8 +16,48 @@
 #     along with this program, write to the Free Software Foundation, Inc.,
 #     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-# This script would be much simpler if written in perl but that way it can be
-# used in the Installer
+#                        ----------
+#                         CONTENTS
+#                        ----------
+#
+# 1. Initialise $fontsets, $charmaps and $kbdnames with the supported
+#    fontsets, charmaps, keyboard models, layouts and variants.  These
+#    lists can not be computed because the config script is invoked
+#    during the preconfiguration phase and the available fonts, ACM,
+#    etc. are not yet unpacked.
+#
+# 2. Function ask_debconf.  Ask user to choose amongst the options
+#    listed in $fontsets, $charmaps and $kbdnames.
+#
+# 3. Function guess_arch - detect the architecture and subarchitecture
+#
+# 4. Function available_fontsets - lists all fontfaces that can be
+#    used with $codeset.
+#
+# 5. Function available_fontsizes - lists all font sizes that can be
+#    used with the $codeset-$fontface combination.
+#
+# 6. Set $locale.  Set $default_codeset and $codeset_priority acording
+#    to $locale.
+#
+# 7. Set $default_layout and acording to $locale. default_variant=''
+#
+# 8. Set $default_charmap and $charmap_priority acording to $locale.
+#
+# 9. Set $arch.  Set $default_model and $model_priority acording to
+#    $arch.
+#
+# 10. Read /etc/default/console-setup and store values into debconf
+#     db.  Four very long case instructions in order to translate
+#     options like "grp:caps_toggle" to human-readable strings like
+#     "Caps Lock".
+#
+# 11. Ask the Debconf questions starting from STATE=1 and ending after
+#     STATE=9.  Again four long case instructions in STATE=4 to
+#     translate "Caps Lock" to "grp:caps_toggle".
+
+# This script would be simpler and faster if written in Perl but with
+# Shell it can be used in the Installer
 
 set -e
 
@@ -64,13 +104,11 @@ ask_debconf () {
     choices=`echo $choices | sed 's/, *$//'`
 
     db_subst $template CHOICES "$choices"
-    if [ -n "$default_code" ]; then
-	default_description=`echo "$kbdnames" |  
-            grep "^$prefix\*${default_code}\*" |
-            sed -e "s/^$prefix\*${default_code}\*//"`
-	if [ -n "$default_description" ]; then
-	    db_set $template "$default_description"
-	fi
+    default_description=`echo "$kbdnames" |  
+        grep "^$prefix\*${default_code}\*" |
+        sed -e "s/^$prefix\*${default_code}\*//"`
+    if [ -n "$default_description" ]; then
+	db_set $template "$default_description"
     fi
 
     db_input $priority $template || true
@@ -176,403 +214,403 @@ locale=$LC_CTYPE
 
 case "$locale" in
     aa_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     af_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     am_*)
-	codeset=Ethiopic
+	default_codeset=Ethiopic
 	codeset_priority=low
 	;;
     an_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     ar_*)
-	codeset=Arabic
+	default_codeset=Arabic
 	codeset_priority=low
 	;;
     az_*)
-	codeset=Uni3
+	default_codeset=Uni3
 	codeset_priority=low
 	;;
     be_*)
-	codeset=CyrSlav
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     bg_*)
-	codeset=CyrSlav
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     bn_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     br_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     bs_*)
-	codeset=Uni3
+	default_codeset=Uni3
 	codeset_priority=low
 	;;
     byn_*)
-	codeset=Ethiopian
+	default_codeset=Ethiopian
 	codeset_priority=low
 	;;
     ca_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     cs_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     cy_*)
-	codeset=Lat38
+	default_codeset=Lat38
 	codeset_priority=low
 	;;
     da_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     de_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     el_*)
-	codeset=Greek
+	default_codeset=Greek
 	codeset_priority=low
 	;;
     en_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     eo_*)
-	codeset=Lat38
+	default_codeset=Lat38
 	codeset_priority=low
 	;;
     es_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     et_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     eu_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     fa_*)
-	codeset=Arabic
+	default_codeset=Arabic
 	codeset_priority=low
 	;;
     fi_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     fo_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     fr_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     ga_*)
-	codeset=Lat38
+	default_codeset=Lat38
 	codeset_priority=low
 	;;
     gd_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     gez_*)
-	codeset=Ethiopian
+	default_codeset=Ethiopian
 	codeset_priority=low
 	;;
     gl_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     gu_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     gv_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     he_*)
-	codeset=Hebrew
+	default_codeset=Hebrew
 	codeset_priority=low
 	;;
     hi_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     hr_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     hu_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     hy_*)
-	codeset=Armenian
+	default_codeset=Armenian
 	codeset_priority=low
 	;;
     id_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     is_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     it_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     iw_*)
-	codeset=Hebrew
+	default_codeset=Hebrew
 	codeset_priority=low
 	;;
     ja_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     ka_*)
-	codeset=Georgian
+	default_codeset=Georgian
 	codeset_priority=low
 	;;
     kl_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     kn_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     ko_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     kw_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     lg_*)
-	codeset=Lat15 # TODO: This must be ISO-8859-10 (Latin6)
+	default_codeset=Lat15 # TODO: This must be ISO-8859-10 (Latin6)
 	codeset_priority=low
 	;;
     lo_*)
-	codeset=Lao
+	default_codeset=Lao
 	codeset_priority=low
 	;;
     lt_*)
-	codeset=Lat7
+	default_codeset=Lat7
 	codeset_priority=low
 	;;
     lv_*)
-	codeset=Lat7
+	default_codeset=Lat7
 	codeset_priority=low
 	;;
     mi_*)
-	codeset=Lat7
+	default_codeset=Lat7
 	codeset_priority=low
 	;;
     mk_*)
-	codeset=CyrSlav
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     ml_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     mn_*)
-	codeset=CyrAsia
+	default_codeset=CyrAsia
 	codeset_priority=low
 	;;
     mr_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     ms_*)
-	codeset=Lat15 # TODO: Is this correct? (Malay language)
+	default_codeset=Lat15 # TODO: Is this correct? (Malay language)
 	codeset_priority=low
 	;;
     mt_*)
-	codeset=Lat38
+	default_codeset=Lat38
 	codeset_priority=low
 	;;
     nb_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     ne_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     nl_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     nn_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     oc_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     om_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     pa_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     pl_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     pt_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     ro_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     ru_*)
-	codeset=CyrKoi
+	default_codeset=CyrKoi
 	codeset_priority=low
 	;;
     ru_*)
-	codeset=CyrKoi
+	default_codeset=CyrKoi
 	codeset_priority=low
 	;;
     se_*)
-	codeset=Uni1
+	default_codeset=Uni1
 	codeset_priority=low
 	;;
     sid_*)
-	codeset=Lat15 # TODO: Is this correct? (Sidama language)
+	default_codeset=Lat15 # TODO: Is this correct? (Sidama language)
 	codeset_priority=low
 	;;
     sk_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     sl_*)
-	codeset=Lat2
+	default_codeset=Lat2
 	codeset_priority=low
 	;;
     so_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     sq_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     sr_*)
-	codeset=CyrSlav
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     st_*)
-	codeset=Lat15 # TODO: Is this correct? (Sotho language)
+	default_codeset=Lat15 # TODO: Is this correct? (Sotho language)
 	codeset_priority=low
 	;;
     sv_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     ta_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     te_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     tg_*)
-	codeset=CyrAsia
+	default_codeset=CyrAsia
 	codeset_priority=low
 	;;
     th_*)
-	codeset=Thai
+	default_codeset=Thai
 	codeset_priority=low
 	;;
     ti_*)
-	codeset=Ethiopian
+	default_codeset=Ethiopian
 	codeset_priority=low
 	;;
     tig_*)
-	codeset=Ethiopian
+	default_codeset=Ethiopian
 	codeset_priority=low
 	;;
     tl_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     tr_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     tt_*)
-	codeset=Lat15 # TODO: Is this correct? (Tatar language)
+	default_codeset=Lat15 # TODO: Is this correct? (Tatar language)
 	codeset_priority=low
 	;;
     uk_*)
-	codeset=CyrSlav
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     ur_*)
-	codeset=Arabic
+	default_codeset=Arabic
 	codeset_priority=low
 	;;
     uz_*)
-	codeset=Lat15 # TODO: Is this correct? (Uzbek language)
+	default_codeset=Lat15 # TODO: Is this correct? (Uzbek language)
 	codeset_priority=low
 	;;
     uz_*\@cyrillic)
-	codeset=CyrAsia
+	default_codeset=CyrAsia
 	codeset_priority=low
 	;;
     vi_*)
-	codeset=Vietnamese
+	default_codeset=Vietnamese
 	codeset_priority=low
 	;;
     wa_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     xh_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     yi_*)
-	codeset=Hebrew
+	default_codeset=Hebrew
 	codeset_priority=low
 	;;
     zh_*)
-	codeset=unsupported
+	default_codeset=unsupported
 	codeset_priority=low
 	;;
     zu_*)
-	codeset=Lat15
+	default_codeset=Lat15
 	codeset_priority=low
 	;;
     *)
-	codeset=Uni1
+	default_codeset=Uni1
 	codeset_priority=medium
 	;;
 esac
@@ -686,6 +724,7 @@ case "$locale" in
     lo_*)
 	default_layout=lo
 	;;
+    # TODO: Is the following list correct?
     *_AR*|*_BO*|*_CL*|*_CO*|*_CR*|*_DO*|*_EC*|*_GT*|*_HN*|*_MX*|*_NI*|*_PA*|*_PE*|es_PR*|*_PY*|*_SV*|es_US*|*_UY*|*_VE*)
 	default_layout=la
 	;;
@@ -782,17 +821,17 @@ case "$locale" in
 	default_layout=en_US
 	;;
 esac
-
+default_variant=''
 
 # TODO: d-i
-charmap=`locale charmap` 
+default_charmap=`locale charmap` 
 if [ "$locale" = C ]; then
-    charmap=UTF-8
+    default_charmap=UTF-8
     charmap_priority=high
-elif echo "$charmaps" | grep "$charmap" >/dev/null; then
+elif echo "$charmaps" | grep "$default_charmap" >/dev/null; then
     charmap_priority=low
 else
-    charmap=UTF-8
+    default_charmap=UTF-8
     charmap_priority=medium
 fi
 
@@ -869,6 +908,121 @@ case "$arch" in
 	;;
 esac    
 
+######################################################################
+
+CONFIGFILE=/etc/default/console-setup
+
+# Load the config file, if it exists.
+if [ -e $CONFIGFILE ]; then
+    . $CONFIGFILE || true
+    
+    # Store values from config file into debconf db.
+    
+    db_set console-setup/ttys "$ACTIVE_CONSOLES"
+    default_charmap="$CHARMAP"
+    default_codeset="$CODESET"
+    db_set console-setup/fontface "$FONTFACE"
+    db_set console-setup/fontsize "$FONTSIZE"
+    default_model="$XKBMODEL"
+
+    case "$XKBLAYOUT" in
+	# TODO: make s.t. to not forget to update this list
+	yu,sr|us,am|us,ar|us,ben|us,bg|us,by|us,dev|us,el|us,ge_la|us,ge_ru|us,guj|us,gur|us,il|us,il_phonetic|us,ir|us,iu|us,kan|us,lo|us,mk|us,mm|us,ml|us,ori|us,ru|us,syr|us,syr_phonetic|us,tel|us,th|us,tj|us,tml|us,ua)
+	    default_layout=${XKBLAYOUT#*,}
+	    default_variant="${XKBVARIANT#*,}"
+	    unsupported_layout=no
+	    ;;	    
+	*,*)
+	    unsupported_layout=yes
+	    ;;
+	*)
+	    default_layout="$XKBLAYOUT"
+	    default_variant="$XKBVARIANT"
+	    ;;
+    esac
+
+    default_toggle='No toggling'
+    default_switch='No temporary switch'
+    default_altgr='No AltGr key'
+    default_compose='No compose key'
+    for option in `echo $XKBOPTIONS | sed 's/,/ /g'`; do
+	case "$option" in
+	    grp:caps_toggle)
+		default_toggle='Caps Lock';;
+	    grp:sclk_toggle)
+		default_toggle='Scroll Lock';;
+	    grp:toggle)
+		default_toggle='Right Alt';;
+	    grp:rctrl_toggle)
+		default_toggle='Right Control';;
+	    grp:rshift_toggle)
+		default_toggle='Right Shift';;
+	    grp:rwin_toggle)
+		default_toggle='Right Win-key';;
+	    grp:menu_toggle)
+		default_toggle='Menu-key';;
+	    grp:alt_shift_toggle)
+		default_toggle='Alt+Shift';;
+	    grp:ctrl_shift_toggle)
+		default_toggle='Control+Shift';;
+	    grp:ctrl_alt_toggle)
+		default_toggle='Control+Alt';;
+	    grp:shift_toggle)
+		default_toggle='Both Shift keys together';;
+	    grp:ctrls_toggle)
+		default_toggle='Both Control keys together';;
+	    grp:alts_toggle)
+		default_toggle='Both Alt keys together';;
+	    grp:lalt_toggle)
+		default_toggle='Left Alt';;
+	    grp:lctrl_toggle)
+		default_toggle='Left Control';;
+	    grp:lshift_toggle)
+		default_toggle='Left Shift';;
+	    grp:lwin_toggle)
+		default_toggle='Left Win-key';;
+	    grp:switch)
+		default_switch='Right Alt';;
+	    grp:lswitch)
+		default_switch='Left Alt';;
+	    grp:rwin_switch)
+		default_switch='Right Win-key';;
+	    grp:lwin_switch)
+		default_switch='Left Win-key';;
+	    grp:win_switch)
+		default_switch='Both Win-keys';;
+	    lv3:ralt_switch)
+		default_altgr='Right Alt';;
+	    lv3:ralt_switch_multikey)
+		default_altgr='Right Alt (Shift+RightAlt=Compose)';;
+	    lv3:switch)
+		default_altgr='Right Control';;
+	    lv3:menu_switch)
+		default_altgr='Menu-key';;
+	    lv3:rwin_switch)
+		default_altgr='Right Win-key';;
+	    lv3:lwin_switch)
+		default_altgr='Left Win-key';;
+	    lv3:win_switch)
+		default_altgr='Both Win-keys';;
+	    compose:ralt)
+		default_compose='Right Alt';;
+	    compose:rwin)
+		default_compose='Right Win-key';;
+	    compose:menu)
+		default_compose='Menu-key';;
+	    compose:caps)
+		default_compose='Caps Lock';;
+	esac
+    done
+    db_set console-setup/toggle "$default_toggle"
+    db_set console-setup/switch "$default_switch"
+    db_set console-setup/altgr "$default_altgr"
+    db_set console-setup/compose "$default_compose"
+fi
+
+######################################################################
+
 STATE=1
 old_state=0
 while :; do
@@ -886,9 +1040,18 @@ while :; do
 	    fi
 	    ;;
 	2)
-	    if \
+	    if [ "$unsupported_layout" = yes ]; then
+		if [ "$STATE" -ge "$old_state" ]; then
+		    db_input medium console-setup/dont_ask_layout || true
+		    db_go || true
+		    db_set console-setup/layoutcode "$XKBLAYOUT"
+		    STATE=$(($STATE + 1))
+		else
+		    STATE=$(($STATE - 1))
+		fi
+	    elif \
 		ask_debconf console-setup/layout critical \
-		    layout $default_layout
+		    layout "$default_layout"
 	    then
 		layout="$RET"
 		case "$layout" in
@@ -913,9 +1076,13 @@ while :; do
 	    fi
 	    ;;
 	3)
-	    if \
+	    if [ "$unsupported_layout" = yes ]; then
+		db_set console-setup/variantcode "$XKBVARIANT"
+		# skip the question without making Debconf loop
+		STATE=$(( $STATE + $STATE - $old_state ))
+	    elif \
 		ask_debconf console-setup/variant high \
-		    "variant\*${layout}" ''
+                    "variant\*${layout}" "$default_variant"
 	    then
 		if [ "$latin" = yes ]; then
 		    db_set console-setup/variantcode "$RET"
@@ -928,22 +1095,230 @@ while :; do
 	    fi
 	    ;;
 	4)
-	    if [ "$latin" = yes ]; then
-		db_set console-setup/toggle 'No toggling'
-		db_set console-setup/switch 'No temporary switch'
-	    fi
-	    db_beginblock
-	    if [ "$latin" = no ]; then
-		db_input high console-setup/toggle || true
-		db_input medium console-setup/switch || true
-	    fi
-	    db_input medium console-setup/altgr || true
-	    db_input medium console-setup/compose || true
-	    db_endblock
-	    if db_go; then 
-		STATE=$(($STATE + 1))
+	    if [ "$unsupported_layout" = yes ]; then
+		db_set console-setup/optionscode "$XKBOPTIONS"
+		# skip the questions without making Debconf loop
+		STATE=$(( $STATE + $STATE - $old_state ))
 	    else
-		STATE=$(($STATE - 1))
+		if [ "$latin" = yes ]; then
+		    db_set console-setup/toggle 'No toggling'
+		    db_set console-setup/switch 'No temporary switch'
+		fi
+		db_beginblock
+		if [ "$latin" = no ]; then
+		    db_input high console-setup/toggle || true
+		    db_input medium console-setup/switch || true
+		fi
+		db_input medium console-setup/altgr || true
+		db_input medium console-setup/compose || true
+		db_endblock
+
+		if db_go; then 
+		    STATE=$(($STATE + 1))
+		else
+		    STATE=$(($STATE - 1))
+		fi
+
+		db_get console-setup/toggle
+		case "$RET" in
+		    Caps\ Lock)
+		        caps_allocated=yes
+		        toggle=caps_toggle;;
+		    Scroll\ Lock)
+		        sclk_allocated=yes
+		        toggle=sclk_toggle;;
+		    Right\ Alt)
+		        ralt_allocated=yes
+		        toggle=toggle;;
+		    Right\ Control)
+		        rctrl_allocated=yes
+		        toggle=rctrl_toggle;;
+		    Right\ Shift)
+		        rshift_allocated=yes
+		        toggle=rshift_toggle;;
+		    Right\ Win-key)
+		        rwin_allocated=yes
+		        toggle=rwin_toggle;;
+		    Menu-key)
+			menu_allocated=yes
+			toggle=menu_toggle;;
+		    Alt+Shift)
+			toggle=alt_shift_toggle;;
+		    Control+Shift)
+			toggle=ctrl_shift_toggle;;
+		    Control+Alt)
+			toggle=ctrl_alt_toggle;;
+		    Both\ Shift\ keys\ together)
+		        toggle=shift_toggle;;
+		    Both\ Control\ keys\ together)
+		        toggle=ctrls_toggle;;
+		    Both\ Alt\ keys\ together)
+		        toggle=alts_toggle;;
+		    Left\ Alt)
+		        lalt_allocated=yes
+		        toggle=lalt_toggle;;
+		    Left\ Control)
+		        lctrl_allocated=yes
+		        toggle=lctrl_toggle;;
+		    Left\ Shift)
+		        lshift_allocated=yes
+		        toggle=lshift_toggle;;
+		    Left\ Win-key)
+		        lwin_allocated=yes
+		        toggle=lwin_toggle;;
+		    No\ toggling)
+		        toggle='';;
+		    *)
+			echo Unknown toggle key option
+			exit 1
+			;;
+		esac
+		if [ "$toggle" ]; then
+		    toggle=grp:$toggle
+		fi
+		
+		db_get console-setup/switch
+		switch=''
+		case "$RET" in
+		    Right\ Alt)
+		        if [ "$ralt_allocated" != yes ]; then
+			    switch=switch
+			    ralt_allocated=yes
+		        fi;;
+		    Left\ Alt)
+		        if [ "$lalt_allocated" != yes ]; then
+			    switch=lswitch
+			    lalt_allocated=yes
+		        fi;;
+		    Right\ Win-key)
+		        if [ "$rwin_allocated" != yes ]; then
+			    switch=rwin_switch
+			    rwin_allocated=yes
+		        fi;;
+		    Left\ Win-key)
+		        if [ "$lwin_allocated" != yes ]; then
+			    switch=lwin_switch
+			    lwin_allocated=yes
+		        fi;;
+		    Both\ Win-keys)
+		        if \
+			    [ "$rwin_allocated" != yes ] \
+			    && [ "$lwin_allocated" != yes ]
+			then
+			    switch=win_switch
+			    rwin_allocated=yes
+			    lwin_allocated=yes
+		        fi;;
+		    No\ temporary\ switch)
+		        switch='';;
+		    *)
+			echo Unknown switch key option
+			exit 1
+			;;
+		esac
+		if [ "$switch" ]; then
+		    switch=grp:$switch
+		fi
+		
+		db_get console-setup/altgr
+		altgr=''
+		case "$RET" in
+		    No?AltGr?key)
+			altgr='';;
+		    Right?Alt)
+			if [ "$ralt_allocated" != yes ]; then
+			    altgr=ralt_switch
+			    ralt_allocated=yes
+			fi;;
+		    Right?Alt??Shift+RightAlt=Compose?)
+			if [ "$ralt_allocated" != yes ]; then
+			    altgr=ralt_switch_multikey
+			    ralt_allocated=yes
+			fi;;
+		    Right?Control)
+			if [ "$rctrl_allocated" != yes ]; then
+			    altgr=switch
+			    rctrl_allocated=yes
+			fi;;
+		    Menu-key)
+			if [ "$menu_allocated" != yes ]; then
+			    altgr=menu_switch
+			    menu_allocated=yes
+			fi;;
+		    Right?Win-key)
+			if [ "$rwin_allocated" != yes ]; then
+			    altgr=rwin_switch
+			    rwin_allocated=yes
+			fi;;
+		    Left?Win-key)
+			if [ "$lwin_allocated" != yes ]; then
+			    altgr=lwin_switch
+			    lwin_allocated=yes
+			fi;;
+		    Both?Win-keys)
+			if \
+			    [ "$rwin_allocated" != yes ] \
+			    && [ "$lwin_allocated" != yes ]
+			then
+			    altgr=win_switch
+			    rwin_allocated=yes
+			    lwin_allocated=yes
+			fi;;
+		    *)
+			echo Unknown altgr key option
+			exit 1
+			;;
+		esac
+		if [ "$altgr" ]; then
+		    altgr=lv3:$altgr
+		fi
+
+		db_get console-setup/compose
+		compose=''
+		case "$RET" in
+		    No?compose?key)
+			compose='';;
+		    Right?Alt)
+			if [ "$ralt_allocated" != yes ]; then
+			    compose=ralt
+			    ralt_allocated=yes
+			fi;;
+		    Right?Win-key)
+			if [ "$rwin_allocated" != yes ]; then
+			    compose=rwin
+			    rwin_allocated=yes
+			fi;;
+		    Menu-key)
+			if [ "$menu_allocated" != yes ]; then
+			    compose=menu
+			    menu_allocated=yes
+			fi;;
+		    Caps?Lock)
+			if [ "$caps_allocated" != yes ]; then
+			    compose=caps
+			    caps_allocated=yes
+			fi;;
+		    *)
+			echo Unknown compose key option
+			exit 1
+			;;
+		esac
+		if [ "$compose" ]; then
+		    compose=compose:$compose
+		fi
+		
+		case "$real_layout" in
+		    *,*)
+		        leds=grp_led:scroll;;
+		    *)
+			leds='';;
+		esac
+		
+		options=$(
+		    echo $toggle $switch $altgr $compose $leds \
+			| sed -e 's/^ *//' -e 's/ *$//' -e 's/  */,/g'
+		)
+		db_set console-setup/optionscode "$options"
 	    fi
 	    ;;		    
 	5)
@@ -952,7 +1327,7 @@ while :; do
 	    # remove newlines
 	    choices=`echo $choices | sed -e 's/,$//' `
 	    db_subst console-setup/charmap CHOICES "$choices"
-	    db_set console-setup/charmap "$charmap"
+	    db_set console-setup/charmap "$default_charmap"
 	    db_input $charmap_priority console-setup/charmap || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
@@ -963,7 +1338,7 @@ while :; do
 	    charmap=$RET
 	    ;;
 	6)
-	    db_set console-setup/codeset "$codeset"
+	    db_set console-setup/codeset "$default_codeset"
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
 		STATE=$(($STATE + 1))

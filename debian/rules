@@ -3,8 +3,11 @@
 SHELL = /bin/bash
 export DH_COMPAT=3
 
-build:
+main_build:
 	$(MAKE)
+	touch main_build
+
+debian/config: debian/config.proto main_build
 	awk ' \
 /## *FONTSETS *##/ { \
     printf "fontsets='\''"; \
@@ -28,13 +31,14 @@ build:
 { \
    print; \
 }' debian/config.proto >debian/config
-	touch build
+
+build: main_build debian/config
 
 .PHONY : clean
 clean:
 	dh_testdir
 	-$(MAKE) clean
-	-rm -f build
+	-rm -f build main_build
 	-rm -f debian/config
 	dh_clean
 

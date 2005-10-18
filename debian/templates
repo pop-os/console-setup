@@ -32,6 +32,14 @@ Description: Which variant do you have ?
  The layout you selected has several variants.  Please select the one
  matching your keyboard.
 
+Template: console-setup/dont_ask_layout
+Type: note
+Description: No questions about layout will be asked
+ The configuration file /etc/default/console-setup specifies keyboard
+ layout and variant that are not supported by the configuration
+ program.  Thats why no questions about the keyboard layout will be
+ asked and your current configuration will be preserved.
+
 Template: console-setup/fontface
 Type: select
 Choices: ${CHOICES}
@@ -160,6 +168,11 @@ Default: none
 Description: for internal use
 
 Template: console-setup/variantcode
+Type: string
+Default: none
+Description: for internal use
+
+Template: console-setup/optionscode
 Type: string
 Default: none
 Description: for internal use

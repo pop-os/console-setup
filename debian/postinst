@@ -2,6 +2,9 @@
 
 set -e
 
+CONFIGDIR=/etc/console-setup
+CONFIGFILE=/etc/default/console-setup
+
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
@@ -36,243 +39,95 @@ if [ "$1" = "configure" ]; then
     db_get console-setup/variantcode
     variant="$RET"
 
-    db_get console-setup/toggle
-    case "$RET" in
-	Caps\ Lock)
-	    caps_allocated=yes
-	    toggle=caps_toggle;;
-	Scroll\ Lock)
-	    sclk_allocated=yes
-	    toggle=sclk_toggle;;
-	Right\ Alt)
-	    ralt_allocated=yes
-	    toggle=toggle;;
-	Right\ Control)
-	    rctrl_allocated=yes
-	    toggle=rctrl_toggle;;
-	Right\ Shift)
-	    rshift_allocated=yes
-	    toggle=rshift_toggle;;
-	Right\ Win-key)
-	    rwin_allocated=yes
-	    toggle=rwin_toggle;;
-	Menu-key)
-	    menu_allocated=yes
-	    toggle=menu_toggle;;
-	Alt+Shift)
-	    toggle=alt_shift_toggle;;
-	Control+Shift)
-	    toggle=ctrl_shift_toggle;;
-	Control+Alt)
-	    toggle=ctrl_alt_toggle;;
-	Both\ Shift\ keys\ together)
-	    toggle=shift_toggle;;
-	Both\ Control\ keys\ together)
-	    toggle=ctrls_toggle;;
-	Both\ Alt\ keys\ together)
-	    toggle=alts_toggle;;
-	Left\ Alt)
-	    lalt_allocated=yes
-	    toggle=lalt_toggle;;
-	Left\ Control)
-	    lctrl_allocated=yes
-	    toggle=lctrl_toggle;;
-	Left\ Shift)
-	    lshift_allocated=yes
-	    toggle=lshift_toggle;;
-	Left\ Win-key)
-	    lwin_allocated=yes
-	    toggle=lwin_toggle;;
-	No\ toggling)
-	    toggle='';;
-	*)
-	    echo Unknown toggle key option
-	    exit 1
-	    ;;
-    esac
-    if [ "$toggle" ]; then
-	toggle=grp:$toggle
-    fi
+    db_get console-setup/optionscode
+    options="$RET"
 
-    db_get console-setup/switch
-    switch=''
-    case "$RET" in
-	Right\ Alt)
-	    if [ "$ralt_allocated" != yes ]; then
-		switch=switch
-		ralt_allocated=yes
-	    fi;;
-	Left\ Alt)
-	    if [ "$lalt_allocated" != yes ]; then
-		switch=lswitch
-		lalt_allocated=yes
-	    fi;;
-	Right\ Win-key)
-	    if [ "$rwin_allocated" != yes ]; then
-		switch=rwin_switch
-		rwin_allocated=yes
-	    fi;;
-	Left\ Win-key)
-	    if [ "$lwin_allocated" != yes ]; then
-		switch=lwin_switch
-		lwin_allocated=yes
-	    fi;;
-	Both\ Win-keys)
-	    if \
-		[ "$rwin_allocated" != yes ] \
-		&& [ "$lwin_allocated" != yes ]
-	    then
-		switch=win_switch
-		rwin_allocated=yes
-		lwin_allocated=yes
-	    fi;;
-	No\ temporary\ switch)
-	    switch='';;
-	*)
-	    echo Unknown switch key option
-	    exit 1
-	    ;;
-    esac
-    if [ "$switch" ]; then
-	switch=grp:$switch
-    fi
+    [ -f $CONFIGDIR/$fontname ] || cp $fontdir/$fontname $CONFIGDIR/
 
-    db_get console-setup/altgr
-    altgr=''
-    case "$RET" in
-	No?AltGr?key)
-	    altgr='';;
-	Right?Alt)
-	    if [ "$ralt_allocated" != yes ]; then
-		altgr=ralt_switch
-		ralt_allocated=yes
-	    fi;;
-	Right?Alt??Shift+RightAlt=Compose?)
-	    if [ "$ralt_allocated" != yes ]; then
-		altgr=ralt_switch_multikey
-		ralt_allocated=yes
-	    fi;;
-	Right?Control)
-	    if [ "$rctrl_allocated" != yes ]; then
-		altgr=switch
-		rctrl_allocated=yes
-	    fi;;
-	Menu-key)
-	    if [ "$menu_allocated" != yes ]; then
-		altgr=menu_switch
-		menu_allocated=yes
-	    fi;;
-	Right?Win-key)
-	    if [ "$rwin_allocated" != yes ]; then
-		altgr=rwin_switch
-		rwin_allocated=yes
-	    fi;;
-	Left?Win-key)
-	    if [ "$lwin_allocated" != yes ]; then
-		altgr=lwin_switch
-		lwin_allocated=yes
-	    fi;;
-	Both?Win-keys)
-	    if \
-		[ "$rwin_allocated" != yes ] \
-		&& [ "$lwin_allocated" != yes ]
-	    then
-		altgr=win_switch
-		rwin_allocated=yes
-		lwin_allocated=yes
-	    fi;;
-	*)
-	    echo Unknown altgr key option
-	    exit 1
-	    ;;
-    esac
-    if [ "$altgr" ]; then
-	altgr=lv3:$altgr
-    fi
-
-    db_get console-setup/compose
-    compose=''
-    case "$RET" in
-	No?compose?key)
-	    compose='';;
-	Right?Alt)
-	    if [ "$ralt_allocated" != yes ]; then
-		compose=ralt
-		ralt_allocated=yes
-	    fi;;
-	Right?Win-key)
-	    if [ "$rwin_allocated" != yes ]; then
-		compose=rwin
-		rwin_allocated=yes
-	    fi;;
-	Menu-key)
-	    if [ "$menu_allocated" != yes ]; then
-		compose=menu
-		menu_allocated=yes
-	    fi;;
-	Caps?Lock)
-	    if [ "$caps_allocated" != yes ]; then
-		compose=caps
-		caps_allocated=yes
-	    fi;;
-	*)
-	    echo Unknown compose key option
-	    exit 1
-	    ;;
-    esac
-    if [ "$compose" ]; then
-	compose=compose:$compose
-    fi
-
-    case "$layout" in
-	*,*)
-	    leds=grp_led:scroll;;
-	*)
-	    leds='';;
-    esac
-
-    options=$(
-	echo $toggle $switch $altgr $compose $leds \
-	    | sed -e 's/^ *//' -e 's/ *$//' -e 's/  */,/g'
-    )
-
-# TODO: behave properly when the local administrator has changed these
-    [ -f /etc/console-setup/$fontname ] \
-	|| cp $fontdir/$fontname /etc/console-setup/
     if [ "$charmap" != UTF-8 ]; then
-	[ -f /etc/console-setup/$charmap.acm.gz ] \
-	    || cp /usr/share/consoletrans/$charmap.acm.gz /etc/console-setup/
-	acm=/etc/console-setup/$charmap.acm.gz
+	[ -f $CONFIGDIR/$charmap.acm.gz ] \
+	    || cp /usr/share/consoletrans/$charmap.acm.gz $CONFIGDIR/
+	acm=$CONFIGDIR/$charmap.acm.gz
 	acm_option="-charmap $charmap"
     else
 	acm=''
 	acm_option=''
     fi
-    ckbcomp $acm_option -model "$model" "$layout" "$variant" "$options" \
-	| gzip -9 >/etc/console-setup/boottime.kmap.gz
-    keymap_md5=`md5sum /etc/console-setup/boottime.kmap.gz | sed 's/ .*//'`
-    cat >/etc/default/console-setup <<EOF
+
+    if [ ! -e $CONFIGFILE ]; then
+	cat >$CONFIGFILE <<EOF
 VERBOSE_OUTPUT=no
 
 ACTIVE_CONSOLES="$ttys"
 CHARMAP=$charmap
-FONT=/etc/console-setup/$fontname
+CODESET=$codeset
+FONTFACE=$fontface
+FONTSIZE=$fontsize
 
-ACM=$acm
+# You can also directly specify the font and the ACM to load at boot time:
+# FONT=$CONFIGDIR/$fontname
+# ACM=$acm
+
 XKBMODEL=$model
 XKBLAYOUT=$layout
 XKBVARIANT=$variant
 XKBOPTIONS=$options
 
 # Do not update the following md5 sum if you change
-# /etc/console-setup/boottime.kmap.gz and Debconf will not overwrite
+# $CONFIGDIR/boottime.kmap.gz and Debconf will not overwrite
 # your custom keymap.  Do not update it even if you want to make
 # Debconf overwrite it.  Instead simply specify the empty string as
 # a md5 sum.
 
-BOOTTIME_KMAP_MD5=$keymap_md5
+BOOTTIME_KMAP_MD5=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 EOF
+    fi
 
+    . $CONFIGFILE || true
+
+    if \
+	[ -z "$BOOTTIME_KMAP_MD5" ] \
+	|| [ ! -f "$CONFIGDIR/boottime.kmap.gz" ] \
+	|| echo "$BOOTTIME_KMAP_MD5  $CONFIGDIR/boottime.kmap.gz" \
+	    | md5sum -c 2>/dev/null >/dev/null
+    then
+	ckbcomp $acm_option -model "$model" "$layout" "$variant" "$options" \
+	    | gzip -9 >$CONFIGDIR/boottime.kmap.gz
+	BOOTTIME_KMAP_MD5=`md5sum $CONFIGDIR/boottime.kmap.gz | sed 's/ .*//'`
+    fi
+
+    # Ensure we do not mess up the config file's ownership and permissions.
+    cp -a -f $CONFIGFILE $CONFIGFILE.tmp
+
+    # If the admin deleted or commented some variables but then set
+    # them via debconf, (re-)add them to the conffile.
+    for var in \
+	ACTIVE_CONSOLES CHARMAP CODESET FONTFACE FONTSIZE \
+	XKBMODEL XKBLAYOUT XKBVARIANT XKBOPTIONS BOOTTIME_KMAP_MD5
+    do
+        if ! grep "^ *${var}=" $CONFIGFILE >/dev/null; then
+	    echo "${var}=" >>$CONFIGFILE
+	fi
+    done    
+    
+    awk '
+/^ *ACTIVE_CONSOLES=/ { print "ACTIVE_CONSOLES=\"'$ttys'\""; next; }
+/^ *CHARMAP=/ { print "CHARMAP=\"'$charmap'\""; next; }
+/^ *CODESET=/ { print "CODESET=\"'$codeset'\""; next; }
+/^ *FONTFACE=/ { print "FONTFACE=\"'$fontface'\""; next; }
+/^ *FONTSIZE=/ { print "FONTSIZE=\"'$fontsize'\""; next; }
+/^ *XKBMODEL=/ { print "XKBMODEL=\"'$model'\""; next; }
+/^ *XKBLAYOUT=/ { print "XKBLAYOUT=\"'$layout'\""; next; }
+/^ *XKBVARIANT=/ { print "XKBVARIANT=\"'$variant'\""; next; }
+/^ *XKBOPTIONS=/ { print "XKBOPTIONS=\"'$options'\""; next; }
+/^ *BOOTTIME_KMAP_MD5=/ {
+    print "BOOTTIME_KMAP_MD5=\"'$BOOTTIME_KMAP_MD5'\"";
+    next;
+}
+{ print; }
+' <$CONFIGFILE >$CONFIGFILE.tmp
+    
+    mv -f $CONFIGFILE.tmp $CONFIGFILE
 fi
 
 #DEBHELPER#
