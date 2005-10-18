@@ -32,12 +32,18 @@ case "$1" in
 		else
 		    /bin/echo -n -e '\033%@' >$console
 		fi
+		if [ ! -f "$FONT" ]; then
+		    FONT=/etc/console-setup/$CODESET-$FONTFACE$FONTSIZE.psf.gz
+		fi
 		if [ -f "$FONT" ]; then
 		    if which consolechars >/dev/null; then
 			eval consolechars -v --tty=$console -f "$FONT" $verbose
 		    elif which setfont >/dev/null; then
 			eval setfont -v -C $console "$FONT" $verbose
 		    fi
+		fi
+		if [ ! -f "$ACM" ]; then
+		    ACM=/etc/console-setup/$CHARMAP.acm.gz
 		fi
 		if [ "$CHARMAP" != UTF-8 ] && [ -f "$ACM" ]; then
 		    if which consolechars >/dev/null; then
