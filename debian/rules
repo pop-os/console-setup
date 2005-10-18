@@ -40,6 +40,7 @@ clean:
 	-$(MAKE) clean
 	-rm -f build main_build
 	-rm -f debian/config
+	-rm -f debian/*~
 	dh_clean
 
 .PHONY : install

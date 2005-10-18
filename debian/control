@@ -3,7 +3,7 @@ Section: utils
 Priority: important
 Maintainer: Console utilities maintainers <pkg-kbd-devel@lists.alioth.debian.org>
 Uploaders: Anton Zinoviev <anton@lml.bas.bg>
-Build-Depends-Indep: debhelper (>= 4.1.6), perl, po-debconf, libxml-parser-perl
+Build-Depends-Indep: debhelper (>= 4.1.16), perl, po-debconf, libxml-parser-perl
 Standards-Version: 3.6.1
 
 Package: console-setup
