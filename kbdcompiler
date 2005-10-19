@@ -139,7 +139,7 @@ sub compile_keymap {
 	my $actual_variant = (($actual_layout =~ /,/)
 			      ? ",$variant"
 			      : $variant);
-	system ("./ckbcomp $acm -rules rules -model $model"
+	system ("./ckbcomp -I. -Ickb $acm -rules rules -model $model"
 		." -layout $actual_layout -variant $actual_variant"
 		." >$filename")
 	    and die "$0: ckbcomp failed\n"
@@ -149,7 +149,7 @@ sub compile_keymap {
 	my $filename = ("$model_dir/$encoding/$model_prefix"
 			."$name$encoding_suffix.kmap");
 	print "   $filename\n";
-	system ("./ckbcomp $acm -rules rules -model $model"
+	system ("./ckbcomp -I. -Ickb $acm -rules rules -model $model"
 		." -layout $actual_layout >$filename")
 	    and die "$0: ckbcomp failed\n"
 	    if (! -f $filename);
@@ -160,6 +160,7 @@ sub compile_keymap {
 print "Compiling keymaps:\n";
 ensuredir "${keymapsdir}";
 for my $encoding ('UTF-8', keys %legacy_charmaps) {
+    $encoding eq 'UTF-8' or next;
     my @layouts = ($encoding eq 'UTF-8'
 		   ? values %KeyboardNames::layouts
 		   : @{$legacy_charmaps{$encoding}});
@@ -167,24 +168,20 @@ for my $encoding ('UTF-8', keys %legacy_charmaps) {
 	for my $layout (@layouts) {
 	    next if ($layout eq 'nec/jp');
 	    for my $variant ('', values %{$KeyboardNames::variants{$layout}}) {
+		$variant eq '' or next;
 		compile_keymap $encoding, $model, $layout, $variant;
 	    }
 	}
     }
 }
+
 for my $encoding ('UTF-8', 'ISO-8859-1') {
+    $encoding eq 'UTF-8' or next;
     for my $variant ('', 'nodeadkeys') {
+	$variant eq '' or next;
 	compile_keymap $encoding, 'abnt2', 'br', $variant;
     }
 }
-
-open GENERATED, '>keymaps.dir' or die "$0: keymaps.dir: $!\n";
-for my $specification (sort keys %generated) {
-    my $file = $generated{$specification};
-    $file =~ s/^keymaps\///;
-    print GENERATED "$specification\t$file\n";
-}
-close GENERATED;
 
 my %options = (
     'grp:switch' => [ 'ralt' ],
@@ -255,7 +252,7 @@ for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
 	$filename =~ s/:/-/g;
 	print "   $filename\n";
 	
-	system ("./ckbcomp -keycodes '$keycodes' -symbols '$layout' "
+	system ("./ckbcomp -I. -Ickb -keycodes '$keycodes' -symbols '$layout' "
 		.">'$filename'")
 	    and die "$0: ckbcomp failed\n"
 	    if (! -f $filename);
@@ -264,17 +261,25 @@ for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
 
 print "done.\n";
 
-open NAMES, '>names.list' or die "$0: names.list: $!\n";
-for my $model (keys %KeyboardNames::models) {
-    my $name = $KeyboardNames::models{$model};
-    print NAMES "model*$name*$model\n"
-}
-for my $layout (keys %KeyboardNames::layouts) {
-    my $name = $KeyboardNames::layouts{$layout};
-    print NAMES "layout*$name*$layout\n";
-    for my $variant (keys %{$KeyboardNames::variants{$name}}) {
-	my $variantname = $KeyboardNames::variants{$name}{$variant};
-	print NAMES "variant*$name*$variantname*$variant\n";
-    }
-}
-close NAMES;
+# open GENERATED, '>keymaps.dir' or die "$0: keymaps.dir: $!\n";
+# for my $specification (sort keys %generated) {
+#     my $file = $generated{$specification};
+#     $file =~ s/^keymaps\///;
+#     print GENERATED "$specification\t$file\n";
+# }
+# close GENERATED;
+
+# open NAMES, '>names.list' or die "$0: names.list: $!\n";
+# for my $model (keys %KeyboardNames::models) {
+#     my $name = $KeyboardNames::models{$model};
+#     print NAMES "model*$name*$model\n"
+# }
+# for my $layout (keys %KeyboardNames::layouts) {
+#     my $name = $KeyboardNames::layouts{$layout};
+#     print NAMES "layout*$name*$layout\n";
+#     for my $variant (keys %{$KeyboardNames::variants{$name}}) {
+# 	my $variantname = $KeyboardNames::variants{$name}{$variant};
+# 	print NAMES "variant*$name*$variantname*$variant\n";
+#     }
+# }
+# close NAMES;
