@@ -11,20 +11,20 @@ debian/config: debian/config.proto main_build
 	awk ' \
 /## *FONTSETS *##/ { \
     printf "fontsets='\''"; \
-    system("ls *.psf | sed '\''s/.psf$$//'\''"); \
+    system("cd Fonts && ls *.psf | sed '\''s/.psf$$//'\''"); \
     printf "'\''"; \
     next; \
 } \
 /## *CHARMAPS *##/ { \
     printf "charmaps='\''"; \
-    system("ls acm/*.acm |sed -e '\''s/^acm.//'\'' -e '\''s/.acm$$//'\''"); \
+    system("cd Keyboard && ls acm/*.acm |sed -e '\''s/^acm.//'\'' -e '\''s/.acm$$//'\''"); \
     printf "UTF-8\n"; \
     printf "'\''"; \
     next; \
 } \
 /## *KBDNAMES *##/ { \
     printf "kbdnames='\''"; \
-    system("./kbdnames-maker"); \
+    system("cd Keyboard && ./kbdnames-maker"); \
     printf "'\''"; \
     next; \
 } \
@@ -49,12 +49,12 @@ install: build
 	dh_testroot
 	dh_clean -k
 	dh_installdirs etc/console-setup 
-	dh_install *.psf.gz usr/share/consolefonts/
-	dh_install acm/*.acm.gz usr/share/consoletrans
-	dh_install compose.*.inc etc/console-setup/
-	dh_install ckb/ etc/console-setup/
+	dh_install Fonts/*.psf.gz usr/share/consolefonts/
+	dh_install Keyboard/acm/*.acm.gz usr/share/consoletrans
+	dh_install Keyboard/compose.*.inc etc/console-setup/
+	dh_install Keyboard/ckb/ etc/console-setup/
+	dh_install Keyboard/ckbcomp usr/bin/
 	rm -rf `find debian/console-setup/etc/console-setup/ -name .svn`
-	dh_install ckbcomp usr/bin/
 	dh_installinit --noscripts
 
 # Build architecture-independent files here.
