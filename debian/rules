@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 SHELL = /bin/bash
-export DH_COMPAT=3
+export DH_COMPAT=5
 
 main_build:
 	$(MAKE)
