@@ -25,6 +25,20 @@ case "$1" in
 	esac
 
 	echo -n "Setting up font and keyboard on the console... "
+
+        # On Mac PPC machines, we may need to set kernel vars first
+        # We need to mount /proc to do that; not optimal, as its going to 
+        # be mounted in S10checkroot, but we need it set up before sulogin
+        # may be run in checkroot, which will need the keyboard to log in...
+	if [ -x /sbin/sysctl ] && [ -r /etc/sysctl.conf ]; then
+	    if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
+		grep keycodes /etc/sysctl.conf | grep -v "^#" \
+		    | while read d ; do
+		        /sbin/sysctl -w $d 2> /dev/null || true
+		      done
+	    fi
+	fi
+
 	if [ "$ACTIVE_CONSOLES" ]; then
 	    for console in $ACTIVE_CONSOLES; do
 		if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
