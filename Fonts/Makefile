@@ -132,9 +132,13 @@ add_bdf = $(patsubst +%, %, \
 ALL_PSF_FONTS = $(sort $(foreach face, $(ALL_FACES), \
 			$(addsuffix -$(face).psf, $(all-CODESETS))))
 
-GOOD_PSF_FONTS = $(filter %-Fixed13.psf %-Fixed14.psf %-Fixed15.psf	\
-%-Fixed16.psf %-Fixed18.psf %-VGA8.psf %-VGA14.psf %-VGA16.psf,		\
-$(PSF_FONTS))
+GOOD_PSF_FONTS = $(filter \
+		%-Fixed13.psf %-Fixed14.psf %-Fixed15.psf \
+		%-Fixed16.psf %-Fixed18.psf \
+		%-Goha12.psf %-Goha14.psf %-Goha16.psf \
+		%-GohaClassic12.psf %-GohaClassic14.psf %-GohaClassic16.psf \
+		%-VGA8.psf %-VGA14.psf %-VGA16.psf, \
+	$(PSF_FONTS))
 
 GZIPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
 GZIPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
