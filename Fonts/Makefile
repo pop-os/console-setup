@@ -5,6 +5,7 @@ build : gziped_good_psf_fonts
 %.gz : %
 	gzip -9 <$< >$@
 
+# All available non-legacy font faces
 FACES = Fixed13 Fixed14 Fixed15 Fixed16 \
 	Fixed18 Fixed24x12 \
 	Fixedbold13 Fixedbold14 Fixedbold15 Fixedbold16 \
