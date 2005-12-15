@@ -37,6 +37,28 @@ also obtain it by writing to the Free Software Foundation, Inc.,
 sub-<file>Makefile</file>s in the directories <file>Fonts</file> and
 <file>Keyboard</file>.
 
+<sect>Fonts
+
+<p> Only 256 (or 512) glyphs can be used in the console fonts.  Because
+of that it is impossible to use one universal font suitable for all
+languages.  So we have to support different font collections for the
+different languages.
+
+<p> Maintaining many different font collections has some obious
+disadvantages.  First, the look of the console will depend on the
+character set.  Second, it is difficult to follow the quality and the
+purpose of so many different fonts.  The solution is to maintain
+common fonts in BDF format for all languages and translate them to
+many fonts in PSF format for the different character sets.
+
+<p> The new console fonts are named after the scheme
+<var>CHARSET</var>-<var>FONTFACE</var>.psf, <var>CHARSET</var> might
+be for example Arabic, CyrAsia or Lat38 (see <ref id="charsets">) and
+<var>FONTFACE</var> can be for example Fixed16.  The number in
+<var>FONTFACE</var> represents the number of scan lines in the font.
+
+<sect> <prgn>describe_unicodes</prgn>
+
 <p> The main directory contains the utility
 <prgn>describe_unicodes</prgn>.  This utility is never invoked
 automatically.  Its purpose is to make files containing many Unicodes
@@ -60,41 +82,17 @@ U+02C9 U+00AF
 # U+00AF:   MACRON
 </example>
 
-This utility is idempotent, i.e. you can use it as many times as
+<p> This utility is idempotent, i.e. you can use it as many times as
 necessary on one and the same file in order to update the comments.
 
-<chapt>Fonts
-
-<p> Only 256 (or 512) glyphs can be used in the console fonts.  Because
-of that it is impossible to use one universal font suitable for all
-languages.  So we have to support different font collections for the
-different languages.
-
-<p> Maintaining many different font collections has some obious
-disadvantages.  First, the look of the console will depend on the
-character set.  Second, it is difficult to follow the quality and the
-purpose of so many different fonts.  The solution is to maintain
-common fonts in BDF format for all languages and translate them to
-many fonts in PSF format for the different code sets.
-
-<p>The traditionally used font collection for the Linux console is a
-demonstration for the big mess.  There are many different fonts and
-nobody in the world knew the exact purpose of all of them.  During the
-years new fonts were added, but old were almost newer removed.
-
-<p>Some of the fonts shared common typeface, i.e. they were
-differently encoded but the common glyphs were equal.  In total,
-however, there were too many different typefaces that generally differ
-one from another only a little.
-
-<sect><prgn>bdf2psf</prgn>
+<chapt><prgn>bdf2psf</prgn>
 
 <p>The program <prgn>bdf2psf</prgn> translates BDF fonts to PSF
 format.  It accepts fonts with arbitrary size of the font matrix.  If
 the width of matrix of the source font is 7 or 9 pixels then it
 generates fonts with width of 8 pixels.
 
-<sect1>Synopsis
+<sect>Synopsis
 
 <p>
 <example>
@@ -138,7 +136,10 @@ glyphs.  See <ref id="equivalence">.
 
 <item> Generate PSF font for the character set described in the file
 <prgn><var>SYMB</var></prgn>.  If more than one character set is
-specified the PSF font will support all of them.  See <ref
+specified the PSF font will support all of them.  When there is no
+space for all character sets, the first in the list take precedence.
+When a colon before the character set is specified no warnings will be
+issued for symbols that could not be placed in the font.  See <ref
 id="charsets">.
 
 <tag> <tt><var>SIZE</var></tt>
@@ -158,7 +159,7 @@ generated font.  This parameter is optional.
 
 </taglist>
 
-<sect1 id="charsets"> Character Sets
+<sect id="charsets"> Character Sets
 
 <p> The encoding of the traditional console fonts follows the standard
 encoding of the different languages.  For example there are fonts for
@@ -284,7 +285,27 @@ character sets were the result of the algorithm:
 symbols of the character set, one per line.  Comments starting with a
 sharp sign are also allowed.
 
-<sect1 id="equivalence">Equivalence files
+<p> There two more special character sets in the files
+<prgn>required.set</prgn> and <prgn>useful.set</prgn>.  The first of
+them lists the symbols that every console font is obligated to
+support.  There two classes of obligatory symbols&mdash;the ASCII
+symbols and the symbols from the so called alternate character set
+(see section "Line Graphics" of <manref name="terminfo" section="5">).
+Notice that in order to limit itself to the cp437 character set, the
+Linux console driver does some approximations of the symbols from the
+alternate character set.  For example it prints U+256A (BOX DRAWINGS
+VERTICAL SINGLE AND HORIZONTAL DOUBLE) instead of the not-equal sign.
+The file <prgn>required.set</prgn> lists the symbols used by the Linux
+console driver (i.e. U+256A instead of the not-equal sign).
+
+<p> In most cases there is more available space in the fonts than
+nacessary.  The spare codes are filled with the symbols from the
+<prgn>useful.set</prgn> special character set.  On the command line of
+<prgn>bdf2psf</prgn> a colon is used before the name of
+<prgn>useful.set</prgn> so no warnings are issued if there is no space
+in the font for some of these symbols.
+
+<sect id="equivalence">Equivalence files
 
 <p> The equivalence files define an equivalence relation between
 unicodes.  The sharp sign is used for comments, the empty lines are
@@ -311,6 +332,184 @@ used&mdash;<file>standard.equivalents</file> and
 The second is used only for the fonts with character set Uni1, its
 purpose is to reduce the number of the necessary glyphs for the Arabic
 letters at the cost of the font quality.
+
+<chapt> The Legacy Fonts
+
+<p> The traditionally used font collection for the Linux console is a
+demonstration for the big mess.  There are many different fonts and
+nobody in the world knew the exact purpose of all of them.  During the
+years new fonts were added, but old were almost newer removed.
+
+<p> Some of the fonts shared common typeface, i.e. they were
+differently encoded but the common glyphs were equal.  In total,
+however, there were too many different typefaces that generally differ
+one from another only a little.
+
+<p> In order to resolve this mess the old console fonts were converted
+to BDF format.
+
+<sect> Conversion from PSF to BDF
+
+<p> In order to reduce the total number of fonts, they were converted
+to BDF format.  During the conversion of the fonts, only one BDF font
+was generated for a group of fonts that share common typeface.
+Console fonts that didn't have embedded Unicode table were simply
+ignored.  The fonts <prgn>LatArCyrHeb*</prgn> were also ignored -
+partialy due to technical reasons and partialy because the other BDF
+fonts are better source for making Unicode console fonts.
+
+<p> The resulting BDF fonts are named after the scheme
+<prgn>legacy<var>NNp</var>.bdf</prgn>, where <var>NN</var> is 8, 10,
+12, 14, 16 or 19 (the number of scan lines of the font, i.e. the font
+matrix is 8x<var>NN</var>) and p is a, b, c, d, e,... and serves to
+ensure the uniqueness of the file names.  Some of the resulting BDF
+fonts were produced by only one source PSF font (for example only
+<prgn>iso06.f08.psf</prgn> was used to produce
+<prgn>legacy8d.bdf</prgn>) while for others it was possible to
+incorporate the glyphs from more than one PSF font (for example six
+different PSF fonts were used to produce <prgn>legacy16e.bdf</prgn>).
+
+<p> The following table documents the correspondence between the file
+names of the resulting BDF fonts and the names of the original PSF
+fonts:
+
+<example>
+legacy8a.bdf: cp857-8x8.psf iso01.f08.psf iso05.f08.psf iso07.f08.psf iso09.f08.psf
+legacy8b.bdf: Cyr_a8x8.psf koi8u_8x8.psf ruscii_8x8.psf
+legacy8c.bdf: iso02.f08.psf iso03.f08.psf iso04.f08.psf iso10.f08.psf
+legacy8d.bdf: iso06.f08.psf
+legacy8e.bdf: iso08.f08.psf
+legacy8f.bdf: lat0-08.psf lat9u-08.psf
+legacy8g.bdf: lat1-08.psf lat1u-08.psf lat9v-08.psf lat9w-08.psf
+legacy8h.bdf: lat2u-08.psf
+legacy8i.bdf: lat4-08.psf lat4a-08.psf lat4u-08.psf
+legacy10a.bdf: lat4-10.psf lat4a-10.psf lat4u-10.psf
+legacy10b.bdf: lat0-10.psf lat9u-10.psf
+legacy10c.bdf: lat1-10.psf lat1u-10.psf lat9v-10.psf lat9w-10.psf
+legacy10d.bdf: lat2u-10.psf
+legacy12a.bdf: lat0-12.psf lat9u-12.psf
+legacy12b.bdf: lat1-12.psf lat1u-12.psf lat9v-12.psf lat9w-12.psf
+legacy12c.bdf: lat2u-12.psf
+legacy12d.bdf: lat4-12.psf lat4a-12.psf lat4u-12.psf
+legacy14a.bdf: cp857-8x14.psf iso01.f14.psf iso05.f14.psf iso09.f14.psf
+legacy14b.bdf: Cyr_a8x14.psf
+legacy14c.bdf: koi8u_8x14.psf
+legacy14d.bdf: ruscii_8x14.psf
+legacy14e.bdf: iso02.f14.psf iso03.f14.psf iso04.f14.psf iso10.f14.psf
+legacy14f.bdf: iso06.f14.psf
+legacy14g.bdf: iso07.f14.psf
+legacy14h.bdf: iso08.f14.psf
+legacy14i.bdf: lat0-14.psf lat9u-14.psf
+legacy14j.bdf: lat1-14.psf lat1u-14.psf lat9v-14.psf lat9w-14.psf
+legacy14k.bdf: lat2u-14.psf
+legacy14l.bdf: lat4-14.psf lat4a-14.psf lat4u-14.psf
+legacy16a.bdf: cp857-8x16.psf iso01.f16.psf iso05.f16.psf iso07.f16.psf iso09.f16.psf
+legacy16b.bdf: Cyr_a8x16.psf koi8u_8x16.psf ruscii_8x16.psf
+legacy16c.bdf: default8x16.psf lat0-sun16.psf lat2-sun16.psf
+legacy16d.bdf: viscii10-8x16.psf
+legacy16e.bdf: iso02.f16.psf iso02g.psf iso03.f16.psf iso03g.psf iso04.f16.psf iso10.f16.psf lat2u-16.psf
+legacy16f.bdf: iso06.f16.psf
+legacy16g.bdf: iso08.f16.psf
+legacy16h.bdf: iso14.f16.psf
+legacy16i.bdf: lat0-16.psf lat9u-16.psf
+legacy16j.bdf: lat1-16.psf lat1u-16.psf
+legacy16k.bdf: lat4-16.psf lat4a-16.psf lat4u-16.psf
+legacy16l.bdf: lat9v-16.psf lat9w-16.psf
+legacy16m.bdf: lat4-16+.psf lat4a-16+.psf lat4u-16+.psf
+legacy19a.bdf: lat4-19.psf lat4a-19.psf lat4u-19.psf
+Goha12.bdf: Goha-12.psf
+Goha14.bdf: Goha-14.psf
+Goha16.bdf: Goha-16.psf
+GohaClasic12.bdf: GohaClasic-12.psf
+GohaClasic14.bdf: GohaClasic-14.psf
+GohaClasic16.bdf: GohaClasic-16.psf
+</example>
+
+<sect> Back Conversion&mdash;from BDF to PSF
+
+<p> Only one PSF font per combination of charset-size is generated
+from the legacy fonts.  This font is named after the scheme
+<var>CHARSET</var>-vga<var>SIZE</var>.psf.  For example
+<file>Greek-vga14.psf</file> is the legacy font for Greek character
+set and size 14.  The list of BDF fonts that is used to produce
+Greek-vga14.psf was determined as folows.
+
+<p> First, see which one of the legacy BDF fonts can provide as many
+glyphs for <file>Greek-vga14.psf</file> as possible.  This was
+<file>legacy14g.bdf</file> (produced from <prgn>iso07.f14.psf</prgn>).
+Then see which one of the other legacy BDF fonts provides as much
+glyphs for <file>Greek-vga14.psf</file> that <prgn>legacy14g</prgn>
+does not provide.  And so on.  The resulting lists are represented as
+<tt>Charset-legacy<var>SIZE</var>-<var>BDFS</var></tt> targets in the
+<prgn>Makefile</prgn>.  It is perfectly OK to handtune them.  For
+example if one decides that the look of <file>legacy16i.bdf</file> is
+superior it is OK to list <file>legacy16i.bdf</file> as primary font
+for <file>Lat15-vga16.psf</file> even though
+<file>legacy16c.bdf</file> provides more glyphs.
+
+<p> There is one exception to the previous paragraph: the wonderful
+font <prgn>UNI_VGA</prgn> of Dmitry Bolkhovityanov was always used as
+a primary font for the <prgn>vga16</prgn> fontface.
+
+<p> The targets <tt>VGA<var>SIZE</var>-CHARSET</tt> in the
+<prgn>Makefile</prgn> specify which charsets are suitable for a
+particular font size.  We see that for some of the sizes only the
+Lat15 and Lat2 charsets are supported by the traditional fonts.  The
+following charsets are completely unsupported by the traditional
+console fonts: Armenian, CyrAsia, Georgian, Lao, Thai and Vietnamese.
+
+<p> The Ethiopian fonts <file>Goha??.bdf</file> and
+<file>GohaClasic??.bdf</file> are not used as legacy fonts.  In all
+currently available non-console BDF fonts the Ethiopian letters are
+double-width and can not be used on the console.  Thats why these
+fonts are treated equaly to the other non-legacy BDF fonts.
+
+<chapt> The New Fonts
+
+<p> Even for the new PSF fonts it is not wisely to use a single BDF
+source.  Many of the BDF fonts share a common look. For example the X
+font <prgn>fixed</prgn> was used by Roman Czyborra in order to create
+his <prgn>unifont.bdf</prgn>.  The same font was used also by
+Electronic Font Open Laboratory for their <prgn>h16.bdf</prgn> and by
+the former Electrotechnical Laboratory (now National Institute of
+Advanced Industrial Science Technology, Japan) for their
+<prgn>etl16-unicode.bdf</prgn> font.
+
+<p> The targets <tt><var>FONTFACE</var>-BDFS</tt> in the
+<prgn>Makefile</prgn> specify the BDF fonts to use in order to
+generate the PSF font fonts.  For example the combination
+"<tt>unifont.bdf</tt> + <tt>h16.bdf</tt> + <tt>etl16-unicode.bdf</tt>"
+is used for the Fixed16 font face.
+
+<p> The <prgn>bdf</prgn> directory contains almost all free BDF fonts
+that can be used to generate console fonts.  Currently they allow to
+generate fonts from the following font faces: Fixed13, Fixed14,
+Fixed15, Fixed16, Fixed18, Fixed24x12, FixedBold13, FixedBold14,
+FixedBold15, FixedBold16, FixedBold18, FixedBold24x12, FixedOblique13,
+Courier13, Courier14, Courier15, Courier16, CourierBold13,
+CourierBold14, CourierBold15, Lucid12, Lucid13, Lucid15, Lucid16,
+Lucid22x12, Lucid29x16, LucidBold11, LucidBold13, LucidBold15,
+LucidBold16, LucidBold22x12, LucidBold29x16, Goha12, Goha14, Goha16,
+GohaClassic12, GohaClassic14 and GohaClassic16.
+
+<p> The targets in the <prgn>Makefile</prgn> are able to generate a
+PSF font for every <var>CHARSET</var>-<var>FONTFACE</var> combination.
+The <prgn>build</prgn> target however will generate font only for the
+"good" combinations.
+
+<p> First, the program <file>fontcodesets</file> is used to determine
+which charsets a particular font face supports.  The result is stored
+in the file <file>soft.Makefile</file> where the variable
+<prgn>PSF_FONTS</prgn> is defined and it is directly included in the
+main <prgn>Makefile</prgn>.  Use the target <prgn>soft.Makefile</prgn>
+in order to update this file (this doesn't happen automatically).
+
+<p> Second, some of the font faces are not generated because they do
+not look very attractive on the console (certainly the choice is a
+personal opinion).  Only the following font faces are approved:
+Fixed13, Fixed14, Fixed15, Fixed16, Fixed18, Goha12, Goha14, Goha16,
+GohaClassic12, GohaClassic14 and GohaClassic16.  See the
+<prgn>GOOD_PSF_FONTS</prgn> variable in the <prgn>Makefile</prgn>.
 
 </book>
 
