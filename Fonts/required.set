@@ -204,7 +204,7 @@ U+007e
 # The symbols defined in terminfo(5) do not always correspond to what
 # actually the Linux console driver prints.  The comments on lines
 # starting with unicode give the definitions by terminfo(5) while
-# following the comment describes the actual meaning of the unicode.
+# the following comment describes the actual meaning of the unicode.
 
 U+00a3 # UK pound sign
 # U+00a3:   POUND SIGN

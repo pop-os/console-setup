@@ -8,15 +8,15 @@ build : gziped_good_psf_fonts
 # All available non-legacy font faces
 FACES = Fixed13 Fixed14 Fixed15 Fixed16 \
 	Fixed18 Fixed24x12 \
-	Fixedbold13 Fixedbold14 Fixedbold15 Fixedbold16 \
-	Fixedbold18 Fixedbold24x12  \
-	Fixedoblique13 \
-	courier13 courier14 courier15 courier16 \
-	courierbold13 courierbold14 courierbold15 \
-	lucid12 lucid13 lucid15 lucid16 lucid22x12 lucid29x16 \
-	lucidbold11 lucidbold13 lucidbold15 \
-	lucidbold16 lucidbold22x12 lucidbold29x16 \
-	goha12 goha14 goha16 gohaclassic12 gohaclassic14 gohaclassic16 
+	FixedBold13 FixedBold14 FixedBold15 FixedBold16 \
+	FixedBold18 FixedBold24x12  \
+	FixedOblique13 \
+	Courier13 Courier14 Courier15 Courier16 \
+	CourierBold13 CourierBold14 CourierBold15 \
+	Lucid12 Lucid13 Lucid15 Lucid16 Lucid22x12 Lucid29x16 \
+	LucidBold11 LucidBold13 LucidBold15 \
+	LucidBold16 LucidBold22x12 LucidBold29x16 \
+	Goha12 Goha14 Goha16 GohaClassic12 GohaClassic14 GohaClassic16 
 
 LEGACY_FACES = VGA8 VGA10 VGA12 VGA14 VGA16 VGA19
 
@@ -31,46 +31,46 @@ Fixed16-BDFS = unifont.bdf+h16.bdf+etl16-unicode.bdf
 Fixed18-BDFS = 9x18.bdf
 Fixed24x12-BDFS = h24.bdf+etl24-unicode.bdf
 
-Fixedbold13-BDFS = 8x13B.bdf+8x13Bc.bdf
-Fixedbold14-BDFS = h14_b.bdf+7x14B-IL2.bdf+7x14B.bdf+7x14c.bdf
-Fixedbold15-BDFS = 9x15B-IL2.bdf+9x15B.bdf+9x15Bc.bdf
-Fixedbold16-BDFS = h16_b.bdf
-Fixedbold18-BDFS = 9x18B.bdf
-Fixedbold24x12-BDFS = h24_b.bdf
+FixedBold13-BDFS = 8x13B.bdf+8x13Bc.bdf
+FixedBold14-BDFS = h14_b.bdf+7x14B-IL2.bdf+7x14B.bdf+7x14c.bdf
+FixedBold15-BDFS = 9x15B-IL2.bdf+9x15B.bdf+9x15Bc.bdf
+FixedBold16-BDFS = h16_b.bdf
+FixedBold18-BDFS = 9x18B.bdf
+FixedBold24x12-BDFS = h24_b.bdf
 
 # We have to complement 8x13O.bdf because it doesn't contain box drawings
-Fixedoblique13-BDFS = 8x13O.bdf+8x13.bdf
+FixedOblique13-BDFS = 8x13O.bdf+8x13.bdf
 
-courier13-BDFS = 75dpi-courR12-IL2.bdf+75dpi-courR12.bdf+75dpi-courR12c.bdf
-courier14-BDFS = 100dpi-courR10-IL2.bdf+100dpi-courR10.bdf
-courier15-BDFS = 75dpi-courR14-IL2.bdf+75dpi-courR14.bdf+75dpi-courR14c.bdf
-courier16-BDFS = 8x16c.bdf+8x16-IL2.bdf
+Courier13-BDFS = 75dpi-courR12-IL2.bdf+75dpi-courR12.bdf+75dpi-courR12c.bdf
+Courier14-BDFS = 100dpi-courR10-IL2.bdf+100dpi-courR10.bdf
+Courier15-BDFS = 75dpi-courR14-IL2.bdf+75dpi-courR14.bdf+75dpi-courR14c.bdf
+Courier16-BDFS = 8x16c.bdf+8x16-IL2.bdf
 
-courierbold13-BDFS = 75dpi-courB12-IL2.bdf+75dpi-courB12.bdf+75dpi-courB12c.bdf
-courierbold14-BDFS = 100dpi-courB10-IL2.bdf+100dpi-courB10.bdf
-courierbold15-BDFS = 75dpi-courB14-IL2.bdf+75dpi-courB14.bdf+75dpi-courB14c.bdf
+CourierBold13-BDFS = 75dpi-courB12-IL2.bdf+75dpi-courB12.bdf+75dpi-courB12c.bdf
+CourierBold14-BDFS = 100dpi-courB10-IL2.bdf+100dpi-courB10.bdf
+CourierBold15-BDFS = 75dpi-courB14-IL2.bdf+75dpi-courB14.bdf+75dpi-courB14c.bdf
 
-lucid12-BDFS = 100dpi-lutRS08-IL2.bdf+100dpi-lutRS08.bdf
-lucid13-BDFS = 75dpi-lutRS12-IL2.bdf+75dpi-lutRS12.bdf+75dpi-lutRS12c.bdf
-lucid15-BDFS = 75dpi-lutRS14-IL2.bdf+75dpi-lutRS14.bdf+75dpi-lutRS14c.bdf
-lucid16-BDFS = 100dpi-lutRS10-IL2.bdf+100dpi-lutRS10.bdf
-lucid22x12-BDFS = 100dpi-lutRS14-IL2.bdf+100dpi-lutRS14.bdf
-lucid29x16-BDFS = 100dpi-lutRS19.bdf
+Lucid12-BDFS = 100dpi-lutRS08-IL2.bdf+100dpi-lutRS08.bdf
+Lucid13-BDFS = 75dpi-lutRS12-IL2.bdf+75dpi-lutRS12.bdf+75dpi-lutRS12c.bdf
+Lucid15-BDFS = 75dpi-lutRS14-IL2.bdf+75dpi-lutRS14.bdf+75dpi-lutRS14c.bdf
+Lucid16-BDFS = 100dpi-lutRS10-IL2.bdf+100dpi-lutRS10.bdf
+Lucid22x12-BDFS = 100dpi-lutRS14-IL2.bdf+100dpi-lutRS14.bdf
+Lucid29x16-BDFS = 100dpi-lutRS19.bdf
 
-lucidbold11-BDFS = 100dpi-lutBS08-IL2.bdf+100dpi-lutBS08.bdf
-lucidbold13-BDFS = 75dpi-lutBS12-IL2.bdf+75dpi-lutBS12.bdf+75dpi-lutBS12c.bdf
-lucidbold15-BDFS = 75dpi-lutBS14-IL2.bdf+75dpi-lutBS14.bdf+75dpi-lutBS14c.bdf
-lucidbold16-BDFS = 100dpi-lutBS10-IL2.bdf+100dpi-lutBS10.bdf
-lucidbold22x12-BDFS = 100dpi-lutBS14-IL2.bdf+100dpi-lutBS14.bdf
-lucidbold29x16-BDFS = 100dpi-lutBS19.bdf
+LucidBold11-BDFS = 100dpi-lutBS08-IL2.bdf+100dpi-lutBS08.bdf
+LucidBold13-BDFS = 75dpi-lutBS12-IL2.bdf+75dpi-lutBS12.bdf+75dpi-lutBS12c.bdf
+LucidBold15-BDFS = 75dpi-lutBS14-IL2.bdf+75dpi-lutBS14.bdf+75dpi-lutBS14c.bdf
+LucidBold16-BDFS = 100dpi-lutBS10-IL2.bdf+100dpi-lutBS10.bdf
+LucidBold22x12-BDFS = 100dpi-lutBS14-IL2.bdf+100dpi-lutBS14.bdf
+LucidBold29x16-BDFS = 100dpi-lutBS19.bdf
 
-goha12-BDFS = Goha12.bdf
-goha14-BDFS = Goha14.bdf
-goha16-BDFS = Goha16.bdf
+Goha12-BDFS = Goha12.bdf
+Goha14-BDFS = Goha14.bdf
+Goha16-BDFS = Goha16.bdf
 
-gohaclassic12-BDFS = GohaClassic12.bdf
-gohaclassic14-BDFS = GohaClassic14.bdf
-gohaclassic16-BDFS = GohaClassic16.bdf
+GohaClassic12-BDFS = GohaClassic12.bdf
+GohaClassic14-BDFS = GohaClassic14.bdf
+GohaClassic16-BDFS = GohaClassic16.bdf
 
 ###################################################################
 
@@ -165,7 +165,7 @@ $(ALL_PSF_FONTS) : codeset/face = $(subst -,/,$(@:%.psf=%))
 $(ALL_PSF_FONTS) : codeset/ = $(dir $(codeset/face))
 # i.e. Arabic
 $(ALL_PSF_FONTS) : codeset = $(subst /,-,$(codeset/:%/=%))
-# univga16
+# i.e. univga16
 $(ALL_PSF_FONTS) : face = $(strip $(notdir $(codeset/face)))
 # legacy hack
 $(ALL_PSF_FONTS)  : VGA8-BDFS = $(if $(strip $($(codeset)-legacy8-BDFS)), \
