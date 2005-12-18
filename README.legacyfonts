@@ -8,7 +8,7 @@ purpose of all of them.  During the years new fonts were added, but
 old were almost newer removed.
 
 Some of the fonts shared common typeface, i.e. they were differently
-encoded but the common gliphs were equal.  In total, however, there
+encoded but the common glyphs were equal.  In total, however, there
 were too many different typefaces that generally differ one from
 another only a little.
 
@@ -29,7 +29,7 @@ the resulting BDF fonts and the names of the PSF fonts that were used
 to produce them.  We see that some of the resulting BDF fonts were
 produced by only one source PSF font (for example only iso06.f08.psf
 was used to produce legacy8d.bdf) while for others it was possible to
-incorporate the gliphs from more than one PSF font (for example six
+incorporate the glyphs from more than one PSF font (for example six
 PSF fonts were used to produce legacy16e.bdf).
 
 
@@ -44,15 +44,15 @@ size 14.  The list of BDF fonts that is used to produce
 Greek-vga14.psf was determined as folows.
 
 First, see which one of the legacy BDF fonts can provide as many
-gliphs for Greek-vga14.psf as possible.  This was legacy14g.bdf
+glyphs for Greek-vga14.psf as possible.  This was legacy14g.bdf
 (produced from iso07.f14.psf).  Then see which one of the other legacy
-BDF fonts provides as much gliphs for Greek-vga14.psf that legacy14g
+BDF fonts provides as much glyphs for Greek-vga14.psf that legacy14g
 does not provide.  And so on.  The resulting lists are represented as
 Codeset-legacySIZE-BDFS targets in the Makefile.  It is perfectly OK
 to handtune them.  For example if one decides that the look of
 legacy16i.bdf is superior it is OK to list legacy16i.bdf as primary
 font for Lat15-vga16.psf even though legacy16c.bdf provides more
-gliphs.
+glyphs.
 
 There is one exception to the previous paragraph: the wonderful font
 UNI_VGA of Dmitry Bolkhovityanov was always used as a primary font for

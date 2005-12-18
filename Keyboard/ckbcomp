@@ -1621,7 +1621,8 @@ my @metacontrolsyms;
 
 ############ GLOBAL FUNCTIONS #########################################
 
-# Finds $_[0] in the known directories and returns ready to use file name
+# Looks for $_[0] in the known directories and returns ready to use
+# file name
 sub xfilename {
     my $file = $_[0];
     (my $base = $file) =~ s/.*\/(.+)/$1/;

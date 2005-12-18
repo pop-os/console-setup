@@ -37,7 +37,7 @@ also obtain it by writing to the Free Software Foundation, Inc.,
 sub-<file>Makefile</file>s in the directories <file>Fonts</file> and
 <file>Keyboard</file>.
 
-<sect>Fonts
+<sect> Fonts
 
 <p> Only 256 (or 512) glyphs can be used in the console fonts.  Because
 of that it is impossible to use one universal font suitable for all
@@ -52,10 +52,41 @@ common fonts in BDF format for all languages and translate them to
 many fonts in PSF format for the different character sets.
 
 <p> The new console fonts are named after the scheme
-<var>CHARSET</var>-<var>FONTFACE</var>.psf, <var>CHARSET</var> might
-be for example Arabic, CyrAsia or Lat38 (see <ref id="charsets">) and
+<var>CHARSET</var>-<var>FONTFACE</var>.psf, <var>CHARSET</var> may be
+for example Arabic, CyrAsia or Lat38 (see <ref id="charsets">) and
 <var>FONTFACE</var> can be for example Fixed16.  The number in
 <var>FONTFACE</var> represents the number of scan lines in the font.
+
+<sect> Keyboard
+
+<p> The traditional approach for the keyboard support of Linux is not
+flexible enough.  All keyboard tables are fixed so even small
+customizations of the keyboard layouts require completely new keyboard
+definition.  As a result for many of the keyboard layouts there are
+many variants that differ only a bit.
+
+<p> Another disadvantage is that the keyboard mappings are not
+completely encoding independent.  The kernel does not have knowledge
+for all Unicode symbols and can not translate between Unicode and the
+legacy 8-bit encodings.
+
+<p> In order to circumvent we use the <prgn>ckbcomp</prgn> utility
+which is able to translate the keyboard definitions used in X Window
+to keyboard definitions suitable for loadkeys.  See <ref
+id="ckbcomp">.
+
+<p> The <prgn>compose_translator</prgn> program generates the compose
+sequences from the console.  Invocation:
+
+<example>
+./compose_translator --acm acm/<var>ENCODING</var>.acm locale/<var>X_ENCODING</var>/Compose
+</example>
+
+Here the file in the <file>acm</file> directory defines the encoding
+of the generated compose sequences and the file in the
+<file>locale</file> defines the compose sequences in X Window.  The
+<file>locale</file> directory is a copy of the X directory
+<file>/usr/X11R6/lib/X11/locale</file>.
 
 <sect> <prgn>describe_unicodes</prgn>
 
@@ -466,7 +497,7 @@ fonts are treated equaly to the other non-legacy BDF fonts.
 
 <chapt> The New Fonts
 
-<p> Even for the new PSF fonts it is not wisely to use a single BDF
+<p> Even for the new PSF fonts it is not wise to use a single BDF
 source.  Many of the BDF fonts share a common look. For example the X
 font <prgn>fixed</prgn> was used by Roman Czyborra in order to create
 his <prgn>unifont.bdf</prgn>.  The same font was used also by
@@ -479,7 +510,9 @@ Advanced Industrial Science Technology, Japan) for their
 <prgn>Makefile</prgn> specify the BDF fonts to use in order to
 generate the PSF font fonts.  For example the combination
 "<tt>unifont.bdf</tt> + <tt>h16.bdf</tt> + <tt>etl16-unicode.bdf</tt>"
-is used for the Fixed16 font face.
+is used for the Fixed16 font face.  The fonts listed first take
+precedence, so it is wise to list first the fonts which symbols look
+better and not the fonts with more symbols.
 
 <p> The <prgn>bdf</prgn> directory contains almost all free BDF fonts
 that can be used to generate console fonts.  Currently they allow to
@@ -494,7 +527,7 @@ GohaClassic12, GohaClassic14 and GohaClassic16.
 
 <p> The targets in the <prgn>Makefile</prgn> are able to generate a
 PSF font for every <var>CHARSET</var>-<var>FONTFACE</var> combination.
-The <prgn>build</prgn> target however will generate font only for the
+The <prgn>build</prgn> target however will generate fonts only for the
 "good" combinations.
 
 <p> First, the program <file>fontcodesets</file> is used to determine
@@ -510,6 +543,57 @@ personal opinion).  Only the following font faces are approved:
 Fixed13, Fixed14, Fixed15, Fixed16, Fixed18, Goha12, Goha14, Goha16,
 GohaClassic12, GohaClassic14 and GohaClassic16.  See the
 <prgn>GOOD_PSF_FONTS</prgn> variable in the <prgn>Makefile</prgn>.
+
+<chapt id="ckbcomp"> The <prgn>ckbcomp</prgn> Utility
+
+<p> The <prgn>ckbcomp</prgn> accepts more or less the same arguments
+as the <prgn>setxkbmap</prgn> utility:
+
+<example>
+Usage: ckbcomp [args] [&lt;layout&gt; [&lt;variant&gt; [&lt;option&gt; ... ]]]
+Where legal args are:
+-?,-help            Print this message
+-charmap &lt;name&gt;         Specifies the encoding to use
+-I&lt;dir&gt;             Add &lt;dir&gt; to list of directories to be used
+-keycodes &lt;name&gt;    Specifies keycodes component name
+-symbols &lt;name&gt;     Specifies symbols component name
+-rules &lt;name&gt;       Name of rules file to use
+-model &lt;name&gt;       Specifies model used to choose component names
+-layout &lt;name&gt;      Specifies layout used to choose component names
+-variant &lt;name&gt;     Specifies layout variant used to choose component names
+-v[erbose] [&lt;lvl&gt;]  Sets verbosity (1..10).  Higher values yield
+                    more messages
+-option &lt;name&gt;      Adds an option used to choose component names
+</example>
+
+<p> The main difference is the <prgn>-charmap</prgn> parameter which
+specifies the encoding to use.  If the encoding is <var>ENC</var> then
+one of the following files should exist:
+
+<list>
+<item><file><var>ENC</var></file>
+<item><file><var>ENC</var>.gz</file>
+<item><file><var>ENC</var>.acm</file>
+<item><file><var>ENC</var>.acm.gz</file>
+<item><file> /usr/share/consoletrans/<var>ENC</var></file>
+<item><file>/usr/share/consoletrans/<var>ENC</var>.gz</file>
+<item><file>/usr/share/consoletrans/<var>ENC</var>.acm</file>
+<item><file>/usr/share/consoletrans/<var>ENC</var>.acm.gz</file>
+<item><file>acm/<var>ENC</var>.acm</file>
+</list>
+
+This file should define the so called Application Character Map for
+<var>ENC</var>.
+
+<p> The option <prgn>-I</prgn> add a directory to the list of
+directories where the X keyboard definitions are searched.  By default
+this directory list contains the following directories:
+
+<list>
+<item><file>/etc/console-setup/ckb</file>
+<item><file>/etc/X11/xkb</file>
+<item><file>/usr/X11R6/lib/X11/xkb</file>
+</list>
 
 </book>
 
