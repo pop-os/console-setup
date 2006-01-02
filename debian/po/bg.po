@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2005-10-18 17:41+0300\n"
+"POT-Creation-Date: 2006-01-02 21:52+0200\n"
 "PO-Revision-Date: 2005-10-18 17:42+0300\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
@@ -87,10 +87,11 @@ msgstr "Няма да бъдат задавани въпроси за клави
 #. Type: note
 #. Description
 #: ../templates:37
+#, fuzzy
 msgid ""
 "The configuration file /etc/default/console-setup specifies keyboard layout "
-"and variant that are not supported by the configuration program.  Thats why "
-"no questions about the keyboard layout will be asked and your current "
+"and variant that are not supported by the configuration program.  Because of "
+"that no questions about the keyboard layout will be asked and your current "
 "configuration will be preserved."
 msgstr ""
 "Конфигурационният файл /etc/default/console-setup определя клавиатурна "
@@ -132,13 +133,21 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:61
+#: ../templates:47
+msgid ""
+"Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
+"framebuffer.  Otherwise choose TerminusBold."
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../templates:65
 msgid "What is your favourite font size?"
 msgstr "Кой е предпочитания от вас шрифтов размер?"
 
 #. Type: select
 #. Description
-#: ../templates:61
+#: ../templates:65
 msgid ""
 "Please select the size of the font on the emergency Linux console. In case "
 "you use text-mode videomode the following table shows the correspondence "
@@ -165,19 +174,19 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:77
+#: ../templates:81
 msgid "What is your encoding?"
 msgstr "Кое кодиране използва системата?"
 
 #. Type: string
 #. Description
-#: ../templates:82
+#: ../templates:86
 msgid "What virtual consoles do you use?"
 msgstr "Кои виртуални конзоли използвате?"
 
 #. Type: string
 #. Description
-#: ../templates:82
+#: ../templates:86
 msgid ""
 "Please enter a space delimited list of virtual consoles you use. The usual "
 "Unix filename wildcards are allowed (*, ? and [...])."
@@ -188,7 +197,7 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:82
+#: ../templates:86
 msgid ""
 "If you are unsure, then use the default /dev/tty[1-6], it is for six virtual "
 "consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
@@ -199,80 +208,80 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Scroll Lock"
 msgstr "Scroll Lock"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Right Shift"
 msgstr "Десен Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Alt+Shift"
 msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Control+Shift"
 msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Control+Alt"
 msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Both Shift keys together"
 msgstr "Двата клавиша Shift едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Both Control keys together"
 msgstr "Двата клавиша Control едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Both Alt keys together"
 msgstr "Двата клавиша Alt едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Left Control"
 msgstr "Десен Control"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "Left Shift"
 msgstr "Ляв Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:91
+#: ../templates:95
 msgid "No toggling"
 msgstr "Без превключване"
 
 #. Type: select
 #. Description
-#: ../templates:93
+#: ../templates:97
 msgid "Toggling between Latin and non-Latin mode"
 msgstr ""
 "Превключване между режим \"Латиница\" и нелатински знаци (напр. кирилица)"
 
 #. Type: select
 #. Description
-#: ../templates:93
+#: ../templates:97
 msgid ""
 "Since your keyboard is a non-Latin one, you will need a way to toggle "
 "between the Latin and the non-Latin mode.  Several options are available."
@@ -283,7 +292,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:93
+#: ../templates:97
 msgid ""
 "The most ergonomic choices seam to be the right Alt and the Caps Lock keys "
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
@@ -299,32 +308,32 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:93
+#: ../templates:97
 msgid "Notice that on some keyboards not all listed keys are present."
 msgstr ""
 "Забележете, че на някои клавиатури не всички изброени клавиши присъстват."
 
 #. Type: select
 #. Choices
-#: ../templates:108
+#: ../templates:112
 msgid "No temporary switch"
 msgstr "Без временно превключване"
 
 #. Type: select
 #. Choices
-#: ../templates:108
+#: ../templates:112
 msgid "Left Alt"
 msgstr "Ляв Alt"
 
 #. Type: select
 #. Description
-#: ../templates:110
+#: ../templates:114
 msgid "Switching temporarily between Latin and non-Latin characters"
 msgstr "Временно превключване между режим \"Латиница\" и нелатински знаци"
 
 #. Type: select
 #. Description
-#: ../templates:110
+#: ../templates:114
 msgid ""
 "Sometimes the keyboard is in non-Latin mode and you want to type only few "
 "Latin letters. In this case it may be desirable to have a key for temporary "
@@ -343,7 +352,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:110
+#: ../templates:114
 msgid ""
 "If you don't like this feature, choose the option \"No temporary switch\"."
 msgstr ""
@@ -352,43 +361,43 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:122
+#: ../templates:126
 msgid "No AltGr key"
 msgstr "Без клавиш AltGr"
 
 #. Type: select
 #. Choices
-#: ../templates:122
+#: ../templates:126
 msgid "Right Alt (Shift+RightAlt=Compose)"
 msgstr "Десен Alt (Shift+Десен Alt=Compose)"
 
 #. Type: select
 #. Choices
-#: ../templates:122
+#: ../templates:126
 msgid "Right Control"
 msgstr "Десен Control"
 
 #. Type: select
 #. Choices
-#: ../templates:122
+#: ../templates:126
 msgid "Left Win-key"
 msgstr "Ляв клавиш с лого"
 
 #. Type: select
 #. Choices
-#: ../templates:122
+#: ../templates:126
 msgid "Both Win-keys"
 msgstr "И двата клавиша с лого"
 
 #. Type: select
 #. Description
-#: ../templates:124
+#: ../templates:128
 msgid "The AltGr key"
 msgstr "Клавишът AltGr"
 
 #. Type: select
 #. Description
-#: ../templates:124
+#: ../templates:128
 msgid ""
 "With some of the keyboard layouts, AltGr is a modifier key used to type many "
 "character, primarily ones that are unusual for the language of the keyboard "
@@ -406,7 +415,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:124
+#: ../templates:128
 msgid ""
 "In the French and Spanish keyboard layouts AltGr is used extensively to type "
 "the accented vowels.  In the British keyboard layouts fewer symbols require "
@@ -422,43 +431,43 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:140
+#: ../templates:144
 msgid "No compose key"
 msgstr "Без клавиш Compose"
 
 #. Type: select
 #. Choices
-#: ../templates:140
+#: ../templates:144
 msgid "Right Alt"
 msgstr "Десен Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:140
+#: ../templates:144
 msgid "Right Win-key"
 msgstr "Десен клавиш с лого"
 
 #. Type: select
 #. Choices
-#: ../templates:140
+#: ../templates:144
 msgid "Menu-key"
 msgstr "Клавиш меню"
 
 #. Type: select
 #. Choices
-#: ../templates:140
+#: ../templates:144
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
 #. Type: select
 #. Description
-#: ../templates:142
+#: ../templates:146
 msgid "The compose key"
 msgstr "Клавишът compose"
 
 #. Type: select
 #. Description
-#: ../templates:142
+#: ../templates:146
 msgid ""
 "The compose key (known also as Multi_key) is a key which is designated to "
 "signal the software to interpret the next keystrokes as a combination in "
@@ -471,7 +480,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:142
+#: ../templates:146
 msgid ""
 "For example, typing compose, then a, then e may produce the French AE "
 "ligature.  Typing compose, then e, then ' can yeld an e with an acute "
@@ -484,7 +493,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:142
+#: ../templates:146
 msgid ""
 "On the text console the Compose key does not work in Unicode mode. If not in "
 "Unicode mode, regardless of what you choose here, you can always use also "

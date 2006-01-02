@@ -36,9 +36,9 @@ Template: console-setup/dont_ask_layout
 Type: note
 _Description: No questions about layout will be asked
  The configuration file /etc/default/console-setup specifies keyboard
- layout and variant that are not supported by the configuration program. 
- Thats why no questions about the keyboard layout will be asked and your
- current configuration will be preserved.
+ layout and variant that are not supported by the configuration
+ program.  Because of that no questions about the keyboard layout will
+ be asked and your current configuration will be preserved.
 
 Template: console-setup/fontface
 Type: select
@@ -49,10 +49,14 @@ _Description: Choose a font for the console.
  emergency Linux console.
  .
  VGA is traditionally looking, it has medium coverage of international
- scripts.  Fixed has siplistic look and has best coverage of international
- scripts.  The aim of Terminus is to reduce the eyes-fatigue when one has
- to read a lot (a note for programmers: some symbols look quiet similar),
- it supports only the Latin and the Cyrillic scripts.
+ scripts.  Fixed has siplistic look and has best coverage of
+ international scripts.  The aim of Terminus is to reduce the
+ eyes-fatigue when one has to read a lot (a note for programmers: some
+ symbols look quiet similar), it supports only the Latin and the
+ Cyrillic scripts.
+ .
+ Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you
+ don't use framebuffer.  Otherwise choose TerminusBold.
 
 Template: console-setup/fontsize
 Type: select

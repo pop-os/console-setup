@@ -11,12 +11,17 @@ FACES = Fixed13 Fixed14 Fixed15 Fixed16 \
 	FixedBold13 FixedBold14 FixedBold15 FixedBold16 \
 	FixedBold18 FixedBold24x12  \
 	FixedOblique13 \
+	Terminus12x6 Terminus14 Terminus16 Terminus24x12 \
+	Terminus20x10 Terminus28x14 Terminus32x16 \
+	TerminusBold12x6 TerminusBold14 TerminusBold16 TerminusBold20x10 \
+	TerminusBold24x12 TerminusBold28x14 TerminusBold32x16 \
+	TerminusBoldVGA14 TerminusBoldVGA16 \
 	Courier13 Courier14 Courier15 Courier16 \
 	CourierBold13 CourierBold14 CourierBold15 \
 	Lucid12 Lucid13 Lucid15 Lucid16 Lucid22x12 Lucid29x16 \
 	LucidBold11 LucidBold13 LucidBold15 \
 	LucidBold16 LucidBold22x12 LucidBold29x16 \
-	Goha12 Goha14 Goha16 GohaClassic12 GohaClassic14 GohaClassic16 
+	Goha12 Goha14 Goha16 GohaClassic12 GohaClassic14 GohaClassic16
 
 LEGACY_FACES = VGA8 VGA10 VGA12 VGA14 VGA16 VGA19
 
@@ -40,6 +45,23 @@ FixedBold24x12-BDFS = h24_b.bdf
 
 # We have to complement 8x13O.bdf because it doesn't contain box drawings
 FixedOblique13-BDFS = 8x13O.bdf+8x13.bdf
+
+Terminus12x6-BDFS = ter-u12n.bdf
+Terminus14-BDFS = ter-u14n.bdf
+Terminus16-BDFS = ter-u16n.bdf
+Terminus20x10-BDFS = ter-u20n.bdf
+Terminus24x12-BDFS = ter-u24n.bdf
+Terminus28x14-BDFS = ter-u28n.bdf
+Terminus32x16-BDFS = ter-u32n.bdf
+TerminusBold12x6-BDFS = ter-u12b.bdf
+TerminusBold14-BDFS = ter-u14b.bdf
+TerminusBold16-BDFS = ter-u16b.bdf
+TerminusBold20x10-BDFS = ter-u20b.bdf
+TerminusBold24x12-BDFS = ter-u24b.bdf
+TerminusBold28x14-BDFS = ter-u28b.bdf
+TerminusBold32x16-BDFS = ter-u32b.bdf
+TerminusBoldVGA14-BDFS = ter-u14v.bdf
+TerminusBoldVGA16-BDFS = ter-u16v.bdf
 
 Courier13-BDFS = 75dpi-courR12-IL2.bdf+75dpi-courR12.bdf+75dpi-courR12c.bdf
 Courier14-BDFS = 100dpi-courR10-IL2.bdf+100dpi-courR10.bdf
@@ -135,6 +157,13 @@ ALL_PSF_FONTS = $(sort $(foreach face, $(ALL_FACES), \
 GOOD_PSF_FONTS = $(filter \
 		%-Fixed13.psf %-Fixed14.psf %-Fixed15.psf \
 		%-Fixed16.psf %-Fixed18.psf \
+		%-Terminus12x6.psf %-Terminus14.psf %-Terminus16.psf	\
+		%-Terminus24x12.psf %-Terminus20x10.psf			\
+		%-Terminus28x14.psf %-Terminus32x16.psf			\
+		%-TerminusBold14.psf %-TerminusBold16.psf		\
+		%-TerminusBold20x10.psf %-TerminusBold24x12.psf		\
+		%-TerminusBold28x14.psf %-TerminusBold32x16.psf		\
+		%-TerminusBoldVGA14.psf %-TerminusBoldVGA16.psf		\
 		%-Goha12.psf %-Goha14.psf %-Goha16.psf \
 		%-GohaClassic12.psf %-GohaClassic14.psf %-GohaClassic16.psf \
 		%-VGA8.psf %-VGA14.psf %-VGA16.psf, \
@@ -145,11 +174,11 @@ GZIPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
 GZIPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
 
 # These fonts can be used only with framebuffer
-FB_PSF_FONTS = $(filter %x12.psf %x16.psf, $(ALL_PSF_FONTS))
+FB_PSF_FONTS = $(filter %x6.psf %x10.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
 $(FB_PSF_FONTS) : fb_option = --fb
 
 # These fonts can be used both in text-mode and with framebuffer
-NONFB_PSF_FONTS = $(filter-out %x12.psf %x16.psf, $(ALL_PSF_FONTS))
+NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
 $(NONFB_PSF_FONTS) : fb_option =
 
 # Use rm soft.Makefile && make soft.Makefile in order to update soft.Makefile
