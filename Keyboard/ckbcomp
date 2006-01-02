@@ -1350,6 +1350,7 @@ my %xkbsym_table = (
 # Other symbols
     'Nosymbol' => 'NoSymbol', # Is this recognised by X ?
     'NoSymbol' => 'NoSymbol',
+    'any' => 'NoSymbol', # Is this recognised by X ?
     'VoidSymbol' => 'VoidSymbol',
     'ISO_Left_Tab' => 'Tab',
     'Clear' => 'VoidSymbol',

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#     xmlreader -- read xfree86.sml file
+#     xmlreader -- read xorg.xml file
 #     Copyright © 2005 Anton Zinoviev <anton@lml.bas.bg>
 
 #     This program is free software; you can redistribute it and/or modify
@@ -31,11 +31,33 @@ sub warning {
     print STDERR  "WARNING: @_";
 }
 
+sub print_arg {
+}
+
+sub print_xml;
+sub print_xml {
+    my @stream = @{$_[0]};
+    while (@stream) {
+	my $tag = shift @stream;
+	my $arg = shift @stream;
+	if ($tag eq 0) {
+	    print STDERR $arg;
+	} else {
+	    my @substream = @{$arg};
+	    print STDERR "<$tag";
+	    print_arg shift(@substream);
+	    print STDERR ">";
+	    print_xml \@substream;
+	    print STDERR "</$tag>\n";
+	}
+    }
+}
+
 use XML::Parser;
 
 my $parser = new XML::Parser (Style => 'Tree');
 
-my $tree = $parser->parsefile ('ckb/rules/xfree86.xml');
+my $tree = $parser->parsefile ('rules.xml');
 
 my %models;
 my %layouts;
@@ -48,7 +70,7 @@ sub parse_text {
     while (@{$tree}) {
 	my $tag = shift @{$tree};
 	my $arg = shift @{$tree};
-	if ($tag == 0) {
+	if ($tag eq 0) {
 	    $contents = $contents . $arg;
 	} else {
 	    $contents = $contents . parse_text ($arg);
@@ -71,14 +93,15 @@ sub parse_configItem {
 	    if (! %{$arg->[0]}) {
 		$description = parse_text $arg;
 	    }
-	} elsif ($tag == 0) {
-	    warning "Garbage in configItem: $arg.\n" if ($arg !~ /^\s*$/);
+	} elsif ($tag eq 'shortDescription' || $tag eq '_description') {
+	} elsif ($tag eq 0) {
+	    warning "configItem: Garbage in configItem: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "configItem: Unknown tag $tag, arg=$arg\n";
 	}
     }
     $name = '' unless ($name);
-    $description = '' unless ($description);
+    $description = $name unless ($description);
     return ($name, $description);
 }
 
@@ -90,11 +113,13 @@ sub parse_model {
 	my $arg = shift @{$tree};
 	if ($tag eq 'configItem') {
 	    my ($name, $description) = parse_configItem $arg;
-	    $models{$description} = $name;
-	} elsif ($tag == 0) {
-	    warning "Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
+	    if ($name ne '') {
+		$models{$description} = $name;
+	    }
+	} elsif ($tag eq 0) {
+	    warning "model: Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "model: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }
@@ -107,10 +132,10 @@ sub parse_modelList {
 	my $arg = shift @{$tree};
 	if ($tag eq 'model') {
 	    parse_model $arg;
-	} elsif ($tag == 0) {
-	    warning "Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
+	} elsif ($tag eq 0) {
+	    warning "modelList: Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "modelList: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }
@@ -126,11 +151,13 @@ sub parse_variant {
 	my $arg = shift @{$tree};
 	if ($tag eq 'configItem') {
 	    ($name, $description) = parse_configItem $arg;
-	    $variants{$layout}{$description} = $name;
-	} elsif ($tag == 0) {
-	    warning "Garbage in variant: $arg.\n" if ($arg !~ /^\s*$/);
+	    if ($layout ne '' && $name ne '') {
+		$variants{$layout}{$description} = $name;
+	    }
+	} elsif ($tag eq 0) {
+	    warning "variant: Garbage in variant: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "variant: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }
@@ -144,10 +171,12 @@ sub parse_variantList {
 	my $arg = shift @{$tree};
 	if ($tag eq 'variant') {
 	    parse_variant $name, $arg;
-	} elsif ($tag == 0) {
-	    warning "Garbage in variantList: $arg.\n" if ($arg !~ /^\s*$/);
+	} elsif ($tag eq 0) {
+	    warning "variantList: Garbage in variantList: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "variantList: Unknown tag $tag\n";
+	    shift @{$arg};
+	    print_xml $arg;
 	}
     }
 }
@@ -162,17 +191,19 @@ sub parse_layout {
 	my $arg = shift @{$tree};
 	if ($tag eq 'configItem') {
 	    ($name, $description) = parse_configItem $arg;
-	    $layouts{$description} = $name;
+	    if ($name ne "") {
+		$layouts{$description} = $name;
+	    }
 	} elsif ($tag eq 'variantList') {
 	    if (! $name) {
-		warning "variantList before configItem\n";
+		warning "layout: variantList before configItem\n";
 		next;
 	    }
 	    parse_variantList $name, $arg;
-	} elsif ($tag == 0) {
-	    warning "Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
+	} elsif ($tag eq 0) {
+	    warning "layout: Garbage in model: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "layout: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }
@@ -185,10 +216,10 @@ sub parse_layoutList {
 	my $arg = shift @{$tree};
 	if ($tag eq 'layout') {
 	    parse_layout $arg;
-	} elsif ($tag == 0) {
-	    warning "Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
+	} elsif ($tag eq 0) {
+	    warning "layoutList: Garbage in modelList: $arg.\n" if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "layoutList: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }
@@ -208,11 +239,11 @@ sub parse_xkbConfigRegistry {
 	    parse_layoutList $arg;
 	} elsif ($tag eq 'optionList') {
 	    parse_optionList $arg;
-	} elsif ($tag == 0) {
-	    warning "Garbage in xkbConfigRegistry: $arg.\n"
+	} elsif ($tag eq 0) {
+	    warning "xkbConfigRegistry: Garbage in xkbConfigRegistry: $arg.\n"
 		if ($arg !~ /^\s*$/);
 	} else {
-	    warning "Unknown tag $tag, arg=$arg\n";
+	    warning "xkbConfigRegistry: Unknown tag $tag, arg=$arg\n";
 	}
     }
 }

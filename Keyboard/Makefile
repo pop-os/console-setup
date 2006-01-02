@@ -38,9 +38,8 @@ $(compose_files) :
 compose_files : $(compose_files)
 
 
-KeyboardNames.pl : xmlreader ckb/rules/xfree86.xml
+KeyboardNames.pl : xmlreader rules.xml
 	./xmlreader >$@
-
 
 .PHONY: clean
 clean:
