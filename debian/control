@@ -2,7 +2,7 @@ Source: console-setup
 Section: utils
 Priority: important
 Maintainer: Console utilities maintainers <pkg-kbd-devel@lists.alioth.debian.org>
-Uploaders: Anton Zinoviev <anton@lml.bas.bg>
+Uploaders: Anton Zinoviev <zinoviev@debian.org>
 Build-Depends-Indep: debhelper (>= 5), perl, po-debconf, libxml-parser-perl
 Standards-Version: 3.6.2
 
