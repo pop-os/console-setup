@@ -48,12 +48,14 @@ install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
-	dh_installdirs etc/console-setup 
-	dh_install Fonts/*.psf.gz usr/share/consolefonts/
-	dh_install Keyboard/acm/*.acm.gz usr/share/consoletrans
-	dh_install Keyboard/compose.*.inc etc/console-setup/
-	dh_install Keyboard/ckb/ etc/console-setup/
-	dh_install Keyboard/ckbcomp usr/bin/
+	dh_installdirs -pconsole-setup etc/console-setup 
+	dh_install -pconsole-setup Fonts/*.psf.gz usr/share/consolefonts/
+	rm debian/console-setup/usr/share/consolefonts/*-Terminus*.psf.gz 
+	dh_install -pconsole-terminus Fonts/*-Terminus*.psf.gz usr/share/consolefonts/
+	dh_install -pconsole-setup Keyboard/acm/*.acm.gz usr/share/consoletrans
+	dh_install -pconsole-setup Keyboard/compose.*.inc etc/console-setup/
+	dh_install -pconsole-setup Keyboard/ckb/ etc/console-setup/
+	dh_install -pconsole-setup Keyboard/ckbcomp usr/bin/
 	cp Keyboard/rules debian/console-setup/etc/console-setup/ckb/rules/console
 	cp Keyboard/rules.xml debian/console-setup/etc/console-setup/ckb/rules/console.xml
 	rm -rf `find debian/console-setup -name .svn`
@@ -66,7 +68,7 @@ binary-indep: build install
 	dh_testroot
 	dh_installxfonts
 	dh_installdebconf
-	dh_installdocs -A README*
+	dh_installdocs -pconsole-setup README*
 #	dh_installexamples
 #	dh_installman
 #	dh_installinfo

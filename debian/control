@@ -10,7 +10,21 @@ Package: console-setup
 Section: utils
 Architecture: all
 Recommends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16)
-Depends: debconf (>= 0.5) | debconf-2.0
+Depends: debconf (>= 0.5) | debconf-2.0, console-terminus
 Description: Setup the font and keymap on the console
  This package includes all the necessary data - console fonts, maps
  defining the standard charsets for use by text applications, etc.
+
+Package: console-terminus
+Architecture: all
+Section: utils
+Priority: optional
+Description: Fixed-width fonts for fast reading on the Linux console
+ This package installs in /usr/share/consolefonts several console
+ variants of the Terminus font.  If you have to work for extended time
+ in front of monitor (i.e. over eight hours), you may find that using
+ of these fonts reduces your eyes-fatigue.
+ .
+ The following charsets are supported: western European Latin, central
+ European Latin, Turkish Latin, Romanian Latin, Slavic Cyrillic and
+ Asian Cyrillic (Bashkyr, Kazakh, Mongolian and others).
