@@ -22,7 +22,7 @@ use strict;
 
 # The fonts have to support at least $threshold specific symbols from
 # a code set in order to consider that the fonts support it
-my $threshold = 10; 
+my $threshold = 25; 
 
 if ($ARGV[0] eq "--help" || $ARGV[0] eq "-h") {
     print STDERR <<EOT;
