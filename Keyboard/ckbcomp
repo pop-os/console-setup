@@ -143,7 +143,7 @@ EOT
     }
 }
 
-$rules = 'xfree86' if (! $rules);
+$rules = 'console' if (! $rules);
 $model = 'pc104' if (! $model);
 
 ########### GLOBAL VARIABLES #########################################

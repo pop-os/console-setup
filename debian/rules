@@ -54,7 +54,9 @@ install: build
 	dh_install Keyboard/compose.*.inc etc/console-setup/
 	dh_install Keyboard/ckb/ etc/console-setup/
 	dh_install Keyboard/ckbcomp usr/bin/
-	rm -rf `find debian/console-setup/etc/console-setup/ -name .svn`
+	cp rules debian/console-setup/etc/console-setup/ckb/rules/console
+	cp rules.xml debian/console-setup/etc/console-setup/ckb/rules/console.xml
+	rm -rf `find debian/console-setup -name .svn`
 	dh_installinit --noscripts
 
 # Build architecture-independent files here.
