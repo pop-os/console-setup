@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-01-02 21:52+0200\n"
-"PO-Revision-Date: 2005-10-18 17:42+0300\n"
+"PO-Revision-Date: 2006-01-02 22:04+0200\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -87,17 +86,12 @@ msgstr "Няма да бъдат задавани въпроси за клави
 #. Type: note
 #. Description
 #: ../templates:37
-#, fuzzy
 msgid ""
 "The configuration file /etc/default/console-setup specifies keyboard layout "
 "and variant that are not supported by the configuration program.  Because of "
 "that no questions about the keyboard layout will be asked and your current "
 "configuration will be preserved."
-msgstr ""
-"Конфигурационният файл /etc/default/console-setup определя клавиатурна "
-"подредба и вариант, които не се поддържат от конфигурационната програма.  "
-"Поради това няма да бъдат задавани въпроси за клавиатурната подредба, а ще "
-"бъде запазена текущата настройка."
+msgstr "Конфигурационният файл /etc/default/console-setup определя клавиатурна подредба и вариант, които не се поддържат от конфигурационната програма.  Поради това няма да бъдат задавани въпроси за клавиатурната подредба, а ще бъде запазена текущата настройка."
 
 #. Type: select
 #. Description
@@ -137,7 +131,7 @@ msgstr ""
 msgid ""
 "Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
 "framebuffer.  Otherwise choose TerminusBold."
-msgstr ""
+msgstr "Използвайте TerminusBoldVGA, ако не използвате фреймбуфер и предпочитате шрифтов размер 8x14 или 8x16.  В останалите случаи изберете TerminusBold."
 
 #. Type: select
 #. Description
