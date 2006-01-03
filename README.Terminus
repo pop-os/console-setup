@@ -79,10 +79,10 @@ You can try the fonts with a command of the following two kinds:
 setfont -m iso15.acm Lat15-Terminus16.psf         # if you use kbd
 consolechars -m iso15.acm -f Lat15-Terminus16.psf # if you use console-tools
 
-Of course instead of ter-116n.psf.gz you will use the font you want to
-try.  After the -m option stays the so called "Application Character
-Map"; it tells the console driver the encoding you use.  For available
-ACMs please refer /usr/share/consoletrans/*acm*.
+Of course instead of Lat15-Terminus16.psf you will use the font you
+want to try.  After the -m option stays the so called "Application
+Character Map"; it tells the console driver the encoding you use.  For
+available ACMs please refer /usr/share/consoletrans/*acm*.
 
 If your console is in Unicode mode then please omit the -m option and
 the ACM from the commands above.
@@ -100,5 +100,5 @@ contain lines of this kind:
 SCREEN_FONT=Lat15-Terminus16.psf
 APP_CHARSET_MAP=iso15.acm
 
-The Terminus font is being developed by Dimitar Toshkov Zhekov.
-
+The Terminus font is being developed by Dimitar Toshkov Zhekov
+<jimmy@is-vn.bg>, http://www.is-vn.bg/hamster/
