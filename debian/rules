@@ -69,6 +69,7 @@ binary-indep: build install
 	dh_installxfonts
 	dh_installdebconf
 	dh_installdocs -pconsole-setup README*
+	dh_installdocs -pconsole-terminus README.Terminus
 #	dh_installexamples
 #	dh_installman
 #	dh_installinfo

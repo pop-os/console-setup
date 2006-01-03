@@ -1,0 +1,107 @@
+This manual is based on The XKB Configuration Guide by Kamil Toman
+and Ivan U. Pascal.
+
+=================================
+KEYBOARD CONFIGURATION BY CKBCOMP
+=================================
+
+The ckbcomp utility accepts more or less the same arguments as the
+setxkbmap utility of the XKB extension for X Window.  On standard
+output it dumps a keyboard translation table ready for use by
+loadkeys.  The most important difference between the arguments of
+setxkbmap and ckbcomp is that ckbcomp requires a parameter -charmap
+when non-Unicode map is wanted.  Use
+
+   ckbcomp -help
+
+for short usage reminder.  
+
+The CKB configuration is decomposed into a number of components.
+Selecting proper parts and combining them back you can achieve most of
+the configurations you might need. 
+
+
+=======================
+SELECTING CONFIGURATION
+=======================
+
+The easiest and the most natural way to specify a keyboard mapping is
+to use the rules component. As its name suggests it describes a number
+of general rules to combine all bits and pieces into a valid and
+useful keyboard mapping. All you need to do is to select a suitable
+rules file and then to feed it with a few parameters that will adjust
+the keyboard behaviour to fulfill your needs.
+
+The parameters are:
+
+   o rules - files of rules to be used for keyboard mapping composition
+
+   o model - name of model of your keyboard
+
+   o layout - layout(s) you intend to use
+
+   o variant - variant(s) of the layout you intend to use
+
+   o options - extra CKB configuration options
+
+The default rules file is "console".
+
+
+===================
+BASIC CONFIGURATION
+===================
+
+Let's say you want to configure a PC-style American keyboard with 104
+keys and the console uses ISO-8859-1.  The shell command loading such a
+keyboard mapping would look like:
+
+   ckbcomp -charmap ISO-8859-1 -rules console -model pc104 \
+        -layout us -option "" | loadkeys
+
+The values of -model and -layout are really not surprising. The
+-options has been explicitly set to the empty value.  The -variant
+option has been left out.  That means the default variant named basic
+is loaded.  Omit the -charmap option if the console uses UTF-8 (Unicode).
+
+The configuration and the shell command would be very analogous for most
+other layouts (internationalized mappings).
+
+
+======================
+ADVANCED CONFIGURATION
+======================
+
+You can use multi-layouts CKB configuration.  What does it mean?
+Basically it allows to load up to four different keyboard layouts at a
+time.  Each such layout would reside in its own group.  The groups
+(unlike complete keyboard remapping) can be switched very fast from
+one to another by a combination of keys.
+
+Let's say you want to configure your new Logitech cordless desktop
+keyboard, you intend to use four different layouts at the same time -
+US, Czech, German and Armenian (in this order), you are used to the
+Alt-Shift combination for switching among them and UTF-8 is used on
+the console.
+
+Then the shell command loading such a keyboard mapping would look like:
+
+   ckbcomp -rules console -model logicordless -layout "us,cz,de,am" \
+        -option "grp:alt_shift_toggle" | loadkeys
+
+
+================================
+EVEN MORE ADVANCED CONFIGURATION
+================================
+
+Okay, let's say you are more demanding. You do like the example above
+but you want it to change a bit. Let's imagine you want the czech
+keyboard mapping to use another variant but basic.  The command line
+then changes into:
+
+     ckbcomp -rules console -model logicordless -layout "us,cz,de,am" \
+              -variant ",bksl,," -option "grp:alt_shift_toggle" | loadkeys
+
+That seems tricky but it is not. The logic for settings of variants is
+the same as for layouts, that means the first and the third variant
+settings are left out (set to basic), the second is set to bksl (a
+special variant with an enhanced definition of the backslash key).

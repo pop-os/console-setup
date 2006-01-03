@@ -5,12 +5,17 @@ CONSOLE FONTS
 The console fonts are named after the scheme CODESET-FONTFACE.psf,
 CODESET might be Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav,
 Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7,
-Thai, Uni1, Uni2, Uni3 and Vietnamese.  The number in the name of the
-font represents the number of scan lines in the font.  The font faces
-with large font matrix are suitable for high resolution framebuffer
-video modes.  They have to be used with the package 'kbd', not
-'console-tools' because the package 'console-tools' does not support
-fonts with large font matrix.
+Thai, Uni1, Uni2, Uni3 and Vietnamese.  The numbers in the name of the
+font show the size of the font matrix.  For example
+Lat2-Terminus20x10.psf is a font for codeset Lat2 with size of the
+font matrix 10x20 (i.e. 10 columns and 20 rows).  If the number of
+columns is 8 then only the number of rows is specified.  For example
+the font matrix of Armenian-Fixed15.psf has size 8x15.
+
+In text video mode only fonts which font matrix has 8 columns can be
+used.  The other fonts can be used only with framebuffer video modes
+and with the package 'kbd'.  The console package 'console-tools' can
+not be used with such fonts.
 
 When fonts for code sets with 512 gliphs are used in text video mode
 (not framebuffer) only 8 foreground colours can be displayed.
@@ -115,4 +120,37 @@ Vietnamese (512 gliphs)
 AVAILABLE FONT FACES
 ====================
 
-TODO
+The following font faces are provided both for text video modes and
+for framebuffer:
+
+   Fixed13, Fixed14, Fixed15, Fixed16, Fixed18
+
+   Goha12, Goha14, Goha16
+
+   GohaClassic12, GohaClassic14, GohaClassic16
+
+   Terminus14, Terminus16
+
+   TerminusBold14, TerminusBold16
+
+   VGA8, VGA14, VGA16
+
+The following font faces are provided for text video modes only:
+
+   TerminusBoldVGA14, TerminusBoldVGA16
+
+The following font faces are provided for framebuffer video modes
+only:
+
+   Terminus12x6, Terminus20x10, Terminus24x12,
+   Terminus28x14, Terminus32x16
+
+   TerminusBold12x6, TerminusBold20x10, TerminusBold24x12,
+   TerminusBold28x14, TerminusBold32x16
+
+The font faces TerminusBold14 and TerminusBold16 have the same look as
+the font faces TerminusBoldVGA14 and TerminusBoldVGA16.  The only
+difference is that TerminusBold14 and TerminusBold16 are optimized for
+framebuffer and TerminusBoldVGA14 and TerminusBoldVGA16 are optimized
+for text video modes.
+

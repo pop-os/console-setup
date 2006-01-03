@@ -519,11 +519,15 @@ that can be used to generate console fonts.  Currently they allow to
 generate fonts from the following font faces: Fixed13, Fixed14,
 Fixed15, Fixed16, Fixed18, Fixed24x12, FixedBold13, FixedBold14,
 FixedBold15, FixedBold16, FixedBold18, FixedBold24x12, FixedOblique13,
-Courier13, Courier14, Courier15, Courier16, CourierBold13,
-CourierBold14, CourierBold15, Lucid12, Lucid13, Lucid15, Lucid16,
-Lucid22x12, Lucid29x16, LucidBold11, LucidBold13, LucidBold15,
-LucidBold16, LucidBold22x12, LucidBold29x16, Goha12, Goha14, Goha16,
-GohaClassic12, GohaClassic14 and GohaClassic16.
+Terminus12x6, Terminus14, Terminus16, Terminus24x12, Terminus20x10,
+Terminus28x14, Terminus32x16, TerminusBold12x6, TerminusBold14,
+TerminusBold16, TerminusBold20x10, TerminusBold24x12,
+TerminusBold28x14, TerminusBold32x16, TerminusBoldVGA14,
+TerminusBoldVGA16, Courier13, Courier14, Courier15, Courier16,
+CourierBold13, CourierBold14, CourierBold15, Lucid12, Lucid13,
+Lucid15, Lucid16, Lucid22x12, Lucid29x16, LucidBold11, LucidBold13,
+LucidBold15, LucidBold16, LucidBold22x12, LucidBold29x16, Goha12,
+Goha14, Goha16, GohaClassic12, GohaClassic14 and GohaClassic16.
 
 <p> The targets in the <prgn>Makefile</prgn> are able to generate a
 PSF font for every <var>CHARSET</var>-<var>FONTFACE</var> combination.
@@ -540,9 +544,13 @@ in order to update this file (this doesn't happen automatically).
 <p> Second, some of the font faces are not generated because they do
 not look very attractive on the console (certainly the choice is a
 personal opinion).  Only the following font faces are approved:
-Fixed13, Fixed14, Fixed15, Fixed16, Fixed18, Goha12, Goha14, Goha16,
-GohaClassic12, GohaClassic14 and GohaClassic16.  See the
-<prgn>GOOD_PSF_FONTS</prgn> variable in the <prgn>Makefile</prgn>.
+Fixed13, Fixed14, Fixed15, Fixed16, Fixed18, Terminus12x6, Terminus14,
+Terminus16, Terminus24x12, Terminus20x10, Terminus28x14,
+Terminus32x16, TerminusBold12x6, TerminusBold14, TerminusBold16,
+TerminusBold20x10, TerminusBold24x12, TerminusBold28x14,
+TerminusBold32x16, TerminusBoldVGA14, TerminusBoldVGA16, Goha12,
+Goha14, Goha16, GohaClassic12, GohaClassic14 and GohaClassic16.  See
+the <prgn>GOOD_PSF_FONTS</prgn> variable in the <prgn>Makefile</prgn>.
 
 <chapt id="ckbcomp"> The <prgn>ckbcomp</prgn> Utility
 

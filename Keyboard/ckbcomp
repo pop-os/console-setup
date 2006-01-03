@@ -115,7 +115,7 @@ while (@ARGV) {
 Usage: ckbcomp [args] [<layout> [<variant> [<option> ... ]]]
 Where legal args are:
 -?,-help            Print this message
--charmap <name>         Specifies the encoding to use
+-charmap <name>     Specifies the encoding to use
 -I<dir>             Add <dir> to list of directories to be used
 -keycodes <name>    Specifies keycodes component name
 -symbols <name>     Specifies symbols component name
