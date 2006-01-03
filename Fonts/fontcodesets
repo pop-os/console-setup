@@ -3166,6 +3166,7 @@ push @{$codesets{"Vietnamese"}}, "U+1EF9";
 # U+1EF9:   LATIN SMALL LETTER Y WITH TILDE
 
 
+my $has_lat15 = 0;
 my $has_lat2 = 0;
 my $has_lat38 = 0;
 my $has_lat7 = 0;
@@ -3182,6 +3183,7 @@ for my $set (@codesets_names) {
     }
     if ($supported >= $threshold) {
 	print $set ." ";
+	$has_lat15 = 1 if ($set eq "Lat15");
 	$has_lat2 = 1 if ($set eq "Lat2");
 	$has_lat38 = 1 if ($set eq "Lat38");
 	$has_lat7 = 1 if ($set eq "Lat7");
@@ -3193,7 +3195,7 @@ for my $set (@codesets_names) {
     }
 }
 
-my $has_lat = $has_lat2 && $has_lat38 && $has_lat7;
+my $has_lat = $has_lat15 || $has_lat2 || $has_lat38 || $has_lat7;
 
 if ($has_lat && $has_cyr && $has_heb && $has_ar) {
     print "Uni1" ." ";
