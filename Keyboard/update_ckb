@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -ex
+
+svn delete ckb
+svn commit --message 'console-setup: remove Keyboard/ckb, will add the most recent version'
+
+cvs -d  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg login
+cvs -z3 -d :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg export -D 1 xc/programs/xkbcomp
+
+mkdir ckb
+for f in keycodes rules symbols; do
+    mv xc/programs/xkbcomp/$f ckb/
+done
+rm -r xc/
+
+svn add ckb
+svn commit --message 'console-setup: add the most recent version of Keyboard/ckb'
