@@ -1,82 +1,62 @@
-// $Xorg: xfree86,v 1.3 2000/08/17 19:54:42 cpqbld Exp $
+// $XdotOrg: xc/programs/xkbcomp/rules/xorg,v 1.4 2005/08/12 10:50:44 pascal Exp $
 
 //
 //  Rules for resolving XKB components for use with XFree86
 //  Copyright 1996 by Joseph Moss
 //
 //  2002 Modifier: Ivan Pascal      The XFree86 Project
-//  $XFree86: xc/programs/xkbcomp/rules/xfree86,v 3.63 2003/05/29 12:41:57 pascal Exp $
+//  $XFree86: xc/programs/xkbcomp/rules/xfree86,v 3.79 2004/01/09 00:16:01 dawes Exp $
 //
-
-// Layouts that still need be composed by old rules
-! $oldlayouts = az bs ca_enhanced czsk de_CH fr_CH hr_US hu_US hu_qwerty lt_a lt_p lt_std ro2 ru_yawerty se_FI se_NO se_SE tr_f
-
 // If you want non-latin layouts implicitly include the en_US layout
 // uncomment lines below
-//! $nonlatin = am ar ben bg by dev el ge_la ge_ru guj gur il il_phonetic\
-//              ir iu kan lo mk mm ml ori ru sr syr syr_phonetic tel th\
-//              tj tml ua
+//! $nonlatin = am ara bg by dev el ge il \
+//              ir iu kan lo mk mm ml ori ru sr syr th \
+//              tj ua
 
 ! $pcmodels = pc101 pc102 pc104 pc105
-! $mac = macintosh macintosh_old
+! $maclaptop = ibook powerbook
+! $mac = macintosh macintosh_old ibook powerbook
 
-// ADDITIONS
+! $azerty = be fr
+! $qwertz = al cz de hr hu ro si sk 
 
-! $maclayouts = de de_CH dk es fi fr fr_CH gb it nl no pt se us
+! $inetkbds = a4techKB21 a4techKBS8 acer_tm_800 acpi airkey azonaRF2300 \
+              brother \
+              btc5113rf btc5126t btc9000 btc9000a btc9001ah btc5090\
+              cherryblue cherrybluea cherryblueb \
+              chicony chicony9885 \
+              compaqeak8 compaqik7 compaqik13 compaqik18 cymotionlinux \
+              armada presario ipaq \
+              dell inspiron dtk2000 \
+              dexxa diamond genius geniuscomfy2 \
+              ennyah_dkb1008 gyration \
+              hpi6 hp2501 hp2505 hp5181 hpxe3gc hpxe3gf hpxe4xxx hpzt11xx \
+              hp500fa hp5xx hp5185 \
+              honeywell_euroboard \
+              rapidaccess rapidaccess2 rapidaccess2a \
+              ltcd logiaccess logicdp logicdpa logicdit logicink logiciink \
+              logiinkse logiinkseusb logiitc logiik itouch logiultrax \
+              mx1998 mx2500 mx2750 \
+              microsoftinet microsoftpro microsoftprousb microsoftprooem microsoftprose \
+              microsoftoffice microsoftmult \
+              oretec \
+              propeller scorpius \
+              qtronix \
+              samsung4500 samsung4510 \
+              sk1300 sk2500 sk6200 sk7100 sp_inet \
+              sven symplon toshiba_s3000 trust trustda yahoo
 
-! model 	=	keycodes
+! model		=	keycodes
   amiga		=	amiga(de)
   ataritt	=	ataritt(de)
   sun4		=	sun(type4_euro)
   sun5		=	sun(type5_euro)
-
-! model		layout	variant	=	symbols
- ataritt	hr	us	=	xfree68/ataritt+hr_US
- amiga		hr	us	=	xfree68/amiga+hr_US
- sun4		hr	us	=	sun/us(sun4)+iso9995-3(basic)+hr_US
- sun5		hr	us	=	sun/us(sun5)+iso9995-3(basic)+hr_US
- macintosh_old	hr	us	=	macintosh/us(extended)+hr_US
- *		hr	us	=       en_US(pc105)+hr_US
-
-! model		layout		=	symbols
- ataritt	$oldlayouts	=	xfree68/ataritt+%l%(v)
- ataritt	$nonlatin	=	xfree68/ataritt+pc/%l%(v):2
- ataritt	ca		=	xfree68/ataritt+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- ataritt	jp		=	xfree68/ataritt+pc/jp(latin)+pc/jp:2
- ataritt	*		=	xfree68/ataritt+pc/%l%(v)
- amiga		$oldlayouts	=	xfree68/amiga+%l%(v)
- amiga		$nonlatin	=	xfree68/amiga+pc/%l%(v):2
- amiga		ca		=	xfree68/amiga+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- amiga		jp		=	xfree68/amiga+pc/jp(latin)+pc/jp:2
- amiga		*		=	xfree68/amiga+pc/%l%(v)
- sun4		$oldlayouts	=	sun/us(sun4)+iso9995-3(basic)+%l%(v)
- sun4		$nonlatin	=	sun/us(sun4)+iso9995-3(basic)+pc/%l%(v):2
- sun4		ca		=	sun/us(sun4)+iso9995-3(basic)+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- sun4		jp		=	sun/us(sun4)+iso9995-3(basic)+pc/jp(latin)+pc/jp:2
- sun4		*		=	sun/us(sun4)+iso9995-3(basic)+pc/%l%(v)
- sun5		$oldlayouts	=	sun/us(sun5)+iso9995-3(basic)+%l%(v)
- sun5		$nonlatin	=	sun/us(sun5)+iso9995-3(basic)+pc/%l%(v):2
- sun5		ca		=	sun/us(sun5)+iso9995-3(basic)+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- sun5		jp		=	sun/us(sun5)+iso9995-3(basic)+pc/jp(latin)+pc/jp:2
- sun5		*		=	sun/us(sun5)+iso9995-3(basic)+pc/%l%(v)
-
- macintosh_old	$oldlayouts	=	macintosh/us(extended)+%l%(v)
- macintosh_old	$nonlatin	=	macintosh/us(extended)+pc/%l%(v):2
- macintosh_old	ca		=	macintosh/us(extended)+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- macintosh_old	jp		=	macintosh/us(extended)+pc/jp(latin)+pc/jp:2
- macintosh_old	*		=	macintosh/us(extended)+pc/%l%(v)
-
-// END ADDITIONS
-
-! model 	=	keycodes
   macintosh_old	=	macintosh
   powerpcps2	=	powerpcps2
   pc98		=	xfree98(pc98)
   abnt2		=	xfree86(abnt2)
+  jp106		=	xfree86(jp106)
   *		=	xfree86
-
-! $azerty = be fr fr-latin9
-! $qwertz = al cz de hr pl2 ro si sk 
 
 ! layout[1]	=	keycodes
   $azerty       =       +aliases(azerty)
@@ -88,150 +68,735 @@
   $qwertz       =       +aliases(qwertz)
   *             =       +aliases(qwerty)
 
-! model 	=	geometry
+! model		=	geometry
   microsoft	=	microsoft(natural)
   microsoftpro	=	microsoft(natural)
+  microsoftprousb =	microsoft(natural)
   microsoftprose =	microsoft(natural)
   dell101	=	dell(dell101)
   flexpro	=	keytronic(FlexPro)
+  hp6000	=	hp(omnibook)
   omnikey101	=	northgate(omnikey101)
+  thinkpad	=	ibm/thinkpad(common)
  $pcmodels	=	pc(%m)
   jp106		=	pc(jp106)
   everex	=	everex(STEPnote)
   winbook	=	winbook(XP5)
   pc98		=	nec(pc98)
-  abnt2		=	pc
-  macintosh	=	macintosh(macintosh)
-  macintosh_old	=	macintosh(macintosh)
+  abnt2		=	pc(abnt2)
+ $mac		=	macintosh(macintosh)
   *		=       pc(pc104)
 
-! model		variant		layout	=	symbols
-  macintosh	nodeadkeys	*	=	macintosh/us(extended)+macintosh/%l%(v)
- $pcmodels	nodeadkeys  $oldlayouts	=	en_US(%m%_v)+%l%(v)
-  *		nodeadkeys  $oldlayouts	=	en_US(pc105%_v)+%l%(v)
+! model		=	symbols
+  ataritt	=	xfree68/ataritt
+  amiga		=	xfree68/amiga
+  sun4		=	sun/us(sun4)+iso9995-3(basic)
+  sun5		=	sun/us(sun5)+iso9995-3(basic)
+ $maclaptop	=	macintosh/us(extended)
+ $mac		=	macintosh/us(extended)
+  abnt2		=	pc/pc(pc104)
+ $pcmodels	=	pc/pc(%m)
+  *		=	pc/pc(pc105)
 
-! model		layout	=	symbols
-  pc98		nec/jp	=	nec/jp(pc98)
-  abnt2		br	=	us(pc101)+br
- $mac		us	=	macintosh/us(extended)
- $mac		en_US	=	macintosh/us(extended)
- $mac		*	=	macintosh/us(extended)+macintosh/%l%(v)
- $pcmodels      intl    =       us(%mcompose)
-  *		intl	=	us(pc104compose) 
- $pcmodels $oldlayouts  =       en_US(%m)+%l%(v)
- $pcmodels $nonlatin	=	pc/pc(%m)+pc/us+pc/%l%(v):2
- $pcmodels      ca	=	pc/pc(%m)+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
- $pcmodels      jp	=	pc/pc(pc102)+pc/jp(latin)+pc/jp:2
- $pcmodels	*	=	pc/pc(%m)+pc/%l%(v)
-  *	   $oldlayouts  =       en_US(pc105)+%l%(v)
-  *	   $nonlatin	=	pc/pc(pc105)+pc/us+pc/%l%(v):2
-  *		ca	=	pc/pc(pc105)+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
-  *		jp	=	pc/pc(pc102)+pc/jp(latin)+pc/jp:2
-  *		*	=	pc/pc(pc105)+pc/%l%(v)
+! model		layout		=	symbols
+ $pcmodels      intl		=	us(%mcompose)
+  *		intl		=	us(pc105compose)
+  pc98		nec/jp		=	nec/jp(pc98)
 
-! model	    layout[1]	=	symbols
- $pcmodels	*	=	pc/pc(%m)+pc/%l[1]%(v[1])
-  *		*	=	pc/pc(pc105)+pc/%l[1]%(v[1])
+! layout		=	symbols
+  ar			=	+pc/ara%(v)
+  ben			=	+pc/in(ben)
+  bs			=	+pc/ba%(v)
+  dev			=	+pc/in(deva)
+  dvorak		=	+pc/us(dvorak)
+  dz			=	+pc/bt%(v)
+  el			=	+pc/gr%(v)
+  ge_la			=	+pc/ge%(v)
+  ge_ru			=	+pc/ge(ru)
+  guj			=	+pc/in(guj)
+  gur			=	+pc/in(guru)
+  iu			=	+pc/ca(ike)
+  lo			=	+pc/la%(v)
+  kan			=	+pc/in(kan)
+  mi			=	+pc/mao%(v)
+  mk			=	+pc/mkd%(v)
+  ml			=	+pc/in(mal)
+  ogham			=	+pc/ie(ogam)
+  ori			=	+pc/ie(ori)
+  sapmi			=	+pc/no(smi)
+  sr			=	+pc/srp%(v)
+  syr			=	+pc/sy(syc)
+  tel			=	+pc/in(tel)
+  tml			=	+pc/in(tam)
+  yu			=	+pc/srp%(v)
+  ben(basic)		=	+pc/in(ben)
+  ben(probhat)		=	+pc/in(ben_probhat)
+  dev(basic)		=	+pc/in(deva)
+  dvorak(gb)		=	+pc/gb(dvorak)
+  dvorak(fr)		=	+pc/fr(dvorak)
+  dvorak(no)		=	+pc/no(dvorak)
+  dvorak(se)		=	+pc/se(dvorak)
+  dvorak(basic)		=	+pc/us(dvorak)
+  dvorak(pl_basic)	=	+pc/pl(dvorak)
+  dvorak(pl)		=	+pc/pl(dvorak_quotes)
+  dvorak(pl_altquotes)	=	+pc/pl(dvorak_altquotes)
+  dz(basic)		=	+pc/bt(basic)
+  guj(basic)		=	+pc/in(guj)
+  gur(basic)		=	+pc/in(guru)
+  ie(laptop)		=	+pc/ie(basic)
+  ie(CloGaelachLaptop)	=	+pc/ie(CloGaelach)
+  iu(basic)		=	+pc/ca(ike)
+  lo(basic)		=	+pc/la(basic)
+  kan(basic)		=	+pc/in(kan)
+  mal(basic)		=	+pc/in(mal)
+  mal(mlplusnum)	=	+pc/in(mal)
+  ogham(basic)		=	+pc/ie(ogam)
+  ogham(laptop)		=	+pc/ie(ogam)
+  ogham(is434)		=	+pc/ie(ogam_is434)
+  ogham(is434laptop)	=	+pc/ie(ogam_is434)
+  ori(basic)		=	+pc/in(ori)
+  sapmi(basic)		=	+pc/no(smi)
+  sapmi(nodeadkeys)	=	+pc/no(smi_nodeadkeys)
+  sapmi(sefi)		=	+pc/fi(smi)
+  sin(phonetic-static)	=	+pc/in(sin_phonetic)
+  syr(basic)		=	+pc/sy(syc)
+  syr(phonetic)		=	+pc/sy(syc_phonetic)
+  tam(INSCRIPT)		=	+pc/in(tam)
+  tam(UNI)		=	+pc/in(tam_unicode)
+  tam(TAB)		=	+pc/in(tam_TAB)
+  tam(TSCII)		=	+pc/in(tam_TSCII)
+  tel(basic)		=	+pc/in(tel)
+  yu(basic)		=	+pc/srp(latin)
+  yu(unicode)		=	+pc/srp(latinunicode)
+  yu(yz)		=	+pc/srp(latinyz)
+  yu(unicodeyz)		=	+pc/srp(latinunicodeyz)
+  jp			=	+pc/jp(latin)+pc/jp:2
+  ca			=	+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
+  $nonlatin		=	+pc/us+pc/%l%(v):2
+  *			=	+pc/%l%(v)
 
-! layout[2]	=	symbols
-  mk		=	+pc/%l[2]:2
-  *		=	+pc/%l[2]%(v[2]):2
+! layout[1]		=	symbols
+  ar			=	+pc/ara%(v[1])
+  ben			=	+pc/in(ben)
+  bs			=	+pc/ba%(v[1])
+  dev			=	+pc/in(deva)
+  dvorak		=	+pc/us(dvorak)
+  dz			=	+pc/bt%(v[1])
+  el			=	+pc/gr%(v[1])
+  ge_la			=	+pc/ge%(v[1])
+  ge_ru			=	+pc/ge(ru)
+  guj			=	+pc/in(guj)
+  gur			=	+pc/in(guru)
+  iu			=	+pc/ca(ike)
+  lo			=	+pc/la%(v[1])
+  kan			=	+pc/in(kan)
+  mi			=	+pc/mao%(v[1])
+  mk			=	+pc/mkd%(v[1])
+  ml			=	+pc/in(mal)
+  ogham			=	+pc/ie(ogam)
+  ori			=	+pc/ie(ori)
+  sapmi			=	+pc/no(smi)
+  sr			=	+pc/srp%(v[1])
+  syr			=	+pc/sy(syc)
+  tel			=	+pc/in(tel)
+  tml			=	+pc/in(tam)
+  yu			=	+pc/srp%(v[1])
+  ben(basic)		=	+pc/in(ben)
+  ben(probhat)		=	+pc/in(ben_probhat)
+  dev(basic)		=	+pc/in(deva)
+  dvorak(gb)		=	+pc/gb(dvorak)
+  dvorak(fr)		=	+pc/fr(dvorak)
+  dvorak(no)		=	+pc/no(dvorak)
+  dvorak(se)		=	+pc/se(dvorak)
+  dvorak(basic)		=	+pc/us(dvorak)
+  dvorak(pl_basic)	=	+pc/pl(dvorak)
+  dvorak(pl)		=	+pc/pl(dvorak_quotes)
+  dvorak(pl_altquotes)	=	+pc/pl(dvorak_altquotes)
+  dz(basic)		=	+pc/bt(basic)
+  guj(basic)		=	+pc/in(guj)
+  gur(basic)		=	+pc/in(guru)
+  ie(laptop)		=	+pc/ie(basic)
+  ie(CloGaelachLaptop)	=	+pc/ie(CloGaelach)
+  iu(basic)		=	+pc/ca(ike)
+  lo(basic)		=	+pc/la(basic)
+  kan(basic)		=	+pc/in(kan)
+  mal(basic)		=	+pc/in(mal)
+  mal(mlplusnum)	=	+pc/in(mal)
+  ogham(basic)		=	+pc/ie(ogam)
+  ogham(laptop)		=	+pc/ie(ogam)
+  ogham(is434)		=	+pc/ie(ogam_is434)
+  ogham(is434laptop)	=	+pc/ie(ogam_is434)
+  ori(basic)		=	+pc/in(ori)
+  sapmi(basic)		=	+pc/no(smi)
+  sapmi(nodeadkeys)	=	+pc/no(smi_nodeadkeys)
+  sapmi(sefi)		=	+pc/fi(smi)
+  sin(phonetic-static)	=	+pc/in(sin_phonetic)
+  syr(basic)		=	+pc/sy(syc)
+  syr(phonetic)		=	+pc/sy(syc_phonetic)
+  tam(INSCRIPT)		=	+pc/in(tam)
+  tam(UNI)		=	+pc/in(tam_unicode)
+  tam(TAB)		=	+pc/in(tam_TAB)
+  tam(TSCII)		=	+pc/in(tam_TSCII)
+  tel(basic)		=	+pc/in(tel)
+  yu(basic)		=	+pc/srp(latin)
+  yu(unicode)		=	+pc/srp(latinunicode)
+  yu(yz)		=	+pc/srp(latinyz)
+  yu(unicodeyz)		=	+pc/srp(latinunicodeyz)
+  *			=	+pc/%l[1]%(v[1])
 
-! layout[3]	=	symbols
-  *		=	+pc/%l[3]%(v[3]):3
+! layout[2]		=	symbols
+  ar			=	+pc/ara%(v[2]):2
+  ben			=	+pc/in(ben):2
+  bs			=	+pc/ba%(v[2]):2
+  dev			=	+pc/in(deva):2
+  dvorak		=	+pc/us(dvorak):2
+  dz			=	+pc/bt%(v[2]):2
+  el			=	+pc/gr%(v[2]):2
+  ge_la			=	+pc/ge%(v[2]):2
+  ge_ru			=	+pc/ge(ru):2
+  guj			=	+pc/in(guj):2
+  gur			=	+pc/in(guru):2
+  iu			=	+pc/ca(ike):2
+  lo			=	+pc/la%(v[2]):2
+  kan			=	+pc/in(kan):2
+  mi			=	+pc/mao%(v[2]):2
+  mk			=	+pc/mkd%(v[2]):2
+  ml			=	+pc/in(mal):2
+  ogham			=	+pc/ie(ogam):2
+  ori			=	+pc/ie(ori):2
+  sapmi			=	+pc/no(smi):2
+  sr			=	+pc/srp%(v[2]):2
+  syr			=	+pc/sy(syc):2
+  tel			=	+pc/in(tel):2
+  tml			=	+pc/in(tam):2
+  yu			=	+pc/srp%(v[2]):2
+  ben(basic)		=	+pc/in(ben):2
+  ben(probhat)		=	+pc/in(ben_probhat):2
+  dev(basic)		=	+pc/in(deva):2
+  dvorak(gb)		=	+pc/gb(dvorak):2
+  dvorak(fr)		=	+pc/fr(dvorak):2
+  dvorak(no)		=	+pc/no(dvorak):2
+  dvorak(se)		=	+pc/se(dvorak):2
+  dvorak(basic)		=	+pc/us(dvorak):2
+  dvorak(pl_basic)	=	+pc/pl(dvorak):2
+  dvorak(pl)		=	+pc/pl(dvorak_quotes):2
+  dvorak(pl_altquotes)	=	+pc/pl(dvorak_altquotes):2
+  dz(basic)		=	+pc/bt(basic):2
+  guj(basic)		=	+pc/in(guj):2
+  gur(basic)		=	+pc/in(guru):2
+  ie(laptop)		=	+pc/ie(basic):2
+  ie(CloGaelachLaptop)	=	+pc/ie(CloGaelach):2
+  iu(basic)		=	+pc/ca(ike):2
+  lo(basic)		=	+pc/la(basic):2
+  kan(basic)		=	+pc/in(kan):2
+  mal(basic)		=	+pc/in(mal):2
+  mal(mlplusnum)	=	+pc/in(mal):2
+  ogham(basic)		=	+pc/ie(ogam):2
+  ogham(laptop)		=	+pc/ie(ogam):2
+  ogham(is434)		=	+pc/ie(ogam_is434):2
+  ogham(is434laptop)	=	+pc/ie(ogam_is434):2
+  ori(basic)		=	+pc/in(ori):2
+  sapmi(basic)		=	+pc/no(smi):2
+  sapmi(nodeadkeys)	=	+pc/no(smi_nodeadkeys):2
+  sapmi(sefi)		=	+pc/fi(smi):2
+  sin(phonetic-static)	=	+pc/in(sin_phonetic):2
+  syr(basic)		=	+pc/sy(syc):2
+  syr(phonetic)		=	+pc/sy(syc_phonetic):2
+  tam(INSCRIPT)		=	+pc/in(tam):2
+  tam(UNI)		=	+pc/in(tam_unicode):2
+  tam(TAB)		=	+pc/in(tam_TAB):2
+  tam(TSCII)		=	+pc/in(tam_TSCII):2
+  tel(basic)		=	+pc/in(tel):2
+  yu(basic)		=	+pc/srp(latin):2
+  yu(unicode)		=	+pc/srp(latinunicode):2
+  yu(yz)		=	+pc/srp(latinyz):2
+  yu(unicodeyz)		=	+pc/srp(latinunicodeyz):2
+  *			=	+pc/%l[2]%(v[2]):2
 
-! layout[4]	=	symbols
-  *		=	+pc/%l[4]%(v[4]):4
- 
-! $inetkbds = airkey acpi scorpius \
-              brother \
-              btc5113rf btc5126t btc9000 btc9000a \
-              cherryblue cherrybluea \
-              chicony chicony9885 \
-              compaqeak8 compaqik7 compaqik13 compaqik18 armada presario ipaq \
-              dell inspiron \
-              dexxa diamond genius \
-              ennyah_dkb1008 \
-              hpi6 hp2501 hp2505 hp5181 hpxe3gc hpxe3gf hpxe4xxx hpzt11xx \
-              hp500fa hp5xx \
-              honeywell_euroboard \
-              rapidaccess rapidaccess2 rapidaccess2a \
-              ltcd logicdit logicdp logicdpa logicdpa2 logicdo logicfn \
-              logicdn logidak logiik itouch logiitc logiik logiink itouchin \
-              mx1998 mx2500 mx2750 \
-              microsoftinet microsoftpro microsoftprose microsoftoffice \
-              oretec \
-              propeller \
-              qtronix \
-              samsung4500 samsung4510 \
-              sk1300 sk2500 sk6200 sk7100 \
-              sven symplon toshiba_s3000 trust trustda yahoo
+! layout[3]		=	symbols
+  ar			=	+pc/ara%(v[3]):3
+  ben			=	+pc/in(ben)%(v[3]):3
+  bs			=	+pc/ba%(v[3]):3
+  dev			=	+pc/in(deva)%(v[3]):3
+  dvorak		=	+pc/us(dvorak)%(v[3]):3
+  dz			=	+pc/bt%(v[3]):3
+  el			=	+pc/gr%(v[3]):3
+  ge_la			=	+pc/ge%(v[3]):3
+  ge_ru			=	+pc/ge(ru)%(v[3]):3
+  guj			=	+pc/in(guj)%(v[3]):3
+  gur			=	+pc/in(guru)%(v[3]):3
+  iu			=	+pc/ca(ike)%(v[3]):3
+  lo			=	+pc/la%(v[3]):3
+  kan			=	+pc/in(kan)%(v[3]):3
+  mi			=	+pc/mao%(v[3]):3
+  mk			=	+pc/mkd%(v[3]):3
+  ml			=	+pc/in(mal)%(v[3]):3
+  ogham			=	+pc/ie(ogam)%(v[3]):3
+  ori			=	+pc/ie(ori)%(v[3]):3
+  sapmi			=	+pc/no(smi)%(v[3]):3
+  sr			=	+pc/srp%(v[3]):3
+  syr			=	+pc/sy(syc)%(v[3]):3
+  tel			=	+pc/in(tel)%(v[3]):3
+  tml			=	+pc/in(tam)%(v[3]):3
+  yu			=	+pc/srp%(v[3]):3
+  ben(basic)		=	+pc/in(ben):3
+  ben(probhat)		=	+pc/in(ben_probhat):3
+  dev(basic)		=	+pc/in(deva):3
+  dvorak(gb)		=	+pc/gb(dvorak):3
+  dvorak(fr)		=	+pc/fr(dvorak):3
+  dvorak(no)		=	+pc/no(dvorak):3
+  dvorak(se)		=	+pc/se(dvorak):3
+  dvorak(basic)		=	+pc/us(dvorak):3
+  dvorak(pl_basic)	=	+pc/pl(dvorak):3
+  dvorak(pl)		=	+pc/pl(dvorak_quotes):3
+  dvorak(pl_altquotes)	=	+pc/pl(dvorak_altquotes):3
+  dz(basic)		=	+pc/bt(basic):3
+  guj(basic)		=	+pc/in(guj):3
+  gur(basic)		=	+pc/in(guru):3
+  ie(laptop)		=	+pc/ie(basic):3
+  ie(CloGaelachLaptop)	=	+pc/ie(CloGaelach):3
+  iu(basic)		=	+pc/ca(ike):3
+  lo(basic)		=	+pc/la(basic):3
+  kan(basic)		=	+pc/in(kan):3
+  mal(basic)		=	+pc/in(mal):3
+  mal(mlplusnum)	=	+pc/in(mal):3
+  ogham(basic)		=	+pc/ie(ogam):3
+  ogham(laptop)		=	+pc/ie(ogam):3
+  ogham(is434)		=	+pc/ie(ogam_is434):3
+  ogham(is434laptop)	=	+pc/ie(ogam_is434):3
+  ori(basic)		=	+pc/in(ori):3
+  sapmi(basic)		=	+pc/no(smi):3
+  sapmi(nodeadkeys)	=	+pc/no(smi_nodeadkeys):3
+  sapmi(sefi)		=	+pc/fi(smi):3
+  sin(phonetic-static)	=	+pc/in(sin_phonetic):3
+  syr(basic)		=	+pc/sy(syc):3
+  syr(phonetic)		=	+pc/sy(syc_phonetic):3
+  tam(INSCRIPT)		=	+pc/in(tam):3
+  tam(UNI)		=	+pc/in(tam_unicode):3
+  tam(TAB)		=	+pc/in(tam_TAB):3
+  tam(TSCII)		=	+pc/in(tam_TSCII):3
+  tel(basic)		=	+pc/in(tel):3
+  yu(basic)		=	+pc/srp(latin):3
+  yu(unicode)		=	+pc/srp(latinunicode):3
+  yu(yz)		=	+pc/srp(latinyz):3
+  yu(unicodeyz)		=	+pc/srp(latinunicodeyz):3
+  *			=	+pc/%l[3]%(v[3]):3
 
-! model         =       symbols
-  $inetkbds     =       +inet(%m)
+! layout[4]		=	symbols
+  ar			=	+pc/ara%(v[4]):4
+  ben			=	+pc/in(ben)%(v[4]):4
+  bs			=	+pc/ba%(v[4]):4
+  dev			=	+pc/in(deva)%(v[4]):4
+  dvorak		=	+pc/us(dvorak)%(v[4]):4
+  dz			=	+pc/bt%(v[4]):4
+  el			=	+pc/gr%(v[4]):4
+  ge_la			=	+pc/ge%(v[4]):4
+  ge_ru			=	+pc/ge(ru)%(v[4]):4
+  guj			=	+pc/in(guj)%(v[4]):4
+  gur			=	+pc/in(guru)%(v[4]):4
+  iu			=	+pc/ca(ike)%(v[4]):4
+  lo			=	+pc/la%(v[4]):4
+  kan			=	+pc/in(kan)%(v[4]):4
+  mi			=	+pc/mao%(v[4]):4
+  mk			=	+pc/mkd%(v[4]):4
+  ml			=	+pc/in(mal)%(v[4]):4
+  ogham			=	+pc/ie(ogam)%(v[4]):4
+  ori			=	+pc/ie(ori)%(v[4]):4
+  sapmi			=	+pc/no(smi)%(v[4]):4
+  sr			=	+pc/srp%(v[4]):4
+  syr			=	+pc/sy(syc)%(v[4]):4
+  tel			=	+pc/in(tel)%(v[4]):4
+  tml			=	+pc/in(tam)%(v[4]):4
+  yu			=	+pc/srp%(v[4]):4
+  ben(basic)		=	+pc/in(ben):4
+  ben(probhat)		=	+pc/in(ben_probhat):4
+  dev(basic)		=	+pc/in(deva):4
+  dvorak(gb)		=	+pc/gb(dvorak):4
+  dvorak(fr)		=	+pc/fr(dvorak):4
+  dvorak(no)		=	+pc/no(dvorak):4
+  dvorak(se)		=	+pc/se(dvorak):4
+  dvorak(basic)		=	+pc/us(dvorak):4
+  dvorak(pl_basic)	=	+pc/pl(dvorak):4
+  dvorak(pl)		=	+pc/pl(dvorak_quotes):4
+  dvorak(pl_altquotes)	=	+pc/pl(dvorak_altquotes):4
+  dz(basic)		=	+pc/bt(basic):4
+  guj(basic)		=	+pc/in(guj):4
+  gur(basic)		=	+pc/in(guru):4
+  ie(laptop)		=	+pc/ie(basic):4
+  ie(CloGaelachLaptop)	=	+pc/ie(CloGaelach):4
+  iu(basic)		=	+pc/ca(ike):4
+  lo(basic)		=	+pc/la(basic):4
+  kan(basic)		=	+pc/in(kan):4
+  mal(basic)		=	+pc/in(mal):4
+  mal(mlplusnum)	=	+pc/in(mal):4
+  ogham(basic)		=	+pc/ie(ogam):4
+  ogham(laptop)		=	+pc/ie(ogam):4
+  ogham(is434)		=	+pc/ie(ogam_is434):4
+  ogham(is434laptop)	=	+pc/ie(ogam_is434):4
+  ori(basic)		=	+pc/in(ori):4
+  sapmi(basic)		=	+pc/no(smi):4
+  sapmi(nodeadkeys)	=	+pc/no(smi_nodeadkeys):4
+  sapmi(sefi)		=	+pc/fi(smi):4
+  sin(phonetic-static)	=	+pc/in(sin_phonetic):4
+  syr(basic)		=	+pc/sy(syc):4
+  syr(phonetic)		=	+pc/sy(syc_phonetic):4
+  tam(INSCRIPT)		=	+pc/in(tam):4
+  tam(UNI)		=	+pc/in(tam_unicode):4
+  tam(TAB)		=	+pc/in(tam_TAB):4
+  tam(TSCII)		=	+pc/in(tam_TSCII):4
+  tel(basic)		=	+pc/in(tel):4
+  yu(basic)		=	+pc/srp(latin):4
+  yu(unicode)		=	+pc/srp(latinunicode):4
+  yu(yz)		=	+pc/srp(latinyz):4
+  yu(unicodeyz)		=	+pc/srp(latinunicodeyz):4
+  *			=	+pc/%l[4]%(v[4]):4
 
-! model		layout	=	compat
-  pc98		nec/jp	=	pc98(basic)
-  *		*	=	complete
+! layout		variant		=	symbols
+  ben		basic		=	+pc/in(ben)
+  ben		probhat		=	+pc/in(ben_probhat)
+  dev		basic		=	+pc/in(deva)
+  dvorak	gb		=	+pc/gb(dvorak)
+  dvorak	fr		=	+pc/fr(dvorak)
+  dvorak	no		=	+pc/no(dvorak)
+  dvorak	se		=	+pc/se(dvorak)
+  dvorak	basic		=	+pc/us(dvorak)
+  dvorak	pl_basic	=	+pc/pl(dvorak)
+  dvorak	pl		=	+pc/pl(dvorak_quotes)
+  dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes)
+  dz		basic		=	+pc/bt(basic)
+  guj		basic		=	+pc/in(guj)
+  gur		basic		=	+pc/in(guru)
+  ie		laptop		=	+pc/ie(basic)
+  ie		CloGaelachLaptop	=	+pc/ie(CloGaelach)
+  iu		basic		=	+pc/ca(ike)
+  lo		basic		=	+pc/la(basic)
+  kan		basic		=	+pc/in(kan)
+  mal		basic		=	+pc/in(mal)
+  mal		mlplusnum	=	+pc/in(mal)
+  ogham		basic		=	+pc/ie(ogam)
+  ogham		laptop		=	+pc/ie(ogam)
+  ogham		is434		=	+pc/ie(ogam_is434)
+  ogham		is434laptop	=	+pc/ie(ogam_is434)
+  ori		basic		=	+pc/in(ori)
+  sapmi		basic		=	+pc/no(smi)
+  sapmi		nodeadkeys	=	+pc/no(smi_nodeadkeys)
+  sapmi		sefi		=	+pc/fi(smi)
+  sin		phonetic-static	=	+pc/in(sin_phonetic)
+  syr		basic		=	+pc/sy(syc)
+  syr		phonetic	=	+pc/sy(syc_phonetic)
+  tam		INSCRIPT	=	+pc/in(tam)
+  tam		UNI		=	+pc/in(tam_unicode)
+  tam		TAB		=	+pc/in(tam_TAB)
+  tam		TSCII		=	+pc/in(tam_TSCII)
+  tel		basic		=	+pc/in(tel)
+  yu		basic		=	+pc/srp(latin)
+  yu		unicode		=	+pc/srp(latinunicode)
+  yu		yz		=	+pc/srp(latinyz)
+  yu		unicodeyz	=	+pc/srp(latinunicodeyz)
 
-! model	     layout[1]	=	compat
-  *		*	=	complete
+! layout[1]	variant[1]	=	symbols
+  ben		basic		=	+pc/in(ben)
+  ben		probhat		=	+pc/in(ben_probhat)
+  dev		basic		=	+pc/in(deva)
+  dvorak	gb		=	+pc/gb(dvorak)
+  dvorak	fr		=	+pc/fr(dvorak)
+  dvorak	no		=	+pc/no(dvorak)
+  dvorak	se		=	+pc/se(dvorak)
+  dvorak	basic		=	+pc/us(dvorak)
+  dvorak	pl_basic	=	+pc/pl(dvorak)
+  dvorak	pl		=	+pc/pl(dvorak_quotes)
+  dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes)
+  dz		basic		=	+pc/bt(basic)
+  guj		basic		=	+pc/in(guj)
+  gur		basic		=	+pc/in(guru)
+  ie		laptop		=	+pc/ie(basic)
+  ie		CloGaelachLaptop	=	+pc/ie(CloGaelach)
+  iu		basic		=	+pc/ca(ike)
+  lo		basic		=	+pc/la(basic)
+  kan		basic		=	+pc/in(kan)
+  mal		basic		=	+pc/in(mal)
+  mal		mlplusnum	=	+pc/in(mal)
+  ogham		basic		=	+pc/ie(ogam)
+  ogham		laptop		=	+pc/ie(ogam)
+  ogham		is434		=	+pc/ie(ogam_is434)
+  ogham		is434laptop	=	+pc/ie(ogam_is434)
+  ori		basic		=	+pc/in(ori)
+  sapmi		basic		=	+pc/no(smi)
+  sapmi		nodeadkeys	=	+pc/no(smi_nodeadkeys)
+  sapmi		sefi		=	+pc/fi(smi)
+  sin		phonetic-static	=	+pc/in(sin_phonetic)
+  syr		basic		=	+pc/sy(syc)
+  syr		phonetic	=	+pc/sy(syc_phonetic)
+  tam		INSCRIPT	=	+pc/in(tam)
+  tam		UNI		=	+pc/in(tam_unicode)
+  tam		TAB		=	+pc/in(tam_TAB)
+  tam		TSCII		=	+pc/in(tam_TSCII)
+  tel		basic		=	+pc/in(tel)
+  yu		basic		=	+pc/srp(latin)
+  yu		unicode		=	+pc/srp(latinunicode)
+  yu		yz		=	+pc/srp(latinyz)
+  yu		unicodeyz	=	+pc/srp(latinunicodeyz)
+
+! layout[2]	variant[2]	=	symbols
+  ben		basic		=	+pc/in(ben):2
+  ben		probhat		=	+pc/in(ben_probhat):2
+  dev		basic		=	+pc/in(deva):2
+  dvorak	gb		=	+pc/gb(dvorak):2
+  dvorak	fr		=	+pc/fr(dvorak):2
+  dvorak	no		=	+pc/no(dvorak):2
+  dvorak	se		=	+pc/se(dvorak):2
+  dvorak	basic		=	+pc/us(dvorak):2
+  dvorak	pl_basic	=	+pc/pl(dvorak):2
+  dvorak	pl		=	+pc/pl(dvorak_quotes):2
+  dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes):2
+  dz		basic		=	+pc/bt(basic):2
+  guj		basic		=	+pc/in(guj):2
+  gur		basic		=	+pc/in(guru):2
+  ie		laptop		=	+pc/ie(basic):2
+  ie		CloGaelachLaptop	=	+pc/ie(CloGaelach):2
+  iu		basic		=	+pc/ca(ike):2
+  lo		basic		=	+pc/la(basic):2
+  kan		basic		=	+pc/in(kan):2
+  mal		basic		=	+pc/in(mal):2
+  mal		mlplusnum	=	+pc/in(mal):2
+  ogham		basic		=	+pc/ie(ogam):2
+  ogham		laptop		=	+pc/ie(ogam):2
+  ogham		is434		=	+pc/ie(ogam_is434):2
+  ogham		is434laptop	=	+pc/ie(ogam_is434):2
+  ori		basic		=	+pc/in(ori):2
+  sapmi		basic		=	+pc/no(smi):2
+  sapmi		nodeadkeys	=	+pc/no(smi_nodeadkeys):2
+  sapmi		sefi		=	+pc/fi(smi):2
+  sin		phonetic-static	=	+pc/in(sin_phonetic):2
+  syr		basic		=	+pc/sy(syc):2
+  syr		phonetic	=	+pc/sy(syc_phonetic):2
+  tam		INSCRIPT	=	+pc/in(tam):2
+  tam		UNI		=	+pc/in(tam_unicode):2
+  tam		TAB		=	+pc/in(tam_TAB):2
+  tam		TSCII		=	+pc/in(tam_TSCII):2
+  tel		basic		=	+pc/in(tel):2
+  yu		basic		=	+pc/srp(latin):2
+  yu		unicode		=	+pc/srp(latinunicode):2
+  yu		yz		=	+pc/srp(latinyz):2
+  yu		unicodeyz	=	+pc/srp(latinunicodeyz):2
+
+! layout[3]	variant[3]	=	symbols
+  ben		basic		=	+pc/in(ben):3
+  ben		probhat		=	+pc/in(ben_probhat):3
+  dev		basic		=	+pc/in(deva):3
+  dvorak	gb		=	+pc/gb(dvorak):3
+  dvorak	fr		=	+pc/fr(dvorak):3
+  dvorak	no		=	+pc/no(dvorak):3
+  dvorak	se		=	+pc/se(dvorak):3
+  dvorak	basic		=	+pc/us(dvorak):3
+  dvorak	pl_basic	=	+pc/pl(dvorak):3
+  dvorak	pl		=	+pc/pl(dvorak_quotes):3
+  dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes):3
+  dz		basic		=	+pc/bt(basic):3
+  guj		basic		=	+pc/in(guj):3
+  gur		basic		=	+pc/in(guru):3
+  ie		laptop		=	+pc/ie(basic):3
+  ie		CloGaelachLaptop	=	+pc/ie(CloGaelach):3
+  iu		basic		=	+pc/ca(ike):3
+  lo		basic		=	+pc/la(basic):3
+  kan		basic		=	+pc/in(kan):3
+  mal		basic		=	+pc/in(mal):3
+  mal		mlplusnum	=	+pc/in(mal):3
+  ogham		basic		=	+pc/ie(ogam):3
+  ogham		laptop		=	+pc/ie(ogam):3
+  ogham		is434		=	+pc/ie(ogam_is434):3
+  ogham		is434laptop	=	+pc/ie(ogam_is434):3
+  ori		basic		=	+pc/in(ori):3
+  sapmi		basic		=	+pc/no(smi):3
+  sapmi		nodeadkeys	=	+pc/no(smi_nodeadkeys):3
+  sapmi		sefi		=	+pc/fi(smi):3
+  sin		phonetic-static	=	+pc/in(sin_phonetic):3
+  syr		basic		=	+pc/sy(syc):3
+  syr		phonetic	=	+pc/sy(syc_phonetic):3
+  tam		INSCRIPT	=	+pc/in(tam):3
+  tam		UNI		=	+pc/in(tam_unicode):3
+  tam		TAB		=	+pc/in(tam_TAB):3
+  tam		TSCII		=	+pc/in(tam_TSCII):3
+  tel		basic		=	+pc/in(tel):3
+  yu		basic		=	+pc/srp(latin):3
+  yu		unicode		=	+pc/srp(latinunicode):3
+  yu		yz		=	+pc/srp(latinyz):3
+  yu		unicodeyz	=	+pc/srp(latinunicodeyz):3
+
+! layout[4]	variant[4]	=	symbols
+  ben		basic		=	+pc/in(ben):4
+  ben		probhat		=	+pc/in(ben_probhat):4
+  dev		basic		=	+pc/in(deva):4
+  dvorak	gb		=	+pc/gb(dvorak):4
+  dvorak	fr		=	+pc/fr(dvorak):4
+  dvorak	no		=	+pc/no(dvorak):4
+  dvorak	se		=	+pc/se(dvorak):4
+  dvorak	basic		=	+pc/us(dvorak):4
+  dvorak	pl_basic	=	+pc/pl(dvorak):4
+  dvorak	pl		=	+pc/pl(dvorak_quotes):4
+  dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes):4
+  dz		basic		=	+pc/bt(basic):4
+  guj		basic		=	+pc/in(guj):4
+  gur		basic		=	+pc/in(guru):4
+  ie		laptop		=	+pc/ie(basic):4
+  ie		CloGaelachLaptop	=	+pc/ie(CloGaelach):4
+  iu		basic		=	+pc/ca(ike):4
+  lo		basic		=	+pc/la(basic):4
+  kan		basic		=	+pc/in(kan):4
+  mal		basic		=	+pc/in(mal):4
+  mal		mlplusnum	=	+pc/in(mal):4
+  ogham		basic		=	+pc/ie(ogam):4
+  ogham		laptop		=	+pc/ie(ogam):4
+  ogham		is434		=	+pc/ie(ogam_is434):4
+  ogham		is434laptop	=	+pc/ie(ogam_is434):4
+  ori		basic		=	+pc/in(ori):4
+  sapmi		basic		=	+pc/no(smi):4
+  sapmi		nodeadkeys	=	+pc/no(smi_nodeadkeys):4
+  sapmi		sefi		=	+pc/fi(smi):4
+  sin		phonetic-static	=	+pc/in(sin_phonetic):4
+  syr		basic		=	+pc/sy(syc):4
+  syr		phonetic	=	+pc/sy(syc_phonetic):4
+  tam		INSCRIPT	=	+pc/in(tam):4
+  tam		UNI		=	+pc/in(tam_unicode):4
+  tam		TAB		=	+pc/in(tam_TAB):4
+  tam		TSCII		=	+pc/in(tam_TSCII):4
+  tel		basic		=	+pc/in(tel):4
+  yu		basic		=	+pc/srp(latin):4
+  yu		unicode		=	+pc/srp(latinunicode):4
+  yu		yz		=	+pc/srp(latinyz):4
+  yu		unicodeyz	=	+pc/srp(latinunicodeyz):4
+
+! model		=	symbols
+ $inetkbds	=	+inet(%m)
+ $maclaptop	=	+apple(laptop_bad_switch)
+
+! model		layout		=	compat
+  pc98		nec/jp		=	pc98(basic)
+  *		*		=	complete
+
+! model		layout[1]	=	compat
+  *		*		=	complete
 
 ! model		=	types
   *		=	complete
 
-! option		=	symbols
+! option	=	symbols
   grp:switch		=	+group(switch)
   grp:lswitch		=	+group(lswitch)
   grp:win_switch	=	+group(win_switch)
   grp:lwin_switch	=	+group(lwin_switch)
   grp:rwin_switch	=	+group(rwin_switch)
   grp:toggle		=	+group(toggle)
-  grp:shift_toggle	=	+group(shift_toggle)
+  grp:shifts_toggle	=	+group(shifts_toggle)
   grp:ctrls_toggle	=	+group(ctrls_toggle)
   grp:alts_toggle	=	+group(alts_toggle)
   grp:ctrl_shift_toggle	=	+group(ctrl_shift_toggle)
   grp:caps_toggle	=	+group(caps_toggle)
+  grp:shift_caps_toggle	=	+group(shift_caps_toggle)
   grp:ctrl_alt_toggle	=	+group(ctrl_alt_toggle)
   grp:alt_shift_toggle	=	+group(alt_shift_toggle)
   grp:menu_toggle	=	+group(menu_toggle)
   grp:lwin_toggle	=	+group(lwin_toggle)
   grp:rwin_toggle	=	+group(rwin_toggle)
-  grp:sclk_toggle	=	+group(sclk_toggle)
   grp:lshift_toggle	=	+group(lshift_toggle)
   grp:rshift_toggle	=	+group(rshift_toggle)
   grp:lctrl_toggle	=	+group(lctrl_toggle)
   grp:rctrl_toggle	=	+group(rctrl_toggle)
   grp:lalt_toggle	=	+group(lalt_toggle)
+  lv3:switch		=	+level3(switch)
+  lv3:ralt_switch	=	+level3(ralt_switch)
+  lv3:lalt_switch	=	+level3(lalt_switch)
+  lv3:alt_switch	=	+level3(alt_switch)
+  lv3:menu_switch	=	+level3(menu_switch)
+  lv3:win_switch	=	+level3(win_switch)
+  lv3:lwin_switch	=	+level3(lwin_switch)
+  lv3:rwin_switch	=	+level3(rwin_switch)
+  caps:capslock		=	+capslock(capslock)
+  caps:shiftlock	=	+capslock(shiftlock)
+  caps:grouplock	=	+capslock(grouplock)
   ctrl:nocaps		=	+ctrl(nocaps)
   ctrl:swapcaps		=	+ctrl(swapcaps)
   ctrl:ctrl_ac		=	+ctrl(ctrl_ac)
   ctrl:ctrl_aa		=	+ctrl(ctrl_aa)
+  ctrl:ctrl_ra		=	+ctrl(ctrl_ra)
   altwin:menu		=	+altwin(menu)
   altwin:meta_alt	=	+altwin(meta_alt)
   altwin:meta_win	=	+altwin(meta_win)
   altwin:left_meta_win	=	+altwin(left_meta_win)
   altwin:super_win	=	+altwin(super_win)
   altwin:hyper_win	=	+altwin(hyper_win)
+  altwin:alt_super_win	=	+altwin(alt_super_win)
+  compose:ralt		=	+compose(ralt)
+  compose:rwin		=	+compose(rwin)
+  compose:menu		=	+compose(menu)
+  compose:rctrl		=	+compose(rctrl)
+  srvrkeys:none		=	+srvr_ctrl(no_srvr_keys)
+  eurosign:e		=	+eurosign(e)
+  eurosign:5		=	+eurosign(5)
+  eurosign:2		=	+eurosign(2)
+  grp:switch		=	+group(switch)
+  grp:lswitch		=	+group(lswitch)
+  grp:win_switch	=	+group(win_switch)
+  grp:lwin_switch	=	+group(lwin_switch)
+  grp:rwin_switch	=	+group(rwin_switch)
+  grp:toggle		=	+group(toggle)
+  grp:shifts_toggle	=	+group(shifts_toggle)
+  grp:ctrls_toggle	=	+group(ctrls_toggle)
+  grp:alts_toggle	=	+group(alts_toggle)
+  grp:ctrl_shift_toggle	=	+group(ctrl_shift_toggle)
+  grp:caps_toggle	=	+group(caps_toggle)
+  grp:shift_caps_toggle	=	+group(shift_caps_toggle)
+  grp:ctrl_alt_toggle	=	+group(ctrl_alt_toggle)
+  grp:alt_shift_toggle	=	+group(alt_shift_toggle)
+  grp:menu_toggle	=	+group(menu_toggle)
+  grp:lwin_toggle	=	+group(lwin_toggle)
+  grp:rwin_toggle	=	+group(rwin_toggle)
+  grp:lshift_toggle	=	+group(lshift_toggle)
+  grp:rshift_toggle	=	+group(rshift_toggle)
+  grp:lctrl_toggle	=	+group(lctrl_toggle)
+  grp:rctrl_toggle	=	+group(rctrl_toggle)
+  grp:lalt_toggle	=	+group(lalt_toggle)
   lv3:switch		=	+level3(switch)
+  lv3:ralt_switch	=	+level3(ralt_switch)
+  lv3:lalt_switch	=	+level3(lalt_switch)
+  lv3:alt_switch	=	+level3(alt_switch)
   lv3:menu_switch	=	+level3(menu_switch)
   lv3:win_switch	=	+level3(win_switch)
   lv3:lwin_switch	=	+level3(lwin_switch)
   lv3:rwin_switch	=	+level3(rwin_switch)
-  lv3:ralt_switch	=	+level3(ralt_switch)
-  lv3:ralt_switch_multikey =	+level3(ralt_switch_multikey)
+  caps:capslock		=	+capslock(capslock)
+  caps:shiftlock	=	+capslock(shiftlock)
+  caps:grouplock	=	+capslock(grouplock)
+  ctrl:nocaps		=	+ctrl(nocaps)
+  ctrl:swapcaps		=	+ctrl(swapcaps)
+  ctrl:ctrl_ac		=	+ctrl(ctrl_ac)
+  ctrl:ctrl_aa		=	+ctrl(ctrl_aa)
+  ctrl:ctrl_ra		=	+ctrl(ctrl_ra)
+  altwin:menu		=	+altwin(menu)
+  altwin:meta_alt	=	+altwin(meta_alt)
+  altwin:meta_win	=	+altwin(meta_win)
+  altwin:left_meta_win	=	+altwin(left_meta_win)
+  altwin:super_win	=	+altwin(super_win)
+  altwin:hyper_win	=	+altwin(hyper_win)
+  altwin:alt_super_win	=	+altwin(alt_super_win)
   compose:ralt		=	+compose(ralt)
   compose:rwin		=	+compose(rwin)
   compose:menu		=	+compose(menu)
-  compose:caps		=	+compose(caps)
+  compose:rctrl		=	+compose(rctrl)
+  srvrkeys:none		=	+srvr_ctrl(no_srvr_keys)
+  eurosign:e		=	+eurosign(e)
+  eurosign:5		=	+eurosign(5)
+  eurosign:2		=	+eurosign(2)
 
-! option		=	compat
-  grp_led:num		=	+leds(num)
-  grp_led:caps		=	+leds(caps)
-  grp_led:scroll	=	+leds(scroll)
+! option	=	compat
+  grp_led:num		=	+lednum(group_lock)
+  grp_led:caps		=	+ledcaps(group_lock)
+  grp_led:scroll	=	+ledscroll(group_lock)
+  grp:caps_toggle	=	+ledcaps(group_lock)
 
-! option			=	types
+! option	=	types
   caps:internal			=	+caps(internal)
   caps:internal_nocancel	=	+caps(internal_nocancel)
   caps:shift			=	+caps(shift)
   caps:shift_nocancel		=	+caps(shift_nocancel)
+  numpad:microsoft		=	+numpad(microsoft)
