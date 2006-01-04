@@ -17,6 +17,8 @@
 ! $maclaptop = ibook powerbook
 ! $mac = macintosh macintosh_old ibook powerbook
 
+! $maclayouts = de de_CH dk es fi fr fr_CH gb it nl no pt se us
+
 ! $azerty = be fr
 ! $qwertz = al cz de hr hu ro si sk 
 
@@ -107,10 +109,12 @@
   ar			=	+pc/ara%(v)
   ben			=	+pc/in(ben)
   bs			=	+pc/ba%(v)
+  de_CH			=	+pc/ch(de)
   dev			=	+pc/in(deva)
   dvorak		=	+pc/us(dvorak)
   dz			=	+pc/bt%(v)
   el			=	+pc/gr%(v)
+  fr_CH			=	+pc/ch(fr)
   ge_la			=	+pc/ge%(v)
   ge_ru			=	+pc/ge(ru)
   guj			=	+pc/in(guj)
@@ -174,6 +178,10 @@
   ca			=	+pc/ca(multi)+pc/ca(multi-2gr):2+group(rctrl_switch)
   $nonlatin		=	+pc/us+pc/%l%(v):2
   *			=	+pc/%l%(v)
+
+! model		layout		=	symbols
+ $maclaptop	$maclayouts	=	+macintosh/%l%(v)
+ $mac		$maclayouts	=	+macintosh/%l%(v)
 
 ! layout[1]		=	symbols
   ar			=	+pc/ara%(v[1])
@@ -454,6 +462,7 @@
 ! layout		variant		=	symbols
   ben		basic		=	+pc/in(ben)
   ben		probhat		=	+pc/in(ben_probhat)
+  de_CH		nodeadkeys	=	+pc/ch(de_nodeadkeys)
   dev		basic		=	+pc/in(deva)
   dvorak	gb		=	+pc/gb(dvorak)
   dvorak	fr		=	+pc/fr(dvorak)
@@ -464,6 +473,7 @@
   dvorak	pl		=	+pc/pl(dvorak_quotes)
   dvorak	pl_altquotes	=	+pc/pl(dvorak_altquotes)
   dz		basic		=	+pc/bt(basic)
+  fr_CH		nodeadkeys	=	+pc/ch(fr_nodeadkeys)
   guj		basic		=	+pc/in(guj)
   gur		basic		=	+pc/in(guru)
   ie		laptop		=	+pc/ie(basic)
