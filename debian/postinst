@@ -64,8 +64,8 @@ CODESET=$codeset
 FONTFACE=$fontface
 FONTSIZE=$fontsize
 
-# You can also directly specify the font and the ACM to load at boot time:
-# FONT=$CONFIGDIR/$fontname
+# You can also directly specify nonstandard font and the ACM to load:
+# FONT=/usr/share/console-cyrillic/sarge-16.psf
 # ACM=$acm
 
 XKBMODEL=$model
