@@ -70,6 +70,7 @@ binary-indep: build install
 	dh_installdebconf
 	dh_installdocs -pconsole-setup README*
 	dh_installdocs -pconsole-terminus README.Terminus
+	cp copyright.fonts copyright.X debian/console-setup/usr/share/doc/console-setup/
 #	dh_installexamples
 #	dh_installman
 #	dh_installinfo
