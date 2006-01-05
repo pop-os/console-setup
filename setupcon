@@ -2,9 +2,6 @@
 
 #     setupcon -- setup the font and keyboard on the Linux console
 #     Copyright © 1999,2000,2001,2002,2003,2006 Anton Zinoviev
-#     Portions based on the keymap.sh script of the console-common package
-#     Copyright © 2001 Yann Dirson
-#     Copyright © 2001 Alcove http://www.alcove.fr/
 
 #     This program is free software; you can redistribute it and/or modify
 #     it under the terms of the GNU General Public License as published by
@@ -20,10 +17,72 @@
 #     along with this program, write to the Free Software Foundation, Inc.,
 #     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-if [ -f /etc/default/console-setup ]; then
-    . /etc/default/console-setup
+while [ "$1" ]; do
+    case "$1" in
+	-k|--keyboard-only)
+	    keyboard_only=true
+	    ;;
+	-f|--font-only)
+	    font_only=true
+	    ;;
+	-v|--verbose)
+	    verbose_option=yes
+	    ;;
+	-h|--help)
+	    cat >&2 <<EOF
+Usage: setupcon [OPTION] [VARIANT]
+Sets up the font and the keyboard on Linux console.
+
+  -k, --keyboard-only  setup the keyboard only, do not setup the font
+  -f, --font-only      setup the font only, do not setup the keyboard
+  -v, --verbose        explain what is being doing, try it if s.t. goes wrong
+  -h, --help           display this help and exit
+
+If VARIANT is not specified setupcon looks for the configuration files
+(in this order) ~/.console-setup and /etc/default/console-setup.  When
+a VARIANT is specified then setupcon looks for the configuration files
+~/.console-setup.VARIANT and /etc/default/console-setup.VARIANT.
+EOF
+	    exit 0
+	    ;;
+	-*)
+	    echo "setupcon: Unrecognised option $1" >&2
+	    exit 1
+	    ;;
+	*)
+	    if [ -z "$VARIANT" ]; then
+		VARIANT="$1"
+	    else
+		echo "setupcon: Two variants specified: $VARIANT and $1" >&2
+		exit 1
+	    fi
+	    ;;
+    esac
+    shift
+done
+
+if [ "$VARIANT" ]; then
+    USER_CONFIG=${HOME}/.console-setup."$VARIANT"
+    MAIN_CONFIG=/etc/default/console-setup."$VARIANT"
+else
+    USER_CONFIG=${HOME}/.console-setup
+    MAIN_CONFIG=/etc/default/console-setup
 fi
 
+if [ -f "$USER_CONFIG" ]; then
+    CONFIG="$USER_CONFIG"
+elif [ -f "$MAIN_CONFIG" ]; then
+    CONFIG="$MAIN_CONFIG"
+else
+    echo "setupcon: None of $MAIN_CONFIG nor $USER_CONFIG exists." >&2
+    exit 1
+fi
+
+. "$CONFIG"
+
+if [ "$verbose_option" = yes ]; then
+    VERBOSE_OUTPUT=yes
+fi
 if [ "$VERBOSE_OUTPUT" = yes ]; then
     verbose=''
 else
@@ -34,64 +93,97 @@ case `readlink /proc/self/fd/0` in
     /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
 	;;
     *)
-        # Exit silently when we are not on the Linux console
+	if [ "$VERBOSE_OUTPUT" = yes ]; then
+	    echo We are not on the Linux console, exiting.
+	fi
 	exit 0 
 	;;
 esac
 
-# On Mac PPC machines, we may need to set kernel vars first
-# We need to mount /proc to do that; not optimal, as its going to 
-# be mounted in S10checkroot, but we need it set up before sulogin
-# may be run in checkroot, which will need the keyboard to log in...
-if [ -x /sbin/sysctl ] && [ -r /etc/sysctl.conf ]; then
-    if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
-	grep keycodes /etc/sysctl.conf | grep -v "^#" \
-	    | while read d ; do
-	    /sbin/sysctl -w $d 2> /dev/null || true
-	done
-    fi
-fi
+#-----------------------#
+#       OUTPUT          #
+#-----------------------#
 
-if [ "$ACTIVE_CONSOLES" ]; then
+if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
     for console in $ACTIVE_CONSOLES; do
+	# Setup unicode/non-unicode mode
 	if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
 	    /bin/echo -n -e '\033%G' >$console
 	else
 	    /bin/echo -n -e '\033%@' >$console
 	fi
+
+	# Load the font
 	if [ ! -f "$FONT" ]; then
 	    FONT=/etc/console-setup/$CODESET-$FONTFACE$FONTSIZE.psf.gz
 	fi
-	if [ -f "$FONT" ]; then
-	    if which consolechars >/dev/null; then
-		eval consolechars -v --tty=$console -f "$FONT" $verbose
-	    elif which setfont >/dev/null; then
-		eval setfont -v -C $console "$FONT" $verbose
-	    fi
+	if [ ! -f "$FONT" ]; then
+	    FONT=$CODESET-$FONTFACE$FONTSIZE.psf.gz
 	fi
+	if which consolechars >/dev/null; then
+	    eval consolechars -v --tty=$console -f "$FONT" $verbose
+	elif which setfont >/dev/null; then
+	    eval setfont -v -C $console "$FONT" $verbose
+	fi
+
+	# Load the ACM
 	if [ ! -f "$ACM" ]; then
 	    ACM=/etc/console-setup/$CHARMAP.acm.gz
 	fi
-	if [ "$CHARMAP" != UTF-8 ] && [ -f "$ACM" ]; then
+	if [ ! -f "$ACM" ]; then
+	    ACM=$CHARMAP.acm.gz
+	fi
+	if [ "$CHARMAP" != UTF-8 ]; then
 	    if which consolechars >/dev/null; then
-		eval consolechars -v --tty=$console \
-		    --acm "$ACM" $verbose
+		eval consolechars -v --tty=$console --acm "$ACM" $verbose
 	    elif which setfont >/dev/null; then
 		eval setfont -v -C -m "$ACM" $verbose
 	    fi	    
 	fi
     done
 fi
-if which kbd_mode >/dev/null; then
-    if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
-	kbd_mode -u
-    else
-	kbd_mode -a
-    fi	
+
+#-----------------------#
+#        INPUT          #
+#-----------------------#
+
+if [ "$font_only" != yes ]; then
+    # On Mac PPC machines, we may need to set kernel vars first.  We need
+    # to mount /proc to do that, but we need it set up before sulogin may
+    # be run in checkroot, which will need the keyboard to log in...
+    # This code was borrowed from the keymap.sh script of console-common
+    # Copyright © 2001 Yann Dirson
+    # Copyright © 2001 Alcove http://www.alcove.fr/
+    if [ -x /sbin/sysctl ] && [ -r /etc/sysctl.conf ]; then
+	if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
+	    grep keycodes /etc/sysctl.conf | grep -v "^#" \
+		| while read d ; do
+		      /sbin/sysctl -w $d 2> /dev/null || true
+	          done
+	fi
+    fi
+    
+    if which kbd_mode >/dev/null; then
+	if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
+	    kbd_mode -u
+	else
+	    kbd_mode -a
+	fi	
+    fi
+    
+    if which loadkeys >/dev/null; then
+	if which ckbcomp >/dev/null; then
+	    if [ "$CHARMAP" != UTF-8 ]; then
+		acm_option="-charmap $CHARMAP"
+	    else
+		acm_option=''
+	    fi
+	    ckbcomp $acm_option -model "$XKBMODEL" \
+		"$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
+		| eval loadkeys $verbose
+	elif [ -f /etc/console-setup/boottime.kmap.gz ]; then
+	    eval loadkeys /etc/console-setup/boottime.kmap.gz $verbose
+	fi
+    fi
 fi
-if \
-    which loadkeys >/dev/null \
-    && [ -f /etc/console-setup/boottime.kmap.gz ]
-    then
-    eval loadkeys /etc/console-setup/boottime.kmap.gz $verbose
-fi
+

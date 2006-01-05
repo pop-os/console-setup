@@ -820,7 +820,7 @@ case "$locale" in
 	default_layout=vn
 	;;
     *)
-	default_layout=en_US
+	default_layout=us
 	;;
 esac
 default_variant=''
@@ -929,7 +929,7 @@ if [ -e $CONFIGFILE ]; then
 
     case "$XKBLAYOUT" in
 	# TODO: make s.t. to not forget to update this list
-	yu,sr|en_US,am|en_US,ar|en_US,ben|en_US,bg|en_US,by|en_US,dev|en_US,el|en_US,ge_la|en_US,ge_ru|en_US,guj|en_US,gur|en_US,il|en_US,il_phonetic|en_US,ir|en_US,iu|en_US,kan|en_US,lo|en_US,mk|en_US,mm|en_US,ml|en_US,ori|en_US,ru|en_US,syr|en_US,syr_phonetic|en_US,tel|en_US,th|en_US,tj|en_US,tml|en_US,ua)
+	yu,sr|us,am|us,ar|us,ben|us,bg|us,by|us,dev|us,el|us,ge_la|us,ge_ru|us,guj|us,gur|us,il|us,il_phonetic|us,ir|us,iu|us,kan|us,lo|us,mk|us,mm|us,ml|us,ori|us,ru|us,syr|us,syr_phonetic|us,tel|us,th|us,tj|us,tml|us,ua)
 	    default_layout=${XKBLAYOUT#*,}
 	    default_variant="${XKBVARIANT#*,}"
 	    unsupported_layout=no
@@ -1060,7 +1060,7 @@ while :; do
 		    # TODO: make s.t. to not forget to update this list
 		    am|ar|ben|bg|by|dev|el|ge_la|ge_ru|guj|gur|il|il_phonetic|ir|iu|kan|lo|mk|mm|ml|ori|ru|syr|syr_phonetic|tel|th|tj|tml|ua)
 			latin=no
-			real_layout=en_US,$layout
+			real_layout=us,$layout
 			;;
 		    sr)
 			latin=no
