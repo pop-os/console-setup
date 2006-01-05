@@ -1,29 +1,12 @@
-=============
-CONSOLE FONTS
-=============
+=========
+CODE SETS
+=========
 
 The console fonts are named after the scheme CODESET-FONTFACE.psf,
 CODESET might be Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav,
 Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7,
-Thai, Uni1, Uni2, Uni3 and Vietnamese.  The numbers in the name of the
-font show the size of the font matrix.  For example
-Lat2-Terminus20x10.psf is a font for codeset Lat2 with size of the
-font matrix 10x20 (i.e. 10 columns and 20 rows).  If the number of
-columns is 8 then only the number of rows is specified.  For example
-the font matrix of Armenian-Fixed15.psf has size 8x15.
-
-In text video mode only fonts which font matrix has 8 columns can be
-used.  The other fonts can be used only with framebuffer video modes
-and with the package 'kbd'.  The console package 'console-tools' can
-not be used with such fonts.
-
-When fonts for code sets with 512 gliphs are used in text video mode
-(not framebuffer) only 8 foreground colours can be displayed.
-
-
-===================
-AVAILABLE CODE SETS
-===================
+Thai, Uni1, Uni2, Uni3 and Vietnamese. The codesets determine which
+symbols are supported by the font.
 
 Please notice that the existence of a font for a particular code set
 means that the font supports only most of it.  Unfortunately some of
@@ -32,6 +15,9 @@ support for your language.
 
 If you need multilingual environment, take a look at the Uni1, Uni2
 and Uni3 code sets.
+
+When fonts for code sets with 512 gliphs are used in text video mode
+(not framebuffer) only 8 foreground colours can be displayed.
 
 Arabic (512 gliphs)
    For Arabic, Kurdish in Iran, Pashto, Persian and Urdu.
@@ -115,10 +101,9 @@ Uni3 (512 gliphs)
 Vietnamese (512 gliphs)
    For Vietnamese
 
-
-====================
-AVAILABLE FONT FACES
-====================
+==========
+FONT FACES
+==========
 
 The following font faces are provided both for text video modes and
 for framebuffer:
@@ -148,9 +133,38 @@ only:
    TerminusBold12x6, TerminusBold20x10, TerminusBold24x12,
    TerminusBold28x14, TerminusBold32x16
 
-The font faces TerminusBold14 and TerminusBold16 have the same look as
-the font faces TerminusBoldVGA14 and TerminusBoldVGA16.  The only
-difference is that TerminusBold14 and TerminusBold16 are optimized for
-framebuffer and TerminusBoldVGA14 and TerminusBoldVGA16 are optimized
-for text video modes.
+The numbers in the FONTFACE show the size of the font matrix.  For
+example Lat2-Terminus20x10.psf is a font for codeset Lat2 with size of
+the font matrix 10x20 (i.e. 10 columns and 20 rows).  If the number of
+columns is 8 then only the number of rows is specified.  For example
+the font matrix of Armenian-Fixed15.psf has size 8x15.
+
+In text video mode only fonts which font matrix has 8 columns can be
+used (that is the size should be a simple NUMBER rather than a
+NUMBERxNUMBER combination).  The other fonts can be used only with
+framebuffer video modes and with the package 'kbd'.  The console
+package 'console-tools' can not be used with such fonts.
+
+=================
+THE TERMINUS FONT
+=================
+
+The aim of the Terminus font is to reduce the eyes-fatigue when one
+has to read a lot.  Currently this font supports only the Latin and
+the Cyrillic scripts (the Lat15, Lat2, Lat7, CyrAsia, CyrKoi, CyrSlav
+and Uni3 (512 gliphs) codesets).
+
+The fonts with font face TerminusBold and size 14 or 16 are optimized
+for 8 pixels width glyph matrix (in most cases this means framebuffer).
+
+The fonts with font face TerminusBoldVGA and size 14 or 16 are
+optimized for 9 pixels width glyph matrix and can not be used with
+framebuffer video modes.
+
+The fonts with font face Terminus and size 14 or 16 can be used both
+with 8 and 9 pixels width glyph matrix.
+
+In the regular text video modes the width of the glyph matrix is 9
+pixels.  If you use the package svgatextmode then the width is 8 or 9
+pixels and you probably know it.
 
