@@ -28,6 +28,9 @@ while [ "$1" ]; do
 	-v|--verbose)
 	    verbose_option=yes
 	    ;;
+	--save)
+	    save=yes
+	    ;;
 	-h|--help)
 	    cat >&2 <<EOF
 Usage: setupcon [OPTION] [VARIANT]
@@ -36,6 +39,8 @@ Sets up the font and the keyboard on Linux console.
   -k, --keyboard-only  setup the keyboard only, do not setup the font
   -f, --font-only      setup the font only, do not setup the keyboard
   -v, --verbose        explain what is being doing, try it if s.t. goes wrong
+      --save           copy the font and the ACM in /etc/console-setup,
+                         update /etc/console-setup/boottime.kmap.gz
   -h, --help           display this help and exit
 
 If VARIANT is not specified setupcon looks for the configuration files
@@ -115,10 +120,26 @@ if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
 
 	# Load the font
 	if [ ! -f "$FONT" ]; then
-	    FONT=/etc/console-setup/$CODESET-$FONTFACE$FONTSIZE.psf.gz
+	    for dir in \
+		/etc/console-setup \
+		/usr/local/share/consolefonts \
+		/usr/share/consolefonts
+	    do
+	      if [ -f "$dir/$CODESET-$FONTFACE$FONTSIZE.psf.gz" ]; then
+		  FONT="$dir/$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+		  break
+	      fi
+	    done
 	fi
-	if [ ! -f "$FONT" ]; then
-	    FONT=$CODESET-$FONTFACE$FONTSIZE.psf.gz
+	if [ -f "$FONT" ]; then
+	    if \
+		[ "$save" = yes ] \
+		&& [ "${FONT%/*}" != /etc/console-setup ]
+	    then
+		cp "$FONT" /etc/console-setup/
+	    fi
+	else
+	    FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
 	fi
 	if which consolechars >/dev/null; then
 	    eval consolechars -v --tty=$console -f "$FONT" $verbose
@@ -128,10 +149,26 @@ if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
 
 	# Load the ACM
 	if [ ! -f "$ACM" ]; then
-	    ACM=/etc/console-setup/$CHARMAP.acm.gz
+	    for dir in \
+		/etc/console-setup \
+		/usr/local/share/consoletrans \
+		/usr/share/consoletrans
+	    do
+	      if [ -f "$dir/$CHARMAP.acm.gz" ]; then
+		  ACM="$dir/$CHARMAP.acm.gz"
+		  break
+	      fi
+	    done
 	fi
-	if [ ! -f "$ACM" ]; then
-	    ACM=$CHARMAP.acm.gz
+	if [ -f "$ACM" ]; then
+	    if \
+		[ "$save" = yes ] \
+		&& [ "${ACM%/*}" != /etc/console-setup ]
+	    then
+		cp "$ACM" /etc/console-setup/
+	    fi
+	else
+	    ACM="$CHARMAP.acm.gz"
 	fi
 	if [ "$CHARMAP" != UTF-8 ]; then
 	    if which consolechars >/dev/null; then
@@ -181,6 +218,11 @@ if [ "$font_only" != yes ]; then
 	    ckbcomp $acm_option -model "$XKBMODEL" \
 		"$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
 		| eval loadkeys $verbose
+	    if which gzip >/dev/null && [ "$save" = yes ]; then
+		ckbcomp $acm_option -model "$XKBMODEL" \
+		    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
+		    | gzip -9 >/etc/console-setup/boottime.kmap.gz
+	    fi
 	elif [ -f /etc/console-setup/boottime.kmap.gz ]; then
 	    eval loadkeys /etc/console-setup/boottime.kmap.gz $verbose
 	fi
