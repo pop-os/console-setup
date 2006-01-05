@@ -1,3 +1,8 @@
+etcdir = /etc
+prefix = /usr/local
+
+bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
+
 SHELL = /bin/sh
 
 all: build
@@ -6,6 +11,22 @@ build:
 	cd Fonts; $(MAKE) build
 	cd Keyboard; $(MAKE) build
 	touch build
+
+.PHONY: install
+install: build
+	install -d $(prefix)/share/consolefonts/
+	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
+	install -d $(prefix)/share/consoletrans
+	install -m 644 Keyboard/acm/*.acm.gz $(prefix)/share/consoletrans
+	install -d $(etcdir)/console-setup
+	install -m 644 Keyboard/compose.*.inc $(etcdir)/console-setup/
+	cp -r Keyboard/ckb/ $(etcdir)/console-setup/
+	cp Keyboard/rules $(etcdir)/console-setup/ckb/rules/console
+	cp Keyboard/rules.xml $(etcdir)/console-setup/ckb/rules/console.xml
+	install -d  $(prefix)/bin/
+	install Keyboard/ckbcomp $(prefix)/bin/
+	install -d  $(bootprefix)/bin/
+	install setupcon $(bootprefix)/bin/
 
 .PHONY: clean
 clean:

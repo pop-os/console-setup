@@ -1,87 +1,16 @@
 #!/bin/sh
 
-if [ -f /etc/default/console-setup ]; then
-    . /etc/default/console-setup
-fi
+set -e
 
-if [ "$VERBOSE_OUTPUT" = yes ]; then
-    verbose=''
-else
-    verbose='>/dev/null 2>&1'
-fi
+test -f /bin/setupcon || exit 0
 
 case "$1" in
     stop)
         # console-setup isn't a daemon
         ;;
     start|force-reload|restart|reload)
-	case `readlink /proc/self/fd/0` in
-	    /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
-	        ;;
-	    *)
-                # Exit silently when we are not on the Linux console
-		exit 0 
-		;;
-	esac
-
 	echo -n "Setting up font and keyboard on the console... "
-
-        # On Mac PPC machines, we may need to set kernel vars first
-        # We need to mount /proc to do that; not optimal, as its going to 
-        # be mounted in S10checkroot, but we need it set up before sulogin
-        # may be run in checkroot, which will need the keyboard to log in...
-	if [ -x /sbin/sysctl ] && [ -r /etc/sysctl.conf ]; then
-	    if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
-		grep keycodes /etc/sysctl.conf | grep -v "^#" \
-		    | while read d ; do
-		        /sbin/sysctl -w $d 2> /dev/null || true
-		      done
-	    fi
-	fi
-
-	if [ "$ACTIVE_CONSOLES" ]; then
-	    for console in $ACTIVE_CONSOLES; do
-		if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
-		    /bin/echo -n -e '\033%G' >$console
-		else
-		    /bin/echo -n -e '\033%@' >$console
-		fi
-		if [ ! -f "$FONT" ]; then
-		    FONT=/etc/console-setup/$CODESET-$FONTFACE$FONTSIZE.psf.gz
-		fi
-		if [ -f "$FONT" ]; then
-		    if which consolechars >/dev/null; then
-			eval consolechars -v --tty=$console -f "$FONT" $verbose
-		    elif which setfont >/dev/null; then
-			eval setfont -v -C $console "$FONT" $verbose
-		    fi
-		fi
-		if [ ! -f "$ACM" ]; then
-		    ACM=/etc/console-setup/$CHARMAP.acm.gz
-		fi
-		if [ "$CHARMAP" != UTF-8 ] && [ -f "$ACM" ]; then
-		    if which consolechars >/dev/null; then
-			eval consolechars -v --tty=$console \
-			    --acm "$ACM" $verbose
-		    elif which setfont >/dev/null; then
-			eval setfont -v -C -m "$ACM" $verbose
-		    fi	    
-		fi
-	    done
-	fi
-	if which kbd_mode >/dev/null; then
-	    if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
-		kbd_mode -u
-	    else
-		kbd_mode -a
-	    fi	
-	fi
-	if \
-	    which loadkeys >/dev/null \
-	    && [ -f /etc/console-setup/boottime.kmap.gz ]
-	then
-	    eval loadkeys /etc/console-setup/boottime.kmap.gz $verbose
-	fi
+	setupcon
 	echo done.
 	;;
     *)
