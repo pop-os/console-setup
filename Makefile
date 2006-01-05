@@ -28,6 +28,18 @@ install: build
 	install -d  $(bootprefix)/bin/
 	install setupcon $(bootprefix)/bin/
 
+.PHONY: uninstall
+uninstall: build
+	-for font in Fonts/*.psf.gz; do \
+		rm $(prefix)/share/consolefonts/$${font##*/}; \
+	done
+	-for acm in Keyboard/acm/*.acm.gz; do \
+		rm $(prefix)/share/consoletrans/$${acm##*/}; \
+	done
+	-rm -rf $(etcdir)/console-setup/
+	-rm $(prefix)/bin/ckbcomp
+	-rm $(bootprefix)/bin/setupcon
+
 .PHONY: clean
 clean:
 	cd Fonts; $(MAKE) clean
