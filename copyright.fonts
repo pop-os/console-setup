@@ -116,25 +116,25 @@ to read what you did with his stuff. Horizontal rules don't apply.
    ter-u20b.bdf, ter-u20n.bdf, ter-u24b.bdf, ter-u24n.bdf,
    ter-u28b.bdf, ter-u28n.bdf, ter-u32b.bdf, ter-u32n.bdf
 
+The Terminus font was downloaded from http://www.is-vn.bg/hamster/
+
 Copyright © 2005 Dimitar Toshkov Zhekov.
+
+The patch http://www.is-vn.bg/hamster/terminus-font-4.16-ka1.diff.gz
+was applied to the fonts to change the look of the Cyrillic "k".
+
+You can use and distribute the font freely and without charge under
+the terms of the GNU General Public License version 2.0 or (at your
+choice) any later version.
+
+To avoid name conflicts with another products named "Terminus", the archive
+should be distributed as "Terminus Font", not "Terminus".
+
+You should have received a copy of the GNU General Public License
+along with this package; if not, write to the Free Software Foundation,
+Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+
 Report bugs to <jimmy@is-vn.bg>.
-
-You can use and distribute this archive freely and without charge
-under the terms of the GNU General Public License version 2.0 or (at
-your choice) any later version.
-
-This package is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-02110-1301, USA
-
-On Debian GNU/Linux systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
 
 == 100dpi-courB10.bdf 100dpi-courB10-IL2.bdf 100dpi-courR10.bdf
    100dpi-courR10-IL2.bdf 75dpi-courB12.bdf 75dpi-courB12c.bdf
