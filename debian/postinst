@@ -55,23 +55,8 @@ if [ "$1" = "configure" ]; then
     fi
 
     if [ ! -e $CONFIGFILE ]; then
-	cat >$CONFIGFILE <<EOF
-VERBOSE_OUTPUT=no
-
-ACTIVE_CONSOLES="$ttys"
-CHARMAP=$charmap
-CODESET=$codeset
-FONTFACE=$fontface
-FONTSIZE=$fontsize
-
-# You can also directly specify nonstandard font and ACM to load:
-# FONT=/usr/local/share/funnyfonts/sarge16.psf
-# ACM=$acm
-
-XKBMODEL=$model
-XKBLAYOUT=$layout
-XKBVARIANT=$variant
-XKBOPTIONS=$options
+	cat /usr/share/doc/console-setup/examples/console-setup >$CONFIGFILE
+	cat >>$CONFIGFILE <<EOF
 
 # Do not update the following md5 sum if you change
 # $CONFIGDIR/boottime.kmap.gz and Debconf will not overwrite

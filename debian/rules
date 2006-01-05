@@ -53,6 +53,9 @@ install: build
 	install -d debian/console-terminus/usr/share/consolefonts/
 	mv debian/console-setup/usr/share/consolefonts/*-Terminus*.psf.gz \
 		debian/console-terminus/usr/share/consolefonts/
+	install -d debian/console-setup/usr/share/doc/console-setup/examples/
+	mv debian/console-setup/etc/default/console-setup \
+		debian/console-setup/usr/share/doc/console-setup/examples/
 	rm -rf `find debian/console-setup -name .svn`
 	rm -rf `find debian/console-terminus -name .svn`
 	dh_installinit --noscripts
