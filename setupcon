@@ -111,6 +111,7 @@ esac
 
 if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
     for console in $ACTIVE_CONSOLES; do
+	[ -w $console ] || continue
 	# Setup unicode/non-unicode mode
 	if [ "$CHARMAP" = UTF-8 ] || [ -z "$ACM" ]; then
 	    /bin/echo -n -e '\033%G' >$console
