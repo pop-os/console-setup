@@ -31,7 +31,7 @@ In general, the configuration has two parts - font and keyboard.  The
 font configuration is straightforward, read README.fonts for more
 details.
 
-The keyboard configuration consists of giving values of four variables
+The keyboard configuration consists of giving values to four variables
 - XKBMODEL, XKBLAYOUT, XKBVARIANT and XKBOPTIONS.  These variables
 have the same meaning as the XkbModel, XkbLayout, XkbVariant and
 XkbOptions options in the fail /etc/X11/xorg.conf and also the same
@@ -48,17 +48,19 @@ Other possible readings are:
 
 If you do not want to read these, here are two examples:
 
-# This will give you the standard US QWERTY layout, where the menu-key
-# acts as Compose-key and the CapsLock will be third Control key.
+# This will give you the standard US QWERTY layout (us), where the
+# menu-key acts as Compose-key (compose:menu) and the CapsLock will be
+# third Control key (ctrl:nocaps).
 XKBMODEL=pc105
 XKBLAYOUT=us
 XKBVARIANT=
 XKBOPTIONS=compose:menu,ctrl:nocaps
 
 # In this configuration the Control+Shift combination will toggle
-# between French keyboard without dead keys and British "Dvorak"
-# keyboard.  The right Win-key will be Compose-key and the right
-# Alt-key will be AltGr.
+# (grp:ctrl_shift_toggle) between French keyboard (fr) without dead
+# keys (nodeadkeys) and British (gb) "Dvorak" (dvorak) keyboard.  The
+# right Win-key will be Compose-key (compose:rwin) and the right
+# Alt-key will be AltGr (lv3:lalt_switch).
 XKBMODEL=pc105
 XKBLAYOUT=fr,gb
 XKBVARIANT=nodeadkeys,dvorak
@@ -101,9 +103,9 @@ XKBVARIANT=
 XKBOPTIONS=lv3:ralt_switch
 
 Then use the command "setupcon" to configure Greek console and the
-command "setupcon german" to configure German console.  (When you
-change the working encoding as in this example, you will have to
-change also the locale.)
+command "setupcon german" to configure German console.  (By the way,
+when you change the working encoding as in this example, you will have
+to change also the locale.)
 
 If you don't want to exploit superuser priviledges, use the files
 ~/.console-setup and ~/.console-setup.german instead of
@@ -121,8 +123,8 @@ the startup script used in Debian.
 
 If you want to configure the console too early it may happen that the
 /usr file system is not yet mounted.  In order to overcome this
-obstacle first, make sure that "setupcon" is installed in /bin instead
-of /usr/local/bin or /usr/bin.  Second, use the command
+obstacle make sure that "setupcon" is installed in /bin and not in
+/usr/local/bin or /usr/bin.  In addition use the command
 
    setupcon --save
 

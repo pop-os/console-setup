@@ -3,10 +3,10 @@ CODE SETS
 =========
 
 The console fonts are named after the scheme CODESET-FONTFACE.psf,
-CODESET might be Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav,
-Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7,
-Thai, Uni1, Uni2, Uni3 and Vietnamese. The codesets determine which
-symbols are supported by the font.
+CODESET may be Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav, Ethiopian,
+Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7, Thai, Uni1,
+Uni2, Uni3 and Vietnamese. The codesets determine which symbols are
+supported by the font.
 
 Please notice that the existence of a font for a particular code set
 means that the font supports only most of it.  Unfortunately some of
@@ -22,8 +22,12 @@ When fonts for code sets with 512 gliphs are used in text video mode
 Arabic (512 gliphs)
    For Arabic, Kurdish in Iran, Pashto, Persian and Urdu.
 
+   Completely supported by these fontfaces: Fixed16, VGA16.
+
 Armenian
    For Armenian.
+
+   Completely supported by these fontfaces: Fixed*.
 
 CyrAsia
    Suitable for some of the non-Slavic Cyrillic languages - Abkhazia,
@@ -32,9 +36,14 @@ CyrAsia
    Lezghian, Mari (Cheremis), Mongolian, Ossetic, Selkup (Ostyak-
    Samoyed), Tajik, Tatar, Turkmen, Tuvinian, Uzbek and Yakut.
 
+   Completely supported by these fontfaces: Fixed*
+
 CyrKoi
    Covers entirely KOI8-R and KOI8-U.  Suitable for Russian and
    Ukrainian.
+
+   Completely supported by these fontfaces: Fixed*, Terminus*,
+   TerminusBold*, TerminusBoldVGA*, VGA*.
 
 CyrSlav
    Covers entirely ISO-8859-5 and CP1251.  Suitable for the Slavic
@@ -42,20 +51,35 @@ CyrSlav
    Serbian and Ukrainian.  For Serbian both the Cyrillic and the Latin
    alphabets are supported.
 
+   Completely supported by these fontfaces: Fixed*, Terminus*,
+   TerminusBold*, TerminusBoldVGA*, VGA16.
+
 Ethiopian (512 gliphs)
    For Amharic, Ethiopic (Geez), Tigre and Tigrinya.
+
+   Partially supported by these fontfaces: Fixed15, Fixed18, Goha*,
+   GohaClassic*.
 
 Georgian
    For Georgian.
 
+   Completely supported by these fontfaces: Fixed*.
+
 Greek
    For Greek.
+
+   Completely supported by these fontfaces: Fixed*, VGA16.
 
 Hebrew
    For Hebrew and Yiddish.
 
+   Completely supported by these fontfaces: Fixed13, Fixed15, Fixed16,
+   Fixed18, VGA16.
+
 Lao
    For Lao.
+
+   Completely supported by these fontfaces: Fixed15, Fixed16.
 
 Lat15
    Covers entirely ISO-8859-1, ISO-8859-9 and ISO-8859-15.  Suitable
@@ -70,36 +94,58 @@ Lat15
    Spanish, Swahili, Swedish, Tswana, Turkish, Volapuk, Votic,
    Walloon, Xhosa, Yapese and Zulu.
 
+   Completely supported by these fontfaces: Fixed*, Terminus*,
+   TerminusBold*, TerminusBoldVGA*, VGA16.
+
 Lat2
    Covers entirely ISO-8859-2.  The Euro sign and the Romanian letters
    with comma below are also supported.  Suitable for the so called
    Latin2 languages - Bosnian, Croatian, Czech, Hungarian, Polish,
    Romanian, Slovak, Slovenian and Sorbian (lower and upper).
 
+   Completely supported by these fontfaces: Fixed*, Terminus*,
+   TerminusBold*, TerminusBoldVGA*, VGA16.
+
 Lat38
    Covers entirely ISO-8859-3 and ISO-8859-14.  Suitable for Chichewa
    Esperanto, Irish, Maltese and Welsh.
+
+   Completely supported by these fontfaces: Fixed*, VGA16.
 
 Lat7
    Covers entirely ISO-8859-13.  Suitable for Lithuanian, Latvian,
    Maori and Marshallese.
 
+   Completely supported by these fontfaces: Fixed*, Terminus*,
+   TerminusBold*, TerminusBoldVGA*, VGA16.
+
 Thai
    For Thai.
+
+   Completely supported by these fontfaces: Fixed*.
 
 Uni1 (512 gliphs)
    Supports most of the Latin languages, the Slavic Cyrillic
    languages, Hebrew and barely Arabic.
 
+   Completely supported by these fontfaces: Fixed15, Fixed16, VGA*.
+
 Uni2 (512 gliphs)
    Supports most of the Latin languages, the Slavic Cyrillic languages
    and Greek.
 
+   Completely supported by these fontfaces: Fixed*, VGA16.
+
 Uni3 (512 gliphs)
    Supports most of the Latin and Cyrillic languages.
 
+   Completely supported by these fontfaces: Fixed*.
+
 Vietnamese (512 gliphs)
-   For Vietnamese
+   For Vietnamese.
+
+   Completely supported by these fontfaces: Fixed13, Fixed15, Fixed16,
+   Fixed18.
 
 ==========
 FONT FACES

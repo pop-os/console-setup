@@ -91,6 +91,8 @@ set -e
 
 db_capb backup
 
+# A high level function to ask questions about the keyboard model,
+# layout and variant
 ask_debconf () {
     local template priority prefix default_code default_description choices
 
