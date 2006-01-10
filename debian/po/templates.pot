@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-01-02 21:52+0200\n"
+"POT-Creation-Date: 2006-01-11 00:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,12 +170,6 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:95
-msgid "Scroll Lock"
-msgstr ""
-
-#. Type: select
-#. Choices
-#: ../templates:95
 msgid "Right Shift"
 msgstr ""
 
@@ -189,6 +183,12 @@ msgstr ""
 #. Choices
 #: ../templates:95
 msgid "Control+Shift"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../templates:95
+msgid "Shift+Caps Lock"
 msgstr ""
 
 #. Type: select
@@ -255,7 +255,7 @@ msgid ""
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
 "toggle).  Another popular choice is the Alt+Shift combination; notice "
 "however that in this case the combination Alt+Shift (or Control+Shift if you "
-"choose it) will loose its usual meaning in Emacs and other programs using it."
+"choose it) will lose its usual meaning in Emacs and other programs using it."
 msgstr ""
 
 #. Type: select
@@ -268,12 +268,6 @@ msgstr ""
 #. Choices
 #: ../templates:112
 msgid "No temporary switch"
-msgstr ""
-
-#. Type: select
-#. Choices
-#: ../templates:112
-msgid "Left Alt"
 msgstr ""
 
 #. Type: select
@@ -310,25 +304,19 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:126
-msgid "Right Alt (Shift+RightAlt=Compose)"
+msgid "Left Logo key"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../templates:126
-msgid "Right Control"
+msgid "Both Logo keys"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../templates:126
-msgid "Left Win-key"
-msgstr ""
-
-#. Type: select
-#. Choices
-#: ../templates:126
-msgid "Both Win-keys"
+msgid "Left Alt"
 msgstr ""
 
 #. Type: select
@@ -375,13 +363,19 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:144
-msgid "Right Win-key"
+msgid "Right Logo key"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../templates:144
-msgid "Menu-key"
+msgid "Right Control"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../templates:144
+msgid "Menu key"
 msgstr ""
 
 #. Type: select

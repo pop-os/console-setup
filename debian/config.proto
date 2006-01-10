@@ -207,7 +207,7 @@ available_fontfaces () {
 
 available_fontsizes () {
     echo "$fontsets" | sort | \
-	grep "^$codeset-$fontface" | \
+	grep "^$codeset-$fontface[0-9]" | \
 	sed -e "s/^$codeset-$fontface//" | \
 	uniq
 }
@@ -1074,6 +1074,7 @@ while :; do
 		ask_debconf console-setup/variant high \
                     "variant\*${layout}" "$default_variant"
 	    then
+		variant="$RET"
 		case "$layout" in
 		    # TODO: make s.t. to not forget to update this list
 		    am|ara|bg|by|dev|el|ge|il|ir|iu|kan|lo|mk|mm|ml|ori|ru|sr|syr|th|tj|ua)
@@ -1081,7 +1082,7 @@ while :; do
 			real_layout=us,$layout
 			;;
 		    cs)
-			case "$RET" in
+			case "$variant" in
 			    latin*)
 				latin=yes
 				real_layout=$layout
@@ -1099,22 +1100,24 @@ while :; do
 		esac
 		db_set console-setup/layoutcode "$real_layout"
 		if [ "$latin" = yes ]; then
-		    db_set console-setup/variantcode "$RET"
+		    db_set console-setup/variantcode "$variant"
 		elif [ "$real_layout" = cs,cs ]; then
-		    case "$RET" in
+		    case "$variant" in
 			yz)
-			    db_set console-setup/variantcode "latinyz,$RET"
+			    db_set console-setup/variantcode \
+				"latinyz,$variant"
 			    ;;
 			alternatequotes)
 			    db_set console-setup/variantcode \
-				"latinalternatequotes,$RET"
+				"latinalternatequotes,$variant"
 			    ;;
 			*)
-			    db_set console-setup/variantcode "latin,$RET"
+			    db_set console-setup/variantcode \
+				"latin,$variant"
 			    ;;
 		    esac
 		else
-		    db_set console-setup/variantcode "intl,$RET"
+		    db_set console-setup/variantcode "intl,$variant"
 		fi
 		STATE=$(($STATE + 1))
 	    else

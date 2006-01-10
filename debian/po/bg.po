@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-01-02 21:52+0200\n"
+"POT-Creation-Date: 2006-01-11 00:39+0200\n"
 "PO-Revision-Date: 2006-01-02 22:04+0200\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
@@ -91,7 +91,11 @@ msgid ""
 "and variant that are not supported by the configuration program.  Because of "
 "that no questions about the keyboard layout will be asked and your current "
 "configuration will be preserved."
-msgstr "Конфигурационният файл /etc/default/console-setup определя клавиатурна подредба и вариант, които не се поддържат от конфигурационната програма.  Поради това няма да бъдат задавани въпроси за клавиатурната подредба, а ще бъде запазена текущата настройка."
+msgstr ""
+"Конфигурационният файл /etc/default/console-setup определя клавиатурна "
+"подредба и вариант, които не се поддържат от конфигурационната програма.  "
+"Поради това няма да бъдат задавани въпроси за клавиатурната подредба, а ще "
+"бъде запазена текущата настройка."
 
 #. Type: select
 #. Description
@@ -131,7 +135,9 @@ msgstr ""
 msgid ""
 "Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
 "framebuffer.  Otherwise choose TerminusBold."
-msgstr "Използвайте TerminusBoldVGA, ако не използвате фреймбуфер и предпочитате шрифтов размер 8x14 или 8x16.  В останалите случаи изберете TerminusBold."
+msgstr ""
+"Използвайте TerminusBoldVGA, ако не използвате фреймбуфер и предпочитате "
+"шрифтов размер 8x14 или 8x16.  В останалите случаи изберете TerminusBold."
 
 #. Type: select
 #. Description
@@ -203,12 +209,6 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:95
-msgid "Scroll Lock"
-msgstr "Scroll Lock"
-
-#. Type: select
-#. Choices
-#: ../templates:95
 msgid "Right Shift"
 msgstr "Десен Shift"
 
@@ -223,6 +223,13 @@ msgstr "Alt+Shift"
 #: ../templates:95
 msgid "Control+Shift"
 msgstr "Control+Shift"
+
+#. Type: select
+#. Choices
+#: ../templates:95
+#, fuzzy
+msgid "Shift+Caps Lock"
+msgstr "Caps Lock"
 
 #. Type: select
 #. Choices
@@ -287,12 +294,13 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../templates:97
+#, fuzzy
 msgid ""
 "The most ergonomic choices seam to be the right Alt and the Caps Lock keys "
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
 "toggle).  Another popular choice is the Alt+Shift combination; notice "
 "however that in this case the combination Alt+Shift (or Control+Shift if you "
-"choose it) will loose its usual meaning in Emacs and other programs using it."
+"choose it) will lose its usual meaning in Emacs and other programs using it."
 msgstr ""
 "Най-ергономичният избор изглежда са десният Alt и клавишът Caps Lock (в този "
 "случай използвайте комбинацията Shift+Caps Lock за нормален Caps Lock).  "
@@ -312,12 +320,6 @@ msgstr ""
 #: ../templates:112
 msgid "No temporary switch"
 msgstr "Без временно превключване"
-
-#. Type: select
-#. Choices
-#: ../templates:112
-msgid "Left Alt"
-msgstr "Ляв Alt"
 
 #. Type: select
 #. Description
@@ -362,26 +364,22 @@ msgstr "Без клавиш AltGr"
 #. Type: select
 #. Choices
 #: ../templates:126
-msgid "Right Alt (Shift+RightAlt=Compose)"
-msgstr "Десен Alt (Shift+Десен Alt=Compose)"
-
-#. Type: select
-#. Choices
-#: ../templates:126
-msgid "Right Control"
-msgstr "Десен Control"
-
-#. Type: select
-#. Choices
-#: ../templates:126
-msgid "Left Win-key"
+#, fuzzy
+msgid "Left Logo key"
 msgstr "Ляв клавиш с лого"
 
 #. Type: select
 #. Choices
 #: ../templates:126
-msgid "Both Win-keys"
+#, fuzzy
+msgid "Both Logo keys"
 msgstr "И двата клавиша с лого"
+
+#. Type: select
+#. Choices
+#: ../templates:126
+msgid "Left Alt"
+msgstr "Ляв Alt"
 
 #. Type: select
 #. Description
@@ -438,13 +436,21 @@ msgstr "Десен Alt"
 #. Type: select
 #. Choices
 #: ../templates:144
-msgid "Right Win-key"
+#, fuzzy
+msgid "Right Logo key"
 msgstr "Десен клавиш с лого"
 
 #. Type: select
 #. Choices
 #: ../templates:144
-msgid "Menu-key"
+msgid "Right Control"
+msgstr "Десен Control"
+
+#. Type: select
+#. Choices
+#: ../templates:144
+#, fuzzy
+msgid "Menu key"
 msgstr "Клавиш меню"
 
 #. Type: select
@@ -496,3 +502,9 @@ msgstr ""
 "На текстовата конзола клавишът Compose не работи в режим \"Уникод\".  Ако "
 "режимът не е \"Уникод\", то независимо какво ще изберете тук, ще може да "
 "използвате също комбинацията Alt+точка като клавиш Compose."
+
+#~ msgid "Scroll Lock"
+#~ msgstr "Scroll Lock"
+
+#~ msgid "Right Alt (Shift+RightAlt=Compose)"
+#~ msgstr "Десен Alt (Shift+Десен Alt=Compose)"
