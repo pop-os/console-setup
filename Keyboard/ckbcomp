@@ -571,6 +571,8 @@ my %xkbsym_table = (
     'zabovedot' => '017c',
     'Zcaron' => '017d',
     'zcaron' => '017e',
+    'SCHWA' => '018f', # Is this recognised by X ?
+    'Schwa' => '018f', # Is this recognised by X ?
     'function' => '0192',
     'Ohorn' => '01a0', # Is this recognised by X ?
     'ohorn' => '01a1', # Is this recognised by X ?
@@ -578,6 +580,7 @@ my %xkbsym_table = (
     'uhorn' => '01b0', # Is this recognised by X ?
     'Gcaron' => '01e6', # Is this recognised by X ?
     'gcaron' => '01e7', # Is this recognised by X ?
+    'schwa' => '0259', # Is this recognised by X ?
     'caron' => '02c7',
     'breve' => '02d8',
     'abovedot' => '02d9',
@@ -749,8 +752,22 @@ my %xkbsym_table = (
     'Cyrillic_dzhe' => '045f',
     'Ukrainian_GHE_WITH_UPTURN' => '0490', # Is this recognised by X ?
     'Ukrainian_ghe_with_upturn' => '0491', # Is this recognised by X ?
+    'Cyrillic_GHE_bar' => '0492', # Is this recognised by X ?
+    'Cyrillic_ghe_bar' => '0493', # Is this recognised by X ?
+    'Cyrillic_KA_descender' => '049a', # Is this recognised by X ?
+    'Cyrillic_ka_descender' => '049b', # Is this recognised by X ?
+    'Cyrillic_EN_descender' => '04a2', # Is this recognised by X ?
+    'Cyrillic_en_descender' => '04a3', # Is this recognised by X ?
     'Cyrillic_U_straight' => '04ae', # Is this recognised by X ?
     'Cyrillic_u_straight' => '04af', # Is this recognised by X ?
+    'Cyrillic_U_straight_bar' => '04b0', # Is this recognised by X ?
+    'Cyrillic_u_straight_bar' => '04b1', # Is this recognised by X ?
+    'Cyrillic_HA_descender' => '04b2', # Is this recognised by X ?
+    'Cyrillic_ha_descender' => '04b3', # Is this recognised by X ?
+    'Cyrillic_SHHA' => '04ba', # Is this recognised by X ?
+    'Cyrillic_shha' => '04bb', # Is this recognised by X ?
+    'Cyrillic_SCHWA' => '04d8', # Is this recognised by X ?
+    'Cyrillic_schwa' => '04d9', # Is this recognised by X ?
     'Cyrillic_O_bar' => '04e8', # Is this recognised by X ?
     'Cyrillic_o_bar' => '04e9', # Is this recognised by X ?
     'hebrew_aleph' => '05d0',
@@ -1352,6 +1369,7 @@ my %xkbsym_table = (
     'NoSymbol' => 'NoSymbol',
     'any' => 'NoSymbol', # Is this recognised by X ?
     'VoidSymbol' => 'VoidSymbol',
+    'voidsymbol' => 'VoidSymbol', # Is this recognised by X ?
     'ISO_Left_Tab' => 'Tab',
     'Clear' => 'VoidSymbol',
     'Pause' => 'Pause',
@@ -2354,10 +2372,10 @@ sub uni_to_legacy {
 sub x_to_kernelsym {
     my $xkeysym = $_[0];
     my $kernelkeysym = (($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/) 
-			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{4})/)
+			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{3,4})/)
 				? $1 : $xkbsym_table{$xkeysym}));
     if (defined $kernelkeysym) {
-	if ($kernelkeysym =~ /^[0-9a-fA-F]{4}$/) {
+	if ($kernelkeysym =~ /^[0-9a-fA-F]{3,4}$/) {
 	    my $uni = hex ($kernelkeysym);
 	    if (chr($uni) =~ /\p{IsAlpha}/) {
 		my $legacy = uni_to_legacy ($uni);
@@ -2383,10 +2401,10 @@ sub x_to_kernelsym {
 sub x_to_ascii {
     my $xkeysym = $_[0];
     my $kernelkeysym = (($xkeysym =~ /^0x0100([0-9a-fA-F]{4})/) 
-			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{4})/)
+			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{3,4})/)
 				? $1 : $xkbsym_table{$xkeysym}));
     if (defined $kernelkeysym) {
-	if ($kernelkeysym =~ /^[0-9a-f]{4}$/) {
+	if ($kernelkeysym =~ /^[0-9a-f]{3,4}$/) {
 	    my $uni = hex ($kernelkeysym);
 	    if (0x00 <= $uni && 0x7f >= $uni) {
 		return $uni;
@@ -2787,14 +2805,23 @@ my %at_scancodes = (
     115 => 125,
     116 => 126,
     117 => 127,
+    118 => -1,  # Japanese
+    119 => -1,  # Japanese
+    120 => -1,  # Japanese
     123 => 89,  # Brasilian ABNT2
     124 => -1,  # fake key
     125 => -1,  # fake key
     126 => -1,  # fake key
     127 => -1,  # fake key
     128 => -1,  # fake key
+    129 => -1,  # Japanese
+    131 => -1,  # Japanese
+    133 => -1,  # Japanese
     134 => 121, # Brasilian ABNT2
+    144 => -1,  # Japanese
     156 => -1,  # fake key
+    208 => -1,  # Japanese
+    211 => -1,  # Japanese
 );
 
 print "keymaps 0-63\n";

@@ -102,9 +102,8 @@ my %keycodes = (
     'abnt2' => 'xfree86(abnt2)',
 );
     
-my $nonlatin = ' am ar ben bg by dev el ge_la ge_ru guj gur il il_phonetic 
-                 ir iu kan lo mk mm ml ori ru sr syr syr_phonetic tel th 
-                 tj tml ua ';
+my $nonlatin = ' am ara ben bg by deva ge gr guj guru il ir iku kan
+                 lao mk mm mal ori ru scc syr tel th tj tam ua ';
 
 sub compile_keymap {
     my ($encoding, $model, $layout, $variant) = @_;
@@ -167,6 +166,7 @@ for my $encoding ('UTF-8', keys %legacy_charmaps) {
     for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
 	for my $layout (@layouts) {
 	    next if ($layout eq 'nec/jp');
+	    next if ($layout eq 'nec_vndr/jp');
 	    for my $variant ('', values %{$KeyboardNames::variants{$layout}}) {
 		$variant eq '' or next;
 		compile_keymap $encoding, $model, $layout, $variant;
@@ -190,35 +190,39 @@ my %options = (
     'grp:lwin_switch' => [ 'rwin' ],
     'grp:rwin_switch' => [ 'lwin' ],
     'grp:toggle' => [ 'ralt' ],
-    'grp:shift_toggle' => [ 'lshift', 'rshift' ],
+    'grp:shifts_toggle' => [ 'lshift', 'rshift' ],
     'grp:ctrls_toggle' => [ 'lctrl', 'rctrl' ],
     'grp:alts_toggle' => [ 'ralt', 'lalt' ],
     'grp:ctrl_shift_toggle' => [ 'lshift', 'rshift', 'lctrl', 'rctrl' ],
     'grp:caps_toggle' => [ 'caps' ],
+    'grp:shift_caps_toggle' => [ 'caps' ],
     'grp:ctrl_alt_toggle' => [ 'lalt', 'ralt', 'lctrl', 'rctrl' ],
     'grp:alt_shift_toggle' => [ 'lalt', 'ralt', 'lshift', 'rshift' ],
     'grp:menu_toggle' => [ 'menu' ],
     'grp:lwin_toggle' => [ 'lwin' ],
     'grp:rwin_toggle' => [ 'rwin' ],
-    'grp:sclk_toggle' => [ 'sclk' ],
     'grp:lshift_toggle' => [ 'lshift' ],
     'grp:rshift_toggle' => [ 'rshift' ],
     'grp:lctrl_toggle' => [ 'lctrl' ],
     'grp:rctrl_toggle' => [ 'rctrl' ],
     'grp:lalt_toggle' => [ 'lalt' ],
-    'ctrl:nocaps' => [ 'caps', 'lctrl' ],
-    'ctrl:swapcaps' => [ 'caps', 'lctrl' ],
     'lv3:switch' => [ 'rctrl' ],
     'lv3:menu_switch' => [ 'menu' ],
     'lv3:win_switch' => [ 'lwin', 'rwin' ],
     'lv3:lwin_switch' => [ 'lwin' ],
     'lv3:rwin_switch' => [ 'rwin' ],
     'lv3:ralt_switch' => [ 'ralt' ],
-    'lv3:ralt_switch_multikey' => [ 'ralt' ],
+    'lv3:alt_switch' => [ 'lalt', 'ralt' ],
+    'ctrl:nocaps' => [ 'caps', 'lctrl' ],
+    'ctrl:swapcaps' => [ 'caps', 'lctrl' ],
     'compose:ralt' => [ 'ralt' ],
     'compose:rwin' => [ 'rwin' ],
     'compose:menu' => [ 'menu' ],
     'compose:caps' => [ 'caps' ],
+    'compose:rctrl' => [ 'rctrl' ],
+    'eurosign:e' => [ 'empty' ],
+    'eurosign:5' => [ 'empty' ],
+    'eurosign:2' => [ 'empty' ],
  );
 
 for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
@@ -246,6 +250,8 @@ for my $model (qw/amiga ataritt macintosh_old pc105 sun4 sun5/) {
 	    $layout = $layout . "+level3($1)";
 	} elsif ($option =~ /compose:(.*)/) {
 	    $layout = $layout . "+compose($1)";
+	} elsif ($option =~ /eurosign:(.*)/) {
+	    $layout = $layout . "+eurosign($1)";
 	}
 	
 	my $filename = "$model_dir/$model_prefix$option.inc";

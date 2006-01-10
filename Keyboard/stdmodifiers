@@ -1,3 +1,6 @@
+partial modifier_keys xkb_symbols "empty" {
+};
+
 partial modifier_keys xkb_symbols "caps" {
     key <CAPS> {	[	Caps_Lock		]	};
 };
