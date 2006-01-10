@@ -931,7 +931,7 @@ if [ -e $CONFIGFILE ]; then
 
     case "$XKBLAYOUT" in
 	# TODO: make s.t. to not forget to update this list
-	yu,sr|us,am|us,ar|us,ben|us,bg|us,by|us,dev|us,el|us,ge_la|us,ge_ru|us,guj|us,gur|us,il|us,il_phonetic|us,ir|us,iu|us,kan|us,lo|us,mk|us,mm|us,ml|us,ori|us,ru|us,syr|us,syr_phonetic|us,tel|us,th|us,tj|us,tml|us,ua)
+	cs,cs|us,am|us,ara|us,bg|us,by|us,dev|us,el|us,ge|us,il|us,ir|us,iu|us,kan|us,lo|us,mk|us,mm|us,ml|us,ori|us,ru|us,sr|us,syr|us,th|us,tj|us,ua)
 	    default_layout=${XKBLAYOUT#*,}
 	    default_variant="${XKBVARIANT#*,}"
 	    unsupported_layout=no
@@ -953,8 +953,6 @@ if [ -e $CONFIGFILE ]; then
 	case "$option" in
 	    grp:caps_toggle)
 		default_toggle='Caps Lock';;
-	    grp:sclk_toggle)
-		default_toggle='Scroll Lock';;
 	    grp:toggle)
 		default_toggle='Right Alt';;
 	    grp:rctrl_toggle)
@@ -962,16 +960,18 @@ if [ -e $CONFIGFILE ]; then
 	    grp:rshift_toggle)
 		default_toggle='Right Shift';;
 	    grp:rwin_toggle)
-		default_toggle='Right Win-key';;
+		default_toggle='Right Logo key';;
 	    grp:menu_toggle)
-		default_toggle='Menu-key';;
+		default_toggle='Menu key';;
 	    grp:alt_shift_toggle)
 		default_toggle='Alt+Shift';;
 	    grp:ctrl_shift_toggle)
 		default_toggle='Control+Shift';;
+	    grp:shift_caps_toggle)
+		default_toggle='Shift+Caps Lock';;
 	    grp:ctrl_alt_toggle)
 		default_toggle='Control+Alt';;
-	    grp:shift_toggle)
+	    grp:shifts_toggle)
 		default_toggle='Both Shift keys together';;
 	    grp:ctrls_toggle)
 		default_toggle='Both Control keys together';;
@@ -984,37 +984,39 @@ if [ -e $CONFIGFILE ]; then
 	    grp:lshift_toggle)
 		default_toggle='Left Shift';;
 	    grp:lwin_toggle)
-		default_toggle='Left Win-key';;
+		default_toggle='Left Logo key';;
 	    grp:switch)
 		default_switch='Right Alt';;
 	    grp:lswitch)
 		default_switch='Left Alt';;
 	    grp:rwin_switch)
-		default_switch='Right Win-key';;
+		default_switch='Right Logo key';;
 	    grp:lwin_switch)
-		default_switch='Left Win-key';;
+		default_switch='Left Logo key';;
 	    grp:win_switch)
-		default_switch='Both Win-keys';;
+		default_switch='Both Logo keys';;
 	    lv3:ralt_switch)
 		default_altgr='Right Alt';;
-	    lv3:ralt_switch_multikey)
-		default_altgr='Right Alt (Shift+RightAlt=Compose)';;
 	    lv3:switch)
 		default_altgr='Right Control';;
 	    lv3:menu_switch)
-		default_altgr='Menu-key';;
+		default_altgr='Menu key';;
 	    lv3:rwin_switch)
-		default_altgr='Right Win-key';;
+		default_altgr='Right Logo key';;
 	    lv3:lwin_switch)
-		default_altgr='Left Win-key';;
+		default_altgr='Left Logo key';;
 	    lv3:win_switch)
-		default_altgr='Both Win-keys';;
+		default_altgr='Both Logo keys';;
+	    lv3:lalt_switch)
+		default_altgr='Left Alt';;
 	    compose:ralt)
 		default_compose='Right Alt';;
 	    compose:rwin)
-		default_compose='Right Win-key';;
+		default_compose='Right Logo key';;
+	    compose:rctrl)
+		default_compose='Right Control';;
 	    compose:menu)
-		default_compose='Menu-key';;
+		default_compose='Menu key';;
 	    compose:caps)
 		default_compose='Caps Lock';;
 	esac
@@ -1058,22 +1060,6 @@ while :; do
 		    layout "$default_layout"
 	    then
 		layout="$RET"
-		case "$layout" in
-		    # TODO: make s.t. to not forget to update this list
-		    am|ar|ben|bg|by|dev|el|ge_la|ge_ru|guj|gur|il|il_phonetic|ir|iu|kan|lo|mk|mm|ml|ori|ru|syr|syr_phonetic|tel|th|tj|tml|ua)
-			latin=no
-			real_layout=us,$layout
-			;;
-		    sr)
-			latin=no
-			real_layout=yu,sr
-			;;
-		    *)
-			latin=yes
-			real_layout=$layout
-			;;
-		esac
-		db_set console-setup/layoutcode "$real_layout"
 		STATE=$(($STATE + 1))
 	    else
 		STATE=$(($STATE - 1))
@@ -1088,10 +1074,47 @@ while :; do
 		ask_debconf console-setup/variant high \
                     "variant\*${layout}" "$default_variant"
 	    then
+		case "$layout" in
+		    # TODO: make s.t. to not forget to update this list
+		    am|ara|bg|by|dev|el|ge|il|ir|iu|kan|lo|mk|mm|ml|ori|ru|sr|syr|th|tj|ua)
+			latin=no
+			real_layout=us,$layout
+			;;
+		    cs)
+			case "$RET" in
+			    latin*)
+				latin=yes
+				real_layout=$layout
+				;;
+			    *)
+				latin=no
+				real_layout=cs,cs
+				;;
+			esac
+			;;
+		    *)
+			latin=yes
+			real_layout=$layout
+			;;
+		esac
+		db_set console-setup/layoutcode "$real_layout"
 		if [ "$latin" = yes ]; then
 		    db_set console-setup/variantcode "$RET"
+		elif [ "$real_layout" = cs,cs ]; then
+		    case "$RET" in
+			yz)
+			    db_set console-setup/variantcode "latinyz,$RET"
+			    ;;
+			alternatequotes)
+			    db_set console-setup/variantcode \
+				"latinalternatequotes,$RET"
+			    ;;
+			*)
+			    db_set console-setup/variantcode "latin,$RET"
+			    ;;
+		    esac
 		else
-		    db_set console-setup/variantcode ",$RET"
+		    db_set console-setup/variantcode "intl,$RET"
 		fi
 		STATE=$(($STATE + 1))
 	    else
@@ -1128,9 +1151,6 @@ while :; do
 		    Caps\ Lock)
 		        caps_allocated=yes
 		        toggle=caps_toggle;;
-		    Scroll\ Lock)
-		        sclk_allocated=yes
-		        toggle=sclk_toggle;;
 		    Right\ Alt)
 		        ralt_allocated=yes
 		        toggle=toggle;;
@@ -1140,20 +1160,22 @@ while :; do
 		    Right\ Shift)
 		        rshift_allocated=yes
 		        toggle=rshift_toggle;;
-		    Right\ Win-key)
+		    Right\ Logo?key)
 		        rwin_allocated=yes
 		        toggle=rwin_toggle;;
-		    Menu-key)
+		    Menu?key)
 			menu_allocated=yes
 			toggle=menu_toggle;;
 		    Alt+Shift)
 			toggle=alt_shift_toggle;;
 		    Control+Shift)
 			toggle=ctrl_shift_toggle;;
+		    Shift+Caps\ Lock)
+			toggle=shift_caps_toggle;;
 		    Control+Alt)
 			toggle=ctrl_alt_toggle;;
 		    Both\ Shift\ keys\ together)
-		        toggle=shift_toggle;;
+		        toggle=shifts_toggle;;
 		    Both\ Control\ keys\ together)
 		        toggle=ctrls_toggle;;
 		    Both\ Alt\ keys\ together)
@@ -1167,7 +1189,7 @@ while :; do
 		    Left\ Shift)
 		        lshift_allocated=yes
 		        toggle=lshift_toggle;;
-		    Left\ Win-key)
+		    Left\ Logo?key)
 		        lwin_allocated=yes
 		        toggle=lwin_toggle;;
 		    No\ toggling)
@@ -1194,17 +1216,17 @@ while :; do
 			    switch=lswitch
 			    lalt_allocated=yes
 		        fi;;
-		    Right\ Win-key)
+		    Right\ Logo?key)
 		        if [ "$rwin_allocated" != yes ]; then
 			    switch=rwin_switch
 			    rwin_allocated=yes
 		        fi;;
-		    Left\ Win-key)
+		    Left\ Logo?key)
 		        if [ "$lwin_allocated" != yes ]; then
 			    switch=lwin_switch
 			    lwin_allocated=yes
 		        fi;;
-		    Both\ Win-keys)
+		    Both\ Logo?keys)
 		        if \
 			    [ "$rwin_allocated" != yes ] \
 			    && [ "$lwin_allocated" != yes ]
@@ -1234,32 +1256,27 @@ while :; do
 			    altgr=ralt_switch
 			    ralt_allocated=yes
 			fi;;
-		    Right?Alt??Shift+RightAlt=Compose?)
-			if [ "$ralt_allocated" != yes ]; then
-			    altgr=ralt_switch_multikey
-			    ralt_allocated=yes
-			fi;;
 		    Right?Control)
 			if [ "$rctrl_allocated" != yes ]; then
 			    altgr=switch
 			    rctrl_allocated=yes
 			fi;;
-		    Menu-key)
+		    Menu?key)
 			if [ "$menu_allocated" != yes ]; then
 			    altgr=menu_switch
 			    menu_allocated=yes
 			fi;;
-		    Right?Win-key)
+		    Right?Logo?key)
 			if [ "$rwin_allocated" != yes ]; then
 			    altgr=rwin_switch
 			    rwin_allocated=yes
 			fi;;
-		    Left?Win-key)
+		    Left?Logo?key)
 			if [ "$lwin_allocated" != yes ]; then
 			    altgr=lwin_switch
 			    lwin_allocated=yes
 			fi;;
-		    Both?Win-keys)
+		    Both?Logo?keys)
 			if \
 			    [ "$rwin_allocated" != yes ] \
 			    && [ "$lwin_allocated" != yes ]
@@ -1267,6 +1284,11 @@ while :; do
 			    altgr=win_switch
 			    rwin_allocated=yes
 			    lwin_allocated=yes
+			fi;;
+		    Left?Alt)
+			if [ "$lalt_allocated" != yes ]; then
+			    altgr=lalt_switch
+			    lalt_allocated=yes
 			fi;;
 		    *)
 			echo Unknown altgr key option
@@ -1287,12 +1309,17 @@ while :; do
 			    compose=ralt
 			    ralt_allocated=yes
 			fi;;
-		    Right?Win-key)
+		    Right?Logo?key)
 			if [ "$rwin_allocated" != yes ]; then
 			    compose=rwin
 			    rwin_allocated=yes
 			fi;;
-		    Menu-key)
+		    Right?Control)
+			if [ "$rctrl_allocated" != yes ]; then
+			    compose=rctrl 
+			    rctrl_allocated=yes
+			fi;;
+		    Menu?key)
 			if [ "$menu_allocated" != yes ]; then
 			    compose=menu
 			    menu_allocated=yes

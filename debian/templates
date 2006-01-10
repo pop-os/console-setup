@@ -92,7 +92,7 @@ _Description: What virtual consoles do you use?
 
 Template: console-setup/toggle
 Type: select
-__Choices: Caps Lock, Scroll Lock, Right Alt, Right Control, Right Shift, Right Win-key, Menu-key, Alt+Shift, Control+Shift, Control+Alt, Both Shift keys together, Both Control keys together, Both Alt keys together, Left Alt, Left Control, Left Shift, Left Win-key, No toggling
+__Choices: Caps Lock, Right Alt, Right Control, Right Shift, Right Logo key, Menu key, Alt+Shift, Control+Shift, Shift+Caps Lock, Control+Alt, Both Shift keys together, Both Control keys together, Both Alt keys together, Left Alt, Left Control, Left Shift, Left Logo key, No toggling
 Default: Alt+Shift
 _Description: Toggling between Latin and non-Latin mode
  Since your keyboard is a non-Latin one, you will need a way to toggle
@@ -102,14 +102,14 @@ _Description: Toggling between Latin and non-Latin mode
  (in the later case use the combination Shift+Caps Lock for normal Caps
  toggle).  Another popular choice is the Alt+Shift combination; notice
  however that in this case the combination Alt+Shift (or Control+Shift if
- you choose it) will loose its usual meaning in Emacs and other programs
+ you choose it) will lose its usual meaning in Emacs and other programs
  using it.
  .
  Notice that on some keyboards not all listed keys are present.
 
 Template: console-setup/switch
 Type: select
-__Choices: No temporary switch, Right Alt, Left Alt, Right Win-key, Left Win-key, Both Win-keys
+__Choices: No temporary switch, Right Alt, Left Alt, Right Logo key, Left Logo key, Both Logo keys
 Default: No temporary switch,
 _Description: Switching temporarily between Latin and non-Latin characters
  Sometimes the keyboard is in non-Latin mode and you want to type only few
@@ -123,7 +123,7 @@ _Description: Switching temporarily between Latin and non-Latin characters
 
 Template: console-setup/altgr
 Type: select
-__Choices: No AltGr key, Right Alt, Right Alt (Shift+RightAlt=Compose), Right Control, Menu-key, Right Win-key, Left Win-key, Both Win-keys
+__Choices: No AltGr key, Right Alt, Right Control, Menu key, Right Logo key, Left Logo key, Both Logo keys, Left Alt
 Default: Right Alt
 _Description: The AltGr key
  With some of the keyboard layouts, AltGr is a modifier key used to type
@@ -141,7 +141,7 @@ _Description: The AltGr key
 
 Template: console-setup/compose
 Type: select
-__Choices: No compose key, Right Alt, Right Win-key, Menu-key, Caps Lock
+__Choices: No compose key, Right Alt, Right Logo key, Right Control, Menu key, Caps Lock
 Default: No compose key
 _Description: The compose key
  The compose key (known also as Multi_key) is a key which is designated to
