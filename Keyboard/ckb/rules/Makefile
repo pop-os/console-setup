@@ -55,4 +55,7 @@ compat/base.ml1v1_s.part: compat/ml1v1_s.sh $(transform_files)
 
 .PHONY: clean
 clean:
-	-rm -f base compat/base.l2_s.part compat/base.l4_s.part compat/base.ml1v1_s.part compat/base.l2v2_s.part compat/base.l4v4_s.part compat/base.ml_s.part compat/base.l3_s.part compat/base.mlv_s.part compat/base.l3v3_s.part compat/base.ml1_s.part
+	-rm -f base.xml base compat/base.l2_s.part compat/base.l4_s.part compat/base.ml1v1_s.part compat/base.l2v2_s.part compat/base.l4v4_s.part compat/base.ml_s.part compat/base.l3_s.part compat/base.mlv_s.part compat/base.l3v3_s.part compat/base.ml1_s.part
+
+base.xml: base.xml.in
+	LC_ALL=C intltool-merge -x -u -c ../po/.intltool-merge-cache ../po base.xml.in base.xml
