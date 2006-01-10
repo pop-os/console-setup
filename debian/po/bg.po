@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-01-11 00:39+0200\n"
-"PO-Revision-Date: 2006-01-02 22:04+0200\n"
+"PO-Revision-Date: 2006-01-11 01:07+0200\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -143,7 +143,7 @@ msgstr ""
 #. Description
 #: ../templates:65
 msgid "What is your favourite font size?"
-msgstr "Кой е предпочитания от вас шрифтов размер?"
+msgstr "Кой е предпочитаният от вас шрифтов размер?"
 
 #. Type: select
 #. Description
@@ -227,9 +227,8 @@ msgstr "Control+Shift"
 #. Type: select
 #. Choices
 #: ../templates:95
-#, fuzzy
 msgid "Shift+Caps Lock"
-msgstr "Caps Lock"
+msgstr "Shift+Caps Lock"
 
 #. Type: select
 #. Choices
@@ -294,19 +293,13 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../templates:97
-#, fuzzy
 msgid ""
 "The most ergonomic choices seam to be the right Alt and the Caps Lock keys "
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
 "toggle).  Another popular choice is the Alt+Shift combination; notice "
 "however that in this case the combination Alt+Shift (or Control+Shift if you "
 "choose it) will lose its usual meaning in Emacs and other programs using it."
-msgstr ""
-"Най-ергономичният избор изглежда са десният Alt и клавишът Caps Lock (в този "
-"случай използвайте комбинацията Shift+Caps Lock за нормален Caps Lock).  "
-"Друг популярен избор е комбинацията Alt+Shift; имайте предвид обаче, че в "
-"този случай комбинацията Alt+Shift (или Control+Shift, ако я изберете), ще "
-"загуби обичайното си значение в Emacs и други програми, които я използват."
+msgstr "Най-ергономичният избор изглежда са десният Alt и клавишът Caps Lock (в този случай използвайте комбинацията Shift+Caps Lock за нормален Caps Lock).  Друг популярен избор е комбинацията Alt+Shift; имайте предвид обаче, че в този случай комбинацията Alt+Shift (или Control+Shift, ако я изберете), ще загуби обичайното си значение в Emacs и другите програми, които я използват."
 
 #. Type: select
 #. Description
@@ -364,14 +357,12 @@ msgstr "Без клавиш AltGr"
 #. Type: select
 #. Choices
 #: ../templates:126
-#, fuzzy
 msgid "Left Logo key"
 msgstr "Ляв клавиш с лого"
 
 #. Type: select
 #. Choices
 #: ../templates:126
-#, fuzzy
 msgid "Both Logo keys"
 msgstr "И двата клавиша с лого"
 
@@ -436,7 +427,6 @@ msgstr "Десен Alt"
 #. Type: select
 #. Choices
 #: ../templates:144
-#, fuzzy
 msgid "Right Logo key"
 msgstr "Десен клавиш с лого"
 
@@ -449,7 +439,6 @@ msgstr "Десен Control"
 #. Type: select
 #. Choices
 #: ../templates:144
-#, fuzzy
 msgid "Menu key"
 msgstr "Клавиш меню"
 
