@@ -2,17 +2,28 @@
 
 set -ex
 
+cp ckb/rules/Makefile /tmp/Makefile.$$
 svn delete ckb
-svn commit --message 'console-setup: remove Keyboard/ckb, will add the most recent version'
+svn commit --message 'console-setup: remove Keyboard/ckb, will add the most recent version from CVS'
 
-cvs -d  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg login
-cvs -z3 -d :pserver:anoncvs@cvs.freedesktop.org:/cvs/xorg export -D 1 xc/programs/xkbcomp
+cvs -d  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xlibs login
+cvs -z3 -d :pserver:anoncvs@cvs.freedesktop.org:/cvs/xlibs export -D 1 xkbdesc
+
+mv -i /tmp/Makefile.$$ xkbdesc/rules/Makefile
+
+cd xkbdesc/rules
+make base
+make base.xml
+cp base xorg
+cp base.xml xorg.xml
+
+cd ../..
 
 mkdir ckb
 for f in keycodes rules symbols; do
-    mv xc/programs/xkbcomp/$f ckb/
+    mv xkbdesc/$f ckb/
 done
-rm -r xc/
+rm -r xkbdesc
 
 svn add ckb
 svn commit --message 'console-setup: add the most recent version of Keyboard/ckb'
