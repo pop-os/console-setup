@@ -15,16 +15,24 @@ Description: Setup the font and keymap on the console
  This package includes all the necessary data - console fonts, maps
  defining the standard charsets for use by text applications, etc.
 
-Package: console-terminus
+Package: bdf2psf
 Architecture: all
 Section: utils
 Priority: optional
-Description: Fixed-width fonts for fast reading on the Linux console
- This package installs in /usr/share/consolefonts several console
- variants of the Terminus font.  If you have to work for extended time
- in front of monitor (i.e. over eight hours), you may find that using
- of these fonts reduces your eyes-fatigue.
+Description: Font convertor to generate console fonts from BDF source fonts
+ This is a command line convertor that can be used in scripts to build
+ automatically console fonts from BDF sources.  The convertor comes
+ with a collection of font encodings that cover most of the world
+ languages; notice that the font encoding (so called SFM) does not
+ need to follow the actually used encoding (so called ACM).  When the
+ source font does not define a glyph for a symbol in the font encoding
+ the glyph position in the console font is not wasted but used for
+ another symbol.
  .
- The following charsets are supported: western European Latin, central
- European Latin, Turkish Latin, Romanian Latin, Slavic Cyrillic and
- Asian Cyrillic (Bashkyr, Kazakh, Mongolian and others).
+ The convertor knows that in text video modes the video adapter copyes
+ the 8th column in the 9th column in the glyph matrix of the symbols
+ positioned in the pseudographic area and is very carefull when
+ deciding about the position of a glyph.  In order to create fonts for
+ text video modes the width of the glyph matrix of the source BDF font
+ should be 7, 8 or 9 pixels, otherwise the convertor creates fonts
+ suitable for framebuffer only.

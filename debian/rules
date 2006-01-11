@@ -50,14 +50,15 @@ install: build
 	dh_clean -k
 	$(MAKE) etcdir=debian/console-setup/etc \
 		prefix=debian/console-setup/usr install
-	install -d debian/console-terminus/usr/share/consolefonts/
-	mv debian/console-setup/usr/share/consolefonts/*-Terminus*.psf.gz \
-		debian/console-terminus/usr/share/consolefonts/
+	rm debian/console-setup/usr/share/consolefonts/*-Terminus*.psf.gz
 	install -d debian/console-setup/usr/share/doc/console-setup/examples/
 	mv debian/console-setup/etc/default/console-setup \
 		debian/console-setup/usr/share/doc/console-setup/examples/
+	dh_install -pbdf2psf Fonts/bdf2psf usr/bin/
+	dh_install -pbdf2psf Fonts/*.equivalents Fonts/*.set \
+		Fonts/fontsets usr/share/bdf2psf
 	rm -rf `find debian/console-setup -name .svn`
-	rm -rf `find debian/console-terminus -name .svn`
+	rm -rf `find debian/bdf2psf -name .svn`
 	dh_installinit --noscripts
 
 # Build architecture-independent files here.
@@ -68,10 +69,10 @@ binary-indep: build install
 	dh_installxfonts
 	dh_installdebconf
 	dh_installdocs -pconsole-setup README*
-	dh_installdocs -pconsole-terminus debian/README.Terminus
+	dh_installdocs -pbdf2psf debian/README.fontsets
 	cp copyright.fonts copyright.X debian/console-setup/usr/share/doc/console-setup/
 #	dh_installexamples
-#	dh_installman
+	dh_installman -pbdf2psf Fonts/bdf2psf.1
 #	dh_installinfo
 #	dh_undocumented
 	dh_installchangelogs
