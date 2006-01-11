@@ -43,7 +43,6 @@ clean:
 	-rm -f *~
 	-rm -f acm/*.acm.gz
 	-rm -rf compose $(compose_files)
-	-rm -f KeyboardNames.pl
 	-rm -rf keymaps
 	-rm -f keymaps.dir names.list
 
