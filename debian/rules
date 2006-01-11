@@ -18,8 +18,7 @@ debian/config: debian/config.proto main_build
 /## *CHARMAPS *##/ { \
     printf "charmaps='\''"; \
     system("cd Keyboard && ls acm/*.acm |sed -e '\''s/^acm.//'\'' -e '\''s/.acm$$//'\''"); \
-    printf "UTF-8\n"; \
-    printf "'\''"; \
+    printf "UTF-8'\''\n"; \
     next; \
 } \
 /## *KBDNAMES *##/ { \
