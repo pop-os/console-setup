@@ -17,6 +17,20 @@
 #     along with this program, write to the Free Software Foundation, Inc.,
 #     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+# The same as /usr/bin/which - in order to make "which" available before
+# /usr is mounted
+which () {
+    local IFS
+    IFS=:
+    for i in $PATH; do
+	if [ -x "$i/$1" ]; then
+	    echo "$i/$1"
+	    return 0
+	fi
+    done
+    return 1
+}
+
 while [ "$1" ]; do
     case "$1" in
 	-k|--keyboard-only)

@@ -5,7 +5,6 @@ set -e
 if [ purge = "$1" ]; then
     rm -f /etc/default/console-setup
     rm -rf /etc/console-setup
-    update-rc.d console-setup remove >/dev/null
 fi
 
 #DEBHELPER#

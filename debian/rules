@@ -59,7 +59,8 @@ install: build
 	rm -rf `find debian/console-setup -name .cvsignore`
 	rm -rf `find debian/console-setup -name .svn`
 	rm -rf `find debian/bdf2psf -name .svn`
-	dh_installinit --noscripts
+	dh_installinit --no-start --name keyboard-setup -- start 06 S .
+	dh_installinit --no-start -- start 49 S .
 
 # Build architecture-independent files here.
 .PHONY : binary-indep
