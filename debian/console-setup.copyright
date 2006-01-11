@@ -5,10 +5,11 @@ All console fonts are public domain by nature.  The source BDF-fonts
 in the directory Fonts/bdf are distributed under many different
 licenses, see in the file copyright.fonts for details.
 
-The keyboard files are borrowed from the X Window System distribution
-of X.org Foundation.  As a result the files in the directories
-Keyboard/ckb and Keyboard/locale have many different license terms,
-look at the file copyright.X for details.
+The keyboard files are borrowed from the CVS of the XKeyboardConfig
+project and the Keyboard/locale directory is borrowed from the X
+Window System distribution of X.org Foundation.  As a result the files
+in the directories Keyboard/ckb and Keyboard/locale have many
+different license terms, look at the file copyright.X for details.
 
 Everything else in this package is
 
