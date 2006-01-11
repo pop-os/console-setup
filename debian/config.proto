@@ -615,7 +615,7 @@ case "$locale" in
 	;;
     *)
 	default_codeset=Uni1
-	codeset_priority=medium
+	codeset_priority=high
 	;;
 esac
 
