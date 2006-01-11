@@ -38,9 +38,6 @@ $(compose_files) :
 compose_files : $(compose_files)
 
 
-KeyboardNames.pl : xmlreader rules.xml
-	./xmlreader >$@
-
 .PHONY: clean
 clean:
 	-rm -f *~
@@ -50,3 +47,6 @@ clean:
 	-rm -rf keymaps
 	-rm -f keymaps.dir names.list
 
+.PHONY: maintainer-clean
+maintainer-clean: clean
+	./xmlreader >KeyboardNames.pl

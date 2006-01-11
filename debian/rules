@@ -37,7 +37,7 @@ build: main_build debian/config
 .PHONY : clean
 clean:
 	dh_testdir
-	-$(MAKE) clean
+	-$(MAKE) maintainer-clean
 	-rm -f build main_build
 	-rm -f debian/config
 	-rm -f debian/*~

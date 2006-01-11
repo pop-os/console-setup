@@ -49,3 +49,7 @@ clean:
 	-rm -f *~
 	-rm -f build
 
+.PHONY: maintainer-clean
+maintainer-clean: clean
+	cd Fonts; $(MAKE) maintainer-clean
+	cd Keyboard; $(MAKE) maintainer-clean

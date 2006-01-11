@@ -243,3 +243,7 @@ clean:
 	-rm -f *.psf *.psf.gz *.sfm *.log
 	-rm -f fontsets/*~
 
+.PHONY: maintainer-clean
+maintainer-clean: clean
+	rm soft.Makefile
+	make soft.Makefile
