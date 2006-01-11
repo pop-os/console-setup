@@ -19,9 +19,10 @@ Package: bdf2psf
 Architecture: all
 Section: utils
 Priority: optional
-Description: Font convertor to generate console fonts from BDF source fonts
- This is a command line convertor that can be used in scripts to build
- automatically console fonts from BDF sources.  The convertor comes
+Depends: perl
+Description: Font converter to generate console fonts from BDF source fonts
+ This is a command line converter that can be used in scripts to build
+ automatically console fonts from BDF sources.  The converter comes
  with a collection of font encodings that cover most of the world
  languages; notice that the font encoding (so called SFM) does not
  need to follow the actually used encoding (so called ACM).  When the
@@ -29,10 +30,10 @@ Description: Font convertor to generate console fonts from BDF source fonts
  the glyph position in the console font is not wasted but used for
  another symbol.
  .
- The convertor knows that in text video modes the video adapter copyes
+ The converter knows that in text video modes the video adapter copyes
  the 8th column in the 9th column in the glyph matrix of the symbols
  positioned in the pseudographic area and is very carefull when
  deciding about the position of a glyph.  In order to create fonts for
  text video modes the width of the glyph matrix of the source BDF font
- should be 7, 8 or 9 pixels, otherwise the convertor creates fonts
+ should be 7, 8 or 9 pixels, otherwise the converter creates fonts
  suitable for framebuffer only.
