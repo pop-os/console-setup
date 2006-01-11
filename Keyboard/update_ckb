@@ -2,18 +2,15 @@
 
 set -ex
 
-cp ckb/rules/Makefile /tmp/Makefile.$$
 svn delete ckb
 svn commit --message 'console-setup: remove Keyboard/ckb, will add the most recent version from CVS'
 
 cvs -d  :pserver:anoncvs@cvs.freedesktop.org:/cvs/xlibs login
 cvs -z3 -d :pserver:anoncvs@cvs.freedesktop.org:/cvs/xlibs export -D 1 xkbdesc
 
-mv -i /tmp/Makefile.$$ xkbdesc/rules/Makefile
-
 cd xkbdesc/rules
-make base
-make base.xml
+make -f ../../ckb.Makefile base
+make -f ../../ckb.Makefile base.xml
 cp base xorg
 cp base.xml xorg.xml
 
