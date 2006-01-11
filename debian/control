@@ -10,7 +10,7 @@ Package: console-setup
 Section: utils
 Architecture: all
 Recommends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16)
-Depends: debconf (>= 0.5) | debconf-2.0, console-terminus
+Depends: debconf (>= 0.5) | debconf-2.0, console-terminus (>= 4.16)
 Description: Setup the font and keymap on the console
  This package includes all the necessary data - console fonts, maps
  defining the standard charsets for use by text applications, etc.
