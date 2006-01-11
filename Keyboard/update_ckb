@@ -25,5 +25,10 @@ for f in keycodes rules symbols; do
 done
 rm -r xkbdesc
 
+rm -r `find ckb -name 'Makefile.am'`
+rm -r `find ckb -name '*.sh' -o -name '*.pl'`
+rm -r `find ckb -name '*.in'`
+rm -r `find ckb -name '*.part' -o -name 'HDR'`
+
 svn add ckb
 svn commit --message 'console-setup: add the most recent version of Keyboard/ckb'
