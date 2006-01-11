@@ -22,9 +22,9 @@ for f in keycodes rules symbols; do
 done
 rm -r xkbdesc
 
-rm -r `find ckb -name 'Makefile.am'`
+rm -r `find ckb -name 'Makefile.am' -o -name '*.in'`
 rm -r `find ckb -name '*.sh' -o -name '*.pl'`
-rm -r `find ckb -name '*.in'`
+rm -r `find ckb -name '.??*'`
 rm -r `find ckb -name '*.part' -o -name 'HDR'`
 
 svn add ckb
