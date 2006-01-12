@@ -622,210 +622,226 @@ esac
 
 
 default_layout=''
+default_variant=''
 layout_priority=''
 case "$locale" in
     *_AL*)
-	default_layout=al
+	default_layout=al  # Albania
 	;;
     ar_*)
-	default_layout=ar
+	default_layout=ara # Arabic
 	;;
     *_AM*)
-	default_layout=am
+	default_layout=am  # Armenia
 	;;
     *_AZ*)
-	default_layout=az
+	default_layout=az  # Azerbaijan
 	;;
     *_BY*)
-	default_layout=by
+	default_layout=by  # Belarus
 	;;
     *_BE*)
-	default_layout=be
+	default_layout=be  # Belgium
 	;;
     *_BD*)
-	default_layout=ben
+	default_layout=in  # India
+	default_variant=ben # Bengali
 	;;
     bs_*)
-	default_layout=bs
+	default_layout=bs  # Bosnia and Herzegovina
 	;;
     *_BR*)
-	default_layout=br
+	default_layout=br  # Brazil
 	;;
     *_BG*)
-	default_layout=bg
+	default_layout=bg  # Bulgaria
 	layout_priority=critical
 	;;
     *_CA*)
-	default_layout=ca
+	default_layout=ca  # Canada
 	;;
     *_HR*)
-	default_layout=hr
+	default_layout=hr  # Croatia
 	;;
     *_CZ*)
-	default_layout=cz
+	default_layout=cz  # Czechia
 	layout_priority=critical
 	;;
     *_DK*)
-	default_layout=dk
+	default_layout=dk  # Denmark
 	;;
     *_NL*)
-	default_layout=nl
+	default_layout=nl  # Netherlands
 	;;
     *_EE*)
-	default_layout=ee
+	default_layout=ee  # Estonia
 	;;
     fi_FI*)
-	default_layout=fi
+	default_layout=fi  # Finland
 	;;
     fr_*)
-	default_layout=fr
+	default_layout=fr  # France
 	layout_priority=critical
 	;;
     *_GE*)
-	default_layout=ge
+	default_layout=ge  # Georgia
 	layout_priority=critical
 	;;
     de_*)
-	default_layout=de
+	default_layout=de  # Germany
 	;;
     el_*)
-	default_layout=el
+	default_layout=gr  # Greece
 	;;
     gu_*)
-	default_layout=guj
+	default_layout=in  # India
+	default_variant=guj # Gujarati
 	;;
     pa_*)
-	default_layout=gur
+	default_layout=in  # India
+	default_variant=guru # Gurmukhi
 	;;
     hi_*)
-	default_layout=dev
+	default_layout=in  # India
+	default_variant=dev # Devangari
 	;;
     *_HU*)
-	default_layout=hu
+	default_layout=hu  # Hungary
 	;;
     *_IS*)
-	default_layout=is
+	default_layout=is  # Iceland
 	;;
     *_IR*)
-	default_layout=ir
+	default_layout=ir  # Iran
 	;;
     *_IE*)
-	default_layout=ie
+	default_layout=ie  # Ireland
 	;;
     *_IL*)
+	default_layout=il  # Israel
 	layout_priority=critical
-	default_layout=il
 	;;
     *_IT*)
-	default_layout=it
+	default_layout=it  # Italy
 	;;
     *_JP*)
-	default_layout=jp
+	default_layout=jp  # Japan
 	;;
     kn_*)
-	default_layout=kn
+	default_layout=in  # India
+	default_variant=kan # Kannada
 	;;
     lo_*)
-	default_layout=lo
+	default_layout=la  # Laos
 	;;
     # TODO: Is the following list correct?
     *_AR*|*_BO*|*_CL*|*_CO*|*_CR*|*_DO*|*_EC*|*_GT*|*_HN*|*_MX*|*_NI*|*_PA*|*_PE*|es_PR*|*_PY*|*_SV*|es_US*|*_UY*|*_VE*)
-	default_layout=la
+	default_layout=latam # Latin American
 	;;
     *_LV*)
-	default_layout=lv
+	default_layout=lv  # Latvia
 	;;
     *_LT*)
+	default_layout=lt  # Lithuania
 	layout_priority=critical
-	default_layout=lt
 	;;
     *_MK*)
-	default_layout=mk
+	default_layout=mk  # Macedonia
 	;;
     ml_*)
-	default_layout=ml
+	default_layout=in  # India
+	default_variant=mal # Malayalam
 	;;
     *_MT*)
-	default_layout=mt
+	default_layout=mt  # Malta
 	layout_priority=critical
 	;;
     *_MN*)
-	default_layout=mn
+	default_layout=mn  # Mongolia
 	;;
     se_FI)
-	default_layout=se_FI
+	default_layout=fi  # Finland
+	default_variant=smi # Northern Saami
 	;;
     se_NO*)
-	default_layout=se_NO
+	default_layout=no  # Norway
+	default_variant=smi # Northern Saami
 	;;
     se_SE*)
-	default_layout=se_SE # TODO: there is also "se" layout
+	default_layout=se  # Sweden
+	default_variant=smi # Northern Saami
+    sv_*)
+	default_layout=se  # Sweden
+	default_variant=basic
 	;;
-    no_NO*)
-	default_layout=no
+    *_NO*)
+	default_layout=no  # Norway (se_NO is not in this case)
 	;;
     *_PL*)
-	default_layout=pl
+	default_layout=pl  # Poland
 	;;
     *_PT*)
-	default_layout=pt
+	default_layout=pt  # Portugal
 	;;
     *_RO*)
-	default_layout=ro
+	default_layout=ro  # Romania
 	;;
     *_RU*)
-	default_layout=ru
+	default_layout=ru  # Russia
 	layout_priority=critical
 	;;
     sr_*)
-	default_layout=sr
+	default_layout=cs  # Serbia and Montenegro
+	layout_priority=critical
 	;;
     *_SK*)
-	default_layout=sk
+	default_layout=sk  # Slovakia
 	;;
     *_SI*)
-	default_layout=si
+	default_layout=si  # Slovenia
 	;;
     *_ES*)
-	default_layout=es
+	default_layout=es  # Spain
 	;;
     *_CH*)
-	default_layout=ch
+	default_layout=ch  # Switzerland
+	layout_priority=critical
 	;;
     *_TJ)
-	default_layout=tj
+	default_layout=tj  # Tajikistan
 	;;
     ta_*)
-	default_layout=tml
+	default_layout=in  # India
+	default_variant=tam # Tamil
 	;;
     te_*)
-	default_layout=tel
+	default_layout=in  # India
+	default_variant=tel # Telugu
 	;;
     *_TH*)
-	default_layout=th
+	default_layout=th  # Thailand
 	layout_priority=critical
 	;;
     *_TR*)
-	default_layout=tr
+	default_layout=tr  # Turkish
 	layout_priority=critical
 	;;
     en_US*)
-	default_layout=us
+	default_layout=us  # U.S. English
 	;;
     *_UA*)
-	default_layout=ua
+	default_layout=ua  # Ukraine
 	;;
     *_GB)
-	default_layout=gb
+	default_layout=gb  # United Kingdom
 	;;
     *_VN*)
-	default_layout=vn
+	default_layout=vn  # Vietnam
 	;;
     *)
 	default_layout=us
 	;;
 esac
-default_variant=''
 
 # TODO: d-i
 default_charmap=`locale charmap` 
