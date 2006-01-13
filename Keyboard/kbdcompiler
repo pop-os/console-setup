@@ -138,7 +138,7 @@ sub compile_keymap {
 	my $actual_variant = (($actual_layout =~ /,/)
 			      ? ",$variant"
 			      : $variant);
-	system ("./ckbcomp -I. -Ickb $acm -rules rules -model $model"
+	system ("./ckbcomp -I. -Ickb $acm -rules xorg -model $model"
 		." -layout $actual_layout -variant $actual_variant"
 		." >$filename")
 	    and die "$0: ckbcomp failed\n"
@@ -148,7 +148,7 @@ sub compile_keymap {
 	my $filename = ("$model_dir/$encoding/$model_prefix"
 			."$name$encoding_suffix.kmap");
 	print "   $filename\n";
-	system ("./ckbcomp -I. -Ickb $acm -rules rules -model $model"
+	system ("./ckbcomp -I. -Ickb $acm -rules xorg -model $model"
 		." -layout $actual_layout >$filename")
 	    and die "$0: ckbcomp failed\n"
 	    if (! -f $filename);

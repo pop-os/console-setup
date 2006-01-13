@@ -122,6 +122,7 @@ package KeyboardNames;
 
 %layouts = (
     'Albania' => 'al',
+    'Andorra' => 'ad',
     'Arabic' => 'ara',
     'Armenia' => 'am',
     'Azerbaijan' => 'az',
@@ -144,6 +145,7 @@ package KeyboardNames;
     'France' => 'fr',
     'Georgia' => 'ge',
     'Germany' => 'de',
+    'Ghana' => 'gh',
     'Greece' => 'gr',
     'Hungary' => 'hu',
     'Iceland' => 'is',
@@ -300,6 +302,14 @@ package KeyboardNames;
     },
     'ge' => {
 	'Russian' => 'ru',
+    },
+    'gh' => {
+	'Akan' => 'akan',
+	'Ewe' => 'ewe',
+	'Fula' => 'fula',
+	'Ga' => 'ga',
+	'Hausa' => 'hausa',
+	'Multilingual' => 'generic',
     },
     'gr' => {
 	'Eliminate dead keys' => 'nodeadkeys',
