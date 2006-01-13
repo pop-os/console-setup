@@ -1134,7 +1134,7 @@ while :; do
 			    ;;
 		    esac
 		else
-		    db_set console-setup/variantcode "intl,$variant"
+		    db_set console-setup/variantcode ",$variant"
 		fi
 		STATE=$(($STATE + 1))
 	    else
