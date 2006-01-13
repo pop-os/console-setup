@@ -770,6 +770,7 @@ case "$locale" in
     se_SE*)
 	default_layout=se  # Sweden
 	default_variant=smi # Northern Saami
+	;;
     sv_*)
 	default_layout=se  # Sweden
 	default_variant=basic
@@ -947,7 +948,7 @@ if [ -e $CONFIGFILE ]; then
 
     case "$XKBLAYOUT" in
 	# TODO: make s.t. to not forget to update this list
-	cs,cs|us,am|us,ara|us,bg|us,by|us,dev|us,el|us,ge|us,il|us,ir|us,iu|us,kan|us,lo|us,mk|us,mm|us,ml|us,ori|us,ru|us,sr|us,syr|us,th|us,tj|us,ua)
+	cs,cs|us,am|us,ara|us,ben|us,bd|us,bg|us,bt|us,by|us,deva|us,ge|us,gh|us,gr|us,guj|us,guru|us,il|us,in|us,ir|us,iku|us,jp|us,kan|us,kh|us,la|us,lao|us,lk|us,mk|us,mm|us,mn|us,mv|us,mal|us,ori|us,pk|us,ru|us,scc|us,sy|us,syr|us,tel|us,th|us,tj|us,tam|us,ua|us,uz)
 	    default_layout=${XKBLAYOUT#*,}
 	    default_variant="${XKBVARIANT#*,}"
 	    unsupported_layout=no
@@ -1093,7 +1094,7 @@ while :; do
 		variant="$RET"
 		case "$layout" in
 		    # TODO: make s.t. to not forget to update this list
-		    am|ara|bg|by|dev|el|ge|il|ir|iu|kan|lo|mk|mm|ml|ori|ru|sr|syr|th|tj|ua)
+		    am|ara|ben|bd|bg|bt|by|cs|deva|ge|gh|gr|guj|guru|il|in|ir|iku|jp|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
 			latin=no
 			real_layout=us,$layout
 			;;
