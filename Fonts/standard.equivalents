@@ -8,10 +8,13 @@
 #             2. Approximate the Kelvin sign by the letter K,
 #                not the letter K by the Kelvin sign
 #             3. Add Angstrom sign (U+212B) = A with dot above (U+00C5)
+# 2006-01-14  Use U+2666 (BLACK DIAMOND SUIT) instead of the question mark
+#             as U+FFFD (REPLACEMENT CHARACTER). It seems that all
+#             current fonts support the diamond suit.
 
-U+FFFD U+003F
+U+FFFD U+2666
 # U+FFFD:   REPLACEMENT CHARACTER
-# U+003F:   QUESTION MARK
+# U+2666:   BLACK DIAMOND SUIT
 U+200A U+2009 U+2008 U+2007 U+2006 U+2005 U+2004 U+2003 U+2002 U+2001 U+2000 U+00A0 U+0020
 # U+200A:   HAIR SPACE
 # U+2009:   THIN SPACE
@@ -47,6 +50,8 @@ U+2126 U+03A9
 # U+2126:   OHM SIGN
 # U+03A9:   GREEK CAPITAL LETTER OMEGA
 U+212B U+00C5
+# U+212B:   ANGSTROM SIGN
+# U+00C5:   LATIN CAPITAL LETTER A WITH RING ABOVE
 U+0110 U+00D0 # ???
 # U+0110:   LATIN CAPITAL LETTER D WITH STROKE
 # U+00D0:   LATIN CAPITAL LETTER ETH
