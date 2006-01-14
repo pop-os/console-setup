@@ -1,4 +1,4 @@
-console-setup (1.0) UNRELEASED; urgency=low
+console-setup (1.0) unstable; urgency=low
 
   * Initial release
   * Turkish translation by Recai Oktaş (thanks also for initial testing
