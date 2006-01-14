@@ -217,6 +217,10 @@ eval `locale`            # TODO: d-i
 locale=$LC_CTYPE
 
 case "$locale" in
+    *KOI8*|*koi8*)
+	default_codeset=CyrKoi
+	codeset_priority=low
+	;;
     aa_*)
 	default_codeset=Lat15
 	codeset_priority=low
@@ -494,11 +498,7 @@ case "$locale" in
 	codeset_priority=low
 	;;
     ru_*)
-	default_codeset=CyrKoi
-	codeset_priority=low
-	;;
-    ru_*)
-	default_codeset=CyrKoi
+	default_codeset=CyrSlav
 	codeset_priority=low
 	;;
     se_*)
