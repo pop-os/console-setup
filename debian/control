@@ -1,6 +1,6 @@
 Source: console-setup
 Section: utils
-Priority: important
+Priority: optional
 Maintainer: Console utilities maintainers <pkg-kbd-devel@lists.alioth.debian.org>
 Uploaders: Anton Zinoviev <zinoviev@debian.org>
 Build-Depends-Indep: debhelper (>= 5), perl, po-debconf, libxml-parser-perl
@@ -11,9 +11,18 @@ Section: utils
 Architecture: all
 Recommends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16)
 Depends: debconf (>= 0.5) | debconf-2.0, console-terminus (>= 4.16)
-Description: Setup the font and keymap on the console
- This package includes all the necessary data - console fonts, maps
- defining the standard charsets for use by text applications, etc.
+Description: Setup the font and the keyboard on the console
+ The package provides the Linux console with the same versatile
+ keyboard configuration that X Window uses.  As a result there is no
+ need to duplicate or change the keyboard files just to make simple
+ customisations such as the use of dead keys, the key functioning as
+ AltGr or Compose key, the key(s) to switch between Latin and
+ non-Latin mode, etc.
+ .
+ The package also contains console fonts supporting many of the world
+ languages.  It provides an unified set of font faces - the classic
+ VGA, the simplistic Fixed, and the cleaned Terminus, TerminusBold and
+ TerminusBoldVGA.
 
 Package: bdf2psf
 Architecture: all
@@ -23,17 +32,17 @@ Depends: perl
 Description: Font converter to generate console fonts from BDF source fonts
  This is a command line converter that can be used in scripts to build
  automatically console fonts from BDF sources.  The converter comes
- with a collection of font encodings that cover most of the world
+ with a collection of font encodings that cover many of the world
  languages; notice that the font encoding (so called SFM) does not
  need to follow the actually used encoding (so called ACM).  When the
  source font does not define a glyph for a symbol in the font encoding
  the glyph position in the console font is not wasted but used for
  another symbol.
  .
- The converter knows that in text video modes the video adapter copyes
- the 8th column in the 9th column in the glyph matrix of the symbols
- positioned in the pseudographic area and is very carefull when
- deciding about the position of a glyph.  In order to create fonts for
- text video modes the width of the glyph matrix of the source BDF font
- should be 7, 8 or 9 pixels, otherwise the converter creates fonts
- suitable for framebuffer only.
+ When deciding about the position in the font for a particular glyph,
+ the converter takes into account that in text video modes the video
+ adapter copies the 8th column of the glyph matrix of symbols
+ positioned in the pseudographic area to the 9th column.  In order to
+ create fonts for text video modes the width of the glyph matrix of
+ the source BDF font should be 7, 8 or 9 pixels, otherwise the
+ converter creates fonts suitable for framebuffer only.
