@@ -1,5 +1,7 @@
 console-setup (1.0) UNRELEASED; urgency=low
 
   * Initial release
+  * Turkish translation by Recai Oktaş (thanks also for initial testing
+    and pointing few typos).
 
- -- Anton Zinoviev <zinoviev@debian.org>  Tue,  4 Oct 2005 18:56:24 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 14 Jan 2006 16:20:35 +0200

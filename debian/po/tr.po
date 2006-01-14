@@ -1,26 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Turkish translation of console-setup package.
+# This file is distributed under the same license as the console-setup package.
+# Recai Oktaş <roktas@debian@org>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-01-14 16:26+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-01-14 16:27+0200\n"
+"Last-Translator: Recai Oktaş <roktas@debian.org>\n"
+"Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: select
 #. Description
 #: ../templates:5
 msgid "Which codeset is suitable for your language environment?"
-msgstr ""
+msgstr "Kullandığınız dil için uygun karakter kümesi hangisi?"
 
 #. Type: select
 #. Description
@@ -31,6 +29,11 @@ msgid ""
 "covers ISO 8859-3 and ISO 8859-13. Lat7 covers ISO 8859-13. CyrSlav covers "
 "not only the Slavic Cyrillic letters but also the Serbian Latin letters."
 msgstr ""
+"Lat15; ISO 8859-1, ISO 8859-15 ve ISO 8859-9 kümelerini içeriyor.  Lat2; ISO "
+"8859-2, Avro simgesi ve çengelli harflere sahip Romanya harflerini "
+"içeriyor.  Lat38, ISO 8859-3 ve ISO 8859-13; Lat7, ISO 8859-13 kümelerini "
+"içeriyor.  CyrSlav ise sadece Slav Kril harflerini değil, aynı zamanda Sırp "
+"Latin harflerini de içeriyor."
 
 #. Type: select
 #. Description
@@ -41,24 +44,27 @@ msgid ""
 "Slavic Cyrillic languages and Greek.  Uni3 supports most of the Latin and "
 "Cyrillic languages."
 msgstr ""
+"Uni1; Latin dilleri, Slav Kril dilleri, İbranice ve kısmen de Arapça'yı "
+"büyük ölçüde destekler.  Uni2; çoğu Latin dilleri, Slav Kril dilleri ve "
+"Yunanca'yı destekler.  Uni3; çoğu Latin ve Kril dillerini destekler."
 
 #. Type: select
 #. Description
 #: ../templates:20
 msgid "What is the model of your keyboard?"
-msgstr ""
+msgstr "Klavyenizin modeli nedir?"
 
 #. Type: select
 #. Description
 #: ../templates:26
 msgid "What is the keys layout of your keyboard?"
-msgstr ""
+msgstr "Klavyede kullanılan tuş düzeni nedir?"
 
 #. Type: select
 #. Description
 #: ../templates:31
 msgid "Which variant do you have?"
-msgstr ""
+msgstr "Hangi klavye alt türünü (varyant) istersiniz?"
 
 #. Type: select
 #. Description
@@ -67,12 +73,14 @@ msgid ""
 "The layout you selected has several variants.  Please select the one "
 "matching your keyboard."
 msgstr ""
+"Seçtiğiniz düzen çeşitli alt türlere sahip.  Lütfen klavyenizle uyuşan bir "
+"alt tür seçin."
 
 #. Type: note
 #. Description
 #: ../templates:37
 msgid "No questions about layout will be asked"
-msgstr ""
+msgstr "Klavye düzeniyle ilgili soru sorulmayacak"
 
 #. Type: note
 #. Description
@@ -83,12 +91,16 @@ msgid ""
 "that no questions about the keyboard layout will be asked and your current "
 "configuration will be preserved."
 msgstr ""
+"/etc/default/console-setup yapılandırma dosyasında yapılandırma programı "
+"tarafından desteklenmeyen klavye düzeni ve alt türleri bildirilmiş.  Bu "
+"yüzden klavye düzeniyle ilgili herhangi bir soru sorulmayacak ve mevcut "
+"yapılandırmanız korunacak."
 
 #. Type: select
 #. Description
 #: ../templates:47
 msgid "Choose a font for the console."
-msgstr ""
+msgstr "Bir uçbirim yazıtipi seçin."
 
 #. Type: select
 #. Description
@@ -97,6 +109,8 @@ msgid ""
 "Please choose the font face you would like to use on the text-mode emergency "
 "Linux console."
 msgstr ""
+"Lütfen metin kipindeki acil durum Linux uçbiriminde kullanılmasını "
+"istediğiniz yazıtipini seçin."
 
 #. Type: select
 #. Description
@@ -108,6 +122,11 @@ msgid ""
 "read a lot (a note for programmers: some symbols look quiet similar), it "
 "supports only the Latin and the Cyrillic scripts."
 msgstr ""
+"\"VGA\" geleneksel görünümlü bir yazıtipidir; uluslar arası kullanım için "
+"vasattır.  \"Fixed\" basit görünümlü ve harf kapsamı en geniş yazıtipidir.  "
+"\"Terminus\" yazıtipi ekran karşısında çok vakit geçirenlerde göz "
+"yorgunluğunu azaltma özelliği taşıyan bir yazıtipidir.  Bu yazıtipi sadece "
+"Latin ve Kril harflerini kapsar."
 
 #. Type: select
 #. Description
@@ -116,12 +135,15 @@ msgid ""
 "Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
 "framebuffer.  Otherwise choose TerminusBold."
 msgstr ""
+"Kare arabelleği (framebuffer) kullanmamakla birlikte 8x14 veya 8x16 "
+"boyutunda yazıtipleriyle çalışmak istiyorsanız \"TerminusBoldVGA\"u tercih "
+"edin."
 
 #. Type: select
 #. Description
 #: ../templates:65
 msgid "What is your favourite font size?"
-msgstr ""
+msgstr "Hangi yazıtipi boyutunu tercih edersiniz?"
 
 #. Type: select
 #. Description
@@ -138,18 +160,28 @@ msgid ""
 " size 8 - for 80x43, 80x50 and 80x60 (very unreadable).\n"
 " other size - only with framebuffer"
 msgstr ""
+"Lütfen acil durum Linux uçbiriminde kullanmak istediğiniz yazıtipi boyutunu "
+"seçin.  Aşağıdaki tablo, ekranı metin kipinde kullanırken, hangi yazıtipi "
+"boyutuna kaç karakterin karşı düşeceği hakkında bir fikir vermektedir:\n"
+" boyut 18 - 80x22 ve 80x26\n"
+" boyut 16 - 80x25 ve 80x30 (standart)\n"
+" boyut 15 - 80x26 ve 80x32\n"
+" boyut 14 - 80x28 ve 80x34\n"
+" boyut 13 - 80x30 ve 80x36\n"
+" boyut 8  - 80x43, 80x50 ve 80x60 (okunması çok güç).\n"
+" diğer    - sadece kare arabelleği ile (framebuffer)"
 
 #. Type: select
 #. Description
 #: ../templates:81
 msgid "What is your encoding?"
-msgstr ""
+msgstr "Hangi kodlama kullanılsın?"
 
 #. Type: string
 #. Description
 #: ../templates:86
 msgid "What virtual consoles do you use?"
-msgstr ""
+msgstr "Hangi sanal uçbirimleri kullanıyorsunuz?"
 
 #. Type: string
 #. Description
@@ -158,6 +190,9 @@ msgid ""
 "Please enter a space delimited list of virtual consoles you use. The usual "
 "Unix filename wildcards are allowed (*, ? and [...])."
 msgstr ""
+"Lütfen kullandığınız sanal uçbirimleri, boşluklarla ayrılmış bir liste "
+"halinde girin.  Bu listede Unix dosya isimlerinde alışageldiğiniz joker "
+"karakterleri (*, ? ve [...]) kullanabilirsiniz."
 
 #. Type: string
 #. Description
@@ -166,78 +201,81 @@ msgid ""
 "If you are unsure, then use the default /dev/tty[1-6], it is for six virtual "
 "consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
 msgstr ""
+"Eğer emin değilseniz altı adet sanal uçbirim bildiren /dev/tty[1-6] "
+"öntanımlı cevabı kullanabilirsiniz.  Şayet devfs kullanıyorsanız bu girdi /"
+"dev/vc/[1-6] biçiminde olmalıdır."
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Right Shift"
-msgstr ""
+msgstr "Sağ Shift"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Control+Shift"
-msgstr ""
+msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Shift+Caps Lock (Büyük Harf Kilidi)"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Control+Alt"
-msgstr ""
+msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Her iki Shift tuşu birlikte"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Both Control keys together"
-msgstr ""
+msgstr "Her iki Control tuşu birlikte"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Both Alt keys together"
-msgstr ""
+msgstr "Her iki Alt tuşu birlikte"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Left Control"
-msgstr ""
+msgstr "Sol Control"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "Left Shift"
-msgstr ""
+msgstr "Sol Shift"
 
 #. Type: select
 #. Choices
 #: ../templates:95
 msgid "No toggling"
-msgstr ""
+msgstr "Kip değiştirme yok"
 
 #. Type: select
 #. Description
 #: ../templates:97
 msgid "Toggling between Latin and non-Latin mode"
-msgstr ""
+msgstr "Latin ve Latin olmayan kipler arasında geçiş"
 
 #. Type: select
 #. Description
@@ -246,6 +284,9 @@ msgid ""
 "Since your keyboard is a non-Latin one, you will need a way to toggle "
 "between the Latin and the non-Latin mode.  Several options are available."
 msgstr ""
+"Latin olmayan bir klavye kullandığınızdan Latin ve Latin olmayan kipler "
+"arasında geçiş yapmak için bir yola ihtiyaç duyacaksınız.  Buna yönelik çok "
+"sayıda seçenek mevcut."
 
 #. Type: select
 #. Description
@@ -257,24 +298,30 @@ msgid ""
 "however that in this case the combination Alt+Shift (or Control+Shift if you "
 "choose it) will lose its usual meaning in Emacs and other programs using it."
 msgstr ""
+"En kullanışlı seçimler sağ Alt ve Caps Lock (Büyük Harf Kilidi) tuşları "
+"olarak görülüyor (bu amaçla Caps Lock'ı seçmeniz halinde büyük harf "
+"kilitlemesini Shift+Caps Lock bileşimiyle yapabilirsiniz).  Diğer yaygın bir "
+"seçim Alt+Shift bileşimidir.  Böyle bir seçim yapmanız halinde Alt+Shift "
+"(veya eğer bunu seçmişseniz Control+Shift) bileşiminin, bu tuşları kullanan "
+"Emacs ve diğer bazı programlardaki işlevinin kaybolacağını da unutmayın."
 
 #. Type: select
 #. Description
 #: ../templates:97
 msgid "Notice that on some keyboards not all listed keys are present."
-msgstr ""
+msgstr "Burada listelenen tuşlar her klavyede olmayabilir."
 
 #. Type: select
 #. Choices
 #: ../templates:112
 msgid "No temporary switch"
-msgstr ""
+msgstr "Geçici geçiş yok"
 
 #. Type: select
 #. Description
 #: ../templates:114
 msgid "Switching temporarily between Latin and non-Latin characters"
-msgstr ""
+msgstr "Latin ve Latin olmayan kipler arasında geçici geçiş"
 
 #. Type: select
 #. Description
@@ -287,43 +334,49 @@ msgid ""
 "keyboard is in Latin mode and you are pressing this key the keyboard will "
 "type non-Latin letters."
 msgstr ""
+"Bazı zamanlar, klavye Latin olmayan kipteyken, sadece birkaç Latin harfi "
+"girmek isteyebilirsiniz.  Bu tür durumlarda geçici olarak Latin ve Latin "
+"olmayan kipler arasında geçiş yapmanızı sağlayacak bir tuşun olması arzu "
+"edilebilir.  Latin olmayan kipte bu tuş basılıyken Latin harfleri; benzer "
+"şekilde Latin kipte bu tuş basılıyken, Latin olmayan harfler "
+"girilebilecektir."
 
 #. Type: select
 #. Description
 #: ../templates:114
 msgid ""
 "If you don't like this feature, choose the option \"No temporary switch\"."
-msgstr ""
+msgstr "Böyle bir özellik istemiyorsanız \"Geçici geçiş yok\"u seçin."
 
 #. Type: select
 #. Choices
 #: ../templates:126
 msgid "No AltGr key"
-msgstr ""
+msgstr "AltGr tuşu yok"
 
 #. Type: select
 #. Choices
 #: ../templates:126
 msgid "Left Logo key"
-msgstr ""
+msgstr "Sol Logo tuşu"
 
 #. Type: select
 #. Choices
 #: ../templates:126
 msgid "Both Logo keys"
-msgstr ""
+msgstr "Her iki Logo tuşu"
 
 #. Type: select
 #. Choices
 #: ../templates:126
 msgid "Left Alt"
-msgstr ""
+msgstr "Sol Alt"
 
 #. Type: select
 #. Description
 #: ../templates:128
 msgid "The AltGr key"
-msgstr ""
+msgstr "AltGr tuşu"
 
 #. Type: select
 #. Description
@@ -336,6 +389,13 @@ msgid ""
 "key top, sometimes in a different colour), then AltGr is often the means of "
 "eliciting that symbol."
 msgstr ""
+"Bazı klavye düzenlerinde AltGr çeşitli karakterlerin girilmesini sağlayan "
+"bir niteliyici tuştur.  Bu karakterlerin büyük bir bölümü, yabancı para "
+"simgeleri ve aksanlı harfler gibi, kullanılan klavye düzenine ait dilde "
+"yaygın olmayan karakterlerden oluşmaktadır.  Eğer bir tuşta (tuşun dikey ön "
+"kenarında veya hemen üzerinde sağ alt tarafta, bazen de farklı bir renkle) "
+"bir üçüncü simge görüyorsanız AltGr tuşu çoğunlukla bu simgenin girilmesini "
+"sağlamakta kullanılır."
 
 #. Type: select
 #. Description
@@ -347,48 +407,52 @@ msgid ""
 "used to type symbols which are commonly used by programmers and technical "
 "writers."
 msgstr ""
+"Fransızca ve İspanyolca klavye düzenlerinde AltGr, aksanlı seslilerin "
+"girilmesi için yaygın şekilde kullanılır.  İngilizce klavye düzenlerinde "
+"AltGr kullanımını gerektirecek çok daha az sayıda simge (Avro para simgesi "
+"en sık görülenidir) bulunur."
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "No compose key"
-msgstr ""
+msgstr "Birleştirme (Compose) tuşu yok"
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "Right Alt"
-msgstr ""
+msgstr "Sağ Alt"
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "Right Logo key"
-msgstr ""
+msgstr "Sağ Logo tuşu"
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "Right Control"
-msgstr ""
+msgstr "Sağ Control"
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "Menu key"
-msgstr ""
+msgstr "Menü tuşu"
 
 #. Type: select
 #. Choices
 #: ../templates:144
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock (Büyük Harf Kilidi)"
 
 #. Type: select
 #. Description
 #: ../templates:146
 msgid "The compose key"
-msgstr ""
+msgstr "Birleştirme (Compose) tuşu"
 
 #. Type: select
 #. Description
@@ -398,6 +462,9 @@ msgid ""
 "signal the software to interpret the next keystrokes as a combination in "
 "order to produce a character not found on the keyboard."
 msgstr ""
+"Birleştirme tuşu (\"Multi_key\" olarak da bilinir) yazılıma, ard arda "
+"girilen bir dizi tuş vuruşunu klavyede bulunmayan bir karakteri üretecek "
+"şekilde yorumlamasını söyler."
 
 #. Type: select
 #. Description
@@ -407,6 +474,12 @@ msgid ""
 "ligature.  Typing compose, then e, then ' can yield an e with an acute "
 "accent.  Typing compose, then o, then c may produce the copyright sign.  Etc."
 msgstr ""
+"Örnek olarak; birleştirme tuşuna basıldıktan sonra 'a' ve peşinden 'e'nin "
+"tuşlanması halinde Fransızcadaki AE karakteri (\"ligature\") üretilebilir.  "
+"Birleştirme tuşu, 'e' ve üst kesme karakteri sırasıyla tuşlanacak olursa \"e "
+"üzerinde kesme\" (\"eacute\") karakteri üretilebilir.  Benzer şekilde "
+"birleştirme tuşu, 'o' ve sonra da 'c'nin tuşlanması \"telif hakkı simgesi"
+"\"ni (\"copyright\") üretebilir."
 
 #. Type: select
 #. Description
@@ -416,3 +489,6 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always use also "
 "the Alt+period combination as a Compose key."
 msgstr ""
+"Birleştirme tuşu, Unikod kipli metin uçbiriminde çalışmaz.  Unikod kipinin "
+"haricindeki her durumda Alt+nokta bileşimini birleştirme tuşu olarak daima "
+"kullanabilirsiniz."

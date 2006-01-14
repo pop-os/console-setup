@@ -625,43 +625,35 @@ default_layout=''
 default_variant=''
 layout_priority=''
 case "$locale" in
+    # Keyboards for countries
     *_AL*)
 	default_layout=al  # Albania
-	;;
-    ar_*)
-	default_layout=ara # Arabic
-	;;
-    *_AM*)
-	default_layout=am  # Armenia
 	;;
     *_AZ*)
 	default_layout=az  # Azerbaijan
 	;;
-    *_BY*)
-	default_layout=by  # Belarus
+    *_BD*)
+	default_layout=bd  # Bangladesh
 	;;
     *_BE*)
 	default_layout=be  # Belgium
-	;;
-    *_BD*)
-	default_layout=in  # India
-	default_variant=ben # Bengali
-	;;
-    bs_*)
-	default_layout=bs  # Bosnia and Herzegovina
-	;;
-    *_BR*)
-	default_layout=br  # Brazil
 	;;
     *_BG*)
 	default_layout=bg  # Bulgaria
 	layout_priority=critical
 	;;
+    *_BR*)
+	default_layout=br  # Brazil
+	;;
+    *_BY*)
+	default_layout=by  # Belarus
+	;;
     *_CA*)
 	default_layout=ca  # Canada
 	;;
-    *_HR*)
-	default_layout=hr  # Croatia
+    *_CH*)
+	default_layout=ch  # Switzerland
+	layout_priority=critical
 	;;
     *_CZ*)
 	default_layout=cz  # Czechia
@@ -670,49 +662,25 @@ case "$locale" in
     *_DK*)
 	default_layout=dk  # Denmark
 	;;
-    *_NL*)
-	default_layout=nl  # Netherlands
-	;;
     *_EE*)
 	default_layout=ee  # Estonia
 	;;
-    fi_FI*)
+    *_ES*)
+	default_layout=es  # Spain
+	;;
+    se_FI)
 	default_layout=fi  # Finland
+	default_variant=smi # Northern Saami
 	;;
-    fr_*)
-	default_layout=fr  # France
-	layout_priority=critical
+    *_FI*)
+	default_layout=fi  # Finland
+	default_variant=fi # Finland
 	;;
-    *_GE*)
-	default_layout=ge  # Georgia
-	layout_priority=critical
-	;;
-    de_*)
-	default_layout=de  # Germany
-	;;
-    el_*)
-	default_layout=gr  # Greece
-	;;
-    gu_*)
-	default_layout=in  # India
-	default_variant=guj # Gujarati
-	;;
-    pa_*)
-	default_layout=in  # India
-	default_variant=guru # Gurmukhi
-	;;
-    hi_*)
-	default_layout=in  # India
-	default_variant=dev # Devangari
+    *_GB)
+	default_layout=gb  # United Kingdom
 	;;
     *_HU*)
 	default_layout=hu  # Hungary
-	;;
-    *_IS*)
-	default_layout=is  # Iceland
-	;;
-    *_IR*)
-	default_layout=ir  # Iran
 	;;
     *_IE*)
 	default_layout=ie  # Ireland
@@ -721,59 +689,41 @@ case "$locale" in
 	default_layout=il  # Israel
 	layout_priority=critical
 	;;
+    *_IR*)
+	default_layout=ir  # Iran
+	;;
+    *_IS*)
+	default_layout=is  # Iceland
+	;;
     *_IT*)
 	default_layout=it  # Italy
 	;;
     *_JP*)
 	default_layout=jp  # Japan
 	;;
-    kn_*)
-	default_layout=in  # India
-	default_variant=kan # Kannada
-	;;
-    lo_*)
-	default_layout=la  # Laos
-	;;
-    # TODO: Is the following list correct?
-    *_AR*|*_BO*|*_CL*|*_CO*|*_CR*|*_DO*|*_EC*|*_GT*|*_HN*|*_MX*|*_NI*|*_PA*|*_PE*|es_PR*|*_PY*|*_SV*|es_US*|*_UY*|*_VE*)
-	default_layout=latam # Latin American
-	;;
-    *_LV*)
-	default_layout=lv  # Latvia
-	;;
     *_LT*)
 	default_layout=lt  # Lithuania
 	layout_priority=critical
 	;;
+    *_LV*)
+	default_layout=lv  # Latvia
+	;;
     *_MK*)
 	default_layout=mk  # Macedonia
 	;;
-    ml_*)
-	default_layout=in  # India
-	default_variant=mal # Malayalam
+    *_NL*)
+	default_layout=nl  # Netherlands
+	;;
+    *_MN*)
+	default_layout=mn  # Mongolia
 	;;
     *_MT*)
 	default_layout=mt  # Malta
 	layout_priority=critical
 	;;
-    *_MN*)
-	default_layout=mn  # Mongolia
-	;;
-    se_FI)
-	default_layout=fi  # Finland
-	default_variant=smi # Northern Saami
-	;;
     se_NO*)
 	default_layout=no  # Norway
 	default_variant=smi # Northern Saami
-	;;
-    se_SE*)
-	default_layout=se  # Sweden
-	default_variant=smi # Northern Saami
-	;;
-    sv_*)
-	default_layout=se  # Sweden
-	default_variant=basic
 	;;
     *_NO*)
 	default_layout=no  # Norway (se_NO is not in this case)
@@ -791,9 +741,9 @@ case "$locale" in
 	default_layout=ru  # Russia
 	layout_priority=critical
 	;;
-    sr_*)
-	default_layout=cs  # Serbia and Montenegro
-	layout_priority=critical
+    se_SE*)
+	default_layout=se  # Sweden
+	default_variant=smi # Northern Saami
 	;;
     *_SK*)
 	default_layout=sk  # Slovakia
@@ -801,23 +751,8 @@ case "$locale" in
     *_SI*)
 	default_layout=si  # Slovenia
 	;;
-    *_ES*)
-	default_layout=es  # Spain
-	;;
-    *_CH*)
-	default_layout=ch  # Switzerland
-	layout_priority=critical
-	;;
     *_TJ)
 	default_layout=tj  # Tajikistan
-	;;
-    ta_*)
-	default_layout=in  # India
-	default_variant=tam # Tamil
-	;;
-    te_*)
-	default_layout=in  # India
-	default_variant=tel # Telugu
 	;;
     *_TH*)
 	default_layout=th  # Thailand
@@ -827,18 +762,86 @@ case "$locale" in
 	default_layout=tr  # Turkish
 	layout_priority=critical
 	;;
-    en_US*)
-	default_layout=us  # U.S. English
-	;;
     *_UA*)
 	default_layout=ua  # Ukraine
 	;;
-    *_GB)
-	default_layout=gb  # United Kingdom
+    en_US*)
+	default_layout=us  # U.S. English
 	;;
     *_VN*)
 	default_layout=vn  # Vietnam
 	;;
+    # Keyboards for specific languages and international keyboards:
+    # TODO: Is the following list correct?
+    *_AR*|*_BO*|*_CL*|*_CO*|*_CR*|*_DO*|*_EC*|*_GT*|*_HN*|*_MX*|*_NI*|*_PA*|*_PE*|es_PR*|*_PY*|*_SV*|es_US*|*_UY*|*_VE*)
+	default_layout=latam # Latin American
+	;;
+    ar_*)
+	default_layout=ara # Arabic
+	;;
+    bs_*)
+	default_layout=bs  # Bosnia and Herzegovina
+	;;
+    de_*)
+	default_layout=de  # Germany
+	;;
+    el_*)
+	default_layout=gr  # Greece
+	;;
+    fr_*)
+	default_layout=fr  # France
+	layout_priority=critical
+	;;
+    gu_*)
+	default_layout=in  # India
+	default_variant=guj # Gujarati
+	;;
+    hi_*)
+	default_layout=in  # India
+	default_variant=dev # Devangari
+	;;
+    hr_*)
+	default_layout=hr  # Croatia
+	;;
+    hy_*)
+	default_layout=am  # Armenia
+	;;
+    ka_*)
+	default_layout=ge  # Georgia
+	layout_priority=critical
+	;;
+    kn_*)
+	default_layout=in  # India
+	default_variant=kan # Kannada
+	;;
+    lo_*)
+	default_layout=la  # Laos
+	;;
+    ml_*)
+	default_layout=in  # India
+	default_variant=mal # Malayalam
+	;;
+    pa_*)
+	default_layout=in  # India
+	default_variant=guru # Gurmukhi
+	;;
+    sr_*)
+	default_layout=cs  # Serbia and Montenegro
+	layout_priority=critical
+	;;
+    sv_*)
+	default_layout=se  # Sweden
+	default_variant=basic
+	;;
+    ta_*)
+	default_layout=in  # India
+	default_variant=tam # Tamil
+	;;
+    te_*)
+	default_layout=in  # India
+	default_variant=tel # Telugu
+	;;
+    # Fallback
     *)
 	default_layout=us
 	;;
@@ -942,8 +945,8 @@ if [ -e $CONFIGFILE ]; then
     db_set console-setup/ttys "$ACTIVE_CONSOLES"
     default_charmap="$CHARMAP"
     default_codeset="$CODESET"
-    db_set console-setup/fontface "$FONTFACE"
-    db_set console-setup/fontsize "$FONTSIZE"
+    default_fontface="$FONTFACE"
+    default_fontsize="$FONTSIZE"
     default_model="$XKBMODEL"
 
     case "$XKBLAYOUT" in
@@ -1406,6 +1409,71 @@ while :; do
 	    # remove newlines
 	    choices=`echo $choices | sed -e 's/,$//'`
 	    db_subst console-setup/fontface CHOICES "$choices"
+	    if [ -z "$default_fontface" ]; then
+		case "$codeset" in
+		    Arabic)
+			default_fontface=Fixed
+			;;
+		    Armenian)
+			default_fontface=Fixed
+			;;
+		    CyrAsia)
+			default_fontface=Fixed
+			;;
+		    CyrKoi)
+			default_fontface=Terminus
+			;;
+		    CyrSlav)
+			default_fontface=Terminus
+			;;
+		    Ethiopian)
+			default_fontface=Goha
+			;;
+		    Georgian)
+			default_fontface=Fixed
+			;;
+		    Greek)
+			default_fontface=Fixed
+			;;
+		    Hebrew)
+			default_fontface=Fixed
+			;;
+		    Lao)
+			default_fontface=Fixed
+			;;
+		    Lat15)
+			default_fontface=Terminus
+			;;
+		    Lat2)
+			default_fontface=Terminus
+			;;
+		    Lat38)
+			default_fontface=Fixed
+			;;
+		    Lat7)
+			default_fontface=Terminus
+			;;
+		    Thai)
+			default_fontface=Fixed
+			;;
+		    Uni1)
+			default_fontface=Fixed
+			;;
+		    Uni2)
+			default_fontface=Fixed
+			;;
+		    Uni3)
+			default_fontface=Fixed
+			;;
+		    Vietnamese)
+			default_fontface=Fixed
+			;;
+		    *)
+			default_fontface=Fixed
+			;;
+		esac
+	    fi
+	    db_set console-setup/fontface "$default_fontface"
 	    db_input medium console-setup/fontface || true
 	    if db_go; then
 		STATE=$(($STATE + 1))

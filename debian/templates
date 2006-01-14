@@ -49,7 +49,7 @@ _Description: Choose a font for the console.
  emergency Linux console.
  .
  VGA is traditionally looking, it has medium coverage of international
- scripts.  Fixed has siplistic look and has best coverage of
+ scripts.  Fixed has simplistic look and has best coverage of
  international scripts.  The aim of Terminus is to reduce the
  eyes-fatigue when one has to read a lot (a note for programmers: some
  symbols look quiet similar), it supports only the Latin and the
@@ -98,7 +98,7 @@ _Description: Toggling between Latin and non-Latin mode
  Since your keyboard is a non-Latin one, you will need a way to toggle
  between the Latin and the non-Latin mode.  Several options are available.
  .
- The most ergonomic choices seam to be the right Alt and the Caps Lock keys
+ The most ergonomic choices seem to be the right Alt and the Caps Lock keys
  (in the later case use the combination Shift+Caps Lock for normal Caps
  toggle).  Another popular choice is the Alt+Shift combination; notice
  however that in this case the combination Alt+Shift (or Control+Shift if
@@ -149,7 +149,7 @@ _Description: The compose key
  order to produce a character not found on the keyboard.
  .
  For example, typing compose, then a, then e may produce the French AE
- ligature.  Typing compose, then e, then ' can yeld an e with an acute
+ ligature.  Typing compose, then e, then ' can yield an e with an acute
  accent.  Typing compose, then o, then c may produce the copyright sign. 
  Etc.
  .
