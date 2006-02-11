@@ -9,9 +9,16 @@ case "$1" in
         # console-setup isn't a daemon
         ;;
     start|force-reload|restart|reload)
-	echo -n "Setting up font and keyboard on the console... "
-	setupcon
-	echo done.
+	case `readlink /proc/self/fd/2` in
+	    /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
+	        echo -n "Setting up font and keyboard on the console... "
+		setupcon
+		echo done.
+		;;
+	    *)
+		exit 0 
+		;;
+	esac
 	;;
     *)
         echo 'Usage: /etc/init.d/console-setup {start|reload|restart|force-reload|stop}'
