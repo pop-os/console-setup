@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-01-14 16:26+0200\n"
+"POT-Creation-Date: 2006-02-11 22:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,21 +51,21 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../templates:26
+msgid "What is the origin of your keyboard layout?"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../templates:31
 msgid "What is the keys layout of your keyboard?"
 msgstr ""
 
 #. Type: select
 #. Description
 #: ../templates:31
-msgid "Which variant do you have?"
-msgstr ""
-
-#. Type: select
-#. Description
-#: ../templates:31
 msgid ""
-"The layout you selected has several variants.  Please select the one "
-"matching your keyboard."
+"There are several keyboard layouts with the origin you selected. Please "
+"select the layout matching your keyboard."
 msgstr ""
 
 #. Type: note

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-01-14 16:26+0200\n"
+"POT-Creation-Date: 2006-02-11 22:03+0200\n"
 "PO-Revision-Date: 2006-01-14 16:27+0200\n"
 "Last-Translator: Recai Oktaş <roktas@debian.org>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -57,21 +57,23 @@ msgstr "Klavyenizin modeli nedir?"
 #. Type: select
 #. Description
 #: ../templates:26
+#, fuzzy
+msgid "What is the origin of your keyboard layout?"
+msgstr "Klavyenizin modeli nedir?"
+
+#. Type: select
+#. Description
+#: ../templates:31
 msgid "What is the keys layout of your keyboard?"
 msgstr "Klavyede kullanılan tuş düzeni nedir?"
 
 #. Type: select
 #. Description
 #: ../templates:31
-msgid "Which variant do you have?"
-msgstr "Hangi klavye alt türünü (varyant) istersiniz?"
-
-#. Type: select
-#. Description
-#: ../templates:31
+#, fuzzy
 msgid ""
-"The layout you selected has several variants.  Please select the one "
-"matching your keyboard."
+"There are several keyboard layouts with the origin you selected. Please "
+"select the layout matching your keyboard."
 msgstr ""
 "Seçtiğiniz düzen çeşitli alt türlere sahip.  Lütfen klavyenizle uyuşan bir "
 "alt tür seçin."
@@ -492,3 +494,6 @@ msgstr ""
 "Birleştirme tuşu, Unikod kipli metin uçbiriminde çalışmaz.  Unikod kipinin "
 "haricindeki her durumda Alt+nokta bileşimini birleştirme tuşu olarak daima "
 "kullanabilirsiniz."
+
+#~ msgid "Which variant do you have?"
+#~ msgstr "Hangi klavye alt türünü (varyant) istersiniz?"

@@ -22,15 +22,15 @@ _Description: What is the model of your keyboard?
 Template: console-setup/layout
 Type: select
 Choices: ${CHOICES}
-Default: U.S. English w/ ISO9995-3
-_Description: What is the keys layout of your keyboard?
+Default: U.S. English
+_Description: What is the origin of your keyboard layout?
 
 Template: console-setup/variant
 Type: select
 Choices: ${CHOICES}
-_Description: Which variant do you have?
- The layout you selected has several variants.  Please select the one
- matching your keyboard.
+_Description: What is the keys layout of your keyboard?
+ There are several keyboard layouts with the origin you selected.
+ Please select the layout matching your keyboard.
 
 Template: console-setup/dont_ask_layout
 Type: note
