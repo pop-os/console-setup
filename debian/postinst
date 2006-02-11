@@ -40,11 +40,7 @@ if [ "$1" = "configure" ]; then
     db_get console-setup/optionscode
     options="$RET"
 
-    [ -f $CONFIGDIR/$fontname ] || cp $fontdir/$fontname $CONFIGDIR/
-
     if [ "$charmap" != UTF-8 ]; then
-	[ -f $CONFIGDIR/$charmap.acm.gz ] \
-	    || cp /usr/share/consoletrans/$charmap.acm.gz $CONFIGDIR/
 	acm=$CONFIGDIR/$charmap.acm.gz
 	acm_option="-charmap $charmap"
     else
