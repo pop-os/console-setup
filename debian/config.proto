@@ -668,7 +668,7 @@ case "$locale" in
     *_ES*)
 	default_layout=es  # Spain
 	;;
-    se_FI)
+    se_FI*)
 	default_layout=fi  # Finland
 	default_variant=smi # Northern Saami
 	;;
@@ -676,7 +676,7 @@ case "$locale" in
 	default_layout=fi  # Finland
 	default_variant=fi # Finland
 	;;
-    *_GB)
+    *_GB*)
 	default_layout=gb  # United Kingdom
 	;;
     *_HU*)
@@ -751,7 +751,7 @@ case "$locale" in
     *_SI*)
 	default_layout=si  # Slovenia
 	;;
-    *_TJ)
+    *_TJ*)
 	default_layout=tj  # Tajikistan
 	;;
     *_TH*)
@@ -1091,7 +1091,7 @@ while :; do
 		# skip the question without making Debconf loop
 		STATE=$(( $STATE + $STATE - $old_state ))
 	    elif \
-		ask_debconf console-setup/variant high \
+		ask_debconf console-setup/variant critical \
                     "variant\*${layout}" "$default_variant"
 	    then
 		variant="$RET"
