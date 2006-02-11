@@ -6,14 +6,16 @@ console-setup (1.1) unstable; urgency=low
     on the console or not.  That way setupcon can detect that we are on
     the console even when it is invoked from postinst and Debconf has
     changed standard input and output.
-  * Ask the console-setup/variant question with critical priority.
   * Changes in the text of some questions: "What is the origin of our
     keyboard" instead of "What is the layout of your keyboard" and "What
     is the layout of your keyboard" instead of "What is the variant of
-    your keyboard".
+    your keyboard".  Ask the console-setup/variant question with critical
+    priority.  Thanks to Arnt Karlsen, closes: #352405.
+  * Fix the true/yes discrepancy in setupcon which caused the options -k
+    and -f not to work.
   * Updated Bulgarian translation.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 11 Feb 2006 22:05:59 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 11 Feb 2006 23:24:54 +0200
 
 console-setup (1.0) unstable; urgency=low
 

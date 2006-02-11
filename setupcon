@@ -34,10 +34,10 @@ which () {
 while [ "$1" ]; do
     case "$1" in
 	-k|--keyboard-only)
-	    keyboard_only=true
+	    keyboard_only=yes
 	    ;;
 	-f|--font-only)
-	    font_only=true
+	    font_only=yes
 	    ;;
 	-v|--verbose)
 	    verbose_option=yes
