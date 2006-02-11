@@ -108,7 +108,7 @@ else
     verbose='>/dev/null 2>&1'
 fi
 
-case `readlink /proc/self/fd/0` in
+case `readlink /proc/self/fd/2` in
     /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
 	;;
     *)
