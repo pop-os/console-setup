@@ -1,3 +1,20 @@
+console-setup (1.1) unstable; urgency=low
+
+  * Run setupcon in postinst.  Thanks to Recai Oktaş for the suggestion.
+  * Setupcon uses /proc/self/fd/2 (standard error) instead of
+    /proc/self/fd/0 (standard output) in order to determine whether we are
+    on the console or not.  That way setupcon can detect that we are on
+    the console even when it is invoked from postinst and Debconf has
+    changed standard input and output.
+  * Ask the console-setup/variant question with critical priority.
+  * Changes in the text of some questions: "What is the origin of our
+    keyboard" instead of "What is the layout of your keyboard" and "What
+    is the layout of your keyboard" instead of "What is the variant of
+    your keyboard".
+  * Updated Bulgarian translation.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 11 Feb 2006 22:05:59 +0200
+
 console-setup (1.0) unstable; urgency=low
 
   * Initial release
