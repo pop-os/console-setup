@@ -1,3 +1,13 @@
+console-setup (1.2) unstable; urgency=low
+
+  * Fix some bugs related to non-UTF8 modes:
+    - setupcon always sets up the first console in UTF-8 mode
+    - setupcon doesn't load ACM in the first console if kbd is used 
+    - ckbcomp has to interpret the "acute" Xkeysym as apostrophe.
+    Thanks to Norbert Preining, closes: #352449.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 12 Feb 2006 13:44:25 +0200
+
 console-setup (1.1) unstable; urgency=low
 
   * Run setupcon in postinst.  Thanks to Recai Oktaş for the suggestion.
