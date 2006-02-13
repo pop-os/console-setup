@@ -1,3 +1,11 @@
+console-setup (1.3) unstable; urgency=low
+
+  * Make the Debconf config script not override the user's answers with
+    default values when executed at postinst time.  Thanks to Juhapekka
+    Tolvanen, closes: #352299.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 13 Feb 2006 21:41:20 +0200
+
 console-setup (1.2) unstable; urgency=low
 
   * Fix some bugs related to non-UTF8 modes:
@@ -6,7 +14,7 @@ console-setup (1.2) unstable; urgency=low
     - ckbcomp has to interpret the "acute" Xkeysym as apostrophe.
     Thanks to Norbert Preining, closes: #352449.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 12 Feb 2006 13:44:25 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 13 Feb 2006 21:37:42 +0200
 
 console-setup (1.1) unstable; urgency=low
 

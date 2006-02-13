@@ -63,6 +63,8 @@ set -e
 
 . /usr/share/debconf/confmodule
 
+CONFIGFILE=/etc/default/console-setup
+
 ## FONTSETS ## Will be replaced by assignment for $fontsets:
 
 # fontsets='Arabic-Fixed15
@@ -91,6 +93,16 @@ set -e
 
 db_capb backup
 
+# Set default value for a question only if it is not seen by the user
+db_default () {
+    if \
+	[ -f $CONFIGFILE ] \
+	|| { db_fget $1 seen && [ "$RET" = false ]; }
+    then
+	db_set $1 "$2"
+    fi
+}
+
 # A high level function to ask questions about the keyboard model,
 # layout and variant
 ask_debconf () {
@@ -100,7 +112,6 @@ ask_debconf () {
     priority=$2     # The priority for the question
     prefix=$3       # The prefix for $kbdnames
     default_code=$4 # The default choice (optional)
-
     choices=`echo "$kbdnames" | grep "^$prefix\*" | 
         sed -e "s/^$prefix\*[^\*]*\*//" -e 's/,//g' -e 's/$/,/' | sort `
     choices=`echo $choices | sed 's/, *$//'`
@@ -110,7 +121,7 @@ ask_debconf () {
         grep "^$prefix\*${default_code}\*" |
         sed -e "s/^$prefix\*${default_code}\*//"`
     if [ -n "$default_description" ]; then
-	db_set $template "$default_description"
+	db_default $template "$default_description"
     fi
 
     db_input $priority $template || true
@@ -934,15 +945,11 @@ esac
 
 ######################################################################
 
-CONFIGFILE=/etc/default/console-setup
-
 # Load the config file, if it exists.
 if [ -e $CONFIGFILE ]; then
     . $CONFIGFILE || true
     
-    # Store values from config file into debconf db.
-    
-    db_set console-setup/ttys "$ACTIVE_CONSOLES"
+    default_ttys="$ACTIVE_CONSOLES"
     default_charmap="$CHARMAP"
     default_codeset="$CODESET"
     default_fontface="$FONTFACE"
@@ -1041,6 +1048,14 @@ if [ -e $CONFIGFILE ]; then
 		default_compose='Caps Lock';;
 	esac
     done
+
+    # Store values from config file into debconf db.
+    
+    db_set console-setup/ttys "$default_ttys"
+    db_set console-setup/charmap "$default_charmap"
+    db_set console-setup/codeset "$default_codeset"
+    db_set console-setup/fontface "$default_fontface"
+    db_set console-setup/fontsize "$default_fontsize"
     db_set console-setup/toggle "$default_toggle"
     db_set console-setup/switch "$default_switch"
     db_set console-setup/altgr "$default_altgr"
@@ -1151,8 +1166,8 @@ while :; do
 		STATE=$(( $STATE + $STATE - $old_state ))
 	    else
 		if [ "$latin" = yes ]; then
-		    db_set console-setup/toggle 'No toggling'
-		    db_set console-setup/switch 'No temporary switch'
+		    db_default console-setup/toggle 'No toggling'
+		    db_default console-setup/switch 'No temporary switch'
 		fi
 		db_beginblock
 		if [ "$latin" = no ]; then
@@ -1381,7 +1396,7 @@ while :; do
 	    # remove newlines
 	    choices=`echo $choices | sed -e 's/,$//' `
 	    db_subst console-setup/charmap CHOICES "$choices"
-	    db_set console-setup/charmap "$default_charmap"
+	    db_default console-setup/charmap "$default_charmap"
 	    db_input $charmap_priority console-setup/charmap || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
@@ -1392,7 +1407,7 @@ while :; do
 	    charmap=$RET
 	    ;;
 	6)
-	    db_set console-setup/codeset "$default_codeset"
+	    db_default console-setup/codeset "$default_codeset"
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
@@ -1473,7 +1488,7 @@ while :; do
 			;;
 		esac
 	    fi
-	    db_set console-setup/fontface "$default_fontface"
+	    db_default console-setup/fontface "$default_fontface"
 	    db_input medium console-setup/fontface || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
