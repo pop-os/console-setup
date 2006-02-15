@@ -1,6 +1,6 @@
 console-setup (1.6) UNRELEASED; urgency=low
 
-  * New release.
+  * Few comments in debian/templates.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Feb 2006 14:17:13 +0200
 

@@ -1,7 +1,11 @@
 Template: console-setup/codeset
 Type: select
+# I am not sure if these should be translated.  They
+# directly to the font file names and are documented in README files.
 Choices: Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav, Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7, Thai, Uni1, Uni2, Uni3, Vietnamese
 Default: Uni1
+# The languages with many non-ASCII letters should not use formated
+# list.  In you decide to use formated list keep the lines relatively short.
 _Description: Codeset for your language environment:
   - Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9;
   - Lat2 covers ISO 8859-2, the Euro sign as well as the 
@@ -46,6 +50,8 @@ Template: console-setup/fontface
 Type: select
 Choices: ${CHOICES}
 Default: Fixed
+# The languages with many non-ASCII letters should not use formated
+# list.  In you decide to use formated list keep the lines relatively short.
 _Description: Font for the console:
  Please choose the font face you would like to use on Linux console.
  .
