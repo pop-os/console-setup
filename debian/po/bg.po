@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-02-11 22:03+0200\n"
-"PO-Revision-Date: 2006-02-13 21:52+0200\n"
+"POT-Creation-Date: 2006-02-15 13:02+0200\n"
+"PO-Revision-Date: 2006-02-15 13:03+0200\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,72 +18,71 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../templates:5
-msgid "Which codeset is suitable for your language environment?"
-msgstr "Кой набор знаци е подходящ за вашата езикова среда?"
+msgid "Codeset for your language environment:"
+msgstr "Набор знаци за вашата езикова среда:"
 
 #. Type: select
 #. Description
 #: ../templates:5
 msgid ""
-"Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9.  Lat2 covers ISO 8859-"
-"2, the Euro sign as well as the Romanian letters with comma below.  Lat38 "
-"covers ISO 8859-3 and ISO 8859-13. Lat7 covers ISO 8859-13. CyrSlav covers "
-"not only the Slavic Cyrillic letters but also the Serbian Latin letters."
+" - Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9;\n"
+" - Lat2 covers ISO 8859-2, the Euro sign as well as the\n"
+"   Romanian letters with comma below;\n"
+" - Lat38 covers ISO 8859-3 and ISO 8859-13;\n"
+" - Lat7 covers ISO 8859-13;\n"
+" - CyrSlav covers the Slavic Cyrillic letters as well as\n"
+"   the Serbian Latin letters;\n"
+" - Uni1 supports most of the Latin languages, the Slavic\n"
+"   Cyrillic languages, Hebrew and barely Arabic;\n"
+" - Uni2 supports most of the Latin languages, the Slavic\n"
+"   Cyrillic languages and Greek;\n"
+" - Uni3 supports most of the Latin and Cyrillic languages."
 msgstr ""
-"Lat15 поддържа ISO 8859-1, ISO 8859-15 и ISO 8859-9.  Lat2 поддържа ISO 8859-"
-"2, знака Евро, както и румънските букви със запетая отдолу.  Lat38 поддържа "
-"ISO 8859-3 и ISO 8859-13. Lat7 поддържа ISO 8859-13. CyrSlav поддържа не "
-"само славянските кирилски букви, но също и сръбските латински букви."
+"Lat15 поддържа ISO 8859-1, ISO 8859-15 и ISO 8859-9; Lat2 поддържа ISO 8859-"
+"2, знака Евро, както и румънските букви със запетая отдолу; Lat38 поддържа "
+"ISO 8859-3 и ISO 8859-13; Lat7 поддържа ISO 8859-13; CyrSlav поддържа "
+"славянските кирилски букви, както и сръбските латински букви; Uni1 поддържа "
+"повечето латински езици, славянските кирилски езици, иврит и донякъде "
+"арабски; Uni2 поддържа повечето латински езици, славянските кирилски езици и "
+"гръцки; Uni3 поддържа повечето латински и кирилски езици."
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:22
+msgid "Keyboard model:"
+msgstr "Модел на клавиатурата:"
+
+#. Type: select
+#. Description
+#: ../templates:28
+msgid "The origin of the keyboard:"
+msgstr "Произходът на вашата клавиатурна подредба:"
+
+#. Type: select
+#. Description
+#: ../templates:33
+msgid "Keyboard layout:"
+msgstr "Клавиатурна подредба:"
+
+#. Type: select
+#. Description
+#: ../templates:33
 msgid ""
-"Uni1 supports most of the Latin languages, the Slavic Cyrillic languages, "
-"Hebrew and barely Arabic.  Uni2 supports most of the Latin languages, the "
-"Slavic Cyrillic languages and Greek.  Uni3 supports most of the Latin and "
-"Cyrillic languages."
+"There are more than one keyboard layouts with the origin you selected. "
+"Please select the layout matching your keyboard."
 msgstr ""
-"Uni1 поддържа повечето от латинските езици, славянските кирилски езици, "
-"Иврит и частично арабски.  Uni2 поддържа повечето от латинските езици, "
-"славянските кирилски езици и гръцки.  Uni3 поддържа повечето от латинските и "
-"кирилски езици."
-
-#. Type: select
-#. Description
-#: ../templates:20
-msgid "What is the model of your keyboard?"
-msgstr "Какъв модел е вашата клавиатура?"
-
-#. Type: select
-#. Description
-#: ../templates:26
-msgid "What is the origin of your keyboard layout?"
-msgstr "Какъв е произходът на вашата клавиатурна подредба?"
-
-#. Type: select
-#. Description
-#: ../templates:31
-msgid "What is the keys layout of your keyboard?"
-msgstr "Каква клавиатурна подредба използвате?"
-
-#. Type: select
-#. Description
-#: ../templates:31
-msgid ""
-"There are several keyboard layouts with the origin you selected. Please "
-"select the layout matching your keyboard."
-msgstr "Има редица клавиатурни подредби с посочения от вас произход.  Моля, изберете онази от тях, която съответства на вашата клавиатура."
+"Има повече от една клавиатурни подредби с посочения от вас произход.  Моля, "
+"изберете онази от тях, която съответства на вашата клавиатура."
 
 #. Type: note
 #. Description
-#: ../templates:37
-msgid "No questions about layout will be asked"
-msgstr "Няма да бъдат задавани въпроси за клавиатурната подредба"
+#: ../templates:39
+msgid "Unsupported settings in configuration file"
+msgstr "Неподдържани настройки в конфигурационния файл"
 
 #. Type: note
 #. Description
-#: ../templates:37
+#: ../templates:39
 msgid ""
 "The configuration file /etc/default/console-setup specifies keyboard layout "
 "and variant that are not supported by the configuration program.  Because of "
@@ -97,93 +96,110 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:47
-msgid "Choose a font for the console."
-msgstr "Изберете шрифт за конзолата."
+#: ../templates:49
+msgid "Font for the console:"
+msgstr "Шрифт за конзолата:"
 
 #. Type: select
 #. Description
-#: ../templates:47
-msgid ""
-"Please choose the font face you would like to use on the text-mode emergency "
-"Linux console."
+#: ../templates:49
+msgid "Please choose the font face you would like to use on Linux console."
 msgstr ""
-"Моля, посочете шрифта, който бихте желали да се използва на аварийната "
-"конзола на Линукс."
+"Моля, посочете шрифта, който бихте желали да се използва на конзолата на "
+"Линукс."
 
 #. Type: select
 #. Description
-#: ../templates:47
+#: ../templates:49
 msgid ""
-"VGA is traditionally looking, it has medium coverage of international "
-"scripts.  Fixed has simplistic look and has best coverage of international "
-"scripts.  The aim of Terminus is to reduce the eyes-fatigue when one has to "
-"read a lot (a note for programmers: some symbols look quiet similar), it "
-"supports only the Latin and the Cyrillic scripts."
+" - VGA is traditionally looking and has medium coverage\n"
+"   of international scripts;\n"
+" - Fixed has simplistic look and has a better coverage\n"
+"   of international scripts;\n"
+" - Terminus is aimed to reduce the eyes fatigue though\n"
+"   some symbols have a similar aspect which may be a problem\n"
+"   for programmers. It only supports the Latin and the\n"
+"   Cyrillic scripts."
 msgstr ""
-"VGA изглежда по традиционен начин, има умерено добра поддръжка на различните "
-"азбуки.  Fixed изглежда опростено и има най-добра поддръжка на различните "
-"азбуки.  Целта на шрифта Terminus е да намали умората на очите при "
-"продължителна работа, той поддържа само латинската и кирилската азбуки."
+"VGA изглежда по традиционен начин и има умерено добра поддръжка на "
+"различните азбуки. Fixed изглежда опростено и има по-добра поддръжка на "
+"различните азбуки. Целта на шрифта Terminus е да намали умората на очите, "
+"макар че някои символи си приличат и това може да бъде проблем за "
+"програмистите.  Той поддържа само кирилските и латинските букви."
 
 #. Type: select
 #. Description
-#: ../templates:47
+#: ../templates:49
 msgid ""
-"Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
-"framebuffer.  Otherwise choose TerminusBold."
+"If you prefer bold version of the Terminus font and you don't use "
+"framebuffer then choose TerminusBoldVGA.  If you use framebuffer then choose "
+"TerminusBold."
 msgstr ""
-"Използвайте TerminusBoldVGA, ако не използвате фреймбуфер и предпочитате "
-"шрифтов размер 8x14 или 8x16.  В останалите случаи изберете TerminusBold."
+"Ако предпочитате удебеления вариант на шрифта Terminus и не използвате "
+"фреймбуфер, изберете TerminusBoldVGA.  Ако пък използвате фреймбуфер, тогава "
+"изберете TerminusBold."
 
 #. Type: select
 #. Description
-#: ../templates:65
-msgid "What is your favourite font size?"
-msgstr "Кой е предпочитаният от вас шрифтов размер?"
-
-#. Type: select
-#. Description
-#: ../templates:65
+#: ../templates:69
 msgid ""
-"Please select the size of the font on the emergency Linux console. In case "
-"you use text-mode videomode the following table shows the correspondence "
-"between the fontsize and the number of the characters on the screen:\n"
-" size 18 - for 80x22 and 80x26\n"
-" size 16 - for 80x25 and 80x30 (most standard)\n"
-" size 15 - for 80x26 and 80x32\n"
-" size 14 - for 80x28 and 80x34\n"
-" size 13 - for 80x30 and 80x36\n"
-" size 8 - for 80x43, 80x50 and 80x60 (very unreadable).\n"
-" other size - only with framebuffer"
-msgstr ""
-"Моля, изберете размера на шрифта, който да се използва на аварийната конзола "
-"на Линукс.  В случай, че използвате текстов видеорежим (не фреймбуфер), "
-"следната таблица показва съответствието между шрифтовия размер и броя знаци "
-"на екрана:\n"
-" размер 18 - for 80x22 и 80x26\n"
-" размер 16 - for 80x25 и 80x30 (най-стандартен)\n"
-" размер 15 - for 80x26 и 80x32\n"
-" размер 14 - for 80x28 и 80x34\n"
-" размер 13 - for 80x30 и 80x36\n"
-" размер 8 - for 80x43, 80x50 и 80x60 (доста нечетлив).\n"
-" друг размер - само с фреймбуфер"
+"Please select the size of the font for the Linux console.  For a reference - "
+"the font your computer starts with has size 16."
+msgstr "Моля, изберете размера на шрифта за конзолата на Линукс. За сравнение - шрифтът, с който вашият компютър се стартира, има височина 16."
 
 #. Type: select
 #. Description
-#: ../templates:81
-msgid "What is your encoding?"
-msgstr "Кое кодиране използва системата?"
+#: ../templates:77
+msgid "Font size:"
+msgstr "Размер на шрифта:"
+
+#. Type: select
+#. Description
+#: ../templates:77
+msgid ""
+"Please select the size of the font for the Linux console.  When the size is "
+"represented as a plain number then the corresponding font can be used with "
+"all console drivers and the number measures the height of the symbols (in "
+"number of scan lines).  Otherwise the size has the format HEIGHTxWIDTH and "
+"the corresponding fonts can not be used if you don't use framebuffer.  They "
+"can not be used also if your framebuffer is based on the RadeonFB kernel "
+"module."
+msgstr ""
+"Моля, посочете размера на шрифта за конзолата на Линукс. Когато размерът е "
+"представен с обикновено число, тогава съответният шрифт може да се използва "
+"с всички конзолни драйвери, а числото показва височината на символите (в "
+"брой редове).  В противен случай размерът има вида ВИСОЧИНАxШИРИНА, а "
+"съответните шрифтове не могат да се използват без фреймбуфер.  Те не могат "
+"да се използват също така и ако вашият фреймбуфер е реализиран посредством "
+"модула на ядрото RadeonFB."
+
+#. Type: select
+#. Description
+#: ../templates:77
+msgid ""
+"You can use the height of the fonts in order to figure out the real size of "
+"the symbols on the console.  For a reference - the font your computer starts "
+"with has height 16."
+msgstr ""
+"Може да използвате височината на шрифтовете, за да си представите реалния "
+"размер на символите на конзолата.  За сравнение - шрифтът, с който вашият "
+"компютър се стартира, има височина 16."
+
+#. Type: select
+#. Description
+#: ../templates:94
+msgid "Encoding on the console:"
+msgstr "Кодиране на конзолата:"
 
 #. Type: string
 #. Description
-#: ../templates:86
-msgid "What virtual consoles do you use?"
-msgstr "Кои виртуални конзоли използвате?"
+#: ../templates:99
+msgid "Virtual consoles in use:"
+msgstr "Използвани виртуални конзоли:"
 
 #. Type: string
 #. Description
-#: ../templates:86
+#: ../templates:99
 msgid ""
 "Please enter a space delimited list of virtual consoles you use. The usual "
 "Unix filename wildcards are allowed (*, ? and [...])."
@@ -194,10 +210,10 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:86
+#: ../templates:99
 msgid ""
-"If you are unsure, then use the default /dev/tty[1-6], it is for six virtual "
-"consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
+"If you are unsure, then use the default /dev/tty[1-6] which stands for six "
+"virtual consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
 msgstr ""
 "Ако не сте сигурни, използвайте стойността по подразбиране (/dev/tty[1-6]) - "
 "тя е за шест виртуални конзоли.  Ако използвате devfs, вместо това въведете /"
@@ -205,87 +221,90 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Right Shift"
 msgstr "Десен Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Alt+Shift"
 msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Control+Shift"
 msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Shift+Caps Lock"
 msgstr "Shift+Caps Lock"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Control+Alt"
 msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Shift keys together"
 msgstr "Двата клавиша Shift едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Control keys together"
 msgstr "Двата клавиша Control едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Alt keys together"
 msgstr "Двата клавиша Alt едновременно"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Left Control"
 msgstr "Десен Control"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Left Shift"
 msgstr "Ляв Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "No toggling"
 msgstr "Без превключване"
 
 #. Type: select
 #. Description
-#: ../templates:97
-msgid "Toggling between Latin and non-Latin mode"
-msgstr "Превключване между режим „Латиница“ и нелатински знаци (напр. кирилица)"
+#: ../templates:110
+msgid "Method for toggling between Latin and non-Latin mode:"
+msgstr "Метод за превключване между режими „латиница“ и „нелатински букви“:"
 
 #. Type: select
 #. Description
-#: ../templates:97
+#: ../templates:110
 msgid ""
 "Since your keyboard is a non-Latin one, you will need a way to toggle "
 "between the Latin and the non-Latin mode.  Several options are available."
-msgstr "Тъй като вашата клавиатурна подредба не е латинска, ще ви трябва начин да превключвате между режим „Латиница“ и режим „нелатински букви“.  Има редица възможности."
+msgstr ""
+"Тъй като вашата клавиатурна подредба не е латинска, ще ви трябва начин да "
+"превключвате между режим „латиница“ и режим „нелатински букви“.  Има редица "
+"възможности."
 
 #. Type: select
 #. Description
-#: ../templates:97
+#: ../templates:110
 msgid ""
 "The most ergonomic choices seem to be the right Alt and the Caps Lock keys "
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
@@ -301,26 +320,26 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:97
-msgid "Notice that on some keyboards not all listed keys are present."
+#: ../templates:110
+msgid "Notice the listed keys are not present on all keyboards."
 msgstr ""
-"Забележете, че на някои клавиатури не всички изброени клавиши присъстват."
+"Забележете, че някои от изброените клавиши отсъстват на някои клавиатури."
 
 #. Type: select
 #. Choices
-#: ../templates:112
+#: ../templates:125
 msgid "No temporary switch"
 msgstr "Без временно превключване"
 
 #. Type: select
 #. Description
-#: ../templates:114
-msgid "Switching temporarily between Latin and non-Latin characters"
-msgstr "Временно превключване между режим „Латиница“ и нелатински знаци"
+#: ../templates:127
+msgid "Method for temporarily toggle between Latin and non-Latin input:"
+msgstr "Метод за временна смяна между режими „латиница“ и „нелатински букви“:"
 
 #. Type: select
 #. Description
-#: ../templates:114
+#: ../templates:127
 msgid ""
 "Sometimes the keyboard is in non-Latin mode and you want to type only few "
 "Latin letters. In this case it may be desirable to have a key for temporary "
@@ -328,149 +347,229 @@ msgid ""
 "non-Latin mode the keyboard types Latin letters and in reverse, when the "
 "keyboard is in Latin mode and you are pressing this key the keyboard will "
 "type non-Latin letters."
-msgstr "Понякога клавиатурата се намира в рерим за нелатински знаци и искате да въведете само няколко латински букви.  В този случай може би е желателно да имате клавиш, с който да може да се преминава временно между режим „Латиница“ и режим с нелатински знаци.  Докато този клавиш е натиснат в режим за нелатински знаци, клавиатурата ще генерира латински букви и обратно, докато той е натиснат в режим „Латиница“, клавиатурата ще генерира нелатински букви."
+msgstr ""
+"Понякога клавиатурата се намира в рерим за нелатински знаци и искате да "
+"въведете само няколко латински букви.  В този случай може би е желателно да "
+"имате клавиш, с който да може да се преминава временно между режим "
+"„латиница“ и режим с нелатински букви.  Докато този клавиш е натиснат в "
+"режим за нелатински букви, клавиатурата ще генерира латински букви и "
+"обратно, докато той е натиснат в режим „латиница“, клавиатурата ще генерира "
+"нелатински букви."
 
 #. Type: select
 #. Description
-#: ../templates:114
+#: ../templates:127
 msgid ""
 "If you don't like this feature, choose the option \"No temporary switch\"."
-msgstr "Ако не желаете да използвате тази възможност, изберете варианта „Без временно превключване“."
+msgstr ""
+"Ако не желаете да използвате тази възможност, изберете варианта „Без "
+"временно превключване“."
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "No AltGr key"
 msgstr "Без клавиш AltGr"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Left Logo key"
 msgstr "Ляв клавиш с лого"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Both Logo keys"
 msgstr "И двата клавиша с лого"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Left Alt"
 msgstr "Ляв Alt"
 
 #. Type: select
 #. Description
-#: ../templates:128
-msgid "The AltGr key"
-msgstr "Клавишът AltGr"
+#: ../templates:141
+msgid "AltGr key replacement:"
+msgstr "Клавиш AltGr:"
 
 #. Type: select
 #. Description
-#: ../templates:128
+#: ../templates:141
 msgid ""
-"With some of the keyboard layouts, AltGr is a modifier key used to type many "
-"character, primarily ones that are unusual for the language of the keyboard "
-"layout, such as foreign currency symbols and accented letters.  If a key has "
-"a third symbol on it (on the front vertical face or the bottom right of the "
-"key top, sometimes in a different colour), then AltGr is often the means of "
-"eliciting that symbol."
-msgstr "При някои клавиатурни подредби клавишът AltGr e модификатор, който се използва за въвеждането на много знаци, предимно такива, които необичайни за езика на клавиатурната подредба, например знаци за парични единици и букви с диакритични знаци.  Ако върху някой клавиш има изобразен трети символ (на предната вертикална страна или в долния десен ъгъл, понякога с друг цвят), то клавишът AltGr е начинът да се въведе този символ."
-
-#. Type: select
-#. Description
-#: ../templates:128
-msgid ""
-"In the French and Spanish keyboard layouts AltGr is used extensively to type "
-"the accented vowels.  In the British keyboard layouts fewer symbols require "
-"the use of AltGr, most notably the Euro currency symbol.  AltGr is often "
-"used to type symbols which are commonly used by programmers and technical "
-"writers."
+"With some of the keyboard layouts, AltGr is a modifier key used to input "
+"some characters, primarily ones that are unusual for the language of the "
+"keyboard layout, such as foreign currency symbols and accented letters.  If "
+"a key has a third symbol on it (on the front vertical face or the bottom "
+"right of the key top, sometimes in a different colour), then AltGr is often "
+"the means of eliciting that symbol."
 msgstr ""
-"При френската и испанската клавиатурни подредби клавишът AltGr се използва "
-"за въвеждането на гласни с диакритични знаци.  При британската клавиатурна "
-"подредба по-малко знаци изискват AltGr, по-важен от тях е знака Евро.  Често "
-"AltGr се използва за въвеждането на знаци, които се използват често от "
-"програмисти и автори на техническа литература."
+"При някои клавиатурни подредби клавишът AltGr e модификатор, който се "
+"използва за въвеждането на някои знаци, предимно такива, които са необичайни "
+"за езика на клавиатурната подредба, като знаци за различни парични единици и "
+"букви с диакритични знаци.  Ако върху някой клавиш има изобразен трети "
+"символ (на предната вертикална страна или в долния десен ъгъл, понякога с "
+"друг цвят), то често клавишът AltGr е начинът да се въведе този символ."
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "No compose key"
-msgstr "Без клавиш Compose"
+msgstr "Без клавиш „Compose“"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Alt"
 msgstr "Десен Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Logo key"
 msgstr "Десен клавиш с лого"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Control"
 msgstr "Десен Control"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Menu key"
 msgstr "Клавиш меню"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
 #. Type: select
 #. Description
-#: ../templates:146
-msgid "The compose key"
-msgstr "Клавишът compose"
+#: ../templates:153
+msgid "Compose key:"
+msgstr "Клавиш „Compose“:"
 
 #. Type: select
 #. Description
-#: ../templates:146
+#: ../templates:153
 msgid ""
-"The compose key (known also as Multi_key) is a key which is designated to "
+"The Compose key (known also as Multi_key) is a key which is designated to "
 "signal the software to interpret the next keystrokes as a combination in "
 "order to produce a character not found on the keyboard."
 msgstr ""
-"Клавишът compose (известен също като Multi_key) е клавиш, който е "
+"Клавишът „Compose“ (известен също като Multi_key) е клавиш, който е "
 "предназначен да посочи на софтуера да интерпретира следващите няколко "
 "клавиша като комбинация с цел да генерира символ, който отсъства на "
 "клавиатурата."
 
 #. Type: select
 #. Description
-#: ../templates:146
-msgid ""
-"For example, typing compose, then a, then e may produce the French AE "
-"ligature.  Typing compose, then e, then ' can yield an e with an acute "
-"accent.  Typing compose, then o, then c may produce the copyright sign.  Etc."
-msgstr ""
-"Например въвеждането на compose, после a, после e може да доведе до "
-"въвеждането на френската лигатура AE.  Въвеждането на compose, после e, "
-"после ' може да доведе до e с остро ударение.  Въвеждането на compose, после "
-"o, после c може да генерира знакът за авторски права.  И т.н."
-
-#. Type: select
-#. Description
-#: ../templates:146
+#: ../templates:153
 msgid ""
 "On the text console the Compose key does not work in Unicode mode. If not in "
 "Unicode mode, regardless of what you choose here, you can always use also "
 "the Alt+period combination as a Compose key."
-msgstr "На текстовата конзола клавишът Compose не работи в режим „Уникод“.  Ако режимът не е „Уникод“, то независимо какво ще изберете тук, ще може да използвате също комбинацията Alt+точка като клавиш Compose."
+msgstr ""
+"На текстовата конзола клавишът „Compose“ не работи в режим „Уникод“.  Ако "
+"режимът не е „Уникод“, то независимо какво ще изберете тук, ще може да "
+"използвате също комбинацията Alt+точка като клавиш „Compose“."
+
+#~ msgid ""
+#~ "Please select the size of the font for the Linux console. Correspondence "
+#~ "between font sizes and the number of the characters on the screen:\n"
+#~ " size 18     - for 80x22 and 80x26\n"
+#~ " size 16     - for 80x25 and 80x30 (most standard)\n"
+#~ " size 15     - for 80x26 and 80x32\n"
+#~ " size 14     - for 80x28 and 80x34\n"
+#~ " size 13     - for 80x30 and 80x36\n"
+#~ " size 8      - for 80x43, 80x50 and 80x60 (very unreadable)\n"
+#~ " other sizes - only with framebuffer"
+#~ msgstr ""
+#~ "Моля, изберете размера на шрифта за конзолата на Линукс.  Съответствие "
+#~ "между размера на шрифта и броя знаци на екрана:\n"
+#~ " размер 18   - за 80x22 и 80x26\n"
+#~ " размер 16   - за 80x25 и 80x30 (най-стандартен)\n"
+#~ " размер 15   - за 80x26 и 80x32\n"
+#~ " размер 14   - за 80x28 и 80x34\n"
+#~ " размер 13   - за 80x30 и 80x36\n"
+#~ " размер 8    - за 80x43, 80x50 и 80x60 (нечетлив).\n"
+#~ " друг размер - само с фреймбуфер"
+
+#~ msgid "Encoding:"
+#~ msgstr "Кодиране:"
+
+#~ msgid ""
+#~ "Uni1 supports most of the Latin languages, the Slavic Cyrillic languages, "
+#~ "Hebrew and barely Arabic.  Uni2 supports most of the Latin languages, the "
+#~ "Slavic Cyrillic languages and Greek.  Uni3 supports most of the Latin and "
+#~ "Cyrillic languages."
+#~ msgstr ""
+#~ "Uni1 поддържа повечето от латинските езици, славянските кирилски езици, "
+#~ "Иврит и частично арабски.  Uni2 поддържа повечето от латинските езици, "
+#~ "славянските кирилски езици и гръцки.  Uni3 поддържа повечето от "
+#~ "латинските и кирилски езици."
+
+#~ msgid "What is the model of your keyboard?"
+#~ msgstr "Какъв модел е вашата клавиатура?"
+
+#~ msgid "What is the keys layout of your keyboard?"
+#~ msgstr "Каква клавиатурна подредба използвате?"
+
+#~ msgid "No questions about layout will be asked"
+#~ msgstr "Няма да бъдат задавани въпроси за клавиатурната подредба"
+
+#~ msgid ""
+#~ "Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't "
+#~ "use framebuffer.  Otherwise choose TerminusBold."
+#~ msgstr ""
+#~ "Използвайте TerminusBoldVGA, ако не използвате фреймбуфер и предпочитате "
+#~ "шрифтов размер 8x14 или 8x16.  В останалите случаи изберете TerminusBold."
+
+#~ msgid "What is your favourite font size?"
+#~ msgstr "Кой е предпочитаният от вас шрифтов размер?"
+
+#~ msgid "What is your encoding?"
+#~ msgstr "Кое кодиране използва системата?"
+
+#~ msgid "Notice that on some keyboards not all listed keys are present."
+#~ msgstr ""
+#~ "Забележете, че на някои клавиатури не всички изброени клавиши присъстват."
+
+#~ msgid "The AltGr key"
+#~ msgstr "Клавишът AltGr"
+
+#~ msgid ""
+#~ "In the French and Spanish keyboard layouts AltGr is used extensively to "
+#~ "type the accented vowels.  In the British keyboard layouts fewer symbols "
+#~ "require the use of AltGr, most notably the Euro currency symbol.  AltGr "
+#~ "is often used to type symbols which are commonly used by programmers and "
+#~ "technical writers."
+#~ msgstr ""
+#~ "При френската и испанската клавиатурни подредби клавишът AltGr се "
+#~ "използва за въвеждането на гласни с диакритични знаци.  При британската "
+#~ "клавиатурна подредба по-малко знаци изискват AltGr, по-важен от тях е "
+#~ "знака Евро.  Често AltGr се използва за въвеждането на знаци, които се "
+#~ "използват често от програмисти и автори на техническа литература."
+
+#~ msgid "The compose key"
+#~ msgstr "Клавишът compose"
+
+#~ msgid ""
+#~ "For example, typing compose, then a, then e may produce the French AE "
+#~ "ligature.  Typing compose, then e, then ' can yield an e with an acute "
+#~ "accent.  Typing compose, then o, then c may produce the copyright sign.  "
+#~ "Etc."
+#~ msgstr ""
+#~ "Например въвеждането на compose, после a, после e може да доведе до "
+#~ "въвеждането на френската лигатура AE.  Въвеждането на compose, после e, "
+#~ "после ' може да доведе до e с остро ударение.  Въвеждането на compose, "
+#~ "после o, после c може да генерира знакът за авторски права.  И т.н."
 
 #~ msgid "Which variant do you have?"
 #~ msgstr "Кой от вариантите на вашата клавиатурна подредба използвате?"

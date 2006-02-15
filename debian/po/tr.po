@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-02-11 22:03+0200\n"
+"POT-Creation-Date: 2006-02-15 13:02+0200\n"
 "PO-Revision-Date: 2006-01-14 16:27+0200\n"
 "Last-Translator: Recai Oktaş <roktas@debian.org>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
@@ -17,17 +17,27 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../templates:5
-msgid "Which codeset is suitable for your language environment?"
+#, fuzzy
+msgid "Codeset for your language environment:"
 msgstr "Kullandığınız dil için uygun karakter kümesi hangisi?"
 
 #. Type: select
 #. Description
 #: ../templates:5
+#, fuzzy
 msgid ""
-"Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9.  Lat2 covers ISO 8859-"
-"2, the Euro sign as well as the Romanian letters with comma below.  Lat38 "
-"covers ISO 8859-3 and ISO 8859-13. Lat7 covers ISO 8859-13. CyrSlav covers "
-"not only the Slavic Cyrillic letters but also the Serbian Latin letters."
+" - Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9;\n"
+" - Lat2 covers ISO 8859-2, the Euro sign as well as the\n"
+"   Romanian letters with comma below;\n"
+" - Lat38 covers ISO 8859-3 and ISO 8859-13;\n"
+" - Lat7 covers ISO 8859-13;\n"
+" - CyrSlav covers the Slavic Cyrillic letters as well as\n"
+"   the Serbian Latin letters;\n"
+" - Uni1 supports most of the Latin languages, the Slavic\n"
+"   Cyrillic languages, Hebrew and barely Arabic;\n"
+" - Uni2 supports most of the Latin languages, the Slavic\n"
+"   Cyrillic languages and Greek;\n"
+" - Uni3 supports most of the Latin and Cyrillic languages."
 msgstr ""
 "Lat15; ISO 8859-1, ISO 8859-15 ve ISO 8859-9 kümelerini içeriyor.  Lat2; ISO "
 "8859-2, Avro simgesi ve çengelli harflere sahip Romanya harflerini "
@@ -37,56 +47,43 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:5
-msgid ""
-"Uni1 supports most of the Latin languages, the Slavic Cyrillic languages, "
-"Hebrew and barely Arabic.  Uni2 supports most of the Latin languages, the "
-"Slavic Cyrillic languages and Greek.  Uni3 supports most of the Latin and "
-"Cyrillic languages."
+#: ../templates:22
+msgid "Keyboard model:"
 msgstr ""
-"Uni1; Latin dilleri, Slav Kril dilleri, İbranice ve kısmen de Arapça'yı "
-"büyük ölçüde destekler.  Uni2; çoğu Latin dilleri, Slav Kril dilleri ve "
-"Yunanca'yı destekler.  Uni3; çoğu Latin ve Kril dillerini destekler."
 
 #. Type: select
 #. Description
-#: ../templates:20
-msgid "What is the model of your keyboard?"
-msgstr "Klavyenizin modeli nedir?"
-
-#. Type: select
-#. Description
-#: ../templates:26
+#: ../templates:28
 #, fuzzy
-msgid "What is the origin of your keyboard layout?"
+msgid "The origin of the keyboard:"
 msgstr "Klavyenizin modeli nedir?"
 
 #. Type: select
 #. Description
-#: ../templates:31
-msgid "What is the keys layout of your keyboard?"
-msgstr "Klavyede kullanılan tuş düzeni nedir?"
+#: ../templates:33
+msgid "Keyboard layout:"
+msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:31
+#: ../templates:33
 #, fuzzy
 msgid ""
-"There are several keyboard layouts with the origin you selected. Please "
-"select the layout matching your keyboard."
+"There are more than one keyboard layouts with the origin you selected. "
+"Please select the layout matching your keyboard."
 msgstr ""
 "Seçtiğiniz düzen çeşitli alt türlere sahip.  Lütfen klavyenizle uyuşan bir "
 "alt tür seçin."
 
 #. Type: note
 #. Description
-#: ../templates:37
-msgid "No questions about layout will be asked"
-msgstr "Klavye düzeniyle ilgili soru sorulmayacak"
+#: ../templates:39
+msgid "Unsupported settings in configuration file"
+msgstr ""
 
 #. Type: note
 #. Description
-#: ../templates:37
+#: ../templates:39
 msgid ""
 "The configuration file /etc/default/console-setup specifies keyboard layout "
 "and variant that are not supported by the configuration program.  Because of "
@@ -100,29 +97,33 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:47
-msgid "Choose a font for the console."
+#: ../templates:49
+#, fuzzy
+msgid "Font for the console:"
 msgstr "Bir uçbirim yazıtipi seçin."
 
 #. Type: select
 #. Description
-#: ../templates:47
-msgid ""
-"Please choose the font face you would like to use on the text-mode emergency "
-"Linux console."
+#: ../templates:49
+#, fuzzy
+msgid "Please choose the font face you would like to use on Linux console."
 msgstr ""
 "Lütfen metin kipindeki acil durum Linux uçbiriminde kullanılmasını "
 "istediğiniz yazıtipini seçin."
 
 #. Type: select
 #. Description
-#: ../templates:47
+#: ../templates:49
+#, fuzzy
 msgid ""
-"VGA is traditionally looking, it has medium coverage of international "
-"scripts.  Fixed has simplistic look and has best coverage of international "
-"scripts.  The aim of Terminus is to reduce the eyes-fatigue when one has to "
-"read a lot (a note for programmers: some symbols look quiet similar), it "
-"supports only the Latin and the Cyrillic scripts."
+" - VGA is traditionally looking and has medium coverage\n"
+"   of international scripts;\n"
+" - Fixed has simplistic look and has a better coverage\n"
+"   of international scripts;\n"
+" - Terminus is aimed to reduce the eyes fatigue though\n"
+"   some symbols have a similar aspect which may be a problem\n"
+"   for programmers. It only supports the Latin and the\n"
+"   Cyrillic scripts."
 msgstr ""
 "\"VGA\" geleneksel görünümlü bir yazıtipidir; uluslar arası kullanım için "
 "vasattır.  \"Fixed\" basit görünümlü ve harf kapsamı en geniş yazıtipidir.  "
@@ -132,62 +133,66 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:47
+#: ../templates:49
 msgid ""
-"Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't use "
-"framebuffer.  Otherwise choose TerminusBold."
+"If you prefer bold version of the Terminus font and you don't use "
+"framebuffer then choose TerminusBoldVGA.  If you use framebuffer then choose "
+"TerminusBold."
 msgstr ""
-"Kare arabelleği (framebuffer) kullanmamakla birlikte 8x14 veya 8x16 "
-"boyutunda yazıtipleriyle çalışmak istiyorsanız \"TerminusBoldVGA\"u tercih "
-"edin."
 
 #. Type: select
 #. Description
-#: ../templates:65
-msgid "What is your favourite font size?"
-msgstr "Hangi yazıtipi boyutunu tercih edersiniz?"
-
-#. Type: select
-#. Description
-#: ../templates:65
+#: ../templates:69
 msgid ""
-"Please select the size of the font on the emergency Linux console. In case "
-"you use text-mode videomode the following table shows the correspondence "
-"between the fontsize and the number of the characters on the screen:\n"
-" size 18 - for 80x22 and 80x26\n"
-" size 16 - for 80x25 and 80x30 (most standard)\n"
-" size 15 - for 80x26 and 80x32\n"
-" size 14 - for 80x28 and 80x34\n"
-" size 13 - for 80x30 and 80x36\n"
-" size 8 - for 80x43, 80x50 and 80x60 (very unreadable).\n"
-" other size - only with framebuffer"
+"Please select the size of the font for the Linux console.  For a reference - "
+"the font your computer starts with has size 16."
 msgstr ""
-"Lütfen acil durum Linux uçbiriminde kullanmak istediğiniz yazıtipi boyutunu "
-"seçin.  Aşağıdaki tablo, ekranı metin kipinde kullanırken, hangi yazıtipi "
-"boyutuna kaç karakterin karşı düşeceği hakkında bir fikir vermektedir:\n"
-" boyut 18 - 80x22 ve 80x26\n"
-" boyut 16 - 80x25 ve 80x30 (standart)\n"
-" boyut 15 - 80x26 ve 80x32\n"
-" boyut 14 - 80x28 ve 80x34\n"
-" boyut 13 - 80x30 ve 80x36\n"
-" boyut 8  - 80x43, 80x50 ve 80x60 (okunması çok güç).\n"
-" diğer    - sadece kare arabelleği ile (framebuffer)"
 
 #. Type: select
 #. Description
-#: ../templates:81
-msgid "What is your encoding?"
-msgstr "Hangi kodlama kullanılsın?"
+#: ../templates:77
+msgid "Font size:"
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../templates:77
+msgid ""
+"Please select the size of the font for the Linux console.  When the size is "
+"represented as a plain number then the corresponding font can be used with "
+"all console drivers and the number measures the height of the symbols (in "
+"number of scan lines).  Otherwise the size has the format HEIGHTxWIDTH and "
+"the corresponding fonts can not be used if you don't use framebuffer.  They "
+"can not be used also if your framebuffer is based on the RadeonFB kernel "
+"module."
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../templates:77
+msgid ""
+"You can use the height of the fonts in order to figure out the real size of "
+"the symbols on the console.  For a reference - the font your computer starts "
+"with has height 16."
+msgstr ""
+
+#. Type: select
+#. Description
+#: ../templates:94
+#, fuzzy
+msgid "Encoding on the console:"
+msgstr "Bir uçbirim yazıtipi seçin."
 
 #. Type: string
 #. Description
-#: ../templates:86
-msgid "What virtual consoles do you use?"
+#: ../templates:99
+#, fuzzy
+msgid "Virtual consoles in use:"
 msgstr "Hangi sanal uçbirimleri kullanıyorsunuz?"
 
 #. Type: string
 #. Description
-#: ../templates:86
+#: ../templates:99
 msgid ""
 "Please enter a space delimited list of virtual consoles you use. The usual "
 "Unix filename wildcards are allowed (*, ? and [...])."
@@ -198,10 +203,11 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:86
+#: ../templates:99
+#, fuzzy
 msgid ""
-"If you are unsure, then use the default /dev/tty[1-6], it is for six virtual "
-"consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
+"If you are unsure, then use the default /dev/tty[1-6] which stands for six "
+"virtual consoles. If you use devfs, then enter /dev/vc/[1-6] instead."
 msgstr ""
 "Eğer emin değilseniz altı adet sanal uçbirim bildiren /dev/tty[1-6] "
 "öntanımlı cevabı kullanabilirsiniz.  Şayet devfs kullanıyorsanız bu girdi /"
@@ -209,79 +215,80 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Right Shift"
 msgstr "Sağ Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Alt+Shift"
 msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Control+Shift"
 msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Shift+Caps Lock"
 msgstr "Shift+Caps Lock (Büyük Harf Kilidi)"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Control+Alt"
 msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Shift keys together"
 msgstr "Her iki Shift tuşu birlikte"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Control keys together"
 msgstr "Her iki Control tuşu birlikte"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Both Alt keys together"
 msgstr "Her iki Alt tuşu birlikte"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Left Control"
 msgstr "Sol Control"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "Left Shift"
 msgstr "Sol Shift"
 
 #. Type: select
 #. Choices
-#: ../templates:95
+#: ../templates:108
 msgid "No toggling"
 msgstr "Kip değiştirme yok"
 
 #. Type: select
 #. Description
-#: ../templates:97
-msgid "Toggling between Latin and non-Latin mode"
+#: ../templates:110
+#, fuzzy
+msgid "Method for toggling between Latin and non-Latin mode:"
 msgstr "Latin ve Latin olmayan kipler arasında geçiş"
 
 #. Type: select
 #. Description
-#: ../templates:97
+#: ../templates:110
 msgid ""
 "Since your keyboard is a non-Latin one, you will need a way to toggle "
 "between the Latin and the non-Latin mode.  Several options are available."
@@ -292,7 +299,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:97
+#: ../templates:110
 msgid ""
 "The most ergonomic choices seem to be the right Alt and the Caps Lock keys "
 "(in the later case use the combination Shift+Caps Lock for normal Caps "
@@ -309,25 +316,26 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:97
-msgid "Notice that on some keyboards not all listed keys are present."
-msgstr "Burada listelenen tuşlar her klavyede olmayabilir."
+#: ../templates:110
+msgid "Notice the listed keys are not present on all keyboards."
+msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:112
+#: ../templates:125
 msgid "No temporary switch"
 msgstr "Geçici geçiş yok"
 
 #. Type: select
 #. Description
-#: ../templates:114
-msgid "Switching temporarily between Latin and non-Latin characters"
+#: ../templates:127
+#, fuzzy
+msgid "Method for temporarily toggle between Latin and non-Latin input:"
 msgstr "Latin ve Latin olmayan kipler arasında geçici geçiş"
 
 #. Type: select
 #. Description
-#: ../templates:114
+#: ../templates:127
 msgid ""
 "Sometimes the keyboard is in non-Latin mode and you want to type only few "
 "Latin letters. In this case it may be desirable to have a key for temporary "
@@ -345,51 +353,52 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:114
+#: ../templates:127
 msgid ""
 "If you don't like this feature, choose the option \"No temporary switch\"."
 msgstr "Böyle bir özellik istemiyorsanız \"Geçici geçiş yok\"u seçin."
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "No AltGr key"
 msgstr "AltGr tuşu yok"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Left Logo key"
 msgstr "Sol Logo tuşu"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Both Logo keys"
 msgstr "Her iki Logo tuşu"
 
 #. Type: select
 #. Choices
-#: ../templates:126
+#: ../templates:139
 msgid "Left Alt"
 msgstr "Sol Alt"
 
 #. Type: select
 #. Description
-#: ../templates:128
-msgid "The AltGr key"
-msgstr "AltGr tuşu"
+#: ../templates:141
+msgid "AltGr key replacement:"
+msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:128
+#: ../templates:141
+#, fuzzy
 msgid ""
-"With some of the keyboard layouts, AltGr is a modifier key used to type many "
-"character, primarily ones that are unusual for the language of the keyboard "
-"layout, such as foreign currency symbols and accented letters.  If a key has "
-"a third symbol on it (on the front vertical face or the bottom right of the "
-"key top, sometimes in a different colour), then AltGr is often the means of "
-"eliciting that symbol."
+"With some of the keyboard layouts, AltGr is a modifier key used to input "
+"some characters, primarily ones that are unusual for the language of the "
+"keyboard layout, such as foreign currency symbols and accented letters.  If "
+"a key has a third symbol on it (on the front vertical face or the bottom "
+"right of the key top, sometimes in a different colour), then AltGr is often "
+"the means of eliciting that symbol."
 msgstr ""
 "Bazı klavye düzenlerinde AltGr çeşitli karakterlerin girilmesini sağlayan "
 "bir niteliyici tuştur.  Bu karakterlerin büyük bir bölümü, yabancı para "
@@ -400,67 +409,54 @@ msgstr ""
 "sağlamakta kullanılır."
 
 #. Type: select
-#. Description
-#: ../templates:128
-msgid ""
-"In the French and Spanish keyboard layouts AltGr is used extensively to type "
-"the accented vowels.  In the British keyboard layouts fewer symbols require "
-"the use of AltGr, most notably the Euro currency symbol.  AltGr is often "
-"used to type symbols which are commonly used by programmers and technical "
-"writers."
-msgstr ""
-"Fransızca ve İspanyolca klavye düzenlerinde AltGr, aksanlı seslilerin "
-"girilmesi için yaygın şekilde kullanılır.  İngilizce klavye düzenlerinde "
-"AltGr kullanımını gerektirecek çok daha az sayıda simge (Avro para simgesi "
-"en sık görülenidir) bulunur."
-
-#. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "No compose key"
 msgstr "Birleştirme (Compose) tuşu yok"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Alt"
 msgstr "Sağ Alt"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Logo key"
 msgstr "Sağ Logo tuşu"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Right Control"
 msgstr "Sağ Control"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Menu key"
 msgstr "Menü tuşu"
 
 #. Type: select
 #. Choices
-#: ../templates:144
+#: ../templates:151
 msgid "Caps Lock"
 msgstr "Caps Lock (Büyük Harf Kilidi)"
 
 #. Type: select
 #. Description
-#: ../templates:146
-msgid "The compose key"
-msgstr "Birleştirme (Compose) tuşu"
+#: ../templates:153
+#, fuzzy
+msgid "Compose key:"
+msgstr "Birleştirme (Compose) tuşu yok"
 
 #. Type: select
 #. Description
-#: ../templates:146
+#: ../templates:153
+#, fuzzy
 msgid ""
-"The compose key (known also as Multi_key) is a key which is designated to "
+"The Compose key (known also as Multi_key) is a key which is designated to "
 "signal the software to interpret the next keystrokes as a combination in "
 "order to produce a character not found on the keyboard."
 msgstr ""
@@ -470,22 +466,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:146
-msgid ""
-"For example, typing compose, then a, then e may produce the French AE "
-"ligature.  Typing compose, then e, then ' can yield an e with an acute "
-"accent.  Typing compose, then o, then c may produce the copyright sign.  Etc."
-msgstr ""
-"Örnek olarak; birleştirme tuşuna basıldıktan sonra 'a' ve peşinden 'e'nin "
-"tuşlanması halinde Fransızcadaki AE karakteri (\"ligature\") üretilebilir.  "
-"Birleştirme tuşu, 'e' ve üst kesme karakteri sırasıyla tuşlanacak olursa \"e "
-"üzerinde kesme\" (\"eacute\") karakteri üretilebilir.  Benzer şekilde "
-"birleştirme tuşu, 'o' ve sonra da 'c'nin tuşlanması \"telif hakkı simgesi"
-"\"ni (\"copyright\") üretebilir."
-
-#. Type: select
-#. Description
-#: ../templates:146
+#: ../templates:153
 msgid ""
 "On the text console the Compose key does not work in Unicode mode. If not in "
 "Unicode mode, regardless of what you choose here, you can always use also "
@@ -494,6 +475,97 @@ msgstr ""
 "Birleştirme tuşu, Unikod kipli metin uçbiriminde çalışmaz.  Unikod kipinin "
 "haricindeki her durumda Alt+nokta bileşimini birleştirme tuşu olarak daima "
 "kullanabilirsiniz."
+
+#, fuzzy
+#~ msgid ""
+#~ "Please select the size of the font for the Linux console. Correspondence "
+#~ "between font sizes and the number of the characters on the screen:\n"
+#~ " size 18     - for 80x22 and 80x26\n"
+#~ " size 16     - for 80x25 and 80x30 (most standard)\n"
+#~ " size 15     - for 80x26 and 80x32\n"
+#~ " size 14     - for 80x28 and 80x34\n"
+#~ " size 13     - for 80x30 and 80x36\n"
+#~ " size 8      - for 80x43, 80x50 and 80x60 (very unreadable)\n"
+#~ " other sizes - only with framebuffer"
+#~ msgstr ""
+#~ "Lütfen acil durum Linux uçbiriminde kullanmak istediğiniz yazıtipi "
+#~ "boyutunu seçin.  Aşağıdaki tablo, ekranı metin kipinde kullanırken, hangi "
+#~ "yazıtipi boyutuna kaç karakterin karşı düşeceği hakkında bir fikir "
+#~ "vermektedir:\n"
+#~ " boyut 18 - 80x22 ve 80x26\n"
+#~ " boyut 16 - 80x25 ve 80x30 (standart)\n"
+#~ " boyut 15 - 80x26 ve 80x32\n"
+#~ " boyut 14 - 80x28 ve 80x34\n"
+#~ " boyut 13 - 80x30 ve 80x36\n"
+#~ " boyut 8  - 80x43, 80x50 ve 80x60 (okunması çok güç).\n"
+#~ " diğer    - sadece kare arabelleği ile (framebuffer)"
+
+#~ msgid ""
+#~ "Uni1 supports most of the Latin languages, the Slavic Cyrillic languages, "
+#~ "Hebrew and barely Arabic.  Uni2 supports most of the Latin languages, the "
+#~ "Slavic Cyrillic languages and Greek.  Uni3 supports most of the Latin and "
+#~ "Cyrillic languages."
+#~ msgstr ""
+#~ "Uni1; Latin dilleri, Slav Kril dilleri, İbranice ve kısmen de Arapça'yı "
+#~ "büyük ölçüde destekler.  Uni2; çoğu Latin dilleri, Slav Kril dilleri ve "
+#~ "Yunanca'yı destekler.  Uni3; çoğu Latin ve Kril dillerini destekler."
+
+#~ msgid "What is the model of your keyboard?"
+#~ msgstr "Klavyenizin modeli nedir?"
+
+#~ msgid "What is the keys layout of your keyboard?"
+#~ msgstr "Klavyede kullanılan tuş düzeni nedir?"
+
+#~ msgid "No questions about layout will be asked"
+#~ msgstr "Klavye düzeniyle ilgili soru sorulmayacak"
+
+#~ msgid ""
+#~ "Use TerminusBoldVGA if you prefer font size 8x14 or 8x16 and you don't "
+#~ "use framebuffer.  Otherwise choose TerminusBold."
+#~ msgstr ""
+#~ "Kare arabelleği (framebuffer) kullanmamakla birlikte 8x14 veya 8x16 "
+#~ "boyutunda yazıtipleriyle çalışmak istiyorsanız \"TerminusBoldVGA\"u "
+#~ "tercih edin."
+
+#~ msgid "What is your favourite font size?"
+#~ msgstr "Hangi yazıtipi boyutunu tercih edersiniz?"
+
+#~ msgid "What is your encoding?"
+#~ msgstr "Hangi kodlama kullanılsın?"
+
+#~ msgid "Notice that on some keyboards not all listed keys are present."
+#~ msgstr "Burada listelenen tuşlar her klavyede olmayabilir."
+
+#~ msgid "The AltGr key"
+#~ msgstr "AltGr tuşu"
+
+#~ msgid ""
+#~ "In the French and Spanish keyboard layouts AltGr is used extensively to "
+#~ "type the accented vowels.  In the British keyboard layouts fewer symbols "
+#~ "require the use of AltGr, most notably the Euro currency symbol.  AltGr "
+#~ "is often used to type symbols which are commonly used by programmers and "
+#~ "technical writers."
+#~ msgstr ""
+#~ "Fransızca ve İspanyolca klavye düzenlerinde AltGr, aksanlı seslilerin "
+#~ "girilmesi için yaygın şekilde kullanılır.  İngilizce klavye düzenlerinde "
+#~ "AltGr kullanımını gerektirecek çok daha az sayıda simge (Avro para "
+#~ "simgesi en sık görülenidir) bulunur."
+
+#~ msgid "The compose key"
+#~ msgstr "Birleştirme (Compose) tuşu"
+
+#~ msgid ""
+#~ "For example, typing compose, then a, then e may produce the French AE "
+#~ "ligature.  Typing compose, then e, then ' can yield an e with an acute "
+#~ "accent.  Typing compose, then o, then c may produce the copyright sign.  "
+#~ "Etc."
+#~ msgstr ""
+#~ "Örnek olarak; birleştirme tuşuna basıldıktan sonra 'a' ve peşinden 'e'nin "
+#~ "tuşlanması halinde Fransızcadaki AE karakteri (\"ligature\") "
+#~ "üretilebilir.  Birleştirme tuşu, 'e' ve üst kesme karakteri sırasıyla "
+#~ "tuşlanacak olursa \"e üzerinde kesme\" (\"eacute\") karakteri "
+#~ "üretilebilir.  Benzer şekilde birleştirme tuşu, 'o' ve sonra da 'c'nin "
+#~ "tuşlanması \"telif hakkı simgesi\"ni (\"copyright\") üretebilir."
 
 #~ msgid "Which variant do you have?"
 #~ msgstr "Hangi klavye alt türünü (varyant) istersiniz?"

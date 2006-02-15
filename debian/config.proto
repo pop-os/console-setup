@@ -1055,6 +1055,8 @@ if [ -e $CONFIGFILE ]; then
     db_set console-setup/charmap "$default_charmap"
     db_set console-setup/codeset "$default_codeset"
     db_set console-setup/fontface "$default_fontface"
+    db_set console-setup/fontsize-text "$default_fontsize"
+    db_set console-setup/fontsize-fb "$default_fontsize"
     db_set console-setup/fontsize "$default_fontsize"
     db_set console-setup/toggle "$default_toggle"
     db_set console-setup/switch "$default_switch"
@@ -1504,15 +1506,21 @@ while :; do
 	    choices=`echo "$fontsizes" | sed -e 's/$/,/g' `
 	    # remove newlines
 	    choices=`echo $choices | sed -e 's/,$//'`
-	    db_subst console-setup/fontsize CHOICES "$choices"
-	    db_input medium console-setup/fontsize || true
+	    if echo "$choices" | grep -q x; then
+		size_template=console-setup/fontsize-fb
+	    else
+		size_template=console-setup/fontsize-text
+	    fi
+	    db_subst $size_template CHOICES "$choices"
+	    db_input medium $size_template || true
 	    if db_go; then
 		STATE=$(($STATE + 1))
 	    else
 		STATE=$(($STATE - 1))
 	    fi
-	    db_get console-setup/fontsize
+	    db_get $size_template
 	    fontsize=$RET
+	    db_set console-setup/fontsize "$fontsize"
 	    ;;
 	9)
 	    db_input medium console-setup/ttys || true

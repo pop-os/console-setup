@@ -186,11 +186,12 @@ the font matrix 10x20 (i.e. 10 columns and 20 rows).  If the number of
 columns is 8 then only the number of rows is specified.  For example
 the font matrix of Armenian-Fixed15.psf has size 8x15.
 
-In text video mode only fonts which font matrix has 8 columns can be
-used (that is the size should be a simple NUMBER rather than a
-NUMBERxNUMBER combination).  The other fonts can be used only with
-framebuffer video modes and with the package 'kbd'.  The console
-package 'console-tools' can not be used with such fonts.
+In text video mode or if you use the RadeonFB kernel module only fonts
+whose font matrix has 8 columns can be used (that is the size should
+be a simple NUMBER rather than a NUMBERxNUMBER combination).  The
+other fonts can be used only with framebuffer video modes and with the
+package 'kbd'.  The console package 'console-tools' can not be used
+with such fonts.
 
 =================
 THE TERMINUS FONT
