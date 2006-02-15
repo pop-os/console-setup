@@ -1,3 +1,9 @@
+console-setup (1.6) UNRELEASED; urgency=low
+
+  * New release.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Feb 2006 14:17:13 +0200
+
 console-setup (1.5) unstable; urgency=low
 
   * In the Debconf question for the font size add an information that some
