@@ -1,8 +1,12 @@
 console-setup (1.6) UNRELEASED; urgency=low
 
+  [ Anton Zinoviev ]
   * Few comments in debian/templates.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Feb 2006 14:17:13 +0200
+  [ Christian Perrier ]
+  * Added French translation. Closes: #354446
+
+ -- Christian Perrier <bubulle@debian.org>  Wed,  8 Mar 2006 22:38:13 +0100
 
 console-setup (1.5) unstable; urgency=low
 
