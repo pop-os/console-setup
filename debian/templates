@@ -85,9 +85,10 @@ _Description: Font size:
  size is represented as a plain number then the corresponding font can
  be used with all console drivers and the number measures the height
  of the symbols (in number of scan lines).  Otherwise the size has the
- format HEIGHTxWIDTH and the corresponding fonts can not be used if
- you don't use framebuffer.  They can not be used also if your
- framebuffer is based on the RadeonFB kernel module.
+ format HEIGHTxWIDTH and the corresponding fonts can be used only if
+ you use framebuffer and the kbd console package (console-tools
+ doesn't work for such fonts).  Currently these fonts can not be used
+ if the framebuffer you use is based on the RadeonFB kernel module.
  .
  You can use the height of the fonts in order to figure out the real
  size of the symbols on the console.  For a reference - the font your

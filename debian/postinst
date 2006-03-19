@@ -90,17 +90,17 @@ EOF
     done    
     
     awk '
-/^ *ACTIVE_CONSOLES=/ { print "ACTIVE_CONSOLES=\"'$ttys'\""; next; }
-/^ *CHARMAP=/ { print "CHARMAP=\"'$charmap'\""; next; }
-/^ *CODESET=/ { print "CODESET=\"'$codeset'\""; next; }
-/^ *FONTFACE=/ { print "FONTFACE=\"'$fontface'\""; next; }
-/^ *FONTSIZE=/ { print "FONTSIZE=\"'$fontsize'\""; next; }
-/^ *XKBMODEL=/ { print "XKBMODEL=\"'$model'\""; next; }
-/^ *XKBLAYOUT=/ { print "XKBLAYOUT=\"'$layout'\""; next; }
-/^ *XKBVARIANT=/ { print "XKBVARIANT=\"'$variant'\""; next; }
-/^ *XKBOPTIONS=/ { print "XKBOPTIONS=\"'$options'\""; next; }
+/^ *ACTIVE_CONSOLES=/ { print "ACTIVE_CONSOLES=\"'"$ttys"'\""; next; }
+/^ *CHARMAP=/ { print "CHARMAP=\"'"$charmap"'\""; next; }
+/^ *CODESET=/ { print "CODESET=\"'"$codeset"'\""; next; }
+/^ *FONTFACE=/ { print "FONTFACE=\"'"$fontface"'\""; next; }
+/^ *FONTSIZE=/ { print "FONTSIZE=\"'"$fontsize"'\""; next; }
+/^ *XKBMODEL=/ { print "XKBMODEL=\"'"$model"'\""; next; }
+/^ *XKBLAYOUT=/ { print "XKBLAYOUT=\"'"$layout"'\""; next; }
+/^ *XKBVARIANT=/ { print "XKBVARIANT=\"'"$variant"'\""; next; }
+/^ *XKBOPTIONS=/ { print "XKBOPTIONS=\"'"$options"'\""; next; }
 /^ *BOOTTIME_KMAP_MD5=/ {
-    print "BOOTTIME_KMAP_MD5=\"'$BOOTTIME_KMAP_MD5'\"";
+    print "BOOTTIME_KMAP_MD5=\"'"$BOOTTIME_KMAP_MD5"'\"";
     next;
 }
 { print; }

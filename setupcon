@@ -142,6 +142,14 @@ if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
 	    do
 	      if [ -f "$dir/$CODESET-$FONTFACE$FONTSIZE.psf.gz" ]; then
 		  FONT="$dir/$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+		  case "$FONTSIZE" in
+		      *x*)
+			  bigfont=yes
+			  ;;
+		      *)
+			  bigfont=no
+			  ;;
+		  esac
 		  break
 	      fi
 	    done
@@ -155,8 +163,19 @@ if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
 	    fi
 	else
 	    FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+	    case "$FONTSIZE" in
+		*x*)
+		    bigfont=yes
+		    ;;
+		*)
+		    bigfont=no
+		    ;;
+	    esac
 	fi
 	if which consolechars >/dev/null; then
+	    if [ "$bigfont" = yes ]; then
+		echo "setupcon: The console-chars utility from the console-setup font can load only fonts witn 8 pixel width matrix.  Please install the setfont utility from the kbd package." >&2
+	    fi
 	    eval consolechars -v --tty=$console -f "$FONT" $verbose
 	elif which setfont >/dev/null; then
 	    eval setfont -v -C $console "$FONT" $verbose

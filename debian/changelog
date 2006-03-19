@@ -2,7 +2,13 @@ console-setup (1.6) UNRELEASED; urgency=low
 
   [ Anton Zinoviev ]
   * Few comments in debian/templates.
-
+  * Document in console-setup/fontsize-fb template that non 8-pixel wide
+    fonts can not be used with console-tools.  Add a warning in setupcon
+    if the user tries to use such fonts with console-tools.  Thanks to
+    Hans Ulrich Niedermann, closes: #352911.
+  * debian/postinst: protect in double quotes the variables read from
+    $CONFIGFILE.  Thanks to Jonas Meurer, closes: #353525.
+  
   [ Christian Perrier ]
   * Added French translation. Closes: #354446
 
