@@ -13,6 +13,7 @@ console-setup (1.6) UNRELEASED; urgency=low
   * Debconf: if there are unrecognised options, do not override the value
     of XKBOPTIONS in /etc/default/console-setup.  Thanks to Javier Kohen,
     closes: #354473.
+  * Updated Bulgarian translation.
   
   [ Christian Perrier ]
   * Added French translation. Closes: #354446
