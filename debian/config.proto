@@ -1046,6 +1046,10 @@ if [ -e $CONFIGFILE ]; then
 		default_compose='Menu key';;
 	    compose:caps)
 		default_compose='Caps Lock';;
+	    grp_led:scroll)
+		;;
+	    *)
+		unsupported_layout=yes;;
 	esac
     done
 

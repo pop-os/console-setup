@@ -10,11 +10,14 @@ console-setup (1.6) UNRELEASED; urgency=low
     $CONFIGFILE.  Thanks to Jonas Meurer, closes: #353525.
   * ckbcomp: Do not interpret xkeysyms such as F10, F11 and F12 as
     hexadecimal numbers.  Thanks to Bálint Balogh, closes: #354564.
+  * Debconf: if there are unrecognised options, do not override the value
+    of XKBOPTIONS in /etc/default/console-setup.  Thanks to Javier Kohen,
+    closes: #354473.
   
   [ Christian Perrier ]
   * Added French translation. Closes: #354446
 
- -- Christian Perrier <bubulle@debian.org>  Wed,  8 Mar 2006 22:38:13 +0100
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 19 Mar 2006 23:53:42 +0200
 
 console-setup (1.5) unstable; urgency=low
 
