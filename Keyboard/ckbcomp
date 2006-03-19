@@ -2371,26 +2371,31 @@ sub uni_to_legacy {
 
 sub x_to_kernelsym {
     my $xkeysym = $_[0];
-    my $kernelkeysym = (($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/) 
-			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{3,4})/)
-				? $1 : $xkbsym_table{$xkeysym}));
+    my $kernelkeysym = $xkbsym_table{$xkeysym};
     if (defined $kernelkeysym) {
-	if ($kernelkeysym =~ /^[0-9a-fA-F]{3,4}$/) {
-	    my $uni = hex ($kernelkeysym);
-	    if (chr($uni) =~ /\p{IsAlpha}/) {
-		my $legacy = uni_to_legacy ($uni);
-		if ($legacy ne 'VoidSymbol') {
-		    return '+'. $legacy;
-		} else {
-		    return $legacy;
-		}
-	    } elsif ($uni <= 0x1f) {
-		return $controlsyms[$uni + 1];
-	    } else {
-		return uni_to_legacy ($uni);
-	    }
-	} else {
+        if ($kernelkeysym !~ /^[0-9a-fA-F]{4}$/) {
 	    return $kernelkeysym;
+	}
+    } else {
+	$kernelkeysym = ($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/
+			 ? $1
+			 : ($xkeysym =~ /^U([0-9a-fA-F]+)/
+			    ? $1 
+			    : undef));
+    }
+    if (defined $kernelkeysym) {
+	my $uni = hex ($kernelkeysym);
+	if (chr($uni) =~ /\p{IsAlpha}/) {
+	    my $legacy = uni_to_legacy ($uni);
+	    if ($legacy ne 'VoidSymbol') {
+		return '+'. $legacy;
+	    } else {
+		return $legacy;
+	    }
+	} elsif ($uni <= 0x1f) {
+	    return $controlsyms[$uni + 1];
+	} else {
+	    return uni_to_legacy ($uni);
 	}
     } else {
 	warning "Unknown X keysym \"$xkeysym\"\n";
@@ -2400,16 +2405,9 @@ sub x_to_kernelsym {
 
 sub x_to_ascii {
     my $xkeysym = $_[0];
-    my $kernelkeysym = (($xkeysym =~ /^0x0100([0-9a-fA-F]{4})/) 
-			? $1 : (($xkeysym =~ /^U([0-9a-fA-F]{3,4})/)
-				? $1 : $xkbsym_table{$xkeysym}));
+    my $kernelkeysym = $xkbsym_table{$xkeysym};
     if (defined $kernelkeysym) {
-	if ($kernelkeysym =~ /^[0-9a-f]{3,4}$/) {
-	    my $uni = hex ($kernelkeysym);
-	    if (0x00 <= $uni && 0x7f >= $uni) {
-		return $uni;
-	    }
-	} elsif ($kernelkeysym eq 'Delete') {
+	if ($kernelkeysym eq 'Delete') {
 	    return 0x7f;
 	} elsif ($kernelkeysym eq 'BackSpace') {
 	    return 0x08;
@@ -2423,6 +2421,20 @@ sub x_to_ascii {
 	    return 0x1b;
 	} elsif ($kernelkeysym eq 'NoSymbol') {
 	    return -1;
+	} elsif ($kernelkeysym !~ /^[0-9a-fA-F]{4}$/) {
+	    return undef;
+	}
+    } else {
+	$kernelkeysym = ($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/
+			 ? $1
+			 : ($xkeysym =~ /^U([0-9a-fA-F]+)/
+			    ? $1 
+			    : undef));
+    }
+    if (defined $kernelkeysym) {
+	my $uni = hex ($kernelkeysym);
+	if (0x00 <= $uni && 0x7f >= $uni) {
+	    return $uni;
 	}
     }
     return undef;

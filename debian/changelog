@@ -8,6 +8,8 @@ console-setup (1.6) UNRELEASED; urgency=low
     Hans Ulrich Niedermann, closes: #352911.
   * debian/postinst: protect in double quotes the variables read from
     $CONFIGFILE.  Thanks to Jonas Meurer, closes: #353525.
+  * ckbcomp: Do not interpret xkeysyms such as F10, F11 and F12 as
+    hexadecimal numbers.  Thanks to Bálint Balogh, closes: #354564.
   
   [ Christian Perrier ]
   * Added French translation. Closes: #354446
