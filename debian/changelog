@@ -1,4 +1,4 @@
-console-setup (1.6) UNRELEASED; urgency=low
+console-setup (1.6) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * Few comments in debian/templates.
