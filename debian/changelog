@@ -4,6 +4,7 @@ console-setup (1.7) UNRELEASED; urgency=low
 
   [ Christian Perrier ]
   * Updated French translation
+  * Added Czech translation. Closes: #360333
 
  -- Anton Zinoviev <zinoviev@debian.org>  Mon, 20 Mar 2006 00:36:59 +0200
 
