@@ -1,7 +1,10 @@
 console-setup (1.7) UNRELEASED; urgency=low
 
-  * The next unreleased release.
-
+  [ Anton Zinoviev ]
+  * Update Keyboard/ckb/ from the SVN repository of XKeyboardConfig
+  * Keyboard/ckbcomp: include /usr/share/X11/xkb to the list of
+    directories for keyboard data.
+  
   [ Christian Perrier ]
   * Updated French translation
   * Added Czech translation. Closes: #360333
