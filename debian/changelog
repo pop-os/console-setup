@@ -3,7 +3,10 @@ console-setup (1.7) UNRELEASED; urgency=low
   [ Anton Zinoviev ]
   * Update Keyboard/ckb/ from the SVN repository of XKeyboardConfig
   * Keyboard/ckbcomp: include /usr/share/X11/xkb to the list of
-    directories for keyboard data.
+    directories for keyboard data.  The data from /etc/console-setup/ckb
+    are still the default.
+  * Correct a typo in the Bulgarian translation.  Thanks to Yavor Doganov,
+    closes: #359677.
   
   [ Christian Perrier ]
   * Updated French translation
