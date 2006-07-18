@@ -7,7 +7,6 @@ package KeyboardNames;
     'A4Tech KBS-8' => 'a4techKBS8',
     'ACPI Standard' => 'acpi',
     'Acer AirKey V' => 'airkey',
-    'Acer Ferrari 4000' => 'acer_ferrari4k',
     'Acer TravelMate 800' => 'acer_tm_800',
     'Advance Scorpius KI' => 'scorpius',
     'Azona RF2300 wireless Internet Keyboard' => 'azonaRF2300',
@@ -83,8 +82,6 @@ package KeyboardNames;
     'Logitech Ultra-X Keyboard' => 'logiultrax',
     'Logitech iTouch' => 'itouch',
     'Logitech iTouch Cordless Keyboard (model Y-RB6)' => 'logiitc',
-    'Logitech iTouch Internet Navigator Keyboard SE' => 'logiinkse',
-    'Logitech iTouch Internet Navigator Keyboard SE (USB)' => 'logiinkseusb',
     'Logitech iTouch keyboard Internet Navigator' => 'itouchin',
     'Macintosh' => 'macintosh',
     'Macintosh Old' => 'macintosh_old',
@@ -139,7 +136,6 @@ package KeyboardNames;
     'Bulgaria' => 'bg',
     'Cambodia' => 'kh',
     'Canada' => 'ca',
-    'Congo, Democratic Republic of the' => 'cd',
     'Croatia' => 'hr',
     'Czechia' => 'cz',
     'Denmark' => 'dk',
@@ -161,7 +157,6 @@ package KeyboardNames;
     'Italy' => 'it',
     'Japan' => 'jp',
     'Kazakhstan' => 'kz',
-    'Korea, Republic of' => 'kr',
     'Kyrgyzstan' => 'kg',
     'Laos' => 'la',
     'Latin American' => 'latam',
@@ -231,7 +226,6 @@ package KeyboardNames;
 	'Eliminate dead keys' => 'nodeadkeys',
 	'ISO Alternate' => 'iso-alternate',
 	'Sun dead keys' => 'sundeadkeys',
-	'Wang model 724 azerty' => 'wang',
     },
     'bg' => {
 	'Phonetic' => 'phonetic',
@@ -365,6 +359,7 @@ package KeyboardNames;
     'il' => {
 	'Phonetic' => 'phonetic',
 	'lyx' => 'lyx',
+	'si1452' => 'si1452',
     },
     'in' => {
 	'Bengali' => 'ben',
@@ -478,9 +473,6 @@ package KeyboardNames;
     'tr' => {
 	'(F)' => 'f',
 	'Alt-Q' => 'alt',
-	'Kurdish, (F)' => 'ku_f',
-	'Kurdish, Latin Alt-Q' => 'ku_alt',
-	'Kurdish, Latin Q' => 'ku',
 	'Sun dead keys' => 'sundeadkeys',
     },
     'ua' => {
