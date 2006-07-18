@@ -4,7 +4,13 @@ use warnings 'all';
 use strict;
 
 BEGIN {
-    do 'KeyboardNames.pl';
+    my $file;
+    if ($ARGV[0]) {
+	$file = $ARGV[0];
+    } else {
+	$file = 'KeyboardNames.pl';
+    }
+    do "$file";
 }
 
 for my $model (keys %KeyboardNames::models) {

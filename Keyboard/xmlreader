@@ -21,6 +21,13 @@ use warnings 'all';
 use strict;
 use encoding 'utf8';
 
+my $file;
+if ($ARGV[0]) {
+    $file = $ARGV[0];
+} else {
+    $file = 'ckb/rules/xorg.xml';
+}
+
 sub debug {
     if (1) {
 	print STDERR "@_";
@@ -57,7 +64,7 @@ use XML::Parser;
 
 my $parser = new XML::Parser (Style => 'Tree');
 
-my $tree = $parser->parsefile ('ckb/rules/xorg.xml');
+my $tree = $parser->parsefile ($file);
 
 my %models;
 my %layouts;
