@@ -2722,13 +2722,11 @@ sub print_vector {
 	}
     }
     if ($compact) {
-	if ($vector[0] ne $vector[16] or $vector[1] ne $vector[17]) {
-	    print "keycode $kernel_code = ".
-		"@vector[0, 1, 16, 17, 4, 20, 8, 24, 12, 28]\n";
-	} else {
-	    print "keycode $kernel_code = ".
-		"@vector[0, 1, 2, 3, 4, 6, 8, 10, 12, 14]\n";
-	}
+	my $line = ($vector[0] ne $vector[16] or $vector[1] ne $vector[17]
+		    ? "@vector[0, 1, 16, 17, 4, 20, 8, 24, 12, 28]"
+		    : "@vector[0, 1, 2, 3, 4, 6, 8, 10, 12, 14]");
+	$line =~ s/NoSymbol/VoidSymbol/g;
+	print "keycode $kernel_code = $line\n";
     } elsif ($no_NoSymbol) {
 	print "keycode $kernel_code = @vector\n";
     } else {
