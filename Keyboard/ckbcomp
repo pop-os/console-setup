@@ -50,6 +50,7 @@ my $model;
 my @layouts;
 my @variants = ();
 my @options = ();
+my $compact = 0;
 
 while (@ARGV) {
     $_ = shift @ARGV;
@@ -127,8 +128,11 @@ Where legal args are:
 -v[erbose] [<lvl>]  Sets verbosity (1..10).  Higher values yield
                     more messages
 -option <name>      Adds an option used to choose component names
+-compact            Generate compact keymap
 EOT
             exit 0;
+	} elsif (/^compact$/) {
+	    $compact = 1;
 	} else {
 	    die "$0: Unknown option -$_\n";
 	}
@@ -274,6 +278,7 @@ my %xkbsym_table = (
     'parenlef' => '0028', # Is this recognised by X ? (speling error)
     'parenright' => '0029',
     'asterisk' => '002a',
+    'asterix' => '002a', # Is this recognised by X ? (speling error)
     'plus' => '002b',
     'comma' => '002c',
     'minus' => '002d',
@@ -1516,6 +1521,21 @@ my %xkbsym_table = (
     'SunVideoRaiseBrightness' => 'VoidSymbol',
 );
 
+if ($compact) {
+    $xkbsym_table{'Mode_switch'} = 'AltGr';
+    $xkbsym_table{'ISO_Group_Shift'} = 'AltGr';
+    $xkbsym_table{'ISO_Group_Latch'} = 'AltGr';
+    $xkbsym_table{'ISO_Group_Lock'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Next_Group'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Next_Group_Lock'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Prev_Group'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Prev_Group_Lock'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_First_Group'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_First_Group_Lock'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Last_Group'} = 'AltGr_Lock';
+    $xkbsym_table{'ISO_Last_Group_Lock'} = 'AltGr_Lock';
+}
+
 my @controlsyms;
 my @metasyms;
 my @metacontrolsyms;
@@ -2701,7 +2721,15 @@ sub print_vector {
 	    last;
 	}
     }
-    if ($no_NoSymbol) {
+    if ($compact) {
+	if ($vector[0] ne $vector[16] or $vector[1] ne $vector[17]) {
+	    print "keycode $kernel_code = ".
+		"@vector[0, 1, 16, 17, 4, 20, 8, 24, 12, 28]\n";
+	} else {
+	    print "keycode $kernel_code = ".
+		"@vector[0, 1, 2, 3, 4, 6, 8, 10, 12, 14]\n";
+	}
+    } elsif ($no_NoSymbol) {
 	print "keycode $kernel_code = @vector\n";
     } else {
 	for my $mask (0 .. 63) {
@@ -2841,7 +2869,11 @@ my %at_scancodes = (
     211 => -1,  # Japanese
 );
 
-print "keymaps 0-63\n";
+if ($compact) {
+    print "keymaps 0-4,6,8,10,12,14\n";
+} else {
+    print "keymaps 0-63\n";
+}
 if ($arch eq 'at') {
     foreach my $key (sort {$a <=> $b} (keys %symbols_table)) {
 	my $kernel_code = $at_scancodes{$key};
