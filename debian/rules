@@ -101,6 +101,69 @@ install: build
 	cp config debian/console-setup-mini/usr/share/doc/console-setup-mini/examples/console-setup
 	rm -rf `find debian/console-setup-mini -name .cvsignore`
 	rm -rf `find debian/console-setup-mini -name .svn`
+# console-setup-*-ekmap
+	dh_install -pconsole-setup-amiga-ekmap Keyboard/amiga.ekmap.gz \
+		usr/share/console-setup-mini
+	dh_install -pconsole-setup-ataritt-ekmap Keyboard/ataritt.ekmap.gz \
+		usr/share/console-setup-mini
+	dh_install -pconsole-setup-macintoshold-ekmap Keyboard/macintosh_old.ekmap.gz \
+		usr/share/console-setup-mini
+	dh_install -pconsole-setup-pc-ekmap Keyboard/pc105.ekmap.gz \
+		usr/share/console-setup-mini
+	dh_install -pconsole-setup-sun4-ekmap Keyboard/sun4.ekmap.gz \
+		usr/share/console-setup-mini
+	dh_install -pconsole-setup-sun5-ekmap Keyboard/sun5.ekmap.gz \
+		usr/share/console-setup-mini
+# console-setup-fonts-udeb
+	dh_install -pconsole-setup-fonts-udeb Fonts/Arabic-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Armenian-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/CyrAsia-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/CyrKoi-TerminusBold16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/CyrSlav-TerminusBold16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Ethiopian-Goha16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Georgian-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Greek-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Hebrew-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Lao-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Lat15-TerminusBold16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Lat2-TerminusBold16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Lat38-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Lat7-TerminusBold16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Thai-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Uni1-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Uni2-VGA16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Uni3-Fixed16.psf.gz \
+		usr/share/consolefonts
+	dh_install -pconsole-setup-fonts-udeb Fonts/Vietnamese-Fixed16.psf.gz \
+		usr/share/consolefonts
+# console-setup-udeb
+	dh_install -pconsole-setup-udeb Keyboard/ckbcomp-mini usr/bin
+	dh_link -pconsole-setup-udeb usr/bin/ckbcomp-mini usr/bin/ckbcomp
+	dh_install -pconsole-setup-udeb setupcon bin
+	dh_install -p console-setup-udeb debian/console-setup.config usr/share/console-setup-mini
+	dh_installdirs -p console-setup-udeb etc/default
+	dh_installdirs -p console-setup-udeb etc/console-setup/
+	dh_installdirs -p console-setup-udeb usr/share/doc/console-setup-mini/examples/
+	cp config debian/console-setup-udeb/usr/share/doc/console-setup-mini/examples/console-setup
+	rm -rf `find debian/console-setup-udeb -name .cvsignore`
+	rm -rf `find debian/console-setup-udeb -name .svn`
 # console-setup
 	$(MAKE) etcdir=debian/console-setup/etc \
 		prefix=debian/console-setup/usr install

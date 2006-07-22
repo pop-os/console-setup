@@ -40,6 +40,70 @@ Description: An experimental micro version of console-setup package
  This package supports only UTF-8.  The legacy 8-bit encodings are not
  supported.
 
+Package: console-setup-udeb
+Section: debian-installer
+Priority: optional
+Depends: console-setup-ekmap
+Architecture: all
+Description: Configure the keyboard
+XC-Package-Type: udeb
+XB-Installer-Menu-Item: 12
+
+Package: console-setup-amiga-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for amiga keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-ataritt-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for ataritt keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-macintoshold-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for macintoshold keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-pc-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for pc keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-sun4-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for sun4 keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-sun5-ekmap
+Provides: console-setup-ekmap
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Keyboard layouts for sun5 keyboards
+XC-Package-Type: udeb
+
+Package: console-setup-fonts-udeb
+Section: debian-installer
+Priority: optional
+Architecture: all
+Description: Console fonts for Debian Installer
+XC-Package-Type: udeb
+
 Package: bdf2psf
 Architecture: all
 Section: utils

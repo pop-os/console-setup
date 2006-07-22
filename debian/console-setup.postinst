@@ -23,7 +23,10 @@ if [ -z "$md5sum" ]; then
     md5sum=true
 fi
 
-echo 11111 >>/tmp/clog
+# In d-i the config script is not executed automatically
+if [ -f /usr/share/console-setup-mini/console-setup.config ]; then
+    . /usr/share/console-setup-mini/console-setup.config
+fi
 
 CONFIGDIR=/etc/console-setup
 CONFIGFILE=/etc/default/console-setup
@@ -31,12 +34,8 @@ CONFIGFILE=/etc/default/console-setup
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
-fontdir=/usr/share/consolefonts
-
 if [ "$1" = "configure" ]; then
     
-echo 22222 >>/tmp/clog
-
     db_get console-setup/codeset
     codeset="$RET"
     db_get console-setup/fontface
@@ -65,8 +64,6 @@ echo 22222 >>/tmp/clog
     db_get console-setup/optionscode
     options="$RET"
 
-echo 33333 >>/tmp/clog
-
     if [ "$charmap" != UTF-8 ]; then
 	acm=$CONFIGDIR/$charmap.acm.gz
 	acm_option="-charmap $charmap"
@@ -92,9 +89,6 @@ EOF
     fi
 
     . $CONFIGFILE || true
-
-echo 44444 >>/tmp/clog
-echo "model=$model layout=$layout variant=$variant options=$options" >>/tmp/clog
 
     if \
 	[ -z "$BOOTTIME_KMAP_MD5" ] \
@@ -124,28 +118,20 @@ echo "model=$model layout=$layout variant=$variant options=$options" >>/tmp/clog
 	fi
     done    
     
-echo 55555 >>/tmp/clog
-
-    awk '
-/^ *ACTIVE_CONSOLES=/ { print "ACTIVE_CONSOLES=\"'"$ttys"'\""; next; }
-/^ *CHARMAP=/ { print "CHARMAP=\"'"$charmap"'\""; next; }
-/^ *CODESET=/ { print "CODESET=\"'"$codeset"'\""; next; }
-/^ *FONTFACE=/ { print "FONTFACE=\"'"$fontface"'\""; next; }
-/^ *FONTSIZE=/ { print "FONTSIZE=\"'"$fontsize"'\""; next; }
-/^ *XKBMODEL=/ { print "XKBMODEL=\"'"$model"'\""; next; }
-/^ *XKBLAYOUT=/ { print "XKBLAYOUT=\"'"$layout"'\""; next; }
-/^ *XKBVARIANT=/ { print "XKBVARIANT=\"'"$variant"'\""; next; }
-/^ *XKBOPTIONS=/ { print "XKBOPTIONS=\"'"$options"'\""; next; }
-/^ *BOOTTIME_KMAP_MD5=/ {
-    print "BOOTTIME_KMAP_MD5=\"'"$BOOTTIME_KMAP_MD5"'\"";
-    next;
-}
-{ print; }
-' <$CONFIGFILE >$CONFIGFILE.tmp
+    sed \
+	-e "s|^ *ACTIVE_CONSOLES=.*|ACTIVE_CONSOLES=\"$ttys\"|" \
+	-e "s|^ *CHARMAP=.*|CHARMAP=\"$charmap\"|" \
+	-e "s|^ *CODESET=.*|CODESET=\"$codeset\"|" \
+	-e "s|^ *FONTFACE=.*|FONTFACE=\"$fontface\"|" \
+	-e "s|^ *FONTSIZE=.*|FONTSIZE=\"$fontsize\"|" \
+	-e "s|^ *XKBMODEL=.*|XKBMODEL=\"$model\"|" \
+	-e "s|^ *XKBLAYOUT=.*|XKBLAYOUT=\"$layout\"|" \
+	-e "s|^ *XKBVARIANT=.*|XKBVARIANT=\"$variant\"|" \
+	-e "s|^ *XKBOPTIONS=.*|XKBOPTIONS=\"$options\"|" \
+	-e "s|^ *BOOTTIME_KMAP_MD5=.*|BOOTTIME_KMAP_MD5=\"$BOOTTIME_KMAP_MD5\"|" \
+	<$CONFIGFILE >$CONFIGFILE.tmp
     
     mv -f $CONFIGFILE.tmp $CONFIGFILE
 fi
-
-echo 66666 >>/tmp/clog
 
 #DEBHELPER#
