@@ -2,6 +2,29 @@
 
 set -e
 
+# The same as /usr/bin/which - in order to make this script work
+# in environments where "which" is not available
+which () {
+    local IFS
+    IFS=:
+    for i in $PATH; do
+	if [ -x "$i/$1" ]; then
+	    echo "$i/$1"
+	    return 0
+	fi
+    done
+    return 1
+}
+
+# In order to make this script work in environments where
+# "md5sum" is not available
+md5sum=`which md5sum`
+if [ -z "$md5sum" ]; then
+    md5sum=true
+fi
+
+echo 11111 >>/tmp/clog
+
 CONFIGDIR=/etc/console-setup
 CONFIGFILE=/etc/default/console-setup
 
@@ -12,6 +35,8 @@ fontdir=/usr/share/consolefonts
 
 if [ "$1" = "configure" ]; then
     
+echo 22222 >>/tmp/clog
+
     db_get console-setup/codeset
     codeset="$RET"
     db_get console-setup/fontface
@@ -40,6 +65,8 @@ if [ "$1" = "configure" ]; then
     db_get console-setup/optionscode
     options="$RET"
 
+echo 33333 >>/tmp/clog
+
     if [ "$charmap" != UTF-8 ]; then
 	acm=$CONFIGDIR/$charmap.acm.gz
 	acm_option="-charmap $charmap"
@@ -49,7 +76,9 @@ if [ "$1" = "configure" ]; then
     fi
 
     if [ ! -e $CONFIGFILE ]; then
-	cat /usr/share/doc/console-setup/examples/console-setup >$CONFIGFILE
+	cat /usr/share/doc/console-setup/examples/console-setup \
+	    /usr/share/doc/console-setup-mini/examples/console-setup \
+	    2>/dev/null >$CONFIGFILE || true
 	cat >>$CONFIGFILE <<EOF
 
 # Do not update the following md5 sum if you change
@@ -64,15 +93,21 @@ EOF
 
     . $CONFIGFILE || true
 
+echo 44444 >>/tmp/clog
+echo "model=$model layout=$layout variant=$variant options=$options" >>/tmp/clog
+
     if \
 	[ -z "$BOOTTIME_KMAP_MD5" ] \
 	|| [ ! -f "$CONFIGDIR/boottime.kmap.gz" ] \
 	|| echo "$BOOTTIME_KMAP_MD5  $CONFIGDIR/boottime.kmap.gz" \
-	    | md5sum -c 2>/dev/null >/dev/null
+	    | $md5sum -c 2>/dev/null >/dev/null
     then
-	ckbcomp $acm_option -model "$model" "$layout" "$variant" "$options" \
-	    | gzip -9 >$CONFIGDIR/boottime.kmap.gz
-	BOOTTIME_KMAP_MD5=`md5sum $CONFIGDIR/boottime.kmap.gz | sed 's/ .*//'`
+	if which gzip >/dev/null; then
+	    ckbcomp $acm_option -model "$model" \
+		"$layout" "$variant" "$options" \
+		| gzip -9 >$CONFIGDIR/boottime.kmap.gz
+	fi
+	BOOTTIME_KMAP_MD5=`$md5sum $CONFIGDIR/boottime.kmap.gz | sed 's/ .*//'`
     fi
 
     # Ensure we do not mess up the config file's ownership and permissions.
@@ -89,6 +124,8 @@ EOF
 	fi
     done    
     
+echo 55555 >>/tmp/clog
+
     awk '
 /^ *ACTIVE_CONSOLES=/ { print "ACTIVE_CONSOLES=\"'"$ttys"'\""; next; }
 /^ *CHARMAP=/ { print "CHARMAP=\"'"$charmap"'\""; next; }
@@ -108,5 +145,7 @@ EOF
     
     mv -f $CONFIGFILE.tmp $CONFIGFILE
 fi
+
+echo 66666 >>/tmp/clog
 
 #DEBHELPER#

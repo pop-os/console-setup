@@ -1,9 +1,18 @@
 SHELL = /bin/sh
 
-build : compose_files gziped_acmfiles KeyboardNames.pl
+build : compose_files gziped_acmfiles KeyboardNames.pl MyKeyboardNames.pl
+
+models = amiga ataritt macintosh_old pc105 sun4 sun5
+
+gziped_ekmaps =  $(addsuffix .ekmap.gz, $(models))
+
+build-mini : $(gziped_ekmaps)
 
 %.gz : %
 	gzip -9 <$< >$@
+
+%.ekmap : 
+	./kbdcompiler $(@:%.ekmap=%) MyKeyboardNames.pl $(xkbdir) >$@
 
 acmfiles = $(wildcard acm/*.acm)
 
@@ -45,7 +54,15 @@ clean:
 	-rm -rf compose $(compose_files)
 	-rm -rf keymaps
 	-rm -f keymaps.dir names.list
+	-rm -f $(gziped_ekmaps)
+	-rm -f MyKeyboardNames.pl
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
 	./xmlreader >KeyboardNames.pl
+
+KeyboardNames.pl:
+	./xmlreader >KeyboardNames.pl
+
+MyKeyboardNames.pl:
+	./xmlreader $(xkbdir)/rules/xorg.xml >MyKeyboardNames.pl

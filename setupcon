@@ -108,6 +108,13 @@ else
     verbose='>/dev/null 2>&1'
 fi
 
+if which ckbcomp-mini >/dev/null && [ "$CHARMAP" != UTF-8 ]; then
+    CHARMAP=UTF-8
+    if [ "$VERBOSE_OUTPUT" = yes ]; then
+	echo Only UTF-8 is supported by console-setup-mini
+    fi
+fi
+
 case `readlink /proc/self/fd/2` in
     /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
 	;;
@@ -162,7 +169,16 @@ if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
 		cp "$FONT" /etc/console-setup/
 	    fi
 	else
-	    FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+	    if which ckbcomp-mini >/dev/null; then
+		FONT=$(echo `ls /usr/share/consolefonts/$CODESET-*.psf.gz \
+                                 2>/dev/null`)
+		FONT=${FONT%% *}
+		if [ -z "$FONT" ]; then
+		    FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+		fi
+	    else
+		FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
+	    fi
 	    case "$FONTSIZE" in
 		*x*)
 		    bigfont=yes

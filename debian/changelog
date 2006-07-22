@@ -5,21 +5,22 @@ console-setup (1.7) UNRELEASED; urgency=low
   * Added Czech translation. Closes: #360333
 
   [ Anton Zinoviev ]
-  * Update Keyboard/ckb/ from the SVN repository of XKeyboardConfig
   * Keyboard/ckbcomp: include /usr/share/X11/xkb to the list of
     directories for keyboard data.  The data from /etc/console-setup/ckb
     are still the default.
-  * Correct a typo in the Bulgarian translation.  Thanks to Yavor Doganov,
-    closes: #359677.
-  * Add an optional argument to xmlreader - the XML source file to use
-    instead of ckb/rules/xorg.xml.  Similarly add an optional argument to
-    kbdnames-maker and non-optional to kbdcompiler - the file to use
-    instead of KeyboardNames.pl.
   * Sync the Keyboard/ckb data with the data in xkb-data package, version
     0.8-5.  Update ckbcomp with two new keysyms (Cyrillic_(CHE|KA)_vertbar).
+  * Do not package the keyboard data.  Depend on xkb-data.  Thanks to
+    Denis Barbier, closes: #359775.
+  * Fix a shell syntax error in debian/config.proto that causes
+    installation of console-setup to hang on powerpc.  Thanks to Colin
+    Watson, closes: #374765.
   * ckbcomp: new option -compact to generate compact keymaps.
-
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 20 Jul 2006 11:44:05 +0300
+  * New experimental package console-setup-mini.
+  * Correct a typo in the Bulgarian translation.  Thanks to Yavor Doganov,
+    closes: #359677.
+  
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 21 Jul 2006 21:19:51 +0300
 
 console-setup (1.6) unstable; urgency=low
 

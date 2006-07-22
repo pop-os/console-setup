@@ -4,14 +4,29 @@ use warnings 'all';
 use strict;
 
 BEGIN {
-    do "KeyboardNames.pl";
+    my $file;
+    if ($ARGV[1]) {
+	$file = $ARGV[1];
+    } else {
+	$file = 'KeyboardNames.pl';
+    }
+    do "$file";
 }
 
 my $model = $ARGV[0];
 my $dir = 'keymaps';
 
-my $nonlatin = ' am ara ben bg by deva ge gr guj guru il ir iku kan
-                 lao mk mm mal ori ru scc syr tel th tj tam ua ';
+my $xkbdir;
+if ($ARGV[2]) {
+    $xkbdir = $ARGV[2];
+} else {
+    $xkbdir = "`pwd`/ckb";
+}
+
+# Don't forget to update also the list in config.proto
+my $nonlatin = ' am ara ben bd bg bt by cs deva ge gh gr guj guru \
+                 il in ir iku jp kan kh la lao lk mk mm mn mv mal \
+                 ori pk ru scc sy syr tel th tj tam ua uz ';
 
 my %keymaps;
 
@@ -45,20 +60,21 @@ sub read_temp_kmap {
 
 ensuredir $dir;
 
-printf STDERR "Compiling keymaps for %s...\n", $model;
+printf STDERR "Compiling compact keymaps for %s...\n", $model;
 
 for my $layout (values %KeyboardNames::layouts) {
     next if ($layout eq 'nec/jp');
     next if ($layout eq 'nec_vndr/jp');
-    my $actual_layout = (($layout eq 'sr')
-			 ? 'yu,sr'
+    my $actual_layout = (($layout eq 'cs')
+			 ? 'cs,cs'
 			 : (($nonlatin =~ / $layout /)
-			    ? "en_US,$layout"
+			    ? "us,$layout"
 			    : $layout));
     if (! -f "$dir/$model-$layout") {
-	execute ("./ckbcomp -compact -I. -Ickb -rules xorg -model $model"
-		 ." -layout $actual_layout >$dir/$model-$layout")
-	    and warning "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout");
+	execute ("./ckbcomp -compact -I. -I${xkbdir} -rules xorg"
+		 ." -model $model -layout $actual_layout"
+		 ." >$dir/$model-$layout")
+	    and die "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout");
     }
     if (-f "$dir/$model-$layout") {
 	read_temp_kmap $layout;
@@ -68,10 +84,11 @@ for my $layout (values %KeyboardNames::layouts) {
 			      ? ",$variant"
 			      : $variant);
 	if (! -f "$dir/$model-$layout:$variant") {
-	    execute ("./ckbcomp -compact -I. -Ickb -rules xorg -model $model"
+	    execute ("./ckbcomp -compact -I. -I${xkbdir} -rules xorg"
+		     ." -model $model"
 		     ." -layout $actual_layout -variant $actual_variant"
 		     ." >$dir/$model-$layout:$variant")
-		and warning "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout:$variant");
+		and die "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout:$variant");
 	}
 	if (-f "$dir/$model-$layout:$variant") {
 	    read_temp_kmap "$layout:$variant";
@@ -158,5 +175,88 @@ for $k1 (keys %reduce) {
 		printf "%s::%s", $k1, $kmap1->[$k];
 	    }
 	}
+    }
+}
+
+my %options = (
+    'grp:switch' => [ 'ralt' ],
+    'grp:lswitch' => [ 'lalt' ],
+    'grp:win_switch' => [ 'rwin', 'lwin' ],
+    'grp:lwin_switch' => [ 'rwin' ],
+    'grp:rwin_switch' => [ 'lwin' ],
+    'grp:toggle' => [ 'ralt' ],
+    'grp:shifts_toggle' => [ 'lshift', 'rshift' ],
+    'grp:ctrls_toggle' => [ 'lctrl', 'rctrl' ],
+    'grp:alts_toggle' => [ 'ralt', 'lalt' ],
+    'grp:ctrl_shift_toggle' => [ 'lshift', 'rshift', 'lctrl', 'rctrl' ],
+    'grp:caps_toggle' => [ 'caps' ],
+    'grp:shift_caps_toggle' => [ 'caps' ],
+    'grp:ctrl_alt_toggle' => [ 'lalt', 'ralt', 'lctrl', 'rctrl' ],
+    'grp:alt_shift_toggle' => [ 'lalt', 'ralt', 'lshift', 'rshift' ],
+    'grp:menu_toggle' => [ 'menu' ],
+    'grp:lwin_toggle' => [ 'lwin' ],
+    'grp:rwin_toggle' => [ 'rwin' ],
+    'grp:lshift_toggle' => [ 'lshift' ],
+    'grp:rshift_toggle' => [ 'rshift' ],
+    'grp:lctrl_toggle' => [ 'lctrl' ],
+    'grp:rctrl_toggle' => [ 'rctrl' ],
+    'grp:lalt_toggle' => [ 'lalt' ],
+    'lv3:switch' => [ 'rctrl' ],
+    'lv3:menu_switch' => [ 'menu' ],
+    'lv3:win_switch' => [ 'lwin', 'rwin' ],
+    'lv3:lwin_switch' => [ 'lwin' ],
+    'lv3:rwin_switch' => [ 'rwin' ],
+    'lv3:ralt_switch' => [ 'ralt' ],
+    'lv3:alt_switch' => [ 'lalt', 'ralt' ],
+    'ctrl:nocaps' => [ 'caps', 'lctrl' ],
+    'ctrl:swapcaps' => [ 'caps', 'lctrl' ],
+    'compose:ralt' => [ 'ralt' ],
+    'compose:rwin' => [ 'rwin' ],
+    'compose:menu' => [ 'menu' ],
+    'compose:caps' => [ 'caps' ],
+    'compose:rctrl' => [ 'rctrl' ],
+    'eurosign:e' => [ 'empty' ],
+    'eurosign:5' => [ 'empty' ],
+    'eurosign:2' => [ 'empty' ],
+ );
+
+my %keycodes = (
+    'amiga' => 'amiga(de)',
+    'ataritt' => 'ataritt(de)',
+    'macintosh' => 'xfree86',
+    'macintosh_old' => 'macintosh',
+    'pc105' => 'xfree86',
+    'sun4' => 'sun(type4_euro)',
+    'sun5' => 'sun(type5_euro)',
+    'abnt2' => 'xfree86(abnt2)',
+);
+
+my $keycodes =  (defined $keycodes {$model}
+		 ? $keycodes {$model}
+		 : 'xfree86');
+for my $option (keys %options) {
+    my $layout = '';
+    for my $mod (@{$options{$option}}) {
+	$layout = $layout . "+stdmodifiers($mod)";
+    }
+    $layout =~ s/^\+//;
+    if ($option =~ /grp:(.*)/) {
+	$layout = $layout . "+group($1)";
+    } elsif ($option =~ /ctrl:(.*)/) {
+	$layout = $layout . "+ctrl($1)";
+    } elsif ($option =~ /lv3:(.*)/) {
+	$layout = $layout . "+level3($1)";
+    } elsif ($option =~ /compose:(.*)/) {
+	$layout = $layout . "+compose($1)";
+    } elsif ($option =~ /eurosign:(.*)/) {
+	$layout = $layout . "+eurosign($1)";
+    }
+    execute ("./ckbcomp -compact -I. -I${xkbdir}"
+	     ." -keycodes '$keycodes' -symbols '$layout' >temp.kmap");
+    if (! -f 'temp.kmap') {
+	die "$0: ckbcomp failed\n" if (! -f 'temp.kmap');
+    } else {
+	execute ("grep '^keycode' temp.kmap | sed 's/^/". $option ."::/'");
+	unlink('temp.kmap');
     }
 }

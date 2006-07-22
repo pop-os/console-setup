@@ -161,7 +161,7 @@ guess_arch () {
     
     if [ "$arch" = 'powerpc' -o "$arch" = 'm68k' ]; then
 	if [ "$arch" = powerpc ]; then
-	    line = `sed -n 's/^machine.*: *//p' /proc/cpuinfo`
+	    line=`sed -n 's/^machine.*: *//p' /proc/cpuinfo`
 	    if [ "$line" = '' ]; then
 		echo unknown
 		return 0
@@ -1118,6 +1118,7 @@ while :; do
 		variant="$RET"
 		case "$layout" in
 		    # TODO: make s.t. to not forget to update this list
+                    # Don't forget to update also the list in kbdcompiler
 		    am|ara|ben|bd|bg|bt|by|cs|deva|ge|gh|gr|guj|guru|il|in|ir|iku|jp|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
 			latin=no
 			real_layout=us,$layout

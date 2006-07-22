@@ -1,5 +1,7 @@
 etcdir = /etc
 prefix = /usr/local
+xkbdir = $(shell pwd)/Keyboard/ckb
+export xkbdir
 
 bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
 
@@ -8,8 +10,8 @@ SHELL = /bin/sh
 all: build
 
 build:
-	cd Fonts; $(MAKE) build
-	cd Keyboard; $(MAKE) build
+	cd Fonts && $(MAKE) build
+	cd Keyboard && $(MAKE) build
 	touch build
 
 .PHONY: install
@@ -44,12 +46,12 @@ uninstall: build
 
 .PHONY: clean
 clean:
-	cd Fonts; $(MAKE) clean
-	cd Keyboard; $(MAKE) clean
+	cd Fonts && $(MAKE) clean
+	cd Keyboard && $(MAKE) clean
 	-rm -f *~
 	-rm -f build
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
-	cd Fonts; $(MAKE) maintainer-clean
-	cd Keyboard; $(MAKE) maintainer-clean
+	cd Fonts && $(MAKE) maintainer-clean
+	cd Keyboard && $(MAKE) maintainer-clean
