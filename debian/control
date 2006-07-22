@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Console utilities maintainers <pkg-kbd-devel@lists.alioth.debian.org>
 Uploaders: Anton Zinoviev <zinoviev@debian.org>
 Build-Depends-Indep: debhelper (>= 5), perl, po-debconf, libxml-parser-perl, xkb-data
-Standards-Version: 3.6.2
+Build-Depends: debhelper (>= 5), perl, libxml-parser-perl
+Standards-Version: 3.7.2
 
 Package: console-setup
 Section: utils
@@ -43,7 +44,7 @@ Description: An experimental micro version of console-setup package
 Package: console-setup-udeb
 Section: debian-installer
 Priority: extra
-Depends: console-setup-ekmap
+Depends: console-setup-ekmap, archdetect, cdebconf-udeb
 Architecture: all
 Description: Configure the keyboard
  This is an experimental replacement of kbd-chooser.  It depends on

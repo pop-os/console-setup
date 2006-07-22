@@ -16,11 +16,12 @@ console-setup (1.7) unstable; urgency=low
     installation of console-setup to hang on powerpc.  Thanks to Colin
     Watson, closes: #374765.
   * ckbcomp: new option -compact to generate compact keymaps.
-  * New experimental package console-setup-mini.
+  * New experimental package console-setup-mini and udebs for d-i.
   * Correct a typo in the Bulgarian translation.  Thanks to Yavor Doganov,
     closes: #359677.
-  
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 21 Jul 2006 21:19:51 +0300
+  * Updated Standards-Version: 3.7.2
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 22 Jul 2006 23:00:00 +0300
 
 console-setup (1.6) unstable; urgency=low
 
