@@ -233,9 +233,10 @@ fi
 
 if [ "$LC_CTYPE"  -a "$LC_CTYPE" != C ]; then
     locale=$LC_CTYPE
-else
-    db_get debian-installer/locale
+elif db_get debian-installer/locale && [ "$RET" ]; then
     locale="$RET"
+else
+    locale=C
 fi
 
 case "$locale" in
