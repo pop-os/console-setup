@@ -120,6 +120,12 @@ ask_debconf () {
     default_description=`echo "$kbdnames" |  
         grep "^$prefix\*${default_code}\*" |
         sed -e "s/^$prefix\*${default_code}\*//"`
+    if [ -z "$default_description" ]; then
+	# Vor XkbVariant the empty string is usualy a sensible default
+	default_description=`echo "$kbdnames" |  
+            grep "^$prefix\*\*" |
+            sed -e "s/^$prefix\*\*//"`
+    fi
     if [ -n "$default_description" ]; then
 	db_default $template "$default_description"
     fi
@@ -646,7 +652,7 @@ esac
 
 default_layout=''
 default_variant=''
-layout_priority=''
+layout_priority=critical
 case "$locale" in
     # Keyboards for countries
     *_AL*)
@@ -970,8 +976,99 @@ case "$arch" in
 	;;
 esac    
 
-######################################################################
+#######################################################################
 
+# Use the value of debian-installer/keymap to get better default
+# layout.  Lower the priority of the Debconf question to medium.
+
+# This is a desperation measure, but required for migration from
+# pre-console-setup systems without X installed. We just have to copy
+# the guesswork formerly done by xserver-xorg.config.
+
+if db_get debian-installer/keymap && [ "$RET" ]; then
+    echo We have debian-installer/keymap="$RET" >>/tmp/cs.log
+    di_keymap="${RET##mac-usb-}"
+    di_keymap="${di_keymap%%-latin1}"
+    echo di_keymap=$di_keymap >>/tmp/cs.log
+
+    XKBLAYOUT=''
+    XKBVARIANT=''
+    case "$di_keymap" in
+	be2) XKBLAYOUT="be";;
+	bg) XKBLAYOUT="bg"; XKBVARIANT="bds";;
+	br) XKBLAYOUT="us"; XKBVARIANT="intl"; XKBMODEL="pc104";;
+	br-abnt2) XKBLAYOUT="br"; XKBVARIANT="abnt2"; XKBMODEL="abnt2";;
+	by) XKBLAYOUT="by";;
+	cf) XKBLAYOUT="ca"; XKBVARIANT="fr";;
+	croat) XKBLAYOUT="hr";;
+	cz-lat2) XKBLAYOUT="cz";;
+	de-latin1-nodeadkeys) XKBLAYOUT="de"; XKBVARIANT="nodeadkeys";;
+	de) XKBLAYOUT="de";;
+	dvorak) XKBLAYOUT="us"; XKBVARIANT="dvorak"; XKBMODEL="pc104";;
+	dk) XKBLAYOUT="dk";;
+	es) XKBLAYOUT="es";;
+	et) XKBLAYOUT="ee";;
+	'fi') XKBLAYOUT="fi";;
+	fr-latin9) XKBLAYOUT="fr"; XKBVARIANT="latin9";;
+	fr_CH) XKBLAYOUT="ch"; XKBVARIANT="fr";;
+	fr) XKBLAYOUT="fr";;
+	hebrew) XKBLAYOUT="il";;
+	hu) XKBLAYOUT="hu";;
+	gb) XKBLAYOUT="gb";;
+	is) XKBLAYOUT="is";;
+	it) XKBLAYOUT="it";;
+	jp106) XKBLAYOUT="jp"; XKBVARIANT="jp106";;
+	la) XKBLAYOUT="latam";;
+	lt) XKBLAYOUT="lt";; 
+	lv-latin4) XKBLAYOUT="lv";;
+	mac-us-std) XKBLAYOUT="us";;
+	mac-de2-ext) XKBLAYOUT="de"; XKBVARIANT="nodeadkeys";;
+	mac-fr2-ext) XKBLAYOUT="fr";;
+	mac-fr3) XKBLAYOUT="fr";;
+	mac-es) XKBLAYOUT="es";;
+	mk) XKBLAYOUT="mk";;
+	nl) XKBLAYOUT="nl";;
+	no) XKBLAYOUT="no";;
+	pl) XKBLAYOUT="pl";;
+	pt) XKBLAYOUT="pt";;
+	ro) XKBLAYOUT="ro";;
+	ru) XKBLAYOUT="ru";;
+	se) XKBLAYOUT="se";;
+	sg) XKBLAYOUT="ch"; XKBVARIANT="de";;
+	sk-qwerty) XKBLAYOUT="sk"; XKBVARIANT="qwerty";;
+	slovene) XKBLAYOUT="si";;
+	sr-cy) XKBLAYOUT="cs";;
+	trf|trfu) XKBLAYOUT="tr"; XKBVARIANT="f";;
+	trq|trqu) XKBLAYOUT="tr";;
+	ua) XKBLAYOUT="ua";;
+	uk) XKBLAYOUT="gb";;
+	us) XKBLAYOUT="us"; XKBMODEL="pc104";;
+    esac
+
+    # Currently the following two lines are meaningless but stay here
+    # in case some wants to use the real XkbLayout and XkbVariant for
+    # the non-Latin layouts
+    XKBLAYOUT=${XKBLAYOUT#*,}
+    XKBVARIANT=${XKBVARIANT#*,}
+
+    echo XKBLAYOUT=$XKBLAYOUT >>/tmp/cs.log
+    case "$XKBLAYOUT" in
+	'')
+	    layout_priority=critical
+	    ;;
+	bg)
+	    default_layout="$XKBLAYOUT"
+	    default_variant="$XKBVARIANT"
+	    layout_priority=critical
+	    ;;
+	*)
+	    default_layout="$XKBLAYOUT"
+	    default_variant="$XKBVARIANT"
+	    layout_priority=medium
+	    ;;
+    esac
+fi
+    
 # Load the config file, if it exists.
 if [ -e $CONFIGFILE ]; then
     . $CONFIGFILE || true
@@ -1095,7 +1192,7 @@ if [ -e $CONFIGFILE ]; then
     db_set console-setup/compose "$default_compose"
 fi
 
-######################################################################
+#######################################################################
 
 STATE=1
 old_state=0
@@ -1124,7 +1221,7 @@ while :; do
 		    STATE=$(($STATE - 1))
 		fi
 	    elif \
-		ask_debconf console-setup/layout critical \
+		ask_debconf console-setup/layout "$layout_priority" \
 		    layout "$default_layout"
 	    then
 		layout="$RET"
@@ -1139,7 +1236,7 @@ while :; do
 		# skip the question without making Debconf loop
 		STATE=$(( $STATE + $STATE - $old_state ))
 	    elif \
-		ask_debconf console-setup/variant critical \
+		ask_debconf console-setup/variant "$layout_priority" \
                     "variant\*${layout}" "$default_variant"
 	    then
 		variant="$RET"
