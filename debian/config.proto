@@ -1144,12 +1144,6 @@ while :; do
 	    then
 		variant="$RET"
 		case "$layout" in
-		    # TODO: make s.t. to not forget to update this list
-                    # Don't forget to update also the list in kbdcompiler
-		    am|ara|ben|bd|bg|bt|by|cs|deva|ge|gh|gr|guj|guru|il|in|ir|iku|jp|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
-			latin=no
-			real_layout=us,$layout
-			;;
 		    cs)
 			case "$variant" in
 			    latin*)
@@ -1161,6 +1155,12 @@ while :; do
 				real_layout=cs,cs
 				;;
 			esac
+			;;
+		    # TODO: make s.t. to not forget to update this list
+		    # Don't forget to update also the list in kbdcompiler
+		    am|ara|ben|bd|bg|bt|by|deva|ge|gh|gr|guj|guru|il|in|ir|iku|jp|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
+			latin=no
+			real_layout=us,$layout
 			;;
 		    *)
 			latin=yes
@@ -1571,6 +1571,6 @@ while :; do
     old_state=$starting_state
 done
 
-if [ $STATE -eq 1 ]; then
+if [ $STATE -eq 0 ]; then
     exit 10
 fi

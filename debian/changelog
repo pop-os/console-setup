@@ -3,11 +3,19 @@ console-setup (1.8) UNRELEASED; urgency=low
   * setupcon: new option --force to skip the 'are we on the console'
     check.  To be used for d-i because there /proc/self/fd/2 points to
     pipe.  Thanks to Tollef Fog Heen.
-  * console-setup.config: Handle C locale with debian-installer/locale not
-    being available.  Thanks to Colin Watson for the bug report and the
-    patch, closes: #386835.
+  * config.proto: Handle C locale with debian-installer/locale not being
+    available.  Thanks to Colin Watson for the bug report and the patch,
+    closes: #386835.
+  * config.proto: Handle properly the case when the user backs up from the
+    first Debconf question.  In the template file change "none" to "this
+    default value is completely ignored".  Thanks to Colin Watson, 
+    closes: #386837.
+  * Handle properly the cs layout in config.proto and kbdcompiler.  Thanks
+    to Colin Watson, closes: #386838.
+  * Supply correct debian/po/POTFILES.in.  Thanks to Thomas Huriaux,
+    closes: #387631.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 15 Sep 2006 21:12:35 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 16 Sep 2006 12:55:56 +0300
 
 console-setup (1.7) unstable; urgency=low
 
