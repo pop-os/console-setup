@@ -986,10 +986,8 @@ esac
 # the guesswork formerly done by xserver-xorg.config.
 
 if db_get debian-installer/keymap && [ "$RET" ]; then
-    echo We have debian-installer/keymap="$RET" >>/tmp/cs.log
     di_keymap="${RET##mac-usb-}"
     di_keymap="${di_keymap%%-latin1}"
-    echo di_keymap=$di_keymap >>/tmp/cs.log
 
     XKBLAYOUT=''
     XKBVARIANT=''
@@ -1051,15 +1049,16 @@ if db_get debian-installer/keymap && [ "$RET" ]; then
     XKBLAYOUT=${XKBLAYOUT#*,}
     XKBVARIANT=${XKBVARIANT#*,}
 
-    echo XKBLAYOUT=$XKBLAYOUT >>/tmp/cs.log
     case "$XKBLAYOUT" in
 	'')
 	    layout_priority=critical
 	    ;;
 	bg)
+	    # since there are two incompatible layouts and the console
+	    # provides only one of them
 	    default_layout="$XKBLAYOUT"
 	    default_variant="$XKBVARIANT"
-	    layout_priority=critical
+	    layout_priority=high
 	    ;;
 	*)
 	    default_layout="$XKBLAYOUT"
