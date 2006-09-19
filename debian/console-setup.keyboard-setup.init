@@ -1,4 +1,14 @@
 #!/bin/sh
+### BEGIN INIT INFO
+# Provides:          keymap
+# Required-Start:    mountkernfs udev
+# Default-Start:     S
+# Short-Description: Set preliminary keymap
+# Description:       Set the console keyboard as early as possible
+#                    so during the file systems checks the administrator
+#                    can interact.  At this stage of the boot process
+#                    only the ASCII symbols are supported.
+### END INIT INFO
 
 set -e
 

@@ -24,8 +24,10 @@ console-setup (1.8) UNRELEASED; urgency=low
     unavailable, try to use the empty string.  Useful when asking for the
     keyboard variant.
   * Add README.Debian for console-setup.
+  * Add boot script order header to the init scripts.  Thanks to
+    Martin-Éric Racine, closes: #386545.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 16 Sep 2006 23:33:52 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 19 Sep 2006 11:56:15 +0300
 
 console-setup (1.7) unstable; urgency=low
 

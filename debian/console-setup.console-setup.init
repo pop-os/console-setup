@@ -1,4 +1,10 @@
 #!/bin/sh
+### BEGIN INIT INFO
+# Provides:          console-screen
+# Required-Start:    $local_fs $remote_fs
+# Default-Start:     S
+# Short-Description: Set console font and keymap
+### END INIT INFO
 
 set -e
 
