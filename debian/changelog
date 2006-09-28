@@ -1,4 +1,4 @@
-console-setup (1.8) UNRELEASED; urgency=low
+console-setup (1.8) unstable; urgency=low
 
   * setupcon: new option --force to skip the 'are we on the console'
     check.  To be used for d-i because there /proc/self/fd/2 points to
