@@ -1,3 +1,11 @@
+console-setup (1.9) UNRELEASED; urgency=low
+
+  * Update the version of the Terminus font from 4.16 to 4.20.  (This is
+    not important for Debian, since in Debian the Terminus font is
+    provided by the console-terminus package.)
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 28 Sep 2006 10:05:27 +0300
+
 console-setup (1.8) unstable; urgency=low
 
   * setupcon: new option --force to skip the 'are we on the console'
