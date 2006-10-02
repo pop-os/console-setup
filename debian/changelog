@@ -3,8 +3,11 @@ console-setup (1.9) UNRELEASED; urgency=low
   * Update the version of the Terminus font from 4.16 to 4.20.  (This is
     not important for Debian, since in Debian the Terminus font is
     provided by the console-terminus package.)
+  * New mini-font georgian16.bdf to be used for the Georgian letters in
+    Fixed16, author: Gia Shervashidze.  Thanks to Vladimer Sichinava.
+  * Add FAQ.  Thanks to Thue Janus Kristensen, closes: #389963, #389970.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 28 Sep 2006 10:05:27 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon,  2 Oct 2006 20:43:03 +0300
 
 console-setup (1.8) unstable; urgency=low
 

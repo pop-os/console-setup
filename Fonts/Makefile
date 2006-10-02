@@ -32,7 +32,7 @@ all-CODESETS = Arabic Armenian CyrAsia CyrKoi CyrSlav Ethiopian Georgian Greek H
 Fixed13-BDFS = 8x13-IL2.bdf+8x13.bdf+8x13c.bdf
 Fixed14-BDFS = 7x14-IL2.bdf+7x14.bdf+7x14c.bdf+h14.bdf+etl14-unicode.bdf
 Fixed15-BDFS = 9x15-IL2.bdf+9x15.bdf+9x15c.bdf
-Fixed16-BDFS = unifont.bdf+h16.bdf+etl16-unicode.bdf
+Fixed16-BDFS = georgian16.bdf+unifont.bdf+h16.bdf+etl16-unicode.bdf
 Fixed18-BDFS = 9x18.bdf
 Fixed24x12-BDFS = h24.bdf+etl24-unicode.bdf
 
