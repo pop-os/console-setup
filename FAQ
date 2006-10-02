@@ -32,20 +32,21 @@ The following topics are addressed:
    be broken.
 
    Sometimes the problem doesn't exists at all.  It is rumored that
-   some old videcards (more than 10 years old) fall in this category
-   but I have never seen such videocard.
+   some old video adapters (more than 10 years old) fall in this
+   category but I have never seen such videocard.
 
-   The most often case seams to be that the state at the time the X
+   The most common case seams to be that the state at the time the X
    server is started is remembered.  Try to setup the console before X
    Window is started and if the problem disappears then you are in
    this category.  The problem will reappear if you change the console
-   setup while X Window is already started.  All videocards I have had
-   are in this category.
+   setup while X Window is already started.  All video adapters I have
+   had are in this category.
 
    And sometimes the console setup is never remembered.  You will have
    to use the "setupcon" utility to restore the console setup and hope
    that the problem will be fixed in some future version of X Window.
-   Another option is to use framebuffer.
+   Another option is to use framebuffer.  You may want to send a bug
+   report to the X developers.
 
 
 1.2) The screen size is wrong.  The buttom 2-3 lines are cut off
@@ -60,7 +61,7 @@ The following topics are addressed:
 
       2. You use Ctrl+Alt+F1 combination and the change the font on
          the console (let this be font B).  However the X server
-         doesn't know this.
+         doesn't want to know this.
 
       3. You return to X (Alt+F7).
 
@@ -68,7 +69,7 @@ The following topics are addressed:
          the kernel doesn't know that the active font is A and not B.
 
       5. If font A has say 16 scan lines and font B has 14 scan lines
-         the font on the screen has only 16 scan lines but the kernel
+         the font on the screen has 16 scan lines but the kernel
          doesn't know this and draws the screen as if the scan lines
          were only 14.
 
@@ -81,7 +82,7 @@ The following topics are addressed:
    Second, the big fonts require framebuffer.  This is hardware
    limitation.  The old 8514 videostandard had special text mode with
    12x20 fonts but I suppose this video mode is not supported by the
-   kernel.
+   kernel and it is unlikely that you own such video adapter anyway.
 
    Third, the big fonts can not be used with some of the framebuffer
    drivers.  For example on my computer if I use matroxfb then all
@@ -114,12 +115,12 @@ The following topics are addressed:
    Unfortunately many LCD do not do this job well.
 
    How well your LCD will perform in text mode doesn't depend much of
-   its price but rather by the company who produced it.  Before you
+   its price but rather by the company that produced it.  Before you
    buy an LCD you may want to check how it performs in text mode.
 
    In order to fix this problem use high resolution framebuffer mode
    in combination with some of the large fonts of console-setup.  This
-   way the screen will be slow but excellent and impressive.
+   way you will have a slow but excellent and impressive screen.
 
 
 2) THE INPUT ON THE CONSOLE
