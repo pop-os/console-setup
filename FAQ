@@ -3,8 +3,8 @@ The following topics are addressed:
      1) THE OUTPUT ON THE CONSOLE
    1.1) The font is broken after I switch to X and back to the console
    1.2) The screen size is wrong.  The buttom 2-3 lines are cut off
-   1.3) I can not load any big font
-   1.4) How to fix the size of the used space of the screen of my laptop?
+   1.3) How can I load the big fonts?
+   1.4) How to enlarge the image on the screen of my laptop?
    1.5) The symbols on the screen of my LCD are ugly
 
      2) THE INPUT ON THE CONSOLE
@@ -61,23 +61,24 @@ The following topics are addressed:
 
       2. You use Ctrl+Alt+F1 combination and the change the font on
          the console (let this be font B).  However the X server
-         doesn't want to know this.
+         doesn't want to know about this.
 
       3. You return to X (Alt+F7).
 
       4. Again Ctrl+Alt+F1.  The X server restores font A.  However
-         the kernel doesn't know that the active font is A and not B.
+         the kernel doesn't know that B is no more the active font.
 
       5. If font A has say 16 scan lines and font B has 14 scan lines
          the font on the screen has 16 scan lines but the kernel
          doesn't know this and draws the screen as if the scan lines
-         were only 14.
+         were only 14.  The result is that the bottom lines are
+         outside the screen.
 
 
-1.3) I can not load any big font
+1.3) How can I load the big fonts?
 
-   First, "consolechars" can not load big font.  Most current systems
-   use "setfont" and "setfont" can load big fonts.
+   First, "consolechars" can not load big font.  But most current
+   systems use "setfont" and "setfont" can load big fonts.
 
    Second, the big fonts require framebuffer.  This is hardware
    limitation.  The old 8514 videostandard had special text mode with
@@ -91,7 +92,7 @@ The following topics are addressed:
    size 14, 16 or 32x16 are displayed correctly.
 
 
-1.4) How to fix the size of the used space of the screen of my laptop?
+1.4) How to enlarge the image on the screen of my laptop?
 
    Many laptops do not scale the screen when the resolution is less
    than the resolution of the display.  And since the resolution of

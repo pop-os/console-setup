@@ -192,6 +192,7 @@ binary-indep: build install
 	dh_installxfonts
 	dh_installdebconf
 	dh_installdocs -pconsole-setup README*
+	dh_installdocs -pconsole-setup FAQ
 	dh_install -p console-setup copyright.fonts \
 		 usr/share/doc/console-setup
 	dh_installdocs -pconsole-setup-mini
