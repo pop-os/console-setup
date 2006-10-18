@@ -6,8 +6,10 @@ console-setup (1.9) UNRELEASED; urgency=low
   * New mini-font georgian16.bdf to be used for the Georgian letters in
     Fixed16, author: Gia Shervashidze.  Thanks to Vladimer Sichinava.
   * Add FAQ.  Thanks to Thue Janus Kristensen, closes: #389963, #389970.
+  * Remove the udebs in order to make the migration from unstable to
+    testing automatical.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Mon,  2 Oct 2006 20:43:03 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 20:41:28 +0300
 
 console-setup (1.8) unstable; urgency=low
 

@@ -12,6 +12,10 @@ main_build:
 
 debian/console-setup.config debian/console-setup-mini.config: debian/config.proto main_build
 	awk ' \
+/## *PACKAGE *##/ { \
+    printf "package=$(notdir $(basename $@))"; \
+    next; \
+} \
 /## *FONTSETS *##/ { \
     printf "fontsets='\''"; \
     system("cd Fonts && ls *.psf | sed '\''s/.psf$$//'\''"); \
@@ -32,8 +36,7 @@ debian/console-setup.config debian/console-setup-mini.config: debian/config.prot
 } \
 { \
    print; \
-}' debian/config.proto >debian/console-setup.config
-	cp debian/console-setup.config debian/console-setup-mini.config
+}' debian/config.proto >$@
 
 build: main_build debian/console-setup.config debian/console-setup-mini.config
 
