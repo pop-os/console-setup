@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-09-16 12:54+0300\n"
+"POT-Creation-Date: 2006-10-18 22:28+0300\n"
 "PO-Revision-Date: 2006-04-01 15:42+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -20,8 +20,8 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formated
 #. list.  In you decide to use formated list keep the lines relatively short.
 #: ../console-setup.templates:1001
-msgid "Codeset for your language environment:"
-msgstr "Znaková sada pro vaše jazykové prostředí:"
+msgid "Which set of characters should be supported by the console font?"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -29,17 +29,34 @@ msgstr "Znaková sada pro vaše jazykové prostředí:"
 #. list.  In you decide to use formated list keep the lines relatively short.
 #: ../console-setup.templates:1001
 msgid ""
-" - Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9;\n"
-" - Lat2 covers ISO 8859-2, the Euro sign as well as the\n"
-"   Romanian letters with comma below;\n"
-" - Lat38 covers ISO 8859-3 and ISO 8859-13;\n"
-" - Lat7 covers ISO 8859-13;\n"
-" - CyrSlav covers the Slavic Cyrillic letters as well as\n"
-"   the Serbian Latin letters;\n"
+"If you don't use framebuffer, any one of the following sets of characters "
+"will reduce the number of the available colours on the console: Arabic, "
+"Ethiopian, Vietnamese, Uni1, Uni2 and Uni3."
+msgstr ""
+
+#. Type: select
+#. Description
+#. The languages with many non-ASCII letters should not use formated
+#. list.  In you decide to use formated list keep the lines relatively short.
+#: ../console-setup.templates:1001
+msgid "Legend for some of the available sets:"
+msgstr ""
+
+#. Type: select
+#. Description
+#. The languages with many non-ASCII letters should not use formated
+#. list.  In you decide to use formated list keep the lines relatively short.
+#: ../console-setup.templates:1001
+#, fuzzy
+msgid ""
+" - Lat15 supports the Latin1 and Latin5 languages (western Europe, Turkish)\n"
+" - Lat2 supports the Latin2 languages (central Europa, Romanian)\n"
+" - Lat38 supports Chichewa, Esperanto, Irish, Maltese and Welsh.\n"
+" - Lat7 supports Lithuanian, Latvian, Maori and Marshallese.\n"
+" - CyrSlav supports the Slavic Cyrillic languages and Serbian Latin\n"
 " - Uni1 supports most of the Latin languages, the Slavic\n"
 "   Cyrillic languages, Hebrew and barely Arabic;\n"
-" - Uni2 supports most of the Latin languages, the Slavic\n"
-"   Cyrillic languages and Greek;\n"
+" - Uni2 supports most of the Latin languages, Slavic Cyrillic, Greek;\n"
 " - Uni3 supports most of the Latin and Cyrillic languages."
 msgstr ""
 " - Lat15 pokrývá ISO 8859-1, ISO 8859-15 a ISO 8859-9;\n"
@@ -530,3 +547,6 @@ msgstr ""
 "Klávesa Compose bohužel nefunguje na textové konzoli v unicodovém režimu. "
 "Nezávisle na tom, co zde vyberete, můžete vždy místo klávesy Compose použít "
 "kombinaci Alt+tečka (tedy pouze pokud nepoužíváte režim unicode)."
+
+#~ msgid "Codeset for your language environment:"
+#~ msgstr "Znaková sada pro vaše jazykové prostředí:"

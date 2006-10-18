@@ -6,7 +6,6 @@ Choices: Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav, Ethiopian, Georgian, Greek,
 Default: Uni1
 # The languages with many non-ASCII letters should not use formated
 # list.  In you decide to use formated list keep the lines relatively short.
-# Do not translate "Lat??" and "CyrSlav".
 _Description: Which set of characters should be supported by the console font?
  If you don't use framebuffer, any one of the following sets of
  characters will reduce the number of the available colours on the
