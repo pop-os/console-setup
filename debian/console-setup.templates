@@ -1,23 +1,27 @@
 Template: console-setup/codeset
 Type: select
-# I am not sure if these should be translated.  They
+# I am not sure if these should be translated.  They correspond
 # directly to the font file names and are documented in README files.
 Choices: Arabic, Armenian, CyrAsia, CyrKoi, CyrSlav, Ethiopian, Georgian, Greek, Hebrew, Lao, Lat15, Lat2, Lat38, Lat7, Thai, Uni1, Uni2, Uni3, Vietnamese
 Default: Uni1
 # The languages with many non-ASCII letters should not use formated
 # list.  In you decide to use formated list keep the lines relatively short.
-_Description: Codeset for your language environment:
-  - Lat15 covers ISO 8859-1, ISO 8859-15 and ISO 8859-9;
-  - Lat2 covers ISO 8859-2, the Euro sign as well as the 
-    Romanian letters with comma below;
-  - Lat38 covers ISO 8859-3 and ISO 8859-13;
-  - Lat7 covers ISO 8859-13;
-  - CyrSlav covers the Slavic Cyrillic letters as well as
-    the Serbian Latin letters;
+# Do not translate "Lat??" and "CyrSlav".
+_Description: Which set of characters should be supported by the console font?
+ If you don't use framebuffer, any one of the following sets of
+ characters will reduce the number of the available colours on the
+ console: Arabic, Ethiopian, Vietnamese, Uni1, Uni2 and Uni3.
+ .
+ Legend for some of the available sets:
+ .
+  - Lat15 supports the Latin1 and Latin5 languages (western Europe, Turkish)
+  - Lat2 supports the Latin2 languages (central Europa, Romanian)
+  - Lat38 supports Chichewa, Esperanto, Irish, Maltese and Welsh.
+  - Lat7 supports Lithuanian, Latvian, Maori and Marshallese.
+  - CyrSlav supports the Slavic Cyrillic languages and Serbian Latin
   - Uni1 supports most of the Latin languages, the Slavic
     Cyrillic languages, Hebrew and barely Arabic;
-  - Uni2 supports most of the Latin languages, the Slavic
-    Cyrillic languages and Greek;
+  - Uni2 supports most of the Latin languages, Slavic Cyrillic, Greek;
   - Uni3 supports most of the Latin and Cyrillic languages.
 
 Template: console-setup/model

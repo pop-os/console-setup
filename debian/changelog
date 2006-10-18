@@ -1,15 +1,19 @@
 console-setup (1.9) UNRELEASED; urgency=low
 
+  * Remove the udebs in order to make the migration from unstable to
+    testing automatical.
   * Update the version of the Terminus font from 4.16 to 4.20.  (This is
     not important for Debian, since in Debian the Terminus font is
     provided by the console-terminus package.)
   * New mini-font georgian16.bdf to be used for the Georgian letters in
     Fixed16, author: Gia Shervashidze.  Thanks to Vladimer Sichinava.
   * Add FAQ.  Thanks to Thue Janus Kristensen, closes: #389963, #389970.
-  * Remove the udebs in order to make the migration from unstable to
-    testing automatical.
+  * Fix two problems reported by Martin-Éric Racine.  Closes: #393850.
+    - console-setup-mini should not ask questions in debconf for the encoding
+      since only UTF-8 is supported.
+    - make the purpose of the codeset question clearer.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 20:41:28 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 21:30:12 +0300
 
 console-setup (1.8) unstable; urgency=low
 
