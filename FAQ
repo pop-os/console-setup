@@ -20,8 +20,8 @@ The following topics are addressed:
    most cases this means the non-ASCII symbols are replaced by some
    other funny symbols.
 
-   This happens because sometimes X video driver is unable to restore
-   properly the state of the console when you switch from X to
+   This happens because sometimes the X video driver is unable to
+   restore properly the state of the console when you switch from X to
    text-mode.  How severe the problem is depends on the combination
    Video-card/X-driver you use.
 
@@ -42,26 +42,28 @@ The following topics are addressed:
    setup while X Window is already started.  All video adapters I have
    had are in this category.
 
-   And sometimes the console setup is never remembered.  You will have
-   to use the "setupcon" utility to restore the console setup and hope
-   that the problem will be fixed in some future version of X Window.
-   Another option is to use framebuffer.  You may want to send a bug
+   And sometimes the console setup is never remembered.  In this case
+   you will have to use framebuffer (try "modprobe vga16fb").  Another
+   uption is to to use the "setupcon" utility whenever you need to
+   restore the console setup and hope that the problem will be fixed
+   in some future version of X Window.  You may want to send a bug
    report to the X developers.
 
 
 1.2) The screen size is wrong.  The buttom 2-3 lines are cut off
 
-   The reason of the problem is the same.  I suppose you use X Window
-   and you set on the console a font whose size is not the same as the
-   size of the font that was active when X Window was started.  Then
-   the following happens:
+   The reason and the fix of the problem are the same as in the
+   previous question.  I suppose you use X Window and you set on the
+   console a font whose size is not the same as the size of the font
+   that was active when X Window was started.  Then the following
+   happens:
 
       1. When X Window is started the X server remembers the active
          font (let this be font A).
 
-      2. You use Ctrl+Alt+F1 combination and the change the font on
-         the console (let this be font B).  However the X server
-         doesn't want to know about this.
+      2. You use the Ctrl+Alt+F1 combination and then you change the
+         font on the console (let this be font B).  However the X
+         server doesn't want to know about this.
 
       3. You return to X (Alt+F7).
 
@@ -131,12 +133,12 @@ The following topics are addressed:
    In most cases the keymap does not need a fix.
 
    Are you sure that you have correct locale?  For example if you use
-   ISO-8859-1 with in Denmark, then the LANG environment variable
-   should have value "da_DK".  With some distributions you also have
-   to set the LC_ALL environment variable.
+   ISO-8859-1 in Denmark, then the LANG environment variable should
+   have value "da_DK".  With some distributions you also have to set
+   the LC_ALL environment variable.
 
    Are you sure also that your command interpreter accepts non-ASCII
-   symbols?  Can you enter these characters in X in terminal emulator.
+   symbols?  Can you enter these characters in X in terminal emulator?
    If not, then try to make a file ~/.inputrc with the following
    contents:
 
