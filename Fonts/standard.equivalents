@@ -11,7 +11,9 @@
 # 2006-01-14  Use U+2666 (BLACK DIAMOND SUIT) instead of the question mark
 #             as U+FFFD (REPLACEMENT CHARACTER). It seems that all
 #             current fonts support the diamond suit.
-# 2006-10-20  Add some capital Greek letters
+# 2006-10-20  1. Add some capital Greek letters
+#             2. Approximate U+2501 (BOX DRAWINGS HEAVY HORIZONTAL) by
+#                U+2500 (BOX DRAWINGS LIGHT HORIZONTAL)
 
 U+FFFD U+2666
 # U+FFFD:   REPLACEMENT CHARACTER
@@ -41,6 +43,9 @@ U+2011 U+2010 U+00AD U+2212 U+2013 U+2012 U+002D
 U+2015 U+2014
 # U+2015:   HORIZONTAL BAR
 # U+2014:   EM DASH
+U+2501 U+2500
+# U+2501:   BOX DRAWINGS HEAVY HORIZONTAL
+# U+2500:   BOX DRAWINGS LIGHT HORIZONTAL
 U+02C9 U+00AF
 # U+02C9:   MODIFIER LETTER MACRON
 # U+00AF:   MACRON

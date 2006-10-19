@@ -1,6 +1,8 @@
 # A collection of some useful symbols.  When there are still free
 # positions in the PSF font, fill them with the symbols from this file.
 
+U+2022
+# U+2022:   BULLET
 U+20ac
 # U+20ac:   EURO SIGN
 U+00a9
@@ -49,8 +51,6 @@ U+2116
 # U+2116:   NUMERO SIGN
 U+00b7
 # U+00b7:   MIDDLE DOT
-U+2022
-# U+2022:   BULLET
 U+2026
 # U+2026:   HORIZONTAL ELLIPSIS
 U+2013

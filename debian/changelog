@@ -1,7 +1,7 @@
 console-setup (1.9) UNRELEASED; urgency=low
 
   * Remove the udebs in order to make the migration from unstable to
-    testing automatical.
+    testing automatic.
   * Update the version of the Terminus font from 4.16 to 4.20.  (This is
     not important for Debian, since in Debian the Terminus font is
     provided by the console-terminus package.)
@@ -14,9 +14,11 @@ console-setup (1.9) UNRELEASED; urgency=low
     - make the purpose of the codeset question clearer.
   * Use user-friendly choices in the codeset question.
   * Updated Bulgarian translation of the templates.
-  * Add some capital Greek letters to standard.equivalents.
+  * Add some capital Greek letters to standard.equivalents and approximate
+    BOX DRAWINGS HEAVY HORIZONTAL by BOX DRAWINGS LIGHT HORIZONTAL.
+  * Move the bullet as first symbol in useful.set - it is used by w3m.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 20 Oct 2006 01:27:47 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 20 Oct 2006 01:53:11 +0300
 
 console-setup (1.8) unstable; urgency=low
 
