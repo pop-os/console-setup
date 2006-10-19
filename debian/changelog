@@ -14,8 +14,9 @@ console-setup (1.9) UNRELEASED; urgency=low
     - make the purpose of the codeset question clearer.
   * Use user-friendly choices in the codeset question.
   * Updated Bulgarian translation of the templates.
+  * Add some capital Greek letters to standard.equivalents.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 22:31:50 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 20 Oct 2006 01:27:47 +0300
 
 console-setup (1.8) unstable; urgency=low
 
