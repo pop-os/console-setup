@@ -43,6 +43,7 @@ build: main_build debian/console-setup.config debian/console-setup-mini.config
 .PHONY : clean
 clean:
 	dh_testdir
+	debconf-updatepo
 	-$(MAKE) maintainer-clean
 	-rm -f build main_build
 	-rm -f debian/*.config

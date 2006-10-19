@@ -12,9 +12,10 @@ console-setup (1.9) UNRELEASED; urgency=low
     - console-setup-mini should not ask questions in debconf for the encoding
       since only UTF-8 is supported.
     - make the purpose of the codeset question clearer.
+  * Use user-friendly choices in the codeset question.
   * Updated Bulgarian translation of the templates.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 22:30:55 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 Oct 2006 22:31:50 +0300
 
 console-setup (1.8) unstable; urgency=low
 

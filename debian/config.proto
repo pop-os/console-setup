@@ -95,6 +95,28 @@ CONFIGFILE=/etc/default/console-setup
 # ...
 # variant*it*nodeadkeys*Eliminate dead keys'
 
+## CODESETS ##
+
+codesets='Arabic*.Arabic
+Armenian*Armenian
+CyrKoi*Cyrillic - KOI8-R and KOI8-U
+CyrAsia*Cyrillic - non-Slavic languages
+CyrSlav*Cyrillic - Slavic languages (also Bosnian and Serbian Latin)
+Ethiopian*.Ethiopic
+Georgian*Georgian
+Greek*Greek
+Hebrew*Hebrew
+Lao*Lao
+Lat15*Latin1 and Latin5 - western Europe and Turkic languages
+Lat2*Latin2 - central Europe and Romanian
+Lat38*Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh
+Lat7*Latin7 - Lithuanian; Latvian; Maori and Marshallese
+Vietnamese*.Latin - Vietnamese
+Thai*Thai
+Uni1*.Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic
+Uni2*.Combined - Latin; Slavic Cyrillic; Greek
+Uni3*.Combined - Latin; Slavic and non-Slavic Cyrillic'
+
 db_capb backup
 
 # Set default value for a question only if it is not seen by the user
@@ -235,6 +257,18 @@ available_fontsizes () {
 	grep "^$codeset-$fontface[0-9]" | \
 	sed -e "s/^$codeset-$fontface//" | \
 	uniq
+}
+
+decode_codeset () {
+    echo "$codesets" | \
+	grep -F "$**" | \
+	sed 's/.*[*]//'
+}
+
+encode_codeset () {
+    echo "$codesets" | \
+	grep -F "*$*" | \
+	sed 's/[*].*//'
 }
 
 if which locale >/dev/null; then
@@ -652,7 +686,7 @@ case "$locale" in
 	;;
 esac
 
-
+default_codeset="`decode_codeset $default_codeset`"
 
 default_layout=''
 default_variant=''
@@ -1078,10 +1112,11 @@ if [ -e $CONFIGFILE ]; then
     
     default_ttys="$ACTIVE_CONSOLES"
     default_charmap="$CHARMAP"
-    default_codeset="$CODESET"
     default_fontface="$FONTFACE"
     default_fontsize="$FONTSIZE"
     default_model="$XKBMODEL"
+
+    default_codeset="`decode_codeset $CODESET`"
 
     case "$XKBLAYOUT" in
 	# TODO: make s.t. to not forget to update this list
@@ -1553,12 +1588,13 @@ while :; do
 	    db_default console-setup/codeset "$default_codeset"
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
+		db_get console-setup/codeset
+		codeset="`encode_codeset $RET`"
+		db_set console-setup/codesetcode "$codeset"
 		STATE=$(($STATE + 1))
 	    else
 		STATE=$(($STATE - 1))
 	    fi
-	    db_get console-setup/codeset
-	    codeset=$RET
 	    ;;
 	7)
 	    fontfaces=`available_fontfaces`
