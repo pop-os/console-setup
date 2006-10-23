@@ -1876,7 +1876,7 @@ if (! $symbols) {
 
 ########### COMPUTE ARCH ###########################################
 
-if ($keycodes =~ /(^|\+|\|)macintosh(\([^\)]*\))?($|\+|\|)/) {
+if ($keycodes =~ /(^|\+|\|)macintosh\(old\)($|\+|\|)/) {
     $arch = 'macintosh';
 } elsif ($keycodes =~ /(^|\+|\|)ataritt(\([^\)]*\))?($|\+|\|)/) {
     $arch = 'ataritt';

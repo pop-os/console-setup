@@ -1,4 +1,11 @@
-console-setup (1.9) UNRELEASED; urgency=low
+console-setup (1.10) unstable; urgency=low
+
+  * Update ckbcomp for the new xkb-data (now not all xkb_keycodes in
+    keycodes/macintosh are old macintosh).
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 23 Oct 2006 11:54:06 +0300
+
+console-setup (1.9) unstable; urgency=low
 
   * Remove the udebs in order to make the migration from unstable to
     testing automatic.
@@ -16,7 +23,7 @@ console-setup (1.9) UNRELEASED; urgency=low
   * Updated Bulgarian translation of the templates.
   * Add some capital Greek letters to standard.equivalents and approximate
     BOX DRAWINGS HEAVY HORIZONTAL by BOX DRAWINGS LIGHT HORIZONTAL.
-  * Move the bullet as first symbol in useful.set - it is used by w3m.
+  * Make the bullet to be the first symbol in useful.set - it is used by w3m.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Fri, 20 Oct 2006 01:53:11 +0300
 
