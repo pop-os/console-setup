@@ -1,3 +1,10 @@
+console-setup (1.11) unstable; urgency=low
+
+  * Instead of X keycode 123 (<KPDC>) map X keycode 211 (<AB11>) to kernel
+    keycode 89.  Thanks to Rafael Almeida, closes: #394962.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 24 Oct 2006 21:08:24 +0300
+
 console-setup (1.10) unstable; urgency=low
 
   * Update ckbcomp for the new xkb-data (now not all xkb_keycodes in
