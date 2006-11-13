@@ -1,3 +1,6 @@
+# When the source font supports several symbols from a class, the last
+# supported symbol is used.
+#
 # History:
 #
 # 2005-07-04  Initial version based on xos4-2.dup file from the suite
@@ -14,6 +17,58 @@
 # 2006-10-20  1. Add some capital Greek letters
 #             2. Approximate U+2501 (BOX DRAWINGS HEAVY HORIZONTAL) by
 #                U+2500 (BOX DRAWINGS LIGHT HORIZONTAL)
+# 2006-10-26  Approximate some symbols used by popular applications:
+#             1. Use the black square (U+25A0, required symbol) as
+#                approximation for the black vertical rectangle
+#                (U+25AE)
+#             2. Use the bullet (U+2022) to approximate the black
+#                circle (U+25CF).  It seams all current fonts support
+#                the bullet.
+#             3. Use the up-, down-, right- and leftwards arrows
+#                (U+2190-U+2193) as approximations for the triangles
+#                (U+25B2, U+25B6, U+25BC and U+25C0).
+#             4. Use the light horizontal line (U+2500, a required
+#                symbol) as approximation for the heavy horizontal
+#                line (U+2501)
+#             5. Use the left- and right-pointing double angle
+#                quotation marks as approximation for the signs much
+#                less-than and much greater-than.  All current fonts
+#                support these quotation marks.
+
+
+# SOME EXPERIMENTAL NOT VERY ACURATE APPROXIMATIONS
+# For symbols used by some popular slang, dialog, whiptail, and
+# curses-based applications.
+
+U+25CF U+2022
+# U+25CF:   BLACK CIRCLE
+# U+2022:   BULLET
+U+25AE U+25A0
+# U+25AE:   BLACK VERTICAL RECTANGLE
+# U+25A0:   BLACK SQUARE
+U+25B2 U+2191
+# U+25B2:   BLACK UP-POINTING TRIANGLE
+# U+2191:   UPWARDS ARROW
+U+25BC U+2193
+# U+25BC:   BLACK DOWN-POINTING TRIANGLE
+# U+2193:   DOWNWARDS ARROW
+U+25C0 U+2190
+# U+25C0:   BLACK LEFT-POINTING TRIANGLE
+# U+2190:   LEFTWARDS ARROW
+U+25B6 U+2192
+# U+25B6:   BLACK RIGHT-POINTING TRIANGLE
+# U+2192:   RIGHTWARDS ARROW
+U+2501 U+2500
+# U+2501:   BOX DRAWINGS HEAVY HORIZONTAL
+# U+2500:   BOX DRAWINGS LIGHT HORIZONTAL
+U+226A U+00AB
+# U+226A:   MUCH LESS-THAN
+# U+00AB:   LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+U+226B U+00BB
+# U+226B:   MUCH GREATER-THAN
+# U+00BB:   RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+
+# STANDARD APPROXIMATIONS
 
 U+FFFD U+2666
 # U+FFFD:   REPLACEMENT CHARACTER
@@ -43,9 +98,6 @@ U+2011 U+2010 U+00AD U+2212 U+2013 U+2012 U+002D
 U+2015 U+2014
 # U+2015:   HORIZONTAL BAR
 # U+2014:   EM DASH
-U+2501 U+2500
-# U+2501:   BOX DRAWINGS HEAVY HORIZONTAL
-# U+2500:   BOX DRAWINGS LIGHT HORIZONTAL
 U+02C9 U+00AF
 # U+02C9:   MODIFIER LETTER MACRON
 # U+00AF:   MACRON

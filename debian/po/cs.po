@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2006-10-20 00:36+0300\n"
+"POT-Creation-Date: 2006-11-13 19:48+0200\n"
 "PO-Revision-Date: 2006-04-01 15:42+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -18,115 +18,115 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Arabic"
+msgid ". Arabic"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Armenian"
+msgid "# Armenian"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Cyrillic - KOI8-R and KOI8-U"
+msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Cyrillic - non-Slavic languages"
+msgid "# Cyrillic - non-Slavic languages"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Ethiopic"
+msgid ". Ethiopic"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Georgian"
+msgid "# Georgian"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Greek"
+msgid "# Greek"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Hebrew"
+msgid "# Hebrew"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Lao"
+msgid "# Lao"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Latin1 and Latin5 - western Europe and Turkic languages"
+msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Latin2 - central Europe and Romanian"
+msgid "# Latin2 - central Europe and Romanian"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
+msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Latin7 - Lithuanian; Latvian; Maori and Marshallese"
+msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Latin - Vietnamese"
+msgid ". Latin - Vietnamese"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid "Thai"
+msgid "# Thai"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
+msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Combined - Latin; Slavic Cyrillic; Greek"
+msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ""
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-msgid ".Combined - Latin; Slavic and non-Slavic Cyrillic"
+msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ""
 
 #. Type: select

@@ -1,3 +1,15 @@
+console-setup (1.12) unstable; urgency=low
+
+  * standards.equivalents: approximate symbols used by some popular
+    console applications.
+  * New German translation.  Thanks to Matthias Julius, closes: #396815.
+  * Updated French translation.  Thanks to Jean-Luc Coulon, closes: #398023.
+  * Allign the choices of console-setup/codeset.  Unfuzzy the translations.
+  * Updated Fonts/bdf/georgian16.psf (author: Gia Shervashidze).  Update
+    provided by Vladimer Sichinava.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 13 Nov 2006 17:30:40 +0200
+
 console-setup (1.11) unstable; urgency=low
 
   * Instead of X keycode 123 (<KPDC>) map X keycode 211 (<AB11>) to kernel
