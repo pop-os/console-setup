@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: console-setup\n"
 "Report-Msgid-Bugs-To: pkg-kbd-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2006-11-13 19:48+0200\n"
-"PO-Revision-Date: 2006-11-13 17:14+0200\n"
+"PO-Revision-Date: 2006-11-13 21:22+0200\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: BULGARIAN <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,30 +24,26 @@ msgstr ". арабски"
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Armenian"
-msgstr "o арменски"
+msgstr "# арменски"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "o кирилица - KOI8-R и KOI8-U"
+msgstr "# кирилица - KOI8-R и KOI8-U"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "o кирилица - неславянски езици"
+msgstr "# кирилица - неславянски езици"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "o кирилица - славянски езици (вкл. босненска и сръбска латиница)"
+msgstr "# кирилица - славянски езици (вкл. босненска и сръбска латиница)"
 
 #. Type: select
 #. Choices
@@ -58,58 +54,50 @@ msgstr ". етиопски"
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Georgian"
-msgstr "o грузински"
+msgstr "# грузински"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Greek"
-msgstr "o гръцки"
+msgstr "# гръцки"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Hebrew"
-msgstr "o еврейски"
+msgstr "# еврейски"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Lao"
-msgstr "o лао"
+msgstr "# лао"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "o Latin1 и Latin5 - западна Европа и тюркски езици"
+msgstr "# Latin1 и Latin5 - западна Европа и тюркски езици"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "o Latin2 - централна Европа и румънски"
+msgstr "# Latin2 - централна Европа и румънски"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "o Latin3 и Latin8 - ниянджа; есперанто; ирландски; малтийски; уелски"
+msgstr "# Latin3 и Latin8 - ниянджа; есперанто; ирландски; малтийски; уелски"
 
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "o Latin7 - литовски; латвийски; маорски; маршалски"
+msgstr "# Latin7 - литовски; латвийски; маорски; маршалски"
 
 #. Type: select
 #. Choices
@@ -120,9 +108,8 @@ msgstr ". Latin - виетнамски"
 #. Type: select
 #. Choices
 #: ../console-setup.templates:1001
-#, fuzzy
 msgid "# Thai"
-msgstr "o тайски"
+msgstr "# тайски"
 
 #. Type: select
 #. Choices
