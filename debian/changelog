@@ -1,3 +1,14 @@
+console-setup (1.14) unstable; urgency=low
+
+  * Non-maintainer upload to fix pending l10n issues.
+  * Debconf translations:
+    - Czech. Closes: #408602
+    - Spanish. Closes: #412128
+    - Galician. Closes: #413356
+    - Convert French to UTF-8
+
+ -- Christian Perrier <bubulle@debian.org>  Sun,  4 Mar 2007 19:54:11 +0100
+
 console-setup (1.13) unstable; urgency=low
 
   * Unfuzzy the translations.
