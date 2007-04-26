@@ -1,3 +1,41 @@
+console-setup (1.16) unstable; urgency=low
+
+  * Thanks to Colin Watson and Ubuntu team for the many bugs and
+    improvements fixed in this release.  Patches were provided by Colin
+    Watson:
+    - Do not sorce the debconf library in the middle of the postinst,
+      closes: #420831.
+    - Removed from the source package several directories
+      debian/UDEB-PACKAGE-NAME.  (The udebs were removed from
+      debian/control running the clean target.)  Closes: #420912.
+    - In config.proto map fr_CH locale to Swiss French default keyboard
+      layout.  Closes: #420828.
+    - Pass xkbdir variable on the make-command line, because else its
+      value is overriden and the keymap definitions in Keyboard/ckb are
+      used.  Closes: #420827.
+    - A new option --save-only for setupcon.
+    - Ship KeyboardNames.pl and kbdnames-maker.  Closes: #420914.
+    - Fix Esperanto locale check in config.proto.  Closes: #420785.
+    - The Bosnian layout is 'ba', not 'bs'.  Closes: #420787.
+    - The Devanagary layout variant is 'deva', not 'dev'.  Closes: #420797.
+    - Do not leave empty default codeset for unsupported locales.
+      Closes: #420802.  
+    - Use 'jp(latin)' instead of 'us' for Latin mode of Japanese keyboards.
+  * Two additions to the FAQ:
+    - Add a suggestion for the VBERestore option.  Thanks to Dmitry
+      Semyonov, closes: #402143.
+    - Document CapsLock working as ShiftLock in Unicode mode.
+  * Added Dutch translation.  Thanks to : Bart Cornelis, closes: #415518.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 26 Apr 2007 10:09:54 +0300
+
+console-setup (1.15) unstable; urgency=low
+
+  * Updated Georgian letters for Fixed16 and Fixed14.  Thanks to Vladimer
+    Sichinava.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 14 Mar 2007 21:50:54 +0200
+
 console-setup (1.14) unstable; urgency=low
 
   * Non-maintainer upload to fix pending l10n issues.

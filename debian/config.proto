@@ -364,7 +364,7 @@ case "$locale" in
 	default_codeset=Lat15
 	codeset_priority=low
 	;;
-    eo_*)
+    eo|eo.*|eo_*|eo\@*)
 	default_codeset=Lat38
 	codeset_priority=low
 	;;
@@ -685,6 +685,9 @@ case "$locale" in
 	codeset_priority=high
 	;;
 esac
+if [ "$default_codeset" = unsupported ]; then
+    default_codeset=Uni1
+fi
 
 default_codeset="`decode_codeset $default_codeset`"
 
@@ -717,6 +720,10 @@ case "$locale" in
 	;;
     *_CA*)
 	default_layout=ca  # Canada
+	;;
+    fr_CH*)
+	default_layout=ch  # Switzerland
+	default_variant=fr # French
 	;;
     *_CH*)
 	default_layout=ch  # Switzerland
@@ -847,7 +854,7 @@ case "$locale" in
 	default_layout=ara # Arabic
 	;;
     bs_*)
-	default_layout=bs  # Bosnia and Herzegovina
+	default_layout=ba  # Bosnia and Herzegovina
 	;;
     de_*)
 	default_layout=de  # Germany
@@ -865,7 +872,7 @@ case "$locale" in
 	;;
     hi_*)
 	default_layout=in  # India
-	default_variant=dev # Devangari
+	default_variant=deva # Devanagari
 	;;
     hr_*)
 	default_layout=hr  # Croatia
@@ -1053,7 +1060,7 @@ if db_get debian-installer/keymap && [ "$RET" ]; then
 	gb) XKBLAYOUT="gb";;
 	is) XKBLAYOUT="is";;
 	it) XKBLAYOUT="it";;
-	jp106) XKBLAYOUT="jp"; XKBVARIANT="jp106";;
+	jp106) XKBLAYOUT="jp"; XKBVARIANT="jp106"; XKBMODEL="jp106";;
 	la) XKBLAYOUT="latam";;
 	lt) XKBLAYOUT="lt";; 
 	lv-latin4) XKBLAYOUT="lv";;
@@ -1099,6 +1106,9 @@ if db_get debian-installer/keymap && [ "$RET" ]; then
 	    layout_priority=high
 	    ;;
 	*)
+	    if [ "$XKBMODEL" ]; then
+		default_model="$XKBMODEL"
+	    fi
 	    default_layout="$XKBLAYOUT"
 	    default_variant="$XKBVARIANT"
 	    layout_priority=medium
@@ -1120,7 +1130,7 @@ if [ -e $CONFIGFILE ]; then
 
     case "$XKBLAYOUT" in
 	# TODO: make s.t. to not forget to update this list
-	cs,cs|us,am|us,ara|us,ben|us,bd|us,bg|us,bt|us,by|us,deva|us,ge|us,gh|us,gr|us,guj|us,guru|us,il|us,in|us,ir|us,iku|us,jp|us,kan|us,kh|us,la|us,lao|us,lk|us,mk|us,mm|us,mn|us,mv|us,mal|us,ori|us,pk|us,ru|us,scc|us,sy|us,syr|us,tel|us,th|us,tj|us,tam|us,ua|us,uz)
+	cs,cs|us,am|us,ara|us,ben|us,bd|us,bg|us,bt|us,by|us,deva|us,ge|us,gh|us,gr|us,guj|us,guru|us,il|us,in|us,ir|us,iku|jp,jp|us,jp|us,kan|us,kh|us,la|us,lao|us,lk|us,mk|us,mm|us,mn|us,mv|us,mal|us,ori|us,pk|us,ru|us,scc|us,sy|us,syr|us,tel|us,th|us,tj|us,tam|us,ua|us,uz)
 	    default_layout=${XKBLAYOUT#*,}
 	    default_variant="${XKBVARIANT#*,}"
 	    unsupported_layout=no
@@ -1291,9 +1301,21 @@ while :; do
 				;;
 			esac
 			;;
-		    # TODO: make s.t. to not forget to update this list
-		    # Don't forget to update also the list in kbdcompiler
-		    am|ara|ben|bd|bg|bt|by|deva|ge|gh|gr|guj|guru|il|in|ir|iku|jp|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
+		    jp)
+			case "$variant" in
+			    latin)
+				latin=yes
+				real_layout=$layout
+				;;
+			    *)
+				latin=no
+				real_layout=jp,jp
+				;;
+			esac
+			;;
+		    # TODO: make s.t. to not forget to update this list.  Don't
+		    # forget to update also the nonlatin list in kbdcompiler
+		    am|ara|ben|bd|bg|bt|by|deva|ge|gh|gr|guj|guru|il|in|ir|iku|kan|kh|la|lao|lk|mk|mm|mn|mv|mal|ori|pk|ru|scc|sy|syr|tel|th|tj|tam|ua|uz)
 			latin=no
 			real_layout=us,$layout
 			;;
@@ -1320,6 +1342,8 @@ while :; do
 				"latin,$variant"
 			    ;;
 		    esac
+		elif [ "$real_layout" = jp,jp ]; then
+			    db_set console-setup/variantcode "latin,$variant"
 		else
 		    db_set console-setup/variantcode ",$variant"
 		fi
@@ -1585,7 +1609,11 @@ while :; do
 	    fi
 	    ;;
 	6)
-	    db_default console-setup/codeset "$default_codeset"
+	    # It shouldn't be possible for $default_codeset to be
+	    # empty, but just a precaution.
+	    if [ "$default_codeset" ]; then
+		db_default console-setup/codeset "$default_codeset"
+	    fi
 	    db_input $codeset_priority console-setup/codeset || true
 	    if db_go; then
 		db_get console-setup/codeset

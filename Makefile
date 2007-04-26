@@ -20,6 +20,9 @@ install: build
 	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
 	install -d $(prefix)/share/consoletrans
 	install -m 644 Keyboard/acm/*.acm.gz $(prefix)/share/consoletrans
+	install -d $(prefix)/share/console-setup
+	install -m 644 Keyboard/MyKeyboardNames.pl $(prefix)/share/console-setup/KeyboardNames.pl
+	install Keyboard/kbdnames-maker $(prefix)/share/console-setup
 	install -d  $(prefix)/bin/
 	install Keyboard/ckbcomp $(prefix)/bin/
 	install -d  $(bootprefix)/bin/

@@ -66,3 +66,4 @@ Description: Font converter to generate console fonts from BDF source fonts
  create fonts for text video modes the width of the glyph matrix of
  the source BDF font should be 7, 8 or 9 pixels, otherwise the
  converter creates fonts suitable for framebuffer only.
+
