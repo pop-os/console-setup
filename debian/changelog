@@ -26,6 +26,7 @@ console-setup (1.16) UNRELEASED; urgency=low
     - Add --save-only option to setupcon.  Closes: #420832.
     - Multiply the Installer-Menu-Item field of the udebs by 100.
       Closes: #421260.
+    - By default do not use AltGr with basic US keyboard.  Closes: #421263.
   * Two additions to the FAQ:
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.

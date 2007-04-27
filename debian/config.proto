@@ -1372,6 +1372,10 @@ while :; do
 		    db_input high console-setup/toggle || true
 		    db_input medium console-setup/switch || true
 		fi
+		if [ "$layout" = us -a "$variant" = '' ]; then
+                    # basic US keyboard doesn't use AltGr.
+		    db_default console-setup/altgr 'No AltGr key'
+		fi
 		db_input medium console-setup/altgr || true
 		db_input medium console-setup/compose || true
 		db_endblock
