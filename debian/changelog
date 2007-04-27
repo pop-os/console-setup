@@ -27,6 +27,8 @@ console-setup (1.16) UNRELEASED; urgency=low
     - Multiply the Installer-Menu-Item field of the udebs by 100.
       Closes: #421260.
     - By default do not use AltGr with basic US keyboard.  Closes: #421263.
+    - Make sure amiga, ataritt, sun4 and sun5 are in KeyboardNames.pl even
+      if they are not in the xml database.  Closes: #420821.
   * Two additions to the FAQ:
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.
