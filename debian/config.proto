@@ -1746,4 +1746,21 @@ done
 
 if [ $STATE -eq 0 ]; then
     exit 10
+else
+    # we don't do the following corrections during the state 2 or 3 of
+    # the loop because if the user backs up and selects another layout
+    # the keyboard model will be wrong.  We also want the combinations
+    # Brasilian layout on Japanese keyboard and Japanese layout on
+    # Brasilian keyboard to be possible.
+    db_get console-setup/modelcode
+    if [ "$RET" = "$default_model" ]; then
+	if [ "$layout" = br ]; then 
+	    model=abnt2
+	elif [ "$layout" = jp ]; then 
+	    model=jp106
+	fi
+	db_set console-setup/modelcode "$model"
+    fi
 fi
+
+exit 0
