@@ -23,6 +23,9 @@ console-setup (1.16) UNRELEASED; urgency=low
     - Use 'jp(latin)' instead of 'us' in the Latin mode of Japanese
       keyboards.  Override the keyboard model if it was chosen by default
       and the layout is Japanese or Brasilian.  Closes: #420824.
+    - Add --save-only option to setupcon.  Closes: #420832.
+    - Multiply the Installer-Menu-Item field of the udebs by 100.
+      Closes: #421260.
   * Two additions to the FAQ:
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.
