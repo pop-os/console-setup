@@ -33,9 +33,11 @@ console-setup (1.16) UNRELEASED; urgency=low
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.
     - Document CapsLock working as ShiftLock in Unicode mode.
-  * Added Dutch translation.  Thanks to : Bart Cornelis, closes: #415518.
+  * Added Dutch translation.  Thanks to Bart Cornelis, closes: #415518.
+  * Added manual page for setupcon.  Thanks to Vassilis Pandis,
+    closes: #405005. 
 
- --
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 28 Apr 2007 18:59:16 +0300
 
 console-setup (1.15) unstable; urgency=low
 
