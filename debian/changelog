@@ -29,6 +29,9 @@ console-setup (1.16) UNRELEASED; urgency=low
     - By default do not use AltGr with basic US keyboard.  Closes: #421263.
     - Make sure amiga, ataritt, sun4 and sun5 are in KeyboardNames.pl even
       if they are not in the xml database.  Closes: #420821.
+    - Talk about 'national' instead of 'non-Latin' mode in the templates.
+      Treat the Lithuanian keyboard as a two-mode keyboard similarly to
+      the Serbian keyboard.  Closes: #421261.
   * Two additions to the FAQ:
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.
@@ -37,7 +40,7 @@ console-setup (1.16) UNRELEASED; urgency=low
   * Added manual page for setupcon.  Thanks to Vassilis Pandis,
     closes: #405005. 
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 28 Apr 2007 18:59:16 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue,  1 May 2007 13:59:29 +0300
 
 console-setup (1.15) unstable; urgency=low
 
