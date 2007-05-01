@@ -862,6 +862,9 @@ case "$locale" in
     el_*)
 	default_layout=gr  # Greece
 	;;
+    eo|eo.*|eo_*|eo\@*)
+	default_layout=epo  # Esperanto
+	;;
     fr_*)
 	default_layout=fr  # France
 	layout_priority=critical
@@ -1385,9 +1388,13 @@ while :; do
 		    db_input high console-setup/toggle || true
 		    db_input medium console-setup/switch || true
 		fi
-		if [ "$layout" = us -a "$variant" = '' ]; then
-                    # basic US keyboard doesn't use AltGr.
-		    db_default console-setup/altgr 'No AltGr key'
+		if [ ! -f $CONFIGFILE -a "$layout" = us ]; then
+		    if [ "$variant" = '' ]; then
+			# basic US keyboard doesn't use AltGr.
+			db_default console-setup/altgr 'No AltGr key'
+		    else
+			db_default console-setup/altgr 'Right Alt'
+		    fi
 		fi
 		db_input medium console-setup/altgr || true
 		db_input medium console-setup/compose || true

@@ -2974,6 +2974,7 @@ foreach my $key (keys %symbols_table) {
     }
 }
 
+# later in the code we use that the distance is always less than 1000000
 sub distance {
     my $x = $_[0];
     my $y = $_[1];
@@ -3012,9 +3013,9 @@ sub x_to_kernelsym {
 	    return $kernelkeysym;
 	}
     } else {
-	$kernelkeysym = ($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/
+	$kernelkeysym = ($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})$/
 			 ? $1
-			 : ($xkeysym =~ /^U([0-9a-fA-F]+)/
+			 : ($xkeysym =~ /^U([0-9a-fA-F]+)$/
 			    ? $1 
 			    : undef));
     }
@@ -3135,21 +3136,34 @@ sub flatten {
 	    }
 	    next if ($real_level < 0);
 	    my $xkeysym = $symbols_table{$key}[$real_group][$real_level];
+	    my $is_special = ($xkeysym !~ /^U[0-9a-fA-F]+$/
+			      && defined $xkbsym_table{$xkeysym}
+			      && ($xkbsym_table{$xkeysym}
+				  !~ /^[0-9a-fA-F]{4}$/));
 	    my $kernelkeysym = x_to_kernelsym ($xkeysym);
 	    $vector[$coord] = $kernelkeysym;
 	    my $ascii = x_to_ascii ($xkeysym);
-	    next unless (defined $ascii);
+	    next unless (defined $ascii or $is_special);
 	    for my $approximated_group (0 .. 3) {
 		for my $approximated_level (0 .. 3) {
 		    my $approximated_coord = ($approximated_level
 					      + ($approximated_group << 4));
 		    my $distance = distance ($approximated_coord, $coord);
-		    approximate (($approximated_coord | 0x08), 
-				 $metasyms[$ascii + 1], $distance);
-		    approximate (($approximated_coord | 0x04), 
-				 $controlsyms[$ascii + 1], $distance);
-		    approximate (($approximated_coord | 0x0c), 
-				 $metacontrolsyms[$ascii + 1], $distance);
+		    if (defined $ascii) {
+			approximate (($approximated_coord | 0x08), 
+				     $metasyms[$ascii + 1], $distance);
+			approximate (($approximated_coord | 0x04), 
+				     $controlsyms[$ascii + 1], $distance);
+			approximate (($approximated_coord | 0x0c), 
+				     $metacontrolsyms[$ascii + 1], $distance);
+		    } elsif ($is_special) {
+			approximate (($approximated_coord | 0x08), 
+				     $kernelkeysym, $distance);
+			approximate (($approximated_coord | 0x04), 
+				     $kernelkeysym, $distance);
+			approximate (($approximated_coord | 0x0c), 
+				     $kernelkeysym, $distance);
+		    }
 		}
 	    }
 	}
