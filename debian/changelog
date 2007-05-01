@@ -1,4 +1,4 @@
-console-setup (1.16) UNRELEASED; urgency=low
+console-setup (1.16) unstable; urgency=low
 
   * Update ckbconf with the most recent list of xkeysyms.
   * Thanks to Colin Watson and Ubuntu team for the many bugs and
@@ -34,6 +34,8 @@ console-setup (1.16) UNRELEASED; urgency=low
     - Talk about 'national' instead of 'non-Latin' mode in the templates.
       Treat the Lithuanian keyboard as a two-mode keyboard similarly to
       the Serbian keyboard.  Closes: #421261.
+  * Do not ignore the Control+ and Alt+non_symbol_key combinations.
+    Thanks to Karsten Hilbert, closes: #421796.
   * Two additions to the FAQ:
     - Add a suggestion for the VBERestore option.  Thanks to Dmitry
       Semyonov, closes: #402143.
@@ -43,7 +45,7 @@ console-setup (1.16) UNRELEASED; urgency=low
   * Added Dutch translation.  Thanks to Bart Cornelis, closes: #415518.
   * Updated Bulgarian translation.
   
- -- Anton Zinoviev <zinoviev@debian.org>  Tue,  1 May 2007 14:04:16 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue,  1 May 2007 23:48:12 +0300
 
 console-setup (1.15) unstable; urgency=low
 
