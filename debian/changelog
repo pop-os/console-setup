@@ -1,3 +1,10 @@
+console-setup (1.17) UNRELEASED; urgency=low
+
+  * Add a manual page for ckbcomp.  Thanks to Vassilis Pandis,
+    closes: #405005. 
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 14 May 2007 16:48:50 +0300
+
 console-setup (1.16) unstable; urgency=low
 
   * Update ckbconf with the most recent list of xkeysyms.
