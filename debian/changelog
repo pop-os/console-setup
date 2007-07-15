@@ -2,8 +2,21 @@ console-setup (1.17) UNRELEASED; urgency=low
 
   * Add a manual page for ckbcomp.  Thanks to Vassilis Pandis,
     closes: #405005. 
+  * Apply a patch by Colin Watson:
+    - enable udebs;
+    - remove unhelpful defaults for several questions;
+    - allow preseeding of console-setup/modelcode,
+      console-setup/layoutcode, console-setup/variantcode,
+      console-setup/optionscode, and console-setup/fontsize;
+    - remove outdated note about loadkeys in console-setup-udeb's
+      description;
+    - Add a few bits of installer integration to console-setup-udeb
+      borrowed from kbd-chooser. 
+    I disabled the code for making UTF-8 default charmap in d-i because
+    there are locales which use other charmap.  However I made setupcon to
+    always use UTF-8 in d-i environment.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Mon, 14 May 2007 16:48:50 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 15 Jul 2007 16:26:36 +0300
 
 console-setup (1.16) unstable; urgency=low
 
