@@ -154,31 +154,25 @@ _Description: Compose key:
 
 Template: console-setup/modelcode
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 
 Template: console-setup/layoutcode
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 
 Template: console-setup/variantcode
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 
 Template: console-setup/optionscode
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 
 Template: console-setup/fontsize
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 
 Template: console-setup/codesetcode
 Type: string
-Default: this default value is completely ignored
 Description: for internal use
 

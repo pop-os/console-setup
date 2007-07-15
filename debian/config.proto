@@ -926,8 +926,12 @@ esac
 
 if which locale >/dev/null; then
     default_charmap=`locale charmap`
+# TODO: Let localechooser provides information about the charmap
+#       Untill then we will ask.
+# elif [ -d /lib/debian-installer ]; then
+#     default_charmap=UTF-8
 else
-    default_charmap=unknown # TODO: d-i
+    default_charmap=unknown
 fi
 if [ "$locale" = C ]; then
     default_charmap=UTF-8
@@ -1119,10 +1123,36 @@ if db_get debian-installer/keymap && [ "$RET" ]; then
     esac
 fi
     
+# Get defaults from debconf, to allow preseeding.
+if [ -d /lib/debian-installer ]; then
+    if db_get console-setup/modelcode && [ "$RET" ]; then
+	default_model="$RET"
+    fi
+    if db_get console-setup/layoutcode && [ "$RET" ]; then
+	default_layout="$RET"
+	layout_priority=medium
+    fi
+    if db_get console-setup/variantcode && [ "$RET" ]; then
+	default_variant="$RET"
+    fi
+    if db_get console-setup/optionscode && [ "$RET" ]; then
+	XKBOPTIONS="$RET"
+	got_xkboptions=yes
+    fi
+    if db_get console-setup/fontsize && [ "$RET" ]; then
+	db_set console-setup/fontsize-text "$RET"
+	db_set console-setup/fontsize-fb "$RET"
+    fi
+fi
+
 # Load the config file, if it exists.
 if [ -e $CONFIGFILE ]; then
     . $CONFIGFILE || true
     
+    got_full_config=yes
+    got_xkboptions=yes
+    model_priority=medium
+    layout_priority=medium
     default_ttys="$ACTIVE_CONSOLES"
     default_charmap="$CHARMAP"
     default_fontface="$FONTFACE"
@@ -1151,7 +1181,9 @@ if [ -e $CONFIGFILE ]; then
 	    default_variant="$XKBVARIANT"
 	    ;;
     esac
+fi
 
+if [ "$got_xkboptions" = yes ]; then
     default_toggle='No toggling'
     default_switch='No temporary switch'
     default_altgr='No AltGr key'
@@ -1232,7 +1264,9 @@ if [ -e $CONFIGFILE ]; then
 		unsupported_layout=yes;;
 	esac
     done
+fi
 
+if [ "$got_full_config" = yes ]; then
     # Store values from config file into debconf db.
     
     db_set console-setup/ttys "$default_ttys"
@@ -1242,6 +1276,8 @@ if [ -e $CONFIGFILE ]; then
     db_set console-setup/fontsize-text "$default_fontsize"
     db_set console-setup/fontsize-fb "$default_fontsize"
     db_set console-setup/fontsize "$default_fontsize"
+fi
+if [ "$got_xkboptions" = yes ]; then
     db_set console-setup/toggle "$default_toggle"
     db_set console-setup/switch "$default_switch"
     db_set console-setup/altgr "$default_altgr"
