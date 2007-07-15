@@ -1,4 +1,4 @@
-console-setup (1.17) UNRELEASED; urgency=low
+console-setup (1.17) unstable; urgency=low
 
   * Add a manual page for ckbcomp.  Thanks to Vassilis Pandis,
     closes: #405005. 
@@ -15,8 +15,11 @@ console-setup (1.17) UNRELEASED; urgency=low
     I disabled the code for making UTF-8 default charmap in d-i because
     there are locales which use other charmap.  However I made setupcon to
     always use UTF-8 in d-i environment.
+  * Updated French and Dutch translations, new Portuguese.  Thanks to
+    Pedro Ribeiro, Jean-Luc Coulon and Bart Cornelis.
+    Closes: #424665, #425773, #426082.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 15 Jul 2007 16:26:36 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 15 Jul 2007 16:35:55 +0300
 
 console-setup (1.16) unstable; urgency=low
 
