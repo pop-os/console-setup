@@ -112,6 +112,10 @@ fi
 
 . "$CONFIG"
 
+if [ -d /lib/debian-installer ]; then
+    CHARMAP=UTF-8
+fi
+
 if [ "$verbose_option" = yes ]; then
     VERBOSE_OUTPUT=yes
 fi
