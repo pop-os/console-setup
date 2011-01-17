@@ -6,7 +6,8 @@ Uploaders: Anton Zinoviev <zinoviev@debian.org>, Christian Perrier <bubulle@debi
 Build-Depends-Indep: perl, libxml-parser-perl, xkb-data (>= 1.6), locales-all
 Build-Depends: debhelper (>= 7), po-debconf, bdfresize
 Standards-Version: 3.8.3
-Vcs-Svn: svn://svn.debian.org/d-i/trunk/packages/console-setup
+Vcs-Browser: http://git.debian.org/?p=d-i/console-setup.git
+Vcs-Git: git://git.debian.org/d-i/console-setup.git
 
 Package: keyboard-configuration
 Section: utils
