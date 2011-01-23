@@ -1,9 +1,14 @@
 console-setup (1.69) UNRELEASED; urgency=low
 
+  [ Joey Hess ]
   * rules: Remove obsolete commands to clean up when building from cvs, and
     svn. (Now in git; pollution of subdirs should no longer be an issue.)
 
- -- Joey Hess <joeyh@debian.org>  Tue, 18 Jan 2011 21:45:18 -0400
+  [ Samuel Thibault ]
+  * Use bg, ch, se instead of bg(bds), ch(de), se(basic), as those are not in
+    xorg.xml any more (closes: #610843).
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 23 Jan 2011 13:23:20 +0100
 
 console-setup (1.68) unstable; urgency=high
 
