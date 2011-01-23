@@ -580,7 +580,7 @@ for my $u (@requested) {
 	if ($defined_gliph) {
 	    warning sprintf ("U+%04X: no space in the font\n", $u);
 	} else {
-	    warning sprintf ("U+%04X: no gliph defined\n", $u);
+	    warning sprintf ("U+%04X: no glyph defined\n", $u);
 	}
     }
 }
