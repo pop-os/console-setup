@@ -1,4 +1,4 @@
-console-setup (1.69) UNRELEASED; urgency=low
+console-setup (1.69) unstable; urgency=low
 
   [ Joey Hess ]
   * rules: Remove obsolete commands to clean up when building from cvs, and
@@ -9,7 +9,7 @@ console-setup (1.69) UNRELEASED; urgency=low
     xorg.xml any more (closes: #610843).
   * config: Use the braille font name from the console-braille package.
 
- -- Samuel Thibault <sthibault@debian.org>  Fri, 11 Feb 2011 00:42:03 +0100
+ -- Julien Cristau <jcristau@debian.org>  Thu, 17 Feb 2011 22:54:58 +0100
 
 console-setup (1.68) unstable; urgency=high
 
