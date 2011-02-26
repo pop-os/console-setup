@@ -3,8 +3,10 @@ console-setup (1.71) UNRELEASED; urgency=low
   * FAQ: correct some typos and apply two patches by Jonathan Nieder.
     Thanks also to Vincent Lefevre.  Closes: #565391 (with apologies for
     the delay).
+  * Ask the keyboard option question even when Debconf doesn't support the
+    layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 15:33:02 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 19:30:26 +0200
 
 console-setup (1.70) unstable; urgency=low
 
