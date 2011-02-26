@@ -5,8 +5,10 @@ console-setup (1.71) UNRELEASED; urgency=low
     the delay).
   * Ask the keyboard option question even when Debconf doesn't support the
     layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
+  * console-setup.postinst: do not source /etc/default/keyboard in
+    /etc/default/console-setup (on new installs).
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 19:30:26 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 19:47:01 +0200
 
 console-setup (1.70) unstable; urgency=low
 
