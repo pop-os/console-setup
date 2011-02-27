@@ -1,5 +1,6 @@
 console-setup (1.71) UNRELEASED; urgency=low
 
+  [ Anton Zinoviev ]
   * FAQ: correct some typos and apply two patches by Jonathan Nieder.
     Thanks also to Vincent Lefevre.  Closes: #565391 (with apologies for
     the delay).
@@ -7,6 +8,9 @@ console-setup (1.71) UNRELEASED; urgency=low
     layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
   * console-setup.postinst: do not source /etc/default/keyboard in
     /etc/default/console-setup (on new installs).
+
+  [ Samuel Thibault ]
+  * Fonts/bdf2psf: Fix typo.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 19:47:01 +0200
 
@@ -26,7 +30,6 @@ console-setup (1.69) unstable; urgency=low
   [ Samuel Thibault ]
   * Use bg, ch, se instead of bg(bds), ch(de), se(basic), as those are not in
     xorg.xml any more (closes: #610843).
-  * Fonts/bdf2psf: Fix typo.
   * config: Use the braille font name from the console-braille package.
 
  -- Julien Cristau <jcristau@debian.org>  Thu, 17 Feb 2011 22:54:58 +0100
