@@ -2480,7 +2480,7 @@ sub matches_pattern {
 	if ($pattern eq '*') {
 	    return $string ne '';
 	}
-	if ($pattern =~ /^\$([a-zA-Z0-9]+)$/) {
+	if ($pattern =~ /^\$([a-zA-Z0-9_]+)$/) {
 	    for my $member (@{$rules_variables{$1}}) {
 		if ($string eq $member) {
 		    return 1;
@@ -2523,7 +2523,7 @@ if (@layouts) {
 	    $oldline = $_;
 	    next;
 	}
-	if (/^! ?\$([a-zA-Z0-9]+) ?= ?(.+)$/) {
+	if (/^! ?\$([a-zA-Z0-9_]+) ?= ?(.+)$/) {
 	    $rules_variables{$1} = [ split ' ', $2 ];
 	    next;
 	}
@@ -2730,13 +2730,13 @@ sub file_to_string {
     my $normalized = '';
     my $final_letter = 0;
     while ($string) {
-	if ($string =~ s/^\s+// && $final_letter && $string =~ /^[a-zA-Z0-9]/) {
+	if ($string =~ s/^\s+// && $final_letter && $string =~ /^[a-zA-Z0-9_]/) {
 	    $normalized = $normalized .' ';
 	    $final_letter = 0;
 	}
 	if ($string =~ s/^([^\"\s]+)//) {
 	    $normalized = $normalized . $1;
-	    $final_letter = ($1 =~ /[a-zA-Z0-9]$/);
+	    $final_letter = ($1 =~ /[a-zA-Z0-9_]$/);
 	    next;
 	}
 	if ($string =~ s/^(\"[^\"]*(\"|$))//) {
@@ -2980,7 +2980,7 @@ sub xkb_symbols_definitions {
 	$method = xkb_method ();
 
 	if ($stream =~ /^name/i) {
-	    $stream =~ s/^name\[[a-zA-Z0-9]+\]=\"[^\"]*\";(.*)/$1/i
+	    $stream =~ s/^name\[[a-zA-Z0-9_]+\]=\"[^\"]*\";(.*)/$1/i
 		or syntax_error "group name";
 	    next;
 	}
@@ -2990,11 +2990,11 @@ sub xkb_symbols_definitions {
 	    next;
 	}
 	
-	if ($stream =~ s/^[a-zA-Z0-9]+\.[a-zA-Z0-9]+=.*?;(.*)/$1/i) {
+	if ($stream =~ s/^[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+=.*?;(.*)/$1/i) {
 	    next;
 	}
 
-	if ($stream =~ s/^[a-zA-Z0-9]+\.[a-zA-Z0-9]+\[[a-zA-Z0-9]+\]
+	if ($stream =~ s/^[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+\[[a-zA-Z0-9_]+\]
                        =.*?;(.*)/$1/ix) {
 	    next;
 	}

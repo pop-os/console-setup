@@ -47,9 +47,6 @@ if [ "$1" = "configure" ]; then
 
 	cat >>$CONFIGFILE.tmp <<EOF
 
-if [ -f /etc/default/keyboard ]; then
-    . /etc/default/keyboard
-fi
 ######################################################################
 # You can remove the lines that follow.  They contain the contents of
 # this file before version 1.47 of console-setup.

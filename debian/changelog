@@ -1,4 +1,23 @@
-console-setup (1.69) UNRELEASED; urgency=low
+console-setup (1.71) UNRELEASED; urgency=low
+
+  * FAQ: correct some typos and apply two patches by Jonathan Nieder.
+    Thanks also to Vincent Lefevre.  Closes: #565391 (with apologies for
+    the delay).
+  * Ask the keyboard option question even when Debconf doesn't support the
+    layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
+  * console-setup.postinst: do not source /etc/default/keyboard in
+    /etc/default/console-setup (on new installs).
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 26 Feb 2011 19:47:01 +0200
+
+console-setup (1.70) unstable; urgency=low
+
+  * ckbcomp: permit '_' in all identifiers.  Thanks to Jonny, Javier
+    Vasquez and Eric Valette.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 24 Feb 2011 18:31:21 +0200
+
+console-setup (1.69) unstable; urgency=low
 
   [ Joey Hess ]
   * rules: Remove obsolete commands to clean up when building from cvs, and
@@ -10,7 +29,7 @@ console-setup (1.69) UNRELEASED; urgency=low
   * Fonts/bdf2psf: Fix typo.
   * config: Use the braille font name from the console-braille package.
 
- -- Samuel Thibault <sthibault@debian.org>  Fri, 11 Feb 2011 00:42:03 +0100
+ -- Julien Cristau <jcristau@debian.org>  Thu, 17 Feb 2011 22:54:58 +0100
 
 console-setup (1.68) unstable; urgency=high
 
