@@ -8,8 +8,9 @@ console-setup (1.69) UNRELEASED; urgency=low
   * Use bg, ch, se instead of bg(bds), ch(de), se(basic), as those are not in
     xorg.xml any more (closes: #610843).
   * Fonts/bdf2psf: Fix typo.
+  * config: Use the braille font name from the console-braille package.
 
- -- Samuel Thibault <sthibault@debian.org>  Sun, 23 Jan 2011 18:15:43 +0100
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 11 Feb 2011 00:42:03 +0100
 
 console-setup (1.68) unstable; urgency=high
 
