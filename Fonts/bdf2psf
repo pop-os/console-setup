@@ -35,9 +35,10 @@ sub debug {
 if ($ARGV[0] eq "--help" || $ARGV[0] eq "-h") {
     print STDERR <<EOT;
 Usage:
-bdf2psf [--fb][--log LOG] BDF{+BDF} EQUIV{+EQUIV} SYMB{+[:]SYMB} SIZE PSF [SFM]
+bdf2psf [--fb|--raw][--log LOG] BDF{+BDF} EQUIV{+EQUIV} SYMB{+[:]SYMB} SIZE PSF [SFM]
 
 --fb           Create font for framebuffer.
+--raw          Create a raw font (SIZE*8 bytes)
 --log          A log file for warnings.
 BDF{+BDF}      A list of BDF fonts.  The fonts listed first take precedence
                when several fonts define gliphs for same unicode.
@@ -50,7 +51,7 @@ SYMB{+SYMB}    Files containing lists of symbols to include in the PSF font.
                the BDF fonts will be issued.
 SIZE           Create PSF font with how many character positions
                (usually 256 or 512).
-PSF            The new PSF font.  If a file with this name already exists,
+PSF            The new font.  If a file with this name already exists,
                it will be overwritten
 SFM            The SFM table of the PSF font.  If a file with this name already
                exists, it will be overwritten.  Optional.
@@ -58,12 +59,15 @@ EOT
     exit 0
 }
 
-my $framebuffer_font; # 1 if the font is for framebuffer, 0 for text videomode
+my $font_type; # 0=framebuffer, 1=text video mode, 2=raw
 if ($ARGV[0] eq "--fb") {
-    $framebuffer_font = 1;
+    $font_type = 0;
+    shift @ARGV;
+} elsif ($ARGV[0] eq "--raw") {
+    $font_type = 2;
     shift @ARGV;
 } else {
-    $framebuffer_font = 0;
+    $font_type = 1;
 }
 
 my $log; # the log file for issued warnings
@@ -94,9 +98,15 @@ if ($font_size <= 256) {
 $font_size > 0 && $font_size <= 2048
     or die ("$0: zero or too many characters in the PSF font ($font_size)\n");
 
-$framebuffer_font || $font_size <= 512
-    or die ("$0: too many characters in " 
-	    ."non-framebuffer PSF font ($font_size)\n");
+if ($font_type == 1 && $font_size > 512) {
+    die ("$0: too many characters in " 
+         ."non-framebuffer PSF font ($font_size)\n");
+}
+
+if ($font_type == 2 && $font_size > 256) {
+    die ("$0: too many characters in in a raw font ($font_size)\n");
+}
+
 
 ########### GLOBAL VARIABLES #########################################
 
@@ -409,7 +419,7 @@ for my $bdf (@bdfs) {
 
 ########### COMPUTE THE TYPE OF EACH GLIPH ##########################
 
-if ($framebuffer_font) {
+if ($font_type == 0) {
     foreach my $u (keys %gliphs) {
 	$types{$u} = $doesnt_matter_8th;
     }
@@ -616,25 +626,27 @@ for my $c (0 ... $font_size - 1) {
 open (PSF, ">$psf") || die ("$0: $psf: $!\n");
 binmode (PSF) || die ("$0: $psf: $!\n");
 
-if (version () == 0) { 
-    printf PSF "%c%c", 0x36, 0x04;
-    printf PSF "%c%c", ($font_size == 512) + $embeded_sfm * 2, $height;
-} else {
-    printf PSF "%c%c%c%c", 0x72, 0xB5, 0x4A, 0x86;
-    printf PSF "%c%c%c%c", 0x00, 0x00, 0x00, 0x00;
-    printf PSF "%c%c%c%c", 0x20, 0x00, 0x00, 0x00;
-    printf PSF "%c", $embeded_sfm;
-    printf PSF "%c%c%c", 0x00, 0x00, 0x00;
-    printf PSF "%c%c", $font_size & 0xFF, $font_size >> 8;
-    printf PSF "%c%c", 0x00, 0x00;
-    printf PSF "%c%c%c", matrix_size () & 0xFF, 
-	                 (matrix_size () >> 8) & 0xFF, 
-                         matrix_size () >> 16;
-    printf PSF "%c", 0x00;
-    printf PSF "%c%c", $height & 0xFF, $height >> 8;
-    printf PSF "%c%c", 0x00, 0x00;
-    printf PSF "%c%c", $width & 0xFF, $width >> 8;
-    printf PSF "%c%c", 0x00, 0x00;
+if ($font_type != 2) {
+    if (version () == 0) { 
+        printf PSF "%c%c", 0x36, 0x04;
+        printf PSF "%c%c", ($font_size == 512) + $embeded_sfm * 2, $height;
+    } else {
+        printf PSF "%c%c%c%c", 0x72, 0xB5, 0x4A, 0x86;
+        printf PSF "%c%c%c%c", 0x00, 0x00, 0x00, 0x00;
+        printf PSF "%c%c%c%c", 0x20, 0x00, 0x00, 0x00;
+        printf PSF "%c", $embeded_sfm;
+        printf PSF "%c%c%c", 0x00, 0x00, 0x00;
+        printf PSF "%c%c", $font_size & 0xFF, $font_size >> 8;
+        printf PSF "%c%c", 0x00, 0x00;
+        printf PSF "%c%c%c", matrix_size () & 0xFF,
+                            (matrix_size () >> 8)
+                                & 0xFF, matrix_size () >> 16;
+        printf PSF "%c", 0x00;
+        printf PSF "%c%c", $height & 0xFF, $height >> 8;
+        printf PSF "%c%c", 0x00, 0x00;
+        printf PSF "%c%c", $width & 0xFF, $width >> 8;
+        printf PSF "%c%c", 0x00, 0x00;
+    }
 }
 
 for my $c (0 ... $font_size - 1) {
@@ -647,7 +659,7 @@ for my $c (0 ... $font_size - 1) {
     }
 }
 
-if ($embeded_sfm) {
+if ($font_type != 2 && $embeded_sfm) {
     for my $c (0 ... $font_size - 1) {
 	if (defined $sfm_table[$c]) {
 	    foreach (@{$sfm_table[$c]}) {

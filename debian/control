@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Uploaders: Anton Zinoviev <zinoviev@debian.org>, Christian Perrier <bubulle@debian.org>
-Build-Depends-Indep: perl, libxml-parser-perl, xkb-data (>= 1.6), locales-all
+Build-Depends-Indep: perl, libxml-parser-perl, xkb-data (>= 1.6), locales-all, sharutils
 Build-Depends: debhelper (>= 7), po-debconf, bdfresize
 Standards-Version: 3.8.3
 Vcs-Browser: http://git.debian.org/?p=d-i/console-setup.git
