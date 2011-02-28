@@ -224,11 +224,15 @@ GZIPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
 
 # These fonts can be used only with framebuffer
 FB_PSF_FONTS = $(filter %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
-$(FB_PSF_FONTS) : fb_option = --fb
 
 # These fonts can be used both in text-mode and with framebuffer
 NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
-$(NONFB_PSF_FONTS) : fb_option =
+
+# >256 glyphs
+LARGE_NONFB_PSF_FONTS = $(filter-out Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(NONFB_PSF_FONTS))
+
+# <=256 glyphs
+SMALL_NONFB_PSF_FONTS = $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(NONFB_PSF_FONTS))
 
 doubled_bdfs = $(call adddouble, $(BDFS_TO_DOUBLE))
 
@@ -284,8 +288,23 @@ $(ALL_PSF_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
 				standard.equivalents+arabic.equivalents, \
 				standard.equivalents)
 
-$(ALL_PSF_FONTS) :
-	./bdf2psf $(fb_option) --log $(@:%.psf=%.log) $(bdfs) \
+# create FreeBSD raw fonts for these:
+$(SMALL_NONFB_PSF_FONTS) :
+	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
+		$(equivalents) required.set+$(codesetfile)+:useful.set \
+                $(size) $@ $(@:%.psf=%.sfm)
+	./bdf2psf --raw $(bdfs) \
+		$(equivalents) required.set+$(codesetfile)+:useful.set \
+                $(size) $(@:%.psf=%.raw)
+	uuencode $(@:%.psf=%.raw) $(@:%.psf=%) >$(@:%.psf=%.fnt)
+
+$(LARGE_NONFB_PSF_FONTS) :
+	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
+		$(equivalents) required.set+$(codesetfile)+:useful.set \
+                $(size) $@ $(@:%.psf=%.sfm)
+
+$(FB_PSF_FONTS) :
+	./bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) \
 		$(equivalents) required.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
 
@@ -300,7 +319,7 @@ fullall : $(ALL_PSF_FONTS)
 .PHONY: clean
 clean:
 	-rm -f *~
-	-rm -f *.psf *.psf.gz *.sfm *.log
+	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt
 	-rm -f fontsets/*~
 	-rm -f bdf/*-double.bdf
 
