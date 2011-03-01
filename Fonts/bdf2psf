@@ -41,7 +41,7 @@ bdf2psf [--fb|--raw][--log LOG] BDF{+BDF} EQUIV{+EQUIV} SYMB{+[:]SYMB} SIZE PSF 
 --raw          Create a raw font (SIZE*8 bytes)
 --log          A log file for warnings.
 BDF{+BDF}      A list of BDF fonts.  The fonts listed first take precedence
-               when several fonts define gliphs for same unicode.
+               when several fonts define glyphs for same unicode.
 EQUIV{+EQUIV}  A list of equivalents files.  Each non-empty line in these files
                contains a list of unicodes to be considered equal (for all of
                them only one position number in the PSF will be reserved).
@@ -115,7 +115,7 @@ my $current_line; # when reading input files (used for error messages)
 my $width;  # The width of the font in pixels
 my $height; # The height of the font in pixels
 
-my %gliphs; # unicode -> [the bytes of the gliph matrix]
+my %glyphs; # unicode -> [the bytes of the glyph matrix]
 
 my $copy_8th = 1;          # copy the 8th column on the 9th
 my $dont_copy_8th = 2;     # do not copy the 8th column on the 9th
@@ -125,7 +125,7 @@ my @position_type; # font position -> one of $copy_8th or $dont_copy_8th or 0
                    # remembers whether the the graphics adapter copies the
                    # 8th column to the 9th.  0 means the position is ocupied
 
-my %types; # unicode -> the type of the gliph (one of $copy_8th,  
+my %types; # unicode -> the type of the glyph (one of $copy_8th,  
            #            $dont_copy_8th or $doesnt_matter_8th)
            # Defined only for unicodes in the BDF fonts
 
@@ -139,6 +139,47 @@ my @sfm_table; # $c:font positon -> [ the equivalence class at $c ]
 
 my @unicode; # position in the PSF font -> unicode in the BDF fonts
 
+# cp437 -> unicode
+my @ascii2u = ( 0x0000, 0x0001, 0x0002, 0x0003, 0x0004, 0x0005, 0x0006, 0x0007,
+                0x0008, 0x0009, 0x000A, 0x000B, 0x000C, 0x000D, 0x000E, 0x000F,
+                0x0010, 0x0011, 0x0012, 0x0013, 0x0014, 0x0015, 0x0016, 0x0017,
+                0x0018, 0x0019, 0x001A, 0x001B, 0x001C, 0x001D, 0x001E, 0x001F,
+                0x0020, 0x0021, 0x0022, 0x0023, 0x0024, 0x0025, 0x0026, 0x0027,
+                0x0028, 0x0029, 0x002A, 0x002B, 0x002C, 0x002D, 0x002E, 0x002F,
+                0x0030, 0x0031, 0x0032, 0x0033, 0x0034, 0x0035, 0x0036, 0x0037,
+                0x0038, 0x0039, 0x003A, 0x003B, 0x003C, 0x003D, 0x003E, 0x003F,
+                0x0040, 0x0041, 0x0042, 0x0043, 0x0044, 0x0045, 0x0046, 0x0047,
+                0x0048, 0x0049, 0x004A, 0x004B, 0x004C, 0x004D, 0x004E, 0x004F,
+                0x0050, 0x0051, 0x0052, 0x0053, 0x0054, 0x0055, 0x0056, 0x0057,
+                0x0058, 0x0059, 0x005A, 0x005B, 0x005C, 0x005D, 0x005E, 0x005F,
+                0x0060, 0x0061, 0x0062, 0x0063, 0x0064, 0x0065, 0x0066, 0x0067,
+                0x0068, 0x0069, 0x006A, 0x006B, 0x006C, 0x006D, 0x006E, 0x006F,
+                0x0070, 0x0071, 0x0072, 0x0073, 0x0074, 0x0075, 0x0076, 0x0077,
+                0x0078, 0x0079, 0x007A, 0x007B, 0x007C, 0x007D, 0x007E, 0x007F,
+                0x00C7, 0x00FC, 0x00E9, 0x00E2, 0x00E4, 0x00E0, 0x00E5, 0x00E7,
+                0x00EA, 0x00EB, 0x00E8, 0x00EF, 0x00EE, 0x00EC, 0x00C4, 0x00C5,
+                0x00C9, 0x00E6, 0x00C6, 0x00F4, 0x00F6, 0x00F2, 0x00FB, 0x00F9,
+                0x00FF, 0x00D6, 0x00DC, 0x00A2, 0x00A3, 0x00A5, 0x20A7, 0x0192,
+                0x00E1, 0x00ED, 0x00F3, 0x00FA, 0x00F1, 0x00D1, 0x00AA, 0x00BA,
+                0x00BF, 0x2310, 0x00AC, 0x00BD, 0x00BC, 0x00A1, 0x00AB, 0x00BB,
+                0x2591, 0x2592, 0x2593, 0x2502, 0x2524, 0x2561, 0x2562, 0x2556,
+                0x2555, 0x2563, 0x2551, 0x2557, 0x255D, 0x255C, 0x255B, 0x2510,
+                0x2514, 0x2534, 0x252C, 0x251C, 0x2500, 0x253C, 0x255E, 0x255F,
+                0x255A, 0x2554, 0x2569, 0x2566, 0x2560, 0x2550, 0x256C, 0x2567,
+                0x2568, 0x2564, 0x2565, 0x2559, 0x2558, 0x2552, 0x2553, 0x256B,
+                0x256A, 0x2518, 0x250C, 0x2588, 0x2584, 0x258C, 0x2590, 0x2580,
+                0x03B1, 0x00DF, 0x0393, 0x03C0, 0x03A3, 0x03C3, 0x00B5, 0x03C4,
+                0x03A6, 0x0398, 0x03A9, 0x03B4, 0x221E, 0x03C6, 0x03B5, 0x2229,
+                0x2261, 0x00B1, 0x2265, 0x2264, 0x2320, 0x2321, 0x00F7, 0x2248,
+                0x00B0, 0x2219, 0x00B7, 0x221A, 0x207F, 0x00B2, 0x25A0, 0x00A0
+                );
+
+# unicode -> cp437
+my %u2ascii;
+for my $i (0..255) {
+    $u2ascii{$ascii2u[$i]} = $i;
+}
+
 ########### FUNCTIONS ###############################################
 
 sub warning {
@@ -151,7 +192,7 @@ sub matrix_row_size {
     return ($width + 7) >> 3;
 }
 
-# How many bytes takes the whole matrix of one gliph
+# How many bytes takes the whole matrix of one glyph
 sub matrix_size {
     return matrix_row_size() * $height;
 }
@@ -186,14 +227,14 @@ sub is_box_drawings {
     return 0;
 }
 
-# $u:unicode -> the ASCII code if $u or equivalent to $u symbol is
-#               an ASCII symbol; 0 otherwise
+# $u:unicode -> the CP437 code if $u or equivalent to $u symbol is
+#               a CP437 symbol; 0 otherwise
 sub ascii {
     my $u = $_[0];
     foreach my $v (@{equivalence_class ($u)}) {
-	if ($v >= 0x20 && $v <= 0x7e) {
-	    return $v;
-	}
+        if ($u2ascii{$v}) {
+            return $u2ascii{$v};
+        }
     }
     return 0;
 }
@@ -208,12 +249,17 @@ for my $c (0x1c0 ... 0x1df) {
     $position_type[$c] = $copy_8th;
 }
 
-# returns a position in the PSF font for a "$dont_copy_8th"-gliph
+# returns a position in the PSF font for a "$dont_copy_8th"-glyph
 sub dont_copy_8th_position {
     my $u = $_[0];
     if ($broken_pixels{$u}) {
 	warning sprintf ("U+%04X: %u broken pixel(s)\n", 
 			 $u, $broken_pixels{$u});
+    }
+    my $a = ascii($u);
+    if ($a && $position_type[$a] != 0) {
+        $position_type[$a] = 0;
+        return $a;
     }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] == $dont_copy_8th) {
@@ -231,12 +277,17 @@ sub dont_copy_8th_position {
     die "Internal error\n";
 }
 
-# returns a position in the PSF font for a "$copy_8th"-gliph
+# returns a position in the PSF font for a "$copy_8th"-glyph
 sub copy_8th_position {
     my $u = $_[0];
     if ($broken_pixels{$u}) {
 	warning sprintf ("U+%04X: %u broken pixel(s)\n",
 			 $u, $broken_pixels{$u});
+    }
+    my $a = ascii($u);
+    if ($a && $position_type[$a] != 0) {
+        $position_type[$a] = 0;
+        return $a;
     }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] == $copy_8th) {
@@ -254,12 +305,17 @@ sub copy_8th_position {
     die "Internal error\n";
 }
 
-# returns a position in the PSF font for a "$doesnt_matter_8th"-gliph
+# returns a position in the PSF font for a "$doesnt_matter_8th"-glyph
 sub doesnt_matter_8th_position {
     my $u = $_[0];
     if ($broken_pixels{$u}) {
 	warning sprintf ("U+%04X: %u broken pixel(s)\n",
 			 $u, $broken_pixels{$u});
+    }
+    my $a = ascii($u);
+    if ($a && $position_type[$a] != 0) {
+        $position_type[$a] = 0;
+        return $a;
     }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] != 0) {
@@ -337,7 +393,7 @@ for my $bdf (@bdfs) {
 	    or die ("$0: $bdf: width $width zero or too big\n");
     }
     
-    my @gliph_bytes;
+    my @glyph_bytes;
     my $u;
     my $rows;
     my $bbx;
@@ -349,7 +405,7 @@ for my $bdf (@bdfs) {
 	s/^\s*//;
 	s/\s*$//;
 	if (/^STARTCHAR/) {
-	    @gliph_bytes = ();
+	    @glyph_bytes = ();
 	    $u = -123456;
 	    $rows = 0;
 	    $bbx = 0;
@@ -378,7 +434,7 @@ for my $bdf (@bdfs) {
 	    if (($u >= 0x2500 && $u <= 0x259f)
 		|| length($1) == 2 * matrix_row_size ()) {
 		for my $i (1 ... matrix_row_size ()) {
-		    push (@gliph_bytes,
+		    push (@glyph_bytes,
 			  ($row >> 8 * (matrix_row_size () - $i)) & 0xff);
 		}
 		$rows++;
@@ -396,15 +452,15 @@ for my $bdf (@bdfs) {
 		    die ("$0: $bdf: missing ENCODING before ENDCHAR " 
 			 ."at line $current_line\n");
 		}
-		if (! defined $gliphs{$u}) {
+		if (! defined $glyphs{$u}) {
 		    if ($beforebox < 0) {
-			@gliph_bytes = @gliph_bytes[-$beforebox..$#gliph_bytes];
+			@glyph_bytes = @glyph_bytes[-$beforebox..$#glyph_bytes];
 		    }
 		    if ($afterbox < 0) {
-			@gliph_bytes = @gliph_bytes[0 .. $#gliph_bytes+$afterbox];
+			@glyph_bytes = @glyph_bytes[0 .. $#glyph_bytes+$afterbox];
 		    }
-		    $gliphs{$u} = [ (0) x $beforebox,
-				    @gliph_bytes,
+		    $glyphs{$u} = [ (0) x $beforebox,
+				    @glyph_bytes,
 				    (0) x $afterbox];
 		}
 	    }
@@ -417,19 +473,24 @@ for my $bdf (@bdfs) {
     close BDF;
 }
 
-########### COMPUTE THE TYPE OF EACH GLIPH ##########################
+########### COMPUTE THE TYPE OF EACH GLYPH ##########################
 
 if ($font_type == 0) {
-    foreach my $u (keys %gliphs) {
+    foreach my $u (keys %glyphs) {
 	$types{$u} = $doesnt_matter_8th;
     }
+} elsif ($font_type == 2) {
+    foreach my $u (keys %glyphs) {
+        # not the best possible assignment
+	$types{$u} = $dont_copy_8th;
+    }
 } elsif ($width == 7) {
-    foreach my $u (keys %gliphs) {
+    foreach my $u (keys %glyphs) {
 	$types{$u} = $doesnt_matter_8th;
 	if (is_box_drawings ($u)) {
 	    for my $i (0 ... $height - 1) {
-		if ($gliphs{$u}[$i] & 0x02) {
-		    $gliphs{$u}[$i] = $gliphs{$u}[$i] | 0x01;
+		if ($glyphs{$u}[$i] & 0x02) {
+		    $glyphs{$u}[$i] = $glyphs{$u}[$i] | 0x01;
 		    $types{$u} = $copy_8th;
 		}
 	    }
@@ -437,10 +498,10 @@ if ($font_type == 0) {
     }
     $width = 8;
 } elsif ($width == 8) {
-    foreach my $u (keys %gliphs) {
+    foreach my $u (keys %glyphs) {
 	$types{$u} = $doesnt_matter_8th;
 	for my $i (0 ... $height - 1) {
-	    if ($gliphs{$u}[$i] & 0x01) {
+	    if ($glyphs{$u}[$i] & 0x01) {
 		if (is_box_drawings ($u)) {
 		    $types{$u} = $copy_8th;
 		} else {
@@ -450,19 +511,19 @@ if ($font_type == 0) {
 	}
     }    
 } elsif ($width == 9) {
-    foreach my $u (keys %gliphs) {
+    foreach my $u (keys %glyphs) {
 	my $pixels9 = 0;
 	my $copyed = 0;
 	my $different = 0;
 	for my $i (0 ... $height - 1) {
-	    if (($gliphs{$u}[2 * $i] & 0x01)
-		&& ! ($gliphs{$u}[2 * $i + 1] & 0x80)) {
+	    if (($glyphs{$u}[2 * $i] & 0x01)
+		&& ! ($glyphs{$u}[2 * $i + 1] & 0x80)) {
 		$different++;
 	    }
-	    if ($gliphs{$u}[2 * $i + 1] & 0x80) {
+	    if ($glyphs{$u}[2 * $i + 1] & 0x80) {
 		$pixels9++;
-		if (! ($gliphs{$u}[2 * $i] & 0x01)) {
-		    $gliphs{$u}[2 * $i] = $gliphs{$u}[2 * $i] | 0x01;
+		if (! ($glyphs{$u}[2 * $i] & 0x01)) {
+		    $glyphs{$u}[2 * $i] = $glyphs{$u}[2 * $i] | 0x01;
 		    $copyed++;
 		}
 	    }
@@ -478,7 +539,7 @@ if ($font_type == 0) {
 	    $broken_pixels{$u} = $pixels9 + $copyed;
 	}
 	for my $i (0 ... $height - 1) {
-	    $gliphs{$u}[$i] = $gliphs{$u}[2 * $i];
+	    $glyphs{$u}[$i] = $glyphs{$u}[2 * $i];
 	}
     }    
     $width = 8;
@@ -555,8 +616,6 @@ for my $symbolfile (@symbols) {
 	my $u = hex ($1);
 	push @requested, $u;
 	$issue_warnings{$u} = 1 if ($warnings);
-	my $ascii = ascii $u;
-	$position_type[$ascii] = 0 if ($ascii);
     }
     close SYMBOLS;
 }
@@ -564,33 +623,38 @@ for my $symbolfile (@symbols) {
 for my $u (@requested) {
     next if ($positioned{$u});
     next if (! printable ($u));
-    my $defined_gliph = 0;
-    if (@delayed < free_positions () || ascii ($u)) {
-	foreach my $v (@{equivalence_class ($u)}) {
-	    next if ! defined $gliphs{$v};
-	    $defined_gliph = 1;
-	    if (ascii ($v)) {
-		$sfm_table[ascii ($v)] = equivalence_class ($v);
-	    } elsif ($types{$v} == $dont_copy_8th) {
-		my $position = dont_copy_8th_position ($v);
-		$sfm_table[$position] = equivalence_class ($v);
-	    } elsif ($types{$v} == $copy_8th) {
-		my $position = copy_8th_position ($v);
-		$sfm_table[$position] = equivalence_class ($v);
-	    } else {
-		push @delayed, $v;
-	    }
-	    foreach my $w (@{equivalence_class ($u)}) {
-		$positioned{$w} = 1;
-	    }
-	    last;
-	}
+    my $defined_glyph = 0;
+    if (@delayed < free_positions ()) {
+        foreach my $v (@{equivalence_class ($u)}) {
+            next if ! defined $glyphs{$v};
+            $defined_glyph = 1;
+            if ($types{$v} == $dont_copy_8th) {
+                my $position = dont_copy_8th_position ($v);
+                $sfm_table[$position] = equivalence_class ($v);
+            } elsif ($types{$v} == $copy_8th) {
+                my $position = copy_8th_position ($v);
+                $sfm_table[$position] = equivalence_class ($v);
+            } else {
+                push @delayed, $v;
+            }
+            foreach my $w (@{equivalence_class ($u)}) {
+                $positioned{$w} = 1;
+            }
+            last;
+        }
+        if (! $defined_glyph && $font_type == 2) {
+            my $position = dont_copy_8th_position ($u);
+            $sfm_table[$position] = equivalence_class ($u);
+            foreach my $w (@{equivalence_class ($u)}) {
+                $positioned{$w} = 1;
+            }
+        }
     }
     if (defined $issue_warnings{$u} && ! $positioned{$u}) {
-	if ($defined_gliph) {
+	if ($defined_glyph) {
 	    warning sprintf ("U+%04X: no space in the font\n", $u);
 	} else {
-	    warning sprintf ("U+%04X: no gliph defined\n", $u);
+	    warning sprintf ("U+%04X: no glyph defined\n", $u);
 	}
     }
 }
@@ -616,7 +680,7 @@ if ($sfm) {
 
 for my $c (0 ... $font_size - 1) {
     foreach my $u (@{$sfm_table[$c]}) {
-	if (! defined $unicode[$c] && defined $gliphs{$u}) {
+	if (! defined $unicode[$c] && defined $glyphs{$u}) {
 	    $unicode[$c] = $u;
 	    last;
 	}
@@ -652,7 +716,7 @@ if ($font_type != 2) {
 for my $c (0 ... $font_size - 1) {
     for my $i (0 ... matrix_size () - 1) {
 	if (defined $unicode[$c]) {
-	    printf PSF "%c", $gliphs{$unicode[$c]}[$i];
+	    printf PSF "%c", $glyphs{$unicode[$c]}[$i];
 	} else {
 	    printf PSF "%c", int(rand(256));
 	}

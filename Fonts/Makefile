@@ -293,9 +293,9 @@ $(SMALL_NONFB_PSF_FONTS) :
 	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
 		$(equivalents) required.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
-	./bdf2psf --raw $(bdfs) \
+	./bdf2psf --raw --log $(@:%.psf=%.raw.log) $(bdfs) \
 		$(equivalents) required.set+$(codesetfile)+:useful.set \
-                $(size) $(@:%.psf=%.raw)
+                $(size) $(@:%.psf=%.raw) $(@:%.psf=%.raw.sfm)
 	uuencode $(@:%.psf=%.raw) $(@:%.psf=%) >$(@:%.psf=%.fnt)
 
 $(LARGE_NONFB_PSF_FONTS) :
