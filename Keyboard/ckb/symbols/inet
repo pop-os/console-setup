@@ -31,6 +31,8 @@ xkb_symbols "media_common" {
     key <I24>   {       [ XF86AudioStop, XF86Eject ] };
     key <I2E>   {       [ XF86AudioLowerVolume  ] };	
     key <I30>   {       [ XF86AudioRaiseVolume  ] };
+    key <K5A>   {       [ XF86Eject             ] };
+    key <K6C>   {       [ XF86Eject             ] };
 };
 
 // popular web navigation combination
@@ -55,6 +57,9 @@ xkb_symbols "acpi_common" {
     key <I5E>	{	[ XF86PowerOff		]	};
     key <I5F>	{	[ XF86Standby		]	};
     key <I63>	{	[ XF86WakeUp		]	};
+    key <I74>	{	[ XF86Battery		]	};
+    key <I76>	{	[ XF86WLAN		]	};
+    key <I16>	{	[ XF86Sleep		]	};
 };
 
 // Combined sections, for simplicity
@@ -103,7 +108,9 @@ xkb_symbols "evdev" {
     key <HELP>   {      [ Help                  ]       };
     key <LNFD>   {      [ Linefeed              ]       };
 
-    key <HZTG>   {      [ Zenkaku_Hankaku       ]       };
+// Commented out because HZTG has same keycode as TLDE
+//    key <HZTG>   {      [ Zenkaku_Hankaku       ]       };
+
     key <HKTG>   {      [ Hiragana_Katakana     ]       };
     key <HENK>   {      [ Henkan                ]       };
     key <MUHE>   {      [ Muhenkan              ]       };
@@ -113,10 +120,12 @@ xkb_symbols "evdev" {
 
     key <HNGL>   {      [ Hangul                ]       };
     key <HJCV>   {      [ Hangul_Hanja          ]       };
+    key <FK21>   {      [ XF86TouchpadToggle    ]       };
+    key <FK22>   {      [ XF86TouchpadOn        ]       };
+    key <FK23>   {      [ XF86TouchpadOff       ]       };
 
 //  key <I120>   {      [ ]       }; // KEY_MACRO 
     key <I126>   {      [ plusminus             ]       };
-    key <I129>   {      [ KP_Separator          ]       };
     key <I147>   {      [ XF86MenuKB            ]       };
     key <I148>   {      [ XF86Calculator        ]       };
 //  key <I149>   {      [ ]       }; // KEY_SETUP
@@ -165,10 +174,10 @@ xkb_symbols "evdev" {
     key <I209>   {      [ XF86AudioPause        ]       };
     key <I210>   {      [ XF86Launch3           ]       };
     key <I211>   {      [ XF86Launch4           ]       };
-    key <I213>   {      [ XF86Standby           ]       };
+    key <I213>   {      [ XF86Suspend           ]       };
     key <I214>   {      [ XF86Close             ]       };
     key <I215>   {      [ XF86AudioPlay         ]       };
-    key <I216>   {      [ XF86Forward           ]       };
+    key <I216>   {      [ XF86AudioForward      ]       };
 //  key <I217>   {      [ ]       }; // KEY_BASSBOOST
     key <I218>   {      [ Print                 ]       };
 //  key <I219>   {      [ ]       }; // KEY_HP
@@ -176,11 +185,11 @@ xkb_symbols "evdev" {
 //  key <I221>   {      [ ]       }; // KEY_SOUND
 //  key <I222>   {      [ ]       }; // KEY_QUESTION
     key <I223>   {      [ XF86Mail              ]       };
-//  key <I224>   {      [ XF86Messenger         ]       }; // KEY_CHAT
+    key <I224>   {      [ XF86Messenger         ]       }; // KEY_CHAT
     key <I225>   {      [ XF86Search            ]       };
-//  key <I226>   {      [ XF86Go                ]       }; // KEY_CONNECT
+    key <I226>   {      [ XF86Go                ]       }; // KEY_CONNECT
     key <I227>   {      [ XF86Finance           ]       };
-//  key <I228>   {      [ XF86Game              ]       }; // KEY_SPORT
+    key <I228>   {      [ XF86Game              ]       }; // KEY_SPORT
     key <I229>   {      [ XF86Shop              ]       };
 //  key <I230>   {      [ ]       }; // KEY_ALTERASE
     key <I231>   {      [ Cancel                ]       };
@@ -196,15 +205,23 @@ xkb_symbols "evdev" {
     key <I241>   {      [ XF86MailForward       ]       };
     key <I242>   {      [ XF86Save              ]       };
     key <I243>   {      [ XF86Documents         ]       };
-//  key <I244>   {      [ ]       }; // KEY_BATTERY
-//  key <I245>   {      [ ]       }; // KEY_BLUETOOTH
-//  key <I246>   {      [ ]       }; // KEY_WLAN
+    key <I244>   {      [ XF86Battery           ]       };
+    key <I245>   {      [ XF86Bluetooth         ]       };
+    key <I246>   {      [ XF86WLAN              ]       };
 //  key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
 //  key <I250>   {      [ ]       }; // KEY_VIDEO_PREV  --  drive previous video source
 //  key <I251>   {      [ ]       }; // KEY_BRIGHTNESS_CYCLE  --  bright up, max++ == min
 //  key <I252>   {      [ ]       }; // KEY_BRIGHTNESS_ZERO  --  brightness off
 //  key <I253>   {      [ ]       }; // KEY_DISPLAY_OFF  --  turn off display
+//  key <I254>   {      [ ]       }; // KEY_WIMAX
+    key <I255>   {      [ XF86Hibernate         ]       }; // KEY_HIBERNATE
  
+    key <FK13>   {      [ XF86Tools         ]       };
+    key <FK14>   {      [ XF86Launch5       ]       };
+    key <FK15>   {      [ XF86Launch6       ]       };
+    key <FK16>   {      [ XF86Launch7       ]       };
+    key <FK17>   {      [ XF86Launch8       ]       };
+    key <FK18>   {      [ XF86Launch9       ]       };
 };
 
 
@@ -420,7 +437,6 @@ xkb_symbols "btc9019u" {
     include "inet(media_nav_acpi_common)"
     key <FK17> {	[ XF86Search		]	};
     key <I02>  {	[ XF86HomePage		]	};
-    key <K6C>  {	[ XF86Eject		]	};
 };
 
 // Cherry Blue Line
@@ -684,7 +700,7 @@ partial alphanumeric_keys
 xkb_symbols "dellusbmm" {
     // Describes the extra keys on a SK-8135 Multimedia keyboard
     // From Olivier Lahaye <olivier dot lahaye at motorola dot com>
-    include "inet(media_nav_common)"
+    include "inet(media_nav_acpi_common)"
     key <I02>	{	[ XF86HomePage		]	};
     key <K67>	{	[ XF86MyComputer	]	}; 
     key <XFER>	{	[ XF86AudioMedia	]	};  
@@ -972,7 +988,10 @@ xkb_symbols "thinkpad60" {
 // IBM Space Saver
 partial alphanumeric_keys
 xkb_symbols "ibm_spacesaver" {
-    key <NMLK>  { [ Num_Lock, Num_Lock ] };
+    key <NMLK>  {
+        type="ONE_LEVEL",
+        symbols[Group1]= [ Num_Lock ]
+    };
 };
 
 // Logitech
@@ -1710,7 +1729,6 @@ xkb_symbols "cymotionlinux" {
     key <I3C>	{	[	XF86Cut			]	};
     key <I78>	{	[	XF86Copy		]	};
     key <K65>	{	[	XF86Paste		]	};
-    key <K6C>	{	[	XF86Eject		]	};
     key <K75>	{	[	XF86ScrollUp		]	};
     key <XFER>	{	[	XF86AudioMedia		]	};
 };
@@ -1786,6 +1804,15 @@ xkb_symbols "unitekkb1925" {
     key <I1A> { [ XF86Reload ] };
 };
 
+// Creative
+
+// Creative Desktop Wireless 7000
+partial alphanumeric_keys
+xkb_symbols "creativedw7000" {
+    include "inet(media_nav_acpi_common)"
+    key <I66>   {       [ XF86Pictures ]       };
+};
+
 // Compal
 
 // Compal FL90
@@ -1796,3 +1823,35 @@ xkb_symbols "compalfl90" {
     key <II65>  {       [ XF86MonBrightnessDown ]       };
 };
 
+partial alphanumeric_keys
+xkb_symbols "pc105" {
+    include "inet(media_nav_acpi_common)"
+};
+
+// HTC Dream
+partial alphanumeric_keys
+xkb_symbols "htcdream" {
+	key <BKSP> { [ BackSpace ] };
+	key <RTRN> { [ Return ] };
+
+        //first row
+        key <AE01> { [ 1, 1, exclam, exclam ] };
+        key <AE02> { [ 2, 2, at, at ] };
+        key <AE03> { [ 3, 3, numbersign, numbersign ] };
+        key <AE04> { [ 4, 4, dollar, dollar ] };
+        key <AE05> { [ 5, 5, percent, percent ] };
+        key <AE06> { [ 6, 6, dead_circumflex, dead_circumflex ] };
+        key <AE07> { [ 7, 7, ampersand, ampersand ] };
+        key <AE08> { [ 8, 8, asterisk, asterisk ] };
+        key <AE09> { [ 9, 9, parenleft, parenleft ] };
+        key <AE10> { [ 0, 0, parenright, parenright ] };
+
+	//fifth row
+	key <LFSH> { [ Shift_L ] };
+	key <SPCE> { [ space ] };
+	key <AB09> { [ period, period, slash, slash ] };
+	key <RTSH> { [ Shift_R ] };
+
+	//modifiers
+	modifier_map Shift { <LFSH>, <RTSH> };
+};
