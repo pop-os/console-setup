@@ -1,0 +1,124 @@
+#!/usr/bin/perl 
+
+#     bdf2psf -- convert unicode BDF fonts to Linux console fonts
+#     Copyright © 2005 Anton Zinoviev <anton@lml.bas.bg>
+#     Contains code from the bdftopsf.pl utility (Terminus font suite)
+#     Copyright © 2004 Dimitar Toshkov Zhekov
+
+#     This program is free software; you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation; either version 2 of the License, or
+#     (at your option) any later version.
+
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+
+#     If you have not received a copy of the GNU General Public License
+#     along with this program, write to the Free Software Foundation, Inc.,
+#     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+use warnings 'all';
+use strict;
+
+sub debug {
+    if (1) {
+	print STDERR "@_";
+    }
+}
+
+if ($ARGV[0] eq "--help" || $ARGV[0] eq "-h") {
+    print STDERR <<EOT;
+Usage:
+make_scrnmap [--binary] SFM ACM
+Create 8-bit translation map from application to font code.
+
+--binary  Generate binary format suitable for vidcontrol.
+EOT
+    exit 0
+}
+
+my $binary = 0;
+if ($ARGV[0] eq "--binary") {
+    $binary = 1;
+    shift @ARGV;
+}
+
+sub output {
+    my $a = $_[0];
+    my $b = $_[1];
+    if ($binary) {
+        printf "%c", $b;
+    } else {
+        printf "0x%02x   0x%02x\n", $a, $b;
+    }
+}
+
+sub printable {
+    my $u = $_[0];
+    return (($u >= 0x20 && $u <= 0x7e) 
+	    || $u >= 0xa0);
+}
+
+my $sfmfile=$ARGV[0];
+my $acmfile=$ARGV[1];
+
+my %sfmtable;
+my @acmtable;
+
+if ($sfmfile =~ /gz$/) {
+    open (SFM, '-|:utf8', "zcat $sfmfile") or die "$0: $sfmfile: $!\n";
+} else {
+    open (SFM, '<:utf8', $sfmfile) or die "$0: $sfmfile: $!\n";
+}
+while (<SFM>) {
+    s/\#.*//;
+    chomp;
+    next unless (/[^\s]/);
+    if (s/^\s*0x([0-9a-fA-F]{1,2})\s+//) {
+        my $c = hex ($1);
+        while (s/^U\+([0-9a-fA-F]{4})\s*//) {
+            $sfmtable{hex ($1)} = $c;
+        }
+        die "$0: Garbage in SFM file: $_\n" unless (/^\s*$/);
+    } else {
+        die "$0: Syntax error in SFM file: $_\n";
+    }
+}
+close SFM;
+
+for my $c (32..126) {
+    if (defined $sfmtable{$c}) {
+        $acmtable[$c] = $sfmtable{$c};
+    }
+}
+
+if ($acmfile =~ /gz$/) {
+    open (ACM, '-|:utf8', "zcat $acmfile") or die "$0: $acmfile: $!\n";
+} else {
+    open (ACM, '<:utf8', $acmfile) or die "$0: $acmfile: $!\n";
+}
+while (<ACM>) {
+    s/\#.*//;
+    chomp;
+    next unless (/[^\s]/);
+    if (/^\s*0x([0-9a-fA-F]{1,2})\s+\'([^\']+)\'\s*$/) {
+        my $uni = ord ($2);
+        my $c = hex ($1);
+        if (printable($uni) && defined $sfmtable{$uni}) {
+            $acmtable[$c] = $sfmtable{$uni};
+        }
+    } else {
+        die "$0: Syntax error in ACM file: $_\n";
+    }
+}
+close ACM;
+
+for my $i (0..255) {
+    if ($acmtable[$i]) {
+        output $i, $acmtable[$i];
+    } else {
+        output $i, 0;
+    }
+}
