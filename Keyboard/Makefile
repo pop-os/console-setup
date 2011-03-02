@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-build : compose_files gziped_acmfiles KeyboardNames.pl MyKeyboardNames.pl
+build : compose_files KeyboardNames.pl MyKeyboardNames.pl
 
 models = amiga ataritt macintosh_old pc105 sun4 sun5
 
@@ -14,11 +14,7 @@ build-mini : $(gziped_ekmaps)
 %.ekmap : MyKeyboardNames.pl
 	./kbdcompiler $(@:%.ekmap=%) MyKeyboardNames.pl $(xkbdir) >$@
 
-acmfiles = $(wildcard acm/*.acm)
-
-gziped_acmfiles = $(addsuffix .gz, $(acmfiles))
-
-gziped_acmfiles : $(gziped_acmfiles)
+acmfiles = $(wildcard ../acm/*.acm)
 
 charmaps = $(basename $(notdir $(acmfiles)))
 
@@ -41,7 +37,7 @@ ISO-8859-15-XCOMPOSE = locale/iso8859-15/Compose
 $(compose_files) :
 	echo '# Compose sequences for $(charmap)' >$@
 	$(if $($(charmap)-XCOMPOSE), \
-		./compose_translator --acm acm/$(charmap).acm \
+		./compose_translator --acm ../acm/$(charmap).acm \
 				     $($(charmap)-XCOMPOSE) >>$@)
 
 compose_files : $(compose_files)
@@ -50,7 +46,6 @@ compose_files : $(compose_files)
 .PHONY: clean
 clean:
 	-rm -f *~
-	-rm -f acm/*.acm.gz
 	-rm -rf compose $(compose_files)
 	-rm -rf keymaps
 	-rm -f keymaps.dir names.list

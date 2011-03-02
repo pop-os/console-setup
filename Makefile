@@ -9,7 +9,16 @@ SHELL = /bin/sh
 
 all: build
 
-build:
+acmfiles = $(wildcard acm/*.acm)
+
+gziped_acmfiles = $(addsuffix .gz, $(acmfiles))
+
+gziped_acmfiles : $(gziped_acmfiles)
+
+%.gz : %
+	gzip -9 <$< >$@
+
+build: gziped_acmfiles
 	cd Fonts && $(MAKE) build
 	cd Keyboard && $(MAKE) build
 	touch build
@@ -19,7 +28,7 @@ install: build
 	install -d $(prefix)/share/consolefonts/
 	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
 	install -d $(prefix)/share/consoletrans
-	install -m 644 Keyboard/acm/*.acm.gz $(prefix)/share/consoletrans
+	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans
 	install -d $(prefix)/share/console-setup
 	install -m 644 Keyboard/MyKeyboardNames.pl $(prefix)/share/console-setup/KeyboardNames.pl
 	install Keyboard/kbdnames-maker $(prefix)/share/console-setup
@@ -42,7 +51,7 @@ uninstall: build
 	-for font in Fonts/*.psf.gz; do \
 		rm $(prefix)/share/consolefonts/$${font##*/}; \
 	done
-	-for acm in Keyboard/acm/*.acm.gz; do \
+	-for acm in acm/*.acm.gz; do \
 		rm $(prefix)/share/consoletrans/$${acm##*/}; \
 	done
 	-rm -rf $(etcdir)/console-setup/
@@ -53,6 +62,7 @@ uninstall: build
 clean:
 	cd Fonts && $(MAKE) clean
 	cd Keyboard && $(MAKE) clean
+	-rm -f acm/*.acm.gz
 	-rm -f *~
 	-rm -f build
 
