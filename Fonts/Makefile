@@ -1,6 +1,6 @@
 SHELL = /bin/sh
 
-build : gziped_good_psf_fonts
+build : gzipped_good_psf_fonts uuencoded_raw_fonts
 
 %.gz : %
 	gzip -9 <$< >$@
@@ -218,9 +218,12 @@ GOOD_PSF_FONTS = $(filter \
 		%-VGA28x16.psf %-VGA32x16.psf, \
 	$(PSF_FONTS))
 
-GZIPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
-GZIPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
-GZIPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
+GZIPPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
+GZIPPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
+GZIPPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
+UUENCODED_GOOD_RAW_FONTS=$(subst .raw,.fnt,$(GOOD_RAW_FONTS))
+UUENCODED_RAW_FONTS=$(subst .raw,.fnt,$(RAW_FONTS))
+UUENCODED_ALL_RAW_FONTS=$(subst .raw,.fnt,$(ALL_RAW_FONTS))
 
 # These fonts can be used only with framebuffer
 FB_PSF_FONTS = $(filter %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
@@ -228,11 +231,14 @@ FB_PSF_FONTS = $(filter %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(
 # These fonts can be used both in text-mode and with framebuffer
 NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
 
-# >256 glyphs
-LARGE_NONFB_PSF_FONTS = $(filter-out Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(NONFB_PSF_FONTS))
+# Filter small charsets (256 symbols) and non-framebuffer fonts
+psf_to_raw = $(subst .psf,.raw, $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(1))))
 
-# <=256 glyphs
-SMALL_NONFB_PSF_FONTS = $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(NONFB_PSF_FONTS))
+RAW_FONTS = $(call psf_to_raw, $(PSF_FONTS))
+GOOD_RAW_FONTS = $(call psf_to_raw, $(GOOD_PSF_FONTS))
+ALL_RAW_FONTS = $(call psf_to_raw, $(ALL_PSF_FONTS))
+
+ALL_FONTS = $(ALL_PSF_FONTS) $(ALL_RAW_FONTS)
 
 doubled_bdfs = $(call adddouble, $(BDFS_TO_DOUBLE))
 
@@ -254,51 +260,43 @@ soft.Makefile : $(doubled_bdfs)
 
 # i.e. Arabic/univga16
 $(ALL_PSF_FONTS) : codeset/face = $(subst -,/,$(@:%.psf=%))
+$(ALL_RAW_FONTS) : codeset/face = $(subst -,/,$(@:%.raw=%))
 # i.e. Arabic/
-$(ALL_PSF_FONTS) : codeset/ = $(dir $(codeset/face))
+$(ALL_FONTS) : codeset/ = $(dir $(codeset/face))
 # i.e. Arabic
-$(ALL_PSF_FONTS) : codeset = $(subst /,-,$(codeset/:%/=%))
+$(ALL_FONTS) : codeset = $(subst /,-,$(codeset/:%/=%))
 # i.e. univga16
-$(ALL_PSF_FONTS) : face = $(strip $(notdir $(codeset/face)))
+$(ALL_FONTS) : face = $(strip $(notdir $(codeset/face)))
 # legacy hack
-$(ALL_PSF_FONTS)  : VGA8-BDFS = $(if $(strip $($(codeset)-legacy8-BDFS)), \
+$(ALL_FONTS)  : VGA8-BDFS = $(if $(strip $($(codeset)-legacy8-BDFS)), \
 			$($(codeset)-legacy8-BDFS),legacy8a.bdf)
-$(ALL_PSF_FONTS)  : VGA10-BDFS = $(if $(strip $($(codeset)-legacy10-BDFS)),\
+$(ALL_FONTS)  : VGA10-BDFS = $(if $(strip $($(codeset)-legacy10-BDFS)),\
 			$($(codeset)-legacy10-BDFS),legacy10a.bdf)
-$(ALL_PSF_FONTS)  : VGA12-BDFS = $(if $(strip $($(codeset)-legacy12-BDFS)),\
+$(ALL_FONTS)  : VGA12-BDFS = $(if $(strip $($(codeset)-legacy12-BDFS)),\
 			$($(codeset)-legacy12-BDFS),legacy12a.bdf)
-$(ALL_PSF_FONTS)  : VGA14-BDFS = $(if $(strip $($(codeset)-legacy14-BDFS)),\
+$(ALL_FONTS)  : VGA14-BDFS = $(if $(strip $($(codeset)-legacy14-BDFS)),\
 			$($(codeset)-legacy14-BDFS),legacy14a.bdf)
-$(ALL_PSF_FONTS)  : VGA16-BDFS = $(if $(strip $($(codeset)-legacy16-BDFS)),\
+$(ALL_FONTS)  : VGA16-BDFS = $(if $(strip $($(codeset)-legacy16-BDFS)),\
 			$($(codeset)-legacy16-BDFS),u_vga16.bdf)
-$(ALL_PSF_FONTS)  : VGA19-BDFS = $(if $(strip $($(codeset)-legacy19-BDFS)),\
+$(ALL_FONTS)  : VGA19-BDFS = $(if $(strip $($(codeset)-legacy19-BDFS)),\
 			$($(codeset)-legacy19-BDFS),legacy19a.bdf)
-$(ALL_PSF_FONTS)  : VGA28x16-BDFS = $(if $(strip $($(codeset)-legacy28x16-BDFS)),\
+$(ALL_FONTS)  : VGA28x16-BDFS = $(if $(strip $($(codeset)-legacy28x16-BDFS)),\
 			$($(codeset)-legacy28x16-BDFS),legacy14a-double.bdf)
-$(ALL_PSF_FONTS)  : VGA32x16-BDFS = $(if $(strip $($(codeset)-legacy32x16-BDFS)),\
+$(ALL_FONTS)  : VGA32x16-BDFS = $(if $(strip $($(codeset)-legacy32x16-BDFS)),\
 			$($(codeset)-legacy32x16-BDFS),u_vga16-double.bdf)
 # i.e. bdf/univga16.bdf
-$(ALL_PSF_FONTS) : bdfs = $(call add_bdf, $($(face)-BDFS))
+$(ALL_FONTS) : bdfs = $(call add_bdf, $($(face)-BDFS))
 # i.e. fontsets/Arabic.512
-$(ALL_PSF_FONTS) : codesetfile = $(wildcard fontsets/$(codeset).*)
+$(ALL_FONTS) : codesetfile = $(wildcard fontsets/$(codeset).*)
 # i.e. 512
-$(ALL_PSF_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
+$(ALL_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
 
-$(ALL_PSF_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
+$(ALL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
 				standard.equivalents+arabic.equivalents, \
 				standard.equivalents)
 
 # create FreeBSD raw fonts for these:
-$(SMALL_NONFB_PSF_FONTS) :
-	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
-                $(size) $@ $(@:%.psf=%.sfm)
-	./bdf2psf --raw --log $(@:%.psf=%.raw.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
-                $(size) $(@:%.psf=%.raw) $(@:%.psf=%.raw.sfm)
-	uuencode $(@:%.psf=%.raw) $(@:%.psf=%) >$(@:%.psf=%.fnt)
-
-$(LARGE_NONFB_PSF_FONTS) :
+$(NONFB_PSF_FONTS) :
 	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
 		$(equivalents) required.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
@@ -308,13 +306,23 @@ $(FB_PSF_FONTS) :
 		$(equivalents) required.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
 
+$(ALL_RAW_FONTS) :
+	./bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
+		$(equivalents) required.set+$(codesetfile)+:useful.set \
+                $(size) $(@:%.raw=%.raw) $(@:%.raw=%.raw.sfm)
+
+%.fnt : %.raw
+	uuencode $< $* >$@
+
 good_psf_fonts : $(GOOD_PSF_FONTS)
 
-gziped_good_psf_fonts : $(GZIPED_GOOD_PSF_FONTS)
+gzipped_good_psf_fonts : $(GZIPPED_GOOD_PSF_FONTS)
+
+uuencoded_good_raw_fonts : $(UUENCODED_GOOD_RAW_FONTS)
 
 # This builds all CODESET-TYPEFASE combinations, even when the font 
 # doesn't define symbols for the particular CODESET
-fullall : $(ALL_PSF_FONTS)
+fullall : $(ALL_FONTS)
 
 .PHONY: clean
 clean:
