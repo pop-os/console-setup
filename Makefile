@@ -1,6 +1,7 @@
 etcdir = /etc
 prefix = /usr/local
 bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
+mandir = $(prefix)/share/man
 
 # One font per fontset
 fonts-mini = Arabic-VGA16 Armenian-Fixed16 CyrAsia-Fixed16		\
@@ -49,6 +50,9 @@ install-any: build-any
 	install -d $(etcdir)/default
 	install -m 644 config.kbd $(etcdir)/default/keyboard
 	install -m 644 config $(etcdir)/default/console-setup
+	install -d $(mandir)/man1/
+	install -m 644 setupcon.1 $(mandir)/man1/
+	install -m 644 Keyboard/ckbcomp.1 $(mandir)/man1/
 
 .PHONY: install-linux
 install-linux: build-linux install-any
