@@ -1,6 +1,10 @@
 SHELL = /bin/sh
 
-build : gzipped_good_psf_fonts uuencoded_raw_fonts
+build : build-linux build-freebsd
+build-linux : gzipped_good_psf_fonts build-any
+build-freebsd : uuencoded_good_raw_fonts scrnmaps build-any
+build-any:
+
 
 %.gz : %
 	gzip -9 <$< >$@
@@ -257,6 +261,9 @@ soft.Makefile : $(doubled_bdfs)
 		$(addsuffix -$(face).psf, $($(face)-CODESETS)))) \
 	>soft.Makefile
 	echo "BDFS_TO_DOUBLE = " $(wildcard bdf/legacy16?.bdf bdf/legacy14?.bdf bdf/arabic_vga.bdf bdf/u_vga16.bdf) >>soft.Makefile
+	echo -n ENCODING_FONTSET = >>soft.Makefile
+	for a in ../acm/*.acm; do aa=`basename $$a .acm`; for f in fontsets/*.256; do ff=`basename $$f .256`; echo -n ' ' $${aa}_$${ff}; done; done >>soft.Makefile
+	echo >>soft.Makefile
 
 # i.e. Arabic/univga16
 $(ALL_PSF_FONTS) : codeset/face = $(subst -,/,$(@:%.psf=%))
@@ -320,6 +327,26 @@ gzipped_good_psf_fonts : $(GZIPPED_GOOD_PSF_FONTS)
 
 uuencoded_good_raw_fonts : $(UUENCODED_GOOD_RAW_FONTS)
 
+
+SCRNMAPS = $(addsuffix .scm, $(ENCODING_FONTSET))
+
+test:
+	echo $(ENCODING_FONTSET)
+
+# i.e. ISO-8859-7/Greek
+$(SCRNMAPS) : encoding/fontset = $(subst _,/,$(@:%.scm=%))
+# i.e. ISO-8859-7/
+$(SCRNMAPS) : encoding/ = $(dir $(encoding/fontset))
+# i.e. ISO-8859-7
+$(SCRNMAPS) : encoding = $(encoding/:%/=%)
+# i.e. Greek
+$(SCRNMAPS) : fontset = $(strip $(notdir $(encoding/fontset)))
+
+$(SCRNMAPS) : $(UUENCODED_GOOD_RAW_FONTS)
+	./make_scrnmap --binary `ls $(fontset)-*.raw.sfm|{ read x y; echo $$x;}` ../acm/$(encoding).acm | uuencode $(@:%.scm=%) >$@
+
+scrnmaps : $(SCRNMAPS)
+
 # This builds all CODESET-TYPEFASE combinations, even when the font 
 # doesn't define symbols for the particular CODESET
 fullall : $(ALL_FONTS)
@@ -327,7 +354,7 @@ fullall : $(ALL_FONTS)
 .PHONY: clean
 clean:
 	-rm -f *~
-	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt
+	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm
 	-rm -f fontsets/*~
 	-rm -f bdf/*-double.bdf
 

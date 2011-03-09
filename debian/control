@@ -24,9 +24,8 @@ Description: system-wide keyboard preferences
 Package: console-setup
 Section: utils
 Architecture: all
-Recommends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16)
 Pre-Depends: debconf (>= 1.5.34)
-Depends: console-terminus (>= 4.26), xkb-data (>= 0.9), keyboard-configuration, ${misc:Depends}
+Depends: console-setup-linux | console-setup-freebsd, xkb-data (>= 0.9), keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6), locales
 Conflicts: lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program
@@ -37,7 +36,7 @@ Description: console font and keymap setup program
  functioning as AltGr or Compose key, the key(s) to switch between
  Latin and non-Latin mode, etc.
  .
- The package also contains console fonts supporting many of the
+ The package also installs console fonts supporting many of the
  world's languages.  It provides an unified set of font faces - the
  classic VGA, the simplistic Fixed, and the cleaned Terminus,
  TerminusBold and TerminusBoldVGA.
@@ -50,7 +49,7 @@ Recommends: kbd | console-tools
 Depends: debconf (>= 0.5) | debconf-2.0, keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6)
 Conflicts: console-setup, console-terminus, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
-Description: console font and keymap setup program - reduced version
+Description: console font and keymap setup program - reduced version for Linux
  This package provides the Linux console with the same
  keyboard configuration scheme as the X Window System. As a result,
  there is no need to duplicate or change the keyboard files just to
@@ -58,21 +57,37 @@ Description: console font and keymap setup program - reduced version
  functioning as AltGr or Compose key, the key(s) to switch between
  Latin and non-Latin mode, etc.
  .
- The package also contains console fonts supporting many of the
- world's languages.  It provides a unified set of font faces - the
- classic VGA, the simplistic Fixed, and the clean Terminus,
- TerminusBold, and TerminusBoldVGA.
- .
- This package can be useful for
- handhelds or other devices with small storage space.
+ This package can be useful for handhelds or other devices with small
+ storage space.
  .
  The package supports only UTF-8. Legacy 8-bit encodings are not
  supported.
 
-Package: bdf2psf
-Architecture: all
+Package: console-setup-linux
 Section: utils
 Priority: optional
+Architecture: all
+Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), console-terminus (>= 4.26), ${misc:Depends}
+Suggests: console-setup
+Conflicts: console-cyrillic (<= 0.9-11), console-setup-mini, console-setup-mini-freebsd, console-setup (<= 1.70)
+Description: Linux specific part of console-setup
+ This package includes fonts in psf format and definitions of various
+ 8-bit encodings.
+
+Package: console-setup-freebsd
+Section: utils
+Priority: optional
+Architecture: all
+Depends: vidcontrol, kbdcontrol, console-terminus-raw, ${misc:Depends}
+Suggests: console-setup
+Conflicts: console-setup-mini, console-setup-mini-freebsd
+Description: FreeBSD specific part of console-setup
+ This package includes raw, uuencoded fonts and various screen maps.
+
+Package: bdf2psf
+Section: utils
+Priority: optional
+Architecture: all
 Depends: perl, ${misc:Depends}
 Description: font converter to generate console fonts from BDF source fonts
  This package provides a command-line converter that can be used in
@@ -95,13 +110,28 @@ Description: font converter to generate console fonts from BDF source fonts
 Package: console-setup-udeb
 Section: debian-installer
 Priority: extra
-Depends: console-setup-ekmap, archdetect, cdebconf-udeb, kbd-udeb, ${misc:Depends}
+Depends: console-setup-linux-udeb | console-setup-freebsd-udeb, archdetect, cdebconf-udeb, ${misc:Depends}
 Provides: keyboard-setup
 Architecture: all
 Description: Configure the keyboard
- This is an experimental replacement of kbd-chooser.
+ Keyboard configurator for Debian Installer based on console-setup
 XC-Package-Type: udeb
 XB-Installer-Menu-Item: 1200
+
+Package: console-setup-linux-udeb
+Section: debian-installer
+Priority: extra
+Depends: console-setup-ekmap, kbd-udeb
+Architecture: all
+Description: Linux specific part of console-setup-udeb
+XC-Package-Type: udeb
+
+Package: console-setup-freebsd-udeb
+Section: debian-installer
+Priority: extra
+Architecture: all
+Description: FreeBSD specific part of console-setup-udeb
+XC-Package-Type: udeb
 
 Package: console-setup-amiga-ekmap
 Provides: console-setup-ekmap
@@ -162,6 +192,6 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: console fonts for Debian Installer
+Description: Linux console fonts for Debian Installer
 XC-Package-Type: udeb
 

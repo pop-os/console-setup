@@ -8,8 +8,15 @@ console-setup (1.71) UNRELEASED; urgency=low
     layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
   * console-setup.postinst: do not source /etc/default/keyboard in
     /etc/default/console-setup (on new installs).
+  * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
+    (This change is not relevant for Debian.)
   * bdf2psf: new option --raw to generate raw fonts.  Try to use CP437
     code positions if possible.
+  * ckbcomp: support for FreeBSD keymaps.
+  * ckbcomp: improved implementation for Alt+PrintScreen=SysRq and
+    Ctrl+Pause=Break on AT keyboards.
+  * ckbcomp: more correct use of approximate().  This probably affects
+    only some exotic key combination such as Ctrl+Alt+Shift+AltGr+F1.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
