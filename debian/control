@@ -110,7 +110,7 @@ Description: font converter to generate console fonts from BDF source fonts
 Package: console-setup-udeb
 Section: debian-installer
 Priority: extra
-Depends: console-setup-linux-udeb | console-setup-freebsd-udeb, archdetect, cdebconf-udeb, ${misc:Depends}
+Depends: archdetect, cdebconf-udeb, ${misc:Depends}
 Provides: keyboard-setup
 Architecture: all
 Description: Configure the keyboard
@@ -118,28 +118,13 @@ Description: Configure the keyboard
 XC-Package-Type: udeb
 XB-Installer-Menu-Item: 1200
 
-Package: console-setup-linux-udeb
-Section: debian-installer
-Priority: extra
-Depends: console-setup-ekmap, kbd-udeb
-Architecture: all
-Description: Linux specific part of console-setup-udeb
-XC-Package-Type: udeb
-
-Package: console-setup-freebsd-udeb
-Section: debian-installer
-Priority: extra
-Architecture: all
-Description: FreeBSD specific part of console-setup-udeb
-XC-Package-Type: udeb
-
 Package: console-setup-amiga-ekmap
 Provides: console-setup-ekmap
 Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for Amiga keyboards
+Description: encoded Linux keyboard layouts for Amiga keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-ataritt-ekmap
@@ -148,7 +133,7 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for Atari TT keyboards
+Description: encoded Linux keyboard layouts for Atari TT keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-macintoshold-ekmap
@@ -157,7 +142,7 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for old-style Macintosh keyboards
+Description: encoded Linux keyboard layouts for old-style Macintosh keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-pc-ekmap
@@ -166,7 +151,7 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for PC keyboards
+Description: encoded Linux keyboard layouts for PC keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-sun4-ekmap
@@ -175,7 +160,7 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for Sun4 keyboards
+Description: encoded Linux keyboard layouts for Sun4 keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-sun5-ekmap
@@ -184,7 +169,7 @@ Section: debian-installer
 Priority: extra
 Depends: ${misc:Depends}
 Architecture: all
-Description: encoded keyboard layouts for Sun5 keyboards
+Description: encoded Linux keyboard layouts for Sun5 keyboards
 XC-Package-Type: udeb
 
 Package: console-setup-fonts-udeb

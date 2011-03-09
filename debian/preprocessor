@@ -63,7 +63,7 @@ if [ "$mini" ]; then
     awk '
 /## *KBDNAMES *##/ {
     printf "all_kbdnames () {\n cat <<'\''EOF'\'' \n";
-    system("cd Keyboard && ./kbdnames-maker MyKeyboardNames.pl | grep '\''^C[*]'\'' | grep -v '\''[*]model[*]'\''");
+    system("cd Keyboard && ./kbdnames-maker KeyboardNames.pl | grep '\''^C[*]'\'' | grep -v '\''[*]model[*]'\''");
     printf "EOF\n [ ! -f /usr/share/console-setup-mini/kbdnames.gz ] || zcat /usr/share/console-setup-mini/kbdnames.gz \n}\n";
     next;
 }
@@ -74,7 +74,7 @@ else
     awk '
 /## *KBDNAMES *##/ {
     printf "all_kbdnames () {\n cat <<'\''EOF'\''\n";
-    system("cd Keyboard && ./kbdnames-maker MyKeyboardNames.pl");
+    system("cd Keyboard && ./kbdnames-maker KeyboardNames.pl");
     printf "EOF\n}\n";
     next;
 }

@@ -124,10 +124,12 @@ install-udeb: build
 	$(MAKE) etcdir=debian/console-setup-udeb/etc \
 		prefix=debian/console-setup-udeb/usr install-mini-linux
 # console-setup-udeb
+	rm debian/console-setup-udeb/etc/default/keyboard
+	rm debian/console-setup-udeb/etc/default/console-setup 
+	rm -r debian/console-setup-udeb/usr/share/man
 	dh_installdirs -p console-setup-udeb usr/share/console-setup-mini
 	install -m0755  debian/keyboard-configuration.config \
 		debian/console-setup-udeb/usr/share/console-setup-mini
-	chmod a+x debian/console-setup-udeb/usr/share/console-setup-mini/keyboard-configuration.config
 	dh_install -p console-setup-udeb debian/kbdnames.gz usr/share/console-setup-mini
 	dh_installdirs -p console-setup-udeb lib/debian-installer.d
 	install -m0644 debian/console-setup-udeb.startup \
@@ -137,7 +139,7 @@ install-udeb: build
 		debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
 	dh_installdirs -p console-setup-udeb etc/default
 	dh_installdirs -p console-setup-udeb etc/console-setup/
-	cp config.kbd debian/console-setup-udeb/usr/share/console-setup-mini/keyboard
+	install -m 644 config.kbd debian/console-setup-udeb/usr/share/console-setup-mini/keyboard
 # console-setup-*-ekmap
 	dh_movefiles -p console-setup-amiga-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup-mini/amiga.ekmap.gz
 	dh_movefiles -p console-setup-ataritt-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup-mini/ataritt.ekmap.gz
