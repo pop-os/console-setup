@@ -19,6 +19,11 @@
 
 ###########################################################################
 
+do_font=yes   # configure font
+do_kbd=yes    # configure keyboard
+do_save=''    # save the required files in /etc/console-setup
+do_check=yes  # test whether we are on the console
+do_verbose='' # explain what is being doing
 
 # The same as /usr/bin/which - in order to make "which" available before
 # /usr is mounted
@@ -34,27 +39,145 @@ which () {
     return 1
 }
 
+# Print the arguments to stderr if $do_verbose is yes
+report () {
+    if [ "$do_verbose" ]; then
+        echo "$@" >&2
+    fi
+}
+
+# Execute a command on every console terminal screen specified in
+# $ACTIVE_CONSOLES.
+#
+# 1st argument: plain=execute only once with no tty change,
+# out=execute with standard output redirected to the tty, in=the same
+# but the standard input is being redirected, 'other argument'=do not
+# redirect the standard input or output but use this as a tty option.
+#
+# 2rd argument: option(s) for verbose output; 3nd argument: command to
+# run; other arguments: other options
+#
+# Example: run '-C ' -v setfont font.psf
+# If ACTIVE_CONSOLES='/dev/tty1 /dev/tty2 /dev/tty3', then this results in
+#
+# setfont -C /dev/tty1 font.psf -v
+# setfont -C /dev/tty2 font.psf -v
+# setfont -C /dev/tty3 font.psf -v
+#
+# or
+#
+# setfont -C /dev/tty1 font.psf >/dev/null 2>&1
+# setfont -C /dev/tty2 font.psf >/dev/null 2>&1
+# setfont -C /dev/tty3 font.psf >/dev/null 2>&1
+#
+# depending on the value of $do_verbose
+
+run () {
+    local ttyarg cmd verbose tty x
+    ttyarg="$1"
+    verbose="$2"
+    cmd="$3"
+    shift; shift; shift
+    if [ -z "$ACTIVE_CONSOLES" ]; then
+        ttyarg=plain
+    fi
+    case "$ttyarg" in
+        plain)
+            if [ "$do_verbose" ]; then
+                $cmd "$@" $verbose
+            else
+                $cmd "$@" >/dev/null 2>&1
+            fi
+            ;;
+        in)
+            for tty in $ACTIVE_CONSOLES; do
+                if [ -r $tty ]; then
+                    report Executing $cmd for $tty.
+                    run plain "$verbose" "$cmd" "$@" <$tty
+                else
+                    report No read access from $tty. Can not execute $cmd.
+                fi
+            done
+            ;;
+        *)
+            for tty in $ACTIVE_CONSOLES; do
+                x="${ttyarg}$tty"
+                run plain "$verbose" "$cmd" $x "$@"
+            done
+            ;;
+    esac
+}
+
+# Search a file and return the full file name if found.
+# The filename may include wildcards and may not include space.
+# Example: findfile share/consolefonts Uni3-*.psf.gz
+# Result: /usr/share/consolefonts/Uni3-Fixed13.psf.gz
+findfile () {
+    local x
+    case "$2" in
+        /*)
+            if [ -f "$2" ]; then
+                echo "$2"
+                return 0
+            fi
+            ;;
+    esac
+    x=`ls "$installdir"/$1/$2 /usr/local/$1/$2 /usr/$1/$2
+          /etc/console-setup/$2 "$installdir"/etc/console-setup/$2` 2>/dev/null
+    x=`echo $x`
+    [ "${x%% *}" ] || report Unable to find "$2".
+    echo "${x%% *}"
+}
+
+# Usage: utf_start /dev/tty5
+# Configure a console for unicode output
+utf_start () {
+    if [ -w "$1" ]; then
+        report Configuring "$1" in Unicode mode.
+        printf '\033%%G' >"$1"
+    else
+        report No write access to $tty. Can not configure Unicode mode.
+    fi
+}
+
+# Usage: utf_stop /dev/tty5
+# Configure a console for non-unicode output
+utf_stop () {
+    if [ -w "$1" ]; then
+        report Configuring "$1" in non-Unicode mode.
+        printf '\033%%@' >"$1"
+    else
+        report No write access to $tty. Can not configure non-Unicode mode.
+    fi
+}
+
+
+###########################################################################
+### PROCESS THE COMMAND LINE ARGUMENTS
+###########################################################################
+
 while [ "$1" ]; do
     case "$1" in
 	-k|--keyboard-only)
-	    keyboard_only=yes
+	    do_font=''
 	    ;;
 	-f|--font-only)
-	    font_only=yes
+	    do_kbd=''
 	    ;;
 	-v|--verbose)
-	    verbose_option=yes
+	    do_verbose=yes
 	    ;;
 	--force)
-	    force=yes
+	    do_check=''
 	    ;;
 	--save)
-	    save=yes
+	    do_save=yes
 	    ;;
 	--save-only)
-	    force=yes
-	    save=yes
-	    save_only=yes
+	    do_save=yes
+            do_kbd=''
+            do_font=''
+            do_check=''
 	    ;;
 	-h|--help)
 	    cat >&2 <<EOF
@@ -66,7 +189,7 @@ Sets up the font and the keyboard on Linux console.
       --force          do not check whether we are on the console
   -v, --verbose        explain what is being doing, try it if s.t. goes wrong
       --save           copy the font and the console map in /etc/console-setup,
-                         update /etc/console-setup/cached.kmap.gz
+                         update /etc/console-setup/cached.*
       --save-only      only save; don't setup keyboard/font immediately
                          (implies --force)
   -h, --help           display this help and exit
@@ -95,20 +218,34 @@ EOF
     shift
 done
 
+# installdir
+installdir=${0%/*}
+case "$installdir" in
+    */bin) installdir=${installdir%/bin} ;;
+    *) installdir=$installdir/.. ;;
+esac
+[ -n "$installdir" -a -d "$installdir"/bin ] || installdir=/usr
+
+
+###########################################################################
+### READ THE CONFIGURATION FILES
+###########################################################################
+
 if [ "$VARIANT" ]; then
-    USER_CONFIG=${HOME}/.console-setup."$VARIANT"
-    MAIN_CONFIG=/etc/default/keyboard."$VARIANT"
-    MAIN_CONFIG2=/etc/default/console-setup."$VARIANT"
-else
-    USER_CONFIG=${HOME}/.console-setup
-    MAIN_CONFIG=/etc/default/keyboard
-    MAIN_CONFIG2=/etc/default/console-setup
+    VARIANT=".$VARIANT"
 fi
+
+USER_CONFIG=${HOME}/.console-setup"$VARIANT"
+MAIN_CONFIG=/etc/default/keyboard"$VARIANT"
+[ -f "$MAIN_CONFIG" ] \
+    || MAIN_CONFIG="$installdir"/etc/default/keyboard"$VARIANT"
+MAIN_CONFIG2=/etc/default/console-setup"$VARIANT"
+[ -f "$MAIN_CONFIG2" ] \
+    || MAIN_CONFIG2="$installdir"/etc/default/console-setup"$VARIANT"
 
 if [ -f "$USER_CONFIG" ]; then
     CONFIG="$USER_CONFIG"
     CONFIG2=''
-    save=
 elif [ -f "$MAIN_CONFIG" ]; then
     CONFIG="$MAIN_CONFIG"
     CONFIG2="$MAIN_CONFIG2"
@@ -117,311 +254,499 @@ else
     exit 1
 fi
 
-if [ "$CONFIG2" -a -f "$CONFIG2" ]; then
+if [ -f "$CONFIG2" ]; then
     . "$CONFIG2"
+else
+    # in order to permit "if [ cached.kmap.gz -ot $CONFIG2 ]; then ... fi"
+    CONFIG2="$CONFIG"
 fi
 . "$CONFIG"
 
-if [ "$verbose_option" = yes ]; then
-    VERBOSE_OUTPUT=yes
-fi
+
+###########################################################################
+### INITIALIZATION AND DEFAULT VALUES
+###########################################################################
+
+# do_verbose
 if [ "$VERBOSE_OUTPUT" = yes ]; then
-    verbose=''
-else
-    verbose='>/dev/null 2>&1'
+    do_verbose=yes
 fi
 
-if which ckbcomp-mini >/dev/null; then
+# kernel
+kernel=unknown
+if which uname >/dev/null; then
+    case "`uname`" in
+        *Linux*) kernel=linux ;;
+        *FreeBSD*) kernel=freebsd ;;
+    esac
+fi
+
+# do_save
+if [ -n "$do_save" -a ! -d /usr/share ]; then
+    echo It seems /usr is not mounted.  Will not save files in /etc. >&2
+    do_save=''
+elif [ ! -w /etc/console-setup/ ]; then
+    echo /etc/console-setup is not writable.  No files will be saved there. >&2
+    do_save=''
+fi
+
+# ACTIVE_CONSOLES
+if [ -z "$ACTIVE_CONSOLES" ]; then
+    # Some crude guess
+    #  Conf. files:
+    #    Sys V init: /etc/inittab
+    #    Upstart: /etc/init/*
+    #  Devices:
+    #    Linux: /dev/tty[1-9][0-9]*
+    #    FreeBSD: /dev/ttyv[0-9]+
+    for tty in \
+        $(cat /etc/inittab /etc/init/* 2>/dev/null \
+        | grep ' tty[1-9v][0-9]*' \
+        | sed -e '/^ *#/d' -e 's/.* \(tty[1-9v][0-9]*\).*/\1/')
+    do
+        ACTIVE_CONSOLES="$ACTIVE_CONSOLES /dev/$tty"
+    done
+fi
+ACTIVE_CONSOLES=$(
+    for tty in $ACTIVE_CONSOLES; do
+        if [ -e $tty ]; then
+            echo $tty
+        fi
+    done
+)
+
+# CHARMAP
+CHARMAP=${CHARMAP:-UTF-8}
+if [ -f $installdir/bin/ckbcomp-mini ]; then
+    if [ "$CHARMAP" != UTF-8 ]; then
+	echo Only UTF-8 is supported by console-setup-mini >&2
+    fi
     CHARMAP=UTF-8
-    if [ "$VERBOSE_OUTPUT" = yes -a "$CHARMAP" != UTF-8 ]; then
-	echo Only UTF-8 is supported by console-setup-mini
+fi
+
+# unicode
+if \
+    [ "$CHARMAP" = UTF-8 ]
+then
+    unicode=yes
+else
+    unicode=''
+fi
+
+if [ "$kernel" = freebsd -a -n "$unicode" ]; then
+    echo UTF-8 is not supported on FreeBSD. >&2
+    exit 1
+fi
+
+# do_font
+if [ "$do_font" ]; then
+    case "$kernel" in
+        linux)
+            if which setfont >/dev/null ; then
+                do_font=linuxkbd
+            elif which consolechars >/dev/null ; then
+                do_font=linuxct
+            else
+                echo "Neither setfont nor consolechars is accessible. No font will be configured." >&2
+                do_font=''
+            fi
+            ;;
+        freebsd)
+            if which vidcontrol >/dev/null ; then
+                do_font=freebsd
+            else
+                echo "vidcontrol is not accessible. No font will be configured." >&2
+                do_font=''
+            fi
+            ;;
+    esac
+fi
+# Due to bug in splashy and usplash: do not load fonts (#540314)
+if which pidof >/dev/null; then
+    if pidof splashy > /dev/null || pidof usplash > /dev/null; then
+        do_font=''
     fi
 fi
 
-if [ "$force" != yes ]; then
-    case `readlink /proc/self/fd/2` in
-	/dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
+# CODESET
+if [ -z "$CODESET" ]; then
+    case "$CHARMAP" in
+        UTF-8)            CODESET=Uni2;;
+        ARMSCII-8)        CODESET=Armenian ;;
+        CP1251)           CODESET=CyrSlav ;;
+        CP1255)           CODESET=Hebrew ;;
+        CP1256)           CODESET=Arabic ;;
+        GEORGIAN-ACADEMY) CODESET=Georgian ;;
+        GEORGIAN-PS)      CODESET=Georgian ;;
+        IBM1133)          CODESET=Lao ;;
+        ISIRI-3342)       CODESET=Arabic ;;
+        ISO-8859-1)       CODESET=Lat15 ;;
+        ISO-8859-2)       CODESET=Lat2 ;;
+        ISO-8859-3)       CODESET=Lat38 ;;
+        ISO-8859-4)       CODESET=Lat7 ;; # sometimes Lat15
+        ISO-8859-5)       CODESET=CyrSlav ;;
+        ISO-8859-6)       CODESET=Arabic ;;
+        ISO-8859-7)       CODESET=Greek ;;
+        ISO-8859-8)       CODESET=Hebrew ;;
+        ISO-8859-9)       CODESET=Lat15 ;;
+        ISO-8859-10)      CODESET=Lat15 ;;
+        ISO-8859-11)      CODESET=Thai ;;
+        ISO-8859-13)      CODESET=Lat7 ;;
+        ISO-8859-14)      CODESET=Lat38 ;;
+        ISO-8859-15)      CODESET=Lat15 ;;
+        ISO-8859-16)      CODESET=Lat2 ;;
+        KOI8-R)           CODESET=CyrKoi ;;
+        KOI8-U)           CODESET=CyrKoi ;;
+        TIS-620)          CODESET=Thai ;;
+        VISCII)           CODESET=Vietnamese ;;
+        *)
+            if [ "$do_font" ]; then
+                echo Unsupported charmap $CHARMAP >&2
+                exit 1
+            fi
+            ;;
+    esac
+fi
+if [ "$kernel" = freebsd ]; then
+    if \
+        [ -z "`findfile share/syscons/scrnmaps ${CHARMAP}_${CODESET}.scm`" ]
+    then
+        report "Ignoring the CODESET specification ($CODESET)."
+        CODESET=`findfile share/syscons/scrnmaps ${CHARMAP}_*.scm`
+        if [ -n "$do_font" -a -z "$CODESET" ]; then
+            echo Unsupported charmap $CHARMAP >&2
+            exit 1
+        fi
+        CODESET=${CODESET%%*/}
+        CODESET=${CODESET#.scm*}
+        CODESET=${CODESET%*_}
+        report Using $CODESET instead.
+    fi
+fi
+
+# FONTSIZE
+FONTSIZE=${FONTSIZE:-16}
+
+# mapdir, fontdir, stdfont, stdfontfallback
+case "$kernel" in
+    linux)
+        mapdir=share/consoletrans
+        stdmap=$CHARMAP.acm.gz
+        fontdir=share/consolefonts
+        stdfont=$CODESET-$FONTFACE$FONTSIZE.psf.gz
+        stdfontfallback=$CODESET-*[A-Za-z]$FONTSIZE.psf.gz
+        ;;
+    freebsd)
+        mapdir=share/syscons/scrnmaps
+        stdmap=${CHARMAP}_${CODESET}.scm
+        fontdir=share/syscons/fonts
+        stdfont=$CODESET-$FONTFACE$FONTSIZE.fnt
+        stdfontfallback=$CODESET-*[A-Za-z]$FONTSIZE.fnt
+        ;;
+esac
+
+# CONSOLE_MAP
+CONSOLE_MAP=${CONSOLE_MAP:-$ACM}
+[ -z "$CONSOLE_MAP" ] || CONSOLE_MAP=`findfile $mapdir "$CONSOLE_MAP"`
+[ -n "$CONSOLE_MAP" -o "$CHARMAP" = UTF-8 ] || CONSOLE_MAP=`findfile $mapdir $stdmap`
+
+# FONTFILES, VIDEOMODE
+FONTFILES=''
+if [ "$FONT" ]; then
+    for f in $FONT; do
+        FONTFILES="$FONTFILES `findfile $fontdir $f`"
+    done
+fi
+FONTFILES=`echo $FONTFILES` # remove extra spaces
+if [ -z "$FONTFILES" ]; then
+    FONTFILES=`findfile $fontdir $stdfont`
+    [ "$FONTFILES" ] || FONTFILES=`findfile $fontdir $stdfontfallback`
+    case "$FONTFILES" in
+        *[0-9]x[1-9]*.psf.gz|*[0-9]x[1-9]*.fnt)
+            if [ "$kernel" = freebsd ]; then
+                echo "\
+Only fonts with 8 pixel width matrix are supported on the FreeBSD console.
+Please reconfigure the font size." >&2
+                do_font=''
+            elif which consolechars >/dev/null; then
+		echo "\
+The consolechars utility from the \"console-tools\" package can load only fonts
+with 8 pixel width matrix.  Please install the setfont utility from the package
+\"kbd\" or reconfigure the font size." >&2
+                do_font=''
+            fi
+            ;;
+        *[a-zA-Z]16.fnt) VIDEOMODE=${VIDEOMODE:-80x25} ;;
+        *[a-zA-Z]14.fnt) VIDEOMODE=${VIDEOMODE:-80x30} ;;
+        *[a-zA-Z]8.fnt) VIDEOMODE=${VIDEOMODE:-80x43} ;;
+    esac
+fi
+if [ "$kernel:::$VIDEOMODE" = freebsd::: ]; then
+    case "$FONTSIZE" in
+        16) VIDEOMODE=80x25 ;;
+        14) VIDEOMODE=80x30 ;;
+        8) VIDEOMODE=80x43 ;;
+        *)
+            echo "\
+Unable to determine the desired video mode. Please configure the value of
+VIDEOMODE or FONTSIZE." >&2
+            do_font=''
+            ;;
+    esac
+fi
+if [ "$do_font" = freebsd ]; then
+    report Using $VIDEOMODE as video mode.
+fi
+if [ -z "$FONTFILES" ]; then
+    echo Unable to find the required font.  No font will be configured. >&2
+    do_font=''
+fi
+
+# FONTMAPFILE
+FONTMAPFILE=''
+if [ "$kernel" = linux -a -n "$FONT_MAP" ]; then
+    FONTMAPFILE=`findfile share/consoletrans "$FONT_MAP"`
+fi
+
+# XKBMODEL
+if [ -n "$do_kbd$do_save" -a "$XKBMODEL" = unknown ]; then
+    echo The keyboard model is unknown.  Keyboard will not be configured. >&2
+    XKBMODEL=''
+fi
+
+# do_kbd
+[ "$XKBMODEL" ] || do_kbd=''
+if [ "$do_kbd" ]; then
+    case "$kernel" in
+        linux)
+            if which loadkeys >/dev/null; then
+                do_kbd=linux
+            else
+                echo loadkeys is not accessible. Keyboard will not be configured.>&2
+                do_kbd=''
+            fi
+            ;;
+        freebsd)
+            if which kbdcontrol >/dev/null; then
+                do_kbd=freebsd
+            else
+                echo kbdcontrol is not accessible. Keyboard will not be configured.>&2
+                do_kbd=''
+            fi
+            ;;
+    esac
+fi
+
+# acm_option
+if [ "$CHARMAP" != UTF-8 ]; then
+    acm_option="-charmap $CHARMAP"
+else
+    acm_option=''
+fi
+
+# rules_option
+if [ "$XKBRULES" ]; then
+    rules_option="-rules $XKBRULES"
+else
+    rules_option=''
+fi
+
+# cached
+case "$kernel" in
+    linux) cached=/etc/console-setup/cached$VARIANT.kmap.gz ;;
+    freebsd) cached=/etc/console-setup/cached$VARIANT.kbd ;;
+esac
+
+# do_savekbd
+do_savekbd=${do_save:+$kernel}
+[ "$XKBMODEL" ] || do_savekbd=''
+if [ "$do_savekbd" = linux ] && ! which gzip >/dev/null; then
+    do_savekbd=''
+    echo gzip is not accessible.  Will not save cached keyboard map. >&2
+fi
+[ ! -f "$cached" -o "$cached" -ot "$CONFIG"  -o "$cached" -ot "$CONFIG2" ] \
+    || do_savekbd=''
+
+# KMAP
+if [ -n "$KMAP" -a ! -f "$KMAP" ]; then
+    echo $KMAP does not exist. >&2
+    KMAP=''
+fi
+
+
+###########################################################################
+### SAVE THE FILES IN /etc
+###########################################################################
+
+if [ -n "$do_save" ]; then
+    case "$CONSOLE_MAP" in
+        /etc/console-setup/*) ;;
+        ?*) cp "$CONSOLE_MAP" /etc/console-setup/ ;;
+    esac
+    for font in $FONTFILES; do
+        case "$font" in
+            /etc/console-setup/*) ;;
+            ?*) cp "$font" /etc/console-setup/ ;;
+        esac
+    done
+    case "$FONTMAPFILE" in
+        /etc/console-setup/*) ;;
+        ?*) cp "$FONTMAPFILE" /etc/console-setup/ ;;
+    esac
+fi
+
+case "$do_savekbd" in
+    linux)
+	ckbcomp $acm_option $rules_option -model "$XKBMODEL" \
+	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" | gzip -9 >"$cached"
+        ;;
+    freebsd)
+	ckbcomp -freebsd $acm_option $rules_option -model "$XKBMODEL" \
+	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$cached"
+        ;;
+esac
+
+
+###########################################################################
+### ARE WE ON THE CONSOLE?
+###########################################################################
+
+if [ "$do_check" ]; then
+    case "`tty`" in
+	/dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
 	    ;;
 	*)
-	    echo We are not on the Linux console, the console is left unconfigured.
-	    exit 0 
+	    echo We are not on the console, the console is left unconfigured. >&2
+	    exit 0
 	    ;;
     esac
 fi
 
-ACTIVE_CONSOLES=${ACTIVE_CONSOLES:-/dev/tty[1-6]}
-CHARMAP=${CHARMAP:-UTF-8}
-CODESET=${CODESET:-Uni2}
-CONSOLE_MAP=${CONSOLE_MAP:-$ACM}
 
-#-----------------------#
-#       OUTPUT          #
-#-----------------------#
+###########################################################################
+### OUTPUT
+###########################################################################
 
-if [ "$keyboard_only" != yes ] && [ "$ACTIVE_CONSOLES" ]; then
-    # Setup unicode/non-unicode mode
-    if [ "$save_only" != yes ]; then
-	for console in $ACTIVE_CONSOLES; do
-	    [ -w $console ] || continue
-	    if \
-		[ "$CHARMAP" = UTF-8 ] || [ -z "$CONSOLE_MAP$CHARMAP" ]
-	    then
-		printf '\033%%G' >$console
-	    else
-		printf '\033%%@' >$console
-	    fi
-	done
-    fi
-    
-    # Load the font
-    if [ -z "$FONT" ]; then
-	FONT_MAP=''
-	if which ckbcomp-mini >/dev/null; then
-	    FONT=$(echo `ls /usr/share/consolefonts/$CODESET-*.psf* \
-		            /etc/console-setup/$CODESET-*.psf* 2>/dev/null`)
-	    FONT=${FONT%% *}
-	    if [ "$FONTFACE" ] || [ "$FONTSIZE" ]; then
-		eval echo setupcon: Warning: ignoring the FONTFACE and FONTSIZE specifications! $verbose
-	    fi
-	elif [ "$FONTFACE" ] && [ "$FONTSIZE" ]; then
-	    FONT="$CODESET-$FONTFACE$FONTSIZE.psf.gz"
-	    case "$FONTSIZE" in
-		*x*)
-		    bigfont=yes
-		    ;;
-		*)
-		    bigfont=no
-		    ;;
-	    esac
-	fi
-    fi
-    LOADFONTS=''
-    for f in $FONT; do
-	if [ -f "$f" ]; then
-	    LOADFONTS="$LOADFONTS $f"
-	else
-	    for dir in \
-		/usr/local/share/consolefonts \
-		/usr/share/consolefonts \
-		/etc/console-setup \
-		FONT_IS_MISSING
-	    do
-		if [ -f "$dir/${f##*/}" ]; then
-		    LOADFONTS="$LOADFONTS $dir/${f##*/}"
-		    break
-		fi
-		if [ "$dir" = FONT_IS_MISSING ]; then
-		    echo setupcon: Warning: the font ${f##*/} does not exist! >&2
-		fi
-	    done
-	fi
-    done
-    LOADFONT_MAP=''
-    for f in $FONT_MAP; do
-	[ -z "$LOADFONT_MAP" ] || break # only one unicode map
-	if [ -f "$f" ]; then
-	    LOADFONT_MAP="$LOADFONT_MAP $f"
-	else
-	    for dir in \
-		/usr/local/share/consoletrans \
-		/usr/share/consoletrans \
-		/etc/console-setup \
-		FONT_MAP_IS_MISSING
-	    do
-		if [ -f "$dir/${f##*/}" ]; then
-		    LOADFONT_MAP="$LOADFONT_MAP $dir/${f##*/}"
-		    break
-		fi
-		if [ "$dir" = FONT_MAP_IS_MISSING ]; then
-		    echo setupcon: Warning: the unicode map ${f##*/} does not exist! >&2
-		fi
-	    done
-	fi
-    done
-    
-    for f in $LOADFONTS; do
-	if \
-	    [ "$save" = yes ] \
-	    && [ "${f%/*}" != /etc/console-setup ]
-	then
-	    cp "$f" /etc/console-setup/
-	fi
-    done
-    for f in $LOADFONT_MAP; do
-	if \
-	    [ "$save" = yes ] \
-	    && [ "${f%/*}" != /etc/console-setup ]
-	then
-	    cp "$f" /etc/console-setup/
-	fi
-    done
-    
-    # Due to bug in splashy and usplash: do not load fonts (#540314)
-    if \
-	pidof splashy > /dev/null \
-	|| pidof usplash > /dev/null
-    then
-	LOADFONTS=''
-    fi
+# Setup unicode/non-unicode mode
+case "$do_font" in
+    linux*)
+        if [ "$unicode" ]; then
+            run '' '' utf_start
+        else
+            run '' '' utf_stop
+        fi
+        ;;
+esac
 
-    if [ "$save_only" != yes ] && [ "$LOADFONTS" ]; then
-	for console in $ACTIVE_CONSOLES; do
-	    [ -w $console ] || continue
-	    if which consolechars >/dev/null; then
-		if [ "$bigfont" = yes ]; then
-		    echo "setupcon: The consolechars utility from the console-setup font can load only fonts with 8 pixel width matrix.  Please install the setfont utility from the kbd package." >&2
-		fi
-		if [ "$LOADFONT_MAP" ]; then
-		    eval consolechars -v --tty=$console -f $LOADFONTS -u "$LOADFONT_MAP" $verbose
-		else
-		    eval consolechars -v --tty=$console -f $LOADFONTS $verbose
-		fi
-	    elif which setfont >/dev/null; then
-		if [ "$LOADFONT_MAP" ]; then
-		    eval setfont -v -C $console $LOADFONTS -u "$LOADFONT_MAP" $verbose
-		else
-		    eval setfont -v -C $console $LOADFONTS $verbose
-		fi
-	    fi
-	done
-    fi
-    
-    # Load the ACM
-    if [ ! -f "$CONSOLE_MAP" ]; then
-	for dir in \
-	    /usr/local/share/consoletrans \
-	    /usr/share/consoletrans \
-	    /etc/console-setup 
-	do
-	    if [ -f "$dir/$CHARMAP.acm.gz" ]; then
-		CONSOLE_MAP="$dir/$CHARMAP.acm.gz"
-		break
-	    fi
-	done
-    fi
-    if [ -f "$CONSOLE_MAP" ]; then
-	if \
-	    [ "$save" = yes ] \
-	    && [ "${CONSOLE_MAP%/*}" != /etc/console-setup ]
-	then
-	    cp "$CONSOLE_MAP" /etc/console-setup/
-	fi
-    else
-	CONSOLE_MAP="$CHARMAP.acm.gz"
-    fi
-    if \
-	[ "$save_only" != yes ] && [ "$CHARMAP" != UTF-8 ] && [ "$LOADFONTS" ]
-    then
-	for console in $ACTIVE_CONSOLES; do
-	    [ -w $console ] || continue
-	    if which consolechars >/dev/null; then
-		eval consolechars -v --tty=$console --acm "$CONSOLE_MAP" $verbose
-	    elif which setfont >/dev/null; then
-		eval setfont -v -C $console -m "$CONSOLE_MAP" $verbose
-	    fi	    
-	done
-    fi
+# Load the font(s)
+case "$do_font" in
+    freebsd)
+        run plain '' vidcontrol -f ${FONTFILES%% *}
+        run plain '' vidcontrol "$VIDEOMODE"
+        ;;
+    linuxkbd)
+        if [ "$FONTMAPFILE" ]; then
+	    run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE"
+        else
+	    run '-C ' -v setfont $FONTFILES
+        fi
+        ;;
+    linuxct)
+        if [ "$FONTMAPFILE" ]; then
+	    run --tty= -v consolechars -f ${FONTFILES%% *} -u "$FONTMAPFILE"
+        else
+	    run --tty= -v consolechars -f ${FONTFILES%% *}
+        fi
+        ;;
+esac
 
-    STTY=""
+# Load the console map
+if [ "$CONSOLE_MAP" ]; then
+    case "$do_font" in
+        freebsd)
+            run plain '' vidcontrol -l "$CONSOLE_MAP"
+            ;;
+        linuxkbd)
+	    run '-C ' -v setfont -m "$CONSOLE_MAP"
+            ;;
+        linuxct)
+            run --tty= -v consolechars --acm "$CONSOLE_MAP"
+            ;;
+    esac
+fi
+
+# Setup the terminal width and height
+if [ "$do_font" ]; then
+    STTY=''
     [ -z "$SCREEN_WIDTH"  ] || STTY="$STTY cols $SCREEN_WIDTH"
     [ -z "$SCREEN_HEIGHT" ] || STTY="$STTY rows $SCREEN_HEIGHT"
 
-    if [ -n "$STTY" ]
-    then
-	for console in $ACTIVE_CONSOLES; do
-	    [ -r $console ] || continue
-	    stty $STTY < $console
-	done
+    if [ "$STTY" ]; then
+        run in '' stty $STTY
     fi
 fi
 
-#-----------------------#
-#        INPUT          #
-#-----------------------#
 
-if [ "$font_only" != yes -a "$XKBMODEL" != unknown ]; then
-    # On Mac PPC machines, we may need to set kernel vars first.  We need
-    # to mount /proc to do that, but we need it set up before sulogin may
-    # be run in checkroot, which will need the keyboard to log in...
-    # This code was borrowed from the keymap.sh script of console-common
-    # Copyright © 2001 Yann Dirson
-    # Copyright © 2001 Alcove http://www.alcove.fr/
-    if [ "$save_only" != yes ] && \
-       [ -x /sbin/sysctl ] && [ -r /etc/sysctl.conf ]; then
+###########################################################################
+### INPUT
+###########################################################################
+
+# On Mac PPC machines, we may need to set kernel vars first.  We need
+# to mount /proc to do that, but we need it set up before sulogin may
+# be run in checkroot, which will need the keyboard to log in...
+# This code was borrowed from the keymap.sh script of console-common
+# Copyright © 2001 Yann Dirson
+# Copyright © 2001 Alcove http://www.alcove.fr/
+if [ "$do_kbd" = linux ]; then
+    if [ -x /sbin/sysctl -a -r /etc/sysctl.conf ]; then
 	if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
 	    grep keycodes /etc/sysctl.conf | grep -v "^#" \
 		| while read d ; do
-		      /sbin/sysctl -w $d 2> /dev/null || true
-	          done
+                /sbin/sysctl -w $d 2> /dev/null || true
+            done
 	fi
     fi
-    
-    if [ "$save_only" != yes ]; then
-	for console in $ACTIVE_CONSOLES; do
-	    [ -w $console ] || continue
-	    if which kbd_mode >/dev/null; then
-		if [ "$CHARMAP" = UTF-8 ] || [ -z "$CONSOLE_MAP" ]; then
-		    kbd_mode -u <$console
-		else
-		    kbd_mode -a <$console
-		fi
-	    fi
-	done
+fi
+
+# Setup unicode/non-unicode mode
+if [ "$do_kbd" = linux ]; then
+    if which kbd_mode >/dev/null; then
+        if [ "$unicode" ]; then
+            run in '' kbd_mode -u
+        else
+            run in '' kbd_mode -a
+        fi
+    else
+        report kbd_mode is not accessible.  Unable to setup unicode/non-unicode keyboard mode.
     fi
-    
-    if which loadkeys >/dev/null; then
-	if [ "$CHARMAP" != UTF-8 ]; then
-	    acm_option="-charmap $CHARMAP"
-	else
-	    acm_option=''
-	fi
-	
-	if [ "$XKBRULES" ]; then
-	    rules_option="-rules $XKBRULES"
-	else
-	    rules_option=''
-	fi
-	
-	if \
-	    [ "$VARIANT" = '' ] \
-	    && which gzip >/dev/null \
-	    && [ -d /usr/share ] # /usr is mounted
-	then
-	    if \
-		[ ! -f /etc/console-setup/cached.kmap.gz ] \
-		|| [ /etc/console-setup/cached.kmap.gz \
-		     -ot /etc/default/keyboard ] \
-		|| [ "$save" = yes ]
-	    then
-		ckbcomp $acm_option $rules_option -model "$XKBMODEL" \
-		    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-		    | gzip -9 2>/dev/null >/etc/console-setup/cached.kmap.gz
-		    # avoid warnings when /etc is mounted read-only
-	    fi
-	fi
-	
-	if [ "$save_only" != yes ]; then
-	    if [ "$KMAP" -a -f "$KMAP" ]; then
-		eval loadkeys "$KMAP" $verbose
-	    else		    
-		if \
-		    [ "$VARIANT" = '' ] && [ "$CONFIG" != "$USER_CONFIG" ] \
-		    && [ -f /etc/console-setup/cached.kmap.gz ] \
-		    && [ ! /etc/console-setup/cached.kmap.gz \
-		           -ot /etc/default/keyboard ]
-		then
-		    eval loadkeys /etc/console-setup/cached.kmap.gz $verbose
-		else
-		    if [ -d /usr/share/X11/xkb ]; then
-			ckbcomp $acm_option $rules_option \
-			    -model "$XKBMODEL" \
-			    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-			    | eval loadkeys $verbose
-		    elif [ -f /etc/console-setup/cached.kmap.gz ]; then
-			eval loadkeys /etc/console-setup/cached.kmap.gz $verbose
-		    fi
-		fi
-	    fi
-	fi
-    fi
+fi
+
+if \
+    [ -z "$KMAP" -a -f "$cached" ] \
+    && [ "$CONFIG" -ot "$cached" -a "$CONFIG2" -ot "$cached" ]
+then
+    KMAP="$cached"
+fi
+
+if [ "$KMAP" ]; then
+    case "$do_kbd" in
+        linux) run plain '' loadkeys "$KMAP" ;;
+        freebsd) run plain '' kbdcontrol -l "$KMAP" ;;
+    esac
+else
+    case "$do_kbd" in
+        linux)
+	    ckbcomp $acm_option $rules_option -model "$XKBMODEL" \
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
+                | run plain '' loadkeys
+            ;;
+        freebsd)
+            TMPFILE=`mktemp` \
+                || { echo Can not create temporary file >&2; exit 1; }
+	    ckbcomp -freebsd $acm_option $rules_option -model "$XKBMODEL" \
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
+            run plain '' kbdcontrol -l $TMPFILE
+            rm $TMPFILE
+            ;;
+    esac
 fi

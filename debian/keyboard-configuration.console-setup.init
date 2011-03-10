@@ -39,17 +39,14 @@ case "$1" in
         # console-setup isn't a daemon
         ;;
     start|force-reload|restart|reload)
-	case `readlink /proc/self/fd/2` in
-	    /dev/tty[0-9]*|/dev/vc/[0-9]*|/dev/console)
+	case "`tty`" in
+	    /dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
 	        log_action_begin_msg "Setting up console font and keymap"
-		if setupcon; then
+		if setupcon --save; then
 		    log_action_end_msg 0
 		else
 		    log_action_end_msg $?
 		fi
-		;;
-	    *)
-		exit 0 
 		;;
 	esac
 	;;
@@ -59,3 +56,4 @@ case "$1" in
         ;;
 esac
 
+exit 0

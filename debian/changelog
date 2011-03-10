@@ -6,24 +6,20 @@ console-setup (1.71) UNRELEASED; urgency=low
     the delay).
   * Ask the keyboard option question even when Debconf doesn't support the
     layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
-  * Complete the transition from/etc/default/console-setup to
-    /etc/default/keyboard:  console-setup.postinst: do not source
-    /etc/default/keyboard in /etc/default/console-setup (on new
-    installs). console-setup(-mini).postinst: do not add commands in
-    /etc/default/console-setup to source /etc/default/keyboard.  Do not
-    attempt to transform pre 1.47 /etc/default/console-setup to
-    /etc/default/keyboard.  Fail if upgrading from pre 1.47.
+  * Complete the transition from /etc/default/console-setup to
+    /etc/default/keyboard.  Do not source /etc/default/keyboard in
+    /etc/default/console-setup (on new installs or upgrades).
   * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
     (This change is not relevant for Debian.)
   * bdf2psf: new option --raw to generate raw fonts.  Try to use CP437
     code positions if possible.
-  * ckbcomp: support for FreeBSD keymaps.
+  * ckbcomp and setupcon: support for FreeBSD keymaps.
   * ckbcomp: improved implementation for Alt+PrintScreen=SysRq and
     Ctrl+Pause=Break on AT keyboards.
   * ckbcomp: more correct use of approximate().  This probably affects
     only some exotic key combination such as Ctrl+Alt+Shift+AltGr+F1.
   * ckbcomp: do not cache automatically the keymap.  Instead add --save
-    option in postinst and the init script.
+    option the init script.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

@@ -35,6 +35,27 @@ if [ "$1" = "configure" ]; then
 
     CONSOLE_MAP=${CONSOLE_MAP:-$ACM}
 
+# If $CONFFILE is produced by an old version of console-setup(-mini)
+    if \
+	grep "^ *XKBLAYOUT=" $CONFIGFILE >/dev/null || \
+	! grep "^ *CHARMAP=" $CONFIGFILE >/dev/null
+    then
+	cp -a $CONFIGFILE $CONFIGFILE.tmp
+
+	cat /usr/share/console-setup/console-setup >$CONFIGFILE.tmp
+
+	cat >>$CONFIGFILE.tmp <<EOF
+
+######################################################################
+# You can remove the lines that follow.  They contain the contents of
+# this file before version 1.47 of console-setup.
+######################################################################
+EOF
+	sed 's/^/# /' <$CONFIGFILE >>$CONFIGFILE.tmp
+
+	mv -f $CONFIGFILE.tmp $CONFIGFILE
+    fi
+
     # Ensure we do not mess up the config file's ownership and permissions.
     cp -a -f $CONFIGFILE $CONFIGFILE.tmp
 
