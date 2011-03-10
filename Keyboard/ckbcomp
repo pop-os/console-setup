@@ -39,7 +39,19 @@ my $acm;
 
 my $verbosity = 0;
 
+my $installdir=$0;
+$installdir =~ s|/[^/]*$||g;
+if ($installdir =~ m|/bin$|) {
+    $installdir =~ s|/bin$||;
+} else {
+    $installdir .= "/..";
+}
+if ( $installdir eq '' || ! -d "$installdir/bin") {
+    $installdir = '/usr';
+}
+
 my @xdirs = ('/etc/console-setup/ckb',
+             "$installdir/etc/console-setup/ckb",
 	     '/usr/share/X11/xkb',
 	     '/etc/X11/xkb',
 	     '/usr/X11R6/lib/X11/xkb');

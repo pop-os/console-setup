@@ -1,3 +1,4 @@
+# etcdir must be either /etc or $(prefix)/etc
 etcdir = /etc
 prefix = /usr/local
 bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
