@@ -634,6 +634,9 @@ for my $u (@requested) {
             } elsif ($types{$v} == $copy_8th) {
                 my $position = copy_8th_position ($v);
                 $sfm_table[$position] = equivalence_class ($v);
+            } elsif (ascii($v)) {
+                my $position = doesnt_matter_8th_position ($v);
+                $sfm_table[$position] = equivalence_class ($v);
             } else {
                 push @delayed, $v;
             }
