@@ -291,6 +291,7 @@ elif [ ! -w /etc/console-setup/ ]; then
 fi
 
 # ACTIVE_CONSOLES
+[ "$ACTIVE_CONSOLES" != guess ] || ACTIVE_CONSOLES=''
 if [ -z "$ACTIVE_CONSOLES" ]; then
     # Some crude guess
     #  Conf. files:
@@ -341,6 +342,9 @@ if [ "$kernel" = freebsd -a -n "$unicode" ]; then
 fi
 
 # do_font
+if [ -z "$FONTFACE$FONT" ]; then
+    do_font=''
+fi
 if [ "$do_font" ]; then
     case "$kernel" in
         linux)
@@ -371,6 +375,7 @@ if which pidof >/dev/null; then
 fi
 
 # CODESET
+[ "$CODESET" != guess ] || CODESET=''
 if [ -z "$CODESET" ]; then
     case "$CHARMAP" in
         UTF-8)            CODESET=Uni2;;
@@ -427,7 +432,15 @@ if [ "$kernel" = freebsd ]; then
 fi
 
 # FONTSIZE
+# make $stdfontfallback fail so no font is copied with --save option
+if [ -z "$FONTFACE$FONT" ]; then
+    FONTSIZE=NOFONT
+fi
+[ "$FONTSIZE" != guess ] || FONTSIZE=''
 FONTSIZE=${FONTSIZE:-16}
+
+# FONTFACE
+[ "$FONTFACE" != guess ] || FONTFACE=''
 
 # mapdir, fontdir, stdfont, stdfontfallback
 case "$kernel" in
@@ -499,7 +512,7 @@ fi
 if [ "$do_font" = freebsd ]; then
     report Using $VIDEOMODE as video mode.
 fi
-if [ -z "$FONTFILES" ]; then
+if [ -n "$do_font" -a -z "$FONTFILES" ]; then
     echo Unable to find the required font.  No font will be configured. >&2
     do_font=''
 fi

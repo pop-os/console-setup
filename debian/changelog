@@ -20,6 +20,7 @@ console-setup (1.71) UNRELEASED; urgency=low
     only some exotic key combination such as Ctrl+Alt+Shift+AltGr+F1.
   * ckbcomp: do not cache automatically the keymap.  Instead add --save
     option the init script.
+  * setupcon: recognise 'guess' value in the configuration file.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

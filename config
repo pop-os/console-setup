@@ -1,11 +1,10 @@
 # Change to "yes" and setupcon will explain what is being doing
 VERBOSE_OUTPUT=no
 
-# Setup these consoles or empty string in order to guess.  Filename
-# wildcards (*,?) are allowed.  Usually on Linux this is /dev/tty[1-6]
-# and on FreeBSD it is /dev/ttyv[1-4].
-
-ACTIVE_CONSOLES=""
+# Setup these consoles.  Filename wildcards (*,?) are allowed.  On
+# Linux usually this is /dev/tty[1-6] and on FreeBSD it is /dev/ttyv[0-3].
+# Use "guess" to make console-setup guess the correct value.
+ACTIVE_CONSOLES=guess
 
 # Put here your encoding.  Valid charmaps are: UTF-8 ARMSCII-8 CP1251
 # CP1255 CP1256 GEORGIAN-ACADEMY GEORGIAN-PS IBM1133 ISIRI-3342
@@ -14,11 +13,13 @@ ACTIVE_CONSOLES=""
 # ISO-8859-14 ISO-8859-15 ISO-8859-16 KOI8-R KOI8-U TIS-620 VISCII
 CHARMAP=UTF-8
 
-# The codeset determines which symbols are supported by the font.
-# Valid codesets are: Arabic Armenian CyrAsia CyrKoi CyrSlav Ethiopian
-# Georgian Greek Hebrew Lao Lat15 Lat2 Lat38 Lat7 Thai Uni1 Uni2 Uni3
-# Vietnamese.  Read README.fonts for explanation.
-CODESET=Lat15
+# In most cases you can use "guess" here in which case the correct
+# value will be guessed.  The codeset determines which symbols are
+# supported by the font.  Valid codesets are: Arabic Armenian CyrAsia
+# CyrKoi CyrSlav Ethiopian Georgian Greek Hebrew Lao Lat15 Lat2 Lat38
+# Lat7 Thai Uni1 Uni2 Uni3 Vietnamese.  Read README.fonts for
+# explanation.
+CODESET=
 
 # Valid font faces are: VGA (sizes 8, 14 and 16), Terminus (sizes
 # 12x6, 14, 16, 20x10, 24x12, 28x14 and 32x16), TerminusBold (sizes
@@ -26,15 +27,19 @@ CODESET=Lat15
 # and 16) and Fixed (sizes 13, 14, 15, 16 and 18).  Only when
 # CODESET=Ethiopian: Goha (sizes 12, 14 and 16) and 
 # GohaClassic (sizes 12, 14 and 16).
-# Set FONTFACE and FONTSIZE to empty strings if you want setupcon to
-# set up the keyboard but to leave the console font unchanged.
-FONTFACE=TerminusBoldVGA
+#
+# Set FONTFACE (and possibly FONTSIZE) to "guess" if you want suitable
+# values to be guessed.  Set FONTFACE and FONTSIZE to empty strings if
+# you want to set up the keyboard but to leave the console font
+# unchanged.
+FONTFACE=TerminusBold
 FONTSIZE=16
 
-# You can also directly specify nonstandard font or console map to load.
-# Use space as separator if you want to load more than one font.
-# You can use FONT_MAP in order to specify the Unicode map of the font
-# in case the font doesn't have it embedded.
+# You can also directly specify a non standard font (FONT) or console
+# map (CONSOLE_MAP) to load.  On Linux you can use space as separator
+# if you want to load more than one font and you can also use FONT_MAP
+# in order to specify the Unicode map of the font in case the font
+# doesn't have it embedded.
 
 # FONT='lat9w-08.psf.gz brl-8x8.psf'
 # FONT_MAP=/usr/share/consoletrans/lat9u.uni
@@ -43,6 +48,6 @@ FONTSIZE=16
 # You can also specify a screen size that setupcon will enforce.  This can not
 # exceed what the current screen resolution can display according to the size of
 # the loaded font.
-#
+
 # SCREEN_WIDTH=80
 # SCREEN_HEIGHT=25
