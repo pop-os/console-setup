@@ -35,6 +35,10 @@ CODESET=
 FONTFACE=TerminusBold
 FONTSIZE=16
 
+# On FreeBSD you should specify a video mode that corresponds to the
+# chosen font.  The special value 'guess' is also recognised.
+VIDEOMODE=guess
+
 # You can also directly specify a non standard font (FONT) or console
 # map (CONSOLE_MAP) to load.  On Linux you can use space as separator
 # if you want to load more than one font and you can also use FONT_MAP

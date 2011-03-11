@@ -345,9 +345,6 @@ if [ "$kernel" = freebsd -a -n "$unicode" ]; then
 fi
 
 # do_font
-if [ -z "$FONTFACE$FONT" ]; then
-    do_font=''
-fi
 if [ "$do_font" ]; then
     case "$kernel" in
         linux)
@@ -435,15 +432,9 @@ if [ "$kernel" = freebsd ]; then
 fi
 
 # FONTSIZE
-# make $stdfontfallback fail so no font is copied with --save option
-if [ -z "$FONTFACE$FONT" ]; then
-    FONTSIZE=NOFONT
+if [ -z "$FONTSIZE" -o "$FONTSIZE" = guess ]; then
+    FONTSIZE=16
 fi
-[ "$FONTSIZE" != guess ] || FONTSIZE=''
-FONTSIZE=${FONTSIZE:-16}
-
-# FONTFACE
-[ "$FONTFACE" != guess ] || FONTFACE=''
 
 # mapdir, fontdir, stdfont, stdfontfallback
 case "$kernel" in
@@ -469,6 +460,9 @@ CONSOLE_MAP=${CONSOLE_MAP:-$ACM}
 [ -n "$CONSOLE_MAP" -o "$CHARMAP" = UTF-8 ] || CONSOLE_MAP=`findfile $mapdir $stdmap`
 
 # FONTFILES, VIDEOMODE
+if [ "$VIDEOMODE" = guess]; then
+    VIDEOMODE=''
+fi
 FONTFILES=''
 if [ "$FONT" ]; then
     for f in $FONT; do
@@ -476,7 +470,8 @@ if [ "$FONT" ]; then
     done
 fi
 FONTFILES=`echo $FONTFILES` # remove extra spaces
-if [ -z "$FONTFILES" ]; then
+if [ -n "$FONTFACE" -a -z "$FONTFILES" ]; then
+    # the following will fail if FONTFACE=guess ($stdfont will match nothing)
     FONTFILES=`findfile $fontdir $stdfont`
     [ "$FONTFILES" ] || FONTFILES=`findfile $fontdir $stdfontfallback`
     case "$FONTFILES" in
@@ -485,19 +480,23 @@ if [ -z "$FONTFILES" ]; then
                 echo "\
 Only fonts with 8 pixel width matrix are supported on the FreeBSD console.
 Please reconfigure the font size." >&2
-                do_font=''
+                FONTFILES=''
             elif which consolechars >/dev/null; then
 		echo "\
 The consolechars utility from the \"console-tools\" package can load only fonts
 with 8 pixel width matrix.  Please install the setfont utility from the package
 \"kbd\" or reconfigure the font size." >&2
-                do_font=''
+                FONTFILES=''
             fi
             ;;
         *[a-zA-Z]16.fnt) VIDEOMODE=${VIDEOMODE:-80x25} ;;
         *[a-zA-Z]14.fnt) VIDEOMODE=${VIDEOMODE:-80x30} ;;
         *[a-zA-Z]8.fnt) VIDEOMODE=${VIDEOMODE:-80x43} ;;
     esac
+    if [ -n "$do_font" -a -z "$FONTFILES" ]; then
+        echo Unable to find the required font.  No font will be configured. >&2
+        do_font=''
+    fi
 fi
 if [ "$kernel:::$VIDEOMODE" = freebsd::: ]; then
     case "$FONTSIZE" in
@@ -514,10 +513,6 @@ VIDEOMODE or FONTSIZE." >&2
 fi
 if [ "$do_font" = freebsd ]; then
     report Using $VIDEOMODE as video mode.
-fi
-if [ -n "$do_font" -a -z "$FONTFILES" ]; then
-    echo Unable to find the required font.  No font will be configured. >&2
-    do_font=''
 fi
 
 # FONTMAPFILE
@@ -657,26 +652,28 @@ case "$do_font" in
 esac
 
 # Load the font(s)
-case "$do_font" in
-    freebsd)
-        run plain '' vidcontrol -f ${FONTFILES%% *}
-        run plain '' vidcontrol "$VIDEOMODE"
-        ;;
-    linuxkbd)
-        if [ "$FONTMAPFILE" ]; then
-	    run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE"
-        else
-	    run '-C ' -v setfont $FONTFILES
-        fi
-        ;;
-    linuxct)
-        if [ "$FONTMAPFILE" ]; then
-	    run --tty= -v consolechars -f ${FONTFILES%% *} -u "$FONTMAPFILE"
-        else
-	    run --tty= -v consolechars -f ${FONTFILES%% *}
-        fi
-        ;;
-esac
+if [ "$FONTFILES" ]; then
+    case "$do_font" in
+        freebsd)
+            run plain '' vidcontrol -f ${FONTFILES%% *}
+            run plain '' vidcontrol "$VIDEOMODE"
+            ;;
+        linuxkbd)
+            if [ "$FONTMAPFILE" ]; then
+	        run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE"
+            else
+	        run '-C ' -v setfont $FONTFILES
+            fi
+            ;;
+        linuxct)
+            if [ "$FONTMAPFILE" ]; then
+	        run --tty= -v consolechars -f ${FONTFILES%% *} -u "$FONTMAPFILE"
+            else
+	        run --tty= -v consolechars -f ${FONTFILES%% *}
+            fi
+            ;;
+    esac
+fi
 
 # Load the console map
 if [ "$CONSOLE_MAP" ]; then
