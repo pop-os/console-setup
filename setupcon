@@ -298,11 +298,13 @@ if [ -z "$ACTIVE_CONSOLES" ]; then
     #    Upstart: /etc/init/*
     #  Devices:
     #    Linux: /dev/tty[1-9][0-9]*
-    #    FreeBSD: /dev/ttyv[0-9]+
+    #    FreeBSD: /dev/ttyv[0-9a-f]
     for tty in \
         $(cat /etc/inittab /etc/init/* 2>/dev/null \
-        | grep ' tty[1-9v][0-9]*' \
-        | sed -e '/^ *#/d' -e 's/.* \(tty[1-9v][0-9]*\).*/\1/')
+        | egrep '[[:blank:]]tty([1-9][0-9]*|v[0-f])([[:blank:]]|$)' \
+        | sed -e '/^ *#/d' \
+              -e 's/.*[[:blank:]]\(tty[1-9][0-9]*\).*/\1/' \
+              -e 's/.*[[:blank:]]\(ttyv[0-9]\).*/\1/')
     do
         ACTIVE_CONSOLES="$ACTIVE_CONSOLES /dev/$tty"
     done

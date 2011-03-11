@@ -1,8 +1,11 @@
 # Change to "yes" and setupcon will explain what is being doing
 VERBOSE_OUTPUT=no
 
-# Setup these consoles.  Most people do not need to change this.
-ACTIVE_CONSOLES="/dev/tty[1-6]"
+# Setup these consoles or empty string in order to guess.  Filename
+# wildcards (*,?) are allowed.  Usually on Linux this is /dev/tty[1-6]
+# and on FreeBSD it is /dev/ttyv[1-4].
+
+ACTIVE_CONSOLES=""
 
 # Put here your encoding.  Valid charmaps are: UTF-8 ARMSCII-8 CP1251
 # CP1255 CP1256 GEORGIAN-ACADEMY GEORGIAN-PS IBM1133 ISIRI-3342
