@@ -291,7 +291,14 @@ elif [ ! -w /etc/console-setup/ ]; then
 fi
 
 # ACTIVE_CONSOLES
-[ "$ACTIVE_CONSOLES" != guess ] || ACTIVE_CONSOLES=''
+# When ACTIVE_CONSOLES=guess the following will make ACTIVE_CONSOLES=''
+ACTIVE_CONSOLES=$(
+    for tty in $ACTIVE_CONSOLES; do
+        if [ -e $tty ]; then
+            echo $tty
+        fi
+    done
+)
 if [ -z "$ACTIVE_CONSOLES" ]; then
     # Some crude guess
     #  Conf. files:
@@ -307,16 +314,12 @@ if [ -z "$ACTIVE_CONSOLES" ]; then
               -e 's/.*[[:blank:]]\(tty[1-9][0-9]*\).*/\1/' \
               -e 's/.*[[:blank:]]\(ttyv[0-9]\).*/\1/')
     do
-        ACTIVE_CONSOLES="$ACTIVE_CONSOLES /dev/$tty"
-    done
-fi
-ACTIVE_CONSOLES=$(
-    for tty in $ACTIVE_CONSOLES; do
-        if [ -e $tty ]; then
-            echo $tty
+        if [ -e /dev/$tty ]; then
+            ACTIVE_CONSOLES="$ACTIVE_CONSOLES /dev/$tty"
         fi
     done
-)
+fi
+report Configuring $ACTIVE_CONSOLES
 
 # CHARMAP
 CHARMAP=${CHARMAP:-UTF-8}
