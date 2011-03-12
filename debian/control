@@ -67,9 +67,10 @@ Package: console-setup-linux
 Section: utils
 Priority: optional
 Architecture: all
-Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), console-terminus (>= 4.26), ${misc:Depends}
+Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), ${misc:Depends}
 Suggests: console-setup
-Conflicts: console-cyrillic (<= 0.9-11), console-setup-mini, console-setup-mini-freebsd, console-setup (<= 1.70)
+Conflicts: console-cyrillic (<= 0.9-11), console-setup-mini, console-setup-mini-freebsd, console-setup (<= 1.70), console-terminus
+Provides: console-terminus
 Description: Linux specific part of console-setup
  This package includes fonts in psf format and definitions of various
  8-bit encodings.

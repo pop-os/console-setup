@@ -21,6 +21,12 @@ console-setup (1.71) UNRELEASED; urgency=low
     option the init script.
   * setupcon, config, postinst: recognise 'guess' value in the
     configuration file.
+  * postinst: do not fail if setupcon fails (for example with UTF-8 locale
+    on FreeBSD).
+  * New Makefiles and debian/rules
+  * Include Terminus font in the compiled packages.  Do not depend, but
+    conflict and provide console-terminus.  New upstream version of the
+    Terminus font (4.32).
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

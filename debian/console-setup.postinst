@@ -111,6 +111,6 @@ EOF
 fi
 
 # This works even if we are not on the console
-setupcon --save-only
+setupcon --save-only || true
 
 #DEBHELPER#

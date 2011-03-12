@@ -6,6 +6,6 @@ set -e
 . /usr/share/debconf/confmodule
 
 # This works even if we are not on the console
-setupcon --save-only
+setupcon --save-only || true
 
 #DEBHELPER#

@@ -55,7 +55,6 @@ install-linux: build
 	dh_prep -pconsole-setup-linux
 	$(MAKE) etcdir=debian/console-setup/etc \
 		prefix=debian/console-setup/usr install-linux
-	rm debian/console-setup/usr/share/consolefonts/*-Terminus*.psf.gz
 	dh_movefiles -pconsole-setup-linux --sourcedir=debian/console-setup \
 		usr/share/consolefonts \
 		usr/share/consoletrans \
@@ -84,7 +83,6 @@ install-freebsd: build install-linux
 				rmdir debian/console-setup-freebsd/"$$x" >/dev/null 2>&1 || true; \
 			fi; \
 		done
-	rm debian/console-setup-freebsd/usr/share/syscons/fonts/*-Terminus*.fnt
 	rm -rf debian/console-setup-freebsd/etc/console-setup/ckb/
 	rm debian/console-setup-freebsd/etc/default/keyboard
 	rm debian/console-setup-freebsd/etc/default/console-setup
