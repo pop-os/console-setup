@@ -222,6 +222,15 @@ GOOD_PSF_FONTS = $(filter \
 		%-VGA28x16.psf %-VGA32x16.psf, \
 	$(PSF_FONTS))
 
+GOOD_8_FONTS = $(filter \
+		%-Fixed14.psf %-Fixed16.psf %-Terminus14.psf		\
+                %-Terminus16.psf %-TerminusBold14.psf			\
+                %-TerminusBold16.psf %-TerminusBoldVGA14.psf		\
+                %-TerminusBoldVGA16.psf %-Goha14.psf %-Goha16.psf	\
+                %-GohaClassic14.psf %-GohaClassic16.psf %-VGA8.psf	\
+                %-VGA14.psf %-VGA16.psf, \
+	$(PSF_FONTS))
+
 GZIPPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
 GZIPPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
 GZIPPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
@@ -238,8 +247,11 @@ NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.
 # Filter small charsets (256 symbols) and non-framebuffer fonts
 psf_to_raw = $(subst .psf,.raw, $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(1))))
 
+test:
+	echo $(GOOD_RAW_FONTS)
+
 RAW_FONTS = $(call psf_to_raw, $(PSF_FONTS))
-GOOD_RAW_FONTS = $(call psf_to_raw, $(GOOD_PSF_FONTS))
+GOOD_RAW_FONTS = $(call psf_to_raw, $(GOOD_8_FONTS))
 ALL_RAW_FONTS = $(call psf_to_raw, $(ALL_PSF_FONTS))
 
 ALL_FONTS = $(ALL_PSF_FONTS) $(ALL_RAW_FONTS)
@@ -329,9 +341,6 @@ uuencoded_good_raw_fonts : $(UUENCODED_GOOD_RAW_FONTS)
 
 
 SCRNMAPS = $(addsuffix .scm, $(ENCODING_FONTSET))
-
-test:
-	echo $(ENCODING_FONTSET)
 
 # i.e. ISO-8859-7/Greek
 $(SCRNMAPS) : encoding/fontset = $(subst _,/,$(@:%.scm=%))

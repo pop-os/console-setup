@@ -84,6 +84,10 @@ install-freebsd: build install-linux
 				rmdir debian/console-setup-freebsd/"$$x" >/dev/null 2>&1 || true; \
 			fi; \
 		done
+	rm debian/console-setup-freebsd/usr/share/syscons/fonts/*-Terminus*.fnt
+	rm -rf debian/console-setup-freebsd/etc/console-setup/ckb/
+	rm debian/console-setup-freebsd/etc/default/keyboard
+	rm debian/console-setup-freebsd/etc/default/console-setup
 
 .PHONY : install-mini-linux
 install-mini-linux: build

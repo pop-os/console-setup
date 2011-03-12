@@ -48,7 +48,7 @@ Architecture: all
 Recommends: kbd | console-tools
 Depends: debconf (>= 0.5) | debconf-2.0, keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6)
-Conflicts: console-setup, console-terminus, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
+Conflicts: console-setup, console-setup-linux, console-setup-freebsd, console-terminus, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program - reduced version for Linux
  This package provides the Linux console with the same
  keyboard configuration scheme as the X Window System. As a result,
@@ -78,7 +78,7 @@ Package: console-setup-freebsd
 Section: utils
 Priority: optional
 Architecture: all
-Depends: vidcontrol, kbdcontrol, console-terminus-raw, ${misc:Depends}
+Depends: vidcontrol, kbdcontrol, ${misc:Depends}
 Suggests: console-setup
 Conflicts: console-setup-mini, console-setup-mini-freebsd
 Description: FreeBSD specific part of console-setup

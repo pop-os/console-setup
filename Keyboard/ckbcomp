@@ -3149,13 +3149,15 @@ if ($keycodes =~ /(^|\+|\|)macintosh\(old\)($|\+|\|)/) {
 ########### READ ACM ###############################################
 
 if ($charmap) {
-    for my $acmfile ("${charmap}", "${charmap}.gz",
-		     "${charmap}.acm", "${charmap}.acm.gz",
-		     "/usr/share/consoletrans/${charmap}",
-		     "/usr/share/consoletrans/${charmap}.gz",
-		     "/usr/share/consoletrans/${charmap}.acm",
-		     "/usr/share/consoletrans/${charmap}.acm.gz",
-		     "acm/${charmap}.acm") {
+    for my $acmfile ("$installdir/share/consoletrans/${charmap}",
+                     "$installdir/share/consoletrans/${charmap}.gz",
+                     "$installdir/share/consoletrans/${charmap}.acm",
+                     "$installdir/share/consoletrans/${charmap}.acm.gz",
+                     "/usr/share/consoletrans/${charmap}",
+                     "/usr/share/consoletrans/${charmap}.gz",
+                     "/usr/share/consoletrans/${charmap}.acm",
+                     "/usr/share/consoletrans/${charmap}.acm.gz",
+                     "acm/${charmap}.acm") {
 	if (-f $acmfile) {
 	    $acm = $acmfile;
 	    last;
@@ -3702,7 +3704,7 @@ sub x_to_kernelsym {
     my $xkeysym = $_[0];
     my $kernelkeysym = $xkbsym_table{$xkeysym};
     if (defined $kernelkeysym) {
-        if ($kernelkeysym !~ /^[0-9a-fA-F]{4}$/) {
+        if ($kernelkeysym !~ /^[0-9][0-9a-fA-F]{3}$/) {
 	    return $kernelkeysym;
 	}
     } else {
@@ -3743,13 +3745,13 @@ sub x_to_ascii {
     if (defined $kernelkeysym) {
         if (defined $controlsyms_hash{$kernelkeysym}) {
             return $controlsyms_hash{$kernelkeysym};
-	} elsif ($kernelkeysym !~ /^[0-9a-fA-F]{4}$/) {
+	} elsif ($kernelkeysym !~ /^[0-9][0-9a-fA-F]{3}$/) {
 	    return undef;
 	}
     } else {
-	$kernelkeysym = ($xkeysym =~ /^0x0?100([0-9a-fA-F]{4})/
-			 ? $1
-			 : ($xkeysym =~ /^U([0-9a-fA-F]+)/
+	$kernelkeysym = ($xkeysym =~ /^0x0*(100)?([0-9a-fA-F]{4})$/
+			 ? $2
+			 : ($xkeysym =~ /^U([0-9a-fA-F]+)$/
 			    ? $1 
 			    : undef));
     }
@@ -3898,7 +3900,7 @@ sub flatten {
 	    my $is_special = ($xkeysym !~ /^U[0-9a-fA-F]+$/
 			      && defined $xkbsym_table{$xkeysym}
 			      && ($xkbsym_table{$xkeysym}
-				  !~ /^[0-9a-fA-F]{4}$/));
+				  !~ /^[0-9][0-9a-fA-F]{3}$/));
 	    my $kernelkeysym = x_to_kernelsym ($xkeysym);
 	    approximate ($coord, $kernelkeysym, 0);
             if (defined (my $ascii = x_to_ascii ($xkeysym))) {

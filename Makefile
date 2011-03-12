@@ -1,6 +1,6 @@
-# etcdir must be either /etc or $(prefix)/etc
-etcdir = /etc
 prefix = /usr/local
+# etcdir must be either /etc or
+etcdir = $(prefix)/etc
 bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
 mandir = $(prefix)/share/man
 
@@ -63,7 +63,10 @@ install-linux: build-linux install-any
 	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans/
 	install -d $(prefix)/bin/
 	install Keyboard/ckbcomp $(prefix)/bin/
-	if [ ! "$(xkbdir)" ]; then cp -r Keyboard/ckb/ $(etcdir)/console-setup/; fi
+	if [ -z "$(xkbdir)" ]; then \
+		mkdir -p $(etcdir)/console-setup \
+		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
+	fi
 	install -d $(etcdir)/console-setup
 	install -m 644 Keyboard/compose.*.inc $(etcdir)/console-setup/
 	install -m 644 Keyboard/remap.inc $(etcdir)/console-setup/
@@ -78,7 +81,10 @@ install-freebsd: build-freebsd install-any
 	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans/
 	install -d $(prefix)/bin/
 	install Keyboard/ckbcomp $(prefix)/bin/
-	if [ ! "$(xkbdir)" ]; then cp -r Keyboard/ckb/ $(etcdir)/console-setup/; fi
+	if [ -z "$(xkbdir)" ]; then \
+		mkdir -p $(etcdir)/console-setup \
+		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
+	fi
 	install -d $(etcdir)/console-setup
 
 .PHONY : install-mini-linux

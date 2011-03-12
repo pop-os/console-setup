@@ -11,7 +11,7 @@ ACTIVE_CONSOLES=guess
 # ISO-8859-1 ISO-8859-2 ISO-8859-3 ISO-8859-4 ISO-8859-5 ISO-8859-6
 # ISO-8859-7 ISO-8859-8 ISO-8859-9 ISO-8859-10 ISO-8859-11 ISO-8859-13
 # ISO-8859-14 ISO-8859-15 ISO-8859-16 KOI8-R KOI8-U TIS-620 VISCII
-CHARMAP=UTF-8
+CHARMAP=ISO-8859-15
 
 # In most cases you can use "guess" here in which case the correct
 # value will be guessed.  The codeset determines which symbols are
@@ -35,9 +35,9 @@ CODESET=
 FONTFACE=TerminusBold
 FONTSIZE=16
 
-# On FreeBSD you should specify a video mode that corresponds to the
-# chosen font.  The special value 'guess' is also recognised.
-VIDEOMODE=guess
+# On FreeBSD you should probably specify a video mode.  Set VIDEOMODE
+# to an empty string to avoid seting up the video mode.
+VIDEOMODE=
 
 # You can also directly specify a non standard font (FONT) or console
 # map (CONSOLE_MAP) to load.  On Linux you can use space as separator
