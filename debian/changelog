@@ -23,7 +23,8 @@ console-setup (1.71) UNRELEASED; urgency=low
     configuration file.
   * postinst: do not fail if setupcon fails (for example with UTF-8 locale
     on FreeBSD).
-  * New Makefiles and debian/rules
+  * New install targets in the Makefiles and debian/rules to better
+    support non-Debian installs.
   * Include Terminus font in the compiled packages.  Do not depend, but
     conflict and provide console-terminus.  New upstream version of the
     Terminus font (4.32).

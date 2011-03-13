@@ -2055,7 +2055,7 @@ if ($freebsd) {
          'dead_circumflex' => 'dcir',
          'SunFA_Circum' => 'dcir', # Is this recognised by X ?
          'dead_tilde' => 'dtil',
-         'SunFA_Tilde' => 'dtil_tilde',
+         'SunFA_Tilde' => 'dtil',
          'dead_breve' => 'dbre',
          'dead_diaeresis' => 'ddia',
          'SunFA_Diaeresis' => 'ddia', # Is this recognised by X ?
@@ -2068,9 +2068,9 @@ if ($freebsd) {
          'dead_macron' => 'dmac',
          'dead_abovedot' => 'ddot',
          'dead_abovering' => 'drin',
-         'dead_stroke' => 'dsla',
+         'dead_stroke' => 'nop',
          'dead_belowdot' => '0323',       # ???? Vietnamese
-         'dead_hook' => '0309',           # ???? Vietnamese
+         'dead_hook' => 'dsla',           # ???? Vietnamese
          'dead_belowcomma' => 'nop',
          'dead_currency' => 'nop',
          'dead_doublegrave' => 'nop',
@@ -4653,16 +4653,19 @@ if ($broken_caps) {
 
 print $KEYMAP;
 
-if (! $freebsd) {
+if ($freebsd) {
+    if ($charmap && -f "/etc/console-setup/dkey.${charmap}.inc") {
+        system("cat /etc/console-setup/dkey.${charmap}.inc");
+    }
+} else {
     print "strings as usual\n";
 
     if ($charmap && -f "/etc/console-setup/compose.${charmap}.inc") {
         system("cat /etc/console-setup/compose.${charmap}.inc");
     }
-    
-    if (! $compact && -f "/etc/console-setup/remap.inc") {
-        system("cat /etc/console-setup/remap.inc");
-    }
+}
+if (-f "/etc/console-setup/remap.inc") {
+    system("cat /etc/console-setup/remap.inc");
 }
 
 exit 0;

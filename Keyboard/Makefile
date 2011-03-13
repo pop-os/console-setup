@@ -2,10 +2,7 @@ SHELL = /bin/sh
 
 xkbdir ?= ./ckb
 
-test:
-	@echo $(xkbdir)
-
-build : compose_files KeyboardNames.pl
+build : compose_files dkey_files KeyboardNames.pl
 
 models = amiga ataritt macintosh_old pc105 sun4 sun5
 
@@ -24,8 +21,10 @@ acmfiles = $(wildcard ../acm/*.acm)
 charmaps = $(basename $(notdir $(acmfiles)))
 
 compose_files = $(addprefix compose.,$(addsuffix .inc, $(charmaps)))
+dkey_files = $(addprefix dkey.,$(addsuffix .inc, $(charmaps)))
 
 $(compose_files): charmap = $(patsubst compose.%.inc,%, $@)
+$(dkey_files): charmap = $(patsubst dkey.%.inc,%, $@)
 
 VISCII-XCOMPOSE = locale/vi_VN.viscii/Compose
 ISO-8859-1-XCOMPOSE = locale/iso8859-1/Compose
@@ -45,13 +44,17 @@ $(compose_files) :
 		./compose_translator --acm ../acm/$(charmap).acm \
 				     $($(charmap)-XCOMPOSE) >>$@)
 
+$(dkey_files) : dkey_sequences
+	./dkey_bsd ../acm/$(charmap).acm dkey_sequences >$@
+
 compose_files : $(compose_files)
+dkey_files : $(dkey_files)
 
 
 .PHONY: clean
 clean:
 	-rm -f *~
-	-rm -rf compose $(compose_files)
+	-rm -rf compose $(compose_files) $(dkey_files)
 	-rm -rf keymaps
 	-rm -f keymaps.dir names.list
 	-rm -f $(gziped_ekmaps)

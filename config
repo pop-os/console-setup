@@ -19,7 +19,7 @@ CHARMAP=ISO-8859-15
 # CyrKoi CyrSlav Ethiopian Georgian Greek Hebrew Lao Lat15 Lat2 Lat38
 # Lat7 Thai Uni1 Uni2 Uni3 Vietnamese.  Read README.fonts for
 # explanation.
-CODESET=
+CODESET=guess
 
 # Valid font faces are: VGA (sizes 8, 14 and 16), Terminus (sizes
 # 12x6, 14, 16, 20x10, 24x12, 28x14 and 32x16), TerminusBold (sizes
@@ -36,7 +36,8 @@ FONTFACE=TerminusBold
 FONTSIZE=16
 
 # On FreeBSD you should probably specify a video mode.  Set VIDEOMODE
-# to an empty string to avoid seting up the video mode.
+# to an empty string to avoid seting up the video mode.  Run
+# "vidcontrol -i mode" in order to see the possible video modes.
 VIDEOMODE=
 
 # You can also directly specify a non standard font (FONT) or console

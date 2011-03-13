@@ -86,6 +86,8 @@ install-freebsd: build-freebsd install-any
 		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
 	fi
 	install -d $(etcdir)/console-setup
+	install -m 644 Keyboard/dkey.*.inc $(etcdir)/console-setup/
+	install -m 644 Keyboard/remap.inc $(etcdir)/console-setup/
 
 .PHONY : install-mini-linux
 install-mini-linux: build-mini-linux install-any
