@@ -809,10 +809,3 @@ else
             ;;
     esac
 fi
-
-if [ "$do_kbd" ]; then
-    case "$backspace" in
-        bs) run in ECHO stty erase ^H ;;
-        del) run in ECHO stty erase ^? ;;
-    esac
-fi
