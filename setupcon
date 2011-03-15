@@ -597,8 +597,12 @@ esac
 
 # cached
 case "$kernel" in
-    linux) cached=/etc/console-setup/cached$VARIANT.kmap.gz ;;
-    freebsd) cached=/etc/console-setup/cached$VARIANT.kbd ;;
+    linux)
+        cached=/etc/console-setup/cached-${backspace_option#* }$VARIANT.kmap.gz
+        ;;
+    freebsd)
+        cached=/etc/console-setup/cached-${backspace_option#* }$VARIANT.kbd
+        ;;
 esac
 
 # do_savekbd
