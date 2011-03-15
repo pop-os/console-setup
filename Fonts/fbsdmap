@@ -102,7 +102,7 @@ $name1:\\
 $name2:\\
 	:ac=$ac:\\
 	:kb=\\177:kD=\\E[3~:\\
-	tc=cons25w:
+	:tc=cons25w:
 EOT
     } elsif ($task eq 'terminfo') {
         $ac =~ s/,/\\,/g;
