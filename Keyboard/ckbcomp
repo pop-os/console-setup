@@ -2366,7 +2366,8 @@ if ($freebsd) {
         );
     if ($backspace eq 'del') {
         $xkbsym_table{'BackSpace'} = 'del';
-        $xkbsym_table{'KP_Delete'} = 'fkey61';
+        $xkbsym_table{'Delete'} = 'fkey70';
+        $xkbsym_table{'KP_Delete'} = 'fkey70';
     }
 } else {
     %xkbsym_table = 
