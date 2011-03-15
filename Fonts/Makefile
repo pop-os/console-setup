@@ -314,20 +314,19 @@ $(ALL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
 				standard.equivalents+arabic.equivalents, \
 				standard.equivalents)
 
-# create FreeBSD raw fonts for these:
 $(NONFB_PSF_FONTS) :
 	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
+		$(equivalents) ascii.set+linux.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
 
 $(FB_PSF_FONTS) :
 	./bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
+		$(equivalents) ascii.set+linux.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
 
 $(ALL_RAW_FONTS) :
 	./bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
+		$(equivalents) ascii.set+freebsd.set+$(codesetfile)+:useful.set \
                 $(size) $(@:%.raw=%.raw) $(@:%.raw=%.raw.sfm)
 
 %.fnt : %.raw
@@ -351,8 +350,8 @@ $(SCRNMAPS) : encoding = $(encoding/:%/=%)
 # i.e. Greek
 $(SCRNMAPS) : fontset = $(strip $(notdir $(encoding/fontset)))
 
-$(SCRNMAPS) : $(UUENCODED_GOOD_RAW_FONTS)
-	./make_scrnmap --binary `ls $(fontset)-*.raw.sfm|{ read x y; echo $$x;}` ../acm/$(encoding).acm | uuencode $(@:%.scm=%) >$@
+$(SCRNMAPS) : $(UUENCODED_GOOD_RAW_FONTS) freebsd.set fbsdmap
+	./fbsdmap --binaryscm freebsd.set `ls $(fontset)-*.raw.sfm|{ read x y; echo $$x;}` ../acm/$(encoding).acm| uuencode $(@:%.scm=%) >$@
 
 scrnmaps : $(SCRNMAPS)
 
