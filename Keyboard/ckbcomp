@@ -65,6 +65,7 @@ my @layouts;
 my @variants = ();
 my @options = ();
 my $compact = 0;
+my $backspace = '';
 my $freebsd = 0;
 
 while (@ARGV) {
@@ -149,12 +150,19 @@ Where legal args are:
                     more messages
 -compact            Generate compact keymap
 -freebsd            Generate keymap for FreeBSD
+-backspace bs|del   Backspace is BS (^h) or DEL (^?)
 EOT
             exit 0;
 	} elsif (/^compact$/) {
 	    $compact = 1;
 	} elsif (/^freebsd$/) {
 	    $freebsd = 1;
+	} elsif (/^backspace$/) {
+	    $backspace = $ARGV[0];
+            if ($backspace ne 'del' && $backspace ne 'bs') {
+                die "$0: Option -backspace accepts either del or bs\n";
+            }
+            shift @ARGV;
 	} else {
 	    die "$0: Unknown option -$_\n";
 	}
@@ -176,6 +184,7 @@ EOT
 
 $rules = 'xorg' if (! $rules);
 $model = 'pc104' if (! $model);
+$backspace = $freebsd ? 'bs' : 'del' if (! $backspace);
 
 ########### GLOBAL VARIABLES #########################################
 
@@ -2355,6 +2364,10 @@ if ($freebsd) {
          'SunVideoLowerBrightness' => 'nop',
          'SunVideoRaiseBrightness' => 'nop',
         );
+    if ($backspace eq 'del') {
+        $xkbsym_table{'BackSpace'} = 'del';
+        $xkbsym_table{'KP_Delete'} = 'fkey61';
+    }
 } else {
     %xkbsym_table = 
         (%xkbsym_table,
@@ -2729,6 +2742,10 @@ if ($freebsd) {
         $xkbsym_table{'ISO_Last_Group'} = 'AltGr_Lock';
         $xkbsym_table{'ISO_Last_Group_Lock'} = 'AltGr_Lock';
     }
+    if ($backspace eq 'bs') {
+        $xkbsym_table{'BackSpace'} = 'BackSpace';
+        $xkbsym_table{'Delete'} = 'Delete';
+    }
 }
 
 my $voidsymbol = $freebsd ? 'nop' : 'VoidSymbol';
@@ -2740,6 +2757,7 @@ my %controlsyms_hash;
 
 {
     if ($freebsd) {
+
         %controlsyms_hash = (
             'nul' => 0x00,
             'soh' => 0x01,
@@ -2790,7 +2808,7 @@ my %controlsyms_hash;
             'Linefeed' => 0x0a,
             'Control_k' => 0x0b,
             'Control_l' => 0x0c,
-            'Control_m' => 0x0d,
+            'Return' => 0x0d,
             'Control_n' => 0x0e,
             'Control_o' => 0x0f,
             'Control_p' => 0x10,
@@ -2809,6 +2827,7 @@ my %controlsyms_hash;
             'Control_bracketright' => 0x1d,
             'Control_asciicircum' => 0x1e,
             'Control_underscore' => 0x1f,
+            'Delete' => 0x7f,
             );
     }        
     for my $special (keys %controlsyms_hash) {
@@ -2824,29 +2843,35 @@ my %controlsyms_hash;
             }
         }
     }
-# Some particularities of FreeBSD and Linux
+# Ctrl + BS = DEL, Ctrl + DEL = BS
     if ($freebsd) {
         $controlsyms[0x08] = 'del';
-        $controlsyms[0x0d] = 'nl';
-        $controlsyms[0x20] = 'nul';
+        $controlsyms[0x7f] = 'bs';
     } else {
-        $controlsyms_hash{'Return'} = 0x0d;
-        $controlsyms_hash{'Delete'} = 0x7f;
-        $controlsyms[0x7f] = 'BackSpace';              # instead of 'Delete'
-        $controlsyms[0x20] = 'nul';                    # space
-        $controlsyms[0x27] = 'Control_g';              # apostroph
-        $controlsyms[0x2e] = 'Compose';                # dot
-        $controlsyms[0x32] = 'nul';                    # 2
-        $controlsyms[0x33] = 'Escape';                 # 3
-        $controlsyms[0x34] = 'Control_backslash';      # 4
-        $controlsyms[0x35] = 'Control_bracketright';   # 5
-        $controlsyms[0x36] = 'Control_asciicircum';    # 6
-        $controlsyms[0x37] = 'Control_underscore';     # 7
-        $controlsyms[0x38] = 'Delete';                 # 8
-        $controlsyms[0x3f] = 'Delete';                 # question mark
+        $controlsyms[0x08] = 'Delete';
+        $controlsyms[0x7f] = 'BackSpace';
     }
-    
-    
+# Some particularities of FreeBSD and Linux
+    if ($freebsd) {
+        $controlsyms[0x0d] = 'nl';                     # Ctrl+m = ^J
+        $controlsyms[0x20] = 'nul';                    # Ctrl+space = ^@
+        $controlsyms[0x3f] = 'del';                    # Ctrl+? = ^?
+    } else {
+        $controlsyms[0x0d] = 'Control_m';              # I don't know
+        $controlsyms[0x20] = 'nul';                    # Ctrl+space = ^@
+        $controlsyms[0x2e] = 'Compose';                # Ctrl+. = Compose
+        $controlsyms[0x3f] = 'Delete';                 # Ctrl+? = ^?
+# I suppose these are not necessary:
+        # $controlsyms[0x27] = 'Control_g';              # Ctrl+' = ^G
+        # $controlsyms[0x32] = 'nul';                    # 2
+        # $controlsyms[0x33] = 'Escape';                 # 3
+        # $controlsyms[0x34] = 'Control_backslash';      # 4
+        # $controlsyms[0x35] = 'Control_bracketright';   # 5
+        # $controlsyms[0x36] = 'Control_asciicircum';    # 6
+        # $controlsyms[0x37] = 'Control_underscore';     # 7
+        # $controlsyms[0x38] = 'Delete';                 # 8
+    }
+
     my %metasyms_hash = (
 	' ' => 'space',
 	'`' => 'grave',
@@ -2912,6 +2937,8 @@ my %controlsyms_hash;
 	my $control = $controlsyms[$code];
 	if ($control eq 'Compose') {
 	    $metacontrolsyms[$code] = 'Compose';
+	} elsif ($control eq 'Return') {
+	    $metacontrolsyms[$code] = 'Meta_Control_m';
 	} elsif ($control eq 'NoSymbol') {
 	    $metacontrolsyms[$code] = 'NoSymbol';
 	} elsif ($control eq 'VoidSymbol') {

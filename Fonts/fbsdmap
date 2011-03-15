@@ -92,8 +92,8 @@ sub print_term {
             $ac = $ac . sprintf("%s\\%03o", $acsc{$name}[0], $acsc{$name}[1]);
         }
     }
-    my $name1 = 'cons25cs|cons25cs-110|FreeBSD console with console-setup (VT110-conformant Backspace)';
-    my $name2 = 'cons25cs-220|cons25cs-debian|FreeBSD console with console-setup (VT220-conformant Backspace)';
+    my $name1 = 'cons25cs|cons25cs-bs|FreeBSD console with console-setup (Backspace is BS)';
+    my $name2 = 'cons25cs-del|cons25cs-debian|FreeBSD console with console-setup (Backspace is DEL)';
     if ($task eq 'termcap') {
         print <<EOT;
 $name1:\\

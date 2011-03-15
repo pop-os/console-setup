@@ -28,6 +28,11 @@ console-setup (1.71) UNRELEASED; urgency=low
   * Include Terminus font in the compiled packages.  Do not depend, but
     conflict and provide console-terminus.  New upstream version of the
     Terminus font (4.32).
+  * Lets try to remove some unnecessary and potentialy harmful on
+    non-standard layouts mappings for Linux (Ctrl+'=^G, Ctrl+3=^[,
+    Ctrl+4=^\, Ctrl+5=^], Ctrl+7=^_, Ctrl+8=^?).
+  * ckbcomp: New option -backspace del|bs to determine the behaviour of
+    BackSpace and Delete keys.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
