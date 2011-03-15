@@ -61,7 +61,7 @@ if [ "$1" = "configure" ]; then
 
     # If the admin deleted or commented some variables but then set
     # them via debconf, (re-)add them to the conffile.
-    for var in XKBMODEL XKBLAYOUT XKBVARIANT XKBOPTIONS; do
+    for var in XKBMODEL XKBLAYOUT XKBVARIANT XKBOPTIONS BACKSPACE; do
         if ! grep "^ *${var}=" $CONFIGFILE >/dev/null; then
 	    echo "${var}=" >>$CONFIGFILE
 	fi
@@ -72,6 +72,7 @@ if [ "$1" = "configure" ]; then
 	-e "s|^ *XKBLAYOUT=.*|XKBLAYOUT=\"$layout\"|" \
 	-e "s|^ *XKBVARIANT=.*|XKBVARIANT=\"$variant\"|" \
 	-e "s|^ *XKBOPTIONS=.*|XKBOPTIONS=\"$options\"|" \
+	-e "s|^ *BACKSPACE=.*|BACKSPACE=\"${BACKSPACE:-guess}\"|" \
 	<$CONFIGFILE >$CONFIGFILE.tmp
     
     mv -f $CONFIGFILE.tmp $CONFIGFILE

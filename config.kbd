@@ -10,6 +10,11 @@ XKBLAYOUT=us,dvorak # US QWERTY and Dvorak keyboards
 XKBVARIANT=intl,    # the US keyboard can generate international symbols
 XKBOPTIONS=lv3:ralt_switch,grp:ctrl_shift_toggle # the right Alt selects international symbols, Control+Shift toggles between QWERTY and Dvorak
 
+# The following option determines the behaviour of the BackSpace key
+# on the console.  Use 'bs' to make BacksSpace generate ^H and 'del'
+# to make it generate ^?.
+BACKSPACE=guess
+
 # If you don't want to use the XKB layout on the console, you can
 # specify an alternative keymap.  Make sure it will be accessible
 # before /usr is mounted.
