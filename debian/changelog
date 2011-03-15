@@ -33,6 +33,7 @@ console-setup (1.71) UNRELEASED; urgency=low
     Ctrl+4=^\, Ctrl+5=^], Ctrl+7=^_, Ctrl+8=^?).
   * ckbcomp: New option -backspace del|bs to determine the behaviour of
     BackSpace and Delete keys.  Corresponding variable in /etc/default/keyboard.
+  * setupcon: execute appropriate "stty erase ..." command.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

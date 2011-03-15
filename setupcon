@@ -572,24 +572,24 @@ else
     rules_option=''
 fi
 
-# backspace_option
+# backspace
 case "$kernel" in
-    linux) backspace_option='-backspace del' ;;
-    freebsd) backspace_option='-backspace bs' ;;
+    linux) backspace='del' ;;
+    freebsd) backspace='bs' ;;
 esac
 case \
     "`stty -a \
           | egrep '(^| )erase *=' \
           | sed -e 's/.* erase *= *//' -e 's/^erase *= *//' -e 's/[; ].*//'`"
 in
-    ^?) backspace_option='-backspace del' ;;
-    ^h) backspace_option='-backspace bs' ;;
+    ^\?) backspace='del' ;;
+    ^h|^H) backspace='bs' ;;
 esac
 case "$BACKSPACE" in
-    del) backspace_option='-backspace del' ;;
-    bs) backspace_option='-backspace bs' ;;
+    del) backspace='del' ;;
+    bs) backspace='bs' ;;
 esac
-case "${backspace_option#* }" in
+case "$backspace" in
     del) report BackSpace is ^? ;;
     bs) report BackSpace is ^h ;;
     *) echo Wrong BackSpace option >&2 ;;
@@ -598,10 +598,10 @@ esac
 # cached
 case "$kernel" in
     linux)
-        cached=/etc/console-setup/cached-${backspace_option#* }$VARIANT.kmap.gz
+        cached=/etc/console-setup/cached-$backspace$VARIANT.kmap.gz
         ;;
     freebsd)
-        cached=/etc/console-setup/cached-${backspace_option#* }$VARIANT.kbd
+        cached=/etc/console-setup/cached-$backspace$VARIANT.kbd
         ;;
 esac
 
@@ -645,12 +645,12 @@ fi
 
 case "$do_savekbd" in
     linux)
-	$installdir/bin/ckbcomp $backspace_option $acm_option $rules_option \
-            -model "$XKBMODEL" \
+	$installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
+            $rules_option -model "$XKBMODEL" \
 	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" | gzip -9 >"$cached"
         ;;
     freebsd)
-	$installdir/bin/ckbcomp -freebsd $backspace_option $acm_option \
+	$installdir/bin/ckbcomp -freebsd -backspace "$backspace" $acm_option \
             $rules_option -model "$XKBMODEL" \
 	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$cached"
         ;;
@@ -792,7 +792,7 @@ if [ "$KMAP" ]; then
 else
     case "$do_kbd" in
         linux)
-	    $installdir/bin/ckbcomp $backspace_option $acm_option \
+	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                 $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
                 | run plain '' loadkeys
@@ -800,11 +800,18 @@ else
         freebsd)
             TMPFILE=`mktemp /tmp/console-setup.XXXXXX` \
                 || { echo Can not create temporary file >&2; exit 1; }
-	    $installdir/bin/ckbcomp -freebsd $backspace_option $acm_option \
-                $rules_option -model "$XKBMODEL" \
+	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
+                $acm_option $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
             run plain ECHO kbdcontrol -l $TMPFILE
             rm $TMPFILE
             ;;
+    esac
+fi
+
+if [ "$do_kbd" ]; then
+    case "$backspace" in
+        bs) run in ECHO stty erase ^H ;;
+        del) run in ECHO stty erase ^? ;;
     esac
 fi
