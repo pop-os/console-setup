@@ -4681,19 +4681,33 @@ if ($broken_caps) {
 
 print $KEYMAP;
 
-if ($freebsd) {
-    if ($charmap && -f "/etc/console-setup/dkey.${charmap}.inc") {
-        system("cat /etc/console-setup/dkey.${charmap}.inc");
+if ($freebsd && $charmap) {
+    my $file1 = "/etc/console-setup/dkey.${charmap}.inc";
+    my $file2 = "$installdir/etc/console-setup/dkey.${charmap}.inc";
+    if (-f $file1) {
+        system("cat $file1");
+    } elsif (-f $file2) {
+        system("cat $file2");
     }
 } else {
     print "strings as usual\n";
 
-    if ($charmap && -f "/etc/console-setup/compose.${charmap}.inc") {
-        system("cat /etc/console-setup/compose.${charmap}.inc");
+    if ($charmap) {
+        my $file1 = "/etc/console-setup/compose.${charmap}.inc";
+        my $file2 = "$installdir/etc/console-setup/compose.${charmap}.inc";
+        if (-f $file1) {
+            system("cat $file1");
+        } elsif (-f $file2) {
+            system("cat $file2");
+        }
     }
 }
-if (-f "/etc/console-setup/remap.inc") {
-    system("cat /etc/console-setup/remap.inc");
+my $file1 = "/etc/console-setup/remap.inc";
+my $file2 = "$installdir/etc/console-setup/remap.inc";
+if (-f $file1) {
+    system("cat $file1");
+} elsif (-f $file2) {
+    system("cat $file2");
 }
 
 exit 0;
