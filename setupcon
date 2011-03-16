@@ -581,9 +581,10 @@ case "$kernel" in
     freebsd) backspace='bs' ;;
 esac
 case \
-    "`stty -a \
+    "`(stty -a \
           | egrep '(^| )erase *=' \
-          | sed -e 's/.* erase *= *//' -e 's/^erase *= *//' -e 's/[; ].*//'`"
+          | sed -e 's/.* erase *= *//' -e 's/^erase *= *//' -e 's/[; ].*//') \
+      2>/dev/null`"
 in
     ^\?) backspace='del' ;;
     ^h|^H) backspace='bs' ;;
