@@ -49,11 +49,11 @@ install-any: build-any
 	install -d  $(bootprefix)/bin/
 	install setupcon $(bootprefix)/bin/
 	install -d $(etcdir)/default
-	install -m 644 config.kbd $(etcdir)/default/keyboard
-	install -m 644 config $(etcdir)/default/console-setup
+	install -m 644 config/keyboard $(etcdir)/default/
+	install -m 644 config/console-setup $(etcdir)/default/
 	install -d $(mandir)/man1/
-	install -m 644 setupcon.1 $(mandir)/man1/
-	install -m 644 Keyboard/ckbcomp.1 $(mandir)/man1/
+	install -m 644 man/setupcon.1 $(mandir)/man1/
+	install -m 644 man/ckbcomp.1 $(mandir)/man1/
 
 .PHONY: install-linux
 install-linux: build-linux install-any
