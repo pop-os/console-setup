@@ -37,6 +37,9 @@ console-setup (1.71) UNRELEASED; urgency=low
   * When UTF-8 is requested on FreeBSD, act as if the encoding is ISO-8859-1.
   * Debconf: Don't ask the question about font size on kFreeBSD.
   * Debconf: More human-friendly options for the font size question.
+  * New configuration variable VIDEOMODE.  Currently it is most useful on
+    FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
+    support changing of the videomode.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

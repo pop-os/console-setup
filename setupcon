@@ -681,6 +681,21 @@ fi
 ### OUTPUT
 ###########################################################################
 
+# Video mode
+if [ "$VIDEOMODE" ]; then
+    case "$do_font" in
+        freebsd)
+            run in ECHO vidcontrol "$VIDEOMODE"
+            ;;
+        linux*)
+            # this is a bit pointless as vesafb doesn't support changing mode
+            if which fbset >/dev/null; then
+                run plain ECHO fbset -a "$VIDEOMODE"
+            fi
+            ;;
+    esac
+fi
+
 # Setup unicode/non-unicode mode
 case "$do_font" in
     linux*)
@@ -699,9 +714,6 @@ if [ "$FONTFILES" ]; then
             for font in $FONTFILES; do
                 run plain ECHO vidcontrol -f $font
             done
-            if [ "$VIDEOMODE" ]; then
-                run in ECHO vidcontrol "$VIDEOMODE"
-            fi
             ;;
         linuxkbd)
             if [ "$FONTMAPFILE" ]; then

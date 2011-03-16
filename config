@@ -35,9 +35,9 @@ CODESET=guess
 FONTFACE=TerminusBold
 FONTSIZE=16
 
-# On FreeBSD you should probably specify a video mode.  Set VIDEOMODE
-# to an empty string to avoid seting up the video mode.  Run
-# "vidcontrol -i mode" in order to see the possible video modes.
+# Set VIDEOMODE to an empty string to avoid seting up the video mode.
+# On FreeBSD you can run "vidcontrol -i mode" in order to see all
+# possible video modes.
 VIDEOMODE=
 
 # You can also directly specify a non standard font (FONT) or console
