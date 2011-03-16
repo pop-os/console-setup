@@ -6,6 +6,9 @@ console-setup (1.71) UNRELEASED; urgency=low
     the delay).
   * Ask the keyboard option question even when Debconf doesn't support the
     layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
+  * ckbcomp_mini: process properly empty layout and/or variant options.
+    Thanks to Baptiste Carvello who reported the problem and traced its
+    source.  Closes: #617499.
   * Do not source /etc/default/keyboard in /etc/default/console-setup
     (on new installs or upgrades from pre 1.47 versions).
   * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
@@ -39,7 +42,7 @@ console-setup (1.71) UNRELEASED; urgency=low
   * Debconf: More human-friendly options for the font size question.
   * New configuration variable VIDEOMODE.  Currently it is most useful on
     FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
-    support changing of the videomode.
+    permit changes of the videomode.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

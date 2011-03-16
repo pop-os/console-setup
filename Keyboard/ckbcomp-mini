@@ -39,7 +39,7 @@ which () {
     return 1
 }
 
-while [ "$1" ]; do
+while [ "$*" ]; do
     case "$1" in
 	-I*)
 	    ekmapdir=${1#-I}
@@ -50,11 +50,11 @@ while [ "$1" ]; do
 	    ;;
 	-layout)
 	    shift
-	    layout="$1"
+	    layout=">$1"
 	    ;;
 	-variant)
 	    shift
-	    variant="$1"
+	    variant=">$1"
 	    ;;
 	-option)
 	    shift
@@ -83,15 +83,18 @@ EOF
 	    ;;
 	*)
 	    if [ -z "$layout" ]; then
-		layout="$1"
+		layout=">$1"
 	    elif [ -z "$variant" ]; then
-		variant="$1"
+		variant=">$1"
 	    else
 		options=$(echo $options $1 | sed 's/,/ /g')
 	    fi
     esac
     shift
 done
+
+layout=${layout#>}
+variant=${variant#>}
 
 case "$model" in
     amiga|ataritt|macintosh_old|pc105|sun4|sun5)
