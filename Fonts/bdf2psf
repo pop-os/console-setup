@@ -22,6 +22,14 @@
 use warnings 'all';
 use strict;
 
+#####################################################################
+
+# The following positions are used by the mouse driver of FreeBSD.
+# They should not be used for any important symbols in the raw fonts.
+# Notice: these depend on the way the kernel has been compiled and
+# correspond to the option "SC_MOUSE_CHAR=0x03" in the configuration file.
+my @freebsd_mouse = (0x03, 0x04, 0x05, 0x06);
+
 my $embeded_sfm = 1; # 1 = make font with sfm table, 0 = do not embed sfm table
 
 sub debug {
@@ -247,6 +255,14 @@ for my $c (0xc0 ... 0xdf) {
 }
 for my $c (0x1c0 ... 0x1df) {
     $position_type[$c] = $copy_8th;
+}
+# The following is a hack.  Currently for raw fonts we always require
+# dont_copy_8th positions.  By setting these as copy_8th we make sure
+# these positions will be used only if there are no other free positions.
+if ($font_type == 2) {
+    for my $i (@freebsd_mouse) {
+        $position_type[$i] = $copy_8th;
+    }
 }
 
 # returns a position in the PSF font for a "$dont_copy_8th"-glyph
