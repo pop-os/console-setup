@@ -43,6 +43,7 @@ console-setup (1.71) UNRELEASED; urgency=low
   * New configuration variable VIDEOMODE.  Currently it is most useful on
     FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
     permit changes of the videomode.
+  * Install *.bug-control files for reportbug.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
