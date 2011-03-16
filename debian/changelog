@@ -34,6 +34,7 @@ console-setup (1.71) UNRELEASED; urgency=low
   * ckbcomp: New option -backspace del|bs to determine the behaviour of
     BackSpace and Delete keys.  A corresponding variable BACKSPACE in
     /etc/default/keyboard.
+  * Termcap and Terminfo entries for FreeBSD.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

@@ -2,7 +2,7 @@ SHELL = /bin/sh
 
 build : build-linux build-freebsd
 build-linux : gzipped_good_psf_fonts build-any
-build-freebsd : uuencoded_good_raw_fonts scrnmaps build-any
+build-freebsd : uuencoded_good_raw_fonts scrnmaps terminfo termcap build-any
 build-any:
 
 
@@ -359,12 +359,19 @@ scrnmaps : $(SCRNMAPS)
 # doesn't define symbols for the particular CODESET
 fullall : $(ALL_FONTS)
 
+terminfo : fbsdmap
+	./fbsdmap --terminfo >$@
+
+termcap : fbsdmap
+	./fbsdmap --termcap >$@
+
 .PHONY: clean
 clean:
 	-rm -f *~
 	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm
 	-rm -f fontsets/*~
 	-rm -f bdf/*-double.bdf
+	-rm -f terminfo termcap
 
 .PHONY: maintainer-clean
 maintainer-clean: clean

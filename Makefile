@@ -81,13 +81,14 @@ install-freebsd: build-freebsd install-any
 	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans/
 	install -d $(prefix)/bin/
 	install Keyboard/ckbcomp $(prefix)/bin/
-	if [ -z "$(xkbdir)" ]; then \
-		mkdir -p $(etcdir)/console-setup \
-		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
-	fi
 	install -d $(etcdir)/console-setup
+	install -m 644 Fonts/terminfo $(etcdir)/console-setup/
+	install -m 644 Fonts/termcap $(etcdir)/console-setup/
 	install -m 644 Keyboard/dkey.*.inc $(etcdir)/console-setup/
 	install -m 644 Keyboard/remap.inc $(etcdir)/console-setup/
+	if [ -z "$(xkbdir)" ]; then \
+		cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
+	fi
 
 .PHONY : install-mini-linux
 install-mini-linux: build-mini-linux install-any

@@ -30,7 +30,7 @@ $forbidden[0x00] = 1; # NUL
 $forbidden[0x07] = 1; # BEL
 $forbidden[0x08] = 1; # BS
 $forbidden[0x09] = 1; # HT
-$forbidden[0x0a] = 1; # LF
+$forbidden[0x0a] = 1; # LF (NL)
 $forbidden[0x0b] = 1; # VT
 $forbidden[0x0c] = 1; # FF
 $forbidden[0x0d] = 1; # CR
@@ -39,11 +39,8 @@ $forbidden[0x1b] = 1; # ESC
 # Maps the names used in freebsd.set to the terminfo symbol and code.
 # The symbols are termcap/terminfo standard and may not be changed.
 # Changes in the codes will lead in incompatibility with the previous
-# versions the terminal description so a change of the terminal name
-# will be required.  In my opinion the following change is permissible
-# even if the terminal name is kept unchanged - to use 0x1e or 0x1f
-# (currently unused) instead of 0 or instead of a code that is used
-# for another symbol too.
+# versions the terminal description but not too drastic so perhaps no
+# a change of the terminal name will be required.
 
 my %acsc = ( 'UK pound sign' => [ '}', 0 ],
              'arrow pointing down' => [ '.', 0x01 ],
@@ -85,6 +82,19 @@ for my $name (keys %acsc) {
 
 my ($file1, $file2, $file3, $task);
 
+sub mono {
+    my $a = $_[0];
+    $a =~ s/[|]/-m|/g;
+    $a =~ s/-line /-line monochrome /;
+    return $a;
+}
+
+sub lines {
+    my $a = $_[1];
+    $a =~ s/25/$_[0]/g;
+    return $a;
+}
+
 sub print_term {
     my $ac = "";
     for my $name (keys %acsc) {
@@ -92,9 +102,12 @@ sub print_term {
             $ac = $ac . sprintf("%s\\%03o", $acsc{$name}[0], $acsc{$name}[1]);
         }
     }
-    my $name1 = 'cons25cs|cons25cs-bs|FreeBSD console with console-setup (Backspace is BS)';
-    my $name2 = 'cons25cs-del|cons25cs-debian|FreeBSD console with console-setup (Backspace is DEL)';
+    my $name1 = 'cons25cs|cons25cs-bs|FreeBSD 25-line console with console-setup (Backspace is BS)';
+    my $name2 = 'cons25cs-del|cons25cs-debian|FreeBSD 25-line console with console-setup (Backspace is DEL)';
+    my $name1m = mono($name1);
+    my $name2m = mono($name2);
     if ($task eq 'termcap') {
+        my $monochrome = ':pa@:Co@:AF@:AB@:AX@:op@:us=\\E[4m:ue=\\E[24m';
         print <<EOT;
 $name1:\\
 	:ac=$ac:\\
@@ -103,8 +116,32 @@ $name2:\\
 	:ac=$ac:\\
 	:kb=\\177:kD=\\E[3~:\\
 	:tc=cons25w:
+$name1m:\\
+	$monochrome:tc=cons25cs:
+$name2m:\\
+	$monochrome:tc=cons25cs-del:
 EOT
+        for my $lines (30, 43, 50, 60) {
+            my $n1 = lines($lines, $name1);
+            my $n2 = lines($lines, $name2);
+            my $n1m = lines($lines, $name1m);
+            my $n2m = lines($lines, $name2m);
+            print <<EOT;
+$n1:\\
+	:li#$lines:tc=cons25cs:
+$n2:\\
+	:li#$lines:tc=cons25cs-del:
+$n1m:\\
+	:li#$lines:tc=cons25cs-m:
+$n2m:\\
+	:li#$lines:tc=cons25cs-del-m:
+EOT
+        }
     } elsif ($task eq 'terminfo') {
+        my $monochrome = 'colors@, pairs@,
+	bold@, dim@, op@, rmul=\\E[m, setab@, setaf@,
+	sgr=\\E[0%?%p1%t;2;7%;%?%p2%t;4%;%?%p3%t;7%;%?%p4%t;5%;m,
+	smul=\\E[4m';
         $ac =~ s/,/\\,/g;
         print <<EOT;
 $name1,
@@ -114,7 +151,27 @@ $name2,
 	acsc=$ac,
 	kbs=\\177, kdch1=\\E[3~,
 	use=cons25w,
+$name1m,
+	$monochrome, use=cons25cs,
+$name2m,
+	$monochrome, use=cons25cs-del,
 EOT
+        for my $lines (30, 43, 50, 60) {
+            my $n1 = lines($lines, $name1);
+            my $n2 = lines($lines, $name2);
+            my $n1m = lines($lines, $name1m);
+            my $n2m = lines($lines, $name2m);
+            print <<EOT;
+$n1,
+	lines#$lines, use=cons25cs,
+$n2,
+	lines#$lines, use=cons25cs-del,
+$n1m,
+	lines#$lines, use=cons25cs-m,
+$n2m,
+	lines#$lines, use=cons25cs-del-m,
+EOT
+        }
     }
 }
 
