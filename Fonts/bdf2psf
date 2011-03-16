@@ -28,7 +28,7 @@ use strict;
 # They should not be used for any important symbols in the raw fonts.
 # Notice: these depend on the way the kernel has been compiled and
 # correspond to the option "SC_MOUSE_CHAR=0x03" in the configuration file.
-my @freebsd_mouse = (0x03, 0x04, 0x05, 0x06);
+my %freebsd_mouse = (0x03 => 1, 0x04 => 1, 0x05 => 1, 0x06 => 1);
 
 my $embeded_sfm = 1; # 1 = make font with sfm table, 0 = do not embed sfm table
 
@@ -256,14 +256,6 @@ for my $c (0xc0 ... 0xdf) {
 for my $c (0x1c0 ... 0x1df) {
     $position_type[$c] = $copy_8th;
 }
-# The following is a hack.  Currently for raw fonts we always require
-# dont_copy_8th positions.  By setting these as copy_8th we make sure
-# these positions will be used only if there are no other free positions.
-if ($font_type == 2) {
-    for my $i (@freebsd_mouse) {
-        $position_type[$i] = $copy_8th;
-    }
-}
 
 # returns a position in the PSF font for a "$dont_copy_8th"-glyph
 sub dont_copy_8th_position {
@@ -278,12 +270,20 @@ sub dont_copy_8th_position {
         return $a;
     }
     for my $c (0 ... $font_size - 1) {
+        next if ($font_type == 2 && defined $freebsd_mouse{$c});
 	if ($position_type[$c] == $dont_copy_8th) {
 	    $position_type[$c] = 0;
 	    return $c;
 	}
     }
     warning sprintf ("U+%04X: can not be positioned properly\n", $u);
+    for my $c (0 ... $font_size - 1) {
+        next if ($font_type == 2 && defined $freebsd_mouse{$c});
+	if ($position_type[$c] != 0) {
+	    $position_type[$c] = 0;
+	    return $c;
+	}
+    }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] != 0) {
 	    $position_type[$c] = 0;
@@ -306,12 +306,20 @@ sub copy_8th_position {
         return $a;
     }
     for my $c (0 ... $font_size - 1) {
+        next if ($font_type == 2 && defined $freebsd_mouse{$c});
 	if ($position_type[$c] == $copy_8th) {
 	    $position_type[$c] = 0;
 	    return $c;
 	}
     }
     warning sprintf ("U+%04X: can not be positioned properly\n", $u);
+    for my $c (0 ... $font_size - 1) {
+        next if ($font_type == 2 && defined $freebsd_mouse{$c});
+	if ($position_type[$c] != 0) {
+	    $position_type[$c] = 0;
+	    return $c;
+	}
+    }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] != 0) {
 	    $position_type[$c] = 0;
@@ -332,6 +340,13 @@ sub doesnt_matter_8th_position {
     if ($a && $position_type[$a] != 0) {
         $position_type[$a] = 0;
         return $a;
+    }
+    for my $c (0 ... $font_size - 1) {
+        next if ($font_type == 2 && defined $freebsd_mouse{$c});
+	if ($position_type[$c] != 0) {
+	    $position_type[$c] = 0;
+	    return $c;
+	}
     }
     for my $c (0 ... $font_size - 1) {
 	if ($position_type[$c] != 0) {
