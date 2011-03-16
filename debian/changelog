@@ -35,6 +35,7 @@ console-setup (1.71) UNRELEASED; urgency=low
     /etc/default/keyboard.
   * Termcap and Terminfo entries for FreeBSD.
   * When UTF-8 is requested on FreeBSD act as if the encoding is ISO-8859-1.
+  * Debconf: Don't ask the question about font size on kFreeBSD.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

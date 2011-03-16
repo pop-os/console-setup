@@ -31,7 +31,7 @@ CODESET=guess
 # Set FONTFACE (and possibly FONTSIZE) to "guess" if you want suitable
 # values to be guessed.  Set FONTFACE and FONTSIZE to empty strings if
 # you want to set up the keyboard but to leave the console font
-# unchanged.
+# unchanged.  The value of FONTSIZE is ignored on FreeBSD.
 FONTFACE=TerminusBold
 FONTSIZE=16
 
