@@ -355,11 +355,6 @@ else
     unicode=''
 fi
 
-if [ "$kernel" = freebsd -a -n "$unicode" ]; then
-    echo UTF-8 is not supported on FreeBSD. >&2
-    exit 1
-fi
-
 # do_font
 if [ "$do_font" ]; then
     case "$kernel" in
@@ -429,8 +424,14 @@ if [ -z "$CODESET" ]; then
             fi
             ;;
     esac
+    if [ "$kernel" = freebsd ]; then
+        # 512 character fonts are not supported on FreeBSD
+        case "$CODESET" in
+            Uni*|Vietnamese|Arabic|Ethiopian) CODESET=Lat15 ;;
+        esac
+    fi
 fi
-if [ "$kernel" = freebsd ]; then
+if [ "$CHARMAP" != UTF-8 -a "$kernel" = freebsd ]; then
     if \
         [ -z "`findfile share/syscons/scrnmaps ${CHARMAP}_${CODESET}.scm`" ]
     then
@@ -561,6 +562,8 @@ fi
 # acm_option
 if [ "$CHARMAP" != UTF-8 ]; then
     acm_option="-charmap $CHARMAP"
+elif [ "$kernel" = freebsd ]; then
+    acm_option='-charmap ISO-8859-1'
 else
     acm_option=''
 fi

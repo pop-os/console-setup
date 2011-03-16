@@ -21,8 +21,7 @@ console-setup (1.71) UNRELEASED; urgency=low
     option the init script.
   * setupcon, config, postinst: recognise 'guess' value in the
     configuration file.
-  * postinst: do not fail if setupcon fails (for example with UTF-8 locale
-    on FreeBSD).
+  * postinst: do not fail if setupcon fails.
   * New install targets in the Makefiles and debian/rules to better
     support non-Debian installs.
   * Include Terminus font in the compiled packages.  Do not depend, but
@@ -35,6 +34,7 @@ console-setup (1.71) UNRELEASED; urgency=low
     BackSpace and Delete keys.  A corresponding variable BACKSPACE in
     /etc/default/keyboard.
   * Termcap and Terminfo entries for FreeBSD.
+  * When UTF-8 is requested on FreeBSD act as if the encoding is ISO-8859-1.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
