@@ -6,6 +6,10 @@ xkbdir = /usr/share/X11/xkb
 export xkbdir
 pre = debian/preprocessor
 
+manprocessor = sed \
+	-e 's|^\([.a-zA-Z][a-zA-Z]*\) /usr/local/etc|\1 /etc|' \
+	-e 's|^\([.a-zA-Z][a-zA-Z]*\) /usr/local|\1 /usr|'
+
 main_build:
 	$(MAKE) build-all xkbdir=$(xkbdir)
 	touch main_build
@@ -45,28 +49,39 @@ install-configuration: build
 	install -d debian/keyboard-configuration/usr/share/lintian/overrides
 	install -m 644 debian/lintian.overrides \
 		debian/keyboard-configuration/usr/share/lintian/overrides/keyboard-configuration
-	dh_installman man/keyboard.5
 	dh_link usr/share/X11/xkb/rules/xorg.lst usr/share/doc/keyboard-configuration/xorg.lst
+	install -d debian/keyboard-configuration/usr/share/man/man5/
+	install -m 644 man/keyboard.5 debian/keyboard-configuration/usr/share/man/man5/
+	$(manprocessor) -i  debian/keyboard-configuration/usr/share/man/man5/keyboard.5
 
 .PHONY : install-linux
-install-linux: build
+install-linux: build install-configuration
 	dh_testdir
 	dh_testroot
 	dh_prep -pconsole-setup
 	dh_prep -pconsole-setup-linux
 	$(MAKE) etcdir=debian/console-setup/etc \
 		prefix=debian/console-setup/usr install-linux
+	( cd debian/console-setup && find . ) | sort -r | \
+		while read x; do \
+			if [ -f debian/keyboard-configuration/"$$x" ]; then \
+				rm debian/console-setup/"$$x" >/dev/null 2>&1 || true; \
+			elif [ -d debian/keyboard-configuration/"$$x" ]; then \
+				rmdir debian/console-setup/"$$x" >/dev/null 2>&1 || true; \
+			fi; \
+		done
 	dh_movefiles -pconsole-setup-linux --sourcedir=debian/console-setup \
 		usr/share/consolefonts \
 		usr/share/consoletrans \
 		etc/console-setup/remap.inc
 	mv debian/console-setup/etc/console-setup/compose.* debian/console-setup-linux/etc/console-setup/
-	rm -rf debian/console-setup/etc/console-setup/ckb/
 	install -d debian/console-setup/usr/share/console-setup/
 	rm debian/console-setup/etc/default/keyboard
 	mv debian/console-setup/etc/default/console-setup \
 		debian/console-setup/usr/share/console-setup/
-	rm debian/console-setup/usr/share/man/man5/keyboard.5
+	$(manprocessor) -i  debian/console-setup/usr/share/man/man5/console-setup.5
+	$(manprocessor) -i  debian/console-setup/usr/share/man/man1/setupcon.1
+	$(manprocessor) -i  debian/console-setup/usr/share/man/man1/ckbcomp.1
 
 .PHONY : install-freebsd
 install-freebsd: build install-linux
@@ -77,16 +92,17 @@ install-freebsd: build install-linux
 		prefix=debian/console-setup-freebsd/usr install-freebsd
 	( cd debian/console-setup-freebsd && find . ) | sort -r | \
 		while read x; do \
-			if [ -f debian/console-setup/"$$x" ]; then \
+			if \
+				[ -f debian/keyboard-configuration/"$$x" ]\
+				|| [ -f debian/console-setup/"$$x" ] ;\
+			then \
 				rm debian/console-setup-freebsd/"$$x" >/dev/null 2>&1 || true; \
 			elif [ -d debian/console-setup/"$$x" ]; then \
 				rmdir debian/console-setup-freebsd/"$$x" >/dev/null 2>&1 || true; \
 			fi; \
 		done
-	rm -rf debian/console-setup-freebsd/etc/console-setup/ckb/
 	rm debian/console-setup-freebsd/etc/default/keyboard
 	rm debian/console-setup-freebsd/etc/default/console-setup
-	rm debian/console-setup-freebsd/usr/share/man/man5/keyboard.5
 
 .PHONY : install-mini-linux
 install-mini-linux: build
@@ -95,10 +111,20 @@ install-mini-linux: build
 	dh_prep -pconsole-setup-mini
 	$(MAKE) etcdir=debian/console-setup-mini/etc \
 		prefix=debian/console-setup-mini/usr install-mini-linux
+	( cd debian/console-setup-mini && find . ) | sort -r | \
+		while read x; do \
+			if [ -f debian/keyboard-configuration/"$$x" ]; then \
+				rm debian/console-setup-mini/"$$x" >/dev/null 2>&1 || true; \
+			elif [ -d debian/keyboard-configuration/"$$x" ]; then \
+				rmdir debian/console-setup-mini/"$$x" >/dev/null 2>&1 || true; \
+			fi; \
+		done
 	dh_install -p console-setup-mini debian/kbdnames.gz usr/share/console-setup-mini
 	rm debian/console-setup-mini/etc/default/keyboard
 	rm debian/console-setup-mini/etc/default/console-setup 
-	rm debian/console-setup-mini/usr/share/man/man5/keyboard.5
+	$(manprocessor) -i  debian/console-setup-mini/usr/share/man/man5/console-setup.5
+	$(manprocessor) -i  debian/console-setup-mini/usr/share/man/man1/setupcon.1
+	$(manprocessor) -i  debian/console-setup-mini/usr/share/man/man1/ckbcomp.1
 	$(pre) --mini debian/console-setup-mini/bin/setupcon
 	$(pre) --mini debian/console-setup-mini/usr/bin/ckbcomp-mini
 
