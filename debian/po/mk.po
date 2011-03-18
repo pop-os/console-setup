@@ -1,29 +1,27 @@
-# translation of console-data-mk.po to macedonian
-# translation of mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# translation of console-data_debian_po_mk.po to
-# Macedonian translation of console-data_debian_po_mk.po to
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
 #
-# Georgi Stanojevski <glisha@gmail.com>, 2004, 2008.
-# Georgi Stanojevski <georgis@unet.com.mk>, 2006, 2008.
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of debian-installer_packages_po_sublevel1_mk.po to Macedonian
+# translation of mk.po to
+# Macedonian strings from the debian-installer.
+#
+# Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005, 2006.
+# Georgi Stanojevski <georgis@unet.com.mk>, 2005, 2006.
+# Arangel Angov <ufo@linux.net.mk>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: console-data-mk\n"
+"Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 20:01+0100\n"
-"PO-Revision-Date: 2008-06-12 23:21+0200\n"
-"Last-Translator: Georgi Stanojevski <glisha@gmail.com>\n"
-"Language-Team: macedonian <ossm-members@hedona.on.net.mk>\n"
-"Language: \n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2010-11-15 14:49+0100\n"
+"Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
+"Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: mk\n"
 
 #. Type: text
 #. Description
@@ -32,38 +30,51 @@ msgstr ""
 msgid "Do not change the boot/kernel font"
 msgstr "Не го менувај фонтот при подигнување"
 
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
+
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ". Арапски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr "# Ерменски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr "# Килирица - KOI8-R и KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr "# Кирилица - несловенски јазици"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
 "# Кирилица - словенски јазици (исто така и латиница на босански и српски)"
@@ -71,84 +82,84 @@ msgstr ""
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ". Етиопски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
 msgstr "# Грузиски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# Грчки"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
 msgstr "# Еврејски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr "# Latin1 and Latin5 - западна Европа и турски јазици"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr "# Latin2 - централна Европа и романски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr "# Latin3 and Latin8 - Chichewa; Есперанто; Ирски; Малтешки и Велшки"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr "# Latin7 - Литвански; Летонски; Маорски и Маршалски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ". Latin - Виетнамски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
 msgstr "# Тајландски"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ""
 ". Комбинирано - Латинично; Словенска кирилица; Еврејски; основен Арапски"
@@ -156,28 +167,36 @@ msgstr ""
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ". Комбинирано - Латинично; Словенска крилица; Грчки"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ". Комбинирано - Латинично; Словенска и несловенска кирилица"
 
 #. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "Внеси случајни знаци"
+
+#. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid "Character set to support:"
 msgstr "Множество на знаци за поддршка:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
@@ -186,7 +205,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
@@ -200,7 +219,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Фонт за конзолата:"
 
@@ -210,7 +229,7 @@ msgstr "Фонт за конзолата:"
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -229,7 +248,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -244,17 +263,18 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Големина на фонт:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
 "Ве молам изберете ја големината на фонтот за Linux конзолата. За референца, "
 "фонтот користен при подигнување на компјутерот е со големина 16."
@@ -262,40 +282,20 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"Ве молам изберете ја големината на фонтот за Linux конзолата. Прости броеви "
-"соодветсвуваат со фонтовите кои може да бидат користени со сите конзолни "
-"управувачи. Бројот ја претставува висината на фонтот (број на скенирани "
-"линии). Алтернативно фонтот може да биде претставен како HEIGHTxWIDTH; но, "
-"таквите спецификации на фонт бараат kbd конзолниот пакет (не console-tools) "
-"плус framebuffer (и RadeonFB јадрениот управувач за framebuffer не ги "
-"поддржува исто така)."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"Висината на фонтот може да биде корисна за дознавање на вистинската големина "
-"на симболите во конзолата. За референца, фонтот користен кога компјутерот се "
-"подигнува е со големина 16."
+"Ве молам изберете ја големината на фонтот за Linux конзолата. За референца, "
+"фонтот користен при подигнување на компјутерот е со големина 16."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
 msgstr "Енкодинг за употреба во конзолата:"
 
@@ -411,10 +411,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Основната вредност за распоредот на тастатурата е  XKBLAYOUT="
-"\"${XKBLAYOUT}\" и XKBVARIANT=\"${XKBVARIANT}\".  Оваа основна вредност е "
-"базирана на моментално дефинираниот јазик/регион и поставките во /etc/X11/"
-"xorg.conf."
+"Основната вредност за распоредот на тастатурата е  XKBLAYOUT=\"${XKBLAYOUT}"
+"\" и XKBVARIANT=\"${XKBVARIANT}\".  Оваа основна вредност е базирана на "
+"моментално дефинираниот јазик/регион и поставките во /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -578,22 +577,25 @@ msgstr "Мени копчето"
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
+#, fuzzy
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Лев Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
+#, fuzzy
 msgid "Control+Shift"
-msgstr ""
+msgstr "Десен Control+Left Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
+#, fuzzy
 msgid "Control+Alt"
-msgstr ""
+msgstr "Лев Control"
 
 #. Type: select
 #. Choices
