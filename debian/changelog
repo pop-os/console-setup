@@ -50,7 +50,10 @@ console-setup (1.71) UNRELEASED; urgency=low
   * Termcap and Terminfo entries for FreeBSD.
   * When UTF-8 is requested on FreeBSD, act as if the encoding is ISO-8859-1.
   * Debconf: Don't ask the question about font size on kFreeBSD.
-  * Debconf: More human-friendly options for the font size question.
+  * setupcon: accept all methods to state font size in the configuration
+    file (8x14, 14x8, 14).
+  * Debconf: More human-friendly options for the font size question.  By
+    default use 8x14 format for all sizes.
   * New configuration variable VIDEOMODE.  Currently it is most useful on
     FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
     permit changes of the videomode.
