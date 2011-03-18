@@ -71,7 +71,7 @@ EOF
     # If the admin deleted or commented some variables but then set
     # them via debconf, (re-)add them to the conffile.
     for var in \
-	VERBOSE_OUTPUT ACTIVE_CONSOLES CHARMAP CODESET FONTFACE FONTSIZE
+	ACTIVE_CONSOLES CHARMAP CODESET FONTFACE FONTSIZE
     do
         if ! grep "^ *${var}=" $CONFIGFILE >/dev/null; then
 	    echo "${var}=" >>$CONFIGFILE
@@ -93,7 +93,6 @@ EOF
     fi
     
     sed \
-	-e "s|^ *VERBOSE_OUTPUT=.*|VERBOSE_OUTPUT=\"${VERBOSE_OUTPUT:-no}\"|" \
 	-e "s|^ *ACTIVE_CONSOLES=.*|ACTIVE_CONSOLES=\"${ACTIVE_CONSOLES:-guess}\"|" \
 	-e "s|^ *FONT=.*|FONT=\"$FONT\"|" \
 	-e "s|^ *FONT_MAP=.*|FONT_MAP=\"$FONT_MAP\"|" \

@@ -12,7 +12,7 @@ Lat15-TerminusBold16 Lat2-TerminusBold16 Lat38-VGA16			\
 Lat7-TerminusBold16 Thai-Fixed16 Uni1-VGA16 Uni2-VGA16 Uni3-Fixed16	\
 Vietnamese-Fixed16
 
-fonts-mini-linux = $(addprefix Fonts/, $(addsuffix .psf, $(fonts-mini)))
+fonts-mini-linux = $(addprefix Fonts/, $(addsuffix .psf.gz, $(fonts-mini)))
 fonts-mini-freebsd = $(addprefix Fonts/, $(addsuffix .fnt, $(fonts-mini)))
 
 SHELL = /bin/sh
@@ -54,6 +54,9 @@ install-any: build-any
 	install -d $(mandir)/man1/
 	install -m 644 man/setupcon.1 $(mandir)/man1/
 	install -m 644 man/ckbcomp.1 $(mandir)/man1/
+	install -d $(mandir)/man5/
+	install -m 644 man/keyboard.5 $(mandir)/man5/
+	install -m 644 man/console-setup.5 $(mandir)/man5/
 
 .PHONY: install-linux
 install-linux: build-linux install-any
@@ -78,7 +81,7 @@ install-freebsd: build-freebsd install-any
 	install -d $(prefix)/share/syscons/scrnmaps/
 	install -m 644 Fonts/*.scm $(prefix)/share/syscons/scrnmaps/
 	install -d $(prefix)/share/consoletrans
-	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans/
+	install -m 644 acm/*.acm $(prefix)/share/consoletrans/
 	install -d $(prefix)/bin/
 	install Keyboard/ckbcomp $(prefix)/bin/
 	install -d $(etcdir)/console-setup
@@ -100,17 +103,43 @@ install-mini-linux: build-mini-linux install-any
 	install -m 644 Keyboard/ckbcomp-mini $(prefix)/bin/
 	ln -s ckbcomp-mini $(prefix)/bin/ckbcomp
 
-.PHONY: uninstall
-uninstall: build
+common-uninstall:
 	-for font in Fonts/*.psf.gz; do \
 		rm $(prefix)/share/consolefonts/$${font##*/}; \
 	done
-	-for acm in acm/*.acm.gz; do \
+	-for acm in acm/*.acm.gz acm/*.acm; do \
 		rm $(prefix)/share/consoletrans/$${acm##*/}; \
 	done
-	-rm -rf $(etcdir)/console-setup/
+	-for ekmap in Keyboard/*.ekmap.gz; do \
+		rm $(prefix)/share/console-setup-mini/$${ekmap##*/}; \
+	done
+	-for font in Fonts/*.fnt; do \
+		rm $(prefix)/share/syscons/fonts/$${font##*/}; \
+	done
+	-for scm in Fonts/*.scm; do \
+		rm $(prefix)/share/syscons/scrnmaps/$${scm##*/}; \
+	done
+	-rm $(prefix)/share/man/man1/ckbcomp.1
+	-rm $(prefix)/share/man/man1/setupcon.1
+	-rm $(prefix)/share/man/man5/keyboard.5
+	-rm $(prefix)/share/man/man5/console-setup.5
+	-rm -r $(etcdir)/console-setup/
+	-rm $(etcdir)/default/keyboard
+	-rm $(etcdir)/default/console-setup
 	-rm $(prefix)/bin/ckbcomp
 	-rm $(bootprefix)/bin/setupcon
+
+.PHONY: uninstall-linux
+uninstall-linux: build-linux
+	$(MAKE) common-uninstall
+
+.PHONY: uninstall-mini-linux
+uninstall-mini-linux: build-mini-linux
+	$(MAKE) common-uninstall
+
+.PHONY: uninstall-freebsd
+uninstall-freebsd: build-freebsd
+	$(MAKE) common-uninstall
 
 .PHONY: clean
 clean:

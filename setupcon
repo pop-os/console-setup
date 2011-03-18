@@ -245,6 +245,7 @@ if [ "$VARIANT" ]; then
 fi
 
 USER_CONFIG=${HOME}/.console-setup"$VARIANT"
+USER_CONFIG2=${HOME}/.keyboard"$VARIANT"
 MAIN_CONFIG=/etc/default/keyboard"$VARIANT"
 [ -f "$MAIN_CONFIG" ] \
     || MAIN_CONFIG="$installdir"/etc/default/keyboard"$VARIANT"
@@ -254,7 +255,7 @@ MAIN_CONFIG2=/etc/default/console-setup"$VARIANT"
 
 if [ -f "$USER_CONFIG" ]; then
     CONFIG="$USER_CONFIG"
-    CONFIG2=''
+    CONFIG2="$USER_CONFIG2"
 elif [ -f "$MAIN_CONFIG" ]; then
     CONFIG="$MAIN_CONFIG"
     CONFIG2="$MAIN_CONFIG2"
@@ -276,6 +277,7 @@ fi
 ###########################################################################
 
 # do_verbose
+# The variable VERBOSE_OUTPUT is obsoleted in favour of the option --verbose
 if [ "$VERBOSE_OUTPUT" = yes ]; then
     do_verbose=yes
 fi
@@ -338,6 +340,10 @@ else
 fi
 
 # CHARMAP
+if which locale >/dev/null; then
+    charmap=`locale charmap`
+fi
+CHARMAP=${CHARMAP:-$charmap}
 CHARMAP=${CHARMAP:-UTF-8}
 if [ -f $installdir/bin/ckbcomp-mini ]; then
     if [ "$CHARMAP" != UTF-8 ]; then
@@ -452,6 +458,21 @@ fi
 if [ -z "$FONTSIZE" -o "$FONTSIZE" = guess ]; then
     FONTSIZE=16
 fi
+case "$FONTSIZE" in
+    8x*)
+        FONTSIZE=${FONTSIZE#*x}
+        ;;
+    *x8)
+        FONTSIZE=${FONTSIZE%x*}
+        ;;
+    *x*)
+        a=${FONTSIZE%x*}
+        b=${FONTSIZE#*x}
+        if [ "$a" -lt "$b" ]; then
+            FONTSIZE=${b}x${a}
+        fi
+        ;;
+esac
 
 # mapdir, fontdir, stdfont, stdfontfallback
 case "$kernel" in
@@ -691,6 +712,8 @@ if [ "$VIDEOMODE" ]; then
             # this is a bit pointless as vesafb doesn't support changing mode
             if which fbset >/dev/null; then
                 run plain ECHO fbset -a "$VIDEOMODE"
+            else
+                report fbset is not installed
             fi
             ;;
     esac

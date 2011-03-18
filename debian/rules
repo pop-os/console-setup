@@ -37,7 +37,6 @@ install-configuration: build
 	dh_prep -pkeyboard-configuration
 	install -d debian/keyboard-configuration/usr/share/console-setup/
 	install -m 644 config/keyboard debian/keyboard-configuration/usr/share/console-setup/
-	dh_link -pkeyboard-configuration usr/share/console-setup/keyboard usr/share/doc/keyboard-configuration/examples/keyboard
 	install -d debian/keyboard-configuration/usr/share/console-setup
 	install -m 644 Keyboard/KeyboardNames.pl debian/keyboard-configuration/usr/share/console-setup/
 	install -m 644 Keyboard/kbdnames-maker debian/keyboard-configuration/usr/share/console-setup/
@@ -46,6 +45,8 @@ install-configuration: build
 	install -d debian/keyboard-configuration/usr/share/lintian/overrides
 	install -m 644 debian/lintian.overrides \
 		debian/keyboard-configuration/usr/share/lintian/overrides/keyboard-configuration
+	dh_installman man/keyboard.5
+	dh_link usr/share/X11/xkb/rules/xorg.lst usr/share/doc/keyboard-configuration/xorg.lst
 
 .PHONY : install-linux
 install-linux: build
@@ -65,8 +66,7 @@ install-linux: build
 	rm debian/console-setup/etc/default/keyboard
 	mv debian/console-setup/etc/default/console-setup \
 		debian/console-setup/usr/share/console-setup/
-	dh_link -pconsole-setup usr/share/console-setup/console-setup \
-		 usr/share/doc/console-setup/examples/console-setup
+	rm debian/console-setup/usr/share/man/man5/keyboard.5
 
 .PHONY : install-freebsd
 install-freebsd: build install-linux
@@ -86,6 +86,7 @@ install-freebsd: build install-linux
 	rm -rf debian/console-setup-freebsd/etc/console-setup/ckb/
 	rm debian/console-setup-freebsd/etc/default/keyboard
 	rm debian/console-setup-freebsd/etc/default/console-setup
+	rm debian/console-setup-freebsd/usr/share/man/man5/keyboard.5
 
 .PHONY : install-mini-linux
 install-mini-linux: build
@@ -97,6 +98,7 @@ install-mini-linux: build
 	dh_install -p console-setup-mini debian/kbdnames.gz usr/share/console-setup-mini
 	rm debian/console-setup-mini/etc/default/keyboard
 	rm debian/console-setup-mini/etc/default/console-setup 
+	rm debian/console-setup-mini/usr/share/man/man5/keyboard.5
 	$(pre) --mini debian/console-setup-mini/bin/setupcon
 	$(pre) --mini debian/console-setup-mini/usr/bin/ckbcomp-mini
 
@@ -163,18 +165,11 @@ binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installdebconf
-	dh_installdocs -pkeyboard-configuration
-	dh_installdocs -pconsole-setup README*
-	dh_installdocs -pconsole-setup FAQ
-	dh_installdocs
-	dh_install -p console-setup copyright.fonts \
-		 usr/share/doc/console-setup
-	dh_install -p console-setup-linux copyright.fonts \
-		 usr/share/doc/console-setup-linux
-	dh_install -p console-setup-freebsd copyright.fonts \
-		 usr/share/doc/console-setup-freebsd
-	dh_install -p console-setup-mini copyright.fonts \
-		 usr/share/doc/console-setup-mini
+	dh_installdocs -pkeyboard-configuration FAQ copyright.fonts
+	dh_installdocs -pconsole-setup-linux --link-doc=keyboard-configuration
+	dh_installdocs -pconsole-setup-freebsd --link-doc=keyboard-configuration
+	dh_installdocs -pconsole-setup-mini --link-doc=keyboard-configuration
+	dh_installdocs -pconsole-setup --link-doc=keyboard-configuration
 	dh_bugfiles
 	dh_installman
 	dh_installchangelogs

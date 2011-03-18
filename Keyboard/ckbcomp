@@ -52,9 +52,9 @@ if ( $installdir eq '' || ! -d "$installdir/bin") {
 
 my @xdirs = ('/etc/console-setup/ckb',
              "$installdir/etc/console-setup/ckb",
+	     '/usr/local/share/X11/xkb',
 	     '/usr/share/X11/xkb',
-	     '/etc/X11/xkb',
-	     '/usr/X11R6/lib/X11/xkb');
+	     '/etc/X11/xkb');
 
 my $keycodes;
 my $symbols;
@@ -3185,7 +3185,7 @@ if ($charmap) {
                      "/usr/share/consoletrans/${charmap}.gz",
                      "/usr/share/consoletrans/${charmap}.acm",
                      "/usr/share/consoletrans/${charmap}.acm.gz",
-                     "acm/${charmap}.acm") {
+                     "${charmap}") {
 	if (-f $acmfile) {
 	    $acm = $acmfile;
 	    last;
@@ -3453,14 +3453,17 @@ sub xkb_key {
 		    }
 		    next;
 		}
-		# abracadabra
-		# abracadabra = abra<cad>abra
+                # virtualMods = AltGr
+                # overlay1=<KO7>
 		next if ($list =~ s/^[a-zA-Z0-9_]+(=[a-zA-Z0-9_<>]+)?,
                                    (.*)/$2/x);
-		# abracadabra = "...."
+		# type = "CTRL+ALT"
 		next if ($list =~ s/^[a-zA-Z0-9_]+=\"[^\"]+\",(.*)/$1/);
 		# type[...] = "..."
 		next if ($list =~ s/^type\[[a-zA-Z0-9_]+\]=\"[^\"]+\",
+                                    (.*)/$1/x);
+		# actions[...] = [ ... ]
+		next if ($list =~ s/^actions\[[a-zA-Z0-9_]+\]=\[[^\]]*?\],
                                     (.*)/$1/x);
 		die "$0: garbage in a key definition: \"$list\""
 		    ." in $filename.\n";
@@ -3745,7 +3748,9 @@ sub x_to_kernelsym {
     if (defined $kernelkeysym) {
 	my $uni = hex ($kernelkeysym);
 	if (defined $forbidden{$uni}) {
-#	    warning "Forbidden Unicode \"U+$kernelkeysym\"\n";
+            if ($verbosity >= 8) {
+                warning "Forbidden Unicode \"U+$kernelkeysym\"\n";
+            }
 	    return $voidsymbol;
 	} else {
 	    if (pack("U", $uni) =~ /\p{IsAlpha}/) {

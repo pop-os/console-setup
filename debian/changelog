@@ -9,6 +9,17 @@ console-setup (1.71) UNRELEASED; urgency=low
   * ckbcomp_mini: process properly empty layout and/or variant options.
     Thanks to Baptiste Carvello who reported the problem and traced its
     source.  Closes: #617499.
+  * ckbcomp: ignore actions[...] = ... specifications in key definitions.
+    Thanks to Klaus Ethgen, closes: #607532.
+  * New manual pages keyboard(5) and console-setup(5).  Updated ckbcomp(1)
+    and setupcon(1). Remove README.fonts.  Common documentation directory
+    for keyboard-configuration, console-setup-linux,
+    console-setup-freebsd, console-setup and console-setup-mini.  New
+    README.Debian.  Thanks to Jorgen Grahn, closes: #617580.
+  * Remove most of the comments in the default configuration files.  It is
+    difficult to update these comments when the functionality of
+    console-setup changes and the new manual pages make these comments
+    less necessary.
   * Do not source /etc/default/keyboard in /etc/default/console-setup
     (on new installs or upgrades from pre 1.47 versions).
   * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
@@ -44,6 +55,8 @@ console-setup (1.71) UNRELEASED; urgency=low
     FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
     permit changes of the videomode.
   * Install *.bug-control files for reportbug.
+  * Remove the VERBOSE_OUTPUT option from the default configuration file
+    (but it is still supported).
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
