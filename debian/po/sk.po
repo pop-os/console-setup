@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
 "PO-Revision-Date: 2011-03-14 12:02+0100\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -24,20 +24,22 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "Nemeniť písmo použité pri štarte"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
+msgid "Let the system select a suitable font"
 msgstr ""
 
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
 msgstr ""
@@ -214,7 +216,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Písmo na konzole:"
@@ -224,7 +226,7 @@ msgstr "Písmo na konzole:"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -243,7 +245,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
@@ -254,17 +256,17 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Veľkosť písma:"
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
 #, fuzzy
 msgid ""
@@ -276,7 +278,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
 msgid ""

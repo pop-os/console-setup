@@ -10,40 +10,42 @@
 #
 # Ognyan Kulev <ogi@fmi.uni-sofia.bg>, 2004, 2005, 2006.
 # Nikola Antonov <nikola@linux-bg.org>, 2004.
-# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010.
+# Damyan Ivanov <dmn@debian.org>, 2006, 2007, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
-"PO-Revision-Date: 2010-08-25 19:07+0300\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"PO-Revision-Date: 2011-03-19 11:47+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: binary\n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "Без промяна на шрифта"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
-msgstr ""
+msgid "Let the system select a suitable font"
+msgstr "Оставяне на системата да избере подходящ шрифт"
 
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "само за конзола"
 
 #. Type: select
 #. Choices
@@ -182,16 +184,15 @@ msgstr ". комбинирана - латиница; славянска и не�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Въвеждайте случайни знаци"
+msgstr "Отгатване на оптималния знаков набор"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "Множество от писмени знаци, което да се поддържа:"
+msgstr "Знаков набор, който да се поддържа:"
 
 #. Type: select
 #. Description
@@ -199,9 +200,7 @@ msgstr "Множество от писмени знаци, което да се 
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr ""
-"Моля, изберете множеството от писмени знаци, което трябва да се поддържа на "
-"конзолата:"
+msgstr "Изберете знаковия набор, който да се поддържа от шрифта на конзолата:"
 
 #. Type: select
 #. Description
@@ -219,7 +218,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Шрифт за конзолата:"
@@ -229,7 +228,7 @@ msgstr "Шрифт за конзолата:"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -248,7 +247,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
@@ -260,38 +259,37 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Размер на шрифта:"
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Моля, изберете размера на шрифта за конзолата на Линукс. За сравнение - "
-"шрифтът, с който вашият компютър се стартира, има височина 16."
+"Изберете размера на шрифта за конзолата. За сравнение - шрифтът, с който "
+"вашият компютър се стартира, има размер 8x16."
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Моля, изберете размера на шрифта за конзолата на Линукс. За сравнение - "
-"шрифтът, с който вашият компютър се стартира, има височина 16."
+"Изберете размера на шрифта за конзолата. За сравнение - шрифтът, с който "
+"вашият компютър се стартира е с размер 8x16. Някои от размерите изискват "
+"пакета kbd (не console-tools) и използването на фреймбуфер."
 
 #. Type: select
 #. Description

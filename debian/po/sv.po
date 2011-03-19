@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
-"PO-Revision-Date: 2011-03-13 08:55+0100\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"PO-Revision-Date: 2011-03-19 11:54+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,23 +30,25 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "Ändra inte teckensnittet för uppstart/kärna"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
-msgstr ""
+msgid "Let the system select a suitable font"
+msgstr "Låt systemet välja ett lämpligt typsnitt"
 
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "endast framebuffer"
 
 #. Type: select
 #. Choices
@@ -187,9 +189,8 @@ msgstr ". Kombinerad - Latin, slavisk och icke-slavisk kyrillisk"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Mata in slumpmässiga tecken"
+msgstr "Gissa optimala teckenuppsättning"
 
 #. Type: select
 #. Description
@@ -222,7 +223,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Teckensnitt för konsollen:"
@@ -232,7 +233,7 @@ msgstr "Teckensnitt för konsollen:"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -252,7 +253,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
@@ -264,38 +265,37 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Teckenstorlek:"
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Välj teckenstorlek för Linuxkonsollen. Som referens kan du tänka på att "
-"startläget använder storlek 16."
+"Välj teckenstorlek för konsollen. Som referens kan du tänka på att "
+"startläget använder storlek 8x16."
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Välj teckenstorlek för Linuxkonsollen. Som referens kan du tänka på att "
-"startläget använder storlek 16."
+"Välj teckenstorlek för konsollen. Som referens kan du tänka på att "
+"startläget använder storlek 8x16. Vissa teckenstorlekar kräver "
+"konsollpaketet kbd (inte console-tools) plus framebuffer."
 
 #. Type: select
 #. Description
