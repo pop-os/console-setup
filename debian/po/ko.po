@@ -1,19 +1,22 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
 # Korean messages for debian-installer.
 # Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Changwoo Ryu <cwryu@debian.org>, 2004, 2007, 2008, 2010.
-# Sunjae Park <darehanl@gmail.com>, 2005, 2006.
+# Changwoo Ryu <cwryu@debian.org>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 20:01+0100\n"
-"PO-Revision-Date: 2010-11-23 01:39+0900\n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2011-03-09 02:14+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
-"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,167 +26,186 @@ msgstr ""
 #. :sl2:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "부팅/커널 글꼴을 바꾸지 않기"
+msgstr ""
+
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ". 아랍어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "# 아르메니아어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# 키릴 문자 - KOI8-R 및 KOI8-U"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# 키릴 문자 - 슬라브어 아님"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# 키릴 문자 - 슬라브어 (보스니아어 및 세르비아어 라틴 문자 포함)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ". 에티오피아어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr "# 그루지야어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr "# 그리스어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
-msgstr "# 히브리어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr "# 라오어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# Latin1 및 Latin5 - 서유럽 언어 및 터키어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# Latin2 - 중앙 유럽 언어 및 루마니아어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr ""
-"# Latin3 및 Latin8 - 치체와어, 에스페란토어, 아일랜드어, 몰타어, 웨일스어"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "# Latin7 - 리투아니아어, 라트비아어, 마오리어, 마샬 제도 언어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ". Latin - 베트남어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr "# 타이어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". 조합 - 라틴, 슬라브어 키릴 문자, 히브리어, 기초 아랍어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". 조합 - 라틴, 슬라브어 키릴 문자, 그리스어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". 조합 - 라틴, 슬라브어 및 슬라브어 아닌 키릴 문자"
+msgstr ""
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "무작위로 글자를 입력하십시오"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
+#, fuzzy
 msgid "Character set to support:"
-msgstr "지원할 문자 집합:"
+msgstr "아키텍쳐를 지원하지 않습니다"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "콘솔 글꼴이 지원해야 하는 문자 집합을 선택하십시오."
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"프레임 버퍼를 사용하지 않으면, \".\"으로 시작하는 선택을 하면 콘솔에서 사용"
-"할 수 있는 색 수가 줄어듭니다."
 
 #. Type: select
 #. Description
@@ -191,9 +213,10 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
+#, fuzzy
 msgid "Font for the console:"
-msgstr "콘솔에 사용할 글꼴:"
+msgstr "새로 만들 사용자의 전체 이름:"
 
 #. Type: select
 #. Description
@@ -201,7 +224,7 @@ msgstr "콘솔에 사용할 글꼴:"
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -209,10 +232,6 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"\"VGA\"는 전통적인 모양이고 여러가지 언어는 중간 정도 처리합니다. \"Fixed"
-"\"는 간단한 모양이고 여러 언어 처리가 더 낫습니다. \"Terminus\"는 눈의 피로"
-"가 줄어들 수 있는 대신, 다른 심볼의 모양이 비슷한 경우가 있어서 프로그래머에"
-"게는 문제가 될 수 있습니다."
 
 #. Type: select
 #. Description
@@ -220,13 +239,11 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Terminus 글꼴의 굵은 버전을 사용하려면 TerminusBold (프레임버퍼를 사용하는 경"
-"우) 혹은 TerminusBoldVGA를 (기타의 경우) 선택하십시오."
 
 #. Type: select
 #. Description
@@ -234,71 +251,52 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
+#, fuzzy
 msgid "Font size:"
-msgstr "글꼴 크기:"
+msgstr "암호화 키 길이:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
-"리눅스 콘솔의 글꼴 크기를 선택하십시오. 참고로 컴퓨터가 부팅할 때 나타나는 글"
-"꼴 크기는 16입니다."
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"리눅스 콘솔에서 사용할 글꼴의 크기를 선택하십시오. 글꼴 크기에 해당하는 정수 "
-"값을 입력하면 모든 콘솔 드라이버에 사용합니다. 이 수는 글꼴의 높이를 (스캔라"
-"인의 수를) 나타냅니다. 다른 방법으로 글꼴을 높이x너비 형식으로 쓸 수도 있습니"
-"다. 하지만 이런 형식을 사용하려면 kbd 콘솔 패키지 (console-tools 패키지 아"
-"님) 및 프레임버퍼가 (단 프레임 버퍼 드라이버 중에서 RadeonFB 드라이버는 지원"
-"하지 않습니다) 필요합니다."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"글꼴 높이를 통해 콘솔 기호의 실제 크기를 알 수 있습니다. 참고로 컴퓨터가 부팅"
-"할 때 사용하는 글꼴의 크기는 16입니다."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
+#, fuzzy
 msgid "Encoding to use on the console:"
-msgstr "콘솔에 사용할 인코딩:"
+msgstr "LILO가 시리얼 콘솔을 사용하도록 설정했습니다"
 
 #. Type: text
 #. Description
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
+#, fuzzy
 msgid "Configure the keyboard"
-msgstr "키보드 설정"
+msgstr "네트워크 설정"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
+#, fuzzy
 msgid "Other"
 msgstr "기타"
 
@@ -307,21 +305,22 @@ msgstr "기타"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "키보드 모델:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
+#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "이 컴퓨터의 키보드 모델을 선택하십시오."
+msgstr "설정할 키보드의 종류를 선택하십시오."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "키보드 제조 국가:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -332,29 +331,30 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"키보드 배치는 국가마다 다르고, 어떤 국가에서는 여러 개의 키보드 배치를 표준으"
-"로 사용합니다. 이 컴퓨터의 키보드의 제조 국가를 선택하십시오."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
+#, fuzzy
 msgid "Keyboard layout:"
-msgstr "키보드 배치:"
+msgstr "키보드 배치 선택"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
+#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "이 컴퓨터의 키보드에 맞는 키보드 배치를 선택하십시오."
+msgstr "이 컴퓨터에 하드 디스크가 있는 지 확인하십시오."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "현재 키보드 배치를 설정 파일에 유지하시겠습니까?"
+msgstr "현재 파티션 구성을 유지하고 LVM을 설정하시겠습니까?"
 
 #. Type: boolean
 #. Description
@@ -364,8 +364,6 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"현재 키보드 배치는 /etc/default/keyboard 설정 파일에 XKBLAYOUT="
-"\"${XKBLAYOUT}\" 및 XKBVARIANT=\"${XKBVARIANT}\" (이)라고 정의되어 있습니다."
 
 #. Type: boolean
 #. Description
@@ -376,15 +374,13 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"이 키보드 배치를 유지할지 여부를 선택하십시오. 유지한다면 이 뒤로는 키보드 배"
-"치에 관한 질문을 받지 않고 현재 설정을 계속 사용합니다."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr "기본 키보드 배치를 유지하시겠습니까 (${XKBLAYOUTVARIANT})?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -395,27 +391,25 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"현재 키보드 배치 기본값은 XKBLAYOUT=\"${XKBLAYOUT}\" 및 XKBVARIANT="
-"\"${XKBVARIANT}\"입니다. 이 기본값은 현재 정의된 언어/지역 및 /etc/X11/xorg."
-"conf 파일의 설정에 따라 정해진 값입니다."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"이 키보드 배치를 유지할지 여부를 선택하십시오. 유지한다면 이 뒤로는 키보드 배"
-"치에 관한 질문을 받지 않습니다."
+"새 파티션을 남은 공간의 시작부분에 만들지, 끝 부분에 만들지 선택하십시오."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
+#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "현재 키보드 옵션을 설정 파일에 유지하시겠습니까?"
+msgstr "미리 설정 파일을 처리하는데 실패했습니다"
 
 #. Type: boolean
 #. Description
@@ -425,8 +419,6 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"현재 키보드 옵션은 /etc/default/keyboard 설정 파일에 XKBOPTIONS="
-"\"${XKBOPTIONS}\" (이)라고 정의되어 있습니다."
 
 #. Type: boolean
 #. Description
@@ -436,14 +428,13 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"이 옵션을 유지한다면 이 뒤로는 키보드 옵션에 관한 질문을 받지 않습니다."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "기본 키보드 옵션을 유지하시겠습니까 (${XKBOPTIONS})?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -454,9 +445,6 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"현재 키보드 배치 옵션 기본값은 XKBOPTIONS=\"${XKBOPTIONS}\"입니다. 이 기본값"
-"은 현재 정의된 언어/지역 및 /etc/X11/xorg.conf 파일의 설정에 따라 정해진 값입"
-"니다."
 
 #. Type: boolean
 #. Description
@@ -465,7 +453,7 @@ msgstr ""
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
-msgstr "유지한다면 이 뒤로는 키보드 옵션에 관한 질문을 받지 않습니다."
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -476,7 +464,7 @@ msgstr "유지한다면 이 뒤로는 키보드 옵션에 관한 질문을 받�
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "Caps Lock"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -495,7 +483,7 @@ msgstr "Caps Lock"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr "오른쪽 Alt (AltGr)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -510,14 +498,14 @@ msgstr "오른쪽 Alt (AltGr)"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr "오른쪽 Ctrl"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr "오른쪽 Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -536,7 +524,7 @@ msgstr "오른쪽 Shift"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr "오른쪽 로고 키"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -551,42 +539,42 @@ msgstr "오른쪽 로고 키"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "메뉴 키"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "Alt+Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr "Ctrl+Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr "Ctrl+Alt"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr "Alt+Caps Lock"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr "오른쪽 Ctrl+왼쪽 Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -601,21 +589,21 @@ msgstr "오른쪽 Ctrl+왼쪽 Shift"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr "왼쪽 Alt"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "왼쪽 Ctrl"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "왼쪽 Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -634,28 +622,28 @@ msgstr "왼쪽 Shift"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr "왼쪽 로고 키"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "Scroll Lock 키"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr "토글 안 함"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "언어별 모드와 라틴 모드 토글하는 방법:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -665,7 +653,6 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"언어별 키보드 배치와 표준 라틴 키보드 배치 사이에 토글하는 방법이 필요합니다."
 
 #. Type: select
 #. Description
@@ -677,24 +664,20 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"오른쪽 Alt 키나 Caps Lock 키를 자주 사용합니다. (Caps Lock을 사용하는 경우 원"
-"래 기능인 대소문자 전환은 Shift+Caps Lock 조합을 사용합니다.) Alt+Shift 조합"
-"도 많이 사용합니다. 하지만 이 조합이 필요한 이맥스 및 기타 프로그램에서 이 "
-"키 조합을 사용하지 못하게 됩니다."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "키보드에 따라서는 열거한 키 중에 없는 키가 있을 수도 있습니다."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr "임시 스위치 없음"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -705,14 +688,14 @@ msgstr "임시 스위치 없음"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "로고 키 두 개 동시"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "언어별 입력과 라틴 입력 임시로 토글하는 방법:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -725,52 +708,49 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"키보드가 언어별 모드일 때 라틴 문자를 잠깐 입력하고 싶을 경우, 임시로 라틴 모"
-"드로 전환하는 편이 더 좋을 수도 있습니다. 여기서 설정한 키를 누르고 있는 동안"
-"에는 해당 모드를 유지합니다. 라틴 모드에서는 반대로 이 키를 눌러서 언어별 문"
-"자를 입력할 수 있습니다."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr "\"임시 스위치 없음\"을 선택하면 이 기능을 사용하지 않습니다."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
+#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "키보드 배치 기본값"
+msgstr "키보드 배치 선택"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "Alt 키 없음"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "키패드 Enter 키"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "Alt 키 두 개 동시"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "AltGr로 동작할 키:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -782,24 +762,21 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"어떤 키보드 배치에서는 AltGr 키를 문자를 입력하는 조합 키로 사용합니다. 주로 "
-"해당 언어에서 자주 사용하지 않는 문자를 입력할 때 사용합니다. 예를 들어 통화 "
-"기호나 액센트 문자를 입력하는데 사용합니다. 이런 문자는 키보드에 추가 기호로 "
-"인쇄되어 나오기도 합니다."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr "조합 키 없음"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
+#, fuzzy
 msgid "Compose key:"
-msgstr "조합 키:"
+msgstr "장치를 선택하십시오:"
 
 #. Type: select
 #. Description
@@ -810,8 +787,6 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"조합 키를 누르면 (Multi_key라고도 합니다) 그 뒤에 입력하는 키 여러 개를 조합"
-"해서 키보드에 없는 문자 하나를 입력합니다."
 
 #. Type: select
 #. Description
@@ -822,16 +797,13 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"텍스트 콘솔에서는 조합키는 유니코드 모드에서 동작하지 않습니다. 유니코드 모드"
-"가 아니라면 여기에서 어떤 키를 설정하든 Ctrl+점 조합을 조합 키로 사용할 수 있"
-"습니다."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr "X 서버를 강제 중지하는 Ctrl+Alt+백스페이스 조합을 사용하시겠습니까?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -841,287 +813,295 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"기본값으로 Ctrl+Alt+백스페이스 조합은 아무 일도 하지 않습니다. 이런 기능을 원"
-"한다면 이 조합을 눌렀을 때 X 서버를 강제 중지합니다."
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "미국 영어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "벨라루시아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Belgian"
-msgstr "벨기에"
+msgstr "시작"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian (ABNT2 layout)"
-msgstr "브라질 (ABNT2 배치)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian (EUA layout)"
-msgstr "브라질 (EUA 배치)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "영국 영어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian"
-msgstr "불가리아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "불가리아 (음성 기호 배치)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "캐나다 프랑스어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "캐나다 다국어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Croatian"
-msgstr "크로아티아"
+msgstr "계속"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "체코"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Danish"
-msgstr "덴마크"
+msgstr "데이비스"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr "네덜란드"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "드보락"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Estonian"
-msgstr "에스토니아"
+msgstr "동인디애나"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Finnish"
-msgstr "핀란드"
+msgstr "마치기"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "프랑스"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "독일"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "그리스"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr "히브리어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "헝가리"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Icelandic"
-msgstr "아이슬랜드"
+msgstr "오세아니아"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "이탈리아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "일본"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr "키르기스"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Latin American"
-msgstr "라틴 아메리카"
+msgstr "북미"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "라트비아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr "리투아니아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Macedonian"
-msgstr "마케도니아"
+msgstr "마세이오"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "노르웨이"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr "폴란드"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr "포르투갈"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "루마니아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "러시아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "세르비아 (키릴)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovakian"
-msgstr "슬로바키아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovene"
-msgstr "슬로베니아"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Spanish"
-msgstr "스페인어"
+msgstr "마치기"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr "스웨덴"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "스위스 프랑스어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "스위스 독일어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "태국어"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "터키 (F 배치)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "터키 (Q 배치)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "우크라이나"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
+#, fuzzy
 msgid "Keymap to use:"
-msgstr "사용할 키맵:"
+msgstr "암호화 키 길이:"

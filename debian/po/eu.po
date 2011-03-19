@@ -1,24 +1,29 @@
-# translation of console-setup_eu.po to Basque
-# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2010.
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of eu.po to Euskara
 # Basque messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Inaki Larranaga Murgoitio 2005
+#
+# Piarres Beobide <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: console-setup_eu\n"
+"Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 20:01+0100\n"
-"PO-Revision-Date: 2010-11-20 11:34+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
-"Language: eu\n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2011-01-25 07:19+0200\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.11.4\n"
 "Content-Transfer-Encoding=UTF-8Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
@@ -26,96 +31,109 @@ msgstr ""
 #. :sl2:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Ez aldatu abioaren/kernela-aren letra-tipoa"
+msgstr "Ez aldatu abio/kernel letra-tipoa"
+
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ". Arabiarra"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr "# Armeniarra"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr "# Zirilikoa - KOI8-R eta KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr "# Zirilikoa - hizkuntza ez-eslaviarrak"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr "# Zirilikoa - Hizkuntza eslaviarrak (Bosnia eta Serbiar Latina barne)"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ". Etiopiarra"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
 msgstr "# Georgiarra"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# Grekoa"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
 msgstr "# Hebreera"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr "# Laosera"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr "# Latin1 eta Latin5 - mendebaldeko Europa eta turkiar hizkuntzak"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr "# Latin2 - erdiko Europa eta errumaniera"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr ""
 "# Latin3 eta Latin8 - Chichewa; Esperantoa; Irlandako gaelikoa; Maltera eta "
@@ -124,70 +142,79 @@ msgstr ""
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr "# Latin7 - Lituaniera; Letoniera; Maoriera eta Marshallera"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ". Latina - Vietnamera"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
 msgstr "# Thailandiarra"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ". Askotarikoa - Latina; Eslaviar Zirilikoa; Hebreera; Arabiera soila"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ". Askotarikoa - Latina; Eslaviar zirilikoa; Grekoa"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ". Askotarikoa - Latina; Eslaviar eta ez-eslaviar Zirilikoa"
 
 #. Type: select
-#. Description
+#. Choices
 #. :sl3:
-#: ../console-setup.templates:3002
-msgid "Character set to support:"
-msgstr "Onartuko den karaktere-jokoa:"
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "Sartu ausazko karaktereak"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
+msgid "Character set to support:"
+msgstr "Onartuko den karaktere multzoa:"
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "Hautatu kontsolaren letra-tipoak onartu behar duen karaktere-jokoa."
+msgstr ""
+"Mesedez hautatu kontsola letra-tipoak onartu behar dituen karaktere multzoa."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Framebuffer erabiltzen ez baduzu, puntu batekin \".\" hasten diren aukerek "
-"kontsolan erabilgarri dagoen kolore kopurua gutxiagotuko dute."
+"Framebuffer erabiltzen ez baduzu, puntu batez hasten diren aukerek kontsolan "
+"erabilgarri den kolore kopurua gutxiagotuko dute."
 
 #. Type: select
 #. Description
@@ -195,7 +222,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Kontsolaren letra-tipoa:"
 
@@ -205,7 +232,7 @@ msgstr "Kontsolaren letra-tipoa:"
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -216,8 +243,7 @@ msgstr ""
 "\"VGA\" itxura tradizionala da eta grafia internazionalen onarpen ertaina "
 "du. \"Fixed\"-ek itxura sinpleagoa du eta grafia internazionalen onarpen "
 "hobea du. \"Terminus\" begien nekadura gutxitzeko garatuta dago, horregatik "
-"zenbait ikur antzekoak dira programatzaileentzat arazo bat izan badaiteke "
-"ere."
+"zenbait ikur antzekoak dira programatzaileentzat arazo bat izanbadaiteke ere."
 
 #. Type: select
 #. Description
@@ -225,7 +251,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -239,59 +265,39 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "Letra-tipoaren tamaina:"
+msgstr "Letra-tipo tamaina:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
-"Hautatu Linux kontsolaren letra-tipoaren tamaina. Erreferentzia gisa: "
-"ordenagailua abiaraztean erabiltzen den tamaina 16 da."
+"Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
+"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da."
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"Hautatu Linux-eko kontsolan erabiliko den letra-tipoaren tamaina. Tamaina "
-"zenbaki osoko batez adierazten denean, dagokion letra-tipoa kontsola "
-"kontrolatzaile guztiekin erabili ahalko da. Zenbakiak ikurraren altuera "
-"adieraziko du (eskaneatze-lerro kopurua). Bestela, tamainak ALTUERAxZABALERA "
-"formatua du, eta dagozkion letra-tipoak erabiltzeko framebuffer eta kbd "
-"kontsola paketea erabili behar dira (ez console-tools). Oraingoz letra-tipo "
-"hauek ezin dira erabili erabiltzen duzun framebuffer-a RadeonFB kernel "
-"moduluan oinarrituta badago."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"Letra-tipoen altuera erabil dezakezu kontsola ikurren egiazko tamainaren "
-"ideia bat egiteko. Erreferentzia gisa: ordenagailuak abiaraztean erabiltzen "
-"duen letra-tipoa 16 da."
+"Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
+"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
 msgstr "Kontsolan erabiltzeko kodeketa:"
 
@@ -465,9 +471,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Teklatuaren diseinuaren aukeren balio lehenetsia XKBOPTIONS="
-"\"${XKBOPTIONS}\" da. Unean definitutako hizkuntza/eskualdea eta /etc/X11/"
-"xorg.conf fitxategiko ezarpenetan oinarritzen da."
+"Teklatuaren diseinuaren aukeren balio lehenetsia XKBOPTIONS=\"${XKBOPTIONS}"
+"\" da. Unean definitutako hizkuntza/eskualdea eta /etc/X11/xorg.conf "
+"fitxategiko ezarpenetan oinarritzen da."
 
 #. Type: boolean
 #. Description

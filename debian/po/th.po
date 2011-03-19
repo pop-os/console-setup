@@ -1,17 +1,21 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
 # Thai translation of debian-installer.
-# Copyright (C) 2006-2010 Software in the Public Interest, Inc.
+# Copyright (C) 2006-2011 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2010.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 00:58+0100\n"
-"PO-Revision-Date: 2010-11-17 12:52+0700\n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2011-02-02 11:11+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
-"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,150 +27,171 @@ msgstr ""
 msgid "Do not change the boot/kernel font"
 msgstr "ไม่ต้องเปลี่ยนแบบอักษรของการบูตหรือของเคอร์เนล"
 
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
+
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ". อารบิก"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr "# อาร์เมเนีย"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr "# ซีริลลิก - KOI8-R และ KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr "# ซีริลลิก - ภาษาที่ไม่ใช่ตระกูลสลาฟ"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr "# ซีริลลิก - ภาษาตระกูลสลาฟ (รวมถึงบอสเนียและละตินเซอร์เบีย)"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ". เอธิโอเปีย"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
 msgstr "# จอร์เจีย"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# กรีก"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
 msgstr "# ฮีบรู"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr "# ลาว"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr "# ละติน 1 และ ละติน 5 - ยุโรปตะวันตกและภาษาตระกูลเติร์ก"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr "# ละติน 2 - ยุโรปตอนกลางและโรมาเนีย"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr "# ละติน 3 และ ละติน 8 - ชิเชวา; เอสเปรันโต; ไอริช; มอลตา และเวลส์"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr "# ละติน 7 - ลิทัวเนีย; ลัตเวีย; เมารี และมาร์แชลล์"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ". ละติน - เวียดนาม"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
 msgstr "# ไทย"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ". ผสม - ละติน; ซีริลลิกตระกูลสลาฟ; ฮีบรู; อารบิกพื้นฐาน"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ". ผสม - ละติน; ซีริลลิกตระกูลสลาฟ; กรีก"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ". ผสม - ละติน; ซีริลลิกตระกูลสลาฟและที่ไม่ใช่สลาฟ"
 
 #. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "ป้อนอักขระสุ่ม"
+
+#. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid "Character set to support:"
 msgstr "ชุดอักขระที่จะรองรับ:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr "กรุณาเลือกชุดอักขระที่แบบอักษรสำหรับคอนโซลควรรองรับ"
@@ -174,7 +199,7 @@ msgstr "กรุณาเลือกชุดอักขระที่แบ
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
@@ -187,7 +212,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "แบบอักษรสำหรับคอนโซล:"
 
@@ -197,7 +222,7 @@ msgstr "แบบอักษรสำหรับคอนโซล:"
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -215,7 +240,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -229,17 +254,18 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "ขนาดแบบอักษร:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
 "กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซลลินุกซ์ ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
 "16"
@@ -247,37 +273,20 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซลลินุกซ์ ถ้าเป็นตัวเลขธรรมดา "
-"แบบอักษรจะใช้ได้กับไดรเวอร์สำหรับคอนโซลทุกตัว โดยตัวเลขนี้จะกำหนดความสูงของตัวอักษร "
-"(ในหน่วยจำนวนจุด) หรือมิฉะนั้น ขนาดก็อาจอยู่ในรูป สูงxกว้าง แต่รูปแบบนี้จะใช้ได้กับแพกเกจ kbd "
-"(ไม่ใช่ console-tools) พร้อมกับการใช้เฟรมบัฟเฟอร์เท่านั้น (และไดรเวอร์ RadeonFB "
-"ของเคอร์เนลสำหรับเฟรมบัฟเฟอร์ก็ไม่รองรับเช่นกัน)"
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"ความสูงของแบบอักษรอาจใช้ช่วยหาความสูงของตัวอักษรจริงๆ บนคอนโซลได้ ข้อมูลอ้างอิง: "
-"แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด 16"
+"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซลลินุกซ์ ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
+"16"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
 msgstr "รหัสอักขระที่จะใช้บนคอนโซล:"
 
@@ -301,7 +310,7 @@ msgstr "อื่นๆ"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "ชนิดของแป้นพิมพ์:"
+msgstr "รุ่นของแป้นพิมพ์:"
 
 #. Type: select
 #. Description
@@ -334,7 +343,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr "ผังแป้นพิมพ์:"
+msgstr "ผังแป้นพิมพ์แบบย่อย:"
 
 #. Type: select
 #. Description
@@ -370,8 +379,8 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"กรุณาเลือกว่าคุณต้องการคงค่านี้ไว้หรือไม่ โดยถ้าคุณเลือกคงค่าไว้ "
-"ก็จะไม่มีการถามเกี่ยวกับผังแป้นพิมพ์อีก และจะคงค่าตั้งปัจจุบันไว้"
+"กรุณาเลือกว่าคุณต้องการคงค่านี้ไว้หรือไม่ โดยถ้าคุณเลือกคงค่าไว้ จะไม่มีการถามเกี่ยวกับผังแป้นพิมพ์อีก "
+"และจะคงค่าตั้งปัจจุบันไว้"
 
 #. Type: boolean
 #. Description
@@ -401,7 +410,7 @@ msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"กรุณาเลือกว่าคุณต้องการคงค่านี้ไว้หรือไม่ โดยถ้าคุณเลือกคงค่าไว้ ก็จะไม่มีการถามเกี่ยวกับผังแป้นพิมพ์อีก"
+"กรุณาเลือกว่าคุณต้องการคงค่านี้ไว้หรือไม่ โดยถ้าคุณเลือกคงค่าไว้ จะไม่มีการถามเกี่ยวกับผังแป้นพิมพ์อีก"
 
 #. Type: boolean
 #. Description

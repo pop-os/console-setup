@@ -1,9 +1,13 @@
-# translation of Debian Installer Level 1- sublevel 3 to malayalam
-# Copyright (c)  2006-2009 Debian Project
-# Christian Perrier <bubulle@debian.org>, 2004.
-# Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2006-2009.
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
+# translation of Debian Installer Level 1 - sublevel 1 to malayalam
+# Copyright (c)  2006-2010 Debian Project
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2006-2010.
 # Santhosh Thottingal <santhosh00@gmail.com>, 2006.
-# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006. 
+# Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
 # Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
 #
 # Debian Installer master translation file template
@@ -15,18 +19,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 00:58+0100\n"
-"PO-Revision-Date: 2008-09-01 10:19-0500\n"
-"Last-Translator: പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>\n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2010-11-21 07:56+0530\n"
+"Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Malayalam\n"
-"X-Poedit-Country: INDIA\n"
-"X-Generator: Lokalize 0.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -35,143 +35,170 @@ msgstr ""
 msgid "Do not change the boot/kernel font"
 msgstr "ബൂട്ട്/കെര്‍ണല്‍ അക്ഷരസഞ്ചയം മാറ്റേണ്ട"
 
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
+
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ""
 
+# console-keymaps-acorn, Norwegian
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Georgian"
-msgstr ""
+msgstr "നോര്‍വീജിയന്‍ "
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Greek"
-msgstr ""
+msgstr "ഗ്രീക്ക്"
 
+# console-keymaps-acorn, Hebrew
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Hebrew"
-msgstr ""
+msgstr "ഹീബ്രൂ"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Thai"
-msgstr ""
+msgstr "തായി"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ""
 
 #. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "റാന്‍ഡം അക്ഷരങ്ങള്‍ നല്‍കുക"
+
+#. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 #, fuzzy
 msgid "Character set to support:"
 msgstr "വാസ്തുവിദ്യ പിന്തുണയില്ലാത്തതാണു്"
@@ -179,7 +206,7 @@ msgstr "വാസ്തുവിദ്യ പിന്തുണയില്ല�
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
@@ -187,7 +214,7 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
@@ -199,7 +226,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "കണ്‍സോളിലുപയോഗിയ്ക്കേണ്ട അക്ഷരസഞ്ചയം:"
 
@@ -209,7 +236,7 @@ msgstr "കണ്‍സോളിലുപയോഗിയ്ക്കേണ്ട
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -228,7 +255,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -243,17 +270,18 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "അക്ഷരത്തിന്റെ വലിപ്പം:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
 "ദയവായി ലിനക്സ് കണ്‍സോളിനുള്ള അക്ഷരത്തിന്റെ വലിപ്പം തെരഞ്ഞെടുക്കക. താരതമ്യത്തിനായി, കമ്പ്യൂട്ടര്‍ "
 "ബൂട്ട് ചെയ്യുമ്പോള്‍ കാണുന്ന അക്ഷരത്തിന്റെ വലിപ്പം 16 ആണു്."
@@ -261,38 +289,20 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"ദയവായി ലിനക്സ് കണ്‍സോളിനുള്ള അക്ഷരത്തിന്റെ വലിപ്പം തെരഞ്ഞെടുക്കക. അക്ഷരത്തിനനുസരിച്ചുള്ള സാധാരണ "
-"എണ്ണല്‍ സംഖ്യകള്‍ എല്ലാ കണ്‍സോള്‍ പ്രവര്‍ത്തകങ്ങള്‍ക്കൊപ്പവും ഉപയോഗിയ്ക്കാം. ആ സഖ്യ അക്ഷരത്തിന്റെ ഉയരം "
-"(സ്കാന്‍ ചെയ്യുന്ന വരികളുടെ എണ്ണം) സൂചിപ്പിയ്ക്കുന്നു. ഇതിനു് പകരമായി അക്ഷരം ഉയരംxവീതി എന്ന "
-"രീതിയിലും സൂചിപ്പിയ്ക്കാം; പക്ഷേ അങ്ങനെ പറയുകയാണെങ്കില്‍ അതിനു് kdb console (console-"
-"tools അല്ല) പൊതിയും ഫ്രെയിംബഫറും (കൂടാതെ ഫ്രെയിംബഫറിനുള്ള RadeonFB എന്ന കെര്‍ണല്‍ "
-"പ്രവര്‍ത്തകം അവയെ പിന്തുണയ്ക്കുകയുമില്ല)."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"കണ്‍സോളിലെ ചിഹ്നങ്ങളുടെ ശരിയായ വലിപ്പം മനസിലാക്കാന്‍ അക്ഷരങ്ങളുടെ ഉയരം ഉപയോഗപ്പെട്ടേയ്ക്കാം. "
-"താരതമ്യത്തിനായി, കമ്പ്യൂട്ടര്‍ ബൂട്ട് ചെയ്യുമ്പോള്‍ കാണുന്ന അക്ഷരത്തിന്റെ വലിപ്പം 16 ആണു്."
+"ദയവായി ലിനക്സ് കണ്‍സോളിനുള്ള അക്ഷരത്തിന്റെ വലിപ്പം തെരഞ്ഞെടുക്കക. താരതമ്യത്തിനായി, കമ്പ്യൂട്ടര്‍ "
+"ബൂട്ട് ചെയ്യുമ്പോള്‍ കാണുന്ന അക്ഷരത്തിന്റെ വലിപ്പം 16 ആണു്."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
 #, fuzzy
 msgid "Encoding to use on the console:"
 msgstr "ഒരു സീരിയല്‍ പോര്‍ട്ട് കണ്‍സോളായി ഉപയോഗിക്കുന്ന തരത്തിലാണു് ലിലോ ക്രമീകരിച്ചിരിക്കുന്നതു്"
@@ -318,8 +328,9 @@ msgstr "മറ്റുള്ളവ"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
+#, fuzzy
 msgid "Keyboard model:"
-msgstr ""
+msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസം തെരഞ്ഞെടുക്കുക"
 
 #. Type: select
 #. Description
@@ -384,11 +395,14 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
+"ലഭ്യമായിട്ടുള്ള സ്വതന്ത്ര സ്ഥലത്തിന്റെ തുടക്കത്തിലാണോ അല്ലെങ്കില്‍ അവസാനത്തിലാണോ പുതിയ ഭാഗം "
+"നിങ്ങള്‍ക്കു് വേണ്ടതു് എന്നു് ദയവായി തെരഞ്ഞെടുക്കുക."
 
 #. Type: boolean
 #. Description
@@ -789,8 +803,9 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
+#, fuzzy
 msgid "No compose key"
-msgstr ""
+msgstr "ഡിസ്ക് തെരഞ്ഞെടുക്കുക:"
 
 #. Type: select
 #. Description

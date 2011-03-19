@@ -1,178 +1,199 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
 # translation of dz.po to Dzongkha
 # Translation of debian-installer level 1 Dzongkha
 # Debian Installer master translation file template
 # Copyright @ 2006 Free Software Foundation, Inc.
-#
 # Sonam Rinchen <somchen@druknet.bt>, 2006.
-# Christian Perrier <bubulle@debian.org>, 2004, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: dz.po\n"
+"Project-Id-Version: dDz.po\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 00:58+0100\n"
-"PO-Revision-Date: 2010-11-12 18:35+0100\n"
-"Last-Translator: Sonam Rinchen <somchen@druknet.bt>\n"
-"Language-Team: Tenzin Dendup <tenzin.dendup@gmail.com>\n"
-"Language: dz\n"
+"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"PO-Revision-Date: 2010-11-16 23:22-0500\n"
+"Last-Translator: Jurmey Rabgay <jrabgay@dit.gov.bt>\n"
+"Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: Bhutan\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #. Type: text
 #. Description
 #. :sl2:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "བུཊི་/ཀར་ནེལ་ ཡིག་གཟུགས་བསྒྱུར་བཅོས་མ་འབད།"
+msgstr "བུཊི་/ཀར་ནེལ་ ཡིག་གཟུགས་བསྒྱུར་བཅོས་མ་འབད"
+
+#. Type: text
+#. Description
+#: ../console-setup.templates:3001
+msgid "Let the system selects a suitable font"
+msgstr ""
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ". ཨ་ར་བིཀ།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr "# ཨར་མི་ནི་ཡཱན།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr "# སི་རི་ལིཀ - KOI8-R དང་ KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད་ཡིག་མ་ཡིན་པ།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད་ཡིག་ (མ་ཚད་ བོསི་ནི་ཡཱན་དང་སར་བི་ཡཱན་ལེ་ཊིན)"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ". ཨི་ཐིའོ་པིཀ"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
 msgstr "# ཇིའོར་ཇི་ཡཱན།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# གི་རིཀ།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
 msgstr "# ཧེབ་བིརིའུ།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr "# ལའོ།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr "# ལེ་ཊིན་༡དང་ལེ་ཊིན་༢ - ནུབ་ཕྱོགས་ཡུ་རོཔ་དང་ཊར་ཀིག་སྐད་ཡིག"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr "# ལེ་ཊིན་༢ - དབུས་ཕྱོགས་ཡུ་རོཔ་དང་རོ་མ་ནི་ཡཱན། "
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr "# ལེ་ཊིན་༣དང་ལེ་ཊིན་༨ - ཅི་ཆེ་ཝ་ ཨིསི་པེ་རེན་ཊོ་ ཨའི་རིཤི་ མཱལ་ཊི་སི་དང་ཝེལཤི"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr "# ལེ་ཊིན་༣དང་ལེ་ཊིན་༧ - ལི་ཐུ་འ་ནི་ཡཱན་ ལེཊི་བི་ཡཱན་ མའོ་རི་དང་མར་ཤེལ་སི།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ". ལེ་ཊིན་ - ཝེཊི་ན་མིསི།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
 msgstr "# ཐཱའི།"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ". མཉམ་བསྡོམས་འབད་ཡོདཔ་ - ལེ་ཊིན་ སི་ལེ་བིག་ སི་རི་ལིག་ ཧེ་རིའུ་དང་བེ་སིག་ཨ་ར་བིག"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ". མཉམ་བསྡོམས་འབད་ཡོདཔ་ - ལེ་ཊིན་ སི་ལེ་བིག་ སི་རི་ལིག་ གི་རིཀ"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ". མཉམ་བསྡོམས་འབད་ཡོདཔ་ - ལེ་ཊིན་ སི་ལེ་བིག་དང་སི་རི་ལིག་ སི་རི་ལིཀ་མ་ཡིན་པ།"
 
 #. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+msgid "Guess optimal character set"
+msgstr "གང་བྱུང་ཡིག་འབྲུ་ཚུ་བཙུགས།"
+
+#. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid "Character set to support:"
 msgstr "ངོས་ལེན་འབད་ནིའི་ཡིག་འབྲུ་ཆ་ཚན:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr "མ་སྒྲོ་ཡིག་གཟུགས་གིས་ངོས་ལེན་ཡོད་པའི་ཡིག་འབྲུའི་ཆ་ཚན་གདམ་ཁ་བརྐྱབ་གནང་།"
@@ -180,7 +201,7 @@ msgstr "མ་སྒྲོ་ཡིག་གཟུགས་གིས་ངོས
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
@@ -194,7 +215,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་གཟུགས།"
 
@@ -204,7 +225,7 @@ msgstr "མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་ག
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -223,7 +244,7 @@ msgstr ""
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
 #. :sl2:
-#: ../console-setup.templates:4001
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -238,17 +259,18 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "ཡིག་གཟུགས་ཀྱི་ཚད:"
 
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:5001
+#: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
 "ལི་ནགསི་མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་གཟུགས་ཀྱི་ཚད་སེལ་འཐུ་འབད་གནང་། གཞི་བསྟུན་གྱི་དོན་ལུ་ གློག་རིག་བུཊིསི་ལུ་ "
 "ཚད་༡༦ ཡོད་པའི་སྐབས་ལག་ལེན་འཐབ་ཡོད་མི་ཡིག་གཟུགས།"
@@ -256,38 +278,20 @@ msgstr ""
 #. Type: select
 #. Description
 #. :sl2:
-#: ../console-setup.templates:6001
+#: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
 msgstr ""
-"ལིནགསི་མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་གཟུགས་ཀྱི་ཚད་སེལ་འཐུ་འབད་གན་ང། ཡིག་གཟུགས་ཚུ་དང་ཆ་མཉམ་པའི་ཧྲིལ་གྲངས་"
-"འཇམ་སམ་ཚུ་ མ་སྒྲོམ་འདྲེན་བྱེད་ཆ་མཉམ་དང་གཅིག་ཁར་ལག་ལེན་འཐབ་བཏུབ། ཨང་གྲངས་འདི་གིས་ཡིག་གཟུགས་ཀྱི་"
-"མཐོ་ཚད་ཀྱི་བརྡ་མཚོན་སྟོནམ་ཨིན་་(number of scan lines). ཡིག་གཟུགས་འདི་ཐབས་གཞན་གྱི་ཐོག་ལས་ "
-"HEIGHTxWIDTH; སྦེ་བརྡ་མཚོན་སྟོན་བཏུབ། དེ་འབདཝ་ད་ འདི་བཟུམ་གྱི་དམིགས་བསལ་ཡིག་གཟུགས་ཀྱི་དོན་ལུ་ "
-"kbd མ་སྒྲོམ་ཐུམ་སྒྲིལ་(not console-tools)དང་ framebuffer དགོཔ་ཨིན།(དེ་ལས་  framebuffer "
-"གིས་འདི་ཚུ་བརྒྱབ་བསྐྱོར་མི་འབདཝ་ལས་RadeonFB kernel འདྲེན་བྱེད་དགོ་ )."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"ཡིག་གཟུགས་ཀྱི་མཐོ་ཚད་འདི་མ་སྒྲོམ་གུ་ཡོད་མི་བརྡ་མཚོན་ཚུ་གི་ཚད་ངོ་མ་ཕོག་ཚད་དཔག་ནིའི་དོན་ལུ་ ཁག་ཆེ་ཏོག་"
-"ཏོ་འོང་། གཞི་བསྟུན་གྱི་དོན་ལུ་་  གློག་རིག་བུཊིསི་ལུ་ཚད་ ༡༦ ཡོད་པའི་སྐབས།"
+"ལི་ནགསི་མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་གཟུགས་ཀྱི་ཚད་སེལ་འཐུ་འབད་གནང་། གཞི་བསྟུན་གྱི་དོན་ལུ་ གློག་རིག་བུཊིསི་ལུ་ "
+"ཚད་༡༦ ཡོད་པའི་སྐབས་ལག་ལེན་འཐབ་ཡོད་མི་ཡིག་གཟུགས།"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
 msgstr "མ་སྒྲོམ་གུ་ལག་ལེན་འཐབ་ནིའི་ཨེན་ཀོ་ཌིང་:"
 
