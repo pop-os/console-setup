@@ -60,6 +60,8 @@ console-setup (1.71) UNRELEASED; urgency=low
   * Install *.bug-control files for reportbug.
   * Remove the VERBOSE_OUTPUT option from the default configuration file
     (but it is still supported).
+  * control: a minor change of the package description: 'Linux console' =>
+    console.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

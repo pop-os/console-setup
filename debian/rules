@@ -10,6 +10,16 @@ manprocessor = sed \
 	-e 's|^\([.a-zA-Z][a-zA-Z]*\) /usr/local/etc|\1 /etc|' \
 	-e 's|^\([.a-zA-Z][a-zA-Z]*\) /usr/local|\1 /usr|'
 
+# One font per fontset
+fonts-mini = Arabic-VGA16 Armenian-Fixed16 CyrAsia-Fixed16		\
+CyrKoi-TerminusBold16 CyrSlav-TerminusBold16 Ethiopian-Goha16		\
+Georgian-Fixed16 Greek-VGA16 Hebrew-VGA16 Lao-Fixed16			\
+Lat15-TerminusBold16 Lat2-TerminusBold16 Lat38-VGA16			\
+Lat7-TerminusBold16 Thai-Fixed16 Uni1-VGA16 Uni2-VGA16 Uni3-Fixed16	\
+Vietnamese-Fixed16
+
+fonts-mini-linux = $(addprefix Fonts/, $(addsuffix .psf.gz, $(fonts-mini)))
+fonts-mini-freebsd = $(addprefix Fonts/, $(addsuffix .fnt, $(fonts-mini)))
 main_build:
 	$(MAKE) build-all xkbdir=$(xkbdir)
 	touch main_build
@@ -119,6 +129,8 @@ install-mini-linux: build
 				rmdir debian/console-setup-mini/"$$x" >/dev/null 2>&1 || true; \
 			fi; \
 		done
+	rm debian/console-setup-mini/usr/share/consolefonts/*.psf.gz
+	install -m 644 $(fonts-mini-linux) debian/console-setup-mini/usr/share/consolefonts/
 	dh_install -p console-setup-mini debian/kbdnames.gz usr/share/console-setup-mini
 	rm debian/console-setup-mini/etc/default/keyboard
 	rm debian/console-setup-mini/etc/default/console-setup 
@@ -153,10 +165,12 @@ install-udeb: build
 	dh_prep -pconsole-setup-udeb
 	$(MAKE) etcdir=debian/console-setup-udeb/etc \
 		prefix=debian/console-setup-udeb/usr install-mini-linux
-# console-setup-udeb
+	rm debian/console-setup-udeb/usr/share/consolefonts/*.psf.gz
+	install -m 644 $(fonts-mini-linux) debian/console-setup-udeb/usr/share/consolefonts/
 	rm debian/console-setup-udeb/etc/default/keyboard
 	rm debian/console-setup-udeb/etc/default/console-setup 
 	rm -r debian/console-setup-udeb/usr/share/man
+# console-setup-udeb
 	dh_installdirs -p console-setup-udeb usr/share/console-setup-mini
 	install -m0755  debian/keyboard-configuration.config \
 		debian/console-setup-udeb/usr/share/console-setup-mini

@@ -370,11 +370,11 @@ clean:
 	-rm -f *~
 	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm
 	-rm -f fontsets/*~
-	-rm -f bdf/*-double.bdf
 	-rm -f terminfo termcap
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
+	rm $(doubled_bdfs)
+	$(MAKE) $(doubled_bdfs)
 	rm soft.Makefile
 	$(MAKE) soft.Makefile
-	rm -f bdf/*-double.bdf

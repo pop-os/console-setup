@@ -29,12 +29,12 @@ Depends: console-setup-linux | console-setup-freebsd, xkb-data (>= 0.9), keyboar
 Suggests: lsb-base (>= 3.0-6), locales
 Conflicts: lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program
- This package provides the Linux console with the same
- keyboard configuration scheme as the X Window System. As a result,
- there is no need to duplicate or change the keyboard files just to
- make simple customizations such as the use of dead keys, the key
- functioning as AltGr or Compose key, the key(s) to switch between
- Latin and non-Latin mode, etc.
+ This package provides the console with the same keyboard
+ configuration scheme as the X Window System. As a result, there is no
+ need to duplicate or change the keyboard files just to make simple
+ customizations such as the use of dead keys, the key functioning as
+ AltGr or Compose key, the key(s) to switch between Latin and
+ non-Latin mode, etc.
  .
  The package also installs console fonts supporting many of the
  world's languages.  It provides an unified set of font faces - the
@@ -50,12 +50,12 @@ Depends: debconf (>= 0.5) | debconf-2.0, keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6)
 Conflicts: console-setup, console-setup-linux, console-setup-freebsd, console-terminus, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program - reduced version for Linux
- This package provides the Linux console with the same
- keyboard configuration scheme as the X Window System. As a result,
- there is no need to duplicate or change the keyboard files just to
- make simple customizations such as the use of dead keys, the key
- functioning as AltGr or Compose key, the key(s) to switch between
- Latin and non-Latin mode, etc.
+ This package provides the console with the same keyboard
+ configuration scheme as the X Window System. As a result, there is no
+ need to duplicate or change the keyboard files just to make simple
+ customizations such as the use of dead keys, the key functioning as
+ AltGr or Compose key, the key(s) to switch between Latin and
+ non-Latin mode, etc.
  .
  This package can be useful for handhelds or other devices with small
  storage space.

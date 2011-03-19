@@ -107,6 +107,11 @@ sub print_term {
     my $name1m = mono($name1);
     my $name2m = mono($name2);
     if ($task eq 'termcap') {
+        print <<EOT;
+#
+# TERMCAP ENTRIES FOR CONSOLE-SETUP
+#
+EOT
         my $monochrome = ':pa@:Co@:AF@:AB@:AX@:op@:us=\\E[4m:ue=\\E[24m';
         print <<EOT;
 $name1:\\
@@ -138,6 +143,11 @@ $n2m:\\
 EOT
         }
     } elsif ($task eq 'terminfo') {
+        print <<EOT;
+#
+# TERMINFO ENTRIES FOR CONSOLE-SETUP
+#
+EOT
         my $monochrome = 'colors@, pairs@,
 	bold@, dim@, op@, rmul=\\E[m, setab@, setaf@,
 	sgr=\\E[0%?%p1%t;2;7%;%?%p2%t;4%;%?%p3%t;7%;%?%p4%t;5%;m,

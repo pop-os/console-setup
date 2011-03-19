@@ -6,7 +6,5 @@ XKBMODEL=pc105
 XKBLAYOUT=us
 XKBVARIANT=
 XKBOPTIONS=
-BACKSPACE=guess
 
-# KMAP=/usr/share/keymaps/i386/qwerty/emacs2.kmap.gz
-# KMAP=/usr/share/syscons/keymaps/us.emacs.kbd
+BACKSPACE=guess

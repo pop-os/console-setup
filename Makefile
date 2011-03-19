@@ -4,17 +4,6 @@ etcdir = $(prefix)/etc
 bootprefix = $(patsubst %/usr,%/,$(prefix:%/=%))
 mandir = $(prefix)/share/man
 
-# One font per fontset
-fonts-mini = Arabic-VGA16 Armenian-Fixed16 CyrAsia-Fixed16		\
-CyrKoi-TerminusBold16 CyrSlav-TerminusBold16 Ethiopian-Goha16		\
-Georgian-Fixed16 Greek-VGA16 Hebrew-VGA16 Lao-Fixed16			\
-Lat15-TerminusBold16 Lat2-TerminusBold16 Lat38-VGA16			\
-Lat7-TerminusBold16 Thai-Fixed16 Uni1-VGA16 Uni2-VGA16 Uni3-Fixed16	\
-Vietnamese-Fixed16
-
-fonts-mini-linux = $(addprefix Fonts/, $(addsuffix .psf.gz, $(fonts-mini)))
-fonts-mini-freebsd = $(addprefix Fonts/, $(addsuffix .fnt, $(fonts-mini)))
-
 SHELL = /bin/sh
 
 all: build-all
@@ -99,7 +88,7 @@ install-mini-linux: build-mini-linux install-any
 	install -d $(prefix)/share/console-setup-mini/
 	install -m 644 Keyboard/*.ekmap.gz $(prefix)/share/console-setup-mini
 	install -d $(prefix)/share/consolefonts/
-	install -m 644 $(fonts-mini-linux) $(prefix)/share/consolefonts/
+	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
 	install -d $(prefix)/bin/
 	install -m 644 Keyboard/ckbcomp-mini $(prefix)/bin/
 	ln -s ckbcomp-mini $(prefix)/bin/ckbcomp
@@ -142,8 +131,14 @@ uninstall-mini-linux: build-mini-linux
 uninstall-freebsd: build-freebsd
 	$(MAKE) common-uninstall
 
+%.txt : %
+	groff -mandoc -Tascii $< | col -bx >$@
+
+txtmanpages = man/bdf2psf.1.txt man/console-setup.5.txt		\
+	man/setupcon.1.txt man/ckbcomp.1.txt man/keyboard.5.txt
+
 .PHONY: clean
-clean:
+clean: $(txtmanpages)
 	cd Fonts && $(MAKE) clean
 	cd Keyboard && $(MAKE) clean
 	-rm -f acm/*.acm.gz
