@@ -31,8 +31,8 @@ case "$installdir" in
     */bin) installdir=${installdir%/bin} ;;
     *) installdir=$installdir/.. ;;
 esac
-datadir=$installdir/share/console-setup-mini
-[ -d "$datadir" ] || datadir=/usr/share/console-setup-mini
+datadir=$installdir/share/console-setup
+[ -d "$datadir" ] || datadir=/usr/share/console-setup
 
 # The same as /usr/bin/which - in order to make "which" available in
 # environments where "which" does not exist
