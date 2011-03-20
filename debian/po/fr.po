@@ -17,14 +17,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 20:08+0200\n"
-"PO-Revision-Date: 2011-03-13 14:18+0100\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"PO-Revision-Date: 2011-03-19 07:35+0100\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Type: text
@@ -38,8 +38,8 @@ msgstr "Ne pas modifier la police initiale du noyau"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
-msgstr ""
+msgid "Let the system select a suitable font"
+msgstr "Choix automatique d'une police adaptée"
 
 #. Type: text
 #. Description
@@ -47,7 +47,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "uniquement tampon vidéo (« framebuffer »)"
 
 #. Type: select
 #. Choices
@@ -188,9 +188,8 @@ msgstr ". combiné : latin, cyrillique slave et non slave"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Veuillez taper des caractères aléatoires"
+msgstr "Choix automatique du jeu de caractères adapté"
 
 #. Type: select
 #. Description
@@ -281,26 +280,26 @@ msgstr "Taille de la police :"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Veuillez choisir la taille de la police pour la console Linux. Comme "
-"référence, la taille de la police au démarrage du système est de 16."
+"Veuillez choisir la taille de la police pour la console. Comme référence, la "
+"taille de la police au démarrage du système est de 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Veuillez choisir la taille de la police pour la console Linux. Comme "
-"référence, la taille de la police au démarrage du système est de 16."
+"Veuillez choisir la taille de la police pour la console. Comme référence, la "
+"taille de la police au démarrage du système est de 8x16. Certaines tailles "
+"de polices nécessite d'utiliser le paquet kbd au lieu de console-tools et "
+"imposent l'utilisation du tampon vidéo (« framebuffer »)."
 
 #. Type: select
 #. Description
@@ -422,10 +421,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"La valeur par défaut de la disposition clavier est XKBLAYOUT="
-"\"${XKBLAYOUT}\" et XKBVARIANT=\"${XKBVARIANT}\". La valeur par défaut est "
-"basée sur la langue et la région choisies et les réglages de /etc/X11/xorg."
-"conf."
+"La valeur par défaut de la disposition clavier est XKBLAYOUT=\"${XKBLAYOUT}"
+"\" et XKBVARIANT=\"${XKBVARIANT}\". La valeur par défaut est basée sur la "
+"langue et la région choisies et les réglages de /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -777,8 +775,8 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
-"Cette fonctionnalité peut être désactivée en choisissant « Pas de "
-"basculement temporaire »."
+"Cette fonctionnalité peut être désactivée en choisissant « Pas de basculement "
+"temporaire »."
 
 #. Type: select
 #. Choices

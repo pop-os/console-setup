@@ -14,14 +14,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 20:08+0200\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
 "PO-Revision-Date: 2011-01-19 21:00+0530\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
 "Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
-"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
 
 #. Type: text
 #. Description
@@ -34,7 +34,7 @@ msgstr "బూట్ /కెర్నెల్ ఖతి మార్చవద�
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
+msgid "Let the system select a suitable font"
 msgstr ""
 
 #. Type: text

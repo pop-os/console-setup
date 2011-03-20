@@ -16,11 +16,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 20:08+0200\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
 "PO-Revision-Date: 2010-08-29 17:32+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
-"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +36,7 @@ msgstr "துவக்க/உள்கூறு (கெர்னல்) எழ�
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
+msgid "Let the system select a suitable font"
 msgstr ""
 
 #. Type: text
@@ -472,9 +471,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"முன்னிருப்பு விசைப்பலகை இட அமைவு தேர்வுகளுக்கான மதிப்பு XKBOPTIONS="
-"\"${XKBOPTIONS}\". இந்த முன்னிருப்பு அமைவு /etc/X11/xorg.conf. இல் உள்ள நாடு "
-"மற்றும் வட்டாரம் அமைப்பின் அடிப்படையில் தேர்ந்தெடுக்கப்பட்டது"
+"முன்னிருப்பு விசைப்பலகை இட அமைவு தேர்வுகளுக்கான மதிப்பு XKBOPTIONS=\"${XKBOPTIONS}"
+"\". இந்த முன்னிருப்பு அமைவு /etc/X11/xorg.conf. இல் உள்ள நாடு மற்றும் வட்டாரம் "
+"அமைப்பின் அடிப்படையில் தேர்ந்தெடுக்கப்பட்டது"
 
 #. Type: boolean
 #. Description

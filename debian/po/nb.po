@@ -16,11 +16,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 20:08+0200\n"
+"POT-Creation-Date: 2011-03-19 22:47+0000\n"
 "PO-Revision-Date: 2010-08-25 17:46+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +35,7 @@ msgstr "Ikke forandre skriften for boot/kernel-en"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
-msgid "Let the system selects a suitable font"
+msgid "Let the system select a suitable font"
 msgstr ""
 
 #. Type: text
@@ -212,8 +211,8 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Hvis du ikke bruker framebuffer, så vil valgende som starter med «.» "
-"redusere antall tilgjengelig farger i konsollet."
+"Hvis du ikke bruker framebuffer, så vil valgende som starter med «.» redusere "
+"antall tilgjengelig farger i konsollet."
 
 #. Type: select
 #. Description

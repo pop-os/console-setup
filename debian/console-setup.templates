@@ -20,7 +20,7 @@ _Description: Do not change the boot/kernel font
 Template: console-setup/guess_font
 Type: text
 # :sl3:
-_Description: Let the system selects a suitable font
+_Description: Let the system select a suitable font
 
 Template: console-setup/framebuffer_only
 Type: text
