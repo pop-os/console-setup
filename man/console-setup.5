@@ -63,7 +63,7 @@ The following variables can be set.
 .B ACTIVE_CONSOLES
 Specifies the device files in
 .I /dev
-of the virtual terminals to be configured.  Filename wildcards
+of the virtual terminals to be configured.  File name wild-cards
 .RB ( * ",\ " ? )
 are allowed.  On Linux usually you can set this to
 .B /dev/tty[1-6]
@@ -113,7 +113,7 @@ Specifies the desired encoding on the console.  Valid values are:
 .hy
 The special value
 .B guess
-is also recognised in which case the system command
+is also recognized in which case the system command
 .BR locale (1)
 will be used to guess the desired encoding (currently this works
 reliably only with
@@ -184,7 +184,7 @@ leave the console font unchanged.
 .B VIDEOMODE
 Set
 .B VIDEOMODE
-to an empty string to avoid seting up the video mode.  On FreeBSD you
+to an empty string to avoid setting up the video mode.  On FreeBSD you
 can run
 .in +4n
 .nf
