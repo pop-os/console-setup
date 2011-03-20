@@ -6,15 +6,25 @@ build : compose_files dkey_files KeyboardNames.pl
 
 models = amiga ataritt macintosh_old pc105 sun4 sun5
 
-gziped_ekmaps =  $(addsuffix .ekmap.gz, $(models))
+gzipped_ekmaps =  $(addsuffix .ekmap.gz, $(models))
 
-build-mini-linux : $(gziped_ekmaps)
+gzipped_ekbds = pc105.ekbd.gz
+
+build-mini-linux : $(gzipped_ekmaps) charmap_functions.sh
+
+build-mini-freebsd : $(gzipped_ekbds) charmap_functions.sh
 
 %.gz : %
 	gzip -9 <$< >$@
 
 %.ekmap : 
 	./kbdcompiler $(@:%.ekmap=%) KeyboardNames.pl $(xkbdir) >$@
+
+%.ekbd : 
+	./kbdcompiler freebsd-$(@:%.ekbd=%) KeyboardNames.pl $(xkbdir) >$@
+
+charmap_functions.sh : $(acmfiles)
+	./make_charmap_functions ../acm $(charmaps) >$@
 
 acmfiles = $(wildcard ../acm/*.acm)
 
@@ -55,9 +65,10 @@ dkey_files : $(dkey_files)
 clean:
 	-rm -f *~
 	-rm -rf compose $(compose_files) $(dkey_files)
-	-rm -rf keymaps
+	-rm -rf linux-keymaps freebsd-keymaps keymaps
 	-rm -f keymaps.dir names.list
-	-rm -f $(gziped_ekmaps)
+	-rm -f charmap_functions.sh
+	-rm -f $(gzipped_ekmaps)
 
 .PHONY: maintainer-clean
 maintainer-clean: clean

@@ -17,24 +17,25 @@ gziped_acmfiles : $(gziped_acmfiles)
 %.gz : %
 	gzip -9 <$< >$@
 
-build-any: gziped_acmfiles
+build-common: gziped_acmfiles
 	cd Keyboard && $(MAKE) build
 
-build-linux: build-any
+build-linux: build-common
 	cd Fonts && $(MAKE) build-linux
 
-build-freebsd: build-any
+build-freebsd: build-common
 	cd Fonts && $(MAKE) build-freebsd
 
-build-mini-linux: build-linux build-any
+build-mini-linux: build-linux build-common
 	cd Keyboard && $(MAKE) build-mini-linux
 
-build-mini-freebsd: build-freebsd build-any
+build-mini-freebsd: build-freebsd build-common
+	cd Keyboard && $(MAKE) build-mini-freebsd
 
 build-all: build-linux build-freebsd build-mini-linux build-mini-freebsd
 
-.PHONY: install-any
-install-any: build-any
+.PHONY: install-common
+install-common: build-common
 	install -d  $(bootprefix)/bin/
 	install setupcon $(bootprefix)/bin/
 	install -d $(etcdir)/default
@@ -42,56 +43,71 @@ install-any: build-any
 	install -m 644 config/console-setup $(etcdir)/default/
 	install -d $(mandir)/man1/
 	install -m 644 man/setupcon.1 $(mandir)/man1/
-	install -m 644 man/ckbcomp.1 $(mandir)/man1/
 	install -d $(mandir)/man5/
 	install -m 644 man/keyboard.5 $(mandir)/man5/
 	install -m 644 man/console-setup.5 $(mandir)/man5/
 
-.PHONY: install-linux
-install-linux: build-linux install-any
+.PHONY: install-common-linux
+install-common-linux: build-linux
 	install -d $(prefix)/share/consolefonts/
 	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
 	install -d $(prefix)/share/consoletrans
 	install -m 644 acm/*.acm.gz $(prefix)/share/consoletrans/
-	install -d $(prefix)/bin/
-	install Keyboard/ckbcomp $(prefix)/bin/
-	if [ -z "$(xkbdir)" ]; then \
-		mkdir -p $(etcdir)/console-setup \
-		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
-	fi
 	install -d $(etcdir)/console-setup
 	install -m 644 Keyboard/compose.*.inc $(etcdir)/console-setup/
 	install -m 644 Keyboard/remap.inc $(etcdir)/console-setup/
 
-.PHONY: install-freebsd
-install-freebsd: build-freebsd install-any
+.PHONY: install-common-freebsd
+install-common-freebsd: build-freebsd
 	install -d $(prefix)/share/syscons/fonts/
 	install -m 644 Fonts/*.fnt $(prefix)/share/syscons/fonts/
 	install -d $(prefix)/share/syscons/scrnmaps/
 	install -m 644 Fonts/*.scm $(prefix)/share/syscons/scrnmaps/
 	install -d $(prefix)/share/consoletrans
 	install -m 644 acm/*.acm $(prefix)/share/consoletrans/
-	install -d $(prefix)/bin/
-	install Keyboard/ckbcomp $(prefix)/bin/
 	install -d $(etcdir)/console-setup
 	install -m 644 Fonts/terminfo $(etcdir)/console-setup/
 	install -m 644 Fonts/termcap $(etcdir)/console-setup/
 	install -m 644 Keyboard/dkey.*.inc $(etcdir)/console-setup/
 	install -m 644 Keyboard/remap.inc $(etcdir)/console-setup/
+
+.PHONY: install-ckbcomp
+install-ckbcomp: 
 	if [ -z "$(xkbdir)" ]; then \
 		mkdir -p $(etcdir)/console-setup \
 		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
 	fi
+	install -d $(prefix)/bin/
+	install Keyboard/ckbcomp $(prefix)/bin/
+	install -d $(mandir)/man1/
+	install -m 644 man/ckbcomp.1 $(mandir)/man1/
 
-.PHONY : install-mini-linux
-install-mini-linux: build-mini-linux install-any
-	install -d $(prefix)/share/console-setup-mini/
-	install -m 644 Keyboard/*.ekmap.gz $(prefix)/share/console-setup-mini
-	install -d $(prefix)/share/consolefonts/
-	install -m 644 Fonts/*.psf.gz $(prefix)/share/consolefonts/
+.PHONY : install-ckbcomp-mini
+install-ckbcomp-mini:
+	install -d $(prefix)/share/console-setup/
+	-install -m 644 Keyboard/*.ekmap.gz $(prefix)/share/console-setup/
+	-install -m 644 Keyboard/*.ekbd.gz $(prefix)/share/console-setup/
+	install -m 644 Keyboard/charmap_functions.sh $(prefix)/share/console-setup/
 	install -d $(prefix)/bin/
 	install -m 644 Keyboard/ckbcomp-mini $(prefix)/bin/
 	ln -s ckbcomp-mini $(prefix)/bin/ckbcomp
+	install -d $(mandir)/man1/
+	install -m 644 man/ckbcomp.1 $(mandir)/man1/
+	ln -s ckbcomp.1 $(mandir)/man1/ckbcomp-mini.1
+
+.PHONY: install-linux
+install-linux: install-common install-common-linux install-ckbcomp
+
+.PHONY: install-freebsd
+install-freebsd: install-common install-common-freebsd install-ckbcomp
+
+.PHONY : install-mini-linux
+install-mini-linux: install-common install-common-linux build-mini-linux
+	$(MAKE) install-ckbcomp-mini
+
+.PHONY : install-mini-freebsd
+install-mini-freebsd: install-common install-common-freebsd build-mini-freebsd
+	$(MAKE) install-ckbcomp-mini
 
 common-uninstall:
 	-for font in Fonts/*.psf.gz; do \
@@ -100,15 +116,13 @@ common-uninstall:
 	-for acm in acm/*.acm.gz acm/*.acm; do \
 		rm $(prefix)/share/consoletrans/$${acm##*/}; \
 	done
-	-for ekmap in Keyboard/*.ekmap.gz; do \
-		rm $(prefix)/share/console-setup-mini/$${ekmap##*/}; \
-	done
 	-for font in Fonts/*.fnt; do \
 		rm $(prefix)/share/syscons/fonts/$${font##*/}; \
 	done
 	-for scm in Fonts/*.scm; do \
 		rm $(prefix)/share/syscons/scrnmaps/$${scm##*/}; \
 	done
+	-rm -r $(prefix)/share/console-setup/
 	-rm $(prefix)/share/man/man1/ckbcomp.1
 	-rm $(prefix)/share/man/man1/setupcon.1
 	-rm $(prefix)/share/man/man5/keyboard.5

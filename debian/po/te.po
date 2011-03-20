@@ -14,24 +14,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"POT-Creation-Date: 2011-03-19 20:08+0200\n"
 "PO-Revision-Date: 2011-01-19 21:00+0530\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
 "Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: te\n"
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "బూట్ /కెర్నెల్ ఖతి మార్చవద్దు"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system selects a suitable font"
 msgstr ""
@@ -39,6 +40,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
 msgstr ""
@@ -214,7 +216,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "కన్సోల్  కొరకు ఖతి(Font):"
@@ -224,7 +226,7 @@ msgstr "కన్సోల్  కొరకు ఖతి(Font):"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -243,7 +245,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
@@ -254,17 +256,17 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "ఖతి పరిమాణం:"
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
 #, fuzzy
 msgid ""
@@ -275,7 +277,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
 msgid ""

@@ -49,23 +49,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"POT-Creation-Date: 2011-03-19 20:08+0200\n"
 "PO-Revision-Date: 2011-02-04 03:13+0100\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "No cambie la tipografía del arranque/núcleo"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system selects a suitable font"
 msgstr ""
@@ -73,6 +75,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
 msgstr ""
@@ -243,15 +246,15 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Si no usa «framebuffer» las elecciones que comiencen por punto («.») reducirán "
-"el número de colores disponibles en la consola."
+"Si no usa «framebuffer» las elecciones que comiencen por punto («.») "
+"reducirán el número de colores disponibles en la consola."
 
 #. Type: select
 #. Description
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Tipo de letra para la consola:"
@@ -261,7 +264,7 @@ msgstr "Tipo de letra para la consola:"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -281,28 +284,28 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Escoja «TerminusBold» (si utiliza «framebuffer») o «TerminusBoldVGA» (si no lo "
-"utiliza), si prefiere la versión en negrita de la tipografía Terminus."
+"Escoja «TerminusBold» (si utiliza «framebuffer») o «TerminusBoldVGA» (si no "
+"lo utiliza), si prefiere la versión en negrita de la tipografía Terminus."
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Tamaño del tipo de letra:"
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
 #, fuzzy
 msgid ""
@@ -314,7 +317,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
 msgid ""
@@ -738,9 +741,10 @@ msgid ""
 msgstr ""
 "Las teclas Alt derecho y Bloqueo mayúsculas se escogen frecuentemente por "
 "razones ergonómicas (en el último caso, utilice la combinación "
-"«Shift»+Bloqueo mayúsculas para cambiar a mayúsculas). Alt+«Shift» también es "
-"una combinación popular, sin embargo, perderá su comportamiento tradicional "
-"en Emacs y otros programas que las utilicen para sus propias necesidades."
+"«Shift»+Bloqueo mayúsculas para cambiar a mayúsculas). Alt+«Shift» también "
+"es una combinación popular, sin embargo, perderá su comportamiento "
+"tradicional en Emacs y otros programas que las utilicen para sus propias "
+"necesidades."
 
 #. Type: select
 #. Description

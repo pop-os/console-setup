@@ -17,10 +17,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-18 22:47+0000\n"
+"POT-Creation-Date: 2011-03-19 20:08+0200\n"
 "PO-Revision-Date: 2010-10-04 03:35+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,13 +29,14 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
 msgstr "不修改启动/内核字体"
 
 #. Type: text
 #. Description
+#. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system selects a suitable font"
 msgstr ""
@@ -42,6 +44,7 @@ msgstr ""
 #. Type: text
 #. Description
 #. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
 msgstr ""
@@ -216,7 +219,7 @@ msgstr "如果您不使用帧缓冲，由“.”开头的选项会减少终端�
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "控制台字体："
@@ -226,7 +229,7 @@ msgstr "控制台字体："
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
@@ -244,7 +247,7 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
@@ -255,17 +258,17 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "字体大小："
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:7001
 #, fuzzy
 msgid ""
@@ -275,7 +278,7 @@ msgstr "请选择 Linux 控制台的字体大小。作为参考，计算机启�
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
 msgid ""
@@ -399,8 +402,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"键盘布局的默认值是 XKBLAYOUT=\"${XKBLAYOUT}\" 和 XKBVARIANT=\"${XKBVARIANT}"
-"\"。此默认值根据当前设置语言和国家，以及 /etc/X11/xorg.conf 中的设置确定。"
+"键盘布局的默认值是 XKBLAYOUT=\"${XKBLAYOUT}\" 和 XKBVARIANT="
+"\"${XKBVARIANT}\"。此默认值根据当前设置语言和国家，以及 /etc/X11/xorg.conf 中"
+"的设置确定。"
 
 #. Type: boolean
 #. Description

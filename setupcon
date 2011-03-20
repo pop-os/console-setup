@@ -340,17 +340,17 @@ else
 fi
 
 # CHARMAP
-if which locale >/dev/null; then
-    charmap=`locale charmap`
-fi
-CHARMAP=${CHARMAP:-$charmap}
-CHARMAP=${CHARMAP:-UTF-8}
-if [ -f $installdir/bin/ckbcomp-mini ]; then
-    if [ "$CHARMAP" != UTF-8 ]; then
-	echo Only UTF-8 is supported by console-setup-mini >&2
+if [ "$CHARMAP" = guess -o -z "$CHARMAP" ]; then
+    CHARMAP=''
+    if which locale >/dev/null; then
+        CHARMAP=`locale charmap`
     fi
-    CHARMAP=UTF-8
 fi
+CHARMAP=${CHARMAP:-UTF-8}
+# FreeBSD uses ISO8859-1, GNU uses ISO-8859-1, we use the GNU names
+case "$CHARMAP" in
+    ISO8859-*) CHARMAP="ISO-8859-${CHARMAP#ISO8859-}" ;;
+esac
 
 # unicode
 if \
@@ -623,10 +623,10 @@ esac
 # cached
 case "$kernel" in
     linux)
-        cached=/etc/console-setup/cached-$backspace$VARIANT.kmap.gz
+        cached=/etc/console-setup/cached_${CHARMAP}_$backspace$VARIANT.kmap.gz
         ;;
     freebsd)
-        cached=/etc/console-setup/cached-$backspace$VARIANT.kbd
+        cached=/etc/console-setup/cached_${CHARMAP}_$backspace$VARIANT.kbd
         ;;
 esac
 
@@ -834,7 +834,7 @@ else
 	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                 $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-                | run plain '' loadkeys
+                | run plain ECHO loadkeys
             ;;
         freebsd)
             TMPFILE=`mktemp /tmp/console-setup.XXXXXX` \

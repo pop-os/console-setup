@@ -267,3 +267,10 @@ terminal type you've just defined in /etc/getty.  Instead of
 'cons60cs-del-m'.  The number specifies how many lines are used on the
 console and the suffix '-m' stands for 'monochrome'.
 
+-- 
+Copyright (C) 2011 Anton Zinoviev <anton@lml.bas.bg>
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without any warranty.

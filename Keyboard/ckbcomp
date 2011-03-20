@@ -3987,7 +3987,8 @@ sub flatten {
 	my $mask = $kernel_modifiers{$vector[$coord]};
 	if (defined $mask) {
 	    $vector[$coord ^ $mask] = $vector[$coord];
-	    if ($compact) {
+	    if ($compact && ! $freebsd) {
+                # In non-Latin layouts AltGr=ShiftL
 		# AltGr = 0x02,  ShiftL = 0x10
 		if (($mask & 0x02) && ($mask & 0x10)) {
 		    $vector[$coord ^ $mask ^ 0x02] = $vector[$coord];
@@ -4003,7 +4004,7 @@ sub flatten {
 	}
     }
     
-    if (! $compact) {
+    if ($freebsd || ! $compact) {
 	for my $coord (16 .. 63) {
 	    if ($vector[$coord] =~ /^(ShiftL|ShiftL_Lock|ashift|alock)$/) {
 		$vector[$coord] = $voidsymbol;
@@ -4686,13 +4687,15 @@ if ($broken_caps) {
 
 print $KEYMAP;
 
-if ($freebsd && $charmap) {
-    my $file1 = "/etc/console-setup/dkey.${charmap}.inc";
-    my $file2 = "$installdir/etc/console-setup/dkey.${charmap}.inc";
-    if (-f $file1) {
-        system("cat $file1");
-    } elsif (-f $file2) {
-        system("cat $file2");
+if ($freebsd) {
+    if ($charmap) {
+        my $file1 = "/etc/console-setup/dkey.${charmap}.inc";
+        my $file2 = "$installdir/etc/console-setup/dkey.${charmap}.inc";
+        if (-f $file1) {
+            system("cat $file1");
+        } elsif (-f $file2) {
+            system("cat $file2");
+        }
     }
 } else {
     print "strings as usual\n";

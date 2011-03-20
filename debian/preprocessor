@@ -64,7 +64,7 @@ if [ "$mini" ]; then
 /## *KBDNAMES *##/ {
     printf "all_kbdnames () {\n cat <<'\''EOF'\'' \n";
     system("cd Keyboard && ./kbdnames-maker KeyboardNames.pl | grep '\''^C[*]'\'' | grep -v '\''[*]model[*]'\''");
-    printf "EOF\n [ ! -f /usr/share/console-setup-mini/kbdnames.gz ] || zcat /usr/share/console-setup-mini/kbdnames.gz \n}\n";
+    printf "EOF\n [ ! -f /usr/share/console-setup/kbdnames.gz ] || zcat /usr/share/console-setup/kbdnames.gz \n}\n";
     next;
 }
 {
