@@ -12,7 +12,9 @@ font on the console.  It includes a rich collection of fonts and
 supports several languages that would be otherwise unsupported on the
 console (such as Armenian, Georgian, Lao and Thai).
 
-The package supports Linux and FreeBSD kernels.
+The package supports Linux and FreeBSD kernels.  On Linux it supports
+PC, Amiga, Atari, old Macintosh, Sun4 and Sun5 keyboards.  On FreeBSD
+it supports PC keyboards.
 
 There are no binaries in the package: it can be compiled on one
 platform and used on another.  For its compilation it requires GNUmake
@@ -32,11 +34,13 @@ INSTALLATION
 ============
 
 First you need to compile the package.  Notice, that this can take a
-very long time.  Use one of the following commands:
+long time, especially if you will use precompiled keyboard files.  Use
+one of the following commands:
 
-   make build-linux       # For Linux without precompiled keyboard files
-   make build-mini-linux  # For Linux with precompiled keyboard files
-   gmake build-freebsd    # For FreeBSD without precompiled keyboard files
+   make build-linux         # For Linux without precompiled keyboard files
+   make build-mini-linux    # For Linux with precompiled keyboard files
+   gmake build-freebsd      # For FreeBSD without precompiled keyboard files
+   gmake build-mini-freebsd # For FreeBSD with precompiled keyboard files
 
 Then in order to install the package in /usr/local use one of the
 following commands:
@@ -44,6 +48,7 @@ following commands:
    make install-linux
    make install-mini-linux
    gmake install-freebsd
+   gmake install-mini-freebsd
 
 You don't have to install the package in /usr/local -- you can install
 it anywhere and test how it works from there, for example:

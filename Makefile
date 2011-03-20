@@ -152,7 +152,7 @@ txtmanpages = man/bdf2psf.1.txt man/console-setup.5.txt		\
 	man/setupcon.1.txt man/ckbcomp.1.txt man/keyboard.5.txt
 
 .PHONY: clean
-clean: $(txtmanpages)
+clean:
 	cd Fonts && $(MAKE) clean
 	cd Keyboard && $(MAKE) clean
 	-rm -f acm/*.acm.gz
@@ -161,5 +161,7 @@ clean: $(txtmanpages)
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
+	-rm -f $(txtmanpages)
+	$(MAKE) $(txtmanpages)
 	cd Fonts && $(MAKE) maintainer-clean
 	cd Keyboard && $(MAKE) maintainer-clean
