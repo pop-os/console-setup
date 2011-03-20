@@ -64,6 +64,10 @@ console-setup (1.71) UNRELEASED; urgency=low
     console.
   * Udebs for kFreeBSD.
   * Console-setup-mini: support for 8-bit encodings.
+  * setupcon: Improved test whether we are on the console.  Thanks to
+    Michael Schutte and Julien Cristau for the suggestions.
+  * console-setup(-mini).postinst: return the commands to configure the
+    console.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.

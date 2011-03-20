@@ -160,6 +160,29 @@ utf_stop () {
     fi
 }
 
+# Return code 0: we are on the console; 1: we are not on the console
+test_console () {
+    case "`tty`" in
+	/dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
+            return 0
+            ;;
+    esac
+
+    if which kbd_mode >/dev/null; then
+        mode="`(LC_ALL=C; export LC_ALL; kbd_mode) 2>&1`"
+        mode=${mode#The keyboard is in }
+        case "$mode" in
+            Unicode*|default*|xlate*) return 0 ;;
+        esac
+    fi
+
+    if which vidcontrol >/dev/null; then
+        if vidcontrol -i adapter >&- 2>&-; then
+            return 0
+        fi
+    fi
+    return 1
+}
 
 ###########################################################################
 ### PROCESS THE COMMAND LINE ARGUMENTS
@@ -687,14 +710,10 @@ esac
 ###########################################################################
 
 if [ "$do_check" ]; then
-    case "`tty`" in
-	/dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
-	    ;;
-	*)
-	    echo We are not on the console, the console is left unconfigured. >&2
-	    exit 0
-	    ;;
-    esac
+    if ! test_console; then
+	echo We are not on the console, the console is left unconfigured. >&2
+	exit 0
+    fi
 fi
 
 

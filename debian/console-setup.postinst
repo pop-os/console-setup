@@ -111,5 +111,7 @@ fi
 
 # This works even if we are not on the console
 setupcon --save-only || true
+# This will protest if we are not on the console
+setupcon 2>/dev/null || true
 
 #DEBHELPER#
