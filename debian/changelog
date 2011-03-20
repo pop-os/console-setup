@@ -4,13 +4,6 @@ console-setup (1.71) UNRELEASED; urgency=low
   * FAQ: correct some typos and apply two patches by Jonathan Nieder.
     Thanks also to Vincent Lefevre.  Closes: #565391 (with apologies for
     the delay).
-  * Ask the keyboard option question even when Debconf doesn't support the
-    layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
-  * ckbcomp_mini: process properly empty layout and/or variant options.
-    Thanks to Baptiste Carvello who reported the problem and traced its
-    source.  Closes: #617499.
-  * ckbcomp: ignore actions[...] = ... specifications in key definitions.
-    Thanks to Klaus Ethgen, closes: #607532.
   * New manual pages keyboard(5) and console-setup(5).  Updated ckbcomp(1)
     and setupcon(1). Remove README.fonts.  Common documentation directory
     for keyboard-configuration, console-setup-linux,
@@ -20,55 +13,65 @@ console-setup (1.71) UNRELEASED; urgency=low
     difficult to update these comments when the functionality of
     console-setup changes and the new manual pages make these comments
     less necessary.
-  * Do not source /etc/default/keyboard in /etc/default/console-setup
-    (on new installs or upgrades from pre 1.47 versions).
-  * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
-    (This change is not relevant for Debian.)
-  * bdf2psf: new option --raw to generate raw fonts.  Try to use CP437
-    code positions if possible.
-  * ckbcomp and setupcon: support for FreeBSD keymaps.
-  * ckbcomp: improved implementation for Alt+PrintScreen=SysRq and
-    Ctrl+Pause=Break on AT keyboards.
-  * ckbcomp: more correct use of approximate().  This probably affects
-    only some exotic key combination such as Ctrl+Alt+Shift+AltGr+F1.
-  * setupcon: do not cache automatically the keymap.  Instead add --save
-    option the init script.
-  * setupcon, config, postinst: recognise 'guess' value in the
-    configuration file.
-  * postinst: do not fail if setupcon fails.
-  * New install targets in the Makefiles and debian/rules to better
-    support non-Debian installs.
-  * Include Terminus font in the compiled packages.  Do not depend, but
-    conflict and provide console-terminus.  New upstream version of the
-    Terminus font (4.32).
-  * Lets try to remove some unnecessary and potentialy harmful on
-    non-standard layouts mappings for Linux (Ctrl+'=^G, Ctrl+3=^[,
-    Ctrl+4=^\, Ctrl+5=^], Ctrl+7=^_, Ctrl+8=^?).
-  * ckbcomp: New option -backspace del|bs to determine the behaviour of
-    BackSpace and Delete keys.  A corresponding variable BACKSPACE in
-    /etc/default/keyboard.
-  * Termcap and Terminfo entries for FreeBSD.
-  * When UTF-8 is requested on FreeBSD, act as if the encoding is ISO-8859-1.
-  * Debconf: Don't ask the question about font size on kFreeBSD.
+  * Remove the VERBOSE_OUTPUT option from the default configuration file
+    (but it is still supported).
+  * Install *.bug-control files for reportbug.
+  * Ask the keyboard option question even when Debconf doesn't support the
+    layout.  Thanks to Petr Baudis and Julien Cristau, closes: #581758.
+  * ckbcomp_mini: process properly empty layout and/or variant options.
+    Thanks to Baptiste Carvello who reported the problem and traced its
+    source.  Closes: #617499.
+  * ckbcomp: ignore actions[...] = ... specifications in key definitions.
+    Thanks to Klaus Ethgen, closes: #607532.
   * setupcon: accept all methods to state font size in the configuration
     file (8x14, 14x8, 14).
   * Debconf: More human-friendly options for the font size question.  By
     default use 8x14 format for all sizes.
-  * New configuration variable VIDEOMODE.  Currently it is most useful on
-    FreeBSD because the default Linux framebuffer driver (VesaFB) doesn't
-    permit changes of the videomode.
-  * Install *.bug-control files for reportbug.
-  * Remove the VERBOSE_OUTPUT option from the default configuration file
-    (but it is still supported).
-  * control: a minor change of the package description: 'Linux console' =>
-    console.
-  * Udebs for kFreeBSD.
-  * Console-setup-mini: support for 8-bit encodings.
   * setupcon: Improved test whether we are on the console.  Thanks to
     Michael Schutte and Julien Cristau for the suggestions.
-  * console-setup(-mini).postinst: return the commands to configure the
+  * console-setup(-mini).postinst: add again commands to configure the
     console.
+  * ckbcomp: improved implementation for Alt+PrintScreen=SysRq and
+    Ctrl+Pause=Break on AT keyboards.
+  * ckbcomp: more correct use of approximate().  This probably affects
+    only some exotic key combination such as Ctrl+Alt+Shift+AltGr+F1.
+  * ckbcomp: lets try to remove some unnecessary and potentialy harmful on
+    non-standard layouts mappings for Linux (Ctrl+'=^G, Ctrl+3=^[,
+    Ctrl+4=^\, Ctrl+5=^], Ctrl+7=^_, Ctrl+8=^?).
+  * Do not source /etc/default/keyboard in /etc/default/console-setup
+    (on new installs or upgrades from pre 1.47 versions).
+  * setupcon: do not cache automatically the keymap.  Instead add --save
+    option the init script.
   * Do not remove /etc/console-setup in postrm.
+  * setupcon, config, postinst: recognise 'guess' value in the
+    configuration file.
+  * postinst: do not fail if setupcon fails.
+  * Include Terminus font in the compiled packages.  Do not depend, but
+    conflict and provide console-terminus.  New upstream version of the
+    Terminus font (4.32).
+  * Keyboard/ckb: update with keyboard data of version 2.1 of xkb files.
+    (This change is not relevant for Debian.)
+  * New install targets in the Makefiles and debian/rules to better
+    support non-Debian installs.
+  * Support for FreeBSD.  Packages for Debian GNU/kFreeBSD:
+    - bdf2psf: new option --raw to generate raw fonts.  Try to use CP437
+      code positions if possible.  When generating raw fonts with same
+      codeset, use identical font map.
+    - ckbcomp and setupcon: support for FreeBSD keymaps.
+    - ckbcomp: new option -backspace [ del | bs ] to determine the
+      behaviour of the keys BackSpace and Delete.
+    - setupcon, postinst: A corresponding variable BACKSPACE in
+      /etc/default/keyboard.
+    - Termcap and Terminfo entries for FreeBSD.
+    - setupcon: When UTF-8 is requested on FreeBSD, act as if the encoding
+      is ISO-8859-1.
+    - Debconf: Don't ask the question about font size on kFreeBSD (no need
+      for this -- all available sizes will be loaded).
+    - New configuration variable VIDEOMODE.  Currently it is most useful
+      on FreeBSD because the default Linux framebuffer driver (VesaFB)
+      doesn't permit changes of the videomode.
+    - Support for 8-bit encodings in console-setup-mini and in the udebs
+    - Udebs for kFreeBSD.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
