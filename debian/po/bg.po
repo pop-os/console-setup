@@ -20,6 +20,7 @@ msgstr ""
 "PO-Revision-Date: 2011-03-19 11:47+0200\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -377,8 +378,8 @@ msgid ""
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
 "В момента подредбата на клавиатурата е описана във файла с настройки /etc/"
-"default/keyboard като XKBLAYOUT=\"${XKBLAYOUT}\" и XKBVARIANT=\"${XKBVARIANT}"
-"\"."
+"default/keyboard като XKBLAYOUT=\"${XKBLAYOUT}\" и XKBVARIANT="
+"\"${XKBVARIANT}\"."
 
 #. Type: boolean
 #. Description

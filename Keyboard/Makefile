@@ -68,12 +68,11 @@ clean:
 	-rm -rf linux-keymaps freebsd-keymaps keymaps
 	-rm -f keymaps.dir names.list
 	-rm -f charmap_functions.sh
-	-rm -f $(gzipped_ekmaps)
+	-rm -f $(gzipped_ekmaps) $(gzipped_ekbds)
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
 	./xmlreader >KeyboardNames.pl
 
-.PHONY: KeyboardNames.pl
 KeyboardNames.pl:
 	./xmlreader $(xkbdir)/rules/xorg.xml >KeyboardNames.pl

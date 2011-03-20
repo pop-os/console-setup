@@ -247,9 +247,6 @@ NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.
 # Filter small charsets (256 symbols) and non-framebuffer fonts
 psf_to_raw = $(subst .psf,.raw, $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(1))))
 
-test:
-	echo $(GOOD_RAW_FONTS)
-
 RAW_FONTS = $(call psf_to_raw, $(PSF_FONTS))
 GOOD_RAW_FONTS = $(call psf_to_raw, $(GOOD_8_FONTS))
 ALL_RAW_FONTS = $(call psf_to_raw, $(ALL_PSF_FONTS))
@@ -260,8 +257,9 @@ doubled_bdfs = $(call adddouble, $(BDFS_TO_DOUBLE))
 
 doubled_bdfs : $(doubled_bdfs)
 
-bdf/%-double.bdf : bdf/%.bdf
-	bdfresize -f 2 -b 1 $< >$@
+bdf/%-double.bdf : source = $(subst -double.bdf,.bdf,$@)
+bdf/%-double.bdf : 
+	bdfresize -f 2 -b 1 $(source) >$@
 
 # Use rm soft.Makefile && make soft.Makefile in order to update soft.Makefile
 include soft.Makefile

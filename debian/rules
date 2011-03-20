@@ -35,6 +35,7 @@ udeb-fonts-linux = $(addprefix Fonts/, $(addsuffix .psf.gz, \
 udeb-fonts-freebsd = $(addprefix Fonts/, $(addsuffix .fnt, $(udeb-fonts)))
 
 main_build:
+	rm Keyboard/KeyboardNames.pl
 	$(MAKE) build-all xkbdir=$(xkbdir)
 	touch main_build
 

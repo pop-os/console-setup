@@ -373,6 +373,7 @@ CHARMAP=${CHARMAP:-UTF-8}
 # FreeBSD uses ISO8859-1, GNU uses ISO-8859-1, we use the GNU names
 case "$CHARMAP" in
     ISO8859-*) CHARMAP="ISO-8859-${CHARMAP#ISO8859-}" ;;
+    US-ASCII|ANSI*) CHARMAP=ISO-8859-1 ;;
 esac
 
 # unicode

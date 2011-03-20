@@ -177,7 +177,7 @@ utf_keymap () {
         file2="$installdir/etc/console-setup/dkey.${charmap}.inc"
         if [ -f "$file1" ]; then
             cat "$file1"
-        elif [-f "$file2" ]; then
+        elif [ -f "$file2" ]; then
             cat "$file2"
         fi
     fi
@@ -188,7 +188,7 @@ utf_keymap () {
             file2="$installdir/etc/console-setup/compose.${charmap}.inc"
             if [ -f "$file1" ]; then
                 cat "$file1"
-            elif [-f "$file2" ]; then
+            elif [ -f "$file2" ]; then
                 cat "$file2"
             fi
         fi

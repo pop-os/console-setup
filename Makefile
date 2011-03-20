@@ -78,7 +78,7 @@ install-ckbcomp:
 		&& cp -r Keyboard/ckb/ $(etcdir)/console-setup/ckb; \
 	fi
 	install -d $(prefix)/bin/
-	install Keyboard/ckbcomp $(prefix)/bin/
+	install -m 755 Keyboard/ckbcomp $(prefix)/bin/
 	install -d $(mandir)/man1/
 	install -m 644 man/ckbcomp.1 $(mandir)/man1/
 
@@ -89,7 +89,7 @@ install-ckbcomp-mini:
 	-install -m 644 Keyboard/*.ekbd.gz $(prefix)/share/console-setup/
 	install -m 644 Keyboard/charmap_functions.sh $(prefix)/share/console-setup/
 	install -d $(prefix)/bin/
-	install -m 644 Keyboard/ckbcomp-mini $(prefix)/bin/
+	install -m 755 Keyboard/ckbcomp-mini $(prefix)/bin/
 	ln -s ckbcomp-mini $(prefix)/bin/ckbcomp
 	install -d $(mandir)/man1/
 	install -m 644 man/ckbcomp.1 $(mandir)/man1/
