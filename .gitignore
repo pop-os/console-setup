@@ -27,3 +27,5 @@ Fonts/bdf/legacy16k-double.bdf
 Fonts/bdf/legacy16l-double.bdf
 Fonts/bdf/legacy16m-double.bdf
 Fonts/bdf/u_vga16-double.bdf
+Fonts/soft.Makefile
+Keyboard/KeyboardNames.pl
