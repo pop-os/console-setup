@@ -62,6 +62,8 @@ console-setup (1.71) UNRELEASED; urgency=low
     (but it is still supported).
   * control: a minor change of the package description: 'Linux console' =>
     console.
+  * Udebs for kFreeBSD.
+  * Console-setup-mini: support for 8-bit encodings.
 
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
