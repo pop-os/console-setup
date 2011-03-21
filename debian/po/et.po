@@ -8,7 +8,7 @@
 # This translation is released under the same licence as the debian-installer.
 #
 # Siim Põder <siim@p6drad-teel.net>, 2007.
-# Mattias Põldaru <mahfiaz@gmail.com>, 2009-2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009-2011.
 #
 # Thanks to following Ubuntu Translators for review and fixes:
 #     Laur Mõtus
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-03-19 22:47+0000\n"
-"PO-Revision-Date: 2010-10-27 10:19+0300\n"
+"PO-Revision-Date: 2011-03-20 17:54+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Eesti\n"
 "Language: \n"
@@ -40,7 +40,7 @@ msgstr "boot/kernel fonti ei muudeta"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Süsteem valigu sobiv font"
 
 #. Type: text
 #. Description
@@ -48,7 +48,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "ainult framebuffer"
 
 #. Type: select
 #. Choices
@@ -187,9 +187,8 @@ msgstr ". Kombineeritud - ladina; slaavi- ja mitteslaavi kirillits"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Sisesta suvalisi tähemärke"
+msgstr "Optimaalse märgistiku äraarvamine"
 
 #. Type: select
 #. Description
@@ -204,7 +203,7 @@ msgstr "Toetatud märgistik:"
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "Vali millist märgistikku peaks konsoolifont toetama."
+msgstr "Vali, millist märgistikku peaks konsoolifont toetama."
 
 #. Type: select
 #. Description
@@ -268,32 +267,31 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "Kirja suurus:"
+msgstr "Fondi suurus:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Vali Linuxi konsooli fondi suurus. Näiteks alglaadimisel kasutatava fondi "
-"suurus on 16."
+"Vali konsoolifondi suurus. Näiteks alglaadimisel kasutatava fondi suurus on "
+"8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Vali Linuxi konsooli fondi suurus. Näiteks alglaadimisel kasutatava fondi "
-"suurus on 16."
+"Vali Linuxi konsoolifondi suurus. Näiteks alglaadimisel kasutatava fondi "
+"suurus on 8x16. Mõned fondisuurused vajavad kbd konsooli pakki (mitte "
+"console-tools) ja framebuffer'it."
 
 #. Type: select
 #. Description
@@ -922,7 +920,7 @@ msgstr "kanada prantsuse"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "kanada mitmekeelne"
 
 #. Type: select
 #. Choices
@@ -1018,7 +1016,7 @@ msgstr "jaapani"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr ""
+msgstr "kirgiisi"
 
 #. Type: select
 #. Choices
