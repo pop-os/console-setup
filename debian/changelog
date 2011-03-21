@@ -1,4 +1,4 @@
-console-setup (1.71) UNRELEASED; urgency=low
+console-setup (1.71) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * FAQ: correct some typos and apply two patches by Jonathan Nieder.
@@ -76,7 +76,7 @@ console-setup (1.71) UNRELEASED; urgency=low
   [ Samuel Thibault ]
   * Fonts/bdf2psf: Fix typo.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Tue, 01 Mar 2011 13:46:02 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 21 Mar 2011 07:08:43 +0200
 
 console-setup (1.70) unstable; urgency=low
 
