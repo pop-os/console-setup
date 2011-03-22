@@ -2,9 +2,12 @@ console-setup (1.72) UNRELEASED; urgency=low
 
   [ Anton Zinoviev ]
   * README: /etc/getty=>/etc/gettytab
-  * boot scripts: source /etc/default/locale to permit autodetection of
+  * debian/*.init: source /etc/default/locale to permit autodetection of
     the charmap when console-setup-mini operates without configuration
     file.
+  * debian/*.init: do not test whether we are on the console, there are
+    better tests inside setupcon.
+  * setupcon: do not expect the existence of tty (maybe /usr is not mounted)
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 

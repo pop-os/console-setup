@@ -50,16 +50,12 @@ case "$1" in
         # keyboard-setup isn't a daemon
         ;;
     start|force-reload|restart|reload)
-	case "`tty`" in
-	    /dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
-	        log_action_begin_msg "Setting preliminary keymap"
-		if setupcon -k; then
-		    log_action_end_msg 0
-		else
-		    log_action_end_msg $?
-		fi
-		;;
-	esac
+	log_action_begin_msg "Setting preliminary keymap"
+	if setupcon -k; then
+	    log_action_end_msg 0
+	else
+	    log_action_end_msg $?
+	fi
 	;;
     *)
         echo 'Usage: /etc/init.d/keyboard-setup {start|reload|restart|force-reload|stop}'

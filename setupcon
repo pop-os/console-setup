@@ -162,11 +162,16 @@ utf_stop () {
 
 # Return code 0: we are on the console; 1: we are not on the console
 test_console () {
-    case "`tty`" in
-	/dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
-            return 0
-            ;;
-    esac
+    local ok
+    ok=0
+    if which tty >/dev/null; then
+        case "`tty`" in
+	    /dev/tty[1-9]*|/dev/vc/[0-9]*|/dev/console|/dev/ttyv[0-9]*)
+                return 0
+                ;;
+        esac
+        ok=1
+    fi
 
     if which kbd_mode >/dev/null; then
         mode="`(LC_ALL=C; export LC_ALL; kbd_mode) 2>&1`"
@@ -174,14 +179,17 @@ test_console () {
         case "$mode" in
             Unicode*|default*|xlate*) return 0 ;;
         esac
+        ok=1
     fi
 
     if which vidcontrol >/dev/null; then
         if vidcontrol -i adapter >&- 2>&-; then
             return 0
         fi
+        ok=1
     fi
-    return 1
+
+    return $ok
 }
 
 ###########################################################################
