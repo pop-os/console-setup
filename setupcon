@@ -375,6 +375,7 @@ case "$CHARMAP" in
     ISO8859-*) CHARMAP="ISO-8859-${CHARMAP#ISO8859-}" ;;
     US-ASCII|ANSI*) CHARMAP=ISO-8859-1 ;;
 esac
+report The charmap is $CHARMAP
 
 # unicode
 if \
