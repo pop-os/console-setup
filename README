@@ -237,9 +237,9 @@ you haven't done so yet):
    cat /usr/local/etc/console-setup/termcap >>/etc/termcap
    cap_mkdb -f /usr/share/misc/termcap /etc/termcap
 
-The second in order is getty.  Open /etc/getty in a text editor.  This
-file tells getty how to configure different kinds of terminals.  Find
-the lines that look like this:
+The second in order is getty.  Open /etc/gettytab in a text editor.
+This file tells getty how to configure different kinds of terminals.
+Find the lines that look like this:
 
   P|Pc|Pc console:\
           :ht:np:sp#115200:
@@ -265,7 +265,7 @@ Then change these lines to look like this:
 There are two changes: first, the terminal name is 'cons25cs-del'
 (this is the value init will assign to the variable TERM) and second,
 init tells getty that the terminal type is Pcd.  Here 'Pcd' is the new
-terminal type you've just defined in /etc/getty.  Instead of
+terminal type you've just defined in /etc/gettytab.  Instead of
 'cons25cs-del' you can use one of the following types:
 'cons25cs-del-m', 'cons30cs-del', 'cons30cs-del-m', 'cons43cs-del',
 'cons43cs-del-m', 'cons50cs-del', 'cons50cs-del-m', 'cons60cs-del' or
