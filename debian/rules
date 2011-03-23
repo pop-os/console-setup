@@ -110,8 +110,6 @@ install-main: build
 		usr/share/console-setup/
 	dh_install -pkeyboard-configuration Keyboard/kbdnames-maker \
 		usr/share/console-setup/
-	dh_install -pkeyboard-configuration debian/lintian.overrides \
-		usr/share/lintian/overrides/keyboard-configuration
 	dh_link -pkeyboard-configuration usr/share/X11/xkb/rules/xorg.lst \
 		usr/share/doc/keyboard-configuration/xorg.lst
 	dh_installinit -pkeyboard-configuration \
@@ -222,6 +220,7 @@ binary-indep: build install
 	dh_installdocs -pconsole-setup-freebsd --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup-mini --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup --link-doc=keyboard-configuration
+	dh_lintian
 	dh_bugfiles
 	dh_installman
 	dh_installchangelogs

@@ -11,8 +11,12 @@ console-setup (1.72) UNRELEASED; urgency=low
     mounted and 'tty' is unavailable).
   * README.Debian: console-setup-mini no longer installs only a minimal
     set of fonts.
-  * Restore the separate copyright file for bdf2psf.
-  * copyright: add the required reference to common-licenses.
+  * A little Lintian cleaning:
+    - copyright: add the required reference to common-licenses;
+    - restore the separate copyright file for bdf2psf;
+    - versioned build dependency on debhelper (>=7.2.3~) for dh_bugfiles;
+    - standards version 3.9.1;
+    - use dh_lintian to install the override file.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 
