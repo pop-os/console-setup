@@ -12,6 +12,7 @@ console-setup (1.72) UNRELEASED; urgency=low
   * README.Debian: console-setup-mini no longer installs only a minimal
     set of fonts.
   * Restore the separate copyright file for bdf2psf.
+  * copyright: add the required reference to common-licenses.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 

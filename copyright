@@ -11,7 +11,6 @@ Upstream authors: Denis Barbier <barbier@linuxfr.org>, Frank Murphy
 <murphyf+xfree86@f-m.fm>, Ivan Pascal <pascal@info.tsu.ru>, Andriy
 Rysin <arysin@myrealbox.com>, Sergey V. Udaltsov
 <svu@users.sourceforge.net>, Данило Шеган <dsegan@gmx.net>.
-
 The XKeyboardConfig package is distributed under the following license:
 
 Permission to use, copy, modify, distribute, and sell this software and its
@@ -52,5 +51,7 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 02110-1301, USA
 
-The complete text of the GNU General Public License, version 2 can be
-found in the GPL-2 file.
+In the source package of console-setup the complete text of the GNU
+General Public License, version 2 can be found in the file GPL-2.  On
+Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in /usr/share/common-licenses/GPL.
