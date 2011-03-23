@@ -7,7 +7,10 @@ console-setup (1.72) UNRELEASED; urgency=low
     file.
   * debian/*.init: do not test whether we are on the console, there are
     better tests inside setupcon.
-  * setupcon: do not expect the existence of tty (maybe /usr is not mounted)
+  * setupcon: do not expect the existence of 'tty' (maybe /usr is not
+    mounted and 'tty' is unavailable).
+  * README.Debian: console-setup-mini no longer installs only a minimal
+    set of fonts.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 
