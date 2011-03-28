@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-03-19 22:47+0000\n"
-"PO-Revision-Date: 2011-03-19 07:35+0100\n"
+"PO-Revision-Date: 2011-03-27 12:12+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -918,7 +918,7 @@ msgstr "Brésilien (br-abnt2)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian (EUA layout)"
-msgstr "Brésilien (br-latin1)"
+msgstr "Brésilien (EUA)"
 
 #. Type: select
 #. Choices
