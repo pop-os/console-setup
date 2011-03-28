@@ -10,7 +10,7 @@ console-setup (1.72) UNRELEASED; urgency=low
   * setupcon: do not expect the existence of 'tty' (if /usr is not mounted
     'tty' will be unavailable).  Thanks to Sven Joachim, closes: #619462.
   * README.Debian: console-setup-mini no longer installs only a minimal
-    set of fonts.
+    set of fonts.  Without configuration file no font will be loaded.
   * A little Lintian cleaning:
     - copyright: add the required reference to common-licenses;
     - restore the separate copyright file for bdf2psf;

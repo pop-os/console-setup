@@ -35,6 +35,9 @@ console-setup
 console-setup-mini
    This is a limited version of console-setup.  It doesn't create a file
    /etc/default/console-setup but it will use such a file if it exists.
+   Notice that if /etc/default/console-setup doesn't exist, then no
+   font will be loaded so some non-ASCII symbols will not display
+   correctly.  However, Unicode/non-Unicode mode and the charmap will
+   still be configured according to the current locale.
 
-
- -- Anton Zinoviev <zinoviev@debian.org>, Wed, 23 Mar 2011 22:24:20 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>, Mon, 28 Mar 2011 22:14:16 +0300
