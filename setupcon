@@ -19,11 +19,12 @@
 
 ###########################################################################
 
-do_font=yes   # configure font
-do_kbd=yes    # configure keyboard
-do_save=''    # save the required files in /etc/console-setup
-do_check=yes  # test whether we are on the console
-do_verbose='' # explain what is being doing
+do_font=yes     # configure font
+do_kbd=yes      # configure keyboard
+do_save=''      # save the required files in /etc/console-setup
+savekbd_file='' # save the keyboard map in $savekbd_file
+do_check=yes    # test whether we are on the console
+do_verbose=''   # explain what is being doing
 
 # The same as /usr/bin/which - in order to make "which" available before
 # /usr is mounted
@@ -130,8 +131,8 @@ findfile () {
             fi
             ;;
     esac
-    x=`(ls "$installdir"/$1/$2 /usr/local/$1/$2
-	   /usr/$1/$2 /etc/console-setup/$2
+    x=`(ls "$installdir"/$1/$2 /usr/local/$1/$2 \
+	   /usr/$1/$2 /etc/console-setup/$2 \
 	   "$installdir"/etc/console-setup/$2) 2>/dev/null`
     x=`echo $x`
     [ "${x%% *}" ] || report Unable to find "$2".
@@ -219,6 +220,13 @@ while [ "$1" ]; do
             do_font=''
             do_check=''
 	    ;;
+        --save-keyboard)
+            shift
+            savekbd_file="$1"
+            do_kbd=''
+            do_font=''
+            do_check=''
+            ;;
 	-h|--help)
 	    cat >&2 <<EOF
 Usage: setupcon [OPTION] [VARIANT]
@@ -514,7 +522,9 @@ case "$kernel" in
         stdmap=$CHARMAP.acm.gz
         fontdir=share/consolefonts
         stdfont=$CODESET-$FONTFACE$FONTSIZE.psf.gz
-        stdfontfallback=$CODESET-*[A-Za-z]$FONTSIZE.psf.gz
+        # [A-WXYZa-wyz] is a funny way to say [A-Za-wyz].  In some locales 
+        # [A-Z] includes x and we don't want this.
+        stdfontfallback=$CODESET-*[A-WXYZa-wyz]$FONTSIZE.psf.gz
         ;;
     freebsd)
         mapdir=share/syscons/scrnmaps
@@ -523,9 +533,9 @@ case "$kernel" in
         stdfont16=$CODESET-${FONTFACE}16.fnt
         stdfont14=$CODESET-${FONTFACE}14.fnt
         stdfont8=$CODESET-${FONTFACE}8.fnt
-        stdfontfallback16=$CODESET-*[A-Za-z]16.fnt
-        stdfontfallback14=$CODESET-*[A-Za-z]14.fnt
-        stdfontfallback8=$CODESET-*[A-Za-z]8.fnt
+        stdfontfallback16=$CODESET-*[A-WXYZa-wyz]16.fnt
+        stdfontfallback14=$CODESET-*[A-WXYZa-wyz]14.fnt
+        stdfontfallback8=$CODESET-*[A-WXYZa-wyz]8.fnt
         ;;
 esac
 
@@ -585,7 +595,7 @@ if [ "$kernel" = linux -a -n "$FONT_MAP" ]; then
 fi
 
 # XKBMODEL
-if [ -n "$do_kbd$do_save" -a "$XKBMODEL" = unknown ]; then
+if [ -n "$do_kbd$do_save$savekbd_file" -a "$XKBMODEL" = unknown ]; then
     echo The keyboard model is unknown.  Keyboard will not be configured. >&2
     XKBMODEL=''
 fi
@@ -663,15 +673,20 @@ case "$kernel" in
         ;;
 esac
 
-# do_savekbd
-do_savekbd=${do_save:+$kernel}
-[ "$XKBMODEL" ] || do_savekbd=''
-if [ "$do_savekbd" = linux ] && ! which gzip >/dev/null; then
-    do_savekbd=''
+# savekbd_file
+if \
+    [ -z "$savekbd_file" -a -n "$do_save" ] \
+    && [ ! -f "$cached" \
+         -o "$cached" -ot "$CONFIG"  \
+         -o "$cached" -ot "$CONFIG2" ]
+then
+    savekbd_file="$cached"
+fi
+[ "$XKBMODEL" ] || savekbd_file=''
+if [ "$kernel" = linux ] && ! which gzip >/dev/null; then
+    savekbd_file=''
     echo gzip is not accessible.  Will not save cached keyboard map. >&2
 fi
-[ ! -f "$cached" -o "$cached" -ot "$CONFIG"  -o "$cached" -ot "$CONFIG2" ] \
-    || do_savekbd=''
 
 # KMAP
 if [ -n "$KMAP" -a ! -f "$KMAP" ]; then
@@ -701,18 +716,21 @@ if [ -n "$do_save" ]; then
     esac
 fi
 
-case "$do_savekbd" in
-    linux)
-	$installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
-            $rules_option -model "$XKBMODEL" \
-	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" | gzip -9 >"$cached"
-        ;;
-    freebsd)
-	$installdir/bin/ckbcomp -freebsd -backspace "$backspace" $acm_option \
-            $rules_option -model "$XKBMODEL" \
-	    "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$cached"
-        ;;
-esac
+if [ "$savekbd_file" ]; then
+    case "$kernel" in
+        linux)
+	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
+                $rules_option -model "$XKBMODEL" \
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
+                | gzip -9 >"$savekbd_file"
+            ;;
+        freebsd)
+	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
+                $acm_option $rules_option -model "$XKBMODEL" \
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$savekbd_file"
+            ;;
+    esac
+fi
 
 
 ###########################################################################
