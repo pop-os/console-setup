@@ -21,10 +21,12 @@
 
 do_font=yes     # configure font
 do_kbd=yes      # configure keyboard
-do_save=''      # save the required files in /etc/console-setup
-savekbd_file='' # save the keyboard map in $savekbd_file
 do_check=yes    # test whether we are on the console
 do_verbose=''   # explain what is being doing
+do_save=''      # save the required files in /etc/console-setup
+savekbdfile=''  # save the keyboard map in $savekbdfile
+setupdir=''     # directory for --setup-dir
+SETUP=''
 
 # The same as /usr/bin/which - in order to make "which" available before
 # /usr is mounted
@@ -32,7 +34,7 @@ which () {
     local IFS
     IFS=:
     for i in $PATH; do
-	if [ -x "$i/$1" ]; then
+	if [ -f "$i/$1" -a -x "$i/$1" ]; then
 	    echo "$i/$1"
 	    return 0
 	fi
@@ -84,7 +86,10 @@ run () {
     fi
     case "$ttyarg" in
         plain)
-            if [ "$do_verbose" ]; then
+            if [ "$setupdir" ]; then
+                SETUP="$SETUP$cmd $@
+"
+            elif [ "$do_verbose" ]; then
 		case "$verbose" in
 		    ECHO)
 			report Executing $cmd "$@".
@@ -101,8 +106,14 @@ run () {
         in)
             for tty in $ACTIVE_CONSOLES; do
                 if [ -r $tty ]; then
-                    report For $tty:
-                    run plain "$verbose" "$cmd" "$@" <$tty
+                    if [ "$setupdir" ]; then
+                        # keep the space between < and $tty
+                        SETUP="$SETUP$cmd $@ < $tty
+"
+                    else
+                        report For $tty:
+                        run plain "$verbose" "$cmd" "$@" <$tty
+                    fi
                 else
                     report No read access from $tty. Can not execute $cmd.
                 fi
@@ -222,9 +233,14 @@ while [ "$1" ]; do
 	    ;;
         --save-keyboard)
             shift
-            savekbd_file="$1"
+            savekbdfile="$1"
             do_kbd=''
             do_font=''
+            do_check=''
+            ;;
+        --setup-dir)
+            shift
+            setupdir="$1"
             do_check=''
             ;;
 	-h|--help)
@@ -595,7 +611,7 @@ if [ "$kernel" = linux -a -n "$FONT_MAP" ]; then
 fi
 
 # XKBMODEL
-if [ -n "$do_kbd$do_save$savekbd_file" -a "$XKBMODEL" = unknown ]; then
+if [ -n "$do_kbd$do_save$savekbdfile$setupdir" -a "$XKBMODEL" = unknown ]; then
     echo The keyboard model is unknown.  Keyboard will not be configured. >&2
     XKBMODEL=''
 fi
@@ -673,18 +689,25 @@ case "$kernel" in
         ;;
 esac
 
-# savekbd_file
+# savekbdfile
 if \
-    [ -z "$savekbd_file" -a -n "$do_save" ] \
+    [ -z "$savekbdfile" -a -n "$do_save" ] \
     && [ ! -f "$cached" \
          -o "$cached" -ot "$CONFIG"  \
          -o "$cached" -ot "$CONFIG2" ]
 then
-    savekbd_file="$cached"
+    savekbdfile="$cached"
 fi
-[ "$XKBMODEL" ] || savekbd_file=''
+if [ -z "$savekbdfile" -a -n "$setupdir" ]; then
+    mkdir -p "$setupdir"/etc/console-setup
+    case "$kernel" in
+        linux) savekbdfile="$setupdir"/etc/console-setup/cached.kmap.gz ;;
+        freebsd) savekbdfile="$setupdir"/etc/console-setup/cached.kbd ;;
+    esac
+fi
+[ "$XKBMODEL" ] || savekbdfile=''
 if [ "$kernel" = linux ] && ! which gzip >/dev/null; then
-    savekbd_file=''
+    savekbdfile=''
     echo gzip is not accessible.  Will not save cached keyboard map. >&2
 fi
 
@@ -716,18 +739,18 @@ if [ -n "$do_save" ]; then
     esac
 fi
 
-if [ "$savekbd_file" ]; then
+if [ "$savekbdfile" ]; then
     case "$kernel" in
         linux)
 	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                 $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-                | gzip -9 >"$savekbd_file"
+                | gzip -9 >"$savekbdfile"
             ;;
         freebsd)
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
                 $acm_option $rules_option -model "$XKBMODEL" \
-	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$savekbd_file"
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$savekbdfile"
             ;;
     esac
 fi
@@ -876,22 +899,85 @@ if [ "$KMAP" ]; then
         freebsd) run plain ECHO kbdcontrol -l "$KMAP" ;;
     esac
 else
+    TMPFILE=`mktemp /tmp/tmpkbd.XXXXXX` \
+        || { echo Can not create temporary file >&2; exit 1; }
     case "$do_kbd" in
         linux)
 	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                 $rules_option -model "$XKBMODEL" \
-	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-                | run plain ECHO loadkeys
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
+            run plain ECHO loadkeys $TMPFILE
             ;;
         freebsd)
-            TMPFILE=`mktemp /tmp/console-setup.XXXXXX` \
-                || { echo Can not create temporary file >&2; exit 1; }
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
                 $acm_option $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
             run plain ECHO kbdcontrol -l $TMPFILE
             run plain ECHO kbdcontrol -f 70 "`printf '\033[3~'`"
-            rm $TMPFILE
             ;;
     esac
+    rm $TMPFILE
+fi
+
+
+###########################################################################
+### SETUPDIR
+###########################################################################
+
+if [ "$setupdir" ]; then
+
+    filearg () {
+        case "$1" in
+            *.kmap.gz|*.kbd|/tmp/tmpkbd.*)
+                echo -n "/etc/console-setup/${savekbdfile##*/} "
+                ;;
+            /*)
+                if [ -e "$1" ]; then
+                    if [ ! -e "$setupdir/etc/console-setup/${1##*/}" ]; then
+                        cp -a "$1" "$setupdir/etc/console-setup/${1##*/}"
+                    fi
+                    echo -n "/etc/console-setup/${1##*/} "
+                else
+                    echo -n "$1 "
+                fi
+                ;;
+            *)
+                echo -n "$1 "
+                ;;
+        esac
+    }
+
+    mkdir -p "$setupdir"/bin
+
+    echo '#!/bin/sh' >"$setupdir"/bin/setupcon
+    echo '# A micro-version of setupcon with static configuration.' >>"$setupdir"/bin/setupcon
+    chmod +x "$setupdir"/bin/setupcon
+    TMPFILE=`mktemp /tmp/console-setup.XXXXXX` \
+        || { echo Can not create temporary file >&2; exit 1; }
+    echo "$SETUP" |
+    while read cmd args; do
+        case "$cmd" in
+            utf_start)
+                echo -n printf \'\\\\'033%%G'\'' >'
+                filearg "${args%% *}"
+                echo
+                ;;
+            utf_stop)
+                echo -n printf \'\\\\'033%%@'\'' >'
+                filearg "${args%% *}"
+                echo
+                ;;
+            *)
+                which "$cmd" >>$TMPFILE || true
+                echo -n "$cmd "
+                for arg in $args; do
+                    filearg "$arg"
+                done
+                echo
+                ;;
+        esac
+    done >>"$setupdir"/bin/setupcon
+    echo exit 0 >>"$setupdir"/bin/setupcon
+    sort $TMPFILE | uniq >"$setupdir"/morefiles
+    rm $TMPFILE
 fi

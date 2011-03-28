@@ -7,8 +7,8 @@ console-setup (1.72) UNRELEASED; urgency=low
     file.
   * debian/*.init: do not test whether we are on the console, there are
     better tests inside setupcon.
-  * setupcon: do not expect the existence of 'tty' (maybe /usr is not
-    mounted and 'tty' is unavailable).
+  * setupcon: do not expect the existence of 'tty' (if /usr is not mounted
+    'tty' will be unavailable).  Thanks to Sven Joachim, closes: #619462.
   * README.Debian: console-setup-mini no longer installs only a minimal
     set of fonts.
   * A little Lintian cleaning:
@@ -17,12 +17,14 @@ console-setup (1.72) UNRELEASED; urgency=low
     - versioned build dependency on debhelper (>=7.2.3~) for dh_bugfiles;
     - standards version 3.9.1;
     - use dh_lintian to install the override file.
-  * setupcon: new option --save-keyboard
+  * setupcon: new options --save-keyboard and --setup-dir.  Keep them
+    undocumented for now.
   * setupcon: some bug fixing:
-    - function findfile wouldn't work when setupcon is run from a
-       non-standard location;
-    - when FONTFACE=guess, use [A-WXYZ] as file pattern for fonts instead of
-      [A-Z] (in some locales A-Z includes x).
+    - the function findfile wouldn't work when setupcon is not run from
+      /bin or /usr/local/bin, but from a non-standard location;
+    - when working with incomplete information and guessing the font name,
+      use [A-WXYZa-wyz] as file pattern for fonts instead of [A-Za-z] (we do
+      not want 'x' and in some locales [A-Z] includes 'x').
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 
