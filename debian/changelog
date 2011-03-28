@@ -25,6 +25,7 @@ console-setup (1.72) UNRELEASED; urgency=low
     - when working with incomplete information and guessing the font name,
       use [A-WXYZa-wyz] as file pattern for fonts instead of [A-Za-z] (we do
       not want 'x' and in some locales [A-Z] includes 'x').
+  * Use non-copyleft license for setupcon and ckbcomp-mini.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
 
