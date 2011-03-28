@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-03-19 22:47+0000\n"
-"PO-Revision-Date: 2011-01-22 09:07+0300\n"
+"PO-Revision-Date: 2011-03-27 18:06+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,14 +33,14 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Не изменяйте шрифт загрузки/ядра"
+msgstr "Не изменять шрифт загрузки/ядра"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Позволить системе выбрать подходящий шрифт"
 
 #. Type: text
 #. Description
@@ -48,7 +48,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "только фрейм-буфер"
 
 #. Type: select
 #. Choices
@@ -189,9 +189,8 @@ msgstr ". комбинированный - латинский; славянск�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Вводите произвольные символы"
+msgstr "Определение оптимального набора символов"
 
 #. Type: select
 #. Description
@@ -277,26 +276,25 @@ msgstr "Размер шрифта:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Выберите размер шрифта для консоли Linux. Для справки: шрифт, отображаемый "
-"при загрузке компьютера, имеет размер 16."
+"Выберите размер шрифта для консоли. Для справки: шрифт, отображаемый при "
+"загрузке компьютера, имеет размер 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Выберите размер шрифта для консоли Linux. Для справки: шрифт, отображаемый "
-"при загрузке компьютера, имеет размер 16."
+"Выберите размер шрифта для консоли. Для справки: шрифт, отображаемый при "
+"загрузке компьютера, имеет размер 8x16. Для некоторых размеров шрифтов "
+"требуется консольный пакет kbd (не console-tools) и фрейм-буфер."
 
 #. Type: select
 #. Description
@@ -937,7 +935,7 @@ msgstr "Французская канадская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "Канадская многоязыковая"
+msgstr "Канадская многоязычная"
 
 #. Type: select
 #. Choices
