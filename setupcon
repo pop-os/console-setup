@@ -961,16 +961,19 @@ if [ "$setupdir" ]; then
         || { echo Can not create temporary file >&2; exit 1; }
     echo "$SETUP" |
     while read cmd args; do
-        case "$cmd" in
-            utf_start)
+        case "$cmd $args" in
+            utf_start*)
                 echo -n printf \'\\\\'033%%G'\'' >'
                 filearg "${args%% *}"
                 echo
                 ;;
-            utf_stop)
+            utf_stop*)
                 echo -n printf \'\\\\'033%%@'\'' >'
                 filearg "${args%% *}"
                 echo
+                ;;
+            kbdcontrol?-f?70*)
+                echo kbdcontrol -f 70 \"\`printf \'\\\\033[3~\'\`\"
                 ;;
             *)
                 which "$cmd" >>$TMPFILE || true
