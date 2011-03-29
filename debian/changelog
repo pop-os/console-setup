@@ -1,6 +1,5 @@
 console-setup (1.72) UNRELEASED; urgency=low
 
-  [ Anton Zinoviev ]
   * README: /etc/getty=>/etc/gettytab
   * debian/*.init: source /etc/default/locale to permit autodetection of
     the charmap when console-setup-mini operates without configuration
@@ -25,9 +24,9 @@ console-setup (1.72) UNRELEASED; urgency=low
     - when working with incomplete information and guessing the font name,
       use [A-WXYZa-wyz] as file pattern for fonts instead of [A-Za-z] (we do
       not want 'x' and in some locales [A-Z] includes 'x').
-  * Use non-copyleft license for setupcon and ckbcomp-mini.
+  * Use all-permissive, non-copyleft license for setupcon and ckbcomp-mini.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Tue, 22 Mar 2011 09:27:27 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 29 Mar 2011 12:06:14 +0300
 
 console-setup (1.71) unstable; urgency=low
 

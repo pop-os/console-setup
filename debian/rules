@@ -215,7 +215,8 @@ binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installdebconf
-	dh_installdocs -pkeyboard-configuration FAQ copyright.fonts
+	dh_installdocs -pkeyboard-configuration \
+		FAQ copyright.fonts copyright.xkb
 	dh_installdocs -p console-setup-linux --link-doc=keyboard-configuration
 	dh_installdocs -pconsole-setup-freebsd --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup-mini --link-doc=keyboard-configuration
