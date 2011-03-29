@@ -21,10 +21,10 @@ msgstr ""
 "PO-Revision-Date: 2010-10-04 03:35+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Type: text
@@ -402,8 +402,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"键盘布局的默认值是 XKBLAYOUT=\"${XKBLAYOUT}\" 和 XKBVARIANT=\"${XKBVARIANT}"
-"\"。此默认值根据当前设置语言和国家，以及 /etc/X11/xorg.conf 中的设置确定。"
+"键盘布局的默认值是 XKBLAYOUT=\"${XKBLAYOUT}\" 和 XKBVARIANT="
+"\"${XKBVARIANT}\"。此默认值根据当前设置语言和国家，以及 /etc/X11/xorg.conf 中"
+"的设置确定。"
 
 #. Type: boolean
 #. Description

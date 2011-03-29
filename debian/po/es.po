@@ -53,10 +53,10 @@ msgstr ""
 "PO-Revision-Date: 2011-02-04 03:13+0100\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #. Type: text
 #. Description
@@ -246,8 +246,8 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Si no usa «framebuffer» las elecciones que comiencen por punto («.») reducirán "
-"el número de colores disponibles en la consola."
+"Si no usa «framebuffer» las elecciones que comiencen por punto («.») "
+"reducirán el número de colores disponibles en la consola."
 
 #. Type: select
 #. Description
@@ -290,8 +290,8 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Escoja «TerminusBold» (si utiliza «framebuffer») o «TerminusBoldVGA» (si no lo "
-"utiliza), si prefiere la versión en negrita de la tipografía Terminus."
+"Escoja «TerminusBold» (si utiliza «framebuffer») o «TerminusBoldVGA» (si no "
+"lo utiliza), si prefiere la versión en negrita de la tipografía Terminus."
 
 #. Type: select
 #. Description
@@ -741,9 +741,10 @@ msgid ""
 msgstr ""
 "Las teclas Alt derecho y Bloqueo mayúsculas se escogen frecuentemente por "
 "razones ergonómicas (en el último caso, utilice la combinación "
-"«Shift»+Bloqueo mayúsculas para cambiar a mayúsculas). Alt+«Shift» también es "
-"una combinación popular, sin embargo, perderá su comportamiento tradicional "
-"en Emacs y otros programas que las utilicen para sus propias necesidades."
+"«Shift»+Bloqueo mayúsculas para cambiar a mayúsculas). Alt+«Shift» también "
+"es una combinación popular, sin embargo, perderá su comportamiento "
+"tradicional en Emacs y otros programas que las utilicen para sus propias "
+"necesidades."
 
 #. Type: select
 #. Description

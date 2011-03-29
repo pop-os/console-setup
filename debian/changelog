@@ -1,4 +1,4 @@
-console-setup (1.72) UNRELEASED; urgency=low
+console-setup (1.72) unstable; urgency=low
 
   * README: /etc/getty=>/etc/gettytab
   * debian/*.init: source /etc/default/locale to permit autodetection of
