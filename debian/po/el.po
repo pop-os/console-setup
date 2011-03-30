@@ -25,10 +25,10 @@ msgstr ""
 "PO-Revision-Date: 2010-09-04 19:11+0300\n"
 "Last-Translator: Emmanuel Galatoulas <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
-"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
@@ -487,9 +487,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Οι προκαθορισμένες επιλογές πληκτρολογίου είναι XKBOPTIONS="
-"\"${XKBOPTIONS}\". Είναι βασισμένο στην τρέχουσα επιλεγμένη γλώσσα/περιοχή "
-"στο /etc/X11/xorg.conf."
+"Οι προκαθορισμένες επιλογές πληκτρολογίου είναι XKBOPTIONS=\"${XKBOPTIONS}"
+"\". Είναι βασισμένο στην τρέχουσα επιλεγμένη γλώσσα/περιοχή στο /etc/X11/"
+"xorg.conf."
 
 #. Type: boolean
 #. Description

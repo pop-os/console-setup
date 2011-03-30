@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2010-10-19 20:09+0100\n"
 "Last-Translator: maacub <maacub@gmail.com>\n"
 "Language-Team: laptop\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
@@ -411,10 +411,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"El valor por defeutu pa la disposición de tecláu ye XKBLAYOUT="
-"\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\". Esti valor por defeutu ta "
-"basáu nel territoriu/llingua definíos y la configuración en /etc/X11/xorg."
-"conf."
+"El valor por defeutu pa la disposición de tecláu ye XKBLAYOUT=\"${XKBLAYOUT}"
+"\" and XKBVARIANT=\"${XKBVARIANT}\". Esti valor por defeutu ta basáu nel "
+"territoriu/llingua definíos y la configuración en /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -472,9 +471,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"El valor por defeutu pa les opciones del tecláu ye XKBOPTIONS="
-"\"${XKBOPTIONS}\". Ta basao nel territoriu/llingua definíos actualmente y na "
-"configuración en /etc/X11/xorg.conf."
+"El valor por defeutu pa les opciones del tecláu ye XKBOPTIONS=\"${XKBOPTIONS}"
+"\". Ta basao nel territoriu/llingua definíos actualmente y na configuración "
+"en /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
