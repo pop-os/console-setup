@@ -1,3 +1,10 @@
+console-setup (1.73) UNRELEASED; urgency=low
+
+  [ Anton Zinoviev ]
+  * Minor additions to keyboard(5) and ckbcomp(1).
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 05 Apr 2011 13:05:36 +0300
+
 console-setup (1.72) unstable; urgency=low
 
   * README: /etc/getty=>/etc/gettytab
