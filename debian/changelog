@@ -5,6 +5,9 @@ console-setup (1.73) UNRELEASED; urgency=low
 
   [ Samuel Thibault ]
   * Remove br(abnt2) choice since br already provides the ABNT2-specific key.
+  * Add Ethiopian to non-latin keymaps.
+  * Add Kurdish default choice, set to critical like Turkish due to Q/F
+    choice.
 
  -- Samuel Thibault <sthibault@debian.org>  Sun, 10 Apr 2011 21:47:10 +0200
 
