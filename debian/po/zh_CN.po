@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-10-04 03:35+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -861,14 +861,8 @@ msgstr "比利时语-拉丁1"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "巴西-ABNT2 布局"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "巴西-拉丁1(EUA 布局)"
+msgid "Brazilian"
+msgstr "巴西"
 
 #. Type: select
 #. Choices

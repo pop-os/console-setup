@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-08-25 17:46+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -884,14 +884,8 @@ msgstr "Belgisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "Brasiliansk (ABNT2-oppsett)"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "Brasiliansk (EUA-oppsett)"
+msgid "Brazilian"
+msgstr "Brasiliansk"
 
 #. Type: select
 #. Choices

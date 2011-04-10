@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2011-02-02 11:11+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -868,14 +868,8 @@ msgstr "เบลเยียม"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "บราซิล (ผัง ABNT2)"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "บราซิล (ผัง EUA)"
+msgid "Brazilian"
+msgstr "บราซิล"
 
 #. Type: select
 #. Choices

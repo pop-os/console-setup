@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-09-07 09:04+0300\n"
 "Last-Translator: Kęstutis Biliūnas <kebil@kaunas.init.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -862,14 +862,8 @@ msgstr "belgiška"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "brazilška (ABNT2 išdėstymas)"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "brazilška (EUA išdėstymas)"
+msgid "Brazilian"
+msgstr "brazilška"
 
 #. Type: select
 #. Choices

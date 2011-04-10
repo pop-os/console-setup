@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer squeeze\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-10-18 21:17+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -896,14 +896,8 @@ msgstr "Belga"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "Brasiler (ABNT2)"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "Brasiler (EUA)"
+msgid "Brazilian"
+msgstr "Brasiler"
 
 #. Type: select
 #. Choices

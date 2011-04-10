@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-11-21 07:56+0530\n"
 "Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
@@ -877,15 +877,8 @@ msgstr "ബെല്‍ജിയന്‍"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "ബ്രസീലിയന്‍ (ABNT2 വിന്യാസം)"
-
-# console-keymaps-acorn, Brazilian
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "ബ്രസീലിയന്‍ (EUA വിന്യാസം)"
+msgid "Brazilian"
+msgstr "ബ്രസീലിയന്‍"
 
 # console-keymaps-acorn, British
 #. Type: select

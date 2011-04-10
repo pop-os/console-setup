@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2011-02-06 17:52+0600\n"
 "Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -889,15 +889,8 @@ msgstr "বেলজিয়"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "ব্রাজিলীয় (ABNT2 লেআউট)"
-
-# console-keymaps-acorn, Brazilian
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "ব্রাজিলীয় (EUA লেআউট)"
+msgid "Brazilian"
+msgstr "ব্রাজিলীয়"
 
 # console-keymaps-acorn, British
 #. Type: select

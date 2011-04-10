@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-10-29 00:05+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
@@ -902,15 +902,8 @@ msgstr "Belgisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "Brasiliansk (ABNT2-udgave)"
-
-# console-keymaps-acorn, Brazilian
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "Brasiliansk (EUA-udgave)"
+msgid "Brazilian"
+msgstr "Brasiliansk"
 
 # console-keymaps-acorn, British
 #. Type: select

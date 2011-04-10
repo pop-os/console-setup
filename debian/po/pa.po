@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-03-19 22:47+0000\n"
+"POT-Creation-Date: 2011-04-10 22:47+0000\n"
 "PO-Revision-Date: 2010-09-01 06:58+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -875,14 +875,8 @@ msgstr "ਬੈਲਜੀਅਨ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "ਬ੍ਰਾਜ਼ੀਲੀਅਨ (ABNT2 layout)"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "ਬ੍ਰਾਜ਼ੀਲੀਅਨ (EUA layout)"
+msgid "Brazilian"
+msgstr "ਬ੍ਰਾਜ਼ੀਲੀਅਨ"
 
 #. Type: select
 #. Choices
