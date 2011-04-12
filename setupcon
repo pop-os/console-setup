@@ -47,6 +47,25 @@ which () {
     return 1
 }
 
+# Create a temporary file name and return its name.  Early in the boot
+# process of Debian /tmp is mounted read-only and /lib/init/rw has to
+# be used instead (thanks to Jindřich Makovička for the suggestion).
+# I am not sure all non-GNU versions of mktemp understand the -q
+# option so redirections of stderr are used instead.
+tempfile () {
+    local tmp
+    if \
+        tmp=`mktemp /tmp/tmpkbd.XXXXXX 2>/dev/null` \
+            || tmp=`mktemp /lib/init/rw/tmpkbd.XXXXXX 2>/dev/null` \
+            || tmp=`mktemp 2>/dev/null`
+    then
+        echo "$tmp"
+        return 0
+    else
+        return 1
+    fi
+}
+
 # Print the arguments to stderr if $do_verbose is yes
 report () {
     if [ "$do_verbose" ]; then
@@ -698,8 +717,8 @@ esac
 if \
     [ -z "$savekbdfile" -a -n "$do_save" ] \
     && [ ! -f "$cached" \
-         -o "$cached" -ot "$CONFIG"  \
-         -o "$cached" -ot "$CONFIG2" ]
+         -o ! "$CONFIG" -ot "$cached" \
+         -o ! "$CONFIG2" -ot "$cached" ]
 then
     savekbdfile="$cached"
 fi
@@ -904,8 +923,7 @@ if [ "$KMAP" ]; then
         freebsd) run plain ECHO kbdcontrol -l "$KMAP" ;;
     esac
 else
-    TMPFILE=`mktemp /tmp/tmpkbd.XXXXXX` \
-        || { echo Can not create temporary file >&2; exit 1; }
+    TMPFILE=`tempfile` || { echo Can not create temporary file >&2; exit 1; }
     case "$do_kbd" in
         linux)
 	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
@@ -933,7 +951,7 @@ if [ "$setupdir" ]; then
 
     filearg () {
         case "$1" in
-            *.kmap.gz|*.kbd|/tmp/tmpkbd.*)
+            *.kmap.gz|*.kbd|*/tmpkbd.*)
                 echo -n "/etc/console-setup/${savekbdfile##*/} "
                 ;;
             /*)
@@ -957,8 +975,7 @@ if [ "$setupdir" ]; then
     echo '#!/bin/sh' >"$setupdir"/bin/setupcon
     echo '# A micro-version of setupcon with static configuration.' >>"$setupdir"/bin/setupcon
     chmod +x "$setupdir"/bin/setupcon
-    TMPFILE=`mktemp /tmp/console-setup.XXXXXX` \
-        || { echo Can not create temporary file >&2; exit 1; }
+    TMPFILE=`tempfile` || { echo Can not create temporary file >&2; exit 1; }
     echo "$SETUP" |
     while read cmd args; do
         case "$cmd $args" in
