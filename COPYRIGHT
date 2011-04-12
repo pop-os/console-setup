@@ -29,7 +29,7 @@ http://xlibs.freedesktop.org/xkbdesc/xkeyboard-config-0.8.tar.gz
 Please notice, that Debian packages do not include the XKB files (they
 are provided by a separate package xkb-data).  When, however, the
 Debian package console-setup-mini is installed, it includes
-precompiled version of the keyboard file, so the terms in the file
+precompiled version of the keyboard files, so the terms in the file
 /usr/share/doc/keyboard-configuration/copyright.xkb.gz apply.
 
 The manual pages are distributed according to GNU all-permissive license:
@@ -40,6 +40,28 @@ Copying and distribution of this file, with or without
 modification, are permitted in any medium without royalty provided
 the copyright notice and this notice are preserved.  This file is
 offered as-is, without any warranty.
+
+The programs 'setupcon' and 'ckbcomp-mini' are distributed according
+to the following license:
+
+Copyright (C) 2011 Anton Zinoviev <anton@lml.bas.bg>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this file (the "Program"), to deal in the Program without
+restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Program, and to permit persons to whom the Program is furnished to
+do so, subject to the following conditions: The above copyright notice
+and this permission notice shall be included in all copies or
+substantial portions of the Program.
+
+THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+PROGRAM OR THE USE OR OTHER DEALINGS IN THE PROGRAM.
 
 Everything else in this package is
 

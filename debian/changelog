@@ -2,6 +2,7 @@ console-setup (1.73) UNRELEASED; urgency=low
 
   [ Anton Zinoviev ]
   * Minor additions to keyboard(5) and ckbcomp(1).
+  * Add information about setupcon and ckbcomp-mini in the copyright file.
 
   [ Samuel Thibault ]
   * Remove br(abnt2) choice since br already provides the ABNT2-specific key.
