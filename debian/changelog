@@ -1,12 +1,14 @@
-console-setup (1.73) UNRELEASED; urgency=low
+console-setup (1.73) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * Minor additions to keyboard(5) and ckbcomp(1).
   * Add information about setupcon and ckbcomp-mini in the copyright file.
-  * Use /lib/init/rw for temporary file if /tmp is mounted read-only.  Do
-    not assume that either [ file1 -ot file2 ] or [ file2 -ot file1 ].
-    Thanks to Jindřich Makovička (he provided a patch), Vincent Lefevre,
-    Benoît MERLET and Tony Houghton.  Closes: #620228, #620491.
+  * Use /lib/init/rw for temporary file if /tmp is mounted read-only.
+    When testing whether the keymap has to be recompiled, do not assume
+    that either [ file1 -ot file2 ] or [ file2 -ot file1 ] (files can be
+    the same age).  Thanks to Jindřich Makovička (he provided a patch),
+    Vincent Lefevre, Benoît MERLET and Tony Houghton. 
+    Closes: #620228, #620491.
 
   [ Samuel Thibault ]
   * Remove br(abnt2) choice since br already provides the ABNT2-specific key.
@@ -14,7 +16,7 @@ console-setup (1.73) UNRELEASED; urgency=low
   * Add Kurdish default choice, set to critical like Turkish due to Q/F
     choice.
 
- -- Samuel Thibault <sthibault@debian.org>  Sun, 10 Apr 2011 21:47:10 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 12 Apr 2011 21:46:54 +0300
 
 console-setup (1.72) unstable; urgency=low
 
