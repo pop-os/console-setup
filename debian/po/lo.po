@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2010-11-26 09:11+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #. Type: text
 #. Description
@@ -386,9 +386,8 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"ຄ່າເລີ່ມຕົ້ນຂອງຜັງແປ້ນພິມເປັນXKBLAYOUT=\"${XKBLAYOUT}\" ແລະ XKBVARIANT="
-"\"${XKBVARIANT}\".  ຄ່າເລີ່ມຕົ້ນນີ້ຂື້ນຢູ່ກັບພາສາທີ່ກຳນົດໄວ້ໃນປະຈຸບັນ/ພູມມິພາກແລະການຕັ້ງຄ່າໃນetc/"
-"X11/xorg.conf."
+"ຄ່າເລີ່ມຕົ້ນຂອງຜັງແປ້ນພິມເປັນXKBLAYOUT=\"${XKBLAYOUT}\" ແລະ XKBVARIANT=\"${XKBVARIANT}"
+"\".  ຄ່າເລີ່ມຕົ້ນນີ້ຂື້ນຢູ່ກັບພາສາທີ່ກຳນົດໄວ້ໃນປະຈຸບັນ/ພູມມິພາກແລະການຕັ້ງຄ່າໃນetc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
