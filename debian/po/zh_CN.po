@@ -11,14 +11,14 @@
 # Translated by Yijun Yuan (2004), Carlos Z.F. Liu (2004,2005,2006),
 # Ming Hua (2005,2006,2007,2008), Xiyue Deng (2008), Kov Chai (2008),
 # Kenlen Lai (2008), WCM (2008), Ren Xiaolei (2008).
-# YunQiang Su <wzssyqa@gmail.com>, 2010.
+# YunQiang Su <wzssyqa@gmail.com>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-04-10 22:47+0000\n"
-"PO-Revision-Date: 2010-10-04 03:35+0800\n"
+"PO-Revision-Date: 2011-04-15 11:58+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "不修改启动/内核字体"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "系统自动选择适合的字体"
 
 #. Type: text
 #. Description
@@ -47,7 +47,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "只有帧缓冲"
 
 #. Type: select
 #. Choices
@@ -186,9 +186,8 @@ msgstr ". 组合 - 拉丁；斯拉夫和非斯拉夫西里尔语"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "请输入任意字符"
+msgstr "猜测最优字符集"
 
 #. Type: select
 #. Description
@@ -270,22 +269,22 @@ msgstr "字体大小："
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
-msgstr "请选择 Linux 控制台的字体大小。作为参考，计算机启动时的字体大小为 16。"
+msgstr "请选择控制台的字体大小。作为参考，计算机启动时的字体大小为 8x16。"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
-msgstr "请选择 Linux 控制台的字体大小。作为参考，计算机启动时的字体大小为 16。"
+msgstr ""
+"请选择控制台的字体大小。作为参考，计算机启动时的字体大小为 8x16。某些字体大小"
+"会要求 kbd 控制台包(而非 console-tools)以及帧缓冲。"
 
 #. Type: select
 #. Description
