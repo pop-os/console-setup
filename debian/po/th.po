@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-04-10 22:47+0000\n"
-"PO-Revision-Date: 2011-02-02 11:11+0700\n"
+"PO-Revision-Date: 2011-04-18 17:31+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "ไม่ต้องเปลี่ยนแบบอักษรขอ
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "ให้ระบบเลือกแบบอักษรที่เหมาะสมให้"
 
 #. Type: text
 #. Description
@@ -41,7 +41,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "เฟรมบัฟเฟอร์เท่านั้น"
 
 #. Type: select
 #. Choices
@@ -180,9 +180,8 @@ msgstr ". ผสม - ละติน; ซีริลลิกตระกู�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "ป้อนอักขระสุ่ม"
+msgstr "เดาชุดอักขระที่ดีที่สุด"
 
 #. Type: select
 #. Description
@@ -265,26 +264,24 @@ msgstr "ขนาดแบบอักษร:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซลลินุกซ์ ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
-"16"
+"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซล ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด 8x16"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซลลินุกซ์ ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
-"16"
+"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซล ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
+"8x16  แบบอักษรบางขนาดอาจต้องใช้แพกเกจ kbd สำหรับคอนโซล (ไม่ใช่ console-tools) "
+"และการใช้เฟรมบัฟเฟอร์"
 
 #. Type: select
 #. Description
