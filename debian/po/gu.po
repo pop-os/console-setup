@@ -10,7 +10,7 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
 # Contributor:
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2009
+# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2011
 #
 msgid ""
 msgstr ""
@@ -183,9 +183,8 @@ msgstr ". જોડેલ - લેટિન; સ્લેવિક સિરિ�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "ગમેતેમ અક્ષરો દાખલ કરો"
+msgstr "સૌથી યોગ્ય અક્ષર ગણ ધારી લો"
 
 #. Type: select
 #. Description
@@ -270,26 +269,25 @@ msgstr "ફોન્ટ માપ:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"મહેરબાની કરી લિનક્સ કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે "
-"વખતે વપરાતા ફોન્ટનું માપ ૧૬ હોય છે."
+"મહેરબાની કરી કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે વખતે "
+"વપરાતા ફોન્ટનું માપ ૮x૧૬ હોય છે."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"મહેરબાની કરી લિનક્સ કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે "
-"વખતે વપરાતા ફોન્ટનું માપ ૧૬ હોય છે."
+"મહેરબાની કરી કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે વખતે "
+"વપરાતા ફોન્ટનું માપ ૮x૧૬ હોય છે.  કેટલાક ફોન્ટ માપ માટે kbd કોન્સોલ પેકેજો (console-"
+"tools નહી) વત્તા ફ્રેમબફર જરૂરી છે."
 
 #. Type: select
 #. Description
@@ -871,7 +869,7 @@ msgstr "બેલારશિયન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "બેલ્જીયન-૨-લેટિન૧"
+msgstr "બેલ્જીયન"
 
 #. Type: select
 #. Choices
@@ -895,7 +893,7 @@ msgstr "બલ્ગેરિયન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "બલ્ગેરિયન-phonetic"
+msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
 
 #. Type: select
 #. Choices
@@ -907,7 +905,7 @@ msgstr "કેનેડિયન ફ્રેન્ચ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "કેનેડિઅન-મલ્ટિ"
+msgstr "કેનેડિયન બહુભાષીય"
 
 #. Type: select
 #. Choices
@@ -919,13 +917,13 @@ msgstr "ક્રોએશિયન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "ચૅઝ-લેટિન૨"
+msgstr "ચૅઝ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr "ડેનિશ-લેટિન૧"
+msgstr "ડેનિશ"
 
 #. Type: select
 #. Choices
@@ -1009,7 +1007,7 @@ msgstr "કિર્ગિઝ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "લેટિન-લેટિન૧"
+msgstr "લેટિન અમેરિકન"
 
 #. Type: select
 #. Choices
@@ -1063,7 +1061,7 @@ msgstr "રશિયન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "સર્બિયન-સિરીલીક"
+msgstr "સર્બિયન (સિરીલીક)"
 
 #. Type: select
 #. Choices
@@ -1111,13 +1109,13 @@ msgstr "થાઇ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "તુર્કિશ-f લેઆઉટ"
+msgstr "તુર્કિશ (F દેખાવ)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "તુર્કિશ-q લેઆઉટ"
+msgstr "તુર્કિશ (Q દેખાવ)"
 
 #. Type: select
 #. Choices
@@ -1129,4 +1127,4 @@ msgstr "યુક્રેનિયન"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "ઉપયોગ કરવાનો કીમેપ:"
+msgstr "ઉપયોગ કરવાનો કળનકશો:"
