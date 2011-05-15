@@ -933,7 +933,7 @@ msgstr "Bulgarisch"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bulgarisch (phonetic-Anordnung)"
+msgstr "Bulgarisch (Phonetic-Anordnung)"
 
 #. Type: select
 #. Choices
