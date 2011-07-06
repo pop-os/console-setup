@@ -1,7 +1,11 @@
-console-setup (1.74) unstable; urgency=low
+console-setup (1.74) UNRELEASED; urgency=low
 
   [ Samuel Thibault ]
   * Add cn(uig) keyboard (non-latin) variant.
+  * Add d-i layouts for all supported languages: al, ara, es(ast), bd, by,
+    in(ben), ba, es(cat), cn, bt, epo, et, ge, in(guj), in(jhelum), in(deva),
+    ie, in(kan), kz, kh, kr, tr(ku_f), tr(ku), in(mal), np, no(smi), ir,
+    in(guru), lk, in(tam), in(tel), cn(uig), vn.
 
  -- Samuel Thibault <sthibault@debian.org>  Sun, 03 Jul 2011 19:56:44 +0200
 
