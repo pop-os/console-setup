@@ -16,6 +16,10 @@
 #
 # ituloy angsulong mga kapatid http://www.upm.edu.ph/~xenos
 #
+#
+# Translations from iso-codes:
+#   Eric Pareja <xenos@upm.edu.ph> 2005,2006
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -854,7 +858,6 @@ msgstr "Ingles ng Amerikano"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "Romanian"
 
@@ -874,7 +877,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
@@ -899,7 +902,6 @@ msgstr "Belgian"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "Estonian"
 
@@ -1142,7 +1144,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "Turkish (F layout)"
 
@@ -1151,7 +1152,6 @@ msgstr "Turkish (F layout)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "Turkish (Q layout)"
 
@@ -1202,8 +1202,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Hilagang America"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1216,7 +1217,6 @@ msgstr "Norwegian"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "Belarusian"
 

@@ -9,6 +9,11 @@
 # Copyright @ 2006 Free Software Foundation, Inc.
 # Sonam Rinchen <somchen@druknet.bt>, 2006.
 #
+#
+# Translations from iso-codes:
+#   Free Software Foundation, Inc., 2006
+#   Kinley Tshering <gaseokuenden2k3@hotmail.com>, 2006
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: dDz.po\n"
@@ -881,17 +886,14 @@ msgstr "ཨ་མི་རི་ཀཱན་ ཨིང་ལིཤ།"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "རོ་མ་ནི་ཡཱན། "
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". ཨ་ར་བིཀ།"
+msgstr "ཨ་ར་བིཀ།"
 
 #. Type: select
 #. Choices
@@ -903,7 +905,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "བང་ལ་དེཤི།"
 
 #. Type: select
 #. Choices
@@ -928,7 +930,6 @@ msgstr "བེལ་ཇི་ཡཱན།"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "ཨིསི་ཊོ་ནི་ཡཱན།"
 
@@ -1041,7 +1042,6 @@ msgstr "ཨིསི་ཊོ་ནི་ཡཱན།"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". ཨི་ཐིའོ་པིཀ"
 
@@ -1062,10 +1062,8 @@ msgstr "ཕིརེནཆི།"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# ཇིའོར་ཇི་ཡཱན།"
+msgstr "ཇིའོར་ཇི་ཡཱན།"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1173,7 +1171,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "ཊར་ཀིཤ། (ཨེཕ་སྒྲིག་བཀོད།)"
 
@@ -1182,17 +1179,14 @@ msgstr "ཊར་ཀིཤ། (ཨེཕ་སྒྲིག་བཀོད།)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "ཊར་ཀིཤ།(ཀེཡུ་ སྒྲིག་བཀོད།)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ལའོ།"
+msgstr "ལའོ།"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
@@ -1235,8 +1229,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "བྱང་ ཨེ་མི་རི་ཀ"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1249,7 +1244,6 @@ msgstr "ནོར་ཝེ་ཇི་ཡཱན།"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "བེ་ལ་རུ་སི་ཡཱན། "
 
@@ -1388,7 +1382,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". ལེ་ཊིན་ - ཝེཊི་ན་མིསི།"
 

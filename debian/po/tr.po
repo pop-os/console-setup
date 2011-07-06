@@ -14,6 +14,20 @@
 # Murat Demirten <murat@debian.org>, 2004.
 #
 # Mert Dirik <mertdirik@gmail.com>, 2008, 2009.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   (translations from drakfw)
+#   Fatih Demir <kabalak@gmx.net>, 2000.
+#   Free Software Foundation, Inc., 2000,2004
+#   Kemal Yilmaz <kyilmaz@uekae.tubitak.gov.tr>, 2001.
+#   Mert Dirik <mertdirik@gmail.com>, 2008.
+#   Nilgün Belma Bugüner <nilgun@fide.org>, 2001.
+#   Recai Oktaş <roktas@omu.edu.tr>, 2004.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Ömer Fadıl USTA <omer_fad@hotmail.com>, 1999.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -892,30 +906,27 @@ msgstr "Amerikan İngilizcesi"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Romanca"
+msgstr "Arnavutça"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "Arapça"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". Arapça"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Avusturya"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladeş"
 
 #. Type: select
 #. Choices
@@ -927,7 +938,7 @@ msgstr "Beyaz Rusça"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Bengalce"
 
 # console-keymaps-acorn, Belgian
 #. Type: select
@@ -939,10 +950,8 @@ msgstr "Belçika dili"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Estonya dili"
+msgstr "Boşnakça"
 
 # console-keymaps-acorn, Brazilian
 #. Type: select
@@ -988,14 +997,15 @@ msgstr "Kanada Çokdilli"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "İptal"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Çince"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -1035,13 +1045,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Dzongkha (Butan)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
@@ -1053,7 +1063,6 @@ msgstr "Estonya dili"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Etiyopyaca"
 
@@ -1074,10 +1083,8 @@ msgstr "Fransızca"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Gürcü Dili"
+msgstr "Gürcüce"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1096,13 +1103,13 @@ msgstr "Yunanca"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati (Hindistan)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmukhi"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1111,11 +1118,13 @@ msgstr ""
 msgid "Hebrew"
 msgstr "İbranice"
 
+# src/toolbar.c:237
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Hindi"
-msgstr ""
+msgstr "Bul"
 
 #. Type: select
 #. Choices
@@ -1134,7 +1143,7 @@ msgstr "İzlanda dili"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "İrlandaca"
 
 # console-keymaps-acorn, Italian
 #. Type: select
@@ -1154,13 +1163,13 @@ msgstr "Japonca"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Kazak Dili"
 
 #. Type: select
 #. Choices
@@ -1178,14 +1187,13 @@ msgstr "Kırgızca"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Korece"
 
 # console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "Türkçe (F düzeni)"
 
@@ -1194,17 +1202,14 @@ msgstr "Türkçe (F düzeni)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "Türkçe (Q düzeni)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Lao Dili"
+msgstr "Laos Dili"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
@@ -1236,19 +1241,22 @@ msgstr "Makedonca"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Malayalam"
 
+# src/bookmarks_editor.c:822
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Nepali"
-msgstr ""
+msgstr "Yeni _takma ad"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Northern Marianas"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1261,9 +1269,8 @@ msgstr "Norveççe"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Beyaz Rusça"
+msgstr "Yazdır"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1282,8 +1289,9 @@ msgstr "Portekizce"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "Panama"
 
 #. Type: select
 #. Choices
@@ -1355,14 +1363,15 @@ msgstr "İsviçre Almancası"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Tamil"
-msgstr ""
+msgstr "Taylandça"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #. Type: select
 #. Choices
@@ -1396,13 +1405,12 @@ msgstr "Ukrayna dili"
 msgid "Uyghur"
 msgstr ""
 
+# src/mozilla_i18n.c:37
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - Vietnam Dili"
+msgstr "Vietnamca"
 
 #. Type: select
 #. Description

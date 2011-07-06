@@ -875,9 +875,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Belgian"
-msgstr "Álgu"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1006,9 +1005,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Georgian"
-msgstr "Álgu"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1166,8 +1164,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Davvi Amerihkká"
 
 #. Type: select
 #. Choices

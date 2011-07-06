@@ -6,6 +6,17 @@
 # translation of ar.po to Arabic
 # Arabic messages for debian-installer. Copyright (C) 2003 Software in the Public Interest, Inc. This file is distributed under the same license as debian-installer. Ossama M. Khayat <okhayat@yahoo.com>, 2005.
 # Ossama M. Khayat <okhayat@yahoo.com>, 2006, 2007, 2008, 2009, 2010.
+#
+# Translations from iso-codes:
+#   Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   Free Software Foundation, Inc., 2002, 2004
+#   Ossama M. Khayat <okhayat@yahoo.com>, 2006, 2008, 2010.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from kde-i18n/desktop.po: 
+#   Mohammad Gamal <f2c2001@yahoo.com>, 2001.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
@@ -863,17 +874,14 @@ msgstr "الأميركية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "الرومانية"
+msgstr "الأذربيجانية"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". العربية"
+msgstr "العربية"
 
 #. Type: select
 #. Choices
@@ -885,7 +893,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "بنغلادش"
 
 #. Type: select
 #. Choices
@@ -897,7 +905,7 @@ msgstr "البيلاروسية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "البنغالية"
 
 # console-keymaps-acorn, Belgian
 #. Type: select
@@ -910,9 +918,8 @@ msgstr "البلجيكية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "الإستونية"
+msgstr "الرومانية"
 
 # console-keymaps-acorn, Brazilian
 #. Type: select
@@ -965,7 +972,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "الصينية"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -1005,13 +1012,13 @@ msgstr "dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "الزونخاية"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "الإسبرانتو"
 
 #. Type: select
 #. Choices
@@ -1023,7 +1030,6 @@ msgstr "الإستونية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". الإثيوبية"
 
@@ -1045,9 +1051,8 @@ msgstr "الفرنسية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# الجورجية"
+msgstr "الألمانية"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1066,13 +1071,13 @@ msgstr "اليونانية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "الغوجاراتية"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "الجرمخى"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1085,7 +1090,7 @@ msgstr "العبرية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "الهندية"
 
 #. Type: select
 #. Choices
@@ -1104,7 +1109,7 @@ msgstr "الآيسلندية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "الأيرلندية"
 
 # console-keymaps-acorn, Italian
 #. Type: select
@@ -1148,31 +1153,28 @@ msgstr "قيرغيز"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "الكورية"
 
 # console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "التركية"
+msgstr "الكردية"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "التركية"
+msgstr "الكردية"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "# اللاو"
 
@@ -1212,13 +1214,14 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "النيبالية"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "أميركا الشماليّة"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1230,10 +1233,8 @@ msgstr "النرويجية"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "البيلاروسية"
+msgstr "الفارسي"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1326,7 +1327,7 @@ msgstr "الألمانية السويسرية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "التاميلية"
 
 #. Type: select
 #. Choices
@@ -1369,10 +1370,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". اللاتينية - الفيتنامية"
+msgstr "الفييتنامية"
 
 #. Type: select
 #. Description

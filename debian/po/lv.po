@@ -10,6 +10,17 @@
 # Latvian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Aigars Mahinovs <aigarius@debian.org>, 2006.
+# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+# Copyright (C) Free Software Foundation, Inc., 2001,2003.
+# Free Software Foundation, Inc., 2002,2004
+# Juris Kudiņš <cooker@inbox.lv>, 2001.
+# Rihards Priedītis <rprieditis@gmail.com>, 2009, 2010.
+# Translations from KDE:
+# Andris Maziks <andzha@latnet.lv> 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
@@ -874,29 +885,27 @@ msgstr "Amerikāņu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Rumāņu"
+msgstr "Azerbaidžāņu"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "Arābu"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". Arābu"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Austrija"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladeša"
 
 #. Type: select
 #. Choices
@@ -907,8 +916,9 @@ msgstr "Baltkrievu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Bengali"
-msgstr ""
+msgstr "Rietumvirdžīnija"
 
 #. Type: select
 #. Choices
@@ -920,9 +930,8 @@ msgstr "Beļģu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Igauņu"
+msgstr "Rumāņu"
 
 #. Type: select
 #. Choices
@@ -963,14 +972,15 @@ msgstr "Kanādiešu daudzvalodu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "Atcelt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Ķīniešu"
 
 #. Type: select
 #. Choices
@@ -1005,14 +1015,15 @@ msgstr "Dvorak"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Dzongkha"
-msgstr ""
+msgstr "Mongolija"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
@@ -1024,7 +1035,6 @@ msgstr "Igauņu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Etiopiešu"
 
@@ -1044,9 +1054,8 @@ msgstr "Franču"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Gruzīņu"
+msgstr "Vācu"
 
 #. Type: select
 #. Choices
@@ -1063,14 +1072,15 @@ msgstr "Grieķu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Gujarati"
-msgstr ""
+msgstr "Guatemala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmuhī"
 
 #. Type: select
 #. Choices
@@ -1081,8 +1091,9 @@ msgstr "Ēbreju"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Hindi"
-msgstr ""
+msgstr "Indija"
 
 #. Type: select
 #. Choices
@@ -1100,7 +1111,7 @@ msgstr "Islandiešu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Īru"
 
 #. Type: select
 #. Choices
@@ -1117,8 +1128,9 @@ msgstr "Japāniešu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Kannada"
-msgstr ""
+msgstr "Gana"
 
 #. Type: select
 #. Choices
@@ -1142,29 +1154,24 @@ msgstr "Kirgīzu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Korejiešu"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Turku (F izklājums)"
+msgstr "Kurdu (F izklājums)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Turku (Q izklājums)"
+msgstr "Kurdu (Q izklājums)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "# Laosas"
 
@@ -1195,8 +1202,9 @@ msgstr "Makedoniešu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Malayalam"
-msgstr ""
+msgstr "Malta"
 
 #. Type: select
 #. Choices
@@ -1207,8 +1215,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Ziemeļdakota"
 
 #. Type: select
 #. Choices
@@ -1220,9 +1229,8 @@ msgstr "Norvēģu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Baltkrievu"
+msgstr "Serbu"
 
 #. Type: select
 #. Choices
@@ -1239,8 +1247,9 @@ msgstr "Portugāļu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "Panama"
 
 #. Type: select
 #. Choices
@@ -1306,7 +1315,7 @@ msgstr "Šveices vāciešu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tamilu"
 
 #. Type: select
 #. Choices
@@ -1347,10 +1356,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - Vjetnamiešu"
+msgstr "Vjetnamiešu"
 
 #. Type: select
 #. Description

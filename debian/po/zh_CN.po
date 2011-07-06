@@ -13,12 +13,27 @@
 # Kenlen Lai (2008), WCM (2008), Ren Xiaolei (2008).
 # YunQiang Su <wzssyqa@gmail.com>, 2010, 2011.
 #
+#
+# Translations from iso-codes:
+#   Tobias Toedter <t.toedter@gmx.net>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+#   Free Software Foundation, Inc., 2002, 2003, 2007, 2008.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
+#   Translations taken from KDE:
+#   - Wang Jian <lark@linux.net.cn>, 2000.
+#   - Carlos Z.F. Liu <carlosliu@users.sourceforge.net>, 2004 - 2006.
+#   LI Daobing <lidaobing@gmail.com>, 2007, 2008, 2009, 2010.
+#   YunQiang Su <wzssyqa@gmail.com>, 2011.
+#
+#   Mai Hao Hui <mhh@126.com>, 2001 (translations from galeon)
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-04-15 11:58+0800\n"
+"PO-Revision-Date: 2011-05-06 21:29+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -849,30 +864,27 @@ msgstr "美国英语"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "罗马尼亚语"
+msgstr "阿尔巴尼亚语"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "阿拉伯语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". 阿拉伯语"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "阿斯图利亚斯"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "孟加拉"
 
 #. Type: select
 #. Choices
@@ -884,7 +896,7 @@ msgstr "白俄罗斯语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "孟加拉语"
 
 #. Type: select
 #. Choices
@@ -895,10 +907,8 @@ msgstr "比利时语-拉丁1"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "爱沙尼亚语"
+msgstr "波斯尼亚语"
 
 #. Type: select
 #. Choices
@@ -939,14 +949,15 @@ msgstr "加拿大-多語言"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "加泰罗尼亚"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "汉语"
 
 #. Type: select
 #. Choices
@@ -983,13 +994,13 @@ msgstr "多冉柯键盘(Dvorak)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "不丹语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "世界语"
 
 #. Type: select
 #. Choices
@@ -1001,7 +1012,6 @@ msgstr "爱沙尼亚语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". 埃塞俄比亚语"
 
@@ -1020,10 +1030,8 @@ msgstr "法语"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# 格鲁吉亚语"
+msgstr "格鲁吉亚语"
 
 #. Type: select
 #. Choices
@@ -1041,13 +1049,13 @@ msgstr "希腊语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "古吉拉特语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "果鲁穆奇语"
 
 #. Type: select
 #. Choices
@@ -1059,7 +1067,7 @@ msgstr "希伯来语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "印地语"
 
 #. Type: select
 #. Choices
@@ -1077,7 +1085,7 @@ msgstr "冰岛语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "爱尔兰语"
 
 #. Type: select
 #. Choices
@@ -1095,13 +1103,13 @@ msgstr "日语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "卡纳达语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "哈萨克语"
 
 #. Type: select
 #. Choices
@@ -1119,31 +1127,25 @@ msgstr "吉尔吉斯语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "朝鲜语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "土耳其语(F 布局)"
+msgstr "库尔德语(F 布局)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "土耳其语(Q 布局)"
+msgstr "库尔德语(Q 布局)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# 老挝语"
+msgstr "老挝语"
 
 #. Type: select
 #. Choices
@@ -1173,19 +1175,20 @@ msgstr "马其顿语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "马拉雅拉姆语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "尼泊尔语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "北萨马"
 
 #. Type: select
 #. Choices
@@ -1196,10 +1199,8 @@ msgstr "挪威语"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "白俄罗斯语"
+msgstr "波斯语"
 
 #. Type: select
 #. Choices
@@ -1216,8 +1217,9 @@ msgstr "葡萄牙语"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "旁遮普邦"
 
 #. Type: select
 #. Choices
@@ -1283,13 +1285,13 @@ msgstr "瑞士德语"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "泰米尔语"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "泰卢固语"
 
 #. Type: select
 #. Choices
@@ -1324,10 +1326,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". 拉丁 - 越南语"
+msgstr "越南语"
 
 #. Type: select
 #. Description

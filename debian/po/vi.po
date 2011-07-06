@@ -11,6 +11,12 @@
 # Trịnh Minh Thành <tmthanh@yahoo.com>
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
 #
+#
+# Translations from iso-codes:
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
+# Copyright © 2009 Free Software Foundation, Inc.
+# Nguyễn Hùng Vũ <vuhung16@bigfoot.com>, 2001.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
@@ -881,30 +887,27 @@ msgstr "Anh Mỹ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Rô-ma-ni"
+msgstr "Tiếng An-ba-ni"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "Tiếng A Rập"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". A Rập"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturias"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bang-la-đesợ"
 
 #. Type: select
 #. Choices
@@ -916,7 +919,7 @@ msgstr "Be-la-ru-xợ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Tiếng Băng Gan"
 
 #. Type: select
 #. Choices
@@ -927,10 +930,8 @@ msgstr "Bỉ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "E-x-tô-ni-a"
+msgstr "Tiếng Bô-xni-a"
 
 #. Type: select
 #. Choices
@@ -971,14 +972,15 @@ msgstr "Ca-na-đa đa ngôn ngữ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "Naftalan"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Tiếng Trung Quốc"
 
 #. Type: select
 #. Choices
@@ -1014,13 +1016,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Tiếng Đ-xong-kha"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Tiếng E-x-pê-ran-tô"
 
 #. Type: select
 #. Choices
@@ -1032,7 +1034,6 @@ msgstr "E-x-tô-ni-a"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Ê-ti-ô-pi"
 
@@ -1051,10 +1052,8 @@ msgstr "Pháp"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Gi-oa-gi-a"
+msgstr "Tiếng Gi-oa-gi-a"
 
 #. Type: select
 #. Choices
@@ -1072,13 +1071,13 @@ msgstr "Hy Lạp"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Tiếng Gu-gia-ra-ti"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gổ-mu-khi"
 
 #. Type: select
 #. Choices
@@ -1090,7 +1089,7 @@ msgstr "Do Thái"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Tiếng Hin-đi"
 
 #. Type: select
 #. Choices
@@ -1108,7 +1107,7 @@ msgstr "Băng Đảo"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Tiếng Ái Nhĩ Lan"
 
 #. Type: select
 #. Choices
@@ -1126,13 +1125,13 @@ msgstr "Nhật"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Tiếng Kan-na-đa"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Tiếng Ca-xakh"
 
 #. Type: select
 #. Choices
@@ -1150,31 +1149,25 @@ msgstr "Tiếng Kit-ki-dơ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Tiếng Hàn"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Thổ Nhĩ Kỳ (bố trí F)"
+msgstr "Tiếng Kurd (bố trí F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Thổ Nhĩ Kỳ (bố trí Q)"
+msgstr "Tiếng Kurd (bố trí Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Lào"
+msgstr "Tiếng Lào"
 
 #. Type: select
 #. Choices
@@ -1204,19 +1197,20 @@ msgstr "Ma-xê-đô-ni"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Tiếng Ma-lay-am"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Tiếng Nê-pan"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Bắc Samar"
 
 #. Type: select
 #. Choices
@@ -1227,10 +1221,8 @@ msgstr "Na Uy"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Be-la-ru-xợ"
+msgstr "Tiếng Ba Tư"
 
 #. Type: select
 #. Choices
@@ -1247,8 +1239,9 @@ msgstr "Bồ Đào Nha"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "Pun-gia-bợ"
 
 #. Type: select
 #. Choices
@@ -1314,13 +1307,13 @@ msgstr "Đức Thuỵ Sĩ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tiếng Ta-min"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Tiếng Te-lu-gu"
 
 #. Type: select
 #. Choices
@@ -1355,10 +1348,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin: Tiếng Việt"
+msgstr "Tiếng Việt"
 
 #. Type: select
 #. Description

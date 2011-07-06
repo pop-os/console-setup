@@ -832,17 +832,14 @@ msgstr "ພາສາອັງກິດອາເມລິກັນ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "ໂຣມາເນຍ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". ອາລັບ"
+msgstr "ອາລັບ"
 
 #. Type: select
 #. Choices
@@ -878,7 +875,6 @@ msgstr "ຊາວເບລຢຽມ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "ເອສໂຕເນຍ"
 
@@ -982,7 +978,6 @@ msgstr "ເອສໂຕເນຍ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr "ອີຕີໂອປຽຍ"
 
@@ -1001,8 +996,6 @@ msgstr "ຝຣັ່ງເສດ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
 msgstr "ຈໍເຈ້ຍ"
 
@@ -1106,7 +1099,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "ຕຸຣະກີ(ແບບ F)"
 
@@ -1114,15 +1106,12 @@ msgstr "ຕຸຣະກີ(ແບບ F)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "ຕຸລະກີ (ແບບ Q )"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "ລາວ"
 
@@ -1165,8 +1154,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "ອາເມລິກາເໜືອ"
 
 #. Type: select
 #. Choices
@@ -1178,7 +1168,6 @@ msgstr "ນໍເວ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "ກ່ຽວກັບເບລະຣູສ"
 
@@ -1306,7 +1295,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr "ລາຕິນ-ຫວຽດນາມ"
 

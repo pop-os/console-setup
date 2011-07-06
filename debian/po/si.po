@@ -848,10 +848,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". අරාබි"
+msgstr "අරාබි"
 
 #. Type: select
 #. Choices
@@ -880,16 +878,14 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Belgian"
-msgstr "ඇරඹුම"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "නැගෙනහිර ඉංදියානා"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -986,15 +982,13 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Estonian"
-msgstr "නැගෙනහිර ඉංදියානා"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". ඉතියෝපියානු"
 
@@ -1014,10 +1008,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# ජෝජියානු"
+msgstr "ජෝජියානු"
 
 #. Type: select
 #. Choices
@@ -1134,10 +1126,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ලාඕ"
+msgstr "ලාඕ"
 
 #. Type: select
 #. Choices
@@ -1180,8 +1170,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "උතුරු ඇමෙරිකාව"
 
 #. Type: select
 #. Choices
@@ -1322,7 +1313,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". ලතින් - වියෙට්නාම"
 

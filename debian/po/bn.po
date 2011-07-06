@@ -18,6 +18,14 @@
 # Sadia Afroz <sadia@ankur.org.bd>, 2010.
 # Israt Jahan <israt@ankur.org.bd>, 2010.
 #
+#
+# Translations from iso-codes:
+#   Debian Foundation, 2005.
+#   Progga <progga@BengaLinux.Org>, 2005.
+#   Jamil Ahmed <jamil@bengalinux.org>, 2006.
+#   Md. Rezwan Shahid <rezwan@ankur.org.bd>, 2009.
+#   Israt Jahan <israt@ankur.org.bd>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
@@ -873,17 +881,14 @@ msgstr "মার্কিন ইংরেজী"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "রোমানীয়"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". আরবি"
+msgstr "আরবি"
 
 #. Type: select
 #. Choices
@@ -895,7 +900,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "বাংলাদেশ"
 
 #. Type: select
 #. Choices
@@ -920,7 +925,6 @@ msgstr "বেলজিয়"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "এস্তোনীয়"
 
@@ -1020,8 +1024,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Esperanto"
-msgstr ""
+msgstr "এসপিরিটো সানটো"
 
 #. Type: select
 #. Choices
@@ -1033,7 +1038,6 @@ msgstr "এস্তোনীয়"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". ইথোপীয়"
 
@@ -1054,10 +1058,8 @@ msgstr "ফরাসি"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# জর্জীয়"
+msgstr "জর্জীয়"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1165,7 +1167,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "তুর্কি (F লেআউট)"
 
@@ -1174,17 +1175,14 @@ msgstr "তুর্কি (F লেআউট)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "তুর্কি (Q লেআউট)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# লাও"
+msgstr "লাও"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
@@ -1227,8 +1225,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "নর্দান টেরিটরি"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1241,7 +1240,6 @@ msgstr "নরওয়েজীয়"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "বেলারুশীয়"
 
@@ -1380,7 +1378,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". ল্যাটিন - ভিয়েতনামী"
 

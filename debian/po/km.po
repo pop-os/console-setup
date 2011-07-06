@@ -5,6 +5,11 @@
 #
 # translation of debian-installer_packages_po_sublevel1_km.po to Khmer
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008, 2010.
+#
+# Translations from iso-codes:
+#   eng vannak <evannak@khmeros.info>, 2006.
+#   auk piseth <piseth_dv@khmeros.info>, 2006.
+#   Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_km\n"
@@ -857,17 +862,14 @@ msgstr "អង់គ្លេស អាមេរិក"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "រ៉ូម៉ានី"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". អារ៉ាប់"
+msgstr "អារ៉ាប់"
 
 #. Type: select
 #. Choices
@@ -879,7 +881,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "បង់ក្លាដេស"
 
 #. Type: select
 #. Choices
@@ -903,7 +905,6 @@ msgstr "បែលហ្សិក-ឡាតាំង១"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "អេស្តូនី"
 
@@ -1007,7 +1008,6 @@ msgstr "អេស្តូនី"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". អេត្យូពី"
 
@@ -1026,10 +1026,8 @@ msgstr "បារាំង"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# ហ្សកហ្ស៊ី"
+msgstr "ហ្សកហ្ស៊ី"
 
 #. Type: select
 #. Choices
@@ -1131,7 +1129,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "ទួរគី (ប្លង់ F)"
 
@@ -1139,17 +1136,14 @@ msgstr "ទួរគី (ប្លង់ F)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "ទួរគី (ប្លង់ Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ឡាវ"
+msgstr "ឡាវ"
 
 #. Type: select
 #. Choices
@@ -1190,8 +1184,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "អាមេរិកខាងជើង​"
 
 #. Type: select
 #. Choices
@@ -1203,7 +1198,6 @@ msgstr "ន័រវ៉ែស"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "បេឡារុស្ស​​"
 
@@ -1331,7 +1325,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". ឡាតាំង - វៀតណាម"
 

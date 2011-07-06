@@ -8,6 +8,10 @@
 # This file is distributed under the same license as debian-installer.
 #
 #
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004
+#   Elian Myftiu <elian.myftiu@gmail.com>, 2004,2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -856,17 +860,14 @@ msgstr "Angleze (SHBA)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "Rumune"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". Arabe"
+msgstr "Arabe"
 
 #. Type: select
 #. Choices
@@ -878,7 +879,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
@@ -902,7 +903,6 @@ msgstr "Belge"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "Estone"
 
@@ -1006,7 +1006,6 @@ msgstr "Estone"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Etiopike"
 
@@ -1025,10 +1024,8 @@ msgstr "Franceze"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Gjeorgjiane"
+msgstr "Gjeorgjiane"
 
 #. Type: select
 #. Choices
@@ -1130,7 +1127,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "Turke (planimetri F)"
 
@@ -1138,17 +1134,14 @@ msgstr "Turke (planimetri F)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "Turke (planimetri Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Lao"
+msgstr "Lao"
 
 #. Type: select
 #. Choices
@@ -1189,8 +1182,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Amerika e Veriut"
 
 #. Type: select
 #. Choices
@@ -1202,7 +1196,6 @@ msgstr "Norvegjeze"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "Bjelloruse"
 
@@ -1330,10 +1323,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - Vietnamisht"
+msgstr "Vietnamisht"
 
 #. Type: select
 #. Description

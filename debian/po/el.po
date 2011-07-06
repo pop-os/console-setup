@@ -17,6 +17,17 @@
 # QUAD-nrg.net <yodesy@quad-nrg.net>, 2006.
 # galaxico@quad-nrg.net <galaxico@quad-nrg.net>, 2009.
 # Emmanuel Galatoulas <galaxico@quad-nrg.net>, 2009, 2010.
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Panayotis Pakos <aeikineton@yahoo.com>
+#   Free Software Foundation, Inc., 2004.
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   QUAD-nrg.net <yodesy@quad-nrg.net>, 2006, 2010.
+#   Simos Xenitellis <simos@hellug.gr>, 2001.
+#   Konstantinos Margaritis <markos@debian.org>, 2004.
+#   Athanasios Lefteris <alefteris@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
@@ -899,18 +910,14 @@ msgstr "Αγγλική ΗΠΑ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Ρουμανική"
+msgstr "Αλβανικά"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". Αραβική"
+msgstr "Αραβικά"
 
 #. Type: select
 #. Choices
@@ -922,7 +929,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Μπανγκλαντές"
 
 #. Type: select
 #. Choices
@@ -934,7 +941,7 @@ msgstr "Λευκορωσική"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Βεγκάζης"
 
 #. Type: select
 #. Choices
@@ -945,10 +952,8 @@ msgstr "Βελγική"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Εσθονική"
+msgstr "Βοσνιακά"
 
 #. Type: select
 #. Choices
@@ -997,7 +1002,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Κινέζικα"
 
 #. Type: select
 #. Choices
@@ -1039,7 +1044,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Εσπεράντο"
 
 #. Type: select
 #. Choices
@@ -1051,7 +1056,6 @@ msgstr "Εσθονική"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Αιθιοπική"
 
@@ -1070,10 +1074,8 @@ msgstr "Γαλλική"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Γεωργιανή"
+msgstr "Γεωργιανά"
 
 #. Type: select
 #. Choices
@@ -1109,7 +1111,7 @@ msgstr "Εβραϊκή"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Ινδουικά"
 
 #. Type: select
 #. Choices
@@ -1123,11 +1125,12 @@ msgstr "Ουγγρική"
 msgid "Icelandic"
 msgstr "Ισλανδική"
 
+#
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Ιρλανδέζικα"
 
 #. Type: select
 #. Choices
@@ -1169,29 +1172,24 @@ msgstr "Κιργιζική"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Κορεάτικα"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Τουρκική (διάταξη F)"
+msgstr "Κούρδικα (διάταξη F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Τουρκική (διάταξη Q)"
+msgstr "Κούρδικα (διάταξη Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "# Λαοτινή"
 
@@ -1234,8 +1232,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Βόρεια"
 
 #. Type: select
 #. Choices
@@ -1246,10 +1245,8 @@ msgstr "Νορβηγική"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Λευκορωσική"
+msgstr "Περσικά"
 
 #. Type: select
 #. Choices
@@ -1333,7 +1330,7 @@ msgstr "Γερμανική Ελβετίας"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Ταϊλανδέζικα"
 
 #. Type: select
 #. Choices
@@ -1371,13 +1368,12 @@ msgstr "Ουκρανική"
 msgid "Uyghur"
 msgstr ""
 
+#
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - Βιετναμέζικη"
+msgstr "Βιετναμέζικα"
 
 #. Type: select
 #. Description

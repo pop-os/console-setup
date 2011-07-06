@@ -7,6 +7,21 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
+#   Free Software Foundation, Inc., 2000, 2001, 2004, 2005, 2006
+#   IIDA Yosiaki <iida@gnu.org>, 2004, 2005, 2006.
+#   Kenshi Muto <kmuto@debian.org>, 2006-2007
+#   Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2001.
+#   Takuro Ashie <ashie@homa.ne.jp>, 2001.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Translations from KDE: 
+#   - Taiki Komoda <kom@kde.gr.jp>
+#   Yasuaki Taniguchi <yasuakit@gmail.com>, 2010, 2011.
+#   Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -865,33 +880,32 @@ msgstr ""
 msgid "American English"
 msgstr "米国"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "ルーマニア"
+msgstr "アルバニア語"
+
+# 国国
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "アラビア語"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". アラブ語"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "アストゥリアス"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "バングラデシュ"
 
 #. Type: select
 #. Choices
@@ -899,11 +913,12 @@ msgstr ""
 msgid "Belarusian"
 msgstr "ベラルーシ"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "ベンガル語"
 
 #. Type: select
 #. Choices
@@ -914,10 +929,8 @@ msgstr "ベルギー"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "エストニア"
+msgstr "ボスニア語"
 
 #. Type: select
 #. Choices
@@ -958,14 +971,16 @@ msgstr "カナダ(多言語)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "カタルーニャ"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "中国語"
 
 #. Type: select
 #. Choices
@@ -997,17 +1012,21 @@ msgstr "オランダ"
 msgid "Dvorak"
 msgstr "Dvorak"
 
+# ブータン
+# ゾンカー語とも
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "ゾンカ語"
 
+# 国国
+# USMARCは-ESP
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "エスペラント語"
 
 #. Type: select
 #. Choices
@@ -1019,7 +1038,6 @@ msgstr "エストニア"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". エティオピア語"
 
@@ -1035,13 +1053,12 @@ msgstr "フィンランド"
 msgid "French"
 msgstr "フランス"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# グルジア語"
+msgstr "グルジア語"
 
 #. Type: select
 #. Choices
@@ -1055,17 +1072,21 @@ msgstr "ドイツ"
 msgid "Greek"
 msgstr "ギリシャ"
 
+# 国国
+# KDE訳は「グジャラート語」「グジャラティ語」
+# ニッポニカ「グジャラート人」の項に「グジャラート語」
+# CLDR訳は「グジャラート語」
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "グジャラーティー語"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "グルムキー文字"
 
 #. Type: select
 #. Choices
@@ -1073,11 +1094,13 @@ msgstr ""
 msgid "Hebrew"
 msgstr "ヘブライ"
 
+# 国国
+# KDE訳は「ヒンディ語」とも
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "ヒンディー語"
 
 #. Type: select
 #. Choices
@@ -1091,11 +1114,13 @@ msgstr "ハンガリー"
 msgid "Icelandic"
 msgstr "アイスランド"
 
+# 国国
+# USMARCは-IRI
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "アイルランド語"
 
 #. Type: select
 #. Choices
@@ -1109,17 +1134,23 @@ msgstr "イタリア"
 msgid "Japanese"
 msgstr "日本"
 
+# 国国
+# KDE訳は「カナラ語」
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "カンナダ語"
 
+# 国国
+# KDE訳は「カザフ語」「カザーク語」
+# ニッポニカ「カザフ語」の項に「ハザック語とも」「カザック語と」
+# CLDR訳は「カザフ語」
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "カザーフ語"
 
 #. Type: select
 #. Choices
@@ -1135,35 +1166,35 @@ msgstr ""
 msgid "Kirghiz"
 msgstr "キルギス語"
 
+# 国国
+# KDE訳は「韓国語」
+# 広辞苑、ニッポニカ「朝鮮語」の項
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "朝鮮語"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "トルコ (F 配置)"
+msgstr "クルド語 (F 配置)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "トルコ (Q レイアウト)"
+msgstr "クルド語 (Q レイアウト)"
 
+# 国国
+# ラオス語とも
+# 広辞苑「ラオス」の項に「ラオ語」
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ラオ語"
+msgstr "ラオ語"
 
 #. Type: select
 #. Choices
@@ -1189,23 +1220,26 @@ msgstr "リトアニア"
 msgid "Macedonian"
 msgstr "マケドニア"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "マラヤーラム語"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "ネパール語"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "北ケープ"
 
 #. Type: select
 #. Choices
@@ -1213,13 +1247,13 @@ msgstr ""
 msgid "Norwegian"
 msgstr "ノルウェー"
 
+# 国国は「〜ャ語」
+# 広辞苑「ペルシア語」の項
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "ベラルーシ"
+msgstr "ペルシア語"
 
 #. Type: select
 #. Choices
@@ -1233,11 +1267,13 @@ msgstr "ポーランド"
 msgid "Portuguese"
 msgstr "ポルトガル"
 
+# 地図帳
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "パンジャーブ"
 
 #. Type: select
 #. Choices
@@ -1299,17 +1335,20 @@ msgstr "スイス (フランス語)"
 msgid "Swiss German"
 msgstr "スイス (ドイツ語)"
 
+# 国国
+# KDE訳、CLDR訳は「タミール語」
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "タミル語"
 
+# 国国
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "テルグ語"
 
 #. Type: select
 #. Choices
@@ -1341,13 +1380,13 @@ msgstr "ウクライナ"
 msgid "Uyghur"
 msgstr ""
 
+# 国国
+# アンナン (安南) 語とも
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". ラテン語 - ベトナム語"
+msgstr "ベトナム語"
 
 #. Type: select
 #. Description

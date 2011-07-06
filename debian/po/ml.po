@@ -15,6 +15,13 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 #
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Praveen A <pravi.a@gmail.com>, 2006, 2008.
+#   Ani Peter <peter.ani@gmail.com>, 2009
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
@@ -864,16 +871,14 @@ msgstr "അമേരിക്കന്‍ ഇംഗ്ലീഷ്"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "റുമേനിയന്‍"
+msgstr "അല്‍ബാനിയന്‍"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr ""
+msgstr "അറബിക്"
 
 #. Type: select
 #. Choices
@@ -885,7 +890,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "ബംഗ്ലാദേശ്"
 
 #. Type: select
 #. Choices
@@ -897,7 +902,7 @@ msgstr "ബെലാറൂസ്യന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "ബംഗാളി"
 
 # console-keymaps-acorn, Belgian
 #. Type: select
@@ -909,10 +914,8 @@ msgstr "ബെല്‍ജിയന്‍"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "എസ്തോണിയന്‍"
+msgstr "ബോസ്നിയന്‍"
 
 # console-keymaps-acorn, Brazilian
 #. Type: select
@@ -965,7 +968,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "ചൈനീസ്"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -1005,13 +1008,13 @@ msgstr "ഡ്വൊറാക്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "സോങ്കാ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "എസ്പറാന്റോ"
 
 #. Type: select
 #. Choices
@@ -1039,13 +1042,11 @@ msgstr "ഫിന്നിഷ്"
 msgid "French"
 msgstr "ഫ്രഞ്ച്"
 
-# console-keymaps-acorn, Norwegian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Georgian"
-msgstr "നോര്‍വീജിയന്‍ "
+msgstr "ജോര്‍ജ്യന്‍"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1064,13 +1065,13 @@ msgstr "ഗ്രീക്ക്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "ഗുജറാത്തി"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "ഗുരുമുഖി"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1083,7 +1084,7 @@ msgstr "ഹീബ്രൂ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "ഹിന്ദി"
 
 #. Type: select
 #. Choices
@@ -1102,7 +1103,7 @@ msgstr "ഐസ്‌ലാന്‍ഡിക് "
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "ഐറിഷ്"
 
 # console-keymaps-acorn, Italian
 #. Type: select
@@ -1122,13 +1123,13 @@ msgstr "ജപ്പാനീസ്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "കന്നഡ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "ഖസക്"
 
 #. Type: select
 #. Choices
@@ -1146,31 +1147,27 @@ msgstr "കിര്‍ഗിസ്സ് "
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "കൊറിയന്‍"
 
 # console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "തുര്‍ക്കിഷ് (F വിന്യാസം)"
+msgstr "കര്‍ഡിഷ് (F വിന്യാസം)"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "തുര്‍ക്കിഷ് (Q വിന്യാസം)"
+msgstr "കര്‍ഡിഷ് (Q വിന്യാസം)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr ""
+msgstr "ലാവോ"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
@@ -1202,19 +1199,20 @@ msgstr "മാസിഡോണിയന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "മലയാളം"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "നേപ്പാളി"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "വടക്കേ അമേരിക്ക"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1226,10 +1224,8 @@ msgstr "നോര്‍വീജിയന്‍ "
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "ബെലാറൂസ്യന്‍"
+msgstr "പേര്‍ശ്യന്‍"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1322,13 +1318,13 @@ msgstr "സ്വിസ്സ് ജര്‍മന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "തമിഴ്"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "തെലുങ്കു"
 
 #. Type: select
 #. Choices
@@ -1366,7 +1362,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr ""
+msgstr "വിയറ്റ്നാമീസ്"
 
 #. Type: select
 #. Description

@@ -12,6 +12,21 @@
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009.
 # Jorge Barreiro <yortx.barry@gmail.com>, 2010.
+#
+# Translations from iso-codes:
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
+#   Translations from KDE desktop.po:
+#   - Jesús Bravo Álvarez <jba@pobox.com>
+#   Alastair McKinstry - further translations from ICU-3.0
+#
+#   Free Software Foundation, Inc., 2000,2002,2003,2004.
+#   Alastair McKinstry, <mckinstry@computer.org>, 2001,2002.
+#   Jacobo Tarrío <jtarrio@debian.org>, 2005, 2006, 2007, 2008.
+#   Jorge Barreiro <yortx.barry@gmail.com>, 2010.
+#
+#   Jesus Bravo Alvarez <jba@pobox.com>, 2001. (from KDE desktop.po)
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
@@ -882,18 +897,14 @@ msgstr "Americano"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Romanés"
+msgstr "Albanés"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". Árabe"
+msgstr "Árabe"
 
 #. Type: select
 #. Choices
@@ -905,7 +916,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
@@ -917,7 +928,7 @@ msgstr "Bielorruso"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Bengalí; Bangla"
 
 #. Type: select
 #. Choices
@@ -928,10 +939,8 @@ msgstr "Belga"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Estoniano"
+msgstr "Bosnio"
 
 #. Type: select
 #. Choices
@@ -979,7 +988,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Chinés"
 
 #. Type: select
 #. Choices
@@ -1015,13 +1024,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Dzonga; Butanés"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
@@ -1033,7 +1042,6 @@ msgstr "Estoniano"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Etíope"
 
@@ -1052,10 +1060,8 @@ msgstr "Francés"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Xeorxiano"
+msgstr "Xeorxiano"
 
 #. Type: select
 #. Choices
@@ -1073,13 +1079,13 @@ msgstr "Grego"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Guxaratí"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmukhi"
 
 #. Type: select
 #. Choices
@@ -1091,7 +1097,7 @@ msgstr "Hebreo"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Hindi"
 
 #. Type: select
 #. Choices
@@ -1109,7 +1115,7 @@ msgstr "Islandés"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Irlandés; Gaélico irlandés"
 
 #. Type: select
 #. Choices
@@ -1127,13 +1133,13 @@ msgstr "Xaponés"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Canarés"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Kazaxo"
 
 #. Type: select
 #. Choices
@@ -1151,31 +1157,25 @@ msgstr "Quirguiz"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Coreano"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Turco (esquema F)"
+msgstr "Kurdo (esquema F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Turco (esquema Q)"
+msgstr "Kurdo (esquema Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Lao"
+msgstr "Laosiano"
 
 #. Type: select
 #. Choices
@@ -1205,19 +1205,20 @@ msgstr "Macedonio"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Malaio"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Nepalés"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "América do norte"
 
 #. Type: select
 #. Choices
@@ -1228,10 +1229,8 @@ msgstr "Noruegués"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Bielorruso"
+msgstr "Persa"
 
 #. Type: select
 #. Choices
@@ -1315,13 +1314,13 @@ msgstr "Alemán (Suíza)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #. Type: select
 #. Choices
@@ -1356,10 +1355,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latino - Vietnamita"
+msgstr "Vietnamita"
 
 #. Type: select
 #. Description

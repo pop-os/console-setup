@@ -14,6 +14,24 @@
 # Omer Zak <w1@zak.co.il>, 2008, 2010.
 # Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010.
 #
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Free Software Foundation, Inc., 2002,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2002
+#   Translations from KDE:
+#   Meni Livne <livne@kde.org>, 2000.
+#
+#   Translations taken from KDE:
+#
+#   Free Software Foundation, Inc., 2002,2003.
+#   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   - Meni Livne <livne@kde.org>, 2000.
+#   Lior Kaplan <kaplan@debian.org>, 2005,2006, 2007, 2008.
+#   Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Lior Kaplan <kaplan@debian.org>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: he\n"
@@ -849,17 +867,14 @@ msgstr "אנגלית אמריקאית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "רומנית"
+msgstr "אזרביג'נית"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". ערבית"
+msgstr "ערבית"
 
 #. Type: select
 #. Choices
@@ -871,7 +886,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "בנגלדש"
 
 #. Type: select
 #. Choices
@@ -896,9 +911,8 @@ msgstr "בלגית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "אסטונית"
+msgstr "רומנית"
 
 # console-keymaps-acorn, Brazilian
 #. Type: select
@@ -952,7 +966,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "סינית"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -998,7 +1012,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "אספרנטו"
 
 #. Type: select
 #. Choices
@@ -1010,7 +1024,6 @@ msgstr "אסטונית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". אתיופית"
 
@@ -1032,9 +1045,8 @@ msgstr "צרפתית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# גיאורגית"
+msgstr "גרמנית"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1091,7 +1103,7 @@ msgstr "איסלנדית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "אירית"
 
 # console-keymaps-acorn, Italian
 #. Type: select
@@ -1135,31 +1147,26 @@ msgstr "קירגיזית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "קוריאנית"
 
 # console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "טורקית (פריסת F)"
+msgstr "כורדית (פריסת F)"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "טורקית (פריסת Q)"
+msgstr "כורדית (פריסת Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "# ליאו"
 
@@ -1204,8 +1211,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "צפון אמריקה"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1218,9 +1226,8 @@ msgstr "נורבגית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "בלרוסית"
+msgstr "סרבית"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1313,7 +1320,7 @@ msgstr "גרמנית שווצרית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "טמילית"
 
 #. Type: select
 #. Choices
@@ -1356,10 +1363,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - ויאטנמזית"
+msgstr "וייטנאמית"
 
 #. Type: select
 #. Description

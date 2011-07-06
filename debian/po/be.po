@@ -13,6 +13,11 @@
 # Paul Petruk <berserker@neolocation.com>, 2007.
 # Pavel Piatruk <piatruk.p@gmail.com>, 2008, 2009, 2011.
 # Viktar Siarheichyk <vics@eq.by>, 2010.
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@debian.org>, 2004.
+# Alexander Nyakhaychyk <nyakhaychyk@gmail.com>, 2009.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
@@ -874,18 +879,14 @@ msgstr "Амерыканская англійская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Румынская"
+msgstr "Албанская"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". Арабскі"
+msgstr "Арабская"
 
 #. Type: select
 #. Choices
@@ -897,7 +898,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Бангладэш"
 
 #. Type: select
 #. Choices
@@ -909,7 +910,7 @@ msgstr "Беларуская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Бенгальская"
 
 #. Type: select
 #. Choices
@@ -920,10 +921,8 @@ msgstr "Бельгійская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Эстонская"
+msgstr "Баснійская"
 
 #. Type: select
 #. Choices
@@ -971,7 +970,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Кітайская"
 
 #. Type: select
 #. Choices
@@ -1007,13 +1006,13 @@ msgstr "Дворак"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Дзонг-хэ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Эсперанта"
 
 #. Type: select
 #. Choices
@@ -1025,7 +1024,6 @@ msgstr "Эстонская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Эфіёпскі"
 
@@ -1044,10 +1042,8 @@ msgstr "Французская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Грузінскі"
+msgstr "Грузінская"
 
 #. Type: select
 #. Choices
@@ -1065,7 +1061,7 @@ msgstr "Грэцкая"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Гуджараці"
 
 #. Type: select
 #. Choices
@@ -1083,7 +1079,7 @@ msgstr "Ізраільская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Хіндзі"
 
 #. Type: select
 #. Choices
@@ -1101,7 +1097,7 @@ msgstr "Ісландская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Ірландская"
 
 #. Type: select
 #. Choices
@@ -1119,13 +1115,13 @@ msgstr "Японская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Канада"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Казахская"
 
 #. Type: select
 #. Choices
@@ -1143,31 +1139,25 @@ msgstr "Кыргізская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Карэйская"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Турэцкая (раскладка F)"
+msgstr "Курдская (раскладка F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Турэцкая (раскладка Q)"
+msgstr "Курдская (раскладка Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Лао"
+msgstr "Лаоская"
 
 #. Type: select
 #. Choices
@@ -1197,19 +1187,20 @@ msgstr "Македонская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Малаялам"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Непалі"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Паўночная Амерыка"
 
 #. Type: select
 #. Choices
@@ -1220,10 +1211,8 @@ msgstr "Нарвежская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Беларуская"
+msgstr "Персідская"
 
 #. Type: select
 #. Choices
@@ -1307,13 +1296,13 @@ msgstr "Швейцарская нямецкая"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Тамільская"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Тэлугу"
 
 #. Type: select
 #. Choices
@@ -1348,10 +1337,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - в'етнамская"
+msgstr "В'етнамская"
 
 #. Type: select
 #. Description

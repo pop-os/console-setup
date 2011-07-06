@@ -6,6 +6,12 @@
 # Irish messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
+#
+# Translations from iso-codes:
+# Alastair McKinstry <mckinstry@computer.org>, 2001,2002
+# Free Software Foundation, Inc., 2001,2003
+# Kevin Patrick Scannell <scannell@SLU.EDU>, 2004, 2008, 2009, 2011.
+# Sean V. Kelley <s_oceallaigh@yahoo.com>, 1999
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -886,30 +892,27 @@ msgstr "Béarla Meiriceánach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "Rómánach"
+msgstr "Albáinis"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "Araibis"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
-msgid "Arabic"
-msgstr ". Arabach"
-
-#. Type: select
-#. Choices
-#: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "An Ostair"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "An Bhanglaidéis"
 
 #. Type: select
 #. Choices
@@ -921,7 +924,7 @@ msgstr "Bealarúiseach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Beangáilis"
 
 #. Type: select
 #. Choices
@@ -929,13 +932,12 @@ msgstr ""
 msgid "Belgian"
 msgstr "Beilgeach"
 
+# google
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "Eastónach"
+msgstr "Boisnis"
 
 #. Type: select
 #. Choices
@@ -976,14 +978,15 @@ msgstr "Ceanadach Ilteangach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "Ceanada"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Sínis"
 
 #. Type: select
 #. Choices
@@ -1019,13 +1022,14 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Seoinicis"
 
+# google uirlisí teanga as is
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
@@ -1037,7 +1041,6 @@ msgstr "Eastónach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Aetópach"
 
@@ -1053,13 +1056,12 @@ msgstr "Fionlannach"
 msgid "French"
 msgstr "Francach"
 
+# google
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Seoirseach"
+msgstr "Seoirsis"
 
 #. Type: select
 #. Choices
@@ -1077,7 +1079,7 @@ msgstr "Gréagach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Gúisearáitis"
 
 #. Type: select
 #. Choices
@@ -1095,7 +1097,7 @@ msgstr "Eabhrach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Hiondúis"
 
 #. Type: select
 #. Choices
@@ -1113,7 +1115,7 @@ msgstr "Íoslannach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Gaeilge"
 
 #. Type: select
 #. Choices
@@ -1131,13 +1133,13 @@ msgstr "Seapánach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Cannadais"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Casaicis"
 
 #. Type: select
 #. Choices
@@ -1155,31 +1157,25 @@ msgstr "Cirgeastáinis"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Cóiréis"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "Turcach (leagan amach F)"
+msgstr "Coirdis (leagan amach F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "Turcach (leagan amach Q)"
+msgstr "Coirdis (leagan amach Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Laoch"
+msgstr "Láóis"
 
 #. Type: select
 #. Choices
@@ -1209,19 +1205,20 @@ msgstr "Macadónach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Mailéalaimis"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Neipeailis"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "An Isiltir"
 
 #. Type: select
 #. Choices
@@ -1229,13 +1226,12 @@ msgstr ""
 msgid "Norwegian"
 msgstr "Ioruach"
 
+# also Fairsis (An CT)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "Bealarúiseach"
+msgstr "Peirsis"
 
 #. Type: select
 #. Choices
@@ -1252,8 +1248,9 @@ msgstr "Portaingéalach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "An tSín"
 
 #. Type: select
 #. Choices
@@ -1319,13 +1316,14 @@ msgstr "Gearmánach (An Eilvéis)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tamailis"
 
+# beware mistakes in OLT
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Teileagúis"
 
 #. Type: select
 #. Choices
@@ -1357,13 +1355,12 @@ msgstr "Úcránach"
 msgid "Uyghur"
 msgstr ""
 
+# google, An CT slender
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Laidin - Vítneamais"
+msgstr "Vítneamais"
 
 #. Type: select
 #. Description

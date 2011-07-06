@@ -15,6 +15,11 @@
 # Alexander Didebulidze <didebuli@in.tum.de>, Vladimer Sichinava <vlsichinava@gmail.com>
 # Taya Kharitonashvili <taya13@gmail.com>, Gia Shervashidze - www.gia.ge
 #
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@debian.org>, 2004.
+#   Aiet Kolkhi <aietkolkhi@gmail.com>, 2008.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
@@ -853,17 +858,14 @@ msgstr "ამერიკული ინგლისური"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
 msgstr "რუმინული"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". არაბული"
+msgstr "არაბული"
 
 #. Type: select
 #. Choices
@@ -875,7 +877,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "ბანგლადეში"
 
 #. Type: select
 #. Choices
@@ -899,7 +901,6 @@ msgstr "ბელგიური"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
 msgstr "ესტონური"
 
@@ -1003,7 +1004,6 @@ msgstr "ესტონური"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". ეთიოპიური"
 
@@ -1022,10 +1022,8 @@ msgstr "ფრანგული"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# ქართული"
+msgstr "ქართული"
 
 #. Type: select
 #. Choices
@@ -1127,7 +1125,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
 msgstr "თურქული (F განლაგება)"
 
@@ -1135,17 +1132,14 @@ msgstr "თურქული (F განლაგება)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
 msgstr "თურქული (Q განლაგება)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ლაო"
+msgstr "ლაო"
 
 #. Type: select
 #. Choices
@@ -1186,8 +1180,9 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "ჩრდილოეთ ამერიკა"
 
 #. Type: select
 #. Choices
@@ -1199,7 +1194,6 @@ msgstr "ნორვეგიული"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
 msgstr "ბელორუსიული"
 
@@ -1327,7 +1321,6 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". ლათინური - ვიეტნამური"
 

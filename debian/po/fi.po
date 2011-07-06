@@ -12,6 +12,13 @@
 # Tommi Vainikainen <thv+debian@iki.fi>, 2003 - 2004.
 # Tapio Lehtonen <tale@debian.org>, 2004 - 2006.
 # Esko Arajärvi <edu@iki.fi>, 2007 - 2008, 2009, 2010.
+#
+# Translations from iso-codes:
+# Copyright (C) 2007 Tobias Toedter <t.toedter@gmx.net>.
+#     Translations taken from ICU SVN on 2007-09-09
+# Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005-2010.
+# Copyright (C) 2005-2006, 2008-2010 Free Software Foundation, Inc.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -881,18 +888,14 @@ msgstr "amerikanenglantilainen"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "romanialainen"
+msgstr "Albania"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". Arabialainen"
+msgstr "Arabia"
 
 #. Type: select
 #. Choices
@@ -904,7 +907,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
@@ -916,7 +919,7 @@ msgstr "valkovenäläinen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Bengali"
 
 # console-keymaps-acorn, Belgian
 #. Type: select
@@ -928,10 +931,8 @@ msgstr "belgialainen"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "virolainen"
+msgstr "Bosnia"
 
 # console-keymaps-acorn, Brazilian
 #. Type: select
@@ -984,7 +985,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Kiina"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -1024,13 +1025,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Dzongkha"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
@@ -1042,7 +1043,6 @@ msgstr "virolainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". Etiopialainen"
 
@@ -1063,10 +1063,8 @@ msgstr "ranskalainen"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# Georgialainen"
+msgstr "Georgia"
 
 # console-keymaps-acorn, German
 #. Type: select
@@ -1085,13 +1083,13 @@ msgstr "kreikkalainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmukhi"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1104,7 +1102,7 @@ msgstr "heprealainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Hindi"
 
 #. Type: select
 #. Choices
@@ -1123,7 +1121,7 @@ msgstr "islantilainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Iiri"
 
 # console-keymaps-acorn, Italian
 #. Type: select
@@ -1143,13 +1141,13 @@ msgstr "japanilainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Kazakki"
 
 #. Type: select
 #. Choices
@@ -1167,33 +1165,27 @@ msgstr "kirgiisi"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Korea"
 
 # console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "turkkilainen (F-asettelu)"
+msgstr "Kurdi (F-asettelu)"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "turkkilainen (Q-asettelu)"
+msgstr "Kurdi (Q-asettelu)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# Laolainen"
+msgstr "Lao"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
@@ -1225,19 +1217,20 @@ msgstr "makedonialainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Malayalam"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Nepali"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Pohjois-Amerikka"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1249,10 +1242,8 @@ msgstr "norjalainen"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "valkovenäläinen"
+msgstr "Persia"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1345,13 +1336,13 @@ msgstr "sveitsinsaksalainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tamili"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #. Type: select
 #. Choices
@@ -1388,10 +1379,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". Latin - vietnamilainen"
+msgstr "Vietnam"
 
 #. Type: select
 #. Description

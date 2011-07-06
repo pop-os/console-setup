@@ -8,6 +8,17 @@
 # This file is distributed under the same license as debian-installer.
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2011.
 #
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#   Free Software Foundation, Inc., 2002,2003,2004
+#   Alastair McKinstry <mckinstry@computer.org>, 2002, 2004
+#   Translations from KDE:
+#   - Thanomsub Noppaburana <donga@midaassets.com>
+#   Thanomsub Noppaburana <donga@midaassets.com> (Translations from KDE)
+#   Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2011
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
@@ -850,18 +861,14 @@ msgstr "อังกฤษอเมริกัน"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Romanian"
 msgid "Albanian"
-msgstr "โรมาเนีย"
+msgstr "แอลเบเนีย"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
-msgstr ". อารบิก"
+msgstr "อาหรับ"
 
 #. Type: select
 #. Choices
@@ -873,7 +880,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "บังกลาเทศ"
 
 # TRANSLATOR NOTES:
 # - See debian/console-data.keymaps or debian/udeb/console-keymaps-* for the
@@ -888,7 +895,7 @@ msgstr "เบลารุส"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "เบ็งกาลี"
 
 #. Type: select
 #. Choices
@@ -899,10 +906,8 @@ msgstr "เบลเยียม"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Estonian"
 msgid "Bosnian"
-msgstr "เอสโตเนีย"
+msgstr "บอสเนีย"
 
 #. Type: select
 #. Choices
@@ -943,14 +948,15 @@ msgstr "แคนาดา (ประสมภาษา)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Catalan"
-msgstr ""
+msgstr "พัทลุง"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "จีน"
 
 #. Type: select
 #. Choices
@@ -986,13 +992,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "ภูฏาน"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "เอสเปอรันโต"
 
 #. Type: select
 #. Choices
@@ -1004,7 +1010,6 @@ msgstr "เอสโตเนีย"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". เอธิโอเปีย"
 
@@ -1023,10 +1028,8 @@ msgstr "ฝรั่งเศส"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
-msgstr "# จอร์เจีย"
+msgstr "จอร์เจีย"
 
 #. Type: select
 #. Choices
@@ -1044,13 +1047,13 @@ msgstr "กรีก"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "คุชราตี"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "คุรุมุขี"
 
 #. Type: select
 #. Choices
@@ -1062,7 +1065,7 @@ msgstr "ฮีบรู"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "ฮินดี"
 
 #. Type: select
 #. Choices
@@ -1080,7 +1083,7 @@ msgstr "ไอซ์แลนด์"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "ไอริช"
 
 #. Type: select
 #. Choices
@@ -1098,13 +1101,13 @@ msgstr "ญี่ปุ่น"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "กัณณาท"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "คาซัคสถาน"
 
 #. Type: select
 #. Choices
@@ -1122,31 +1125,25 @@ msgstr "คีร์กีซสถาน"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "เกาหลี"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (F layout)"
 msgid "Kurdish (F layout)"
-msgstr "ตุรกี (ผัง F)"
+msgstr "เคิร์ด (ผัง F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Turkish (Q layout)"
 msgid "Kurdish (Q layout)"
-msgstr "ตุรกี (ผัง Q)"
+msgstr "เคิร์ด (ผัง Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
-msgstr "# ลาว"
+msgstr "ลาว"
 
 #. Type: select
 #. Choices
@@ -1176,19 +1173,20 @@ msgstr "มาซิโดเนีย"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "มลยาฬัม"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "เนปาล"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "ภาคเหนือ"
 
 #. Type: select
 #. Choices
@@ -1196,16 +1194,11 @@ msgstr ""
 msgid "Norwegian"
 msgstr "นอร์เวย์"
 
-# TRANSLATOR NOTES:
-# - See debian/console-data.keymaps or debian/udeb/console-keymaps-* for the
-#   meanings of keymap names.
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Belarusian"
 msgid "Persian"
-msgstr "เบลารุส"
+msgstr "เปอร์เซีย"
 
 #. Type: select
 #. Choices
@@ -1222,8 +1215,9 @@ msgstr "โปรตุเกส"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Punjabi"
-msgstr ""
+msgstr "ปัญจาบ"
 
 #. Type: select
 #. Choices
@@ -1289,13 +1283,13 @@ msgstr "เยอรมันสวิส"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "ทมิฬ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "เตลุคู"
 
 #. Type: select
 #. Choices
@@ -1330,10 +1324,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
-msgstr ". ละติน - เวียดนาม"
+msgstr "เวียดนาม"
 
 #. Type: select
 #. Description
