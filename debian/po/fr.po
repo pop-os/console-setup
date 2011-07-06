@@ -21,10 +21,10 @@ msgstr ""
 "PO-Revision-Date: 2011-03-27 12:12+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Type: text
@@ -421,9 +421,10 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"La valeur par défaut de la disposition clavier est XKBLAYOUT=\"${XKBLAYOUT}"
-"\" et XKBVARIANT=\"${XKBVARIANT}\". La valeur par défaut est basée sur la "
-"langue et la région choisies et les réglages de /etc/X11/xorg.conf."
+"La valeur par défaut de la disposition clavier est XKBLAYOUT="
+"\"${XKBLAYOUT}\" et XKBVARIANT=\"${XKBVARIANT}\". La valeur par défaut est "
+"basée sur la langue et la région choisies et les réglages de /etc/X11/xorg."
+"conf."
 
 #. Type: boolean
 #. Description
@@ -775,8 +776,8 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
-"Cette fonctionnalité peut être désactivée en choisissant « Pas de basculement "
-"temporaire »."
+"Cette fonctionnalité peut être désactivée en choisissant « Pas de "
+"basculement temporaire »."
 
 #. Type: select
 #. Choices
