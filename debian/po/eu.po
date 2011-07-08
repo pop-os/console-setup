@@ -49,7 +49,7 @@ msgstr "Ez aldatu abio/kernel letra-tipoa"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Utzi sistemari letra-tipo egokia hautatzen"
 
 #. Type: text
 #. Description
@@ -57,7 +57,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "framebuffer soilik"
 
 #. Type: select
 #. Choices
@@ -198,9 +198,8 @@ msgstr ". Askotarikoa - Latina; Eslaviar eta ez-eslaviar Zirilikoa"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Sartu ausazko karaktereak"
+msgstr "Igarri karaktere-joko egokiena"
 
 #. Type: select
 #. Description
@@ -286,26 +285,26 @@ msgstr "Letra-tipo tamaina:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
-"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da."
+"zure ordenagailuak abiaraztean erabiltzen duen tamaina 8x16 da."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
-"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da."
+"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da. Zenbait letra-"
+"tipo tamainak kbd kontsola paketea (ez console-tools) eta framebufferbehar "
+"dituzte."
 
 #. Type: select
 #. Description
