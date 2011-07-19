@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-27 12:33+0100\n"
+"PO-Revision-Date: 2011-07-19 21:43+0100\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -897,7 +897,7 @@ msgstr "Arábico"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturiano"
 
 #. Type: select
 #. Choices
@@ -914,9 +914,8 @@ msgstr "Bielorusso"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bengali"
-msgstr "Báltico"
+msgstr "Bengali"
 
 #. Type: select
 #. Choices
@@ -927,9 +926,8 @@ msgstr "Belga"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "Romêno"
+msgstr "Bósnio"
 
 #. Type: select
 #. Choices
@@ -971,7 +969,7 @@ msgstr "Canadiano (Multilíngua)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Catalão"
 
 #. Type: select
 #. Choices
@@ -1030,9 +1028,8 @@ msgstr "Estoniano"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etíope"
+msgstr "Etíope"
 
 #. Type: select
 #. Choices
@@ -1050,7 +1047,7 @@ msgstr "Francês"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "georgiano"
+msgstr "Georgiano"
 
 #. Type: select
 #. Choices
@@ -1085,9 +1082,8 @@ msgstr "Hebraico"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Hindi"
-msgstr "Procurar:"
+msgstr "Hindi"
 
 #. Type: select
 #. Choices
@@ -1123,19 +1119,19 @@ msgstr "Japonês"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "canarês"
+msgstr "Canarês"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "cazaque"
+msgstr "Cazaque"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1152,16 +1148,14 @@ msgstr "Coreano"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr "Turco (layout F)"
+msgstr "Curdo (layout F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr "Turco (layout Q)"
+msgstr "Curdo (layout Q)"
 
 #. Type: select
 #. Choices
@@ -1197,21 +1191,19 @@ msgstr "Macedónio"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "malaiala"
+msgstr "Malaiala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Nepali"
-msgstr "Novo _sinónimo"
+msgstr "Nepalês"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Território do Norte"
+msgstr "Sami Setentrional"
 
 #. Type: select
 #. Choices
@@ -1222,9 +1214,8 @@ msgstr "Norueguês"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "Imprimir"
+msgstr "Persa"
 
 #. Type: select
 #. Choices
@@ -1242,7 +1233,7 @@ msgstr "Português"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1266,7 +1257,7 @@ msgstr "Sérvio (Cirílico)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
@@ -1307,9 +1298,8 @@ msgstr "Alemão Suíço"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tamil"
-msgstr "Tailandês"
+msgstr "Tamil"
 
 #. Type: select
 #. Choices
@@ -1345,7 +1335,7 @@ msgstr "Ucraniano"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigur"
 
 #. Type: select
 #. Choices
