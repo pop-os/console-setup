@@ -8,14 +8,14 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+#
+# Translations from iso-codes:
 # Russian L10N Team <debian-l10n-russian@lists.debian.org>, 2004.
 # Yuri Kozlov <yuray@id.ru>, 2004, 2005.
 # Dmitry Beloglazov <dm-guest@alioth.debian.org>, 2005.
 # Sergey Alyoshin <alyoshin.s@gmail.com>, 2011.
 # Yuri Kozlov <kozlov.y@gmail.com>, 2005, 2006, 2007, 2008.
 # Yuri Kozlov <yuray@komyakino.ru>, 2009, 2010, 2011.
-#
-# Translations from iso-codes:
 # Alastair McKinstry <mckinstry@debian.org>, 2004.
 # Mikhail Zabaluev <mhz@altlinux.org>, 2006.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-06-17 18:06+0400\n"
+"PO-Revision-Date: 2011-07-20 22:22+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -907,7 +907,7 @@ msgstr "Арабский"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Астурианский"
 
 #. Type: select
 #. Choices
@@ -979,7 +979,7 @@ msgstr "Канадская многоязычная"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Каталанский"
 
 #. Type: select
 #. Choices
@@ -1038,9 +1038,8 @@ msgstr "Эстонская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Эфиопский"
+msgstr "Эфиопский"
 
 #. Type: select
 #. Choices
@@ -1142,7 +1141,7 @@ msgstr "Казахский"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Кхмерский"
 
 #. Type: select
 #. Choices
@@ -1213,9 +1212,8 @@ msgstr "Непальский"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Северная Территория"
+msgstr "Северо-саамский"
 
 #. Type: select
 #. Choices
@@ -1245,7 +1243,7 @@ msgstr "Португальская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Панджаби"
 
 #. Type: select
 #. Choices
@@ -1269,7 +1267,7 @@ msgstr "Сербская (Кириллица)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Синхала"
 
 #. Type: select
 #. Choices
@@ -1347,7 +1345,7 @@ msgstr "Украинская"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Уйгурский"
 
 #. Type: select
 #. Choices
