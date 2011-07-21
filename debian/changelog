@@ -9,6 +9,10 @@ console-setup (1.74) UNRELEASED; urgency=low
   * Make console-setup-udeb depend on kbd-udeb to fix layout switch in textual
     d-i.
 
+  [ Christian Perrier ]
+  * Default to Russian layout with Ossetian variant for Ossetian
+    language
+
  -- Samuel Thibault <sthibault@debian.org>  Sun, 03 Jul 2011 19:56:44 +0200
 
 console-setup (1.73) unstable; urgency=low
