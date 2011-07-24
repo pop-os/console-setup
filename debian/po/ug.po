@@ -499,7 +499,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "چوڭ ھەرپ قۇلۇپى"
+msgstr "CapsLock"
 
 #. Type: select
 #. Choices
@@ -886,9 +886,8 @@ msgstr "ئامېرىكا ئىنگلىزچە"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Albanian"
-msgstr "رۇمىنچە"
+msgstr "ئالبانچە"
 
 #. Type: select
 #. Choices
@@ -900,7 +899,7 @@ msgstr "ئەرەبچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "ئاستۇرىيەچە"
 
 #. Type: select
 #. Choices
@@ -912,32 +911,31 @@ msgstr "باڭلادىش"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "بېلارۇسىيەچە"
+msgstr "بېلارۇسچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "بېنگالچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "بېلگىيەچە"
+msgstr "بىلگىيەچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "ئېستونىيەچە"
+msgstr "بوسنىيەچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr "بىرازىلىيە"
+msgstr "بىرازىلىيەچە"
 
 #. Type: select
 #. Choices
@@ -973,13 +971,13 @@ msgstr "كانادا كۆپ تىل"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "كاتالانچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "خەنزۇچە"
 
 #. Type: select
 #. Choices
@@ -1015,33 +1013,31 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "بۇتانچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Esperanto"
-msgstr "ئەسپىرىتو سانتو"
+msgstr "ئېسپېرانتو (دۇنيا تىلى)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr "ئېستونىيەچە"
+msgstr "ئېستونچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". ئېفىيوپىيەچە"
+msgstr "ئېفىيوپىيەچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr "فىنلاندچە"
+msgstr "فىنچە"
 
 #. Type: select
 #. Choices
@@ -1071,13 +1067,13 @@ msgstr "گىرېكچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "گۇجاراتچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "گۇرمۇكىچە"
 
 #. Type: select
 #. Choices
@@ -1089,13 +1085,13 @@ msgstr "ئىبرانىچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "ھىندىچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "ھۇنگىرچە"
+msgstr "ماجارچە"
 
 #. Type: select
 #. Choices
@@ -1107,13 +1103,13 @@ msgstr "ئىسلاندچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "ئىرېلاندچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "ئىتالىيانچە"
+msgstr "ئىتاليانچە"
 
 #. Type: select
 #. Choices
@@ -1125,19 +1121,19 @@ msgstr "ياپونچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "كانناداچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "قازاقچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "كېخمېرچە"
 
 #. Type: select
 #. Choices
@@ -1149,21 +1145,19 @@ msgstr "قىرغىزچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "كورېيەچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr "تۈركچە (F جايلاشتۇرۇش)"
+msgstr "كۇردچە(F ئورۇنلاشتۇرۇش)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr "تۈركچە (Q جايلاشتۇرۇش)"
+msgstr "كۇردچە(Q ئورۇنلاشتۇرۇش)"
 
 #. Type: select
 #. Choices
@@ -1181,7 +1175,7 @@ msgstr "لاتىن ئامېرىكا"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "لاتۋىئانچە"
+msgstr "لاتۋىيەچە"
 
 #. Type: select
 #. Choices
@@ -1199,33 +1193,31 @@ msgstr "ماكېدونچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "مالايالامچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "نېپالچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "شىمالىي تېررىتورىيە"
+msgstr "شىمالىي سامىچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "نورۋىگىيەچە"
+msgstr "نورۋېگچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "بېلارۇسىيەچە"
+msgstr "پارىسچە"
 
 #. Type: select
 #. Choices
@@ -1243,13 +1235,13 @@ msgstr "پورتۇگالچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "پەنجابچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "رۇمىنچە"
+msgstr "رۇمىنىيەچە"
 
 #. Type: select
 #. Choices
@@ -1267,13 +1259,13 @@ msgstr "سېربچە (سلاۋىيان)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "سىنگالچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovakian"
-msgstr "سىلوۋاكچە"
+msgstr "سلوۋاكچە"
 
 #. Type: select
 #. Choices
@@ -1291,31 +1283,31 @@ msgstr "ئىسپانچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr "شىۋېدچە"
+msgstr "شۋېدچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "شىۋېتسارىيە فىرانسۇزچە"
+msgstr "شىۋېتسىيە فىرانسۇزچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "شىۋېتسارىيە  گېرمانچە"
+msgstr "شىۋېتسىيە  گېرمانچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "تامىلچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "تېلۇگۇچە"
 
 #. Type: select
 #. Choices
@@ -1345,14 +1337,13 @@ msgstr "ئۇكرائىنچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "ئۇيغۇرچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Vietnamese"
-msgstr ". لاتىن - ۋىيېتنامچە"
+msgstr "ۋىيېتنامچە"
 
 #. Type: select
 #. Description

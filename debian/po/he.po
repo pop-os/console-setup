@@ -37,7 +37,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-07-23 12:25+0200\n"
+"PO-Revision-Date: 2011-07-24 23:57+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
@@ -339,17 +339,15 @@ msgstr "אחר"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "בחירת פריסת מקלדת"
+msgstr "מודל המקלדת:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "נא לבחור את סוג המקלדת שתוגדר."
+msgstr "נא לבחור את מודל המקלדת של מכונה זאת."
 
 #. Type: select
 #. Description
@@ -714,7 +712,7 @@ msgstr ""
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "אין החלפה זמנית"
 
 #. Type: select
 #. Choices
@@ -725,14 +723,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "שני מקשי הלוגו"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "שיטה להחלפה זמנית בין קלט לאומי לבין קלט לטיני:"
 
 #. Type: select
 #. Description
@@ -751,7 +749,7 @@ msgstr ""
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr ""
+msgstr "ניתן לבטל את אפשרות זאת על ידי בחירה באפשרות \"אין החלפה זמנית\"."
 
 #. Type: select
 #. Choices
