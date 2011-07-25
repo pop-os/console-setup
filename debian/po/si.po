@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-07-24 02:32+0530\n"
+"PO-Revision-Date: 2011-07-25 19:16+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
 "Language: si\n"
@@ -318,17 +318,15 @@ msgstr "වෙනත්"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "යතුරුපුවරු ආකෘතිය තෝරන්න"
+msgstr "යතුරුපුවරු වර්ගය:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "කරුණාකර සැකසීමට ඇවැසි යතුරුපුවරුවේ වර්ගය තෝරන්න."
+msgstr "කරුණාකර මෙම යන්ත්‍රයේ ඇති යතුරුපුවරුවේ වර්ගය තෝරන්න."
 
 #. Type: select
 #. Description
@@ -706,7 +704,7 @@ msgstr "ලැයිස්තු ගත කර ඇති සියළුම ය�
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "කිසිඳු තාවකාලික ස්විචයක් නොමැත"
 
 #. Type: select
 #. Choices
@@ -717,14 +715,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "ලෝගෝ යතුරු දෙකම"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "ජාතික හා ලතින් ආදාන අතර තාවකාලිකව මාරුවීමට ක්‍රමයක්:"
 
 #. Type: select
 #. Description
@@ -737,49 +735,52 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"යතුරු පුවරුව ජාතික ප්‍රකාරයේ තිබෙන විට කිසිවෙකුට ලතින් අකුරු කිහිපයක් ලිවීමට ඇවැසි වූයේ නම් , "
+"තාවකාලිකව ලතින් ප්‍රකාරයට මාරුවීම වඩාත් සුදුසු වේ. තෝරාගත් යතුර ඔබා සිටින තෙක් යතුරුපුවරුව එම "
+"ප්‍රකාරයේ පවතිනු ඇති අතර. යතුරු පුවරුව ලතින් ප්‍රකාරයේ ඇති විට ජාතික ප්‍රකාරයේ අකුරු ඇතුළත් කිරීම "
+"සඳහාද එම යතුර භාවිත කල හැක."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr ""
+msgstr "\"තාවකාලික ස්විචයක් නැත\" තෝරාගැනීමෙන් ඔබට මෙම විශේෂාංගය අක්‍රීය කල හැක."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "යතුරුපුවරු ආකෘතිය තෝරන්න"
+msgstr "යතුරුපුවරු ආකෘතිය සඳහා සම්මතය"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "AltGr යතුරක් නැත"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "අංක පුවරුවේ Enter යතුර"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "Alt යතුරු දෙකම"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "AltGr ලෙස ක්‍රියාකරන යතුර:"
 
 #. Type: select
 #. Description
@@ -791,20 +792,23 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"ඇතැම් යතුරුපුවරු සැකසුම් වලදී, AltGr යතුර ඇතැම් අක්‍ෂර ඇතුලත් කිරීමට යොදාගන්නා විශේෂ යතුරකි. "
+"විදේශීය මූල්‍ය සංඛේත හා අක්‍ෂර වැනි යතුරුපුවරුවේ සාමාන්‍යෙන් නොපවතින යතුරු සඳහා ප්‍රධාන වශ්‍යෙන් "
+"යොදාගැනේ. මේවා බොහෝ විට අමතර අක්‍ෂර ලෙස යතුරු මත මුද්‍රණය කර ඇත."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr ""
+msgstr "සම්පාදන යතුරක් නැත"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr ""
+msgstr "සම්පාදන යතුර:"
 
 #. Type: select
 #. Description
@@ -815,6 +819,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"සම්පාදන යතුර (බහු_යතුර ලෙසද හැඳින් වෙන) පරිගණකයට ඊලඟට යොදන යතුරු කිහිපය යතුරු පුවරුවේ නොමැති "
+"අක්‍ෂර නිර්මාණය සඳහා වන යතුරු සංයුක්ත ලෙස යොදාගැනීමට සලස්වයි."
 
 #. Type: select
 #. Description
@@ -825,6 +831,8 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"පෙළ කොන්සෝලයේදී සම්පාදන යතුර යුනිකේත ප්‍රකාරයේදී ක්‍රියා නොකරයි. යුනිකේත ප්‍රකාරයේ නොසිටී නම්, "
+"මෙහිදී කුමක් තෝරාගත්තද ඔබට Control+හිස් තැන යතුරු සංයුක්තය සම්පාදන යතුර ලෙස යොදාගත හැක."
 
 #. Type: boolean
 #. Description
