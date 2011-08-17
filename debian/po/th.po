@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-04-18 17:31+0700\n"
+"PO-Revision-Date: 2011-08-17 22:42+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -874,7 +874,7 @@ msgstr "อาหรับ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "อัสตูเรียส"
 
 #. Type: select
 #. Choices
@@ -948,9 +948,8 @@ msgstr "แคนาดา (ประสมภาษา)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "พัทลุง"
+msgstr "คาตะลาน"
 
 #. Type: select
 #. Choices
@@ -1009,9 +1008,8 @@ msgstr "เอสโตเนีย"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". เอธิโอเปีย"
+msgstr "เอธิโอเปีย"
 
 #. Type: select
 #. Choices
@@ -1113,7 +1111,7 @@ msgstr "คาซัคสถาน"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "เขมร"
 
 #. Type: select
 #. Choices
@@ -1184,9 +1182,8 @@ msgstr "เนปาล"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "ภาคเหนือ"
+msgstr "ซามิเหนือ"
 
 #. Type: select
 #. Choices
@@ -1215,9 +1212,8 @@ msgstr "โปรตุเกส"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "ปัญจาบ"
+msgstr "ปัญจาบี"
 
 #. Type: select
 #. Choices
@@ -1241,7 +1237,7 @@ msgstr "เซอร์เบีย (ซีริลลิก)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "สิงหล"
 
 #. Type: select
 #. Choices
@@ -1319,7 +1315,7 @@ msgstr "ยูเครน"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "อุยกูร์"
 
 #. Type: select
 #. Choices
