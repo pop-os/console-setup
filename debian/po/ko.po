@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-09 02:14+0900\n"
+"PO-Revision-Date: 2011-09-13 00:51+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -305,15 +305,13 @@ msgstr "LILO가 시리얼 콘솔을 사용하도록 설정했습니다"
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "네트워크 설정"
+msgstr "키보드 설정"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
 msgstr "기타"
 
@@ -322,22 +320,21 @@ msgstr "기타"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr ""
+msgstr "키보드 모델:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "설정할 키보드의 종류를 선택하십시오."
+msgstr "이 컴퓨터의 키보드 모델을 선택하십시오."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr ""
+msgstr "키보드의 제조 국가:"
 
 #. Type: select
 #. Description
@@ -348,22 +345,22 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"키보드 배치는 국가에 따라 다릅니다. 어떤 국가는 여러 개의 표준 키보드 배치가 "
+"있습니다. 이 컴퓨터의 키보드의 제조 국가를 선택하십시오."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "키보드 배치 선택"
+msgstr "키보드 배치:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "이 컴퓨터에 하드 디스크가 있는 지 확인하십시오."
+msgstr "이 컴퓨터의 키보드와 맞는 키보드 배치를 선택하십시오."
 
 #. Type: boolean
 #. Description
@@ -481,7 +478,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #. Type: select
 #. Choices
@@ -500,7 +497,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "오른쪽 Alt (AltGr)"
 
 #. Type: select
 #. Choices
@@ -515,14 +512,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr ""
+msgstr "오른쪽 Control"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr ""
+msgstr "오른쪽 Shift"
 
 #. Type: select
 #. Choices
@@ -541,7 +538,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr ""
+msgstr "오른쪽 로고 키"
 
 #. Type: select
 #. Choices
@@ -556,42 +553,42 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr ""
+msgstr "메뉴 키"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr ""
+msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr ""
+msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Caps Lock"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr ""
+msgstr "왼쪽 Control+왼쪽 Shift"
 
 #. Type: select
 #. Choices
@@ -606,21 +603,21 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr ""
+msgstr "왼쪽 Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr ""
+msgstr "왼쪽 Control"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr ""
+msgstr "왼쪽 Shift"
 
 #. Type: select
 #. Choices
@@ -639,28 +636,28 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr ""
+msgstr "왼쪽 로고 키"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr ""
+msgstr "Scroll Lock 키"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "토글 없음"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "지역 키보드 입력과 영문 키보드 입력 사이를 토글할 때 사용할 방법:"
 
 #. Type: select
 #. Description
@@ -669,7 +666,7 @@ msgstr ""
 msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
-msgstr ""
+msgstr "지역 키보드 배치와 기본 영문 키보드 사이에 토글할 방법이 필요합니다."
 
 #. Type: select
 #. Description
@@ -681,20 +678,24 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"오른쪽 Alt 또는 Caps Lock 키를 (사용하기 편리하므로) 주로 사용합니다. (Caps "
+"Lock 키를 사용할 경우 일반 Caps Lock 토글 목적으로는 Shift+Caps Lock을 사용합"
+"니다.) Alt+Shift 키도 많이 사용하는 조합이지만, 이맥스 및 기타 프로그램의 기"
+"능에서 이 키 조합을 사용할 수 없게 됩니다."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr ""
+msgstr "키보드에 따라 목록의 키가 모두 없는 키보드도 있습니다."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "임시 전환 키 없음"
 
 #. Type: select
 #. Choices
@@ -705,7 +706,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "양쪽 로고 키"
 
 #. Type: select
 #. Description
@@ -713,6 +714,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
 msgstr ""
+"임시로 지역 키보드 입력과 영문 키보드 입력 사이를 토글할 때 사용할 방법:"
 
 #. Type: select
 #. Description
@@ -725,49 +727,51 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"키보드가 지역 키보드 모드이고 영문자를 입력하려면 임시로 영문 모드로 전환하"
+"는 편이 더 낫습니다. 키를 누르고 있는 동안에는 해당 모드를 유지합니다. 키보드"
+"가 영문 모드일 때 지역 문자를 입력하는 용도로 이 키를 사용할 수도 있습니다."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr ""
+msgstr "이 기능을 사용하지 않으려면 \"임시 전환 키 없음\"을 선택하십시오."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "키보드 배치 선택"
+msgstr "기본 키보드 배치"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "AltGr 키 없음"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "키패드 Enter 키"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "양쪽 Alt 키"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "AltGr 키로 동작할 키:"
 
 #. Type: select
 #. Description
@@ -779,21 +783,23 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"몇몇 키보드 배치에서 AltGr 키는, 화폐 기호나 액센트가 들어간 문자 따위처럼 해"
+"당 언어에서 자주 쓰이지 않는 문자를 입력하는데 사용합니다. 이런 문자는 키의 "
+"추가 기호로 인쇄되어 있기도 합니다."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr ""
+msgstr "Compose 키 없음"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "장치를 선택하십시오:"
+msgstr "Compose 키:"
 
 #. Type: select
 #. Description
@@ -804,6 +810,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"Compose (또는 Multi) 키를 누르면 그 다음 몇 개의 키는 키보드에 없는 문자를 조"
+"합한다고 해석합니다."
 
 #. Type: select
 #. Description
@@ -814,6 +822,9 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"텍스트 콘솔의 유니코드 모드에서는 Compose 키가 동작하지 않습니다. 유니코드 모"
+"드가 아니라면 여기 설정과 관계없이 Control+점 조합을 Compose 키로 사용할 수 "
+"있습니다."
 
 #. Type: boolean
 #. Description
@@ -835,7 +846,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr ""
+msgstr "미국 영어"
 
 #. Type: select
 #. Choices
@@ -852,9 +863,8 @@ msgstr "아랍어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "오스트리아"
+msgstr "아스투리아스어"
 
 #. Type: select
 #. Choices
@@ -866,7 +876,7 @@ msgstr "방글라데시"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr ""
+msgstr "벨라루시아어"
 
 #. Type: select
 #. Choices
@@ -877,9 +887,8 @@ msgstr "벵골어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Belgian"
-msgstr "시작"
+msgstr "벨기에어"
 
 #. Type: select
 #. Choices
@@ -891,44 +900,43 @@ msgstr "보스니아어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr ""
+msgstr "브라질 포르투갈어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr ""
+msgstr "영국 영어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian"
-msgstr ""
+msgstr "불가리아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr ""
+msgstr "불가리아어 (음성 표기)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr ""
+msgstr "캐나다 프랑스어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "캐나다 다국어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "캐나다"
+msgstr "카탈루냐어"
 
 #. Type: select
 #. Choices
@@ -939,34 +947,32 @@ msgstr "중국어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Croatian"
-msgstr "계속"
+msgstr "크로아티아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr ""
+msgstr "체코어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Danish"
-msgstr "데이비스"
+msgstr "덴마크어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr ""
+msgstr "네덜란드어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr ""
+msgstr "드보락"
 
 #. Type: select
 #. Choices
@@ -983,29 +989,26 @@ msgstr "에스페란토어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Estonian"
-msgstr "동인디애나"
+msgstr "에스토니아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr "중국"
+msgstr "에티오피아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Finnish"
-msgstr "마치기"
+msgstr "핀란드어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr ""
+msgstr "프랑스어"
 
 #. Type: select
 #. Choices
@@ -1017,13 +1020,13 @@ msgstr "조지아어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr ""
+msgstr "독일어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr ""
+msgstr "그리스어"
 
 #. Type: select
 #. Choices
@@ -1041,7 +1044,7 @@ msgstr "구르무키 문자"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr ""
+msgstr "히브리어"
 
 #. Type: select
 #. Choices
@@ -1053,14 +1056,13 @@ msgstr "힌두어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr ""
+msgstr "헝가리어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Icelandic"
-msgstr "오세아니아"
+msgstr "아이슬란드어"
 
 #. Type: select
 #. Choices
@@ -1072,13 +1074,13 @@ msgstr "아일랜드어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr ""
+msgstr "이탈리아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr ""
+msgstr "일본어"
 
 #. Type: select
 #. Choices
@@ -1096,13 +1098,13 @@ msgstr "카자흐어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "크메르어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr ""
+msgstr "키르기스어"
 
 #. Type: select
 #. Choices
@@ -1114,13 +1116,13 @@ msgstr "한국어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr ""
+msgstr "쿠르드어 (F 배치)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr ""
+msgstr "쿠르드어 (Q 배치)"
 
 #. Type: select
 #. Choices
@@ -1131,28 +1133,26 @@ msgstr "라오어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Latin American"
-msgstr "북미"
+msgstr "중남미"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr ""
+msgstr "라트비아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr ""
+msgstr "리투아니아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Macedonian"
-msgstr "마세이오"
+msgstr "마케도니아어"
 
 #. Type: select
 #. Choices
@@ -1169,15 +1169,14 @@ msgstr "네팔어"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "네덜란드"
+msgstr "사미어 (북)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr ""
+msgstr "노르웨이어"
 
 #. Type: select
 #. Choices
@@ -1189,81 +1188,79 @@ msgstr "페르시아어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr ""
+msgstr "폴란드어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr ""
+msgstr "포르투갈어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "파나마"
+msgstr "펀잡어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr ""
+msgstr "루마이나어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr ""
+msgstr "러시아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr ""
+msgstr "세르비아어 (키릴 문자)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "싱할라어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovakian"
-msgstr ""
+msgstr "슬로바키아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovene"
-msgstr ""
+msgstr "슬로베니아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Spanish"
-msgstr "마치기"
+msgstr "스페인어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr ""
+msgstr "스웨덴어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr ""
+msgstr "스위스 프랑스어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr ""
+msgstr "스위스 독일어"
 
 #. Type: select
 #. Choices
@@ -1281,31 +1278,31 @@ msgstr "텔루구어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr ""
+msgstr "타이어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr ""
+msgstr "터키어 (F 배치)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr ""
+msgstr "터키어 (Q 배치)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr ""
+msgstr "우크라니아어"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "위구르어"
 
 #. Type: select
 #. Choices
@@ -1316,6 +1313,5 @@ msgstr "베트남어"
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
-#, fuzzy
 msgid "Keymap to use:"
-msgstr "암호화 키 길이:"
+msgstr "사용할 키맵:"

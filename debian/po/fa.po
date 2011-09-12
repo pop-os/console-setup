@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-21 22:30+0330\n"
+"PO-Revision-Date: 2011-09-12 12:02+0330\n"
 "Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: \n"
@@ -892,7 +892,7 @@ msgstr "عربی"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturian"
 
 #. Type: select
 #. Choices
@@ -927,9 +927,8 @@ msgstr "بوسنیایی"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Brazilian"
-msgstr "اكرايني"
+msgstr "برزیلی"
 
 #. Type: select
 #. Choices
@@ -965,7 +964,7 @@ msgstr "كانادا چند زبانه"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Catalan"
 
 #. Type: select
 #. Choices
@@ -1024,9 +1023,8 @@ msgstr "استوني"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". اتیوپیایی"
+msgstr "اتیوپیایی"
 
 #. Type: select
 #. Choices
@@ -1068,7 +1066,7 @@ msgstr "گجراتی"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmukhi"
 
 #. Type: select
 #. Choices
@@ -1128,7 +1126,7 @@ msgstr "قزاقی"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1145,16 +1143,14 @@ msgstr "کره‌ای"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr "کردی"
+msgstr "کردی (طرح F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr "کردی"
+msgstr "کردی (طرح Q)"
 
 #. Type: select
 #. Choices
@@ -1201,9 +1197,8 @@ msgstr "نپالی"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "آمریکای شمالی"
+msgstr "سامی شمالی"
 
 #. Type: select
 #. Choices
@@ -1233,7 +1228,7 @@ msgstr "پرتغالي"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1257,7 +1252,7 @@ msgstr "صربی (سیریلیک)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
@@ -1335,7 +1330,7 @@ msgstr "اكرايني"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uyghur"
 
 #. Type: select
 #. Choices

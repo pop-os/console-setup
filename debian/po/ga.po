@@ -904,9 +904,8 @@ msgstr "Araibis"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "An Ostair"
+msgstr "Astúiris"
 
 #. Type: select
 #. Choices
@@ -978,9 +977,8 @@ msgstr "Ceanadach Ilteangach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Ceanada"
+msgstr "Catalóinis"
 
 #. Type: select
 #. Choices
@@ -1040,9 +1038,8 @@ msgstr "Eastónach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Aetópach"
+msgstr "Aetópach"
 
 #. Type: select
 #. Choices
@@ -1085,7 +1082,7 @@ msgstr "Gúisearáitis"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmúcaí"
 
 #. Type: select
 #. Choices
@@ -1145,7 +1142,7 @@ msgstr "Casaicis"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Ciméiris"
 
 #. Type: select
 #. Choices
@@ -1216,9 +1213,8 @@ msgstr "Neipeailis"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "An Isiltir"
+msgstr "Sáimis Thuaidh"
 
 #. Type: select
 #. Choices
@@ -1248,9 +1244,8 @@ msgstr "Portaingéalach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "An tSín"
+msgstr "Puinseáibis"
 
 #. Type: select
 #. Choices
@@ -1274,7 +1269,7 @@ msgstr "Seirbiach (Coireallach)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Siolóinis"
 
 #. Type: select
 #. Choices
@@ -1353,7 +1348,7 @@ msgstr "Úcránach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigiúiris"
 
 # google, An CT slender
 #. Type: select
