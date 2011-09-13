@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-07-03 20:39-0300\n"
+"PO-Revision-Date: 2011-09-12 21:53-0300\n"
 "Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "Language: eo\n"
@@ -891,9 +891,8 @@ msgstr "Araba"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Aŭstrio"
+msgstr "Astura"
 
 # BD
 #. Type: select
@@ -965,9 +964,8 @@ msgstr "Kanada plurlingva"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Nuligu"
+msgstr "Kataluna"
 
 #. Type: select
 #. Choices
@@ -1026,9 +1024,8 @@ msgstr "Estona"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr "Ĉinio"
+msgstr "Etiopia"
 
 #. Type: select
 #. Choices
@@ -1130,7 +1127,7 @@ msgstr "Kazaĥa"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Kmera"
 
 #. Type: select
 #. Choices
@@ -1201,9 +1198,8 @@ msgstr "Nepala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Insuloj Marianaj Nordaj"
+msgstr "Nord-Samea"
 
 #. Type: select
 #. Choices
@@ -1232,9 +1228,8 @@ msgstr "Portugala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Panamo"
+msgstr "Panĝaba"
 
 #. Type: select
 #. Choices
@@ -1258,7 +1253,7 @@ msgstr "Cirila serba"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
@@ -1336,7 +1331,7 @@ msgstr "Ukraina"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Ujgura"
 
 #. Type: select
 #. Choices

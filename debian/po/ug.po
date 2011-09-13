@@ -688,7 +688,7 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"ھەرپتاختىڭىزنى دۆلەتلىك ئورۇنلاشتۇرۇش بىلەن ئۆلچەملىك لاتىنچە ئورۇنلاشتۇرۇش "
+"ھەرپتاختىڭىزنى دۆلەتلىك جايلاشتۇرۇش بىلەن ئۆلچەملىك لاتىنچە جايلاشتۇرۇش "
 "ئارىسىدا ئالماشتۇرۇش ئۇسۇلىغا موھتاج بولىسىز."
 
 #. Type: select
@@ -953,7 +953,7 @@ msgstr "بۇلغارچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "بۇلغارچە (phonetic جايلاشتۇرۇش)"
+msgstr "بۇلغارچە (فونېتىكىلىق جايلاشتۇرۇش)"
 
 #. Type: select
 #. Choices
@@ -1151,13 +1151,13 @@ msgstr "كورېيەچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "كۇردچە(F ئورۇنلاشتۇرۇش)"
+msgstr "كۇردچە(F جايلاشتۇرۇش)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "كۇردچە(Q ئورۇنلاشتۇرۇش)"
+msgstr "كۇردچە(Q جايلاشتۇرۇش)"
 
 #. Type: select
 #. Choices

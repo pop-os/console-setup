@@ -59,7 +59,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-02-04 03:13+0100\n"
+"PO-Revision-Date: 2011-09-13 02:45+0200\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: \n"
@@ -946,9 +946,8 @@ msgstr "Árábe"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Asturias"
+msgstr "Asturiano"
 
 #. Type: select
 #. Choices
@@ -1019,9 +1018,8 @@ msgstr "Canadiense multilingüe"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Canadá"
+msgstr "Catalán"
 
 #. Type: select
 #. Choices
@@ -1080,9 +1078,8 @@ msgstr "Estonio"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etíope"
+msgstr "Etíope"
 
 #. Type: select
 #. Choices
