@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-13 02:35+0200\n"
+"PO-Revision-Date: 2011-09-14 18:02+0200\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "Language: \n"
@@ -916,9 +916,8 @@ msgstr "Arapça"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Avusturya"
+msgstr "Asturyasça"
 
 #. Type: select
 #. Choices
@@ -977,7 +976,7 @@ msgstr "Bulgarca"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bulgarca (phonetic düzeni)"
+msgstr "Bulgarca (fonetik düzeni)"
 
 # console-keymaps-acorn, Canadian
 #. Type: select
@@ -996,7 +995,7 @@ msgstr "Kanada Çokdilli"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "Katalan"
+msgstr "Katalanca"
 
 #. Type: select
 #. Choices
@@ -1118,9 +1117,8 @@ msgstr "İbranice"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Hindi"
-msgstr "Bul"
+msgstr "Hindu"
 
 #. Type: select
 #. Choices
@@ -1171,7 +1169,7 @@ msgstr "Kazak Dili"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "Kmer"
+msgstr "Kmer dili"
 
 #. Type: select
 #. Choices
@@ -1261,7 +1259,7 @@ msgstr "Norveççe"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "Pers"
+msgstr "Persce"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1280,9 +1278,8 @@ msgstr "Portekizce"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Panama"
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1393,7 +1390,7 @@ msgstr "Ukrayna dili"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr "Uygur"
+msgstr "Uygurca"
 
 # src/mozilla_i18n.c:37
 #. Type: select
