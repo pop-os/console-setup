@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-24 09:40+0600\n"
+"PO-Revision-Date: 2011-09-16 10:36+0600\n"
 "Last-Translator: Sahran <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
@@ -75,7 +75,7 @@ msgstr "سلاۋيانچە - KOI8-R ۋە KOI8-U"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# سلاۋيانچە - غەيرىي سلاۋيان تىللىرى"
+msgstr "# سلاۋيانچە - غەيرى سلاۋيان تىللىرى"
 
 #. Type: select
 #. Choices
@@ -83,7 +83,7 @@ msgstr "# سلاۋيانچە - غەيرىي سلاۋيان تىللىرى"
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
-"# سلاۋيانچە - سلاۋيان تىللىرى (بوسنىيە ۋە سېربىيە لاتىنچىنىمۇ ئۆز ئىچىگە "
+"# سلاۋيانچە - سلاۋيان تىللىرى (بوسنىيە ۋە سىربىيە لاتىنچىنىمۇ ئۆز ئىچىگە "
 "ئالىدۇ)"
 
 #. Type: select
@@ -91,21 +91,21 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ". ئېفىيوپىيەچە"
+msgstr ". ئېفىئوفىيەچە"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr "# گىرۇزىنچە"
+msgstr "# گرۇزىنچە"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr "# گىرېكچە"
+msgstr "# گرېكچە"
 
 #. Type: select
 #. Choices
@@ -126,22 +126,21 @@ msgstr "# لائوسچە"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# لاتىن1 ۋە لاتىن5 - غەربى ياۋروپا ۋە تۈركىي تىللار"
+msgstr "# لاتىن1 ۋە لاتىن5 - غەربى ياۋرۇپا ۋە تۈركىي تىللار"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# لاتىن 2 - مەركىزى ياۋروپا ۋە رۇمىنچە"
+msgstr "# لاتىن2 - مەركىزى ياۋرۇپا ۋە رومىنچە"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr ""
-"# لاتىن3 ۋە لاتىن8 - چىۋاچە؛ دۇنيا تىلى؛ ئىرېلاندچە؛ مالتاچە ۋە ۋېلىشچە"
+msgstr "# لاتىن3 ۋە لاتىن8 - چىۋاچە؛ دۇنيا تىلى؛ ئىرلاندچە؛ مالتاچە ۋە ۋېلىشچە"
 
 #. Type: select
 #. Choices
@@ -155,7 +154,7 @@ msgstr "# لاتىن7 - لىتۋاچە؛ لاتۋىئانچە، ماۋرىچە �
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ". لاتىن - ۋىيېتنامچە"
+msgstr ". لاتىن - ۋيېتنامچە"
 
 #. Type: select
 #. Choices
@@ -176,21 +175,21 @@ msgstr ". بىرىكتۈرۈلگەن - لاتىنچە؛ سلاۋيان كىرى�
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". بىرىكتۈرۈلگەن - لاتىنچە؛ سلاۋيان كىرىلىك؛ گىرېكچە"
+msgstr ". بىرىكتۈرۈلگەن - لاتىنچە؛ سلاۋيان كىرىلىك؛ گرېكچە"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". بىرىكتۈرۈلگەن - لاتىنچە؛ سلاۋيان ۋە غەيرىي سلاۋيان كىرىلىك"
+msgstr ". بىرىكتۈرۈلگەن - لاتىنچە؛ سلاۋيان ۋە غەيرى سلاۋيان كىرىلىك"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr "ئەڭ مۇۋاپىق ھەرپ توپلىمى پەرەز قىلىش"
+msgstr "ئەڭ مۇۋاپىق ھەرپ توپلىمى پەرەزى"
 
 #. Type: select
 #. Description
@@ -242,11 +241,11 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"\"VGA\" نىڭ كۆرۈنۈشى ئەنئەنىۋى بولۇپ، خەلقئارالىق يېزىقلارنى كۆرسىتىشى "
+"\"VGA\" نىڭ كۆرۈنۈشى ئەنئەنىۋىي بولۇپ، خەلقئارالىق يېزىقلارنى كۆرستىشى "
 "ئىقتىدارىمۇ ئوتتۇراھال دەرىجىدە. \"Fixed\" نىڭ كۆرۈنۈشى ئاددىيراق بولۇپ، "
 "خەلقئارالىق يېزىقلارنى كۆرسىتىش ئىقتىدارى ياخشىراق. \"Terminus\" نىڭ كۆز "
-"چارچاشنىڭ ئالدىنى ئېلىشقا ياردىمى بولۇشى مۇمكىن، لېكىن بەزى بەلگىلەر "
-"ئوخشىشىپ كەتكەچكە، پروگراممېرلارغا ئاۋارىچىلىك ئېلىپ كېلىشى مۇمكىن."
+"چارچاشنىڭ ئالدىنى ئېىلىشقا ياردىمى بولۇشى مۇمكىن، لېكىن بەزى "
+"بەلگىلەرئوخشىشىپ كەتكەچكە، پروگراممېرلارغا ئاۋارىچىلىق ئېلىپ كېلىشى مۇمكىن."
 
 #. Type: select
 #. Description
@@ -428,7 +427,7 @@ msgid ""
 "questions about the keyboard layout will be asked."
 msgstr ""
 "ئۇنى ساقلاپ قېلىش قالماسلىقنى جەزملەڭ. ئەگەر بۇ تاللانمىنى تاللىسىڭىز، "
-"بۇنىڭدىن كېيىن سىزدىن ھەرپتاختا جايلاشتۇرۇش توغرىسىدىكى سوئال سورالمايدۇ."
+"بۇنىڭدىن كېيىن سىزدىن ھەرپتاختا جايلاشتۇرۇش توغرىسىدىكى سۇئال سورالمايدۇ."
 
 #. Type: boolean
 #. Description
@@ -457,7 +456,7 @@ msgid ""
 "will be asked."
 msgstr ""
 "ئەگەر بۇ تاللانمىنى ساقلاپ قېلىشنى تاللىسىڭىز، بۇنىڭدىن كېيىن سىزدىن "
-"ھەرپتاختا جايلاشتۇرۇش توغرىسىدىكى سوئال سورالمايدۇ."
+"ھەرپتاختا جايلاشتۇرۇش توغرىسىدىكى سۇئال سورالمايدۇ."
 
 #. Type: boolean
 #. Description
@@ -488,7 +487,7 @@ msgid ""
 "asked."
 msgstr ""
 "ئەگەر ئۇنى ساقلاپ قېلىشنى تاللىسىڭىز، بۇنىڭدىن كېيىن سىزدىن ھەرپتاختا "
-"جايلاشتۇرۇش توغرىسىدىكى سوئال سورالمايدۇ."
+"جايلاشتۇرۇش توغرىسىدىكى سۇئال سورالمايدۇ."
 
 #. Type: select
 #. Choices
@@ -873,7 +872,7 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"كۆڭۈلدىكى ئەھۋالدا Control+Alt+Backspace بىرىكمە كۇنۇپكىدا ھېچقانداق "
+"كۆڭۈلدىىكى ئەھۋالدا Control+Alt+Backspace بىرىكمە كۇنۇپكىدا ھېچقانداق "
 "مەشغۇلات ئېلىپ بېرىلمايدۇ. ئەگەر سىز خالىسىڭىز ئۇنى X مۇلازىمېتىرنى "
 "توختىتىشقا ئىشلەتكىلى بولىدۇ."
 
