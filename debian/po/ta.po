@@ -8,13 +8,13 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
+#
+# Translations from iso-codes:
 # drtvasudevan <agnihot3@gmail.com>, 2006.
 # Damodharan Rajalingam <rdamodharan@gmail.com>, 2006.
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2010.
 # Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
-#
-# Translations from iso-codes:
-#   Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008.
+#   Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2011.
 #   Dwayne Bailey <dwayne@translate.org.za>, 2009.
 # I. Felix <ifelix25@gmail.com>, 2009.
 msgid ""
@@ -22,9 +22,9 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-08-29 17:32+0530\n"
+"PO-Revision-Date: 2011-09-14 21:07+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: Tamil <<Ubuntu-l10n-tam@lists.ubuntu.com>>\n"
+"Language-Team: Tamil <ubuntu-tam@lists.ubuntu.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -894,7 +894,7 @@ msgstr "அராபிக்"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "அஸ்டுரியன்"
 
 #. Type: select
 #. Choices
@@ -972,7 +972,7 @@ msgstr "கனடியன்-பலமொழி"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "கடலான்"
 
 #. Type: select
 #. Choices
@@ -1035,9 +1035,8 @@ msgstr "எஸ்டோனியன்"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". எத்தியோபிய"
+msgstr "எத்தியோபிய"
 
 # console-keymaps-acorn, Finnish
 #. Type: select
@@ -1082,7 +1081,7 @@ msgstr "குஜராத்தி"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "குர்முகி"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1146,7 +1145,7 @@ msgstr "கசாக்ஷ்"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "கெமர்"
 
 #. Type: select
 #. Choices
@@ -1221,9 +1220,8 @@ msgstr "நேபாலி"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "வட அமெரிக்கா"
+msgstr "வட சமி"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1256,7 +1254,7 @@ msgstr "போர்துக்கீஸ்"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "பஞ்சாபி"
 
 #. Type: select
 #. Choices
@@ -1281,7 +1279,7 @@ msgstr "செர்பியன் (சிரிலிக்)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "சிங்கள"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
@@ -1367,7 +1365,7 @@ msgstr "உக்கிரேனியன்"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "உய்குர்"
 
 #. Type: select
 #. Choices
