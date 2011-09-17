@@ -45,7 +45,7 @@ msgstr "બૂટ/કર્નલ ફોન્ટ ન બદલો"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "સિસ્ટમને યોગ્ય ફોન્ટ પસંદ કરવા દો"
 
 #. Type: text
 #. Description
@@ -53,7 +53,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "માત્ર ફ્રેમબફર"
 
 #. Type: select
 #. Choices
@@ -884,7 +884,7 @@ msgstr "અરેબિક"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "એસ્ટુરિઅન"
 
 #. Type: select
 #. Choices
@@ -956,7 +956,7 @@ msgstr "કેનેડિયન બહુભાષીય"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "કેટેલાન"
 
 #. Type: select
 #. Choices
@@ -1015,9 +1015,8 @@ msgstr "ઇસ્ટોનિયન"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". ઇથિઓપિક"
+msgstr "ઇથિઓપિક"
 
 #. Type: select
 #. Choices
@@ -1059,7 +1058,7 @@ msgstr "ગુજરાતી"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "ગુરુમુખી"
 
 #. Type: select
 #. Choices
@@ -1119,7 +1118,7 @@ msgstr "કઝાખ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ખ્મેર"
 
 #. Type: select
 #. Choices
@@ -1185,14 +1184,13 @@ msgstr "મલયાલમ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "નેપાલી"
+msgstr "નેપાળી"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "ઉત્તરી વિસ્તાર"
+msgstr "ઉત્તરી સામી"
 
 #. Type: select
 #. Choices
@@ -1222,7 +1220,7 @@ msgstr "પોર્ટુગીઝ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "પંજાબી"
 
 #. Type: select
 #. Choices
@@ -1246,7 +1244,7 @@ msgstr "સર્બિયન (સિરીલીક)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "સિંહાલા"
 
 #. Type: select
 #. Choices
@@ -1324,7 +1322,7 @@ msgstr "યુક્રેનિયન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "ઉગ્હુર"
 
 #. Type: select
 #. Choices
@@ -1336,4 +1334,4 @@ msgstr "વિયેતનામી"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "ઉપયોગ કરવાનો કળનકશો:"
+msgstr "ઉપયોગ કરવાનો કીમેપ:"
