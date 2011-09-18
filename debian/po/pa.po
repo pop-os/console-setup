@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-09-01 06:58+0530\n"
+"PO-Revision-Date: 2011-09-18 22:00+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: \n"
@@ -47,7 +47,7 @@ msgstr "ਬੂਟ/ਕਰਨਲ ਫੋਂਟ ਨਾ ਬਦਲੋ"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਨੂੰ ਢੁੱਕਵਾਂ ਫੋਂਟ ਚੁਣਨ ਦਿਉ"
 
 #. Type: text
 #. Description
@@ -55,7 +55,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "ਕੇਵਲ ਫਰੇਮਬਫ਼ਰ ਹੀ"
 
 #. Type: select
 #. Choices
@@ -194,9 +194,8 @@ msgstr ". Combined - Latin; Slavic ਅਤੇ non-Slavic Cyrillic"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "ਰਲਵੇਂ ਅੱਖਰ ਦਿਓ"
+msgstr "ਢੁੱਕਵਾਂ ਅੱਖਰ ਸੈੱਟ ਅੰਦਾਜ਼ਾ"
 
 #. Type: select
 #. Description
@@ -280,26 +279,25 @@ msgstr "ਫੋਂਟ ਆਕਾਰ:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"ਲੀਨਕਸ ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਸਾਈਜ਼ ਚੁਣੋ ਜੀ। ਜਾਣਕਾਰੀ ਲਈ, ਜਦੋਂ ਕੰਪਿਊਟਰ ਬੂਟ ਹੁੰਦਾ ਹੈ ਤਾਂ ਵਰਤੇ ਜਾਂਦੇ ਫੋਂਟ "
-"ਦਾ ਸਾਈਜ਼ ੧੬ ਹੈ।"
+"ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਸਾਈਜ਼ ਚੁਣੋ ਜੀ। ਜਾਣਕਾਰੀ ਲਈ, ਜਦੋਂ ਕੰਪਿਊਟਰ ਬੂਟ ਹੁੰਦਾ ਹੈ ਤਾਂ ਵਰਤੇ ਜਾਂਦੇ ਫੋਂਟ ਦਾ "
+"ਸਾਈਜ਼ 8x16 ਹੈ।"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"ਲੀਨਕਸ ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਸਾਈਜ਼ ਚੁਣੋ ਜੀ। ਜਾਣਕਾਰੀ ਲਈ, ਜਦੋਂ ਕੰਪਿਊਟਰ ਬੂਟ ਹੁੰਦਾ ਹੈ ਤਾਂ ਵਰਤੇ ਜਾਂਦੇ ਫੋਂਟ "
-"ਦਾ ਸਾਈਜ਼ ੧੬ ਹੈ।"
+"ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਸਾਈਜ਼ ਚੁਣੋ ਜੀ। ਜਾਣਕਾਰੀ ਲਈ, ਜਦੋਂ ਕੰਪਿਊਟਰ ਬੂਟ ਹੁੰਦਾ ਹੈ ਤਾਂ ਵਰਤੇ ਜਾਂਦੇ ਫੋਂਟ ਦਾ "
+"ਸਾਈਜ਼ 8x16 ਹੈ। ਕੁਝ ਫੋਂਟ ਆਕਾਰ ਲਈ kbd ਕਨਸੋਲ ਪੈਕੇਜ (console-tools) ਦੇ ਨਾਲ ਨਾਲ "
+"framebuffer ਵੀ ਚਾਹੀਦਾ ਹੈ।"
 
 #. Type: select
 #. Description
