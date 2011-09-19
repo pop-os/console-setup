@@ -9,11 +9,11 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006, 2007, 2010.
-# Євгеній Мещеряков <eugen@debian.org>, 2008.
-# Borys Yanovych <borys@yanovy.ch>, 2010.
 #
 # Translations from iso-codes:
+# Eugeniy Meshcheryakov <eugen@debian.org>, 2005, 2006, 2007, 2010.
+# Євгеній Мещеряков <eugen@debian.org>, 2008.
+# Borys Yanovych <borys@yanovy.ch>, 2010, 2011.
 # Maxim V. Dziumanenko <dziumanenko@gmail.com>, 2010.
 # Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011.
 msgid ""
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-11-01 01:29+0200\n"
+"PO-Revision-Date: 2011-09-19 07:23+0300\n"
 "Last-Translator: Borys Yanovych <borys@yanovy.ch>\n"
 "Language-Team: Ukrainian <>\n"
 "Language: uk\n"
@@ -43,7 +43,7 @@ msgstr "Не змінювати шрифт завантаження/ядра"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Дозволити системі обрати прийнятний шрифт"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "тільки фреймбуфер"
 
 #. Type: select
 #. Choices
@@ -194,9 +194,8 @@ msgstr ". Комбінована - латиниця; слов'янська та 
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Введіть випадкові символи"
+msgstr "Можливий оптимальний набір символів"
 
 #. Type: select
 #. Description
@@ -282,26 +281,26 @@ msgstr "Розмір шрифту:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Будь ласка, виберіть розмір шрифту для консолі Linux. Для порівняння, шрифт, "
-"що використовується під час завантаження комп'ютера, має розмір 16."
+"Будь ласка, виберіть розмір шрифту для консолі. Для порівняння, шрифт, що "
+"використовується під час завантаження комп'ютера, має розмір 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Будь ласка, виберіть розмір шрифту для консолі Linux. Для порівняння, шрифт, "
-"що використовується під час завантаження комп'ютера, має розмір 16."
+"Будь ласка, виберіть розмір шрифту для консолі. Для порівняння, шрифт, що "
+"використовується під час завантаження комп'ютера, має розмір 8x16. Деякі "
+"розміри шрифтів вимагають наявності консольного пакунку kbd (не console-"
+"tools) та фреймбуферу."
 
 #. Type: select
 #. Description
@@ -904,9 +903,8 @@ msgstr "Арабська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Астурія"
+msgstr "Астурійська"
 
 #. Type: select
 #. Choices
@@ -977,9 +975,8 @@ msgstr "Канадська багатомовна"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Нафталан"
+msgstr "Каталонська"
 
 #. Type: select
 #. Choices
@@ -1038,9 +1035,8 @@ msgstr "Естонська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Ефіопська"
+msgstr "Ефіопська"
 
 #. Type: select
 #. Choices
@@ -1142,7 +1138,7 @@ msgstr "Казахська"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Кхмерська"
 
 #. Type: select
 #. Choices
@@ -1213,9 +1209,8 @@ msgstr "Непальська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Північний Самар"
+msgstr "Північносаамська"
 
 #. Type: select
 #. Choices
@@ -1244,9 +1239,8 @@ msgstr "Португальська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Пенджаб"
+msgstr "Пенджабська"
 
 #. Type: select
 #. Choices
@@ -1270,7 +1264,7 @@ msgstr "Сербська (кирилічна)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Сингальська"
 
 #. Type: select
 #. Choices
@@ -1348,7 +1342,7 @@ msgstr "Українська"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Уйгурська"
 
 #. Type: select
 #. Choices

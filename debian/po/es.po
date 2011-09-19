@@ -59,7 +59,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-13 02:45+0200\n"
+"PO-Revision-Date: 2011-09-20 00:39+0200\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: \n"
@@ -79,7 +79,7 @@ msgstr "No cambie la tipografía del arranque/núcleo"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Dejar que el sistema elija una tipografía apropiada"
 
 #. Type: text
 #. Description
@@ -87,7 +87,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "sólo «framebuffer»"
 
 #. Type: select
 #. Choices
@@ -226,9 +226,8 @@ msgstr ". Combinado - Latino; Cirílico Eslavo y no Eslavo"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Introduzca caracteres aleatorios"
+msgstr "Buscar el conjunto de caracteres óptimo"
 
 #. Type: select
 #. Description
@@ -316,26 +315,26 @@ msgstr "Tamaño del tipo de letra:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "Escoja el tamaño para la tipografía de la consola de Linux. Como referencia, "
-"la tipografía que utiliza la máquina en el arranque tiene un tamaño 16."
+"la tipografía que utiliza la máquina en el arranque tiene un tamaño de 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Escoja el tamaño para la tipografía de la consola de Linux. Como referencia, "
-"la tipografía que utiliza la máquina en el arranque tiene un tamaño 16."
+"la tipografía que utiliza la máquina en el arranque tiene un tamaño de 8x16. "
+"Algunos tamaños de tipográficas necesitan que esté instalado el paquete de "
+"consola kbd (no «console-tools») además del «framebuffer»."
 
 #. Type: select
 #. Description
@@ -1115,13 +1114,13 @@ msgstr "Griego"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "Gujarati"
+msgstr "Guyaratí"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "gurmuji"
+msgstr "Gurmukhi"
 
 #. Type: select
 #. Choices
@@ -1169,19 +1168,19 @@ msgstr "Japonés"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "Kannada"
+msgstr "Canarés"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "Kazako"
+msgstr "Kazajo"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Jemer"
 
 #. Type: select
 #. Choices
@@ -1252,9 +1251,8 @@ msgstr "Nepalés"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Northern Marianas"
+msgstr "Sami septentrional"
 
 #. Type: select
 #. Choices
@@ -1283,9 +1281,8 @@ msgstr "Portugués"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Panamá"
+msgstr "Panyabí"
 
 #. Type: select
 #. Choices
@@ -1309,7 +1306,7 @@ msgstr "Serbio (cirílico)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Cingalés"
 
 #. Type: select
 #. Choices
@@ -1357,7 +1354,7 @@ msgstr "Tamil"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "Telougou"
+msgstr "Telugú"
 
 #. Type: select
 #. Choices
@@ -1387,7 +1384,7 @@ msgstr "Ucraniano"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigur"
 
 #. Type: select
 #. Choices
