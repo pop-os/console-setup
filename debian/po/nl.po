@@ -7,10 +7,10 @@
 # Dutch messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-#
 # Frans Pop <aragorn@tiscali.nl>, 2005.
 # Frans Pop <elendil@planet.nl>, 2007, 2008, 2009, 2010.
-# Eric Spreen <erispre@gmail.com>, 2010
+# Eric Spreen <erispre@gmail.com>, 2010.
+# Jeroen Schot <schot@a-eskwadraat.nl>, 2011.
 #
 # Translations from iso-codes:
 # Translations taken from ICU SVN on 2007-09-09.
@@ -21,14 +21,15 @@
 # Freek de Kruijf <f.de.kruijf@hetnet.nl>, 2006, 2007, 2008, 2009, 2010, 2011.
 # Taco Witte <tcwitte@cs.uu.nl>, 2004.
 # Reinout van Schouwen <reinouts@gnome.org>, 2007.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: nl\n"
+"Project-Id-Version: debian-installer/sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-10-25 14:06+0200\n"
-"Last-Translator: Eric Spreen <erispre@gmail.com>\n"
-"Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"PO-Revision-Date: 2011-09-21 12:04+0200\n"
+"Last-Translator: Jeroen Schot <schot@a-eskwadraat.nl>\n"
+"Language-Team: Debian l10n Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +47,7 @@ msgstr "Wijzig het opstart/kernellettertype niet"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Laat het systeem een geschikt lettertype uitkiezen"
 
 #. Type: text
 #. Description
@@ -54,7 +55,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "alleen framebuffer"
 
 #. Type: select
 #. Choices
@@ -195,9 +196,8 @@ msgstr ". Gecombineerd - Latijns; Slavisch en niet-Slavisch Cyrillisch"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Voer willekeurige tekens in"
+msgstr "Raad optimale karakterset"
 
 #. Type: select
 #. Description
@@ -285,26 +285,26 @@ msgstr "Lettertype-grootte:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Selecteer de grootte van het lettertype voor de Linux-console. Als "
-"referentie:het lettertype gebruikt wanneer uw computer heeft grootte 16."
+"Selecteer de grootte van het lettertype voor de console. Ter referentie: het "
+"lettertype dat wordt gebruikt bij het opstarten heeft grootte 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Selecteer de grootte van het lettertype voor de Linux-console. Als "
-"referentie:het lettertype gebruikt wanneer uw computer heeft grootte 16."
+"Selecteer de grootte van het lettertype voor de console. Ter referentie: het "
+"lettertype dat wordt gebruikt bij het opstarten heeft grootte 8x16. Sommige "
+"lettertypegroottes vereisen het pakket kbd console (niet console-tools) in "
+"combinatie met framebuffer."
 
 #. Type: select
 #. Description
@@ -909,9 +909,8 @@ msgstr "Arabisch"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Asturië"
+msgstr "Asturisch"
 
 #. Type: select
 #. Choices
@@ -982,9 +981,8 @@ msgstr "Canadees meertalig"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Naftalan"
+msgstr "Catalaans"
 
 #. Type: select
 #. Choices
@@ -1043,9 +1041,8 @@ msgstr "Estlands"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Ethiopisch"
+msgstr "Ethiopisch"
 
 #. Type: select
 #. Choices
@@ -1147,7 +1144,7 @@ msgstr "Kazachs"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1218,9 +1215,8 @@ msgstr "Nepalees"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Northern Samar"
+msgstr "Noord-Samisch"
 
 #. Type: select
 #. Choices
@@ -1249,9 +1245,8 @@ msgstr "Portugees"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Punjab"
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1275,7 +1270,7 @@ msgstr "Servisch (Cyrillisch)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Singalees"
 
 #. Type: select
 #. Choices
@@ -1353,7 +1348,7 @@ msgstr "Oekraïens"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Oeigoers"
 
 #. Type: select
 #. Choices
