@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-12 12:02+0330\n"
+"PO-Revision-Date: 2011-09-22 07:08+0330\n"
 "Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: \n"
@@ -191,9 +191,8 @@ msgstr ". متصل شده - لاتین؛ سایلیریک اسلاوی و غیر
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "کاراکترهای تصادفی وارد کنید"
+msgstr "مجموعه کاراکترهای مناسب را حدس بزنید"
 
 #. Type: select
 #. Description
@@ -279,26 +278,25 @@ msgstr "اندازه قلم:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. برای اشاره،  قلمی که "
-"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۱۶ دارد."
+"لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. به عنوان مرجع،  قلمی که "
+"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۸x۱۶ دارد."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. برای اشاره،  قلمی که "
-"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۱۶ دارد."
+"لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. به عنوان مرجع،  قلمی که "
+"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۸x۱۶ دارد. در برخی از اندازه‌های "
+"قلم به بسته kbd console (و نه console-tools) به علاوه freamebuffer نیاز است."
 
 #. Type: select
 #. Description

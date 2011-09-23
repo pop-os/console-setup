@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-17 09:17-0500\n"
+"PO-Revision-Date: 2011-09-22 23:26-0500\n"
 "Last-Translator: Kumar Appaiah\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: en_US\n"
@@ -52,7 +52,7 @@ msgstr "बूट/कर्नल फॉन्ट न बदलें."
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "सिस्टम को स्वयं फांट आकार चुनने दें."
 
 #. Type: text
 #. Description
@@ -60,7 +60,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "मात्र framebuffer"
 
 #. Type: select
 #. Choices
@@ -199,9 +199,8 @@ msgstr "संयुक्त - लैटिन; स्लाव और गै�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "क्रमरहित अक्षर प्रविष्ट करें"
+msgstr "सही अक्षर संघटन का अनुमान लगाएं"
 
 #. Type: select
 #. Description
@@ -286,26 +285,25 @@ msgstr "फॉन्ट का आकार:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले फॉन्ट "
-"का आकार 16 है."
+"का आकार 8x16 है."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले फॉन्ट "
-"का आकार 16 है."
+"कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले "
+"फॉन्टका आकार 8x16 है. कुछ फॉन्ट आकार के लिए kbd console पॅकेज (console-tools नहीं) "
+"तथा framebuffer कीआवश्यकता है."
 
 #. Type: select
 #. Description
