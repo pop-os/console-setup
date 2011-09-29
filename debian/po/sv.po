@@ -25,8 +25,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-28 06:40+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"PO-Revision-Date: 2011-09-30 00:03+0100\n"
+"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -900,9 +900,8 @@ msgstr "Arabiska"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Österrike"
+msgstr "Asturiska"
 
 # BD
 #. Type: select
@@ -978,9 +977,8 @@ msgstr "Kanadensisk, flerspråkigt arrangemang"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Kanada"
+msgstr "Katalanska"
 
 #. Type: select
 #. Choices
@@ -1040,9 +1038,8 @@ msgstr "Estländsk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etiopisk"
+msgstr "Etiopisk"
 
 #. Type: select
 #. Choices
@@ -1145,7 +1142,7 @@ msgstr "Kazakiska"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1216,9 +1213,8 @@ msgstr "Nepali"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Nordmarianerna"
+msgstr "Nordsamiska"
 
 #. Type: select
 #. Choices
@@ -1247,9 +1243,8 @@ msgstr "Portugisisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Panama"
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1273,7 +1268,7 @@ msgstr "Serbisk (Kyrillisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Singalesiska"
 
 #. Type: select
 #. Choices
@@ -1351,7 +1346,7 @@ msgstr "Ukrainsk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uiguriska"
 
 #. Type: select
 #. Choices
