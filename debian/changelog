@@ -12,6 +12,7 @@ console-setup (1.74) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Default to Russian layout with Ossetian variant for Ossetian
     language
+  * Galician translation updates. Closes: #644055
 
   [ Colin Watson ]
   * Explicitly build-depend on liblocale-gettext-perl for kbdnames-maker,
