@@ -3,6 +3,11 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
 # translation of gl.po to Galician
 # Galician messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
@@ -11,28 +16,13 @@
 # Marce Villarino <mvillarino@users.sourceforge.net>, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009.
-# Jorge Barreiro <yortx.barry@gmail.com>, 2010.
-#
-# Translations from iso-codes:
-# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
-#
-#   Translations from KDE desktop.po:
-#   - Jesús Bravo Álvarez <jba@pobox.com>
-#   Alastair McKinstry - further translations from ICU-3.0
-#
-#   Free Software Foundation, Inc., 2000,2002,2003,2004.
-#   Alastair McKinstry, <mckinstry@computer.org>, 2001,2002.
-#   Jacobo Tarrío <jtarrio@debian.org>, 2005, 2006, 2007, 2008.
-#   Jorge Barreiro <yortx.barry@gmail.com>, 2010.
-#
-#   Jesus Bravo Alvarez <jba@pobox.com>, 2001. (from KDE desktop.po)
-#
+# Jorge Barreiro <yortx.barry@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-10-21 00:51+0200\n"
+"PO-Revision-Date: 2011-10-02 13:02+0200\n"
 "Last-Translator: Jorge Barreiro <yortx.barry@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
@@ -46,14 +36,14 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Non mudar o tipo de letra do arranque/núcleo"
+msgstr "Non cambiar o tipo de letra do arranque/núcleo"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Deixar que o sistema escolla o tipo de letra adecuado"
 
 #. Type: text
 #. Description
@@ -61,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "só o «framebuffer»"
 
 #. Type: select
 #. Choices
@@ -200,16 +190,15 @@ msgstr ". Combinado - latino, eslavo e cirílico non eslavo"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Introduza caracteres aleatorios"
+msgstr "Escolla o xogo de caracteres adecuado"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "Conxunto de caracteres que se vai soportar:"
+msgstr "Xogo de caracteres admitido:"
 
 #. Type: select
 #. Description
@@ -218,8 +207,7 @@ msgstr "Conxunto de caracteres que se vai soportar:"
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
-"Escolla o conxunto de caracteres que debería estar soportado polo tipo de "
-"letra da consola."
+"Escolla o xogo de caracteres que debería admitir o tipo de letra da consola."
 
 #. Type: select
 #. Description
@@ -229,7 +217,7 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Se non usa o framebuffer, as opcións que comezan con «.» han reducir o "
+"Se non usa o «framebuffer», as opcións que comezan con «.» han reducir o "
 "número de cores dispoñíbeis na consola."
 
 #. Type: select
@@ -274,7 +262,7 @@ msgid ""
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
 "Se prefire a versión en negriña do tipo Terminus, escolla o tipo "
-"TerminusBold (se emprega o framebuffer) ou TerminusBoldVGA (noutro caso)."
+"TerminusBold (se emprega o «framebuffer») ou TerminusBoldVGA (noutro caso)."
 
 #. Type: select
 #. Description
@@ -290,26 +278,26 @@ msgstr "Tamaño de letra:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Escolla o tamaño do tipo de letra para a consola de Linux. Como referencia, "
-"o tipo de letra co que se inicia o ordenador ten tamaño 16."
+"Escolla o tamaño de letra para a consola. Como referencia, o tipo de letra "
+"co que se inicia o computador ten tamaño 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Escolla o tamaño do tipo de letra para a consola de Linux. Como referencia, "
-"o tipo de letra co que se inicia o ordenador ten tamaño 16."
+"Escolla o tamaño do tipo de letra para a consola. Como referencia, o tipo de "
+"letra co que se inicia o computador ten tamaño 8x16. Algúns tamaños de letra "
+"requiren o paquete de consola «kbd» (non «console-tools») máis o "
+"«framebuffer»."
 
 #. Type: select
 #. Description
@@ -363,7 +351,7 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"A disposición do teclado varía segun paises, ainda que algúns teñen "
+"A disposición do teclado varía segundo o país, aínda que algúns teñen "
 "disposicións comúns. Escolla o pais de orixe do teclado."
 
 #. Type: select
@@ -409,9 +397,8 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Indique se desexa mantelos. Se escolle esta opción non se han facer "
-"preguntas acerca da disposición de teclado e hase conservar a configuración "
-"actual."
+"Indique se desexa mantela. Se escolle esta opción non se han facer preguntas "
+"acerca da disposición de teclado e hase conservar a configuración actual."
 
 #. Type: boolean
 #. Description
@@ -431,9 +418,8 @@ msgid ""
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
 "O valor predeterminado da disposición do teclado é XKBLAYOUT="
-"\"${XKBLAYOUT}\" e XKBVARIANT=\"${XKBVARIANT}\". Este valor está baseado na "
-"linguaxe/rexión definida actualmente e na configuración en /etc/X11/xorg."
-"conf."
+"\"${XKBLAYOUT}\" e XKBVARIANT=\"${XKBVARIANT}\". Este valor está baseado no "
+"idioma/rexión definida actualmente e na configuración en /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -462,7 +448,7 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"As opcións do teclado actuais no ficheiro de configuración /etc/default/"
+"As opcións de teclado actuais no ficheiro de configuración /etc/default/"
 "keyboard están definidas como XKBOPTIONS=\"${XKBOPTIONS}\"."
 
 #. Type: boolean
@@ -481,7 +467,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "Desexa manter as opcións do teclado predeterminadas (${XKBOPTIONS})?"
+msgstr "Desexa manter as opcións de teclado predeterminadas (${XKBOPTIONS})?"
 
 #. Type: boolean
 #. Description
@@ -492,8 +478,8 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"O valor predeterminado das opcións da disposición do teclado é XKBOPTIONS="
-"\"${XKBOPTIONS}\". Este valor está baseado na linguaxe/rexión actualmente "
+"O valor predeterminado das opcións da disposición de teclado é XKBOPTIONS="
+"\"${XKBOPTIONS}\". Este valor está baseado no idioma/rexión actualmente "
 "definida e na configuración en /etc/X11/xorg.conf."
 
 #. Type: boolean
@@ -504,7 +490,7 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Se escolle mantelas, non se farán preguntas acerca das opcións do teclado."
+"Se escolle mantelas, non se farán preguntas acerca das opcións de teclado."
 
 #. Type: select
 #. Choices
@@ -515,7 +501,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "Bloqueo de maiúsculas"
+msgstr "Bloq maiús"
 
 #. Type: select
 #. Choices
@@ -534,7 +520,7 @@ msgstr "Bloqueo de maiúsculas"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr "Tecla Alt dereita (AltGr)"
+msgstr "Tecla Alt dereita (Alt Gr)"
 
 #. Type: select
 #. Choices
@@ -549,14 +535,14 @@ msgstr "Tecla Alt dereita (AltGr)"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr "Tecla Control dereita"
+msgstr "Tecla Ctrl dereita"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr "Tecla de maiúsculas dereita"
+msgstr "Tecla Maiús dereita"
 
 #. Type: select
 #. Choices
@@ -575,7 +561,7 @@ msgstr "Tecla de maiúsculas dereita"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr "Tecla de logotipo dereita"
+msgstr "Tecla Logo dereita"
 
 #. Type: select
 #. Choices
@@ -590,42 +576,42 @@ msgstr "Tecla de logotipo dereita"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "Tecla do menú"
+msgstr "Tecla Menú"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "Alt+Maiúsculas"
+msgstr "Alt+Maiús"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr "Control+Maiúsculas"
+msgstr "Ctrl+Maiús"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr "Control+Alt"
+msgstr "Ctrl+Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr "Alt+Bloqueo de maiúsculas"
+msgstr "Alt+Bloq maiús"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr "Tecla Control esquerda+Tecla Maiúsculas esquerda"
+msgstr "Tecla Ctrl esquerda+Tecla Maiús esquerda"
 
 #. Type: select
 #. Choices
@@ -647,14 +633,14 @@ msgstr "Tecla Alt esquerda"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "Tecla Control esquerda"
+msgstr "Tecla Ctrl esquerda"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "Tecla de maiúsculas esquerda"
+msgstr "Tecla Maiús esquerda"
 
 #. Type: select
 #. Choices
@@ -673,14 +659,14 @@ msgstr "Tecla de maiúsculas esquerda"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr "Tecla de logotipo esquerda"
+msgstr "Tecla Logo esquerda"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "Tecla de bloqueo de desprazamento"
+msgstr "Tecla Bloq despr"
 
 #. Type: select
 #. Choices
@@ -694,7 +680,7 @@ msgstr "Non conmutar"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "Método para conmutar entre o modo nacional e o modo latino:"
+msgstr "Método para conmutar entre o modo nacional e o modo Latin:"
 
 #. Type: select
 #. Description
@@ -705,7 +691,7 @@ msgid ""
 "the standard Latin layout."
 msgstr ""
 "Ha precisar dun sistema para conmutar o teclado entre a disposición nacional "
-"e a disposición latina estándar."
+"e a disposición Latin estándar."
 
 #. Type: select
 #. Description
@@ -717,11 +703,11 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"Polo xeral escóllense Alt dereita ou bloqueo de maiúscular por ergonomía "
-"(neste último caso empregue a combinación de Maiúsculas+Bloqueo de "
-"maiúsculas para conmutar entre maiúsculas/minúsculas). Alt+Maiúsculas tamén "
-"é unha combinación popular, aínda que ha perder o seu significado habitual "
-"en Emacs e outros programas que a usen con outros propósitos."
+"Polo xeral escóllense Alt dereita ou Bloq maiús por ergonomía (neste último "
+"caso empregue a combinación de Maiús+Bloq maiús para conmutar entre "
+"maiúsculas/minúsculas). Alt+Maiús tamén é unha combinación popular, aínda "
+"que ha perder o seu significado habitual en Emacs e outros programas que a "
+"usen con outros propósitos."
 
 #. Type: select
 #. Description
@@ -746,14 +732,14 @@ msgstr "Sen conmutador temporal"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "Ámbas as dúas teclas de logotipo"
+msgstr "Ambas as dúas teclas Logo"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "Método para conmutar temporalmente entre a entrada nacional e latina:"
+msgstr "Método para conmutar temporalmente entre a entrada nacional e Latin:"
 
 #. Type: select
 #. Description
@@ -767,10 +753,10 @@ msgid ""
 "Latin mode."
 msgstr ""
 "Cando o teclado está no modo nacional e queira escribir só unhas poucas "
-"letras latinas pode ser desexábel ter unha tecla para trocar temporalmente "
-"para os símbolos latinos. O teclado seguirá nese modo mentres se manteña "
-"premida a tecla escollida, que tamén pode empregarse para escribir letras "
-"nacionais cando o teclado estexa no modo latino."
+"letras Latin pode ser desexábel ter unha tecla para trocar temporalmente ao "
+"modo Latin. O teclado seguirá nese modo mentres se manteña premida a tecla "
+"escollida, que tamén pode empregarse para escribir letras nacionais cando o "
+"teclado estea no modo Latin."
 
 #. Type: select
 #. Description
@@ -791,7 +777,7 @@ msgstr "A disposición de teclado predeterminada"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "Sen tecla AltGr"
+msgstr "Sen tecla Alt Gr"
 
 #. Type: select
 #. Choices
@@ -805,14 +791,14 @@ msgstr "Tecla Intro do teclado numérico"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "As dúas teclas Alt"
+msgstr "Ambas as dúas teclas Alt"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "Tecla a usar como AltGr"
+msgstr "Tecla a usar como Alt Gr"
 
 #. Type: select
 #. Description
@@ -824,9 +810,9 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"Con algunhas das disposicións de teclado, AltGr é unha tecla modificadora "
+"Con algunhas das disposicións de teclado, Alt Gr é unha tecla modificadora "
 "que se emprega para introducir algúns caracteres; principalmente algúns "
-"pouco habituais para o idioma da disposición de teclado, comp símbolos de "
+"pouco habituais para o idioma da disposición de teclado, como símbolos de "
 "moedas estranxeiras ou letras acentuadas. Estes símbolos xeralmente están "
 "impresos nas teclas."
 
@@ -842,7 +828,7 @@ msgstr "Non hai tecla Compose"
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr "Tecla «compose»:"
+msgstr "Tecla Compose:"
 
 #. Type: select
 #. Description
@@ -853,8 +839,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"A tecla Compose (tamén coñecida coma «Multi_key») fai que o ordenador "
-"interprete as seguintes pulsacións de teclas coma unha combinación para "
+"A tecla Compose (tamén coñecida como «Multi_key») fai que o computador "
+"interprete as seguintes pulsacións de teclas como unha combinación para "
 "producir un carácter que non figura no teclado."
 
 #. Type: select
@@ -868,14 +854,14 @@ msgid ""
 msgstr ""
 "Na consola de texto, a tecla Compose non funciona no modo Unicode. Se non "
 "está no modo Unicode, independentemente do que escolla aquí, sempre ha poder "
-"empregar a combinación Control+punto coma tecla Compose."
+"empregar a combinación Ctrl+punto como tecla Compose."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr "Desexa usar Control+Alt+Backspace para abortar o servidor X?"
+msgstr "Desexa usar Ctrl+Alt+Retroceso para abortar o servidor X?"
 
 #. Type: boolean
 #. Description
@@ -885,14 +871,14 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"A combinación Control+Alt+Backspace non fai nada de forma predeterminada. Se "
+"A combinación Ctrl+Alt+Retroceso non fai nada de forma predeterminada. Se "
 "quere, pode usarse para abortar o servidor X."
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "Americano"
+msgstr "Inglés americano"
 
 #. Type: select
 #. Choices
@@ -952,7 +938,7 @@ msgstr "Brasileiro"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "Británico"
+msgstr "Inglés británico"
 
 #. Type: select
 #. Choices
@@ -970,7 +956,7 @@ msgstr "Búlgaro (esquema phonetic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "Francés (Canadá)"
+msgstr "Francés do Canadá"
 
 #. Type: select
 #. Choices
@@ -1302,13 +1288,13 @@ msgstr "Sueco"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "Francés (Suíza)"
+msgstr "Francés de Suíza"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "Alemán (Suíza)"
+msgstr "Alemán de Suíza"
 
 #. Type: select
 #. Choices
