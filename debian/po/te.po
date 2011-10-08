@@ -6,26 +6,28 @@
 # translation of te.po to Telugu
 # Telugu translation for debian-installer
 # This file is distributed under the same license as the debian-installer package.
-# వీవెన్ (Veeven) <launchpad.net>, 2007.
-# Y Giridhar Appaji Nag <giridhar@appaji.net>, 2008.
-# Arjuna Rao Chavala <arjunaraoc@gmail.com>,2010
 # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
 #
 # Translations from iso-codes:
+# వీవెన్ (Veeven) <launchpad.net>, 2007.
+# Y Giridhar Appaji Nag <giridhar@appaji.net>, 2008.
+# Arjuna Rao Chavala <arjunaraoc@gmail.com>,2010.
 # Y Giridhar Appaji Nag <appaji@debian.org>, 2008, 2009.
 # Krishna Babu K <kkrothap@redhat.com>, 2009.
+# Arjuna Rao Chavala <arjunaraoc@googlemail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-18 15:32+0530\n"
+"PO-Revision-Date: 2011-10-08 12:07+0530\n"
 "Last-Translator: Arjuna Rao Chavala <arjunaraoc@gmail.com>\n"
-"Language-Team: Telugu <debian-in-workers@lists.alioth.debian.org>\n"
+"Language-Team: d-i <kde-i18n-doc@kde.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -302,41 +304,36 @@ msgstr "కన్సోల్ పై వాడవలసిన ఎన్కోడ
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "అమిగా కీబో"
+msgstr "కీబోర్డు అమరిక చేయు"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
-msgstr "వేరే దేశం"
+msgstr "వేరేది"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "ఒక కీబోర్డు లేఔటు:"
+msgstr "కీబోర్డు మోడల్:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "కమీ కీబోర్డు అమరి ఎలాంటిదో ఎన్నుకోండి."
+msgstr "మీ కీబోర్డు మోడల్ ఎలాంటిదో ఎన్నుకోండి."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "ఎలాంటి కీబోర్డు:"
+msgstr "కీబోర్డు యొక్క దేశమూలం:"
 
 #. Type: select
 #. Description
@@ -347,22 +344,22 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"కీబోర్డు అమరిక దేశాన్ని బట్టి మారుతుంది. కొన్ని దేశాలలో బహుళ సాధారణ అమరికలు  వుంటాయి.  ఈ కీబోర్డు కి "
+"దేశమూలం ఎంచుకో."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "ఒక కీబోర్డు లేఔటు:"
+msgstr "కీబోర్డు లేఔటు:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "కమీ కీబోర్డు అమరి ఎలాంటిదో ఎన్నుకోండి."
+msgstr "మీ కీబోర్డు అమరిక ఎలాంటిదో ఎన్నుకోండి."
 
 #. Type: boolean
 #. Description
@@ -489,7 +486,7 @@ msgstr "దీనిని కొనసాగించదలచుకుంట�
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr ""
+msgstr "కేప్స్ లాక్"
 
 #. Type: select
 #. Choices
@@ -508,7 +505,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "కుడి ఆల్ట్ (AltGr)"
 
 #. Type: select
 #. Choices
@@ -523,14 +520,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr ""
+msgstr "కుడి కంట్రోల్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr ""
+msgstr "కుడి షిఫ్ట్"
 
 #. Type: select
 #. Choices
@@ -549,7 +546,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr ""
+msgstr "కుడి బొమ్మ కీ"
 
 #. Type: select
 #. Choices
@@ -564,42 +561,42 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr ""
+msgstr "మెనూ కీ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr ""
+msgstr "ఆల్ట్+షిఫ్ట్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr ""
+msgstr "కంట్రోల్+షిఫ్ట్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr ""
+msgstr "కంట్రోల్+ఆల్ట్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "ఆల్ట్+కేప్స్ లాక్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr ""
+msgstr "ఎడమ కంట్రోల్+ఎడమ షిఫ్ట్"
 
 #. Type: select
 #. Choices
@@ -614,21 +611,21 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr ""
+msgstr "ఎడమ ఆల్ట్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr ""
+msgstr "ఎడమ కంట్రోల్"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr ""
+msgstr "ఎడమ షిఫ్ట్"
 
 #. Type: select
 #. Choices
@@ -647,28 +644,28 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr ""
+msgstr "ఎడమ బొమ్మ కీ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr ""
+msgstr "స్క్రాల్ లాక్ కీ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "టాగ్లింగ్ లేదు"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "జాతీయ మరియు లాటిన్ మధ్య మారుటకు పద్దతి:"
 
 #. Type: select
 #. Description
@@ -677,7 +674,7 @@ msgstr ""
 msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
-msgstr ""
+msgstr "కీ బోర్డు ను జాతీయ లేఔట్ మరియు ప్రామాణిక లాటిన్ లేఔట్ కి మార్చుటకు పద్ధతి కావాలి."
 
 #. Type: select
 #. Description
@@ -689,20 +686,23 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"కుడి ఆల్ట్ లేక కేప్స్ లాక్  కీలు సౌకర్యవంతంగా వుండటానికి  ఎంచుకుంటారు(రెండవది వాడేటప్పుడు షిఫ్ట్+ కేప్స్ "
+"లాక్ వాడి మామూలు కేప్స్ లాక్ కి మారవచ్చు). ఆల్ట్ + షిఫ్ట్ కూడా ప్రజాదరణ పొందినది; కాని ఈమాక్స్ మరియి ఇతర "
+"ప్రోగ్రాములలో ప్రత్యేక అవసరం కోసం వాడబడుతుంది."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr ""
+msgstr "జాబితా లోని కీలన్నీ అన్ని కీబోర్డు లేఔట్ల మీద లేవు."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "తాత్కాలిక  మార్పు లేదు"
 
 #. Type: select
 #. Choices
@@ -713,14 +713,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "రెండు బొమ్మ(లోగో) కీలు"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "జాతీయ మరియు లాటిన్ మధ్య  తాత్కాలికంగా మారుటకు పద్దతి:"
 
 #. Type: select
 #. Description
@@ -733,19 +733,21 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"కీబోర్డు జాతీయ విధానంలో వుండి, కొన్ని లాటిన్ అక్షరాలు టైపుచేయటానికి, తాత్కాలికంగా లాటిన్ విధానంలోకి పోవటం మంచిది. "
+"ఎంచుకున్న కీ నొక్కివున్నంత కాలం, ఆ విధానంలో వుంటుంది. ఆ కీ జాతీయ అక్షరాలు ప్రవేశపెట్టటానికి కీ బోర్డు "
+"లాటిన్ విధానములో వున్నప్పుడు వాడవచ్చు."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr ""
+msgstr "ఈ సాలభ్యం ఆపివేయవచ్చు \"తాత్కాలిక  మార్పు లేదు\" అని ఎంచుకోవటంద్వారా."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
 msgstr "ఒక కీబోర్డు లేఔటు  ఎంచుకోకపోతే  తీసుకొనేది"
 
@@ -754,28 +756,28 @@ msgstr "ఒక కీబోర్డు లేఔటు  ఎంచుకోక�
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "AltGr కీ లేదు"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "కీపాడ్ ఎంటర్ కీ"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "రెండు ఆల్ట్ కీలు"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "AltGr గా పనిచేయటకు కీ:"
 
 #. Type: select
 #. Description
@@ -787,21 +789,22 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"కొన్ని కీబోర్డు లేఔట్లలో, AltGr ని కొన్ని అక్షరాలు(వాడుక భాషకి సంబంధించని విదేశ ద్రవ్య చిహ్నాలు మరియు "
+"ప్రత్యేక అక్షరాలు) ప్రవేశపెట్టటానికి వాడతారు. కీలపై వాటిని అదనపు చిహ్నలుగా ముద్రించివుంటాయి."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr ""
+msgstr "కంపోస్ కీ లేదు"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "డివైస్ ఎంపిక:"
+msgstr "కంపోస్ కీ:"
 
 #. Type: select
 #. Description
@@ -812,6 +815,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"కంపోస్ కీ (మల్టీకీ అనబడే) వలన తరువాత వచ్చే కీ నొక్కలను కలిపి కీబోర్డు పై లేని అక్షరము ప్రవేశ పెట్టటానికి "
+"వాడతారు."
 
 #. Type: select
 #. Description
@@ -822,6 +827,8 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"పాఠ్య కన్సోల్ లో కంపోస్ కీ యూనికోడి విధానంలో పనిచేయదు.యూనికోడ్ లో లేకపోతే ఇక్కడ ఎంచుకున్నదానికి కంట్రోల్ "
+"+పూర్ణ విరామం(పీరియడ్) కలయికని కంపోస్ కీ గా వాడవచ్చు. "
 
 #. Type: boolean
 #. Description
@@ -862,7 +869,7 @@ msgstr "అరబిక్"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "అస్తురియన్"
 
 #. Type: select
 #. Choices
@@ -934,7 +941,7 @@ msgstr "బహుబాషా కెనడియన్"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "కాటలాన్"
 
 #. Type: select
 #. Choices
@@ -993,9 +1000,8 @@ msgstr "ఎస్టోనియన్"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". ఇతియొపిక్"
+msgstr "ఇథియోపియన్"
 
 #. Type: select
 #. Choices
@@ -1037,7 +1043,7 @@ msgstr "గుజరాతి"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "గుర్ముఖి"
 
 #. Type: select
 #. Choices
@@ -1097,7 +1103,7 @@ msgstr "కజఖ్"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ఖ్మేర్"
 
 #. Type: select
 #. Choices
@@ -1168,9 +1174,8 @@ msgstr "నేపాలి"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "ఉత్తర అమెరికా"
+msgstr "ఉత్తర శామి"
 
 #. Type: select
 #. Choices
@@ -1200,7 +1205,7 @@ msgstr "పోర్చుగీస్"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "పంజాబీ"
 
 #. Type: select
 #. Choices
@@ -1224,7 +1229,7 @@ msgstr "సెర్బియన్ (సిరిల్లిక్)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "సింహాళ"
 
 #. Type: select
 #. Choices
@@ -1302,7 +1307,7 @@ msgstr "ఉక్రేనియన్"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "యుఘుర్"
 
 #. Type: select
 #. Choices
