@@ -109,7 +109,7 @@ Description: font converter to generate console fonts from BDF source fonts
 Package: console-setup-udeb
 Section: debian-installer
 Priority: extra
-Depends: archdetect, cdebconf-udeb, kbd-udeb [linux-any], kbdcontrol-udeb [kfreebsd-any], ${misc:Depends}
+Depends: archdetect, cdebconf-udeb, kbd-udeb | kbdcontrol-udeb, ${misc:Depends}
 Provides: keyboard-setup
 Architecture: all
 Description: Configure the keyboard

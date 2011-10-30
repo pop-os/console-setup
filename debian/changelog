@@ -6,8 +6,8 @@ console-setup (1.74) UNRELEASED; urgency=low
     in(ben), ba, es(cat), cn, bt, epo, et, ge, in(guj), in(jhelum), in(deva),
     ie, in(kan), kz, kh, kr, tr(ku_f), tr(ku), in(mal), np, no(smi), ir,
     in(guru), lk, in(tam), in(tel), cn(uig), vn.
-  * Make console-setup-udeb depend on kbd-udeb on linux-any and kbdcontrol-udeb
-    on kfreebsd-any, to fix layout switch in textual d-i.
+  * Make console-setup-udeb depend on kbd-udeb or kbdcontrol-udeb to fix
+    layout switch in textual d-i.
 
   [ Christian Perrier ]
   * Default to Russian layout with Ossetian variant for Ossetian
