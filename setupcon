@@ -606,7 +606,6 @@ if [ -n "$FONTFACE" -a -z "$FONTFILES" ]; then
 The consolechars utility from the \"console-tools\" package can load only fonts
 with 8 pixel width matrix.  Please install the setfont utility from the package
 \"kbd\" or reconfigure the font size." >&2
-                        FONTFILES=''
                     fi
                     ;;
             esac
