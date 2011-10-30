@@ -12,7 +12,7 @@ Vcs-Git: git://git.debian.org/d-i/console-setup.git
 Package: keyboard-configuration
 Section: utils
 Architecture: all
-Depends: ${misc:Depends}, liblocale-gettext-perl
+Depends: ${misc:Depends}, liblocale-gettext-perl, initscripts
 Pre-Depends: debconf (>= 1.5.34)
 Conflicts: console-setup (<< 1.71), console-setup-mini (<< 1.47)
 Description: system-wide keyboard preferences
