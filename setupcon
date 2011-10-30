@@ -446,10 +446,10 @@ fi
 if [ "$do_font" ]; then
     case "$kernel" in
         linux)
-            if which setfont >/dev/null ; then
-                do_font=linuxkbd
-            elif which consolechars >/dev/null ; then
+            if which consolechars >/dev/null ; then
                 do_font=linuxct
+            elif which setfont >/dev/null ; then
+                do_font=linuxkbd
             else
                 echo "Neither setfont nor consolechars is accessible. No font will be configured." >&2
                 do_font=''

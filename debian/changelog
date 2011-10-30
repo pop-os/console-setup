@@ -28,6 +28,11 @@ console-setup (1.74) UNRELEASED; urgency=low
     Schauer, closes: #621077.
   * setupcon: try to use large fonts with consolechars.  Who knows, maybe
     it will be fixed some day...
+  * Prefer console-tools to kbd if both utilities are installed.  This is
+    wrong as kbd is better but these days only Debian provides
+    console-tools and the only way to have both variants of the console
+    utilities is when the limited script wrappers of kbd-compat are
+    installed.  Thanks to mtths (patch was provided), closes: #631935.
 
  -- Samuel Thibault <sthibault@debian.org>  Tue, 23 Aug 2011 00:19:42 +0200
 
