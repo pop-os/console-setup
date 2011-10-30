@@ -33,6 +33,10 @@ console-setup (1.74) UNRELEASED; urgency=low
     console-tools and the only way to have both variants of the console
     utilities is when the limited script wrappers of kbd-compat are
     installed.  Thanks to mtths (patch was provided), closes: #631935.
+  * setupcon: add /run and /dev to /lib/init/rw as alternative directories
+    for temporary files.  Thanks to Michael Biebl, closes: #633153.
+  * setupcon: add traps to remove the temporary file when setupcon is
+    interrupted.
 
  -- Samuel Thibault <sthibault@debian.org>  Tue, 23 Aug 2011 00:19:42 +0200
 
