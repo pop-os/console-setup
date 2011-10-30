@@ -113,42 +113,42 @@ VGA28x16-CODESETS = $(VGA14-CODESETS)
 VGA32x16-CODESETS = $(VGA16-CODESETS)
 
 Arabic-legacy14-BDFS = legacy14i.bdf+legacy14f.bdf+legacy14l.bdf+legacy14b.bdf
-Arabic-legacy16-BDFS = arabic_vga.bdf+u_vga16.bdf+legacy16c.bdf+legacy16f.bdf+legacy16k.bdf
+Arabic-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16f.bdf+legacy16k.bdf
 Arabic-legacy8-BDFS = legacy8f.bdf+legacy8d.bdf+legacy8i.bdf+legacy8b.bdf
 CyrKoi-legacy14-BDFS = legacy14b.bdf+legacy14a.bdf+legacy14c.bdf+legacy14g.bdf
-CyrKoi-legacy16-BDFS = u_vga16.bdf+legacy16b.bdf+legacy16a.bdf
+CyrKoi-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16b.bdf+legacy16a.bdf
 CyrKoi-legacy8-BDFS = legacy8b.bdf+legacy8a.bdf
 CyrSlav-legacy14-BDFS = legacy14a.bdf+legacy14l.bdf+legacy14c.bdf+legacy14e.bdf+legacy14i.bdf
-CyrSlav-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf+legacy16b.bdf
+CyrSlav-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf+legacy16b.bdf
 CyrSlav-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8c.bdf+legacy8f.bdf
 Greek-legacy14-BDFS = legacy14g.bdf+legacy14l.bdf+legacy14b.bdf+legacy14i.bdf
-Greek-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf
+Greek-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf
 Greek-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 Hebrew-legacy14-BDFS = legacy14h.bdf+legacy14l.bdf+legacy14i.bdf+legacy14b.bdf
-Hebrew-legacy16-BDFS = u_vga16.bdf+legacy16g.bdf+legacy16k.bdf+legacy16c.bdf
+Hebrew-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16g.bdf+legacy16k.bdf+legacy16c.bdf
 Hebrew-legacy8-BDFS = legacy8e.bdf+legacy8i.bdf+legacy8f.bdf+legacy8b.bdf
 Lat15-legacy10-BDFS = legacy10b.bdf+legacy10a.bdf+legacy10d.bdf
 Lat15-legacy12-BDFS = legacy12a.bdf+legacy12d.bdf+legacy12c.bdf
 Lat15-legacy14-BDFS = legacy14i.bdf+legacy14l.bdf+legacy14a.bdf+legacy14b.bdf
-Lat15-legacy16-BDFS = u_vga16.bdf+legacy16c.bdf+legacy16k.bdf+legacy16a.bdf
+Lat15-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16k.bdf+legacy16a.bdf
 Lat15-legacy19-BDFS = legacy19a.bdf
 Lat15-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 Lat2-legacy10-BDFS = legacy10d.bdf+legacy10a.bdf+legacy10b.bdf
 Lat2-legacy12-BDFS = legacy12c.bdf+legacy12d.bdf+legacy12a.bdf
 Lat2-legacy14-BDFS = legacy14k.bdf+legacy14l.bdf+legacy14i.bdf+legacy14b.bdf
-Lat2-legacy16-BDFS = u_vga16.bdf+legacy16c.bdf+legacy16k.bdf
+Lat2-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16k.bdf
 Lat2-legacy8-BDFS = legacy8f.bdf+legacy8i.bdf+legacy8b.bdf
 Lat38-legacy14-BDFS = legacy14e.bdf+legacy14i.bdf+legacy14b.bdf
-Lat38-legacy16-BDFS = u_vga16.bdf+legacy16e.bdf+legacy16h.bdf+legacy16a.bdf
+Lat38-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16h.bdf+legacy16a.bdf
 Lat38-legacy8-BDFS = legacy8c.bdf+legacy8f.bdf+legacy8b.bdf
 Lat7-legacy14-BDFS = legacy14l.bdf+legacy14e.bdf+legacy14i.bdf+legacy14b.bdf
-Lat7-legacy16-BDFS = u_vga16.bdf+legacy16e.bdf+legacy16k.bdf+legacy16c.bdf
+Lat7-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16k.bdf+legacy16c.bdf
 Lat7-legacy8-BDFS = legacy8i.bdf+legacy8c.bdf+legacy8f.bdf+legacy8b.bdf
 Uni1-legacy14-BDFS = legacy14a.bdf+legacy14e.bdf+legacy14f.bdf+legacy14l.bdf+legacy14h.bdf+legacy14c.bdf
-Uni1-legacy16-BDFS = arabic_vga.bdf+u_vga16.bdf+legacy16e.bdf+legacy16a.bdf+legacy16f.bdf+legacy16g.bdf+legacy16k.bdf+legacy16b.bdf
+Uni1-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16a.bdf+legacy16f.bdf+legacy16g.bdf+legacy16k.bdf+legacy16b.bdf
 Uni1-legacy8-BDFS = legacy8a.bdf+legacy8c.bdf+legacy8d.bdf+legacy8i.bdf+legacy8e.bdf+legacy8b.bdf
 Uni2-legacy14-BDFS = legacy14e.bdf+legacy14a.bdf+legacy14g.bdf+legacy14l.bdf+legacy14c.bdf+legacy14i.bdf
-Uni2-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16e.bdf+legacy16h.bdf+legacy16k.bdf+legacy16b.bdf
+Uni2-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16e.bdf+legacy16h.bdf+legacy16k.bdf+legacy16b.bdf
 Uni2-legacy8-BDFS = legacy8a.bdf+legacy8c.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 
 adddouble = $(subst .bdf,-double.bdf, $(1))
@@ -270,7 +270,7 @@ soft.Makefile : $(doubled_bdfs)
 	$(foreach face, $(LEGACY_FACES), \
 		$(addsuffix -$(face).psf, $($(face)-CODESETS)))) \
 	>soft.Makefile
-	echo "BDFS_TO_DOUBLE = " $(wildcard bdf/legacy16?.bdf bdf/legacy14?.bdf bdf/arabic_vga.bdf bdf/u_vga16.bdf) >>soft.Makefile
+	echo "BDFS_TO_DOUBLE = " $(wildcard bdf/legacy16?.bdf bdf/legacy14?.bdf bdf/u_vga16_fix.bdf bdf/u_vga16.bdf) >>soft.Makefile
 	echo -n ENCODING_FONTSET = >>soft.Makefile
 	for a in ../acm/*.acm; do aa=`basename $$a .acm`; for f in fontsets/*.256; do ff=`basename $$f .256`; echo -n ' ' $${aa}_$${ff}; done; done >>soft.Makefile
 	echo >>soft.Makefile
