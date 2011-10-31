@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_bs\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-15 12:18+0100\n"
+"PO-Revision-Date: 2011-09-26 15:05+0100\n"
 "Last-Translator: Armin Besirovic <armin@linux.org.ba>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
@@ -47,7 +47,7 @@ msgstr "Ne mijenjaj izgled boot/kernel slova"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Prepusti odabir fonta sistemu"
 
 #. Type: text
 #. Description
@@ -55,7 +55,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "samo framebuffer"
 
 #. Type: select
 #. Choices
@@ -197,9 +197,8 @@ msgstr ". Kombinirano - Latinica; Slavenski i neslavenski ćirilični"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Unesite nasumične znakove"
+msgstr "Pogodi optimalni set karaktera"
 
 #. Type: select
 #. Description
@@ -284,26 +283,25 @@ msgstr "Veličina slova:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Molimo odaberite veličinu slova za Linux konzolu. Kao referentna, slova "
-"korištena pri podizanju ovog računara su veličine 16."
+"Molimo odaberite veličinu slova za konzolu. Kao referentna, slova korištena "
+"pri podizanju ovog računara su veličine 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Molimo odaberite veličinu slova za Linux konzolu. Kao referentna, slova "
-"korištena pri podizanju ovog računara su veličine 16."
+"Molimo odaberite veličinu slova za konzolu. Kao referentna, slova korištena "
+"pri podizanju ovog računara su veličine 8x16. Neke veličine zahtjevaju kbd "
+"konzolni paket (ne console-tools) i framebuffer."
 
 #. Type: select
 #. Description
