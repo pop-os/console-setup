@@ -14,7 +14,8 @@ Section: utils
 Architecture: all
 Depends: ${misc:Depends}, liblocale-gettext-perl, initscripts
 Pre-Depends: debconf (>= 1.5.34)
-Conflicts: console-setup (<< 1.71), console-setup-mini (<< 1.47)
+Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
+Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
 Description: system-wide keyboard preferences
  This package maintains the keyboard preferences in
  /etc/default/keyboard.  Other packages can use the information
@@ -27,7 +28,8 @@ Architecture: all
 Pre-Depends: debconf (>= 1.5.34)
 Depends: console-setup-linux | console-setup-freebsd, xkb-data (>= 0.9), keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6), locales
-Conflicts: console-setup-mini, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
+Conflicts: console-setup-mini
+Breaks: lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program
  This package provides the console with the same keyboard
  configuration scheme as the X Window System. As a result, there is no
@@ -48,7 +50,8 @@ Architecture: all
 Recommends: kbd | console-tools
 Depends: console-setup-linux | console-setup-freebsd, debconf (>= 0.5) | debconf-2.0, keyboard-configuration, ${misc:Depends}
 Suggests: lsb-base (>= 3.0-6)
-Conflicts: console-setup, lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
+Conflicts: console-setup
+Breaks: lsb-core (<< 2.0-6), lsb (<< 2.0-6), lsb-base (<< 3.0-6)
 Description: console font and keymap setup program - reduced version for Linux
  This package provides the console with the same keyboard
  configuration scheme as the X Window System. As a result, there is no
@@ -66,9 +69,9 @@ Priority: optional
 Architecture: all
 Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), ${misc:Depends}
 Suggests: console-setup
-Conflicts: console-terminus, console-cyrillic (<= 0.9-11), console-setup (<= 1.70)
+Breaks: console-terminus, console-cyrillic (<= 0.9-11), console-setup (<< 1.71)
+Replaces: console-terminus, console-setup (<< 1.71)
 Provides: console-terminus
-Replaces: console-terminus
 Description: Linux specific part of console-setup
  This package includes fonts in psf format and definitions of various
  8-bit charmaps.
@@ -79,7 +82,8 @@ Priority: optional
 Architecture: all
 Depends: vidcontrol, kbdcontrol, ${misc:Depends}
 Suggests: console-setup
-Conflicts: console-setup (<= 1.70)
+Breaks: console-setup (<< 1.71)
+Replaces: console-setup (<< 1.71)
 Description: FreeBSD specific part of console-setup
  This package includes raw, uuencoded fonts and various screen maps.
 
