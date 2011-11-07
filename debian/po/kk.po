@@ -8,7 +8,7 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Talgat Daniyarov
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008, 2009
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008-2011
 # Dauren Sarsenov <daur88@inbox.ru>, 2008, 2009
 #
 # Translations from iso-codes:
@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-02-02 10:21+0600\n"
+"PO-Revision-Date: 2011-09-21 14:41+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -43,7 +43,7 @@ msgstr "boot/kernel қарібін өзгертпеңіз"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Сәйкес келетін қаріпті жүйе өзі таңдасын"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "тек фреймбуфер"
 
 #. Type: select
 #. Choices
@@ -142,7 +142,7 @@ msgstr "# Latin2 - орталық Еуропа мен румын"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "# Latin3 мен Latin8 - Чичева; эсперанто; иралнд; мальта мен уэльс"
+msgstr "# Latin3 мен Latin8 - Чичева; эсперанто; ирланд; мальта мен уэльс"
 
 #. Type: select
 #. Choices
@@ -170,29 +170,28 @@ msgstr "# Тай"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Құрамдs - Латын; славян кириллица; иврит; негізгі араб"
+msgstr ". Құрамдас - Латын; славян кириллица; иврит; негізгі араб"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". Құрамдs - Латын; славян кириллица; грек"
+msgstr ". Құрамдас - Латын; славян кириллица; грек"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". Құрамдs - Латын; славян мен славян емес кириллица"
+msgstr ". Құрамдас - Латын; славян мен славян емес кириллица"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Кездейсоқ таңбалар енгізіңіз"
+msgstr "Ықтимал таңбалар жиынын анықтап көру"
 
 #. Type: select
 #. Description
@@ -277,26 +276,25 @@ msgstr "Қаріп өлшемі:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Linux консолі үшін қаріп өлшемін таңдаңыз. Салыстыру үшін, компьютер "
-"жүктелген кезде 16 өлшемді қаріп қолданылады."
+"Консоль үшін қаріп өлшемін таңдаңыз. Салыстыру үшін, компьютер жүктелген "
+"кезде 8x16 өлшемді қаріп қолданылаған."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Linux консолі үшін қаріп өлшемін таңдаңыз. Салыстыру үшін, компьютер "
-"жүктелген кезде 16 өлшемді қаріп қолданылады."
+"Консоль үшін қаріп өлшемін таңдаңыз. Салыстыру үшін, компьютер жүктелген "
+"кезде 8x16 өлшемді қаріп қолданылады. Кейбір қаріп өлшемдері kbd консольді "
+"дестесін (console-tools емес) + фреймбуферді талап етеді"
 
 #. Type: select
 #. Description
@@ -465,7 +463,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "Басатпқы пернетақта опцияларын (${XKBOPTIONS}) қалдыру керек пе?"
+msgstr "Бастапқы пернетақта опцияларын (${XKBOPTIONS}) қалдыру керек пе?"
 
 #. Type: boolean
 #. Description
@@ -883,9 +881,8 @@ msgstr "Американ ағылшын"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Albanian"
-msgstr "Румын"
+msgstr "Албаниялық"
 
 #. Type: select
 #. Choices
@@ -897,7 +894,7 @@ msgstr "Араб"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Астуриялық"
 
 #. Type: select
 #. Choices
@@ -915,7 +912,7 @@ msgstr "Беларус"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Бенгал"
 
 #. Type: select
 #. Choices
@@ -926,9 +923,8 @@ msgstr "Бельгиялық"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "Эстон"
+msgstr "Босниялық"
 
 #. Type: select
 #. Choices
@@ -970,13 +966,13 @@ msgstr "Канадалық көптілді"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Каталан"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Қытайша"
 
 #. Type: select
 #. Choices
@@ -1012,13 +1008,13 @@ msgstr "Дворак"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Дзонг-кэ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Эсперанто"
 
 #. Type: select
 #. Choices
@@ -1029,9 +1025,8 @@ msgstr "Эстон"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Эфиопия"
+msgstr "Эфиопиялық"
 
 #. Type: select
 #. Choices
@@ -1067,13 +1062,13 @@ msgstr "Грек"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Гуджарати"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Гурмукхи"
 
 #. Type: select
 #. Choices
@@ -1085,7 +1080,7 @@ msgstr "Иврит"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Хинди"
 
 #. Type: select
 #. Choices
@@ -1103,7 +1098,7 @@ msgstr "Исландиялық"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Ирландиялық"
 
 #. Type: select
 #. Choices
@@ -1121,19 +1116,19 @@ msgstr "Жапон"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Каннада"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Қазақ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Хмер"
 
 #. Type: select
 #. Choices
@@ -1145,21 +1140,19 @@ msgstr "Қырғыз"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Кореялық"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr "Түрік (F layout)"
+msgstr "Курд (F layout)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr "Түрік (Q layout)"
+msgstr "Курд (Q layout)"
 
 #. Type: select
 #. Choices
@@ -1195,20 +1188,19 @@ msgstr "Македон"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Малаялам"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Непалдық"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Солтүстік Америка"
+msgstr "Солтүстік Сами"
 
 #. Type: select
 #. Choices
@@ -1219,9 +1211,8 @@ msgstr "Норвегиялық"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "Беларус"
+msgstr "Парсы"
 
 #. Type: select
 #. Choices
@@ -1239,7 +1230,7 @@ msgstr "Португал"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Панджаби"
 
 #. Type: select
 #. Choices
@@ -1263,7 +1254,7 @@ msgstr "Серб (Cyrillic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Синхала"
 
 #. Type: select
 #. Choices
@@ -1305,13 +1296,13 @@ msgstr "Швейцариялық неміс"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Тамил"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Телугу"
 
 #. Type: select
 #. Choices
@@ -1341,7 +1332,7 @@ msgstr "Украин"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Ұйғыр"
 
 #. Type: select
 #. Choices
