@@ -36,7 +36,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-10-26 23:28+0200\n"
+"PO-Revision-Date: 2011-11-09 22:16+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
@@ -1258,7 +1258,7 @@ msgstr "סרבית (קרילית)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "סינהלה"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
