@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-03-05 22:52+0530\n"
+"PO-Revision-Date: 2011-11-07 15:45+0530\n"
 "Last-Translator: sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -43,7 +43,7 @@ msgstr "आरंभ/गाभा टंकमुद्रा बदलू न�
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "प्रणालीला सुयोग्य फाँट निवडू द्या"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "फक्त फ्रेमबफर\t"
 
 #. Type: select
 #. Choices
@@ -190,9 +190,8 @@ msgstr ". कंबाइन्ड - लॅटिन; स्लाविक आ�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "स्वैर चिन्हे निवडा"
+msgstr "योग्य चिन्हसंचाचा अंदाज वर्तवा"
 
 #. Type: select
 #. Description
@@ -277,26 +276,25 @@ msgstr "टंकमुद्रा आकार:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"कृपया लिनक्स कन्सोलच्या टंकमुद्रेचा आकार निवडा. संदर्भासाठी, संगणक आरंभ होताना वापरलेल्या "
-"टंकमुद्रेचा आकार 16 आहे."
+"कृपया कन्सोलच्या टंकमुद्रेचा आकार निवडा. संदर्भासाठी, संगणक आरंभ होताना वापरलेल्या "
+"टंकमुद्रेचा आकार 8x16 आहे."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"कृपया लिनक्स कन्सोलच्या टंकमुद्रेचा आकार निवडा. संदर्भासाठी, संगणक आरंभ होताना वापरलेल्या "
-"टंकमुद्रेचा आकार 16 आहे."
+"कृपया कन्सोलच्या टंकमुद्रेचा आकार निवडा. संदर्भासाठी, संगणक आरंभ होताना वापरलेल्या "
+"टंकमुद्रेचा आकार 8x16 आहे. टंकमुद्रेच्या काही आकारांसाठी kbd कन्सोल पॅकेज (console-tools "
+"नव्हे) अधिक फ्रेमबफरची आवश्यकता असते."
 
 #. Type: select
 #. Description
@@ -884,7 +882,7 @@ msgstr "अरबीक"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "ऍस्टुरिअन"
 
 #. Type: select
 #. Choices
@@ -956,7 +954,7 @@ msgstr "कॅनेडियन मल्टिलिंग्वल"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "कॅटालान"
 
 #. Type: select
 #. Choices
@@ -1015,9 +1013,8 @@ msgstr "एस्टोनिअन"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". इथिओपिक"
+msgstr "इथिओपिअन"
 
 #. Type: select
 #. Choices
@@ -1059,7 +1056,7 @@ msgstr "गुजराती"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "गुरुमुखी"
 
 #. Type: select
 #. Choices
@@ -1119,7 +1116,7 @@ msgstr "कजाक"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ख्मेर"
 
 #. Type: select
 #. Choices
@@ -1190,9 +1187,8 @@ msgstr "नेपाळी"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "नॉर्थ अमेरिका"
+msgstr "नॉर्थ सामी"
 
 #. Type: select
 #. Choices
@@ -1222,7 +1218,7 @@ msgstr "पोर्तुगीज"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "पंजाबी"
 
 #. Type: select
 #. Choices
@@ -1246,7 +1242,7 @@ msgstr "सर्बिअन"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "सिंहला"
 
 #. Type: select
 #. Choices
@@ -1324,7 +1320,7 @@ msgstr "युक्रेनिअन"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "युघूर"
 
 #. Type: select
 #. Choices
