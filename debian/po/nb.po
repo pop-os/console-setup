@@ -32,13 +32,14 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-04-15 20:02+0200\n"
+"PO-Revision-Date: 2011-11-22 22:37+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -900,7 +901,7 @@ msgstr "Arabisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturisk"
 
 #. Type: select
 #. Choices
@@ -972,7 +973,7 @@ msgstr "Kanadisk, flerspråklig"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Katalansk"
 
 #. Type: select
 #. Choices
@@ -1031,9 +1032,8 @@ msgstr "Estisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etiopisk"
+msgstr "Etiopisk"
 
 #. Type: select
 #. Choices
@@ -1135,7 +1135,7 @@ msgstr "kasakhisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1206,9 +1206,8 @@ msgstr "nepalsk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Nordterritoriet"
+msgstr "Nord-samisk"
 
 #. Type: select
 #. Choices
@@ -1238,7 +1237,7 @@ msgstr "Portugisisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1262,7 +1261,7 @@ msgstr "Serbisk (kyrillisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Singalesisk"
 
 #. Type: select
 #. Choices
@@ -1340,7 +1339,7 @@ msgstr "Ukrainsk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigursk"
 
 #. Type: select
 #. Choices
