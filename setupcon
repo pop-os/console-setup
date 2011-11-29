@@ -419,7 +419,12 @@ if [ -z "$ACTIVE_CONSOLES" ]; then
     done
 fi
 if [ -z "$ACTIVE_CONSOLES" ]; then
-    echo Can not find the active virtual consoles >&2
+    case "$kernel" in
+        linux) ACTIVE_CONSOLES=$(ls /dev/tty[1-6] 2>/dev/null) ;;
+        freebsd) ACTIVE_CONSOLES=$(ls /dev/ttyv[0-3] 2>/dev/null) ;;
+    esac
+    report Can not find the active virtual consoles, \
+        assuming ACTIVE_CONSOLES=\"$ACTIVE_CONSOLES\" >&2
 else
     report Configuring $ACTIVE_CONSOLES
 fi
