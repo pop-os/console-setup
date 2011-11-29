@@ -48,6 +48,9 @@ console-setup (1.74) UNRELEASED; urgency=low
     informative warnings about the problem.  Thanks to Javier Vasquez,
     Jonny, Cédric Boutillier, Daniel Schepler and Peter Eisentraut.
     Closes: #614127, #614550, #625215, #626025, #642287.
+  * ckbcomp: interpret dead_abovering as degree sign.  Update the
+    xkbsym_date hash in compose_translator.  Thanks to Bjarni Ingi Gislason,
+    closes: #649201.
 
  -- Samuel Thibault <sthibault@debian.org>  Tue, 23 Aug 2011 00:19:42 +0200
 

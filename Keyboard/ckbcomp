@@ -2440,7 +2440,7 @@ if ($freebsd) {
 # Dead symbols with no support in the kernel
          'dead_macron' => '005f',         # underscore
          'dead_abovedot' => '002e',       # period
-         'dead_abovering' => '002a',      # asterisk
+         'dead_abovering' => '00b0',      # degree
          'dead_stroke' => '002d',         # hyphen
          'dead_belowdot' => '0323',       # ???? Vietnamese or Romanian cedilla
          'dead_hook' => '0309',           # ???? Vietnamese
