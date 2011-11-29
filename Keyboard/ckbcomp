@@ -3062,7 +3062,9 @@ if (@layouts) {
 			 || $antecedents[$i] eq 'variant') {
 		    $antecedents[$i] = '';
 		} else {
-		    die "Unknown name $antecedents[$i]\n";
+                    warning "Unknown name \"$antecedents[$i]\" in the following line in \"rules/$rules\":\n";
+                    warning "$_\n";
+		    $antecedents[$i] = '';
 		}
 		if (! defined $antecedents[$i]) {
 		    $antecedents[$i] = '';
@@ -3075,8 +3077,11 @@ if (@layouts) {
 	    next if ($match_found);
 	    my @antecedent_patterns = split ' ', $1;
 	    my $consequent_str = $2;
-	    @antecedent_patterns == @antecedents 
-		or die "Bad number of antecedents";
+	    if (@antecedent_patterns != @antecedents ) {
+		warning "Bad number of antecedents in the following line in \"rules/$rules\":\n";
+                warning "$_\n";
+                next;
+            }
 	    my $matches = 1;
 	    for my $i (0 .. $#antecedents) {
 		if (! matches_pattern ($antecedents[$i], 
@@ -3088,10 +3093,10 @@ if (@layouts) {
 	    if ($matches) {
 		$match_found = $antecedents[0] ne 'OPTIONS';
 		my @consequent_values = split ' ', $2;
-		@consequent_values == @consequents
-		    or die sprintf ("Bad number of consequents: %d != %d",
-				    scalar (@consequent_values),
-				    scalar (@consequents));
+                if (@consequent_values != @consequents) {
+                    warning "Bad number of consequents in the following line in \"rules/$rules\":\n";
+                    warning "$_\n";
+                }
 		for my $i (0 .. $#consequents) {
                     # The purpose of the semicolons is to make %(v) and %_v
                     # empty strings if %v is an empty string
@@ -3135,7 +3140,9 @@ if (@layouts) {
 	    }
 	    next;
 	}    
-	die "Syntax error in the rules file: $_\n";
+	warning "Syntax error in the following line in \"rules/$rules\":\n";
+        warning "$_\n";
+        die;
     }
     close RULES;
 
