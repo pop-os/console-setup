@@ -157,10 +157,8 @@ ckbcomp_rec () {
 		    ?include*)
 			ckbcomp_rec "${line##* }"
                         ;;
-		    keycode*)
-			echo "$line"
-			;;
 		    *)
+			echo "$line"
 			;;
 		    esac
 	    done
