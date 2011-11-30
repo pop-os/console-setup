@@ -930,7 +930,7 @@ fi
 if [ "$KMAP" ]; then
     case "$do_kbd" in
         linux) run plain '' loadkeys "$KMAP" ;;
-        freebsd) run plain ECHO kbdcontrol -l "$KMAP" ;;
+        freebsd) run in ECHO kbdcontrol -l "$KMAP" ;;
     esac
 else
     tempfile || { echo Can not create temporary file >&2; exit 1; }
@@ -945,8 +945,8 @@ else
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
                 $acm_option $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
-            run plain ECHO kbdcontrol -l $TMPFILE
-            run plain ECHO kbdcontrol -f 70 "`printf '\033[3~'`"
+            run in ECHO kbdcontrol -l $TMPFILE
+            run in ECHO kbdcontrol -f 70 "`printf '\033[3~'`"
             ;;
     esac
     rm $TMPFILE
