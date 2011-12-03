@@ -2,8 +2,9 @@ console-setup (1.75) UNRELEASED; urgency=low
 
   [ Samuel Thibault ]
   * Fix setupcon when called from the installer menu.
+  * Make console-setup-udeb depend on hurd-udeb for the hurd-any case.
 
- -- Samuel Thibault <sthibault@debian.org>  Wed, 30 Nov 2011 01:29:14 +0100
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 03 Dec 2011 12:22:14 +0100
 
 console-setup (1.74) unstable; urgency=low
 
