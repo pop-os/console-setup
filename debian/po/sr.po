@@ -7,10 +7,9 @@
 # Copyright (C) 2010 Software in the Public Interest, Inc.
 # Copyright (C) 2008 THE cp6Linux'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the debian-installer package.
-# Karolina Kalic <karolina@janos.in.rs>, 2010.
-# Janos Guljas <janos@janos.in.rs>, 2010.
+# Karolina Kalic <karolina@resenje.org>, 2010-2011.
+# Janos Guljas <janos@resenje.org>, 2010-2011.
 # Veselin Mijušković <veselin.mijuskovic@gmail.com>, 2008.
-# , fuzzy
 #
 #
 # Translations from iso-codes:
@@ -26,8 +25,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-08-25 17:41+0100\n"
-"Last-Translator: Janos Guljas <janos@janos.in.rs>\n"
+"PO-Revision-Date: 2011-12-04 00:12+0100\n"
+"Last-Translator: Karolina Kalic <karolina@resenje.org>\n"
 "Language-Team: Serbian/Cyrillic\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -46,7 +45,7 @@ msgstr "Не мењати бут/кернел фонт"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Препусти одабир одговарајућег фонта систему"
 
 #. Type: text
 #. Description
@@ -54,7 +53,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "фрејмбафер само"
 
 #. Type: select
 #. Choices
@@ -194,9 +193,8 @@ msgstr ". комбинован - латиница, словенска и нес�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Унесите насумичне карактере"
+msgstr "Погоди оптималан распоред карактера"
 
 #. Type: select
 #. Description
@@ -281,26 +279,25 @@ msgstr "Величина фонта:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "Изаберите величинну фонта за конзолу. На пример, фонт при бутовању има "
-"величину 16."
+"величину 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Изаберите величинну фонта за конзолу. На пример, фонт при бутовању има "
-"величину 16."
+"величину 8x16.  Неке величине фонтова захтевају kbd конзолни пакет (не "
+"console-tools) плус фрејмбафер."
 
 #. Type: select
 #. Description
@@ -880,26 +877,25 @@ msgstr "амерички енглески"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr "Албански"
+msgstr "албански"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr "Арапски"
+msgstr "арапски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Астурија"
+msgstr "астуриjски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "Бангладеш"
+msgstr "бангладешки"
 
 #. Type: select
 #. Choices
@@ -911,7 +907,7 @@ msgstr "белоруски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr "Бенгалски"
+msgstr "бенгалски"
 
 #. Type: select
 #. Choices
@@ -923,7 +919,7 @@ msgstr "белгијски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr "Бошњачки"
+msgstr "бошњачки"
 
 #. Type: select
 #. Choices
@@ -964,15 +960,14 @@ msgstr "канадски вишејезични"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Барања"
+msgstr "каталонски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Кинески"
+msgstr "кинески"
 
 #. Type: select
 #. Choices
@@ -1025,9 +1020,8 @@ msgstr "естонски"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Етиопски"
+msgstr "етиопски"
 
 #. Type: select
 #. Choices
@@ -1045,7 +1039,7 @@ msgstr "француски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "Грузијски"
+msgstr "грузијски"
 
 #. Type: select
 #. Choices
@@ -1063,13 +1057,13 @@ msgstr "грчки"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "Гујарати"
+msgstr "гујаратски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "гурмукски"
 
 #. Type: select
 #. Choices
@@ -1099,7 +1093,7 @@ msgstr "исландски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr "Ирски"
+msgstr "ирски"
 
 #. Type: select
 #. Choices
@@ -1123,13 +1117,13 @@ msgstr "Канада"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "Казахстански"
+msgstr "казахстански"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "кмерски"
 
 #. Type: select
 #. Choices
@@ -1141,25 +1135,25 @@ msgstr "киргиски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr "Корејски"
+msgstr "корејски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "Курдски (F распоред)"
+msgstr "курдски (F распоред)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "Курдски (Q распоред)"
+msgstr "курдски (Q распоред)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "Лао"
+msgstr "лао"
 
 #. Type: select
 #. Choices
@@ -1189,20 +1183,19 @@ msgstr "македонски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "Малајамски"
+msgstr "малајамски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "Непалски"
+msgstr "непалски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Северна Територија"
+msgstr "северносамски"
 
 #. Type: select
 #. Choices
@@ -1214,7 +1207,7 @@ msgstr "норвежански"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "Персијски"
+msgstr "персијски"
 
 #. Type: select
 #. Choices
@@ -1232,7 +1225,7 @@ msgstr "португалски"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "панџабски"
 
 #. Type: select
 #. Choices
@@ -1256,7 +1249,7 @@ msgstr "српски (ћирилица)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "синалски"
 
 #. Type: select
 #. Choices
@@ -1298,13 +1291,13 @@ msgstr "швајцарски немачки"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "Тамил"
+msgstr "тамилски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "Телугу"
+msgstr "телугу"
 
 #. Type: select
 #. Choices
@@ -1334,13 +1327,13 @@ msgstr "украјински"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "ујгурски"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr "Вијетнамски"
+msgstr "вијетнамски"
 
 #. Type: select
 #. Description
