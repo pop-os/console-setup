@@ -44,7 +44,10 @@ debian/kbdnames.gz: main_build
 	&& ./kbdnames-maker KeyboardNames.pl \
 		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9 ) >$@
 
-build: main_build debian/kbdnames.gz
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp: main_build debian/kbdnames.gz
 
 .PHONY : clean
 clean:
