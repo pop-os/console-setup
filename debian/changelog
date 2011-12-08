@@ -1,3 +1,9 @@
+console-setup (1.76) UNRELEASED; urgency=low
+
+  * Added support for "status" action to init scripts
+
+ -- Peter Eisentraut <petere@debian.org>  Thu, 08 Dec 2011 20:18:23 +0200
+
 console-setup (1.75) unstable; urgency=low
 
   * Team upload

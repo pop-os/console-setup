@@ -46,7 +46,7 @@ else
 fi
 
 case "$1" in
-    stop)
+    stop|status)
         # keyboard-setup isn't a daemon
         ;;
     start|force-reload|restart|reload)
@@ -58,7 +58,7 @@ case "$1" in
 	fi
 	;;
     *)
-        echo 'Usage: /etc/init.d/keyboard-setup {start|reload|restart|force-reload|stop}'
+        echo 'Usage: /etc/init.d/keyboard-setup {start|reload|restart|force-reload|stop|status}'
         exit 1
         ;;
 esac
