@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-11-15 14:34+0300\n"
+"PO-Revision-Date: 2011-12-21 14:49+0300\n"
 "Last-Translator: Ossama Khayat <okhayat@yahoo.com>\n"
 "Language-Team: American English <support@arabeyes.org>\n"
 "Language: \n"
@@ -45,7 +45,7 @@ msgstr "لا تغيّر خط شاشة الإقلاع/النواة"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "دع النظام يختر خطاً ملائماً"
 
 #. Type: text
 #. Description
@@ -53,7 +53,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "framebuffer فقط"
 
 #. Type: select
 #. Choices
@@ -192,9 +192,8 @@ msgstr ". مركّبة - اللاتينية; السيريلية السلافية
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "إدخال حروف عشوائية"
+msgstr "خمّن مجموعة المحارف الأنسب"
 
 #. Type: select
 #. Description
@@ -278,26 +277,24 @@ msgstr "حجم الخط:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"رجاء اختر حجم الخط لطرفية لينكس. لمعلوماتك، الخط المستخدم عند إقلاع الجهاز "
-"حجمه 16."
+"رجاء اختر حجم الخط للطرفية. للعلم، الخط المستخدم عند إقلاع الحاسب مقاسه 8×16"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"رجاء اختر حجم الخط لطرفية لينكس. لمعلوماتك، الخط المستخدم عند إقلاع الجهاز "
-"حجمه 16."
+"رجاء اختر حجم الخط للطرفية. للعلم، الخط المستخدم عند إقلاع الحاسب مقاسه "
+"8×16. تتطلب بعض أحجام الخطوط حزمة kbd console (وليس console-tools) إضافة إلى "
+"framebuffer."
 
 #. Type: select
 #. Description
