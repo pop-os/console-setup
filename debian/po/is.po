@@ -8,29 +8,30 @@
 # This file is distributed under the same license as debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 #
-# zorglubb <debian-user-icelandic@lists.debian.org>, 2008.
-# Sveinn í Felli <sveinki@nett.is>, 2010.
 # Copyright (C) 2010 Free Software Foundation
 #
-# Translations from iso-codes:
-# Copyright (C) 2002,2003, 2010, 2011 Free Software Foundation, Inc.
+# zorglubb <debian-user-icelandic@lists.debian.org>, 2008.
+# Sveinn í Felli <sveinki@nett.is>, 2010.
 # Alastair McKinstry, <mckinstry@computer.org>, 2002.
 # Sveinn í Felli <sveinki@nett.is>, 2010, 2011.
+# Alastair McKinstry <mckinstry@computer.org>, 2002.
+# Translations from iso-codes:
+# Copyright (C) 2002,2003, 2010, 2011 Free Software Foundation, Inc.
 # Translations from KDE:
 # Þórarinn Rúnar Einarsson <thori@mindspring.com>
-# Alastair McKinstry <mckinstry@computer.org>, 2002.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_is\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-10-12 13:30+0000\n"
+"PO-Revision-Date: 2011-12-27 21:05+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
-"Language-Team: Icelandic <rglug@rglug.org>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+">\n"
 
 #. Type: text
 #. Description
@@ -314,41 +315,36 @@ msgstr "Stafakóðun sem nota á í stjórnskjánum:"
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "Netstillingar"
+msgstr "Stilla lyklaborðið"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
-msgstr "annað"
+msgstr "Annað"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "Velja uppröðun lyklaborðs"
+msgstr "Tegund lyklaborðs:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Vinsamlegast veldu þá tegund fjöldiskatækis sem á að búa til."
+msgstr "Veldu tegund lyklaborðs fyrir þessa tölvu."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "Uppruni lyklaborðsins:"
+msgstr "Upprunaland lyklaborðsins:"
 
 #. Type: select
 #. Description
@@ -359,23 +355,23 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"Uppsetning lyklaborða er breytileg eftir löndum, sum lönd hafa fleiri en "
+"eina sameiginlega uppsetningu. Veldu hérna landið sem á við uppsetninguna "
+"sem á að nota."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "Velja uppröðun lyklaborðs"
+msgstr "Skipulag lyklaborðs:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr ""
-"Vinsamlegast gakktu úr skugga um að harður diskur sé tengdur við þessa vél."
+msgstr "Veldu lyklaborðsuppsetningu sem samsvarar lyklaborðinu á þessari vél."
 
 #. Type: boolean
 #. Description
@@ -522,7 +518,7 @@ msgstr "Caps Lock"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "Hægri Alt lykill (AltGr)"
 
 #. Type: select
 #. Choices
@@ -536,7 +532,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "Right Control"
 msgstr "Vinstri Ctrl"
 
@@ -544,9 +539,8 @@ msgstr "Vinstri Ctrl"
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
-#, fuzzy
 msgid "Right Shift"
-msgstr "Vinstri Shift"
+msgstr "Hægri Shift"
 
 #. Type: select
 #. Choices
@@ -564,9 +558,8 @@ msgstr "Vinstri Shift"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "Right Logo key"
-msgstr "Vinstri Merkja-lykill (Win)"
+msgstr "Hægri Merkja-lykill (Win)"
 
 #. Type: select
 #. Choices
@@ -678,14 +671,14 @@ msgstr "Scroll Lock lykill"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "Engin víxlun"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "Aðferð til að víxla á milli staðbundinar uppsetningar og latneskrar:"
 
 #. Type: select
 #. Description
@@ -695,6 +688,8 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
+"Þú munt þurfa einhverja leið til að skipta á milli staðbundinar uppsetningar "
+"og þeirrar sjálfgefnu latnesku."
 
 #. Type: select
 #. Description
@@ -706,6 +701,11 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"Hægri-Alt eða Caps Lock lyklarnir eru oft valdir vegna þægilegrar "
+"líkamsbeitingar (í síðara tilfellinu ætti að nota saman Shift+Caps Lock "
+"fyrir venjulega CapsLock víxlun). Alt+Shift er líka vinsæl samsetning; hún "
+"missir hinsvegar sína venjulegu hegðun í Emacs og öðrum forritum sem nota þá "
+"samsetningu til sérstakra aðgerða."
 
 #. Type: select
 #. Description
@@ -713,13 +713,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
 msgstr ""
+"Ekki eru allir lyklar sem taldir eru upp til staðar á öllum lyklaborðum."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "Engin bráðbirgðaskipting"
 
 #. Type: select
 #. Choices
@@ -729,9 +730,8 @@ msgstr ""
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "Both Logo keys"
-msgstr "Vinstri Merkja-lykill (Win)"
+msgstr "Báðir Merkja-lyklarnir (Win)"
 
 #. Type: select
 #. Description
@@ -739,6 +739,8 @@ msgstr "Vinstri Merkja-lykill (Win)"
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
 msgstr ""
+"Aðferð til að skipta til bráðabirgða á milli staðbundins inntaks og þess "
+"latneska:"
 
 #. Type: select
 #. Description
@@ -751,6 +753,11 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"Þegar lyklaborðið er í staðfærðum ham og menn vilja slá inn örfáa latneska "
+"stafi, getur verið viðeigandi að skipta tímabundið yfir í latneska haminn. "
+"Lyklaborðið helst í þeim ham svo lengi sem valda lyklinum er haldið niðri. "
+"Þennan lykil má líka nota til að setja inn staðfærða stafi á meðan "
+"lyklaborðið er í latneskum ham."
 
 #. Type: select
 #. Description
@@ -758,14 +765,15 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
+"Þú getur aftengt þennan möguleika með því að velja \"Engin bráðbirgðaskipting"
+"\"."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "Velja uppröðun lyklaborðs"
+msgstr "Sjálfgefið í lyklaborðsuppsetningu"
 
 #. Type: select
 #. Choices
@@ -779,22 +787,21 @@ msgstr "Enginn AltGr hnappur"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "Enter-lykill á talnaborði"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "Both Alt keys"
-msgstr "Enginn AltGr hnappur"
+msgstr "Báðir Alt-lyklarnir"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "Lykill sem á að virka sem AltGr:"
 
 #. Type: select
 #. Description
@@ -806,13 +813,18 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"Í sumum lyklaborðsframsetningum er AltGr notaður sem breytilykill til "
+"innsetningar stöfum, aðallega stöfum sem eru óalgengir í tungumálinu sem "
+"tilheyrir viðkomandi lyklaborðsframsetningu, t.d. erlend gjaldmiðlatákn og "
+"ýmsir broddstafir. Í sumum tilfellum eru þessir stafir prentuaðir sem "
+"aukatákn á lyklana."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr "Enginn samsetningarlykill"
+msgstr "Enginn samsetningarlykill (compose key)"
 
 #. Type: select
 #. Description
@@ -830,6 +842,9 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"Samsetningarlykillinn (einnig þekktur sem Compose eða Multi lykill) lætur "
+"tölvuna túlka næstu áslætti sem samsetningu til að búa til tákn sem ekki "
+"fyrirfinnst á lyklaborðinu."
 
 #. Type: select
 #. Description
@@ -840,6 +855,9 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"Á textastjórnskjá virkar samsetningarlykillinn ekki í Unicode ham. Ef ekki "
+"er verið í Unicode ham, skiptir þá ekki máli hvað þú velur hér, þá geturðu "
+"alltaf notað saman Control+punktur sem samsetningarlykil."
 
 #. Type: boolean
 #. Description
@@ -869,21 +887,20 @@ msgstr "Bandarísk enskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Albanian"
-msgstr "Albanska"
+msgstr "Албански"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr "Arabíska"
+msgstr "Arabískt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Astúrískt"
 
 # BD
 #. Type: select
@@ -901,9 +918,8 @@ msgstr "Hvítrússneskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bengali"
-msgstr "Bengalska"
+msgstr "Bengalst"
 
 #. Type: select
 #. Choices
@@ -914,9 +930,8 @@ msgstr "Belgískt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "Bosníska"
+msgstr "Bosnískt"
 
 #. Type: select
 #. Choices
@@ -958,13 +973,13 @@ msgstr "Kanadískt fjöltyngt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Katalónska"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Kínverska"
+msgstr "Kínverskt"
 
 #. Type: select
 #. Choices
@@ -1017,9 +1032,8 @@ msgstr "Eistneskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Eþíópíska"
+msgstr "Eþíópískt"
 
 #. Type: select
 #. Choices
@@ -1037,7 +1051,7 @@ msgstr "Franskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "Georgíska"
+msgstr "Georgísk skrift"
 
 #. Type: select
 #. Choices
@@ -1054,9 +1068,8 @@ msgstr "Grískt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Gujarati"
-msgstr "Gujarati"
+msgstr "Gújaratí"
 
 #. Type: select
 #. Choices
@@ -1073,7 +1086,6 @@ msgstr "Hebreskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Hindi"
 msgstr "Hindí"
 
@@ -1093,7 +1105,7 @@ msgstr "Íslenskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr "Írska"
+msgstr "Írskt"
 
 #. Type: select
 #. Choices
@@ -1110,22 +1122,20 @@ msgstr "Japanskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kannada"
-msgstr "Kannada"
+msgstr "Kannadískt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kazakh"
-msgstr "Kasaksíska"
+msgstr "Kasakískt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmerískt"
 
 #. Type: select
 #. Choices
@@ -1137,26 +1147,25 @@ msgstr "Kirgisískt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr "Kóreska"
+msgstr "Kóreskt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "Kúrdíska (F uppsetning)"
+msgstr "Kúrdískt (F uppsetning)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "Kúrdíska (Q uppsetning)"
+msgstr "Kúrdískt (Q uppsetning)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Lao"
-msgstr "Laó"
+msgstr "Laóskt"
 
 #. Type: select
 #. Choices
@@ -1185,23 +1194,20 @@ msgstr "Makedónískt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Malayalam"
-msgstr "Malayalam"
+msgstr "Malayanskt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Nepali"
-msgstr "Nepalska"
+msgstr "Nepalskt"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Norður-Ameríka"
+msgstr "Norðursamískt"
 
 #. Type: select
 #. Choices
@@ -1212,9 +1218,8 @@ msgstr "Norskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "Persneska"
+msgstr "Persneskt"
 
 #. Type: select
 #. Choices
@@ -1232,7 +1237,7 @@ msgstr "Portúgalskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabískt"
 
 #. Type: select
 #. Choices
@@ -1256,7 +1261,7 @@ msgstr "Serbneskt (kýrílískt letur)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
@@ -1298,7 +1303,7 @@ msgstr "Svissnesk þýskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "Tamílska"
+msgstr "Tamílskt"
 
 #. Type: select
 #. Choices
@@ -1334,13 +1339,13 @@ msgstr "Úkraínskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uyghur"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr "Víetnamska"
+msgstr "Víetnamskt"
 
 #. Type: select
 #. Description
