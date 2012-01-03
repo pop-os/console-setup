@@ -36,7 +36,7 @@ msgstr ""
 "Project-Id-Version: he\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-11-09 22:16+0200\n"
+"PO-Revision-Date: 2012-01-03 01:10+0200\n"
 "Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
 "Language-Team: Hebrew <>\n"
 "Language: he\n"
@@ -57,7 +57,7 @@ msgstr "אל תשנה את גופן האתחול/ליבה"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "לתת למערכת לבחור גופן מתאים"
 
 #. Type: text
 #. Description
@@ -65,7 +65,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "framebuffer בלבד"
 
 #. Type: select
 #. Choices
@@ -204,9 +204,8 @@ msgstr ". משולב - כתיב לטיני (Latin); כתיב קירילי סלא
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "הכנס תווים אקראיים"
+msgstr "ניחוש סט תווים מיטבי"
 
 #. Type: select
 #. Description
@@ -291,26 +290,25 @@ msgstr "גודל גופן:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"אנא בחר בגודל הגופן עבור מסוף הלינוקס. לשם ייחוס, בזמן אתחול המחשב, גודל "
-"הגופן הינו 16."
+"אנא בחר בגודל הגופן עבור המסוף. לשם ייחוס, בזמן אתחול המחשב, גודל הגופן הינו "
+"8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"אנא בחר בגודל הגופן עבור מסוף הלינוקס. לשם ייחוס, בזמן אתחול המחשב, גודל "
-"הגופן הינו 16."
+"אנא בחר בגודל הגופן עבור המסוף. לשם ייחוס, בזמן אתחול המחשב, גודל הגופן הינו "
+"8x16. חלק מהגדלי הגופנים זקוקים לחבילה kbd (לא console-tools) וגם ל-"
+"framebuffer."
 
 #. Type: select
 #. Description
@@ -383,9 +381,8 @@ msgstr "בחר בבקשה את הפריסה המתאימה למקלדת של מ�
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "לשמור את הפריסה הקיימת של המחיצות ולהגדיר את LVM?"
+msgstr "לשמור את הפריסה הנוכחית בקובץ ההגדרות?"
 
 #. Type: boolean
 #. Description
@@ -395,6 +392,8 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
+"הפריסה הנוכחית בקובץ ההגדרות /etc/default/keyboard מוגדרת על ידי XKBLAYOUT="
+"\"${XKBLAYOUT}\" וגם XKBVARIANT=\"${XKBVARIANT}\"."
 
 #. Type: boolean
 #. Description
@@ -412,7 +411,7 @@ msgstr "בחר האם ליצור את המחיצה החדשה בתחילת או 
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr ""
+msgstr "להשאיר את בררת המחדל של פריסת המקלדת (${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
