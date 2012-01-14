@@ -6,6 +6,7 @@
 # translation of debian-installer_packages_po_sublevel1_da.po to
 # Danish messages for debian-installer.
 # This file is distributed under the same license as debian-installer.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2010.
 # Mads Bille Lundby <lundbymads@gmail.com, 2009.
 # Henrik Christian Grove <debian@3001.dk>, 2008.
@@ -29,13 +30,17 @@
 # Kenneth Christiansen <kenneth@gnu.org>, 2000.
 # Ole Laursen <olau@hardworking.dk>, 2001.
 #
+# vedrørende russisk:
+# (bogstavet й bliver normalt til j på dansk og y på engelsk.  Der er
+# også nogle forskelle med de mange s/sh-agtige lyde)
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-10-29 00:05+0200\n"
-"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"PO-Revision-Date: 2012-01-03 20:12+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -913,9 +918,8 @@ msgstr "Arabisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Asturien"
+msgstr "Asturiansk"
 
 #. Type: select
 #. Choices
@@ -992,9 +996,8 @@ msgstr "Canadisk flersproget"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Naftalan"
+msgstr "Catalansk"
 
 #. Type: select
 #. Choices
@@ -1057,9 +1060,8 @@ msgstr "Estisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etiopisk"
+msgstr "Etiopisk"
 
 # console-keymaps-acorn, Finnish
 #. Type: select
@@ -1168,7 +1170,7 @@ msgstr "Kasakhisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmerisk"
 
 #. Type: select
 #. Choices
@@ -1243,9 +1245,8 @@ msgstr "Nepalesisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Nordlige Samar"
+msgstr "Nordligt samisk"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1277,9 +1278,8 @@ msgstr "Portugisisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Punjab"
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1304,7 +1304,7 @@ msgstr "Serbisk (kyrillisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Singalesisk"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
@@ -1390,7 +1390,7 @@ msgstr "Ukrainsk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uyghur"
 
 #. Type: select
 #. Choices
