@@ -3,19 +3,19 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of debian-installer_packages_po_sublevel1_km.po to Khmer
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008, 2010.
+# translation of km.po to Khmer
 #
-# Translations from iso-codes:
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008, 2010.
 #   eng vannak <evannak@khmeros.info>, 2006.
 #   auk piseth <piseth_dv@khmeros.info>, 2006.
-#   Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2010.
+#   Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2010, 2012.
+# Translations from iso-codes:
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer_packages_po_sublevel1_km\n"
+"Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2010-12-13 13:47+0700\n"
+"PO-Revision-Date: 2012-01-17 11:49+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "Language: \n"
@@ -36,7 +36,7 @@ msgstr "កុំ​ផ្លាស់ប្ដូរ​ពុម្ពអក្
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "ឲ្យ​ប្រព័ន្ធ​ជ្រើស​រើស​ពុម្ពអក្សរ​ដេល​សក្ដិសម"
 
 #. Type: text
 #. Description
@@ -44,7 +44,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "តែ framebuffer"
 
 #. Type: select
 #. Choices
@@ -183,9 +183,8 @@ msgstr ". បាន​ផ្សំ - ឡាតាំង ស្លាវីក �
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "បញ្ចូល​តួអក្សរ​ចៃដន្យ​"
+msgstr "ទាយ​សំណុំ​តួអក្សរ​ប្រសើរ​បំផុត​"
 
 #. Type: select
 #. Description
@@ -269,26 +268,25 @@ msgstr "ទំហំ​ពុម្ពអក្សរ ៖"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"សូម​ជ្រើស​ទំហំ​ពុម្ពអក្សរ​សម្រាប់​កុង​សូល​លីនុច ។ ចំពោះ​សេចក្ដី​យោង ពុម្ពអក្សរ​ត្រូ​វបាន​ប្រើ​នៅពេល​កុំព្យូទ័រ​"
-"ចាប់ផ្ដើម  ​មាន​ទំហំ ១៦ ។"
+"សូម​ជ្រើស​ទំហំ​ពុម្ពអក្សរ​សម្រាប់​កុង​សូល​លីនុច ។ ចំពោះ​សេចក្ដី​យោង ពុម្ពអក្សរ​ត្រូ​វបាន​ប្រើ​នៅពេល​កុំព្យូទ័រ​ចាប់ផ្ដើម ​"
+"មាន​ទំហំ ៨x១៦ ។"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"សូម​ជ្រើស​ទំហំ​ពុម្ពអក្សរ​សម្រាប់​កុង​សូល​លីនុច ។ ចំពោះ​សេចក្ដី​យោង ពុម្ពអក្សរ​ត្រូ​វបាន​ប្រើ​នៅពេល​កុំព្យូទ័រ​"
-"ចាប់ផ្ដើម  ​មាន​ទំហំ ១៦ ។"
+"សូម​ជ្រើស​ទំហំ​ពុម្ពអក្សរ​សម្រាប់​កុង​សូល​លីនុច ។ ចំពោះ​សេចក្ដី​យោង ពុម្ពអក្សរ​ត្រូ​វបាន​ប្រើ​នៅពេល​កុំព្យូទ័រ​ចាប់ផ្ដើម ​"
+"មាន​ទំហំ ៨x១៦ ។ ទំហំ​ពុម្ពអក្សរ​មួយ​ចំនួន​ទាមទារ​កញ្ចប់​កុងសូល kbd (មិន​មែន​ជា​កម្មវិធី​កុងសូល​ទេ) បូក​នឹង​ "
+"framebuffer ។"
 
 #. Type: select
 #. Description
@@ -861,9 +859,8 @@ msgstr "អង់គ្លេស អាមេរិក"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Albanian"
-msgstr "រ៉ូម៉ានី"
+msgstr "អាល់បានី"
 
 #. Type: select
 #. Choices
@@ -875,7 +872,7 @@ msgstr "អារ៉ាប់"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "អូតួរៀន"
 
 #. Type: select
 #. Choices
@@ -893,7 +890,7 @@ msgstr "បេឡារុស្ស​​"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "បង់ហ្គាលី"
 
 #. Type: select
 #. Choices
@@ -904,9 +901,8 @@ msgstr "បែលហ្សិក-ឡាតាំង១"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "អេស្តូនី"
+msgstr "ប៊ូស្នី"
 
 #. Type: select
 #. Choices
@@ -948,13 +944,13 @@ msgstr "ច្រើន​ភាសា កាណាដៀន"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "កាតាឡាន"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "ចិន"
 
 #. Type: select
 #. Choices
@@ -990,13 +986,13 @@ msgstr "dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "ហ្សុងខា"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "អេស្ពីរ៉េនតូ"
 
 #. Type: select
 #. Choices
@@ -1007,9 +1003,8 @@ msgstr "អេស្តូនី"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". អេត្យូពី"
+msgstr "អេត្យូពី"
 
 #. Type: select
 #. Choices
@@ -1045,13 +1040,13 @@ msgstr "ក្រិក"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "ហ្គូយ៉ារ៉ាទី"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "ហ្គូមូឃី"
 
 #. Type: select
 #. Choices
@@ -1063,7 +1058,7 @@ msgstr "ហេប្រូ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "ហិណ្ឌូ"
 
 #. Type: select
 #. Choices
@@ -1081,7 +1076,7 @@ msgstr "អ៊ីស្លង់"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "អៀឡង់"
 
 #. Type: select
 #. Choices
@@ -1099,19 +1094,19 @@ msgstr "ជប៉ុន"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "កាណាដា"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "កាហ្សាក"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ខ្មែរ"
 
 #. Type: select
 #. Choices
@@ -1123,19 +1118,17 @@ msgstr "ឃឺកហីស"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "កូរ៉េ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
 msgstr "ទួរគី (ប្លង់ F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
 msgstr "ទួរគី (ប្លង់ Q)"
 
@@ -1173,20 +1166,19 @@ msgstr "ម៉ាសេដូនី"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "ម៉ាឡេស៊ី"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "នេប៉ាល់"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "អាមេរិកខាងជើង​"
+msgstr "សាមី​ខាង​ជើង​"
 
 #. Type: select
 #. Choices
@@ -1197,9 +1189,8 @@ msgstr "ន័រវ៉ែស"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "បេឡារុស្ស​​"
+msgstr "ភឺសៀន​​"
 
 #. Type: select
 #. Choices
@@ -1217,7 +1208,7 @@ msgstr "ព័រទុយហ្គាល់"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "ប៉ុនយ៉ាប៊ី"
 
 #. Type: select
 #. Choices
@@ -1241,7 +1232,7 @@ msgstr "ស៊ែរប៊ី-ស៊ីពរ៍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "ស្រីលង្កា"
 
 #. Type: select
 #. Choices
@@ -1283,13 +1274,13 @@ msgstr "ស្វីស អាល្លឺម៉ង់"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "តាមីល"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "តេឡូហ្គូ"
 
 #. Type: select
 #. Choices
@@ -1319,14 +1310,13 @@ msgstr "អ៊ុយក្រែន"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "អុយហ្គូរ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Vietnamese"
-msgstr ". ឡាតាំង - វៀតណាម"
+msgstr "វៀតណាម"
 
 #. Type: select
 #. Description
