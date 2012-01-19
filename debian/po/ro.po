@@ -36,9 +36,9 @@ msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-15 09:41+0300\n"
+"PO-Revision-Date: 2012-01-19 11:42+0200\n"
 "Last-Translator: Ioan Eugen Stan <stan.ieugen@gmail.com>\n"
-"Language-Team: ro <debian-l10n-romanian@lists.debian.org>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -722,7 +722,7 @@ msgid ""
 msgstr ""
 "Tastele Alt dreapta sau Caps Lock sunt frecvent alese din motive de "
 "ergonomie (pentru cea din urmă, folosiți Shift+Caps Lock pentru comutarea "
-"între litere mici si litere mari). Alt+Shift este și ea o combinație "
+"între litere mici și litere mari). Alt+Shift este și ea o combinație "
 "populară; totuși i se va pierde comportamentul în Emacs și în alte programe "
 "care o folosesc deja."
 
@@ -969,7 +969,7 @@ msgstr "Bulgară"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bulgară (aranjament phonetic)"
+msgstr "Bulgară (aranjament fonetic)"
 
 #. Type: select
 #. Choices
