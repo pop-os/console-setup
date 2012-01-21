@@ -53,7 +53,7 @@ msgstr "Jangan ubah font boot/kernel"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Biarkan system memilih font yang cocok"
 
 #. Type: text
 #. Description
@@ -61,7 +61,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "hanya framebuffer"
 
 #. Type: select
 #. Choices
@@ -200,9 +200,8 @@ msgstr ". Combined - Latin; Cyrillic Slavia dan selain-Slavia"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Masukkan karakter-karakter acak"
+msgstr "Tebak karakter yang optimal"
 
 #. Type: select
 #. Description
@@ -288,26 +287,25 @@ msgstr "Ukuran font:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "Silakan pilih ukuran font untuk konsol Linux. Sebagai acuan, font yang "
-"digunakan ketika komputer booting berukuran 16."
+"digunakan ketika komputer booting berukuran 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Silakan pilih ukuran font untuk konsol Linux. Sebagai acuan, font yang "
-"digunakan ketika komputer booting berukuran 16."
+"digunakan ketika komputer booting berukuran 8x16. Beberapa ukuran font "
+"membutuhkan paket kbd konsol (bukan contole-tools) ditambah framebuffer"
 
 #. Type: select
 #. Description
