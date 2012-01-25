@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-12-17 11:35+0530\n"
+"PO-Revision-Date: 2012-01-24 19:34+0530\n"
 "Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
 "Language: kn\n"
@@ -34,14 +34,14 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr ""
+msgstr "ಬೂಟ್/ಕರ್ನಲಿನ ಫಾಂಟನ್ನು ಬದಲಾಯಿಸಬೇಡಿ"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "ಒಂದು ಯೋಗ್ಯವಾದ ಫಾಂಟನ್ನು ಆರಿಸಲು ವ್ಯವಸ್ಥೆಗೆ ಬಿಡಿ"
 
 #. Type: text
 #. Description
@@ -49,7 +49,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "ಫ್ರೇಮ್ ಬಫರ್ ಮಾತ್ರ"
 
 #. Type: select
 #. Choices
@@ -63,35 +63,35 @@ msgstr ". ಅರೇಬಿಕ್"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "#  ಅರ್ಮೇನಿಯನ್"
+msgstr "# ಆರ್ಮೇನಿಯನ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# Cyrillic - KOI8-R and KOI8-U"
+msgstr "# ಸಿರಿಲಿಕ್ - KOI8-R ಮತ್ತು KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# Cyrillic - non-Slavic languages"
+msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಅಲ್ಲದ ಭಾಷೆಗಳು"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಭಾಷೆಗಳು(ಬೋಸ್ನಿಯನ್ ಮತ್ತು ಸೆರ್ಬಿಯನ್ ಕೂಡ)"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ". ಇತಿಯೊಪಿಕ್"
+msgstr ". ಇಥಿಯೊಪಿಯನ್ನಿನ"
 
 #. Type: select
 #. Choices
@@ -126,21 +126,21 @@ msgstr "# ಲಾಓ"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# ಲ್ಯಾಟಿನ್ ೧ ಮತ್ತು ಲ್ಯಾಟಿನ್ ೫ - ಪಶ್ಚಿಮ ಯುರೊಪ್"
+msgstr "# ಲ್ಯಾಟಿನ್ ೧ ಮತ್ತು ಲ್ಯಾಟಿನ್ ೫ - ಪಶ್ಚಿಮ ಯುರೊಪ್ ಮತ್ತು ತುರ್ಕಿಕ್ ಭಾಷೆಗಳು"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# ಲ್ಯಾಟಿನ್ ೨ - ಮಧ್ಯ ಯುರೊಪ ಮತ್ತು ರೊಮೆನಿಯನ್"
+msgstr "# ಲ್ಯಾಟಿನ್ ೨ - ಮಧ್ಯ ಯುರೊಪ್ ಮತ್ತು ರೊಮೆನಿಯನ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "# ಲ್ಯಾಟಿನ್ ೩ ಮತ್ತು ಲ್ಯಾಟಿನ್ ೮ -ಚಿಚೆವ ;ಎಸ್ಪರ್ಯಂಟೊ; ಐರಿಶ್; ಮಾಲ್ಟೀಸ್ ಮತ್ತು ವೆಲ್ಶ್"
+msgstr "# ಲ್ಯಾಟಿನ್ ೩ ಮತ್ತು ಲ್ಯಾಟಿನ್ ೮ -ಚಿಚೆವ ;ಎಸ್ಪರಾಂಟೊ; ಐರಿಶ್; ಮಾಲ್ಟೀಸ್ ಮತ್ತು ವೆಲ್ಶ್"
 
 #. Type: select
 #. Choices
@@ -154,50 +154,49 @@ msgstr "# ಲ್ಯಾಟಿನ್ ೭ - ಲಿಥುನಿಯನ್; ಲ್ಯ�
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ". ಲ್ಯಾಟಿನ್  - ವಿಯಟ್ನಾಂ"
+msgstr ". ಲ್ಯಾಟಿನ್  - ವಿಯಟ್ನಾಮೀಸ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr "# ತಾಐ"
+msgstr "# ಥಾಯ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
+msgstr ". ಸಂಯುಕ್ತ - ಲ್ಯಾಟಿನ್; ಸ್ಲಾವಿಕ್ ಸಿರಿಲಿಕ್; ಹಿಬ್ರೀವ್; ಮೂಲ ಅರೇಬಿಕ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". Combined - Latin; Slavic Cyrillic; Greek"
+msgstr ". ಸಂಯುಕ್ತ - ಲ್ಯಾಟಿನ್; ಸ್ಲಾವಿಕ್ ಸಿರಿಲಿಕ್;ಗ್ರೀಕ್"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". Combined - Latin; Slavic and non-Slavic Cyrillic"
+msgstr ". ಸಂಯುಕ್ತ - ಲ್ಯಾಟಿನ್; ಸ್ಲಾವಿಕ್ ಮತ್ತು ಸ್ಲಾವಿಕ್ ಅಲ್ಲದ ಸಿರಿಲಿಕ್;"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "ಇಚ್ಚೆಯ ಚಿಹ್ನೆಗಳನ್ನು ಒತ್ತಿರಿ"
+msgstr "ಅತ್ಯುತ್ತಮ ಅಕ್ಷರ ಸಮೂಹವನ್ನು ಊಹಿಸಿ"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "ಬೆಂಬಲಿಸಬೇಕಾದ ಅಕ್ಷರಗಳ ಗುಂಪು:"
+msgstr "ಬೆಂಬಲಿಸಬೇಕಾದ ಅಕ್ಷರ ಸಮೂಹ:"
 
 #. Type: select
 #. Description
@@ -225,9 +224,8 @@ msgstr ""
 #. relatively short.
 #. :sl3:
 #: ../console-setup.templates:6001
-#, fuzzy
 msgid "Font for the console:"
-msgstr "ಹೊಸ ಬಳಕೆದಾರ ಪೂರ್ಣ ಹೆಸರು:"
+msgstr "ಆಜ್ಞಾಫಲಕದ ಫಾಂಟ್:"
 
 #. Type: select
 #. Description
@@ -243,6 +241,10 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
+"\"VGA\" ಸಾಂಪ್ರದಾಯಿಕ ರೂಪವನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಅಂತರರಾಷ್ಟೀಯ ಲಿಪಿಗಳ ಮಧ್ಯಮ ವ್ಯಾಪ್ತಿಯನ್ನು "
+"ಕೂಡ ಹೊಂದಿದೆ. \"Fixed\" ಸರಳ ರೂಪವನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಅಂತರರಾಷ್ಟೀಯ ಲಿಪಿಗಳ ಉತ್ತಮ "
+"ವ್ಯಾಪ್ತಿಯನ್ನು ಕೂಡ ಹೊಂದಿದೆ. \"Terminus\" ಕಣ್ಣುಗಳ ಆಯಾಸವನ್ನು ಕಡಿಮೆ ಮಾಡಬಹುದು ಆದರೆ "
+"ಕೆಲವು ಚಿಹ್ನೆಗಳು ಒಂದನ್ನೊಂದು ಹೋಲುವುದರಿಂದ ಇದು ಪ್ರೋಗ್ರಾಮರುಗಳಿಗೆ ತೊಂದರೆಯುಂಟು ಮಾಡಬಹುದು."
 
 #. Type: select
 #. Description
@@ -272,34 +274,32 @@ msgstr "ಅಕ್ಷರದ ಗಾತ್ರ"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"ಲಿನಕ್ಸ್ ಕಾಮ್ಸೋಲಿಗೆ ಅಕ್ಷರದ ಅಳತೆ ಆಯ್ಕೆ ಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕಯಂತ್ರ ಪ್ರಾರಂಭವಾಗುವಾಗ ಅದರ "
-"ಅಕ್ಷರದ ಅಳತೆಯು ೧೬ ಇರುತ್ತದೆ."
+"ದಯಮಾಡಿ ಆಜ್ಞಾಫಲಕದ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕವನ್ನು ಬೂಟ್ ಮಾಡುವಾಗ ಬಳಸುವ "
+"ಫಾಂಟ್ ಗಾತ್ರವು 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"ಲಿನಕ್ಸ್ ಕಾಮ್ಸೋಲಿಗೆ ಅಕ್ಷರದ ಅಳತೆ ಆಯ್ಕೆ ಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕಯಂತ್ರ ಪ್ರಾರಂಭವಾಗುವಾಗ ಅದರ "
-"ಅಕ್ಷರದ ಅಳತೆಯು ೧೬ ಇರುತ್ತದೆ."
+"ದಯಮಾಡಿ ಆಜ್ಞಾಫಲಕದ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕವನ್ನು ಬೂಟ್ ಮಾಡುವಾಗ ಬಳಸುವ "
+"ಫಾಂಟ್ ಗಾತ್ರವು 8x16. ಕೆಲವು ಫಾಂಟ್ ಗಾತ್ರಗಳಿಗೆ kbd ಆಜ್ಞಾಫಲಕ ಮೆದುಸರಕಿನ (ಆಜ್ಞಾಫಲಕ "
+"ಸಲಕರಣೆಗಳಲ್ಲ) ಮತ್ತು ಫ್ರೇಮ್ ಬಫರಿನ್ ಅಗತ್ಯವಿದೆ."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
-#, fuzzy
 msgid "Encoding to use on the console:"
-msgstr "ಹೊಸ ಬಳಕೆದಾರ ಪೂರ್ಣ ಹೆಸರು:"
+msgstr "ಆಜ್ಞಾಫಲಕದಲ್ಲಿ ಬಳಸಬೇಕಾದ ಲಿಪೀಕರಣ ವ್ಯವಸ್ಥೆ:"
 
 #. Type: text
 #. Description
@@ -368,7 +368,7 @@ msgstr "ದಯವಿಟ್ಟು ಈ ಗಣಕಯಂತ್ರದ ಕೀಲಿಮ
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr ""
+msgstr "ಪ್ರಸ್ತುತ ಕೀಲಿಮಣೆಯ ವಿನ್ಯಾಸವನ್ನು ಸಂರಚನಾ ಕಡತದಲ್ಲಿ ಇಡುವುದೇ?"
 
 #. Type: boolean
 #. Description
@@ -378,6 +378,9 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
+"ಸಂರಚನಾ ಕಡತ /etc/default/keyboardನಲ್ಲಿರುವ ಪ್ರಸ್ತುತ ಕೀಲಿಮಣೆಯ ವಿನ್ಯಾಸವನ್ನು ಹೀಗೆಂದು "
+"ಅರ್ಥನಿರೂಪಣೆ ಮಾಡಲಾಗಿದೆ  XKBLAYOUT=\"${XKBLAYOUT}\" ಮತ್ತು XKBVARIANT="
+"\"${XKBVARIANT}\"."
 
 #. Type: boolean
 #. Description
@@ -388,13 +391,16 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
+"ದಯಮಾಡಿ ನೀವು ಅದನ್ನು ಇಟ್ಟುಕೊಳ್ಳಬೇಕೆ ಎಂದು ಆಯ್ಕೆ ಮಾಡಿ. ಈ ಆಯ್ಕೆ ಮಾಡಿದರೆ ಕೀಲಿಮಣೆಯ "
+"ವಿನ್ಯಾಸದ ಬಗ್ಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಪ್ರಸ್ತುತ ಸಂಯೋಜನೆಯನ್ನು "
+"ಉಳಿಸಿಕೊಳ್ಳಲಾಗುವುದು."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr ""
+msgstr "ಕೀಲಿಮಣೆಯ ಪೂರ್ವನಿಯೋಜಿತ ವಿನ್ಯಾಸ (${XKBLAYOUTVARIANT})ವನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವುದೇ?"
 
 #. Type: boolean
 #. Description
@@ -405,6 +411,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
+"ಕೀಲಿಮಣೆ ವಿನ್ಯಾಸದ ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ XKBLAYOUT=\"${XKBLAYOUT}\" ಮತ್ತು XKBVARIANT="
+"\"${XKBVARIANT}\" ಆಗಿರುತ್ತದೆ.ಈ ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ ಪ್ರಸ್ತುತ ಸೂಚಿಸಲ್ಪಟ್ಟ ಭಾಷೆ/ಕ್ಷೇತ್ರ್ "
+"ಮತ್ತು /etc/X11/xorg.confನಲ್ಲಿ ಇರುವ ಸಂಯೋಜನೆಗಳನ್ನು ಅವಲಂಭಿಸಿರುತ್ತದೆ."
 
 #. Type: boolean
 #. Description
@@ -414,14 +423,15 @@ msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
+"ದಯಮಾಡಿ ನೀವು ಅದನ್ನು ಇಟ್ಟುಕೊಳ್ಳಬೇಕೆ ಎಂದು ಆಯ್ಕೆ ಮಾಡಿ. ಈ ಆಯ್ಕೆ ಮಾಡಿದರೆ ಕೀಲಿಮಣೆಯ "
+"ವಿನ್ಯಾಸದ ಬಗ್ಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಲಾಗುವುದಿಲ್ಲ."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "vmelilo ಕಾನ್ಫಿಗರೇಶನ್ ಕಡತದ ನಿರ್ಮಾಣ ವಿಫಲವಾಗಿದೆ."
+msgstr "ಪ್ರಸ್ತುತ ಕೀಲಿಮಣೆ ಆಯ್ಕೆಗಳನ್ನು ಸಂರಚನಾ ಕಡತದಲ್ಲಿ ಇಡುವುದೇ?"
 
 #. Type: boolean
 #. Description
@@ -431,6 +441,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
+"ಸಂರಚನಾ ಕಡತ /etc/default/keyboardದಲ್ಲಿನ ಪ್ರಸ್ತುತ ಕೀಲಿಮಣೆ ಆಯ್ಕೆಗಳು XKBOPTIONS="
+"\"${XKBOPTIONS}\" ಎಂದು ವಿವರಿಸಲಾಗಿದೆ."
 
 #. Type: boolean
 #. Description
@@ -440,13 +452,15 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
+"ಈ ಆಯ್ಕೆಗಳನ್ನು ನೀವು ಇಟ್ಟುಕೊಳ್ಳಲು ಬಯಸುವುದಾದರೆ ಕೀಲಿಮಣೆಯ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಯಾವುದೇ "
+"ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಲಾಗುವುದಿಲ್ಲ."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr ""
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಕೀಲಿಮಣೆ (${XKBOPTIONS}) ಆಯ್ಕೆಗಳನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವುದೇ?"
 
 #. Type: boolean
 #. Description
@@ -457,6 +471,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
+"ಕೀಲಿಮಣೆ ವಿನ್ಯಾಸದ ಆಯ್ಕೆಗಳ ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ XKBOPTIONS="
+"\"${XKBOPTIONS}\"ಆಗಿರುತ್ತದೆ. ಈ ಪೂರ್ವನಿಯೋಜಿತ ಮೌಲ್ಯ ಪ್ರಸ್ತುತ ಸೂಚಿಸಲ್ಪಟ್ಟ ಭಾಷೆ/ಕ್ಷೇತ್ರ್ "
+"ಮತ್ತು /etc/X11/xorg.confನಲ್ಲಿ ಇರುವ ಸಂಯೋಜನೆಗಳನ್ನು ಅವಲಂಭಿಸಿರುತ್ತದೆ."
 
 #. Type: boolean
 #. Description
@@ -466,6 +483,8 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
+"ನೀವು ಅದನ್ನು ಇಟ್ಟುಕೊಳ್ಳಲು ಇಚ್ಛಿಸಿದರೆ ಕೀಲಿಮಣೆ ವಿಕಲ್ಪಗಳ ಬಗ್ಗೆ ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳನ್ನು "
+"ಕೇಳಲಾಗುವುದಿಲ್ಲ."
 
 #. Type: select
 #. Choices
@@ -832,7 +851,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr ""
+msgstr "X ಪರಿಚಾರಕವನ್ನು ನಿಲ್ಲಿಸಲು Control+Alt+Backspace ಅನ್ನು ಬಳಸುವುದೇ?"
 
 #. Type: boolean
 #. Description
@@ -842,6 +861,8 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
+"ಸಾಮಾನ್ಯವಾಗಿ Control+Alt+Backspace ಸಂಯೋಜನೆಯು ಏನನ್ನು ಮಾಡುವುದಿಲ್ಲ. ನಿಮಗೆ ಬೇಕಾದಲ್ಲಿ "
+"X ಪರಿಚಾರಕವನ್ನು ನಿಲ್ಲಿಸಲು ಬಳಸಬಹುದು."
 
 #. Type: select
 #. Choices
