@@ -9,26 +9,24 @@
 # in doc/i18n/i18n.txt
 # astur <malditoastur@gmail.com>, 2010
 # Marquinos <maacub@gmail.com>, 2010.
-#
 # Translations from iso-codes:
-#   Marcos Alvarez Costales <marcoscostales@gmail.com>, 2009, 2010.
-#
+# Marcos Alvarez Costales <marcoscostales@gmail.com>, 2009, 2010.
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # Marquinos <maacub@gmail.com>, 2008.
-#
+# Mikel González <mikelglez@softastur.org>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-05-03 21:27+0100\n"
-"Last-Translator: MAAC <maacub@gmail.com>\n"
-"Language-Team: laptop\n"
-"Language: en\n"
+"PO-Revision-Date: 2012-01-28 13:25+0100\n"
+"Last-Translator: Mikel González <mikelglez@softastur.org>\n"
+"Language-Team: Softastur\n"
+"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -878,7 +876,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "Inglés Americanu"
+msgstr "Inglés americanu"
 
 #. Type: select
 #. Choices
@@ -896,7 +894,7 @@ msgstr "Árabe"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturianu"
 
 #. Type: select
 #. Choices
@@ -968,7 +966,7 @@ msgstr "Canadiense Multilingual"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Catalán"
 
 #. Type: select
 #. Choices
@@ -1027,9 +1025,8 @@ msgstr "Estoniu"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Ethiope"
+msgstr "Etíope"
 
 #. Type: select
 #. Choices
@@ -1071,7 +1068,7 @@ msgstr "Gujarati"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmuqui"
 
 #. Type: select
 #. Choices
@@ -1131,7 +1128,7 @@ msgstr "Kazaḥu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Camboyanu"
 
 #. Type: select
 #. Choices
@@ -1202,9 +1199,8 @@ msgstr "Nepalí"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Territoriu del Norte"
+msgstr "Sami del norte"
 
 #. Type: select
 #. Choices
@@ -1234,7 +1230,7 @@ msgstr "Portués"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Panyabi"
 
 #. Type: select
 #. Choices
@@ -1258,7 +1254,7 @@ msgstr "Serbiu (Cirílicu)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Cingalés"
 
 #. Type: select
 #. Choices
@@ -1336,7 +1332,7 @@ msgstr "Ucranianu"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigur"
 
 #. Type: select
 #. Choices
