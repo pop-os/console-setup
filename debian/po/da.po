@@ -60,7 +60,7 @@ msgstr "Ændr ikke opstarts/kerne-skrifttypen"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Lad systemet vælge en egnet skrifttype"
 
 #. Type: text
 #. Description
@@ -68,7 +68,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "kun framebuffer"
 
 #. Type: select
 #. Choices
@@ -211,9 +211,8 @@ msgstr ". Kombineret - latin; slavisk og ikke-slavisk kyrillisk"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Indtast tilfældige tegn"
+msgstr "Gæt optimalt tegnsæt"
 
 #. Type: select
 #. Description
@@ -300,26 +299,26 @@ msgstr "Skriftstørrelse:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Vælg venligst skrifttypens størrelse i Linux-konsollen. Til sammenligning er "
-"den anvendte skrifttypestørrelse 16, når computeren starter op."
+"Vælg venligst skrifttypens størrelse i konsollen. Til sammenligning er den "
+"anvendte skrifttypestørrelse 8x16, når computeren starter op."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Vælg venligst skrifttypens størrelse i Linux-konsollen. Til sammenligning er "
-"den anvendte skrifttypestørrelse 16, når computeren starter op."
+"Vælg venligst skrifttypens størrelse i konsollen. Til sammenligning er den "
+"anvendte skrifttypestørrelse 8x16, når computeren starter op. Nogle "
+"skriftstørrelser kræver pakken kbd console (ikke console-tools) samt "
+"framebuffer."
 
 #. Type: select
 #. Description
