@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2012-01-25 02:09+0200\n"
+"PO-Revision-Date: 2012-02-17 22:38+0200\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -951,7 +951,7 @@ msgstr "bulgaaria"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "bulgaaria (phonetic asetus)"
+msgstr "bulgaaria (foneetiline asetus)"
 
 #. Type: select
 #. Choices
