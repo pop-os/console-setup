@@ -37,7 +37,7 @@ msgstr "Ná hathraigh an cló tosaithe/eithne"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Lig don chóras clófhoireann oiriúnach a roghnú"
 
 #. Type: text
 #. Description
@@ -45,7 +45,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "framebuffer amháin"
 
 #. Type: select
 #. Choices
@@ -188,9 +188,8 @@ msgstr ". Comhcheangailte - Laidin; Coireallach Slavach agus neamh-Slavach"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Iontráil carachtair randamacha"
+msgstr "Tomhais an tacar carachtar is fearr"
 
 #. Type: select
 #. Description
@@ -276,26 +275,26 @@ msgstr "Clómhéid:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Roghnaigh an chlómhéid don chonsól Linux.  Mar áis tagartha, úsáideann an "
-"ríomhaire cló 16-pointe nuair a thosaíonn sé."
+"Roghnaigh an chlómhéid don chonsól.  Mar áis tagartha, úsáideann an "
+"ríomhaire cló 8x16 nuair a thosaíonn sé."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Roghnaigh an chlómhéid don chonsól Linux.  Mar áis tagartha, úsáideann an "
-"ríomhaire cló 16-pointe nuair a thosaíonn sé."
+"Roghnaigh an chlómhéid don chonsól.  Mar áis tagartha, úsáideann an "
+"ríomhaire cló 8x16 nuair a thosaíonn sé. Ní mór duit an pacáiste consóil kbd "
+"(in ionad console-tools) agus framebuffer a shuiteáil le clómhéideanna "
+"áirithe."
 
 #. Type: select
 #. Description
