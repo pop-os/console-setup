@@ -195,7 +195,7 @@ install-udeb: build
 	install -m0755 debian/keyboard-configuration.config \
 		debian/console-setup-udeb/usr/share/console-setup/
 	$(pre) --mini debian/console-setup-udeb/usr/share/console-setup/keyboard-configuration.config
-	dh_install -p console-setup-udeb debian/kbdnames.gz usr/share/console-setup
+	sed -i -e '/all_kbdnames/,/^EOF/s/\(.*\*\)[^*]*/\1K/' debian/console-setup-udeb/usr/share/console-setup/keyboard-configuration.config
 	dh_installdirs -p console-setup-udeb lib/debian-installer.d/
 	install -m0644 debian/console-setup-udeb.startup \
 		debian/console-setup-udeb/lib/debian-installer.d/S55console-setup

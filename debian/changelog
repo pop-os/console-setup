@@ -1,8 +1,12 @@
-console-setup (1.76) UNRELEASED; urgency=low
+console-setup (1.76~0) UNRELEASED; urgency=low
 
+  [ Peter Eisentraut ]
   * Added support for "status" action to init scripts
 
- -- Peter Eisentraut <petere@debian.org>  Thu, 08 Dec 2011 20:18:23 +0200
+  [ Samuel Thibault ]
+  * Remove kbdnames.gz from console-setup-udeb, it is not used any more.
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 20 Feb 2012 22:59:46 +0100
 
 console-setup (1.75) unstable; urgency=low
 
