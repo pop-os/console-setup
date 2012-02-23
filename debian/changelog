@@ -6,6 +6,11 @@ console-setup (1.76~0) UNRELEASED; urgency=low
   [ Samuel Thibault ]
   * Remove kbdnames.gz from console-setup-udeb, it is not used any more.
 
+  [ Christian Perrier ]
+  * Add Sindhi as "pk(snd)" to the list of keymap choices
+  * Change "Slovakian" (incorrect spelling) to "Slovak"
+  * Change "Slovene" (incorrect spelling) to "Slovenian"
+
  -- Samuel Thibault <sthibault@debian.org>  Mon, 20 Feb 2012 22:59:46 +0100
 
 console-setup (1.75) unstable; urgency=low
