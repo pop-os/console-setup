@@ -18,9 +18,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dDz.po\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-10-03 14:55+0530\n"
-"Last-Translator: Yumkee <ylhamo@dit.gov.bt>\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-01-28 08:18+0100\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "Language: dz\n"
 "MIME-Version: 1.0\n"
@@ -1277,6 +1277,12 @@ msgstr "སར་བི་ཡཱན། (སི་རི་ལིཀ)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr ""
 
@@ -1284,15 +1290,17 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "སོལོ་བ་ཀི་ཡེན།"
 
-# console-keymaps-acorn, Slovenian
+# console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "སོལོ་ཡི་ནི།"
+#, fuzzy
+msgid "Slovenian"
+msgstr "སོལོ་བ་ཀི་ཡེན།"
 
 # console-keymaps-acorn, Spanish
 #. Type: select

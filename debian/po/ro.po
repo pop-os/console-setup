@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
 "PO-Revision-Date: 2012-01-28 00:04+0200\n"
 "Last-Translator: Bradut Boghita <bradut@bradut.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -1272,20 +1272,28 @@ msgstr "Sârbă (chirilică)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "Sinhala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "Slovacă"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "Slovenă"
+#, fuzzy
+msgid "Slovenian"
+msgstr "Slovacă"
 
 #. Type: select
 #. Choices

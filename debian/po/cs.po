@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-07-31 18:37+0200\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-02-18 10:43+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -1248,20 +1248,28 @@ msgstr "srbská (azbuka)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "sinhálská"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "slovenská"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "slovinská"
+#, fuzzy
+msgid "Slovenian"
+msgstr "slovenská"
 
 #. Type: select
 #. Choices

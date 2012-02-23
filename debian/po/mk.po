@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
 "PO-Revision-Date: 2011-07-24 18:23+0200\n"
 "Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
 "Language-Team: Macedonian <>\n"
@@ -1264,20 +1264,28 @@ msgstr "Српски (Кирилица)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "Синхала"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "Словачки"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "Словенчки"
+#, fuzzy
+msgid "Slovenian"
+msgstr "Словачки"
 
 #. Type: select
 #. Choices

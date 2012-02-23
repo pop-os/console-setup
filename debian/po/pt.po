@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-07-19 21:43+0100\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-02-17 19:06+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -1256,20 +1256,28 @@ msgstr "Sérvio (Cirílico)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "Sinhala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "Eslovaco"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "Eslovénio"
+#, fuzzy
+msgid "Slovenian"
+msgstr "Eslovaco"
 
 #. Type: select
 #. Choices

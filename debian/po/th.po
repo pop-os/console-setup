@@ -23,9 +23,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-08-17 22:42+0700\n"
-"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-02-17 22:13-0500\n"
+"Last-Translator: Kiatkachorn Ratanatharathorn <kratanat@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
@@ -1236,20 +1236,28 @@ msgstr "เซอร์เบีย (ซีริลลิก)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "สิงหล"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "สโลวัก"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "สโลวีเนีย"
+#, fuzzy
+msgid "Slovenian"
+msgstr "สโลวัก"
 
 #. Type: select
 #. Choices

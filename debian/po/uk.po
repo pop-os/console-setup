@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
 "PO-Revision-Date: 2011-09-19 07:23+0300\n"
 "Last-Translator: Borys Yanovych <borys@yanovy.ch>\n"
 "Language-Team: Ukrainian <>\n"
@@ -1263,20 +1263,29 @@ msgstr "Сербська (кирилічна)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
+msgid "Sindhi"
+msgstr "Сінд"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "Сингальська"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "Словацька"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "Словенська"
+#, fuzzy
+msgid "Slovenian"
+msgstr "Словацька"
 
 #. Type: select
 #. Choices

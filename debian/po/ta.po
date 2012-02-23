@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2011-07-03 20:43+0200\n"
-"PO-Revision-Date: 2011-09-19 17:42+0530\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-01-22 06:31+0530\n"
 "Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <ubuntu-tam@lists.ubuntu.com>\n"
 "Language: ta\n"
@@ -1276,6 +1276,12 @@ msgstr "செர்பியன் (சிரிலிக்)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Sindhi"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "சிங்கள"
 
@@ -1283,15 +1289,17 @@ msgstr "சிங்கள"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
+#, fuzzy
+msgid "Slovak"
 msgstr "ஸ்லோவாக்கியன்"
 
-# console-keymaps-acorn, Slovenian
+# console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "ஸ்லோவீன்"
+#, fuzzy
+msgid "Slovenian"
+msgstr "ஸ்லோவாக்கியன்"
 
 # console-keymaps-acorn, Spanish
 #. Type: select
