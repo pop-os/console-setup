@@ -4,7 +4,7 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Thai translation of debian-installer.
-# Copyright (C) 2006-2011 Software in the Public Interest, Inc.
+# Copyright (C) 2006-2012 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2011.
 #
@@ -17,15 +17,15 @@
 #   Translations from KDE:
 #   - Thanomsub Noppaburana <donga@midaassets.com>
 #   Thanomsub Noppaburana <donga@midaassets.com> (Translations from KDE)
-#   Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2011
+#   Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2012
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 22:13-0500\n"
-"Last-Translator: Kiatkachorn Ratanatharathorn <kratanat@gmail.com>\n"
+"PO-Revision-Date: 2012-02-24 11:17+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
@@ -1237,7 +1237,7 @@ msgstr "เซอร์เบีย (ซีริลลิก)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "สินธี"
 
 #. Type: select
 #. Choices
@@ -1248,16 +1248,14 @@ msgstr "สิงหล"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "สโลวัก"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "สโลวัก"
+msgstr "สโลวีเนีย"
 
 #. Type: select
 #. Choices
