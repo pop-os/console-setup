@@ -17,13 +17,13 @@
 #   Ossama M. Khayat <okhayat@yahoo.com>, 2006, 2008, 2010.
 #   Tobias Quathamer <toddy@debian.org>, 2007.
 #   Mohammad Gamal <f2c2001@yahoo.com>, 2001.
-# Ossama Khayat <okhayat@yahoo.com>, 2011.
+# Ossama Khayat <okhayat@yahoo.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-01-26 22:15+0300\n"
+"PO-Revision-Date: 2012-02-26 10:26+0300\n"
 "Last-Translator: Ossama Khayat <okhayat@yahoo.com>\n"
 "Language-Team: American English <support@arabeyes.org>\n"
 "Language: \n"
@@ -1269,7 +1269,7 @@ msgstr "الصربية - السيريلية"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "السنديّة"
 
 #. Type: select
 #. Choices
@@ -1281,7 +1281,6 @@ msgstr "السنهالية"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "السلوفاكية"
 
@@ -1289,9 +1288,8 @@ msgstr "السلوفاكية"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "السلوفاكية"
+msgstr "السلوفينية"
 
 # console-keymaps-acorn, Spanish
 #. Type: select

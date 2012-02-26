@@ -10,6 +10,7 @@
 # Swedish translation by:
 # Per Olofsson <pelle@debian.org>
 # Daniel Nylander <po@danielnylander.se>, 2006.
+# Martin Bagge / brother <brother@bsnet.se>, 2012
 #
 # Translations from iso-codes:
 #   Tobias Quathamer <toddy@debian.org>, 2007.
@@ -25,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-01-02 21:02+0100\n"
+"PO-Revision-Date: 2012-02-26 17:13+0100\n"
 "Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
@@ -1267,9 +1268,8 @@ msgstr "Serbisk (Kyrillisk)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Sindhi"
-msgstr "Swaziland"
+msgstr "Sindhi"
 
 #. Type: select
 #. Choices
@@ -1280,16 +1280,14 @@ msgstr "Singalesiska"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "Slovakisk"
+msgstr "Slovakiska"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovakisk"
+msgstr "Slovenska"
 
 #. Type: select
 #. Choices
