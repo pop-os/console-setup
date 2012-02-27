@@ -59,7 +59,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-19 18:59+0100\n"
+"PO-Revision-Date: 2012-02-27 21:16+0100\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team:  Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: \n"
@@ -1317,16 +1317,14 @@ msgstr "Cingalés"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Eslovaco"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Eslovaco"
+msgstr "Esloveno"
 
 #. Type: select
 #. Choices

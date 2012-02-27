@@ -12,13 +12,13 @@
 # in doc/i18n/i18n.txt
 #
 #
-# Danishka Navin <danishka@gmail.com>, 2009, 2011.
+# Danishka Navin <danishka@gmail.com>, 2009, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-12-28 06:32+0530\n"
+"PO-Revision-Date: 2012-02-27 21:09+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
 "Language: si\n"
@@ -1234,7 +1234,7 @@ msgstr "සර්බියානු (සිරිලික්)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "සින්දි"
 
 #. Type: select
 #. Choices
@@ -1245,16 +1245,14 @@ msgstr "සිංහල"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "ස්ලෝවැකියානු"
+msgstr "ස්ලෝවැක්"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "ස්ලෝවැකියානු"
+msgstr "ස්ලෝවීනියානු"
 
 #. Type: select
 #. Choices

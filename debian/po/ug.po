@@ -5,7 +5,7 @@
 #
 #
 #
-# Debian Installer master translation file template
+# Debian Installer master translation for Uyghur
 # Don't forget to properly fill-in the header of PO files
 #
 # Debian Installer translators, please read the D-I i18n documentation
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-20 08:14+0600\n"
+"PO-Revision-Date: 2012-02-27 17:17+0600\n"
 "Last-Translator: Sahran <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
@@ -1258,7 +1258,7 @@ msgstr "سېربچە (سلاۋىيان)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "سىندىچە"
 
 #. Type: select
 #. Choices
@@ -1269,16 +1269,14 @@ msgstr "سىنگالچە"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "سلوۋاكچە"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "سلوۋاكچە"
+msgstr "سلوۋىنچە"
 
 #. Type: select
 #. Choices

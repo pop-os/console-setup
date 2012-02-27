@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-02 16:55+0530\n"
+"PO-Revision-Date: 2012-02-27 19:15+0530\n"
 "Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
 "Language: kn\n"
@@ -1246,7 +1246,7 @@ msgstr "ಸರ್ಬಿಯನ್ (ಸಿರಿಲಿಕ್)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "ಸಿಂಧಿ"
 
 #. Type: select
 #. Choices
@@ -1257,16 +1257,14 @@ msgstr "ಸಿನ್ಹಲ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "ಸ್ಲೋವಾಕಿಯನ್"
+msgstr "ಸ್ಲೋವಾಕ್"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "ಸ್ಲೋವಾಕಿಯನ್"
+msgstr "ಸ್ಲೋವೆನಿಯನ್"
 
 #. Type: select
 #. Choices
