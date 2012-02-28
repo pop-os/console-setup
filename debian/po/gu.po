@@ -1244,7 +1244,7 @@ msgstr "સર્બિયન (સિરીલીક)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "સિંધી"
 
 #. Type: select
 #. Choices
@@ -1255,16 +1255,14 @@ msgstr "સિંહાલા"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "સ્લોવેકિયન"
+msgstr "સ્લોવેક"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "સ્લોવેકિયન"
+msgstr "સ્લોવેનિઅન"
 
 #. Type: select
 #. Choices

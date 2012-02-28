@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 21:48+0100\n"
+"PO-Revision-Date: 2012-02-28 12:41+0100\n"
 "Last-Translator: Karolina Kalic <karolina@resenje.org>\n"
 "Language-Team: Serbian/Cyrillic\n"
 "Language: \n"
@@ -1249,7 +1249,7 @@ msgstr "српски (ћирилица)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "синди"
 
 #. Type: select
 #. Choices
@@ -1260,16 +1260,14 @@ msgstr "синалски"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "словачки"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "словачки"
+msgstr "словеначки"
 
 #. Type: select
 #. Choices
