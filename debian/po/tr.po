@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 21:00+0200\n"
+"PO-Revision-Date: 2012-02-29 17:29+0200\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10n Turkish <debian-l10n-turkish@lists.debian.org>\n"
 "Language: \n"
@@ -1303,9 +1303,8 @@ msgstr "Sırpça (Kiril alfabesi)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Sindhi"
-msgstr "Swaziland"
+msgstr "Sintçe"
 
 #. Type: select
 #. Choices
@@ -1317,7 +1316,6 @@ msgstr "Sinhala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovakça"
 
@@ -1325,9 +1323,8 @@ msgstr "Slovakça"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovakça"
+msgstr "Slovence"
 
 # console-keymaps-acorn, Spanish
 #. Type: select
