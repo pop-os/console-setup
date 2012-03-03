@@ -24,8 +24,8 @@ msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-18 00:04+0330\n"
-"Last-Translator: Hamid <hamid.r1988@gmail.com>\n"
+"PO-Revision-Date: 2012-03-03 13:05+0330\n"
+"Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -1250,7 +1250,7 @@ msgstr "صربی (سیریلیک)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "سندی"
 
 #. Type: select
 #. Choices
@@ -1261,16 +1261,14 @@ msgstr "Sinhala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "اسلوواكي"
+msgstr "اسلواک"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "اسلوواكي"
+msgstr "اسلوونیایی"
 
 #. Type: select
 #. Choices

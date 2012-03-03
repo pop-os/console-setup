@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 00:05+0200\n"
+"PO-Revision-Date: 2012-12-01 05:44+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -1105,7 +1105,7 @@ msgstr "Gujarati"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "gurmukhi"
+msgstr "Gurmukhi"
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -1303,7 +1303,7 @@ msgstr "Serbisk (kyrillisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Sindhi"
 
 #. Type: select
 #. Choices
@@ -1315,7 +1315,6 @@ msgstr "Singalesisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovakisk"
 
@@ -1323,9 +1322,8 @@ msgstr "Slovakisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovakisk"
+msgstr "Slovensk"
 
 # console-keymaps-acorn, Spanish
 #. Type: select
