@@ -9,7 +9,7 @@
 #
 # Samuel Gimeno <sgimeno@gmail.com>, 2005.
 # Serge Leblanc <serge.leblanc@wanadoo.fr>, 2005, 2006, 2007.
-# Felipe Castro <fefcas@gmail.com>, 2008, 2009, 2010, 2011.
+# Felipe Castro <fefcas@gmail.com>, 2008, 2009, 2010, 2011, 2012.
 #
 # Translations from iso-codes:
 # Alastair McKInstry <mckinstry@computer.org>, 2001,2002.
@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-18 14:53-0300\n"
+"PO-Revision-Date: 2012-03-04 22:28-0300\n"
 "Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "Language: eo\n"
@@ -1253,7 +1253,7 @@ msgstr "Cirila serba"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Sinda"
 
 #. Type: select
 #. Choices
@@ -1264,16 +1264,14 @@ msgstr "Sinhala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovaka"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovaka"
+msgstr "Slovena"
 
 #. Type: select
 #. Choices
