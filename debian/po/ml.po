@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2010-11-21 07:56+0530\n"
+"PO-Revision-Date: 2012-03-07 16:18+0530\n"
 "Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
 "Language: \n"
@@ -322,15 +322,13 @@ msgstr "ഒരു സീരിയല്‍ പോര്‍ട്ട് കണ്
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "ശൃംഖല ക്രമീകരിയ്ക്കുക"
+msgstr "കീബോര്‍ഡ് ക്രമീകരിയ്ക്കുക"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
 msgstr "മറ്റുള്ളവ"
 
@@ -354,9 +352,8 @@ msgstr "ക്രമീകരിക്കേണ്ട കീബോര്‍ഡ�
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "കീബോര്‍ഡിന്റെ തരം:"
+msgstr "കീബോര്‍ഡിന്റെ രാജ്യം:"
 
 #. Type: select
 #. Description
@@ -367,22 +364,23 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"കീബോര്‍ഡുകളുടെ വിന്യാസം രാജ്യങ്ങള്‍ക്കനുസരിച്ചു് മാറ്റമുള്ളതാണു്, ചില രാജ്യങ്ങളിള്‍ ഒന്നിലധികം "
+"വിന്യാസങ്ങള്‍ സാധാരണമാകാം. ഈ കമ്പ്യൂട്ടറിലെ കീബോര്‍ഡ് തിരഞ്ഞെടുക്കാനായി ഏതു് രാജ്യമാണെന്നു് "
+"ദയവായി തിരഞ്ഞെടുക്കുക."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസം തെരഞ്ഞെടുക്കുക"
+msgstr "കീബോര്‍ഡ് വിന്യാസം:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "ഈ കമ്പ്യൂട്ടറില്‍ ഒരു ഹാര്‍ഡ് ഡിസ്‌ക്ക് ഘടിപ്പിച്ചിട്ടുണ്ടെന്നു് ഉറപ്പുവരുത്തുക."
+msgstr "ഈ കമ്പ്യൂട്ടറിലെ കീബോര്‍ഡിനു് ചേര്‍ന്ന വിന്യാസം ദയവായി തിരഞ്ഞെടുക്കുക."
 
 #. Type: boolean
 #. Description
@@ -510,7 +508,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr ""
+msgstr "കാപ്സ് ലോക്ക്"
 
 #. Type: select
 #. Choices
@@ -529,7 +527,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "വലത് ആള്‍ട്ട് (AltGr)"
 
 #. Type: select
 #. Choices
@@ -544,14 +542,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr ""
+msgstr "വലത് കണ്ട്രോള്‍"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr ""
+msgstr "വലത് ഷിഫ്ട്"
 
 #. Type: select
 #. Choices
@@ -570,7 +568,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr ""
+msgstr "വലത് ലോഗോ കീ"
 
 #. Type: select
 #. Choices
@@ -585,42 +583,42 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr ""
+msgstr "മെനു കീ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr ""
+msgstr "ആള്‍ട്ട്+ഷിഫ്റ്റ്"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr ""
+msgstr "കണ്ട്രോള്‍+ഷിഫ്റ്റ്"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr ""
+msgstr "കണ്ട്രോള്‍+ആള്‍ട്ട്"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "ആള്‍ട്ട്+കാപ്സ് ലോക്ക്"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr ""
+msgstr "ഇടതു് കണ്ട്രോള്‍+ഇടതു് ഷിഫ്റ്റ്"
 
 #. Type: select
 #. Choices
@@ -635,21 +633,21 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr ""
+msgstr "ഇടത് ആള്‍ട്ട്"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr ""
+msgstr "ഇടത് കണ്‍ട്രോള്‍"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr ""
+msgstr "ഇടത് ഷിഫ്ട്"
 
 #. Type: select
 #. Choices
@@ -668,28 +666,28 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr ""
+msgstr "ഇടത് ലോഗോ കീ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr ""
+msgstr "സ്കോള്‍ ലോക്ക് കീ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "തമ്മില്‍ മാറേണ്ട"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "ദേശീയ ലാറ്റിന്‍ ദശകള്‍ തമ്മില്‍ മാറാന്‍ ഉപയോഗിയ്ക്കുന്ന രീതി:"
 
 #. Type: select
 #. Description
@@ -699,6 +697,8 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
+"സാധാരണ കാണുന്ന ലാറ്റിന്‍ വിന്യാസവും ദേശീയ വിന്യാസവും തമ്മില്‍ മാറ്റുന്നതിനു് നിങ്ങളൊരു വഴി "
+"കാണണം."
 
 #. Type: select
 #. Description
@@ -710,13 +710,18 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"ആരോഗ്യ കാരണങ്ങളാല്‍ വലതുവശത്തെ ആള്‍ട്ട് അല്ലെങ്കില്‍ കാപ്സ് ലോക്ക് കീകളാണു് സാധാരണയായി എടുക്കാറു് "
+"(രണ്ടാമത്തേതാണെങ്കില്‍ ഷിഫ്റ്റ് + കാപ്സ് ലോക്ക് എന്നിവ ഒന്നിച്ചുപയോഗിച്ചു് സാധാരണ കാപ്സ് ലോക്ക് "
+"ഉപയോഗം നടത്താം). ആള്‍ട്ട് + ഷിഫ്റ്റ് എന്നതും സാധാരണയായി തെരഞ്ഞെടുക്കുന്നതാണു്; പക്ഷേ "
+"പ്രത്യേകാവശ്യത്തിനു് ഇവയുപയോഗിയ്ക്കുന്ന ഈമാക്സിലും മറ്റു പ്രോഗ്രാമുകളിലും ഇതിന്റെ സാധാരണ "
+"പെരുമാറ്റം നഷ്ടപ്പെടും."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr ""
+msgstr "നിങ്ങള്‍ നല്‍കിയ കീകളെല്ലാം എല്ലാ കീബോര്‍ഡുകളിലുമുള്ളതല്ല."
 
 #. Type: select
 #. Choices
@@ -884,7 +889,7 @@ msgstr "അറബിക്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "അസ്തൂറിയന്‍"
 
 #. Type: select
 #. Choices
@@ -962,7 +967,7 @@ msgstr "കനേഡിയന്‍ ബഹുഭാഷ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "കറ്റാലന്‍"
 
 #. Type: select
 #. Choices
@@ -1026,7 +1031,7 @@ msgstr "എസ്തോണിയന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
-msgstr ""
+msgstr "എത്യോപ്യന്‍"
 
 # console-keymaps-acorn, Finnish
 #. Type: select
@@ -1135,7 +1140,7 @@ msgstr "ഖസക്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ഖമര്‍"
 
 #. Type: select
 #. Choices
@@ -1210,9 +1215,8 @@ msgstr "നേപ്പാളി"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "വടക്കേ അമേരിക്ക"
+msgstr "വടക്കന്‍ സാമി"
 
 # console-keymaps-acorn, Norwegian
 #. Type: select
@@ -1245,7 +1249,7 @@ msgstr "പോര്‍ച്ചുഗീസ്"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "പഞ്ചാബി"
 
 #. Type: select
 #. Choices
@@ -1270,29 +1274,27 @@ msgstr "സെര്‍ബിയന്‍ (സിറിലിക്)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "സിന്ദി"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "സിംഹള"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "സ്ലോവാക്യന്‍"
+msgstr "സ്ലോവാക്ക്"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "സ്ലോവാക്യന്‍"
+msgstr "സ്ലോവേനിയന്‍"
 
 # console-keymaps-acorn, Spanish
 #. Type: select
@@ -1364,7 +1366,7 @@ msgstr "ഉക്രേനിയന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "വീഗോര്‍"
 
 #. Type: select
 #. Choices
