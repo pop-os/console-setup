@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-11-28 08:18+0100\n"
+"PO-Revision-Date: 2012-03-08 23:41+0100\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
@@ -1261,7 +1261,7 @@ msgstr "Serbisk (kyrillisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Sindhi"
 
 #. Type: select
 #. Choices
@@ -1272,16 +1272,14 @@ msgstr "Singalesisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovakisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovakisk"
+msgstr "Slovensk"
 
 #. Type: select
 #. Choices
