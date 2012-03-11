@@ -87,7 +87,7 @@ msgstr "# Кірылічны - неславянскія мовы"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# Кірылічны - славянскія мовы (разам з баснійскай і сербскай лацінкай)"
+msgstr "# Кірылічны - славянскія мовы (і баснійская і сербская лацінка)"
 
 #. Type: select
 #. Choices
@@ -143,8 +143,7 @@ msgstr "# Latin2 - цэнтральна-еўрапейскія і румынск
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr ""
-"# Latin3 і Latin8 - чычэва; эсперанта; ірландская; мальтыйская і ўэльская"
+msgstr "# Latin3 і Latin8 - чычэва; эсперанта; ірландск.; мальтыйск., ўэльск."
 
 #. Type: select
 #. Choices
@@ -172,7 +171,7 @@ msgstr "# тайскі"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Аб'яднаны - Latin; славянская кірыліца; ізраільскі; базавы арабскі"
+msgstr ". Аб'яднаны - Latin; славян. кірыліца; ізраільскі; базавы арабскі"
 
 #. Type: select
 #. Choices
