@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-03-07 16:18+0530\n"
+"PO-Revision-Date: 2012-03-16 19:33+0530\n"
 "Last-Translator: Praveen Arimbrathodiyil <pravi.a@gmail.com>\n"
 "Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
 "Language: \n"
@@ -336,17 +336,15 @@ msgstr "മറ്റുള്ളവ"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസം തെരഞ്ഞെടുക്കുക"
+msgstr "കീബോര്‍ഡ് മാതൃക:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "ക്രമീകരിക്കേണ്ട കീബോര്‍ഡിന്റെ തരം തെരഞ്ഞെടുക്കുക."
+msgstr "ഈ മഷീനിലെ കീബോര്‍ഡിന്റെ മാതൃക തിരഞ്ഞെടുക്കുക."
 
 #. Type: select
 #. Description
@@ -728,7 +726,7 @@ msgstr "നിങ്ങള്‍ നല്‍കിയ കീകളെല്ല�
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "താത്കാലിക സ്വിച്ചില്ല"
 
 #. Type: select
 #. Choices
@@ -739,14 +737,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "രണ്ടു് ലോഗോ കീകളും"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "ദേശീയ ഇന്‍പുട്ടും ലാറ്റിന്‍ ഇന്‍പുട്ടും തമ്മില്‍ മാറുന്നതിനുള്ള രീതി"
 
 #. Type: select
 #. Description
@@ -759,49 +757,52 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"കീബോര്‍ഡ് ദേശീയ ദശയിലായിരിയ്ക്കുമ്പോള്‍ ചില ലാറ്റിന്‍ അക്ഷരങ്ങള്‍ മാത്രം ടൈപ്പ് ചെയ്യേണ്ട "
+"സന്ദര്‍ഭങ്ങളില്‍ താത്കാലികമായി ലാറ്റിന്‍ ദശയിലേയ്ക്കു് മാറുന്നതായിരിയ്ക്കാം കൂടുതല്‍ അനുയോജ്യം. "
+"തിരഞ്ഞെടുത്ത കീ അമര്‍ത്തിയിരിയ്ക്കുന്നിടത്തോളം ആ ദശയിലിരിയ്ക്കും. അതേ കീ തന്നെ ലാറ്റിന്‍ "
+"ദശയിലായിരിയ്ക്കുമ്പോള്‍ ദേശീയ അക്ഷരങ്ങള്‍ ഇന്‍പുട്ട് ചെയ്യാന്‍ ഉപയോഗിയ്ക്കാം."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr ""
+msgstr "\"താത്കാലിക സ്വിച്ചില്ല\" എന്നതു് തിരഞ്ഞെടുത്തു് നിങ്ങള്‍ക്കീ ഗുണം പ്രവര്‍ത്തന രഹിതമാക്കാം."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസം തെരഞ്ഞെടുക്കുക"
+msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസത്തിന്റെ സഹജവില"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "ആള്‍ട്ട്ജിആര്‍ കീ ഇല്ല"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "കീപാഡ് എന്‍ര്‍ കീ"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "രണ്ടു് ആള്‍ട്ട് കീകളും"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "ആള്‍ട്ട്ജിആര്‍ കീ ആയി പ്രവര്‍ത്തിയ്ക്കേണ്ട കീ:"
 
 #. Type: select
 #. Description
@@ -818,17 +819,15 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "No compose key"
-msgstr "ഡിസ്ക് തെരഞ്ഞെടുക്കുക:"
+msgstr "കമ്പോസ് കീ ഇല്ല"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "ഡിസ്ക് തെരഞ്ഞെടുക്കുക:"
+msgstr "കമ്പോസ് കീ:"
 
 #. Type: select
 #. Description
