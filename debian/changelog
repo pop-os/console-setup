@@ -11,7 +11,10 @@ console-setup (1.76~0) UNRELEASED; urgency=low
   * Change "Slovakian" (incorrect spelling) to "Slovak"
   * Change "Slovene" (incorrect spelling) to "Slovenian"
 
- -- Samuel Thibault <sthibault@debian.org>  Mon, 20 Feb 2012 22:59:46 +0100
+  [ Samuel Thibault ]
+  * Fix Norwegian Nynorsk vs Persian keymap inversion. Closes: #665874.
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Mar 2012 22:48:22 +0200
 
 console-setup (1.75) unstable; urgency=low
 
