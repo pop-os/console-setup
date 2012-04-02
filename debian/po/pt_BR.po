@@ -3,26 +3,26 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of Debian Installer templates to Brazilian Portuguese.
+# Translation of Debian Installer templates to Brazilian Portuguese.
 # This file is distributed under the same license as debian-installer.
 #
-# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2010.
+# Felipe Augusto van de Wiel (faw) <faw@debian.org>, 2008-2012.
 #
 # Translations from iso-codes:
-# Alastair McKinstry <mckinstry@computer.org>, 2001, 2002.
-# Free Software Foundation, Inc., 2000
-# Juan Carlos Castro y Castro <jcastro@vialink.com.br>, 2000,2005.
-# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-9.
-# Lisiane Sztoltz <lisiane@conectiva.com.br>
-# Tobias Quathamer <toddy@debian.org>, 2007.
-#   Translations taken from ICU SVN on 2007-09-09
+#   Alastair McKinstry <mckinstry@computer.org>, 2001-2002.
+#   Free Software Foundation, Inc., 2000
+#   Juan Carlos Castro y Castro <jcastro@vialink.com.br>, 2000-2005.
+#   Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2009.
+#   Lisiane Sztoltz <lisiane@conectiva.com.br>
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-03-31 20:46-0300\n"
+"PO-Revision-Date: 2012-04-02 01:35-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -43,7 +43,7 @@ msgstr "Não mude a fonte do kernel/inicialização"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Deixe que o sistema selecione uma fonte apropriada"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "somente framebuffer"
 
 #. Type: select
 #. Choices
@@ -190,9 +190,8 @@ msgstr ". Combinado - Latino; Eslavo e não-Eslavo Cirílico"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Informe caracteres aleatórios"
+msgstr "Adivinhar melhor conjunto de caracteres"
 
 #. Type: select
 #. Description
@@ -280,26 +279,26 @@ msgstr "Tamanho da fonte:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Por favor, selecione o tamanho da fonte para o console Linux. Para "
-"referência, a fonte usada quando seu computador inicializa tem tamanho 16."
+"Por favor, selecione o tamanho da fonte para o console. Para referência, a "
+"fonte usada quando seu computador inicializa tem tamanho 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Por favor, selecione o tamanho da fonte para o console Linux. Para "
-"referência, a fonte usada quando seu computador inicializa tem tamanho 16."
+"Por favor, selecione o tamanho da fonte para o console. Para referência, a "
+"fonte usada quando seu computador inicializa tem tamanho 8x16. Algumas "
+"fontes requerem que o pacote de console kbd (não o console-tools) esteja "
+"instalado com framebuffer."
 
 #. Type: select
 #. Description
@@ -899,7 +898,7 @@ msgstr "Árabe"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Asturiano"
 
 # BD
 #. Type: select
@@ -972,7 +971,7 @@ msgstr "Multilinguagem canadense"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Catalão"
 
 #. Type: select
 #. Choices
@@ -1031,9 +1030,8 @@ msgstr "Estoniano"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etíope"
+msgstr "Etíope"
 
 #. Type: select
 #. Choices
@@ -1075,7 +1073,7 @@ msgstr "Guzerate"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "gurmuqui"
+msgstr "Gurmukhi"
 
 #. Type: select
 #. Choices
@@ -1123,7 +1121,7 @@ msgstr "Japonês"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Canarês"
 
 #. Type: select
 #. Choices
@@ -1135,7 +1133,7 @@ msgstr "Cazaque"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1206,9 +1204,8 @@ msgstr "Nepali"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "América do Norte"
+msgstr "Sami Setentrional"
 
 #. Type: select
 #. Choices
@@ -1238,7 +1235,7 @@ msgstr "Português"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #. Type: select
 #. Choices
@@ -1262,27 +1259,25 @@ msgstr "Sérvio (cirílico)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Sindi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala (cingalês)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Eslovaco"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Eslovaco"
+msgstr "Esloveno"
 
 #. Type: select
 #. Choices
@@ -1348,7 +1343,7 @@ msgstr "Ucraniano"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uigur"
 
 #. Type: select
 #. Choices
