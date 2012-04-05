@@ -4,7 +4,6 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # translation of km.po to Khmer
-#
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2007, 2008, 2010.
 #   eng vannak <evannak@khmeros.info>, 2006.
 #   auk piseth <piseth_dv@khmeros.info>, 2006.
@@ -1232,7 +1231,7 @@ msgstr "ស៊ែរប៊ី-ស៊ីពរ៍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "ស៊ីន្តី"
 
 #. Type: select
 #. Choices
@@ -1243,16 +1242,14 @@ msgstr "ស្រីលង្កា"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "ស្លូវ៉ាគី"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "ស្លូវ៉ាគី"
+msgstr "ស្លូវ៉ានា"
 
 #. Type: select
 #. Choices
