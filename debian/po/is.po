@@ -13,10 +13,10 @@
 # zorglubb <debian-user-icelandic@lists.debian.org>, 2008.
 # Sveinn í Felli <sveinki@nett.is>, 2010.
 # Alastair McKinstry, <mckinstry@computer.org>, 2002.
-# Sveinn í Felli <sveinki@nett.is>, 2010, 2011.
+# Sveinn í Felli <sveinki@nett.is>, 2010, 2011, 2012.
 # Alastair McKinstry <mckinstry@computer.org>, 2002.
 # Translations from iso-codes:
-# Copyright (C) 2002,2003, 2010, 2011 Free Software Foundation, Inc.
+# Copyright (C) 2002,2003, 2010, 2011, 2012 Free Software Foundation, Inc.
 # Translations from KDE:
 # Þórarinn Rúnar Einarsson <thori@mindspring.com>
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_is\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-12-27 21:05+0000\n"
+"PO-Revision-Date: 2012-04-06 10:43+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -32,6 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 ">\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -45,7 +46,7 @@ msgstr "Ekki breyta letri ræsingar/kjarna (boot/kernel font)"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Láta kerfið velja hentugt letur"
 
 #. Type: text
 #. Description
@@ -53,7 +54,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "aðeins skjáminni (framebuffer)"
 
 #. Type: select
 #. Choices
@@ -194,9 +195,8 @@ msgstr ". Samsett - Latneskt; slavneskt og ekki-slavneskt kýrilískt;"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Sláðu inn slembna stafi (tilviljanakennt)"
+msgstr "Giska á hentugasta stafasett"
 
 #. Type: select
 #. Description
@@ -282,26 +282,26 @@ msgstr "Stærð leturs:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Veldu leturstærð fyrir Linux stjórnskjáinn. Til samanburðar má geta að "
-"letrið sem notað er þegar vélin ræsir sig upp er í stærð 16."
+"Veldu leturstærð fyrir stjórnskjáinn. Til samanburðar má geta að letrið sem "
+"notað er þegar vélin ræsir sig upp er í stærðinni 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Veldu leturstærð fyrir Linux stjórnskjáinn. Til samanburðar má geta að "
-"letrið sem notað er þegar vélin ræsir sig upp er í stærð 16."
+"Veldu leturstærð fyrir stjórnskjáinn. Til samanburðar má geta að letrið sem "
+"notað er þegar vélin ræsir sig upp er í stærðinni 8x16. Sumar leturstærðir "
+"þarfnast kbd stjórnskjáspakkans (elli console-tools) auk skjáminnis "
+"(framebuffer)."
 
 #. Type: select
 #. Description
@@ -377,9 +377,8 @@ msgstr "Veldu lyklaborðsuppsetningu sem samsvarar lyklaborðinu á þessari vé
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Nota núgildandi sneiðaskipulag og setja upp rökeintakastjórann."
+msgstr "Halda núgildandi lyklaborðsframsetningu í stilliskránni?"
 
 #. Type: boolean
 #. Description
@@ -389,26 +388,28 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
+"Lyklaborðsframsetningin í stilliskránni /etc/default/keyboard er skilgreind "
+"sem XKBLAYOUT=\"${XKBLAYOUT}\" og XKBVARIANT=\"${XKBVARIANT}\"."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Veldu hvort þú vilt að nýja sneiðin byrji á byrjun eða enda þess pláss sem "
-"er laust."
+"Veldu hvort þú viljir halda þessu. Ef þú ákveður að halda stillingunum þá "
+"þarftu ekki að svara fleiri spurningum um lyklaborðið og núverandi "
+"stillingum verður haldið."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr ""
+msgstr "Halda sjálfgefnu lyklaborðsframsetningunni (${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
@@ -419,26 +420,28 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
+"Sjálfgefið gildi fyrir lyklaborðsframsetningu er XKBLAYOUT=\"${XKBLAYOUT}\" "
+"og XKBVARIANT=\"${XKBVARIANT}\".  Þetta gildi byggist á þeim stillingum sem "
+"þegar hafa verið tilgreindar varðandi tungumál/land auk stillinga í /etc/X11/"
+"xorg.conf."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"Veldu hvort þú vilt að nýja sneiðin byrji á byrjun eða enda þess pláss sem "
-"er laust."
+"Veldu hvort þú viljir halda því. Ekki verður spurt frekar út í lyklaborðið "
+"ef þú velur þennan valkost."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Nota núgildandi sneiðaskipulag og setja upp rökeintakastjórann."
+msgstr "Halda núgildandi lyklaborðsstillingum í stilliskránni?"
 
 #. Type: boolean
 #. Description
@@ -448,25 +451,26 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
+"Lyklaborðsstillingar í stilliskránni /etc/default/keyboard eru skilgreindar "
+"sem XKBOPTIONS=\"${XKBOPTIONS}\"."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Veldu hvort þú vilt að nýja sneiðin byrji á byrjun eða enda þess pláss sem "
-"er laust."
+"Ef þú velur að halda þessum stillingum þá þarftu ekki að svara fleiri "
+"spurningum um lyklaborðið og núverandi stillingum verður haldið."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr ""
+msgstr "Halda sjálfgefnum lyklaborðsstillingum (${XKBOPTIONS})?"
 
 #. Type: boolean
 #. Description
@@ -477,18 +481,19 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
+"Sjálfgefin gildi fyrir lyklaborðsstillingar er XKBOPTIONS="
+"\"${XKBOPTIONS}\".  Þetta gildi byggist á þeim stillingum sem þegar hafa "
+"verið tilgreindar varðandi tungumál/land auk stillinga í /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Veldu hvort þú vilt að nýja sneiðin byrji á byrjun eða enda þess pláss sem "
-"er laust."
+"Ef þú velur að halda þessu, þá verður ekki spurt frekar út í lyklaborðið."
 
 #. Type: select
 #. Choices
@@ -864,19 +869,18 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr ""
+msgstr "Nota Control+Alt+Backspace til að slökkva á X-þjóninum?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
-#, fuzzy
 msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"Sj??lfgefi?? gerir lyklasamsetningin Control+Alt+Backspace ekki neitt.  "
-"Ef ???? vilt, ???? m?? nota hana til a?? sl??kkva ?? graf??ska X ??j??ninum."
+"Sjálfgefið gerir lyklasamsetningin Control+Alt+Backspace ekki neitt.  Ef þú "
+"vilt, þá má nota hana til að slökkva á grafíska X þjóninum."
 
 #. Type: select
 #. Choices
@@ -1261,7 +1265,7 @@ msgstr "Serbneskt (kýrílískt letur)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Sindí"
 
 #. Type: select
 #. Choices
@@ -1272,16 +1276,14 @@ msgstr "Sinhala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "Slóvakískt"
+msgstr "Slóvakíska"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slóvakískt"
+msgstr "Slóvenska"
 
 #. Type: select
 #. Choices
