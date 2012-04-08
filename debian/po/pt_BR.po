@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-04-02 01:35-0300\n"
+"PO-Revision-Date: 2012-04-07 19:57-0300\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -207,8 +207,8 @@ msgstr "Conjunto de caracteres suportados:"
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
-"Por favor, escolha o conjunto de caracteres que deverá ser suportado pela "
-"fonte do console:"
+"Por favor, escolha o conjunto de caracteres para o qual a fonte do console "
+"deverá ter suporte."
 
 #. Type: select
 #. Description
@@ -263,7 +263,7 @@ msgid ""
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
 "Se você prefere uma versão negrito da fonte Terminus, escolha TerminusBold "
-"(se você usa um framebuffer) ou TerminuxBoldVGA (caso contrário)."
+"(se você usa um framebuffer) ou TerminusBoldVGA (caso contrário)."
 
 #. Type: select
 #. Description
@@ -296,9 +296,9 @@ msgid ""
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Por favor, selecione o tamanho da fonte para o console. Para referência, a "
-"fonte usada quando seu computador inicializa tem tamanho 8x16. Algumas "
-"fontes requerem que o pacote de console kbd (não o console-tools) esteja "
-"instalado com framebuffer."
+"fonte usada quando seu computador inicializa tem tamanho 8x16. Alguns "
+"tamanhos de fonte requerem que o pacote de console kbd (não o console-tools) "
+"esteja instalado com framebuffer."
 
 #. Type: select
 #. Description
@@ -691,8 +691,8 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"Você precisará de uma maneira para mudar o teclado entre o layout nacional e "
-"o layout padrão Latin."
+"Você precisará de uma maneira para alternar o teclado entre o layout "
+"nacional e o layout padrão Latin."
 
 #. Type: select
 #. Description
@@ -756,8 +756,8 @@ msgstr ""
 "Quando o teclado está no modo nacional e você quiser digitar apenas umas "
 "poucas letras Latin, pode ser mais apropriado alternar temporariamente para "
 "o modo Latin. O teclado permanecerá neste modo enquanto a tecla escolhida "
-"for mantida pressionada. Esta tecla também pode ser utilizada para "
-"introduzir letras nacionais quando o teclado está em modo Latin."
+"for mantida pressionada. Esta tecla também pode ser usada para introduzir "
+"letras nacionais quando o teclado está em modo Latin."
 
 #. Type: select
 #. Description
@@ -1355,4 +1355,4 @@ msgstr "Vietnamita"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "Mapa de teclados a ser usado:"
+msgstr "Mapa de teclado a ser usado:"
