@@ -14,6 +14,10 @@ console-setup (1.76~0) UNRELEASED; urgency=low
   [ Samuel Thibault ]
   * Fix Norwegian Nynorsk vs Persian keymap inversion. Closes: #665874.
 
+  [ Robert Millan ]
+  * Add Catalan to the list of languages that can be represented with
+    Lat15. Closes: #667986
+
  -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Mar 2012 22:48:22 +0200
 
 console-setup (1.75) unstable; urgency=low
