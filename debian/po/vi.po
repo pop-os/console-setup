@@ -10,7 +10,7 @@
 # Vũ Quang Trung <vu.quang.trung@auf.org>
 # Trịnh Minh Thành <tmthanh@yahoo.com>
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
-#
+# Hai-Nam Nguyen <hainam@jcisio.com>, 2012
 #
 # Translations from iso-codes:
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2010-09-28 18:01+0930\n"
-"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"PO-Revision-Date: 2012-04-11 00:58+0100\n"
+"Last-Translator: Hai-Nam Nguyen <hainam@jcisio.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "Đừng thay đổi phông chữ khởi động/hạt nhân"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Để hệ thống chọn phông phù hợp"
 
 #. Type: text
 #. Description
@@ -51,7 +51,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "chỉ framebuffer"
 
 #. Type: select
 #. Choices
@@ -192,9 +192,8 @@ msgstr ". Tổ hợp: La-tinh; Ki-rin Xla-vợ và khác Xla-vợ"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Hãy gõ nhiều ký tự ngẫu nhiên"
+msgstr "Đoán bảng mã tối ưu"
 
 #. Type: select
 #. Description
@@ -279,26 +278,25 @@ msgstr "Kích cỡ phông:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
 "Hãy chọn kích cỡ của phông chữ cho bàn giao tiếp Linux. Để so sánh, máy tính "
-"này khởi động với phông chữ kích cỡ 16."
+"khởi động với phông chữ kích cỡ 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
 "Hãy chọn kích cỡ của phông chữ cho bàn giao tiếp Linux. Để so sánh, máy tính "
-"này khởi động với phông chữ kích cỡ 16."
+"khởi động với phông chữ kích cỡ 8x16. Vài cỡ phông yêu cầu gói console kbd "
+"(không phải console-tools) và framebuffer."
 
 #. Type: select
 #. Description
@@ -333,7 +331,6 @@ msgstr "Mẫu bàn phím:"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
 msgstr "Hãy chọn kiểu bàn phím cần cấu hình."
 
@@ -341,9 +338,8 @@ msgstr "Hãy chọn kiểu bàn phím cần cấu hình."
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "Gốc của bàn phím này:"
+msgstr "Quốc gia gốc của bàn phím này:"
 
 #. Type: select
 #. Description
@@ -354,6 +350,9 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"Bố cục bàn phím phụ thuộc vào địa phương, trong đó một vài nước có thể có "
+"nhiều bố cục khác nhau. Vui lòng chọn quốc gia cho bố cục bàn phím của máy "
+"tính này."
 
 #. Type: select
 #. Description
@@ -373,9 +372,8 @@ msgstr "Hãy chọn bố trí tương ứng với bàn phím cho máy này."
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Giữ lược đồ phân vùng hiện thời và cấu hình LVM không?"
+msgstr "Giữ bố cục bàn phím hiện tại trong tập tin cấu hình?"
 
 #. Type: boolean
 #. Description
@@ -385,6 +383,8 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
+"Bố cục bàn phím hiện tại trong tập tin cấu hình /etc/default/keyboard được "
+"định nghĩa là XKBLAYOUT=\"${XKBLAYOUT}\" và XKBVARIANT=\"${XKBVARIANT}\"."
 
 #. Type: boolean
 #. Description
@@ -402,23 +402,21 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr "Giữ bố trí bàn phím mặc định (${XKBLAYOUT}) ?"
+msgstr "Giữ bố cục bàn phím mặc định (${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "The default value for the keyboard layout is XKBLAYOUT=\"${XKBLAYOUT}\" and "
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Bố trí bàn phím có giá trị mặc định dựa vào ngôn ngữ/miền được xác định hiện "
-"thời và thiết lập trong tập tin cấu hình « /etc/X11/xorg.conf ». Giá trị mặc "
-"định này là ${XKBLAYOUT}, mà không được hỗ trợ bởi chương trình cấu hình."
+"Giá trị mặc định cho bố cục bàn phím là XKBLAYOUT=\"${XKBLAYOUT}\" và "
+"XKBVARIANT=\"${XKBVARIANT}\".  Giá trị này dựa trên ngôn ngữ/vùng hiện tại "
+"và thiết lập trong /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -435,9 +433,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Giữ lại trong tập tin cấu hình các thiết lập không được hỗ trợ không?"
+msgstr "Giữ tùy chọn bàn phím hiện tại trong tập tin cấu hình?"
 
 #. Type: boolean
 #. Description
@@ -447,52 +444,48 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
+"Bố cục bàn phím hiện tại trong tập tin cấu hình /etc/default/keyboard được "
+"định nghĩa là XKBOPTIONS=\"${XKBOPTIONS}\"."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Hãy chọn nếu bạn muốn giữ nó hay không. Bật tùy chọn này thì không hỏi gì về "
-"bố trí bàn phím."
+"Nếu bạn muốn giữ các tùy chọn này, sẽ không còn câu hỏi nào về tùy chọn bàn "
+"phím."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "Giữ bố trí bàn phím mặc định (${XKBLAYOUT}) ?"
+msgstr "Giữ tùy chọn phím mặc định (${XKBOPTIONS})?"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "The default value for the options of the keyboard layout is XKBOPTIONS="
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Bố trí bàn phím có giá trị mặc định dựa vào ngôn ngữ/miền được xác định hiện "
-"thời và thiết lập trong tập tin cấu hình « /etc/X11/xorg.conf ». Giá trị mặc "
-"định này là ${XKBOPTIONS}, mà không được hỗ trợ bởi chương trình cấu hình."
+"Giá trị mặc định của tùy chọn bố cục bàn phím là XKBOPTIONS="
+"\"${XKBOPTIONS}\".  Nó dựa trên ngôn ngữ/vùng hiện tại và thiết lập trong /"
+"etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
-msgstr ""
-"Hãy chọn nếu bạn muốn giữ nó hay không. Bật tùy chọn này thì không hỏi gì về "
-"bố trí bàn phím."
+msgstr "Nếu bạn chọn giữ nó, sẽ không có thêm câu hỏi nào về bố cục bàn phím."
 
 #. Type: select
 #. Choices
@@ -521,9 +514,8 @@ msgstr "Caps Lock"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "Right Alt (AltGr)"
-msgstr "Alt phải"
+msgstr "Alt phải (AltGr)"
 
 #. Type: select
 #. Choices
@@ -780,9 +772,8 @@ msgstr "Giá trị mặc định cho bố trí bàn phím"
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "No AltGr key"
-msgstr "Cả hai phím Alt"
+msgstr "Không có phím AltGr"
 
 #. Type: select
 #. Choices
@@ -803,7 +794,7 @@ msgstr "Cả hai phím Alt"
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "Phím để dùng thay cho AltGr:"
 
 #. Type: select
 #. Description
@@ -899,9 +890,8 @@ msgstr "Tiếng A Rập"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Asturias"
+msgstr "Asturian"
 
 #. Type: select
 #. Choices
@@ -972,9 +962,8 @@ msgstr "Ca-na-đa đa ngôn ngữ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Naftalan"
+msgstr "Catalan"
 
 #. Type: select
 #. Choices
@@ -1033,9 +1022,8 @@ msgstr "E-x-tô-ni-a"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Ê-ti-ô-pi"
+msgstr "Ê-ti-ô-pi"
 
 #. Type: select
 #. Choices
@@ -1137,7 +1125,7 @@ msgstr "Tiếng Ca-xakh"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khơ-me"
 
 #. Type: select
 #. Choices
@@ -1208,9 +1196,8 @@ msgstr "Tiếng Nê-pan"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Bắc Samar"
+msgstr "Bắc Sami"
 
 #. Type: select
 #. Choices
@@ -1239,9 +1226,8 @@ msgstr "Bồ Đào Nha"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
-msgstr "Pun-gia-bợ"
+msgstr "Pun-gia-bi"
 
 #. Type: select
 #. Choices
@@ -1264,29 +1250,26 @@ msgstr "Séc-bi (kir-in)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Sindhi"
-msgstr "Sindh"
+msgstr "Sindhi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Xlô-vác"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Xlô-vác"
+msgstr "Xlô-ve-nia"
 
 #. Type: select
 #. Choices
@@ -1352,7 +1335,7 @@ msgstr "U-cợ-rainh"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Uyghur"
 
 #. Type: select
 #. Choices

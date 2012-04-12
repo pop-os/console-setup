@@ -24,13 +24,13 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-07-24 18:23+0200\n"
+"PO-Revision-Date: 2012-04-11 15:54+0200\n"
 "Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
 "Language-Team: Macedonian <>\n"
 "Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n!=1);\n"
 
 #. Type: text
@@ -45,7 +45,7 @@ msgstr "Не го менувај фонтот при подигнување"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Дозволи му на системот да избере соодветен фонт"
 
 #. Type: text
 #. Description
@@ -53,7 +53,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "само framebuffer"
 
 #. Type: select
 #. Choices
@@ -124,7 +124,7 @@ msgstr "# Еврејски"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr ""
+msgstr "# Лао"
 
 #. Type: select
 #. Choices
@@ -194,7 +194,6 @@ msgstr ". Комбинирано - Латинично; Словенска и н�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
 msgstr "Внеси случајни знаци"
 
@@ -283,7 +282,6 @@ msgstr "Големина на фонт:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
@@ -295,7 +293,6 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
@@ -1265,7 +1262,7 @@ msgstr "Српски (Кирилица)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Синди"
 
 #. Type: select
 #. Choices
@@ -1276,16 +1273,14 @@ msgstr "Синхала"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Словачки"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Словачки"
+msgstr "Словенечки"
 
 #. Type: select
 #. Choices

@@ -1262,9 +1262,8 @@ msgstr "Serbiarra (Zirilikoa)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Sindhi"
-msgstr "Swazilandia"
+msgstr "Sindhia"
 
 #. Type: select
 #. Choices
@@ -1275,16 +1274,14 @@ msgstr "Sinhala"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Eslovakiarra"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Eslovakiarra"
+msgstr "Esloveniarra"
 
 #. Type: select
 #. Choices
