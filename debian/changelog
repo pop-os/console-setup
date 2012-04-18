@@ -1,7 +1,7 @@
 console-setup (1.76~0) UNRELEASED; urgency=low
 
   [ Peter Eisentraut ]
-  * Added support for "status" action to init scripts
+  * Added support for "status" action to init scripts, closes: #651461.
 
   [ Samuel Thibault ]
   * Remove kbdnames.gz from console-setup-udeb, it is not used any more.
