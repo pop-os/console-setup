@@ -224,6 +224,8 @@ binary-indep: build install
 	dh_installdocs -pconsole-setup-freebsd --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup-mini --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup --link-doc=keyboard-configuration
+# To deal with bug #657904.  See also #255819 and #17624.
+	rm debian/console-setup/usr/share/doc/console-setup
 	dh_lintian
 	dh_bugfiles
 	dh_installman

@@ -18,6 +18,10 @@ console-setup (1.76~0) UNRELEASED; urgency=low
   * Add Catalan to the list of languages that can be represented with
     Lat15. Closes: #667986
 
+  [ Anton Zinoviev ]
+  * Create the link /usr/share/doc/console-setup in the postinst script.
+    Thanks to Nathan Cutler and Jakub Wilk, closes: #657904.
+
  -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Mar 2012 22:48:22 +0200
 
 console-setup (1.75) unstable; urgency=low
