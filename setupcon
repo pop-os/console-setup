@@ -829,6 +829,8 @@ fi
 
 # Setup unicode/non-unicode mode
 case "$do_font" in
+    # So far the FreeBSD kernel doesn't support changes of the mode from
+    # utf to 8-bit and vice versa (its a compile time option).
     linux*)
         if [ "$unicode" ]; then
             run '' ECHO utf_start
@@ -842,9 +844,11 @@ esac
 if [ "$FONTFILES" ]; then
     case "$do_font" in
         freebsd)
-            for font in $FONTFILES; do
-                run plain ECHO vidcontrol -f $font
-            done
+            if [ -z "$unicode" ]; then
+                for font in $FONTFILES; do
+                    run plain ECHO vidcontrol -f $font
+                done
+            fi
             ;;
         linuxkbd)
             if [ "$FONTMAPFILE" ]; then
@@ -867,7 +871,9 @@ fi
 if [ "$CONSOLE_MAP" ]; then
     case "$do_font" in
         freebsd)
-            run plain ECHO vidcontrol -l "$CONSOLE_MAP"
+            if [ -z "$unicode" ]; then
+                run plain ECHO vidcontrol -l "$CONSOLE_MAP"
+            fi
             ;;
         linuxkbd)
 	    run '-C ' -v setfont -m "$CONSOLE_MAP"
@@ -961,6 +967,8 @@ fi
 ### SETUPDIR
 ###########################################################################
 
+
+
 if [ "$setupdir" ]; then
 
     filearg () {
@@ -994,12 +1002,12 @@ if [ "$setupdir" ]; then
     while read cmd args; do
         case "$cmd $args" in
             utf_start*)
-                echo -n printf \'\\\\'033%%G'\'' >'
+                echo -n printf \'\\\\'033%%G'\'' >' # not for FreeBSD
                 filearg "${args%% *}"
                 echo
                 ;;
             utf_stop*)
-                echo -n printf \'\\\\'033%%@'\'' >'
+                echo -n printf \'\\\\'033%%@'\'' >' # not for FreeBSD
                 filearg "${args%% *}"
                 echo
                 ;;
