@@ -19,8 +19,6 @@ console-setup (1.76~0) UNRELEASED; urgency=low
     Lat15. Closes: #667986
 
   [ Anton Zinoviev ]
-  * Create the link /usr/share/doc/console-setup in the postinst script.
-    Thanks to Nathan Cutler and Jakub Wilk, closes: #657904.
   * setupcon: exit with error message if the kernel is neither Linux, nor
     FreeBSD.
   * setupcon: do not load font with UTF-8 on FreeBSD (the support of UTF-8

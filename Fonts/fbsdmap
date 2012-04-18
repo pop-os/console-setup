@@ -39,8 +39,8 @@ $forbidden[0x1b] = 1; # ESC
 # Maps the names used in freebsd.set to the terminfo symbol and code.
 # The symbols are termcap/terminfo standard and may not be changed.
 # Changes in the codes will lead in incompatibility with the previous
-# versions the terminal description but not too drastic so perhaps no
-# a change of the terminal name will be required.
+# versions the terminal description but not too drastic so perhaps
+# such changes are acceptable.
 
 my %acsc = ( 'UK pound sign' => [ '}', 0 ],
              'arrow pointing down' => [ '.', 0x01 ],

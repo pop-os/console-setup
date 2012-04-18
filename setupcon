@@ -374,7 +374,7 @@ if which uname >/dev/null; then
         *Linux*) kernel=linux ;;
         *FreeBSD*) kernel=freebsd ;;
         *)
-            echo Unknown kernel (only Linux and FreeBSD are supported). >&2
+            echo 'Unknown kernel (only Linux and FreeBSD are supported).' >&2
             exit 1
             ;;
     esac

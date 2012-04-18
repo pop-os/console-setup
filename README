@@ -111,7 +111,7 @@ keymap="NO"
 
 
 ============================
-TERMINAL TYPE (FreeBSD only)
+TERMINAL TYPE (FreeBSD version 8.3 and earlier only)
 ============================
 
 In order to display properly the line draw symbols on FreeBSD, the
@@ -169,6 +169,8 @@ the terminal type to 'cons25w':
 ====================
 BACKSPACE AND DELETE
 ====================
+
+(This section has not been updated for FreeBSD version 9.)
 
 This hasn't been a problem on Linux since a while.  But on FreeBSD it
 is not unusual to have programs that do not respond correctly to these
