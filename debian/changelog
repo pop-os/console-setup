@@ -27,6 +27,9 @@ console-setup (1.76~0) UNRELEASED; urgency=low
     on FreeBSD is very limited).  Thanks to Robert Millan, closes: #666542
   * Only include the debconf-selectable layouts in the udebs.  Based on a
     patch by Samuel Thibault with changes.  Closes: #658668.
+  * config: handle XkbLayout of the form us(intl),cz(qwerty) when guesing
+    default values from xorg.conf.  Thanks to Nathan Cutler,
+    closes: #658020.
 
  -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Mar 2012 22:48:22 +0200
 
