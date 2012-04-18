@@ -30,6 +30,16 @@ if ($ARGV[2]) {
     $xkbdir = "`pwd`/ckb";
 }
 
+my $supported;
+if ($ARGV[3]) {
+    $supported = " $ARGV[3] ";
+    $supported =~ s/ +/() /g;
+    $supported =~ s/\)\(\)/)/g;
+} else {
+    $supported = 0;
+}
+
+
 # Don't forget to update also the list in keyboard-configuration.config
 my $nonlatin = ' af am ara ben bd bg bt by deva et ge gh gr guj guru \
                  il in iq ir iku kan kh kz la lao lk kg ma mk mm mn mv mal \
@@ -120,8 +130,10 @@ for my $layout (values %KeyboardNames::layouts) {
 		and die "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout:$variant.new");
 	    checkrename "$dir/$model-$layout:$variant.new", "$dir/$model-$layout:$variant";
 	}
-	if (-f "$dir/$model-$layout:$variant") {
-	    read_temp_kmap "$layout:$variant";
+	if (-f "$dir/$model-$layout:$variant" && $supported) {
+            if (index($supported, " $layout($variant) ") ge 0) {
+                read_temp_kmap "$layout:$variant";
+            }
 	}
     }
 }

@@ -44,14 +44,37 @@ debian/kbdnames.gz: main_build
 	&& ./kbdnames-maker KeyboardNames.pl \
 		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9 ) >$@
 
+models = amiga ataritt macintosh_old pc105 sun4 sun5
+
+gzipped_ekmaps =  $(addsuffix .ekmap.gz, $(models))
+
+gzipped_ekbds = pc105.ekbd.gz
+
+# di-kbdnames = us al ara es(ast) bd by in(ben) be ba br gb bg bg(phonetic)...
+di-kbdnames = $(shell grep -A 2 keyboard-configuration/xkb-keymap debian/console-setup-udeb.templates | tail -n 1 | cut -d ' ' -f 2- | tr -d , | tr ' ' '\n' | grep -v skip-config)
+
+%.gz : %
+	gzip -9 <$< >$@
+
+%.ekmap :
+	(cd Keyboard \
+	&& ./kbdcompiler $(@:%.ekmap=%) KeyboardNames.pl $(xkbdir) \
+		"$(di-kbdnames)") >$@
+
+%.ekbd :
+	(cd Keyboard \
+	&& ./kbdcompiler freebsd-$(@:%.ekbd=%) KeyboardNames.pl $(xkbdir) \
+		"$(di-kbdnames)") >$@
+
 build: build-arch build-indep
 build-arch: build-stamp
 build-indep: build-stamp
-build-stamp: main_build debian/kbdnames.gz
+build-stamp: main_build debian/kbdnames.gz $(gzipped_ekmaps) $(gzipped_ekbds)
 
 .PHONY : clean
 clean:
 	dh_testdir
+	-rm -f $(gzipped_ekmaps) $(gzipped_ekbds)
 	debconf-updatepo
 	$(MAKE) maintainer-clean
 	-rm -f build main_build
@@ -184,8 +207,8 @@ install-udeb: build
 		prefix=debian/console-setup-udeb/usr install-common
 	$(MAKE) etcdir=debian/console-setup-udeb/etc \
 		prefix=debian/console-setup-udeb/usr install-ckbcomp-mini
-	$(pre) --mini debian/console-setup-udeb/bin/setupcon
-	$(pre) --mini debian/console-setup-udeb/usr/bin/ckbcomp-mini
+	$(pre) --udeb debian/console-setup-udeb/bin/setupcon
+	$(pre) --udeb debian/console-setup-udeb/usr/bin/ckbcomp-mini
 	rm -r debian/console-setup-udeb/usr/share/man/
 	dh_installdirs -p console-setup-udeb usr/share/console-setup
 	mv debian/console-setup-udeb/etc/default/keyboard \
@@ -194,23 +217,29 @@ install-udeb: build
 	rm debian/console-setup-udeb/usr/share/console-setup/charmap_functions.sh
 	install -m0755 debian/keyboard-configuration.config \
 		debian/console-setup-udeb/usr/share/console-setup/
-	$(pre) --mini debian/console-setup-udeb/usr/share/console-setup/keyboard-configuration.config
-	sed -i -e '/all_kbdnames/,/^EOF/s/\(.*\*\)[^*]*/\1K/' debian/console-setup-udeb/usr/share/console-setup/keyboard-configuration.config
+	$(pre) --udeb debian/console-setup-udeb/usr/share/console-setup/keyboard-configuration.config
 	dh_installdirs -p console-setup-udeb lib/debian-installer.d/
 	install -m0644 debian/console-setup-udeb.startup \
 		debian/console-setup-udeb/lib/debian-installer.d/S55console-setup
 	dh_installdirs -p console-setup-udeb usr/lib/base-installer.d
 	install -m0755 debian/console-setup-udeb.base-installer \
 		debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
-	$(pre) --mini debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
+	$(pre) --udeb debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
 # console-setup-*-ekmap
 	dh_movefiles -p console-setup-amiga-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/amiga.ekmap.gz
+	cat amiga.ekmap.gz >debian/console-setup-amiga-ekmap/usr/share/console-setup/amiga.ekmap.gz
 	dh_movefiles -p console-setup-ataritt-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/ataritt.ekmap.gz
+	cat ataritt.ekmap.gz >debian/console-setup-ataritt-ekmap/usr/share/console-setup/ataritt.ekmap.gz
 	dh_movefiles -p console-setup-macintoshold-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/macintosh_old.ekmap.gz
+	cat macintosh_old.ekmap.gz >debian/console-setup-macintoshold-ekmap/usr/share/console-setup/macintosh_old.ekmap.gz
 	dh_movefiles -p console-setup-pc-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/pc105.ekmap.gz
+	cat pc105.ekmap.gz >debian/console-setup-pc-ekmap/usr/share/console-setup/pc105.ekmap.gz
 	dh_movefiles -p console-setup-sun4-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/sun4.ekmap.gz
+	cat sun4.ekmap.gz >debian/console-setup-sun4-ekmap/usr/share/console-setup/sun4.ekmap.gz
 	dh_movefiles -p console-setup-sun5-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/sun5.ekmap.gz
+	cat sun5.ekmap.gz >debian/console-setup-sun5-ekmap/usr/share/console-setup/sun5.ekmap.gz
 	dh_movefiles -p console-setup-pc-ekbd --sourcedir=debian/console-setup-udeb usr/share/console-setup/pc105.ekbd.gz
+	cat pc105.ekbd.gz >debian/console-setup-pc-ekbd/usr/share/console-setup/pc105.ekbd.gz
 
 # Build architecture-independent files here.
 .PHONY : binary-indep
@@ -237,7 +266,7 @@ binary-indep: build install
 	$(pre) debian/keyboard-configuration/DEBIAN/postinst
 	$(pre) debian/console-setup/DEBIAN/config
 	$(pre) debian/console-setup/DEBIAN/postinst
-	$(pre) --mini debian/console-setup-udeb/DEBIAN/postinst
+	$(pre) --udeb debian/console-setup-udeb/DEBIAN/postinst
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
