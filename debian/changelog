@@ -1,4 +1,4 @@
-console-setup (1.76~0) UNRELEASED; urgency=low
+console-setup (1.76) unstable; urgency=low
 
   [ Peter Eisentraut ]
   * Added support for "status" action to init scripts, closes: #651461.
@@ -29,7 +29,7 @@ console-setup (1.76~0) UNRELEASED; urgency=low
     default values from xorg.conf.  Thanks to Nathan Cutler,
     closes: #658020.
 
- -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Mar 2012 22:48:22 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 20 Apr 2012 17:42:22 +0300
 
 console-setup (1.75) unstable; urgency=low
 
