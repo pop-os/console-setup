@@ -3,47 +3,46 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of he.po to Hebrew
+# translation of debian-installer_packages_po_sublevel1_he.po to Hebrew
 # Hebrew messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
 #
-# Amit Dovev <debian.translator@gmail.com>, 2007.
-# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
-# Omer Zak <w1@zak.co.il>, 2008, 2010.
-# Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011.
 #
 #
 # Translations from iso-codes:
-#   Tobias Quathamer <toddy@debian.org>, 2007.
 #     Translations taken from ICU SVN on 2007-09-09
-#   Free Software Foundation, Inc., 2002,2004
-#   Alastair McKinstry <mckinstry@computer.org>, 2002
 #   Translations from KDE:
-#   Meni Livne <livne@kde.org>, 2000.
 #
 #   Translations taken from KDE:
 #
-#   Free Software Foundation, Inc., 2002,2003.
+#
+# Amit Dovev <debian.translator@gmail.com>, 2007.
+# Meital Bourvine <meitalbourvine@gmail.com>, 2007.
+# Omer Zak <w1@zak.co.il>, 2008, 2010, 2012.
+# Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#   Free Software Foundation, Inc., 2002,2004.
 #   Alastair McKinstry <mckinstry@computer.org>, 2002.
+#   Meni Livne <livne@kde.org>, 2000.
+#   Free Software Foundation, Inc., 2002,2003.
 #   - Meni Livne <livne@kde.org>, 2000.
 #   Lior Kaplan <kaplan@debian.org>, 2005,2006, 2007, 2008, 2010.
 #   Meital Bourvine <meitalbourvine@gmail.com>, 2007.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: he\n"
+"Project-Id-Version: debian-installer_packages_po_sublevel1_he\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-01-03 01:10+0200\n"
-"Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
-"Language-Team: Hebrew <>\n"
+"PO-Revision-Date: 2012-04-17 01:53+0300\n"
+"Last-Translator: Omer Zak <w1@zak.co.il>\n"
+"Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -362,6 +361,8 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"פריסת המקלדות משתנית מארץ לארץ, ויש ארצות שיש להן כמה פריסות מקלדות נפוצות. "
+"נא לבחור את ארץ המוצא של המקלדת של מחשב זה."
 
 #. Type: select
 #. Description
@@ -399,12 +400,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
-msgstr "בחר האם ליצור את המחיצה החדשה בתחילת או בסיום המקום הפנוי."
+msgstr ""
+"אנא בחר אם ברצונך לשמור על פריסה זו. אם בחרת באפשרות זו, לא יהיו שאלות על "
+"פריסת המקלדת וההגדרה הנוכחית תישמר."
 
 #. Type: boolean
 #. Description
@@ -422,24 +424,27 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
+"ברירת המחדל לפריסת המקלדת היא XKBLAYOUT=\"${XKBLAYOUT}\" ו-XKBVARIANT="
+"\"${XKBVARIANT}\".  ברירת מחדל זו מבוססת על הגדרת השפה/אזור הנוכחיים ועל "
+"ההגדרות ב-/etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
-msgstr "בחר האם ליצור את המחיצה החדשה בתחילת או בסיום המקום הפנוי."
+msgstr ""
+"אנא בחר אם ברצונך לשמור על פריסה זו. אם בחרת באפשרות זו, לא יהיו שאלות על "
+"פריסת המקלדת."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "שגיאה בהגדרת הצפנה"
+msgstr "לשמור על הגדרות המקלדת הנוכחיות בקובץ ההגדרות?"
 
 #. Type: boolean
 #. Description
@@ -449,23 +454,24 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
+"הגדרות המקלדת הנוכחיות בקובץ ההגדרות /etc/default/keyboard מוגדרות בתור "
+"XKBOPTIONS=\"${XKBOPTIONS}\"."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
-msgstr "בחר האם ליצור את המחיצה החדשה בתחילת או בסיום המקום הפנוי."
+msgstr "אם בחרת לשמור על הגדרות אלה, לא יישאלו שאלות על הגדרות המקלדת."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr ""
+msgstr "לשמור על הגדרות ברירת המחדל של המקלדת (${XKBOPTIONS})?"
 
 #. Type: boolean
 #. Description
@@ -476,16 +482,17 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
+"הגדרות ברירת המחדל של פריסת המקלדת הינן  XKBOPTIONS=\"${XKBOPTIONS}\".  הן "
+"מבוססות על ההגדרה הנוכחית של שפה/אזור ועל ההגדרות ב-/etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
-msgstr "בחר האם ליצור את המחיצה החדשה בתחילת או בסיום המקום הפנוי."
+msgstr "אם בחרת לשמור עליהן, לא יישאלו שאלות על הגדרות המקלדת."
 
 #. Type: select
 #. Choices
@@ -675,7 +682,7 @@ msgstr "ללא החלפה"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "שיטת מעבר בין מצב עבודה לאומי ומצב עבודה לטיני:"
 
 #. Type: select
 #. Description
@@ -684,7 +691,7 @@ msgstr ""
 msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
-msgstr ""
+msgstr "תצטרכו דרך להעביר את המקלדת בין מצב עבודה לאומי ומצב עבודה לטיני."
 
 #. Type: select
 #. Description
@@ -696,13 +703,17 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"מקובל לבחור במקשי Alt ימני או Caps Lock מסיבות ארגונומיות (במקרה השני, נא "
+"להשתמש בצירוף Shift+Caps Lock לפעולות הרגילות של נעילת Caps וביטול נעילת "
+"Caps). הצירוף Alt+Shift הינו גם כן צירוף מקובל; אבל צירוף זה יאבד את "
+"התנהגותו הרגילה ב-Emacs ותוכנות אחרות שמשתמשות בו למטרות מיוחדות."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr ""
+msgstr "לא כל המקשים הרשומים נמצאים בכל המקלדות."
 
 #. Type: select
 #. Choices
@@ -785,7 +796,7 @@ msgstr "שני מקשי Alt"
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "מקש לשימוש כ-AltGr"
+msgstr "מקש לשימוש כ-AltGr:"
 
 #. Type: select
 #. Description
@@ -797,6 +808,9 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"בכמה פריסות מקלדת, AltGr הינו מקש לשינוי המשמש להקלדת כמה תווים, בעיקר תווים "
+"חריגים עבור שפת פריסת המקלדת, כגון מטבע זר, סמלים ואותיות עם אקצנטים. לעתים "
+"קרובות תווים אלה מודפסים כסמלים נוספים על המקשים."
 
 #. Type: select
 #. Choices
@@ -821,6 +835,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"מקש compose (ידוע גם כ-Multi_key) גורם למחשב לפרש את ההקלדות הבאות כצירוף "
+"כדי ליצור תו שלא נמצא על המקלדת."
 
 #. Type: select
 #. Description
@@ -831,13 +847,16 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"במסוף הטקסט, מקש ה-Compose אינו עובד במצב Unicode. אם אינך נמצא במצב "
+"Unicode, ללא תלות בבחירתך כאן, ביכולתך תמיד להשתמש בצירוף Control+נקודה כמקש "
+"Compose."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr ""
+msgstr "האם להשתמש ב-Control+Alt+Backspace כדי לסגור את ה-X server?"
 
 #. Type: boolean
 #. Description
@@ -847,6 +866,8 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
+"ברירת המחדל של צירוף המקשים Control+Alt+Backspace היא לא לעשות כלום. אם "
+"רצונך בכך, ניתן להשתמש בצירוף זה כדי לסגור את ה-X server."
 
 # console-keymaps-acorn, American
 #. Type: select
@@ -1257,7 +1278,7 @@ msgstr "סרבית (קרילית)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "סינדהי"
 
 #. Type: select
 #. Choices
@@ -1269,17 +1290,15 @@ msgstr "סינהלה"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "סלווקית"
+msgstr "סלובקית"
 
 # console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "סלווקית"
+msgstr "סלובנית"
 
 # console-keymaps-acorn, Spanish
 #. Type: select

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-04-20 10:20+0100\n"
+"PO-Revision-Date: 2012-04-21 09:42+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -47,7 +47,7 @@ msgstr "Ne módosítsd a boot/kernel betűt"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Válassza a rendszer a megfelelő betűt"
 
 #. Type: text
 #. Description
@@ -55,7 +55,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "csak keretpuffer"
 
 #. Type: select
 #. Choices
@@ -194,9 +194,8 @@ msgstr ". Kombinált - latin; szláv és nem-szláv cirill"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Véletlen karakterek megadása"
+msgstr "Optimális karakterkészlet kitalálása"
 
 #. Type: select
 #. Description
@@ -281,26 +280,25 @@ msgstr "Betűméret:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Kérlek, válaszd ki a Linux konzol betűméretét. Összehasonlításképp: a gép "
-"indulásakor ez 16."
+"Kérlek, válaszd ki a konzol betűméretét. Összehasonlításképp: a gép "
+"indulásakor ez 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Kérlek, válaszd ki a Linux konzol betűméretét. Összehasonlításképp: a gép "
-"indulásakor ez 16."
+"Kérlek, válaszd ki a konzol betűméretét. Összehasonlításképp: a gép "
+"indulásakor ez 8x16. Egyes fontméretek a kbd konzol csomagot igénylik (nem a "
+"console-tools-t) és keretpuffert."
 
 #. Type: select
 #. Description
