@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-21 21:03+0530\n"
+"PO-Revision-Date: 2012-04-22 20:20+0530\n"
 "Last-Translator: sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
@@ -1242,7 +1242,7 @@ msgstr "सर्बिअन"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "सिंधी"
 
 #. Type: select
 #. Choices
@@ -1253,16 +1253,14 @@ msgstr "सिंहला"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "स्लोव्हाकिअन"
+msgstr "स्लोव्हाक"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "स्लोव्हाकिअन"
+msgstr "स्लोव्हेनिअन"
 
 #. Type: select
 #. Choices
