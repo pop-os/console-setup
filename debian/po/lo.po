@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: lo\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-09-12 15:24+0700\n"
+"PO-Revision-Date: 2012-04-23 11:59+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
 "Language: \n"
@@ -34,7 +34,7 @@ msgstr "ຫ້າມປ່ຽນອັກສອນ boot/kernel"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "ໃຫ້ລະບົບເລືອກແບບອັກສອນທີ່ເໝາະສົມ"
 
 #. Type: text
 #. Description
@@ -42,7 +42,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "framebuffer ເທົ່ານັ້ນ"
 
 #. Type: select
 #. Choices
@@ -63,7 +63,7 @@ msgstr "# ອາມີນ້ຽນ"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr ""
+msgstr "# Cyrillic - KOI8-R and KOI8-U"
 
 #. Type: select
 #. Choices
@@ -181,9 +181,8 @@ msgstr "ລວມ ລາຕິນ,ສະລາບ ແລະ ທີ່ບໍ່�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "ປ້ອນອັກສອນສຸ່ມ"
+msgstr "ເດົາອັກສອນຊຸດທີ່ດີທີສຸດ"
 
 #. Type: select
 #. Description
@@ -260,22 +259,25 @@ msgstr "ຂະໜາດໂຕອັກສອນ"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
-msgstr "ກະລຸນາເລືອກຂະໜາດຂອງແບບອັກສອນສຳຫລັບຄອນໂຊລລີນຸກສຳຫລັບ"
+msgstr ""
+"ກະລຸນາເລືອກຂະໜາດຂອງແບບອັກສອນສຳຫລັບຄອນໂຊລລີນຸກສຳຫລັບການອ້າງອີງອັກສອນທີ່ໃຊ້ເມື່ອມີການບູດເຄື່ອງຄອມພິວເຕີຂະໜາດ  "
+"8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
-msgstr "ກະລຸນາເລືອກຂະໜາດຂອງແບບອັກສອນສຳຫລັບຄອນໂຊລລີນຸກສຳຫລັບ"
+msgstr ""
+"ກະລຸນາເລືອກຂະໜາດຂອງແບບອັກສອນສຳຫລັບຄອນໂຊລລີນຸກສຳຫລັບການອ້າງອີງອັກສອນທີ່ໃຊ້ເມື່ອມີການບູດເຄື່ອງຄອມພິວເຕີຂະໜາດ  "
+"8x16.ບາງຄົນຂະໜາດຕົວອັກສອນຕ້ອງໃຊ້ແພັກເກັດ ທີ່ຄອນໂຊນ  kbd (ໄມຄອນໂຊນເຄື່ອງມື) ບວກ "
+"framebuffer."
 
 #. Type: select
 #. Description
@@ -1215,14 +1217,12 @@ msgstr "ພາສາສີນຫາລາ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "ພາສາສະໂລວັກ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
 msgstr "ພາສາສະໂລວັກ"
 
