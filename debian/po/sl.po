@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2010-11-16 15:21+0100\n"
+"PO-Revision-Date: 2012-04-27 15:43+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -56,7 +56,7 @@ msgstr "Brez spremembe črk za zagon/jedro"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Naj sistem izbere primerne črke"
 
 #. Type: text
 #. Description
@@ -64,7 +64,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "samo slikovni medpomnilnik"
 
 #. Type: select
 #. Choices
@@ -206,9 +206,8 @@ msgstr ". Kombiniran - latinica; slovanska in ne-slovanska cirilica"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Vnesite naključne znake"
+msgstr "Ugani optimalni nabor znakov"
 
 #. Type: select
 #. Description
@@ -294,26 +293,25 @@ msgstr "Velikost pisave:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Izberite prosim velikost črk za konzolo v Linuxu. Kot merilo; črke pri "
-"zagonu računalnika so velikosti 16."
+"Izberite prosim velikost črk za konzolo. Kot merilo; črke pri zagonu "
+"računalnika so velikosti 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Izberite prosim velikost črk za konzolo v Linuxu. Kot merilo; črke pri "
-"zagonu računalnika so velikosti 16."
+"Izberite prosim velikost črk za konzolo. Kot merilo: črke pri zagonu "
+"računalnika so velikosti  8x16.  Nekatere velikosti črk zahtevajo paket kbd "
+"(ne console-tools) in slikovni medpomnilnik."
 
 #. Type: select
 #. Description
@@ -913,9 +911,8 @@ msgstr "Arabščina"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Asturian"
-msgstr "Asturija"
+msgstr "Asturijska"
 
 # BD
 #. Type: select
@@ -987,9 +984,8 @@ msgstr "Kanadska (večjezikovna)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Catalan"
-msgstr "Naftalan"
+msgstr "Katalanska"
 
 #. Type: select
 #. Choices
@@ -1048,9 +1044,8 @@ msgstr "Estonska"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Etijopski"
+msgstr "Etijopski"
 
 #. Type: select
 #. Choices
@@ -1152,7 +1147,7 @@ msgstr "Kazaščina"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #. Type: select
 #. Choices
@@ -1223,9 +1218,8 @@ msgstr "Nepalščina"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Northern Samar"
+msgstr "Severni Sami"
 
 #. Type: select
 #. Choices
@@ -1254,7 +1248,6 @@ msgstr "Portugalska"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Punjabi"
 msgstr "Pandžab"
 
@@ -1279,29 +1272,26 @@ msgstr "Srbska (cirilična)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Sindhi"
-msgstr "Sindh"
+msgstr "Sindhi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovaška"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovaška"
+msgstr "Slovenska"
 
 #. Type: select
 #. Choices
@@ -1367,7 +1357,7 @@ msgstr "Ukrajinska"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Ujgur"
 
 #. Type: select
 #. Choices
