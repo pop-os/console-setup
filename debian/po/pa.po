@@ -10,26 +10,26 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
 #
+#
+# Translations from iso-codes:
 # Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
 # Amanpreet Singh Alam <apreet.alam@gmail.com>, 2006.
-# A S Alam <apreet.alam@gmail.com>, 2006, 2007.
+# A S Alam <aalam@users.sf.net>, 2006, 2007.
 # A S Alam <aalam@users.sf.net>, 2007, 2010.
 # Amanpreet Singh Alam <apreet.alam@gmail.com>, 2008.
 # Amanpreet Singh Brar <aalam@users.sf.net>, 2008.
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2008, 2009.
-#
-# Translations from iso-codes:
 # Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# A S Alam <apbrar@gmail.com>, 2009.
+# A S Alam <aalam@users.sf.net>, 2009, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2011-09-18 22:00+0530\n"
+"PO-Revision-Date: 2012-05-06 12:14+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
-"Language: \n"
+"Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -438,13 +438,12 @@ msgstr "ਇੰਕ੍ਰਿਪਸ਼ਨ ਸੰਰਚਨਾ ਅਸਫਲਤਾ"
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ ਜੇਕਰ ਤੁਸੀਂ ਇਹ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ । ਜੇ ਤੁਸੀਂ ਇਹ ਚੁਣਦੇ ਹੋ, ਤਾਂ ਕੀ-ਬੋਰਡ ਲੇਆਉਟ ਬਾਰੇ ਕੁਝ "
-"ਨਹੀਂ ਪੁਛਿਆ ਜਾਵੇਗਾ ਤੇ ਹੁਣ ਵਾਲੀ ਸੰਰਚਨਾ ਸੰਭਾਲ ਲਈ ਜਾਵੇਗੀ।"
+"/etc/default/keyboard ਸੰਰਚਨਾ ਫਾਇਲ ਵਿੱਚ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਚੋਣਾਂ ਨੂੰ XKBOPTIONS="
+"\"${XKBOPTIONS}\" ਰਾਹੀਂ ਦਰਸਾਇਆ ਗਿਆ ਹੈ।"
 
 #. Type: boolean
 #. Description
@@ -492,7 +491,7 @@ msgstr "ਚੁਣੋ ਕਿ ਕੀ ਤੁਸੀਂ ਨਵਾਂ ਪਾਰਟੀ�
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr ""
+msgstr "ਕੈਪਸ ਲਾਕ"
 
 #. Type: select
 #. Choices
@@ -511,7 +510,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "ਸੱਜਾ Alt (AltGr)"
 
 #. Type: select
 #. Choices
@@ -526,14 +525,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr ""
+msgstr "ਸੱਜਾ Ctrl"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr ""
+msgstr "ਸੱਜਾ ਸਿਫਟ"
 
 #. Type: select
 #. Choices
@@ -551,9 +550,8 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "Right Logo key"
-msgstr "ਦੋਵੇਂ ਲੋਗੋ ਸਵਿੱਚ"
+msgstr "ਸੱਜੀ ਲੋਗੋ ਸਵਿੱਚ"
 
 #. Type: select
 #. Choices
@@ -568,42 +566,42 @@ msgstr "ਦੋਵੇਂ ਲੋਗੋ ਸਵਿੱਚ"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr ""
+msgstr "ਮੇਨੂ ਸਵਿੱਚ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr ""
+msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr ""
+msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Caps ਲਾਕ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr ""
+msgstr "ਖੱਬਾ Control+ਖੱਬਾ Shift"
 
 #. Type: select
 #. Choices
@@ -618,21 +616,21 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr ""
+msgstr "ਖੱਬਾ Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr ""
+msgstr "ਖੱਬਾ ਕੰਟਰੋਲ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr ""
+msgstr "ਖੱਬਾ ਸਿਫਟ"
 
 #. Type: select
 #. Choices
@@ -650,23 +648,22 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "Left Logo key"
-msgstr "ਦੋਵੇਂ ਲੋਗੋ ਸਵਿੱਚ"
+msgstr "ਖੱਬੀ ਲੋਗੋ ਸਵਿੱਚ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr ""
+msgstr "ਸਕਰੋਲ ਲਾਕ ਸਵਿੱਚ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "ਟਾਗਲ ਨਹੀਂ ਕਰਨਾ"
 
 #. Type: select
 #. Description
@@ -880,7 +877,7 @@ msgstr "ਅਰਬੀ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "ਅਸੁਟਰੀਆਈ"
 
 #. Type: select
 #. Choices
@@ -933,9 +930,8 @@ msgstr "ਬੁਲਗਾਰੀਅਨ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (phonetic layout)"
-msgstr "ਬੁਲਗਾਰੀਅਨ (BDS layout)"
+msgstr "ਬੁਲਗਾਰੀਅਨ (ਫਨੋਟਿਕ ਲੇਆਉਟ)"
 
 #. Type: select
 #. Choices
@@ -953,7 +949,7 @@ msgstr "ਕਨੇਡੀਅਨ ਬਹੁ-ਭਾਸ਼ਾਈ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "ਕਾਟਾਲਾਨ"
 
 #. Type: select
 #. Choices
@@ -965,7 +961,7 @@ msgstr "ਚੀਨੀ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr "ਕਰੋਸ਼ੀਅਨ"
+msgstr "ਕਰੋਟੀਆਈ"
 
 #. Type: select
 #. Choices
@@ -989,7 +985,7 @@ msgstr "ਡੱਚ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "Dvorak"
+msgstr "ਡਵੋਰਕ"
 
 #. Type: select
 #. Choices
@@ -1012,9 +1008,8 @@ msgstr "ਏਸਟੋਨੀਅਨ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Ethiopian"
-msgstr ". Ethiopic"
+msgstr "ਇਥੀਪੀਆਈ"
 
 #. Type: select
 #. Choices
@@ -1026,7 +1021,7 @@ msgstr "ਫਿੰਨਿਸ਼"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "ਫ੍ਰੈਂਚ"
+msgstr "ਫਰੈਂਚ"
 
 #. Type: select
 #. Choices
@@ -1044,7 +1039,7 @@ msgstr "ਜਰਮਨ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "# ਗਰੀਕ"
+msgstr "ਗਰੀਕ"
 
 #. Type: select
 #. Choices
@@ -1056,13 +1051,13 @@ msgstr "ਗੁਜਰਾਤੀ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "ਗੁਰਮੁਖੀ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr "# ਹੈਬਰਿਉ"
+msgstr "ਹੈਬਰਿਉ"
 
 #. Type: select
 #. Choices
@@ -1116,7 +1111,7 @@ msgstr "ਕਾਜ਼ਾਖ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "ਖਮੀਰ"
 
 #. Type: select
 #. Choices
@@ -1187,9 +1182,8 @@ msgstr "ਨੇਪਾਲੀ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "ਉੱਤਰੀ ਅਮਰੀਕਾ"
+msgstr "ਉੱਤਰੀ ਸਾਮੀ"
 
 #. Type: select
 #. Choices
@@ -1219,7 +1213,7 @@ msgstr "ਪੁਰਤਗਾਲੀ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ)"
 
 #. Type: select
 #. Choices
@@ -1243,27 +1237,25 @@ msgstr "ਸਰਬੀਅਨ (Cyrillic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "ਸਿੰਧੀ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "ਸਿੰਹਾਲਾ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "ਸਲੋਵਾਕੀਅਨ"
+msgstr "ਸਲੋਵਾਕ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "ਸਲੋਵਾਕੀਅਨ"
+msgstr "ਸਲੋਵੀਨੀਆਈ"
 
 #. Type: select
 #. Choices
@@ -1329,7 +1321,7 @@ msgstr "ਯੂਕਰੇਨੀਅਨ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "ਉਘੁਰ"
 
 #. Type: select
 #. Choices
@@ -1340,6 +1332,5 @@ msgstr "ਵੀਅਤਨਾਮੀ"
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
-#, fuzzy
 msgid "Keymap to use:"
-msgstr "ਕੁੰਜੀ ਸਾਈਜ਼:"
+msgstr "ਵਰਤਣ ਲਈ ਕੀਮੈਪ:"

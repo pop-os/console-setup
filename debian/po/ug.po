@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-27 17:17+0600\n"
+"PO-Revision-Date: 2012-05-02 08:47+0600\n"
 "Last-Translator: Sahran <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
@@ -68,7 +68,7 @@ msgstr "# ئەرمەنچە"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "سلاۋيانچە - KOI8-R ۋە KOI8-U"
+msgstr "# سلاۋيانچە - KOI8-R ۋە KOI8-U"
 
 #. Type: select
 #. Choices
