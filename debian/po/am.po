@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 05:04+0100\n"
+"PO-Revision-Date: 2012-05-20 22:15+0100\n"
 "Last-Translator: Tegegne Tefera <tefera.tegegne@gmail.com>\n"
 "Language-Team: Amharic\n"
 "Language: \n"
@@ -911,7 +911,7 @@ msgstr "ቡልጋሪያዊ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr ""
+msgstr "ቡልጋርኛ  (phonetic layout)"
 
 #. Type: select
 #. Choices
@@ -923,7 +923,7 @@ msgstr "ካናዲያዊ ፍረንሳይ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "ካናዳ የቡዙ ቋንቋ"
 
 #. Type: select
 #. Choices
@@ -1133,13 +1133,13 @@ msgstr "ላቲን አሜሪካ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr ""
+msgstr "ላትቪኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr ""
+msgstr "ሊቱዌንኛ"
 
 #. Type: select
 #. Choices
@@ -1169,7 +1169,7 @@ msgstr "ሰሜን ሳምኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr ""
+msgstr "ኖርዌይኛ"
 
 #. Type: select
 #. Choices
@@ -1181,63 +1181,61 @@ msgstr "ፐርሲያኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr ""
+msgstr "ፖላንድኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr ""
+msgstr "ፖርቱጋልኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "ፓንጃቢኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr ""
+msgstr "ሩማንኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr ""
+msgstr "ሩስኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr ""
+msgstr "ሰርብኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "ሲንድኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "ኒናልኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
-msgstr ""
+msgstr "ስሎቫኪኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
-#| msgid "Bosnian"
 msgid "Slovenian"
-msgstr "ቦስንያዊ"
+msgstr "ስሎቪኛ"
 
 #. Type: select
 #. Choices
@@ -1249,19 +1247,19 @@ msgstr "ስፓኝኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr ""
+msgstr "ስዊድንኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr ""
+msgstr "የስዊስ ፈረንሳይኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr ""
+msgstr "ያስዊስ ጀርመንኛ"
 
 #. Type: select
 #. Choices
@@ -1279,31 +1277,31 @@ msgstr "ተሉጉኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr ""
+msgstr "ታይኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr ""
+msgstr "ቱርክኛ  (F layout)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr ""
+msgstr "ቱርክኛ  (Q layout)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr ""
+msgstr "ዩክሬንኛ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "ዑይጉርኛ"
 
 #. Type: select
 #. Choices
