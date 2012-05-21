@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-05-20 22:15+0100\n"
+"PO-Revision-Date: 2012-05-21 13:17+0100\n"
 "Last-Translator: Tegegne Tefera <tefera.tegegne@gmail.com>\n"
 "Language-Team: Amharic\n"
 "Language: \n"
@@ -317,7 +317,6 @@ msgstr "ሌላ"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
 msgstr "የፊደል ገበታ አጣጣል፦"
 
@@ -325,9 +324,8 @@ msgstr "የፊደል ገበታ አጣጣል፦"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "እባክዎ የሚሰናዳውን የፊደል ገበታ አይነት ይምረጡ።"
+msgstr "እባክዎ የዢሕኝ ኣጽሊ የፊደል ገበታ አይነት ይምረጡ።"
 
 #. Type: select
 #. Description
@@ -345,6 +343,8 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"የፊደል ገበታ አጣጣል ከአገር አገር ይለያል፣ አንዳንድ አገሮች ከአንድ በላይ አጣጣል ይእቀማሉ. እባክዎ ለዚህ አስሊ "
+"የትኛውን አገር የፊደል ገበታ እንደሚጠቀሙ ይምረጡ።"
 
 #. Type: select
 #. Description
@@ -747,9 +747,8 @@ msgstr "ለፊደል ገበታው ቀዳሚ አጣጣል"
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "No AltGr key"
-msgstr "ወደ ዕልባት ሂድ %i\tCtrl-Alt-%i"
+msgstr "AltGr ቁልፍ አልተገኘም"
 
 #. Type: select
 #. Choices
@@ -762,9 +761,8 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "Both Alt keys"
-msgstr "ወደ ዕልባት ሂድ %i\tCtrl-Alt-%i"
+msgstr "ሁለቱም Alt ቁልፎ"
 
 #. Type: select
 #. Description
