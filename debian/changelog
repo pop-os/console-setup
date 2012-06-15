@@ -1,3 +1,24 @@
+console-setup (1.77) UNRELEASED; urgency=low
+
+  [ Updated translations ]
+  * Amharic (am.po) by Tegegne Tefera
+  * Welsh (cy.po) by Dafydd Tomos
+  * Danish (da.po) by Joe Hansen
+  * Basque (eu.po) by Piarres Beobide
+  * Galician (gl.po) by Jorge Barreiro
+  * Hungarian (hu.po) by SZERVÁC Attila
+  * Lao (lo.po) by Anousak Souphavanh
+  * Lithuanian (lt.po) by Rimas Kudelis
+  * Latvian (lv.po) by Rūdolfs Mazurs
+  * Marathi (mr.po) by sampada
+  * Punjabi (Gurmukhi) (pa.po) by A S Alam
+  * Romanian (ro.po) by ioan-eugen stan
+  * Slovenian (sl.po) by Vanja Cvelbar
+  * Tamil (ta.po) by Kumar Appaiah
+  * Uyghur (ug.po) by Sahran
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 15 Jun 2012 19:22:55 +0200
+
 console-setup (1.76) unstable; urgency=low
 
   [ Peter Eisentraut ]
