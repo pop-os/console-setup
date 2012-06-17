@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-05-21 13:17+0100\n"
+"PO-Revision-Date: 2012-06-17 22:22+0100\n"
 "Last-Translator: Tegegne Tefera <tefera.tegegne@gmail.com>\n"
 "Language-Team: Amharic\n"
 "Language: \n"
@@ -693,9 +693,8 @@ msgstr "ሁሉም የተመዘገቡ ቁልፎች በሁሉም  ፊደል ገበ
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
-#, fuzzy
 msgid "No temporary switch"
-msgstr "ምንም ፋይል አልተገኘም  በ:"
+msgstr "ጊዚያው መለወጫ አልተገኘም"
 
 #. Type: select
 #. Choices
@@ -705,15 +704,13 @@ msgstr "ምንም ፋይል አልተገኘም  በ:"
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "Both Logo keys"
-msgstr "ግራ Logo key"
+msgstr "ሁለቱ Logo key"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
-#, fuzzy
 msgid "Method for temporarily toggling between national and Latin input:"
 msgstr "በላቲንና በብሔራዊ ሞድ መቀየራ ዘዴ"
 
@@ -755,7 +752,7 @@ msgstr "AltGr ቁልፍ አልተገኘም"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "መልስ ቁልፍ"
 
 #. Type: select
 #. Choices
@@ -769,7 +766,7 @@ msgstr "ሁለቱም Alt ቁልፎ"
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "ቁልፉ አንደ AltGr:"
 
 #. Type: select
 #. Description
@@ -786,16 +783,15 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "No compose key"
-msgstr "ምንም ፋይል አልተገኘም  በ:"
+msgstr "የማዘጋጃ ቁልፍ አልተገኘም"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr "Compose ቁልፍ:"
+msgstr "አዘጋጅ ቁልፍ:"
 
 #. Type: select
 #. Description
