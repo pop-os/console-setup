@@ -3,6 +3,7 @@ console-setup (1.78) UNRELEASED; urgency=low
   * Updated translations:
     - Amharic (am.po)
     - Croatian (hr.po)
+  * Add support for parallel=n in DEB_BUILD_OPTIONS.
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 22 Jun 2012 12:01:49 +0200
 
