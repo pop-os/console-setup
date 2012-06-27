@@ -61,12 +61,12 @@ di-kbdnames = $(shell grep -A 2 keyboard-configuration/xkb-keymap debian/console
 %.gz : %
 	gzip -9 <$< >$@
 
-%.ekmap :
+%.ekmap : main_build
 	(cd Keyboard \
 	&& ./kbdcompiler $(@:%.ekmap=%) KeyboardNames.pl $(xkbdir) \
 		"$(di-kbdnames)") >$@
 
-%.ekbd :
+%.ekbd : main_build
 	(cd Keyboard \
 	&& ./kbdcompiler freebsd-$(@:%.ekbd=%) KeyboardNames.pl $(xkbdir) \
 		"$(di-kbdnames)") >$@
