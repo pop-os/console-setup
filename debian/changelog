@@ -1,3 +1,10 @@
+console-setup (1.81) UNRELEASED; urgency=low
+
+  * console-setup-udeb.postinst: Support hurd keymap change by restarting the
+    console.
+
+ -- Samuel Thibault <sthibault@debian.org>  Thu, 12 Jul 2012 02:16:37 +0200
+
 console-setup (1.80) unstable; urgency=low
 
   * Team upload.

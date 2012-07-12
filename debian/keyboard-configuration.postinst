@@ -85,7 +85,13 @@ then
     if [ "$DISPLAY" ] && which setxkbmap >/dev/null; then
 	setxkbmap -option '' -model "$model" "$layout" "$variant" "$options"
     else
-	setupcon --force --save
+	OS=`udpkg --print-os`
+	if [ "$OS" = hurd ]
+	then
+	    kill `cat /var/run/hurd-console.pid`
+	else
+	    setupcon --force --save
+	fi
     fi
 fi
 
