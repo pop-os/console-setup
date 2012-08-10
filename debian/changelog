@@ -1,3 +1,9 @@
+console-setup (1.82) unstable; urgency=low
+
+  * Re-upload without .gitignore files in the source package.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 11 Aug 2012 01:25:07 +0200
+
 console-setup (1.81) unstable; urgency=low
 
   * Team upload
