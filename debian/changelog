@@ -1,3 +1,10 @@
+console-setup (1.83) UNRELEASED; urgency=low
+
+  * Add font-switch script to console-setup-linux-fonts-udeb package, remove
+    fonts which are not used by d-i.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 15 Sep 2012 00:52:23 +0200
+
 console-setup (1.82) unstable; urgency=low
 
   * Re-upload without .gitignore files in the source package.

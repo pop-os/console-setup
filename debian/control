@@ -187,7 +187,7 @@ XC-Package-Type: udeb
 Package: console-setup-linux-fonts-udeb
 Section: debian-installer
 Priority: extra
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, kbd-udeb
 Architecture: all
 Description: Linux console fonts for Debian Installer
 XC-Package-Type: udeb
