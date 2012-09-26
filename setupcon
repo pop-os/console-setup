@@ -51,6 +51,7 @@ which () {
 # the boot process /tmp is mounted read-only, so lets have some other
 # options...  I am not sure all non-GNU versions of mktemp understand
 # the -q option so redirections of stderr are used instead.
+TMPFILE=''
 tempfile () {
     local tmp
     tmp="$TMPFILE"
@@ -780,15 +781,20 @@ fi
 if [ "$savekbdfile" ]; then
     case "$kernel" in
         linux)
-	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
-                $rules_option -model "$XKBMODEL" \
-	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" \
-                | gzip -9 >"$savekbdfile"
+            tempfile || { echo Can not create temporary file >&2; exit 1; }
+            {
+	        $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
+                    $rules_option -model "$XKBMODEL" \
+	            "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE \
+                    && gzip -9 <$TMPFILE >"$savekbdfile"
+            } || exit 1
+            rm $TMPFILE
             ;;
         freebsd)
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
                 $acm_option $rules_option -model "$XKBMODEL" \
-	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$savekbdfile"
+	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >"$savekbdfile" \
+                || exit 1
             ;;
     esac
 fi

@@ -1,9 +1,13 @@
-console-setup (1.83) UNRELEASED; urgency=low
+console-setup (1.83) unstable; urgency=low
 
+  [ Samuel Thibault ]
   * Add font-switch script to console-setup-linux-fonts-udeb package, remove
     fonts which are not used by d-i.
+  [ Anton Zinoviev ]
+  * Make setupcon --save-keyboard fail if ckbcomp fails.  Thanks to
+    Michael Prokop for discovering this bug.
 
- -- Samuel Thibault <sthibault@debian.org>  Sat, 15 Sep 2012 00:52:23 +0200
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 26 Sep 2012 22:18:52 +0300
 
 console-setup (1.82) unstable; urgency=low
 
