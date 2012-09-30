@@ -654,6 +654,7 @@ if [ -n "$do_kbd$do_save$savekbdfile$setupdir" -a "$XKBMODEL" = unknown ]; then
     echo The keyboard model is unknown.  Keyboard will not be configured. >&2
     XKBMODEL=''
 fi
+[ -n "$XKBMODEL" -o -z "$savekbdfile" ] || exit 1
 
 # do_kbd
 [ "$XKBMODEL" ] || do_kbd=''
