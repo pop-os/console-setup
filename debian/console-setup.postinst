@@ -8,19 +8,20 @@ set -e
 CONFIGDIR=/etc/console-setup
 CONFIGFILE=/etc/default/console-setup
 
-# # turn around bug in dpkg (#17624)
-# cd /usr/share/doc
-# if [ "$1" = configure ]; then
-#     [ -d keyboard-configuration ] || exit 123 # should never fail
-#     if [ -d console-setup -a ! -L console-setup ]; then
-#         # in case the administrator has created some files
-#         cp -a console-setup/* keyboard-configuration/ 2>/dev/null || true
-#         rm -r console-setup
-#         ln -s keyboard-configuration console-setup
-#     elif [ ! -e console-setup ]; then
-#         ln -s keyboard-configuration console-setup
-#     fi
-# fi
+# turn around bug in dpkg (#17624)
+# The following line should be uncommented before the next stable
+# release of Debian.
+#if dpkg --compare-versions "$2" lt-nl 1.82; then
+    # Replace directory with symlink.
+    if \
+        [ ! -L /usr/share/doc/console-setup ] \
+        && [ -d /usr/share/doc/console-setup ]
+    then
+	if rmdir /usr/share/doc/console-setup 2>/dev/null; then
+	    ln -sf keyboard-configuration /usr/share/doc/console-setup
+	fi
+    fi
+#fi
 
 if [ "$1" = "configure" ]; then
     
