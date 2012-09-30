@@ -1,4 +1,4 @@
-console-setup (1.84) UNRELEASED; urgency=low
+console-setup (1.84) unstable; urgency=low
 
   * Turn /usr/share/doc/console-setup{,-mini} into symlinks. Thanks to
     Sven Joachim for the patch, closes: #657904.
