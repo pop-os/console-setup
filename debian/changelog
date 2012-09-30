@@ -5,8 +5,10 @@ console-setup (1.84) UNRELEASED; urgency=low
   * Tighten the dependency of console-setup-* on keyboard-configuration as
     /usr/share/doc/console-setup* are symlinks. Thanks to Sven Joachim for
     the patch.
+  * postinst: Do not modify /etc/default/{keyboard,console-setup} if
+    either file is a symlink.  Thanks to Martin Ziegler, closes: #671003.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 30 Sep 2012 18:04:18 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 30 Sep 2012 19:44:37 +0300
 
 console-setup (1.83) unstable; urgency=low
 
