@@ -51,7 +51,7 @@ case "$1" in
         ;;
     start|force-reload|restart|reload)
 	log_action_begin_msg "Setting preliminary keymap"
-	if setupcon -k; then
+	if setupcon -k 2>/dev/null; then
 	    log_action_end_msg 0
 	else
 	    log_action_end_msg $?

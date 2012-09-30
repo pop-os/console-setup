@@ -7,8 +7,10 @@ console-setup (1.84) UNRELEASED; urgency=low
     the patch.
   * postinst: Do not modify /etc/default/{keyboard,console-setup} if
     either file is a symlink.  Thanks to Martin Ziegler, closes: #671003.
+  * keyboard-setup.init: hide error messages issued by setupcon (those are
+    normal if /usr is unavailable).  Thanks to Miguel Angel, closes: #651229.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 30 Sep 2012 19:44:37 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 30 Sep 2012 19:56:54 +0300
 
 console-setup (1.83) unstable; urgency=low
 
