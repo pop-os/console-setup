@@ -1,3 +1,9 @@
+console-setup (1.85) UNRELEASED; urgency=low
+
+  * Replace XC-Package-Type by Package-Type in debian/control
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 17 Oct 2012 13:06:54 +0200
+
 console-setup (1.84) unstable; urgency=low
 
   * Turn /usr/share/doc/console-setup{,-mini} into symlinks. Thanks to
