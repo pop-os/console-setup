@@ -1,8 +1,13 @@
-console-setup (1.85) UNRELEASED; urgency=low
+console-setup (1.85) unstable; urgency=low
 
   * Replace XC-Package-Type by Package-Type in debian/control
 
- -- Christian Perrier <bubulle@debian.org>  Wed, 17 Oct 2012 13:06:54 +0200
+  [ Updated translations ]
+  * Asturian (ast.po) by ivarela
+  * Galician (gl.po) by Jorge Barreiro
+  * Ukrainian (uk.po) by Yuri Chornoivan
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 17 Oct 2012 13:08:32 +0200
 
 console-setup (1.84) unstable; urgency=low
 
