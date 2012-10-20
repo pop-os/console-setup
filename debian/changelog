@@ -1,3 +1,10 @@
+console-setup (1.86) unstable; urgency=low
+
+  [ Updated translations ]
+  * Malayalam (ml.po) by Hrishikesh K B
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 20 Oct 2012 08:49:14 +0200
+
 console-setup (1.85) unstable; urgency=low
 
   * Replace XC-Package-Type by Package-Type in debian/control
