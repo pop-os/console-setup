@@ -1,3 +1,11 @@
+console-setup (1.87) UNRELEASED; urgency=low
+
+  * keyboard-configuration.config: Fix greek and ethiopian default layout into
+    including a US group, closes: #691201. Thanks Alkis Georgopoulos for the
+    report.
+
+ -- Samuel Thibault <sthibault@debian.org>  Mon, 22 Oct 2012 22:54:21 +0200
+
 console-setup (1.86) unstable; urgency=low
 
   [ Updated translations ]
