@@ -1,3 +1,10 @@
+console-setup (1.89) UNRELEASED; urgency=low
+
+  * keyboard-configuration.config: Add support for preseeding xkb-keymap.
+    Closes: Bug#696188.
+
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 21 Dec 2012 00:22:44 +0100
+
 console-setup (1.88) unstable; urgency=low
 
   [ Updated translations ]
