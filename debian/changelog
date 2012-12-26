@@ -2,7 +2,7 @@ console-setup (1.90) UNRELEASED; urgency=low
 
   * Keyboard/xmlreader: Register the hwList tag as an ignored one, just
     like vendor is ignored already, which lets us get rid of a spurious
-    warning in the build log (thanks, Holger & jenkins).
+    warning in the build log (thanks, Holger & jenkins). Closes: #696754.
 
  -- Cyril Brulebois <kibi@debian.org>  Wed, 26 Dec 2012 20:30:04 +0100
 
