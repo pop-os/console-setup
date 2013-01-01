@@ -1,4 +1,4 @@
-console-setup (1.90) UNRELEASED; urgency=low
+console-setup (1.90) unstable; urgency=low
 
   [ Cyril Brulebois ]
   * Keyboard/xmlreader: Register the hwList tag as an ignored one, just
@@ -10,7 +10,7 @@ console-setup (1.90) UNRELEASED; urgency=low
     little more readable with more comments.  Some changes in the logic.
     This probably fixes the important part of #693485.  Thanks to Bob Bib.
 
- -- Cyril Brulebois <kibi@debian.org>  Wed, 26 Dec 2012 20:30:04 +0100
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 01 Jan 2013 19:27:29 +0200
 
 console-setup (1.89) unstable; urgency=low
 
