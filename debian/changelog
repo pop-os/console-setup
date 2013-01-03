@@ -1,3 +1,13 @@
+console-setup (1.91) unstable; urgency=low
+
+  * A wrong command in keyboard-configuration.config was breaking the
+    configuration of almost all non-Latin languages.  Thanks to Theppitak
+    Karoonboonyanan, closes: #697255.  Due to the way console-setup works,
+    this version will fix automatically the damage caused by the previous
+    version in /etc/default/keyboard.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 03 Jan 2013 19:53:08 +0200
+
 console-setup (1.90) unstable; urgency=low
 
   [ Cyril Brulebois ]
