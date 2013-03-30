@@ -1,10 +1,11 @@
 console-setup (1.92) unstable; urgency=low
 
+  [ Anton Zinoviev ]
   * keyboard-configuration.config: when in d-i properly update $STATE
     during the missing variant question.  This was causing an endless
     loop.  Thanks to Brian Potkin, closes: #697449.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 05 Jan 2013 20:54:26 +0200
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Mar 2013 11:32:22 +0100
 
 console-setup (1.91) unstable; urgency=low
 
