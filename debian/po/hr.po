@@ -15,14 +15,14 @@
 #   Krunoslav Gernhard, 2004
 #   Vladimir Vuksan <vuksan@veus.hr>, 2000.
 #   Vlatko Kosturjak, 2001
-# Tomislav Krznar <tomislav.krznar@gmail.com>, 2012.
+# Tomislav Krznar <tomislav.krznar@gmail.com>, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-06-21 18:59+0200\n"
+"PO-Revision-Date: 2013-04-16 05:30+0200\n"
 "Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. Type: text
 #. Description
@@ -317,6 +317,7 @@ msgstr "Podesi tipkovnicu"
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
+#, fuzzy
 msgid "Other"
 msgstr "Drugo"
 
@@ -339,7 +340,7 @@ msgstr "Molim izaberite vrstu tipkovnice na ovom računalu."
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "Država podrijetla tipkovnice:"
+msgstr "Država porijekla tipkovnice:"
 
 #. Type: select
 #. Description
@@ -350,8 +351,8 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"Raspored tipkovnice ovisi o državi, dok neke države imaju nekoliko tipičnih "
-"rasporeda. Molim odaberite državu podrijetla za tipkovnicu ovog računala."
+"Raspored tipkovnice ovisi o državi, a neke države imaju više uobičajenih "
+"rasporeda. Molim izaberite državu porijekla za tipkovnicu ovog računala."
 
 #. Type: select
 #. Description
@@ -574,7 +575,7 @@ msgstr "Desna Logo tipka"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "Tipka meni"
+msgstr "Tipka izbornika"
 
 #. Type: select
 #. Choices
@@ -664,7 +665,7 @@ msgstr "Lijeva Logo tipka"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "tipka Scroll Lock"
+msgstr "Tipka Scroll Lock"
 
 #. Type: select
 #. Choices
@@ -701,18 +702,18 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"Tipke desni Alt ili Caps Lock često su odabrane iz ergonomskih razloga (u "
+"Tipke desni Alt ili Caps Lock često su izabrane zbog ergonomskih razloga (u "
 "potonjem slučaju, koristite Shift+Caps Lock za uobičajeno uključivanje i "
 "isključivanje unosa velikih slova). Alt+Shift je također popularna "
-"kombinacija; međutim, može izgubiti svoje uobičajeno ponašanje u Emacs-u i "
-"ostalim programima posebne namjene"
+"kombinacija, no može izgubiti svoje uobičajeno ponašanje u Emacsu i ostalim "
+"programima posebne namjene"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "Nisu sve tipke s popisa na svim tipkovnicama."
+msgstr "Nekih tipki s popisa nema na svim tipkovnicama."
 
 #. Type: select
 #. Choices
