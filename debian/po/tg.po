@@ -30,7 +30,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Шрифти роҳандозӣ/ҳастаро тағйир надиҳед"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -51,134 +51,141 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid ". Arabic"
-msgstr ". Арабӣ"
+msgstr "Арабӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "# Арманӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# Кириллӣ - KOI8-R ва KOI8-U"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# Кириллӣ - забонҳои ғайриславянӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# Кириллӣ - забонҳои славянӣ (инчунин Боснӣ ва лотинии Сербиягӣ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid ". Ethiopic"
-msgstr ". Эфиопиягӣ"
+msgstr "Эфиопӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Georgian"
-msgstr "# Гурҷӣ"
+msgstr "Гурҷӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Greek"
-msgstr "# Юнонӣ"
+msgstr "Юнонӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Hebrew"
-msgstr "# Ибронӣ"
+msgstr "Ибрӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr "# Лао"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# Latin1 ва Latin5 - забонҳои Аврупои ғарбӣ ва туркӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# Latin2 - Аврупои Марказӣ ва Руминӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "# Latin3 ва Latin8 - Чичева; Эсперанто; Ирландӣ; Малтӣ ва Валлӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "# Latin7 - Литвонӣ; Латвиягӣ; Маори ва Маршаллӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid ". Latin - Vietnamese"
-msgstr ". Лотинӣ - Ветнамӣ"
+msgstr "Ветнамӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Thai"
-msgstr "# Тайӣ"
+msgstr "Тайӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ; Ибронӣ; Арабии оддӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ; Юнонӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ ва ғайриславянӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -192,7 +199,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "Маҷмӯи аломатҳои дастгиришаванда:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -201,8 +208,6 @@ msgstr "Маҷмӯи аломатҳои дастгиришаванда:"
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
-"Лутфан, маҷмӯи аломатҳоеро интихоб кунед, ки бояд бо шрифти консолӣ дастгирӣ "
-"карда шавад."
 
 #. Type: select
 #. Description
@@ -212,8 +217,6 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Агар шумо миёнгири чорчӯбаҳоро истифода набаред, интихобҳое, ки бо \".\" "
-"оғоз меёбанд, миқдори рангҳои дастраси консолро паст мекунанд."
 
 #. Type: select
 #. Description
@@ -222,8 +225,9 @@ msgstr ""
 #. relatively short.
 #. :sl3:
 #: ../console-setup.templates:6001
+#, fuzzy
 msgid "Font for the console:"
-msgstr "Шрифт барои консол:"
+msgstr "Номи ҳақиқии шумо барои корбари нав:"
 
 #. Type: select
 #. Description
@@ -239,11 +243,6 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"\"VGA\" намуди зоҳирии пешфарз дорад ва тарзҳои навишти байналмиллалиро ба "
-"таври миёна дастгирӣ мекунад. \"Fixed\" намуди зоҳирии оддӣ дорад, ва "
-"тарзҳои навишти байналмиллалиро беҳтар дастгирӣ мекунад. \"Terminus\" "
-"метавонад мондашавии чашмро пасттар кунад, аммо баъзе аломатҳо ба якдигар "
-"монанд мебошанд, ки ин метавонад барои барномасозон мушкил гардад."
 
 #. Type: select
 #. Description
@@ -256,9 +255,6 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Агар ба шумо версияи пурранги шрифти Terminus маъқул бошад, TerminusBold "
-"(агар шумо фреймбуферро истифода баред) ё TerminusBoldVGA-ро (агар "
-"фреймбуферро истифода набаред) интихоб кунед."
 
 #. Type: select
 #. Description
@@ -268,7 +264,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "Андозаи шрифт:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -294,7 +290,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
-msgstr "Рамзгузорие, ки дар сатри фармон истифода мешавад:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -365,8 +361,9 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Тарҳбандии ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
+msgstr "Бозёбии файли пештанзимшуда қатъ шудааст"
 
 #. Type: boolean
 #. Description
@@ -376,9 +373,6 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"Тарҳбандии ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
-"ҳамчун XKBLAYOUT=\"${XKBLAYOUT}\" ва XKBVARIANT=\"${XKBVARIANT}\" муайян "
-"карда шудааст."
 
 #. Type: boolean
 #. Description
@@ -389,9 +383,6 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
-"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
-"намешавад, ва конфигуратсияи ҷорӣ нигоҳ дошта мешавад."
 
 #. Type: boolean
 #. Description
@@ -399,7 +390,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
 msgstr ""
-"Тарҳбандии пешфарзи клавиатураи (${XKBLAYOUTVARIANT})-ро нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -410,28 +400,26 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Қимати пешфарз барои тарҳбандии клавиатура XKBLAYOUT=\"${XKBLAYOUT}\" ва "
-"XKBVARIANT=\"${XKBVARIANT}\" мебошад.  Ин қимати пешфарз бо забон/минтақаи "
-"муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос ёфтааст."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
-"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
-"намешавад."
+"Лутфан, интихоб кунед, ки қисмбандии нав бояд дар аввал ё дар охири фазои "
+"дастрас эҷод карда шавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
+#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Имконоти ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
+msgstr "Иҷрои файли пештанзимкунӣ қатъ шудааст"
 
 #. Type: boolean
 #. Description
@@ -441,8 +429,6 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"Имконоти ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
-"ҳамчун XKBOPTIONS=\"${XKBOPTIONS}\" муайян карда шудаанд."
 
 #. Type: boolean
 #. Description
@@ -452,15 +438,13 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Агар шумо интихоб кунед, ки ин имконотро нигоҳ доред, ягон савол дар бораи "
-"имконоти клавиатура пурсида намешавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "Имконоти пешфарзи клавиатураи (${XKBOPTIONS})-ро нигоҳ медоред?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -471,9 +455,6 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Қимати пешфарзи тарҳбандии клавиатура XKBOPTIONS=\"${XKBOPTIONS}\" мебошад.  "
-"Он бо забон/минтақаи муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос "
-"ёфтааст."
 
 #. Type: boolean
 #. Description
@@ -483,8 +464,6 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Агар шумо интихоб кунед, ки онро нигощ медоред, ягон савол дар бораи "
-"имконоти клавиатура пурсида намешавад."
 
 #. Type: select
 #. Choices
@@ -860,8 +839,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
 msgstr ""
-"Тугмаҳои \"Control+Alt+Backspace\"-ро барои қатъ кардани X server истифода "
-"мебаред?"
 
 #. Type: boolean
 #. Description
@@ -871,9 +848,6 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"Ба таври пешфарз, маҷмӯи тугмаҳои Control+Alt+Backspace ягон амалро иҷро "
-"намекунад.  Агар хоҳед, он метавонад барои қатъ кардани X server истифода "
-"шавад."
 
 #. Type: select
 #. Choices
