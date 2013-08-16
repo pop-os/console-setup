@@ -1,8 +1,11 @@
-console-setup (1.95) UNRELEASED; urgency=low
+console-setup (1.95) unstable; urgency=low
 
   * Set default keymap for Tajik
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 30 Jul 2013 11:54:38 +0200
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 16 Aug 2013 11:03:49 +0200
 
 console-setup (1.94) unstable; urgency=low
 
