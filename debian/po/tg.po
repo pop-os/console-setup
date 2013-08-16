@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2013-08-15 16:26+0500\n"
-"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: Tajik\n"
 "MIME-Version: 1.0\n"
@@ -51,9 +51,8 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Arabic"
-msgstr "Арабӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -87,33 +86,29 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Ethiopic"
-msgstr "Эфиопӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Georgian"
-msgstr "Гурҷӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Greek"
-msgstr "Юнонӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Hebrew"
-msgstr "Ибрӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -154,17 +149,15 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Latin - Vietnamese"
-msgstr "Ветнамӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Thai"
-msgstr "Тайӣ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -227,7 +220,7 @@ msgstr ""
 #: ../console-setup.templates:6001
 #, fuzzy
 msgid "Font for the console:"
-msgstr "Номи ҳақиқии шумо барои корбари нав:"
+msgstr "     :"
 
 #. Type: select
 #. Description
@@ -363,7 +356,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:7001
 #, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Бозёбии файли пештанзимшуда қатъ шудааст"
+msgstr "    "
 
 #. Type: boolean
 #. Description
@@ -409,9 +402,7 @@ msgstr ""
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
-msgstr ""
-"Лутфан, интихоб кунед, ки қисмбандии нав бояд дар аввал ё дар охири фазои "
-"дастрас эҷод карда шавад."
+msgstr ",  ,              ."
 
 #. Type: boolean
 #. Description
@@ -419,7 +410,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:9001
 #, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Иҷрои файли пештанзимкунӣ қатъ шудааст"
+msgstr "    "
 
 #. Type: boolean
 #. Description
