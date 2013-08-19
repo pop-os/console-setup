@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2013-08-18 00:02+0500\n"
+"PO-Revision-Date: 2013-08-20 00:10+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: Tajik\n"
@@ -37,7 +37,7 @@ msgstr "Шрифти роҳандозӣ/ҳастаро тағйир надиҳе
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Иҷозат диҳед, ки система шрифти мувофиқро интихоб кунад"
 
 #. Type: text
 #. Description
@@ -45,7 +45,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "танҳо чорчӯбаи миёнҷӣ"
 
 #. Type: select
 #. Choices
@@ -185,7 +185,7 @@ msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ �
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr ""
+msgstr "Пешниҳоди маҷмӯи аломатҳои мувофиқтар"
 
 #. Type: select
 #. Description
@@ -278,6 +278,8 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
+"Лутфан, андозаи шрифтро барои консол интихоб намоед. Масалан, андозаи шрифт "
+"барои экрани роҳандозии компютер 8x16 мебошад."
 
 #. Type: select
 #. Description
@@ -288,6 +290,9 @@ msgid ""
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
+"Лутфан, андозаи шрифтро барои консол интихоб намоед. Масалан, андозаи шрифт "
+"барои экрани роҳандозии компютер 8x16 мебошад. Баъзе андозаҳои шрифт бастаи "
+"консоли kbd (абзорҳои ғайри консолӣ) ва чорчӯбаи миёнҷиро талаб мекунанд."
 
 #. Type: select
 #. Description
