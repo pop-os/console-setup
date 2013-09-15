@@ -25,9 +25,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-26 17:13+0100\n"
-"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"PO-Revision-Date: 2012-04-09 12:32+0100\n"
+"Last-Translator: Martin Bagge (brother) <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -1330,6 +1330,13 @@ msgstr "Telugo"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Thai"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+#, fuzzy
+msgid "Tibetan"
+msgstr "Österrike"
 
 #. Type: select
 #. Choices

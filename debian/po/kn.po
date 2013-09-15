@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
 "PO-Revision-Date: 2012-02-27 19:15+0530\n"
 "Last-Translator: Prabodh C P <prabodh@fsmk.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -1307,6 +1307,12 @@ msgstr "ತೆಲುಗು"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "ಥಾಯ್"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr ""
 
 #. Type: select
 #. Choices

@@ -32,10 +32,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-03-03 16:54+0800\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"PO-Revision-Date: 2012-04-05 02:38+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language-Team: Chinese (simplified) <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1299,6 +1299,13 @@ msgstr "泰卢固语"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "泰语"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+#, fuzzy
+msgid "Tibetan"
+msgstr "安塞巴"
 
 #. Type: select
 #. Choices

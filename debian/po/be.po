@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
 "PO-Revision-Date: 2012-03-04 01:58+0300\n"
 "Last-Translator: Viktar Siarheichyk <vics@eq.by>\n"
 "Language-Team: Belarusian (Official spelling) <debian-l10n-belarusian@lists."
@@ -1312,6 +1312,12 @@ msgstr "Тэлугу"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Тайская"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr ""
 
 #. Type: select
 #. Choices

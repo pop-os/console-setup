@@ -30,9 +30,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-17 19:39+0000\n"
-"Last-Translator: Marcin Owsiany <porridge@debian.org>\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"PO-Revision-Date: 2013-08-06 19:12+0200\n"
+"Last-Translator: Michał Kułach <michal.kulach@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -1329,6 +1329,13 @@ msgstr "Telugu"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "tajski"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+#, fuzzy
+msgid "Tibetan"
+msgstr "Anetan"
 
 #. Type: select
 #. Choices

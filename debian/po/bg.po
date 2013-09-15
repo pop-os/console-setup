@@ -34,15 +34,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-25 18:10+0200\n"
+"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"PO-Revision-Date: 2013-08-17 11:49+0100\n"
 "Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
 "Language-Team: Български <dict@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -1334,6 +1334,13 @@ msgstr "Телугу"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Тайска"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+#, fuzzy
+msgid "Tibetan"
+msgstr "Австрия"
 
 #. Type: select
 #. Choices
