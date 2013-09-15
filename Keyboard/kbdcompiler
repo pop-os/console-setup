@@ -43,7 +43,7 @@ if ($ARGV[3]) {
 # Don't forget to update also the list in keyboard-configuration.config
 my $nonlatin = ' af am ara ben bd bg bt by deva et ge gh gr guj guru \
                  il in iq ir iku kan kh kz la lao lk kg ma mk mm mn mv mal \
-                 np ori pk ru scc sy syr tel th tj tam ua uig uz ';
+                 np ori pk ru scc sy syr tel th tj tam tib ua uig uz ';
 
 my %keymaps;
 
