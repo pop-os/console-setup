@@ -6,6 +6,9 @@ console-setup (1.100) UNRELEASED; urgency=low
   [ Samuel Thibault ]
   * Make Tibetan keyboard understood as non-latin layout.
 
+  [ Christian Perrier ]
+  * Add Tajik as keymap choice for D-I
+
  -- Christian Perrier <bubulle@debian.org>  Sat, 14 Sep 2013 15:01:43 +0200
 
 console-setup (1.99) unstable; urgency=low
