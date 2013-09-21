@@ -1,4 +1,4 @@
-console-setup (1.100) UNRELEASED; urgency=low
+console-setup (1.100) unstable; urgency=low
 
   [ Christian Perrier ]
   * Add Tibetan keyboard layout for D-I. Closes: #667056
@@ -9,7 +9,13 @@ console-setup (1.100) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Add Tajik as keymap choice for D-I
 
- -- Christian Perrier <bubulle@debian.org>  Sat, 14 Sep 2013 15:01:43 +0200
+  [ Updated translations ]
+  * Japanese (ja.po) by Kenshi Muto
+  * Slovak (sk.po) by Ivan Masár
+  * Tajik (tg.po) by Victor Ibragimov
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 19 Sep 2013 07:00:34 +0200
 
 console-setup (1.99) unstable; urgency=low
 

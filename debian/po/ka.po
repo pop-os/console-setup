@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
 "PO-Revision-Date: 2011-03-01 12:49+0400\n"
 "Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
 "Language-Team: Georgian\n"
@@ -1282,6 +1282,12 @@ msgstr "შვეიცარული ფრანგული"
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
 msgstr "შვეიცარული გერმანული"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr ""
 
 #. Type: select
 #. Choices

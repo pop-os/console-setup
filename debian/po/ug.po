@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-15 22:06+0000\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
 "PO-Revision-Date: 2012-05-02 08:47+0600\n"
 "Last-Translator: Sahran <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -854,8 +854,8 @@ msgid ""
 "the Control+period combination as a Compose key."
 msgstr ""
 "تېكىست تىزگىن سۇپىسىدا بىرىكمە كۇنۇپكا يۇنىكود ھالەتتە ئىشلىمەيدۇ. ئەگەر "
-"يۇنىكود ھالەتتە بولمىسا، مەيلى سىز قانداق تاللىماڭ، Control + . (چېكىت)"
-"بىرىكمە كۇنۇپكىسى قىلىپ  ئىشلەتكىلى بولىدۇ."
+"يۇنىكود ھالەتتە بولمىسا، مەيلى سىز قانداق تاللىماڭ، Control + . "
+"(چېكىت)بىرىكمە كۇنۇپكىسى قىلىپ  ئىشلەتكىلى بولىدۇ."
 
 #. Type: boolean
 #. Description
@@ -1301,6 +1301,12 @@ msgstr "شىۋېتسىيە فىرانسۇزچە"
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
 msgstr "شىۋېتسىيە  گېرمانچە"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr ""
 
 #. Type: select
 #. Choices
