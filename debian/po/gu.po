@@ -10,7 +10,7 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
 # Contributor:
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2011
+# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2013
 #
 #
 # Translations from iso-codes:
@@ -1292,7 +1292,7 @@ msgstr "સ્વીસ જર્મન"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "તાજિક"
 
 #. Type: select
 #. Choices
@@ -1316,7 +1316,7 @@ msgstr "થાઇ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "તિબેટાન"
 
 #. Type: select
 #. Choices
