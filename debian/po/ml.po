@@ -9,32 +9,29 @@
 # Santhosh Thottingal <santhosh00@gmail.com>, 2006.
 # Sreejith :: ശ്രീജിത്ത് കെ <sreejithk2000@gmail.com>, 2006.
 # Credits:  V Sasi Kumar, Sreejith N, Seena N, Anivar Aravind, Hiran Venugopalan and Suresh P
-#
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt#
-#
-#
 # Translations from iso-codes:
-#   Tobias Quathamer <toddy@debian.org>, 2007.
-#     Translations taken from ICU SVN on 2007-09-09
-#   Praveen A <pravi.a@gmail.com>, 2006, 2008.
-#   Ani Peter <peter.ani@gmail.com>, 2009
-#
+# Tobias Quathamer <toddy@debian.org>, 2007.
+# Translations taken from ICU SVN on 2007-09-09
+# Praveen A <pravi.a@gmail.com>, 2006, 2008.
+# Ani Peter <peter.ani@gmail.com>, 2009
+# Anish Sheela <aneesh.nl@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2012-10-19 10:16+0530\n"
-"Last-Translator: Hrishikesh K B <hrishi.kb@gmail.com>\n"
-"Language-Team: Debian Malayalam <debian-l10n-malayalam@lists.debian.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2013-09-30 12:04+0530\n"
+"Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: text
 #. Description
@@ -1329,7 +1326,7 @@ msgstr "സ്വിസ്സ് ജര്‍മന്‍"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "താജിക്"
 
 #. Type: select
 #. Choices
@@ -1353,7 +1350,7 @@ msgstr "തായി"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "ടിബറ്റിയന്‍"
 
 # console-keymaps-acorn, Russian
 #. Type: select

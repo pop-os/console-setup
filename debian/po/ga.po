@@ -1316,7 +1316,7 @@ msgstr "Gearmánach (An Eilvéis)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Táidsíceastánach"
 
 #. Type: select
 #. Choices
@@ -1341,7 +1341,7 @@ msgstr "Téalannach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "Tibéadach"
 
 #. Type: select
 #. Choices

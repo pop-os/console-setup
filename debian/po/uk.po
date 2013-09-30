@@ -15,13 +15,13 @@
 # Євгеній Мещеряков <eugen@debian.org>, 2008.
 # Borys Yanovych <borys@yanovy.ch>, 2010, 2011.
 # Maxim V. Dziumanenko <dziumanenko@gmail.com>, 2010.
-# Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012.
+# Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2012-10-18 14:46+0300\n"
+"PO-Revision-Date: 2013-09-30 18:31+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
@@ -1312,7 +1312,7 @@ msgstr "Швейцарська німецька"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Таджицька"
 
 #. Type: select
 #. Choices
@@ -1335,9 +1335,8 @@ msgstr "Тайська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Анетан"
+msgstr "Тибетська"
 
 #. Type: select
 #. Choices
