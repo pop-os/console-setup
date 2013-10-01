@@ -22,11 +22,11 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2012-11-16 20:37+0530\n"
+"PO-Revision-Date: 2013-10-01 20:48+0530\n"
 "Last-Translator: sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
-"Language: \n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1290,7 +1290,7 @@ msgstr "स्विस जर्मन"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "ताजिक"
 
 #. Type: select
 #. Choices
@@ -1314,7 +1314,7 @@ msgstr "थाई"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "तिबेटियन"
 
 #. Type: select
 #. Choices
