@@ -316,7 +316,7 @@ msgstr "Enkodiranje za upotrebu na konzoli:"
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "Podesi tastaturu"
+msgstr "Podesite tastaturu"
 
 #. Type: text
 #. Description
@@ -371,7 +371,7 @@ msgstr "Raspored tastature:"
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "Molimo izaberite raspored kao na tastaturi na ovoj mašini."
+msgstr "Molimo izaberite raspored na tastaturi za ovu mašinu."
 
 #. Type: boolean
 #. Description
@@ -696,7 +696,7 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"Trebati će vam način da prebacite tastaturu između nacionalnog rasporeda i "
+"Trebat će vam način da prebacite tastaturu između nacionalnog rasporeda i "
 "standardnog Latinskog rasporeda."
 
 #. Type: select
@@ -720,7 +720,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "Svi izlistani tasteri nisu nađeni na svim tastaturama."
+msgstr "Svi izlistani tasteri nisu prikazani na svim tastaturama."
 
 #. Type: select
 #. Choices
@@ -921,7 +921,7 @@ msgstr "Bjeloruski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr "Bengali"
+msgstr "Bengalski"
 
 #. Type: select
 #. Choices
@@ -957,7 +957,7 @@ msgstr "Bugarski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bugarski (phonetic raspored)"
+msgstr "Bugarski (fonetski raspored)"
 
 #. Type: select
 #. Choices
@@ -969,13 +969,13 @@ msgstr "Kanadski francuski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "Kanadski Višejezički"
+msgstr "Kanadski višejezični"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "Katalanski"
+msgstr "Katalonski"
 
 #. Type: select
 #. Choices
@@ -1071,13 +1071,13 @@ msgstr "Grčki"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "GvajanaGujarati"
+msgstr "Gudžaratski"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "Gurmukhi"
+msgstr "Gurmukijski"
 
 #. Type: select
 #. Choices
@@ -1131,13 +1131,13 @@ msgstr "Kannada"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "Kazakh"
+msgstr "Kazahstanski"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "Khmer"
+msgstr "Kmerski"
 
 #. Type: select
 #. Choices
@@ -1167,13 +1167,13 @@ msgstr "Kurdski (Q raspored)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "# LaoLao"
+msgstr "Laoski"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "Latino američki"
+msgstr "Latinoamerički"
 
 #. Type: select
 #. Choices
@@ -1203,7 +1203,7 @@ msgstr "Malayalam"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "Nepali"
+msgstr "Nepalski"
 
 #. Type: select
 #. Choices
@@ -1239,7 +1239,7 @@ msgstr "Portugalski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "Punjabi"
+msgstr "Pandžabi"
 
 #. Type: select
 #. Choices
@@ -1263,7 +1263,7 @@ msgstr "Srpski (ćirilični)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr "Sindhi"
+msgstr "Sindi"
 
 #. Type: select
 #. Choices
@@ -1311,7 +1311,7 @@ msgstr "Švicarski njemački"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Tadžički"
 
 #. Type: select
 #. Choices
@@ -1334,9 +1334,8 @@ msgstr "Tajlandski"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Austrija"
+msgstr "Tibetanski"
 
 #. Type: select
 #. Choices
@@ -1360,7 +1359,7 @@ msgstr "Ukrajinski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr "Uyghur"
+msgstr "Ujgurski"
 
 #. Type: select
 #. Choices
@@ -1372,4 +1371,4 @@ msgstr "Vijetnamski"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "Raspored tipki koji će se koristiti:"
+msgstr "Raspored tipki za upotrebu:"
