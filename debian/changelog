@@ -1,3 +1,9 @@
+console-setup (1.104) UNRELEASED; urgency=low
+
+  * Use nepali keymap for Nepali and Tharu by default
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 20 Nov 2013 06:47:32 +0100
+
 console-setup (1.103) unstable; urgency=low
 
   [ Updated translations ]
