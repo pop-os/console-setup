@@ -22,14 +22,15 @@
 #   Andras TIMAR <timar@gnome.hu>, 2000-2001.
 # SZERVÁC Attila <sas@321.hu>, 2012.
 # Dr. Nagy Elemér Károly <eknagy@omikk.bme.hu>, 2012.
+# Judit Gyimesi <judit.gyimesi.x@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2013-06-11 19:04+0200\n"
-"Last-Translator: Dr. Nagy Elemér Károly <eknagy@omikk.bme.hu>\n"
+"PO-Revision-Date: 2013-11-18 21:15+0100\n"
+"Last-Translator: Judit Gyimesi <judit.gyimesi.x@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
 "Language: hu\n"
@@ -356,8 +357,7 @@ msgid ""
 "keyboard of this computer."
 msgstr ""
 "A billentyűzetek kiosztása országonként eltér, egyesekben több általános "
-"kiosztás is van. Kérlek, jelöld ki a származás országát e gép "
-"billentyűzetéhez."
+"kiosztás is van. Jelölje ki a származási országot e gép billentyűzetéhez."
 
 #. Type: select
 #. Description
@@ -371,7 +371,7 @@ msgstr "Billentyűkiosztás:"
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "Kérlek, jelöld ki a billentyűzethez illő kiosztást e számítógéphez"
+msgstr "Kérlek, jelöld ki a billentyűzethez illő kiosztást e számítógéphez."
 
 #. Type: boolean
 #. Description
@@ -681,7 +681,7 @@ msgstr "Nincs váltás"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "Módszer a nemzeti és latin mód közti váltásra:"
+msgstr "Mód a nemzeti és latin mód közti váltásra:"
 
 #. Type: select
 #. Description
@@ -703,10 +703,10 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"A jobb Alt vagy Caps Lock billentyűk gyakran ergonomikusak (az alábbi "
-"esetben használd a Shift+Caps Lock kombinációt a szokásos Caps váltáshoz). "
-"Az Alt+Shift szintén népszerű kombinációt, bár elveszti szokásos "
-"viselkedését az Emacs és más őt speciálisan használó programok alatt."
+"A jobb Alt vagy Caps Lock billentyűk gyakran választják ergonomikus okokból "
+"(az utóbbi esetben használja a Shift+Caps Lock kombinációt a szokásos Caps "
+"váltáshoz). Az Alt+Shift szintén népszerű kombináció, azonban elveszti "
+"szokásos jelentését az Emacs és más őt speciálisan használó programok alatt."
 
 #. Type: select
 #. Description
@@ -880,25 +880,25 @@ msgstr "amerikai angol"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr "Albán"
+msgstr "albán"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr "Arab"
+msgstr "arab"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr "Asztúriai"
+msgstr "asztúriai"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "Banglades"
+msgstr "bangladesi"
 
 #. Type: select
 #. Choices
@@ -910,7 +910,7 @@ msgstr "belorusz"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr "Bengáli"
+msgstr "bengáli"
 
 #. Type: select
 #. Choices
@@ -922,7 +922,7 @@ msgstr "belga"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr "Bosnyák"
+msgstr "bosnyák"
 
 #. Type: select
 #. Choices
@@ -946,7 +946,7 @@ msgstr "bolgár"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "bolgár (phonetic)"
+msgstr "bolgár (fonetikus elrendezés)"
 
 #. Type: select
 #. Choices
@@ -958,19 +958,19 @@ msgstr "kanadai francia"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "Kanadai többnyelvű"
+msgstr "kanadai többnyelvű"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "Katalán"
+msgstr "katalán"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Kínai"
+msgstr "kínai"
 
 #. Type: select
 #. Choices
@@ -1006,13 +1006,13 @@ msgstr "Dvorak"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr "Dzongkha"
+msgstr "dzongkha"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr "Eszperantó"
+msgstr "eszperantó"
 
 #. Type: select
 #. Choices
@@ -1024,7 +1024,7 @@ msgstr "észt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
-msgstr "Etióp"
+msgstr "etióp"
 
 #. Type: select
 #. Choices
@@ -1042,7 +1042,7 @@ msgstr "francia"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "Grúz"
+msgstr "grúz"
 
 #. Type: select
 #. Choices
@@ -1060,13 +1060,13 @@ msgstr "görög"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "Gudzsaráti"
+msgstr "gudzsaráti"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "Gurmuki"
+msgstr "gurmukhi"
 
 #. Type: select
 #. Choices
@@ -1078,7 +1078,7 @@ msgstr "héber"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr "Hindi"
+msgstr "hindi"
 
 #. Type: select
 #. Choices
@@ -1114,19 +1114,19 @@ msgstr "japán"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "Kannada"
+msgstr "kannada"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "Kazak"
+msgstr "kazak"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "Khmer"
+msgstr "khmer"
 
 #. Type: select
 #. Choices
@@ -1138,25 +1138,25 @@ msgstr "kirgiz"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr "Koreai"
+msgstr "koreai"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "Kurd (F kiosztású)"
+msgstr "kurd (F kiosztású)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "Kurd (Q kiosztású)"
+msgstr "kurd (Q kiosztású)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "Lao"
+msgstr "lao"
 
 #. Type: select
 #. Choices
@@ -1186,19 +1186,19 @@ msgstr "macedón"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "Malajálam"
+msgstr "malajálam"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "Nepáli"
+msgstr "nepáli"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Northern Sami"
-msgstr "Északi Számi"
+msgstr "északi számi"
 
 #. Type: select
 #. Choices
@@ -1210,7 +1210,7 @@ msgstr "norvég"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "Perzsa"
+msgstr "perzsa"
 
 #. Type: select
 #. Choices
@@ -1228,7 +1228,7 @@ msgstr "portugál"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "Pándzsábi"
+msgstr "pandzsábi"
 
 #. Type: select
 #. Choices
@@ -1252,25 +1252,25 @@ msgstr "szerb (cirill)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr "Sindi"
+msgstr "sindhi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr "Sinhala"
+msgstr "sinhala"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
-msgstr "Szlovák"
+msgstr "szlovák"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovenian"
-msgstr "Szlovén"
+msgstr "szlovén"
 
 #. Type: select
 #. Choices
@@ -1300,32 +1300,31 @@ msgstr "svájci német"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "tádzsik"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "Tamil"
+msgstr "tamil"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "Telugu"
+msgstr "telugu"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "Thai"
+msgstr "thai"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Anetan (district)"
+msgstr "tibeti"
 
 #. Type: select
 #. Choices
@@ -1349,13 +1348,13 @@ msgstr "ukrán"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr "Ujgur"
+msgstr "ujgur"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr "Vietnami"
+msgstr "vietnami"
 
 #. Type: select
 #. Description
