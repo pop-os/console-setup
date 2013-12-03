@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_bs\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2013-11-27 21:12+0100\n"
+"PO-Revision-Date: 2013-11-29 19:21+0100\n"
 "Last-Translator: Amila Valjevčić <valjevcic.amila@gmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
@@ -738,7 +738,7 @@ msgstr "Bez privremenog prekidača"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "Oba Logo tastera"
+msgstr "Obje Logo tipke"
 
 #. Type: select
 #. Description
@@ -761,8 +761,8 @@ msgid ""
 msgstr ""
 "Kada je tastatura u nacionalnom rasporedu i želite samo nekoliko Latinskih "
 "karaktera, možda je prihvatljivije da prebacite privremeno u Latinski "
-"raspored. Tastatura ostaje u tom rasporedu dok god je odabrani taster "
-"pritisnut. Taj taster se može koristiti i za unos nacionalnih slova kada je "
+"raspored. Tastatura ostaje u tom rasporedu dok god je odabrana tipka "
+"pritisnuta. Ta tipka se može koristiti i za unos nacionalnih slova kada je "
 "tastatura u Latinskom rasporedu."
 
 #. Type: select
@@ -784,28 +784,28 @@ msgstr "Standardni izbor za raspored tastature"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "Bez AltGr tastera"
+msgstr "Bez AltGr tipke"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "Numerička tastatura Enter taster"
+msgstr "Tastatura Enter tipka"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "Oba Alt ključa"
+msgstr "Obje Alt tipke"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "Taster sa funkcijom AltGr:"
+msgstr "Tipka s funkcijom AltGr:"
 
 #. Type: select
 #. Description
@@ -817,24 +817,24 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"Kod nekih rasporeda tastature, AltGr je modifikacionis taster za unos "
+"Kod nekih rasporeda tastature, AltGr je modifikaciona tipka za unos "
 "određenih karaktera, uglavnom onih koji su neobični za jezik rasporeda "
 "tastature, poput simbola stranih valuta i slova sa akcentima. Ovi simboli su "
-"obično dopisani posebno na tasterima."
+"obično dopisani posebno na tipkama."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr "Bez compose tastera"
+msgstr "Bez compose tipke"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr "Compose taster:"
+msgstr "Compose tipka:"
 
 #. Type: select
 #. Description
@@ -845,9 +845,9 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"Compose taster (poznat i kao Multi_key) ima svrhu da računar interpretira "
-"sljedećih nekoliko pritisaka na tastere kao kombinaciju u svrhu ispisivanja "
-"karaktera koji nisu na vašoj tastaturi."
+"Compose tipka (poznata i kao Multi_tipka) ima svrhu da računar interpretira "
+"sljedećih nekoliko pritisaka na tipke kao kombinaciju u svrhu ispisivanja "
+"karaktera koji nisu na Vašoj tastaturi."
 
 #. Type: select
 #. Description
@@ -858,9 +858,9 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"U tekstualnoj konzoli Compose taster ne radi u Unicode modu. Ako niste u "
-"Unicode modu, bez obzira šta izaberete ovdje, možete uvijek koristiti i "
-"Control+tačka kombinaciju kao Compose taster."
+"U tekstualnoj konzoli Compose tipka ne radi u Unicode modu. Ako niste u "
+"Unicode modu, bez obzira šta izaberete ovdje, možete uvijek koristiti Control"
+"+tačka kombinaciju kao Compose tipku."
 
 #. Type: boolean
 #. Description
