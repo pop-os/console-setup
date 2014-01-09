@@ -326,19 +326,25 @@ msgstr "Billentyűzet beállítása"
 msgid "Other"
 msgstr "Egyéb"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "Billentyűzet modell"
+msgstr "Billentyűzet modell:"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Kérlek, válaszd e gép billentyűzetmodelljét"
+msgstr "Kérem, válassza ki e gép billentyűzet modelljét."
 
 #. Type: select
 #. Description
@@ -715,13 +721,22 @@ msgstr ""
 msgid "Not all listed keys are present on all keyboards."
 msgstr "Nem minden felsorolt billentyű létezik minden billentyűzeten."
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr "Nincs ármeneti váltás"
+msgstr "Nincs átmeneti váltás"
 
+# Type: select
+# Choices
+# :sl2:
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -733,13 +748,19 @@ msgstr "Nincs ármeneti váltás"
 msgid "Both Logo keys"
 msgstr "Mindkét logó billentyű"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "Mód átmeneti váltáshoz a nemzeti és latin bevitel között:"
+msgstr "A nemzeti és a latin bevitel közötti átmeneti váltás módja:"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
@@ -751,18 +772,24 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"Mikor a billentyűzet nemzeti módban van és valaki csak egy pár latin betűt "
-"akar bevinni, jó lehetőség átmenetileg latin módba váltani. A billentyűzet a "
-"választott billentyű lenyomása alatt van e módban. Tartós latin módban "
-"ugyanezen billentyűvel nemzeti betűk is bevihetők."
+"Amikor a billentyűzet nemzeti módban van és valaki csak egy pár latin betűt "
+"akar begépelni, jó megoldás csak átmenetileg latin módba váltani. A "
+"billentyűzet a választott billentyű lenyomása alatt van e módban. Tartós "
+"latin módban ugyanezt a billentyűt használhatja nemzeti betűk begépelésére."
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr "Kikapcsolhatod e képességet a \"Nincs átmeneti váltás\" lehetőséggel."
+msgstr "Kikapcsolhatja e képességet a \"Nincs átmeneti váltás\" lehetőséggel."
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -770,6 +797,9 @@ msgstr "Kikapcsolhatod e képességet a \"Nincs átmeneti váltás\" lehetőség
 msgid "The default for the keyboard layout"
 msgstr "Alapértelmezés a billentyűzetkiosztáshoz"
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -777,6 +807,9 @@ msgstr "Alapértelmezés a billentyűzetkiosztáshoz"
 msgid "No AltGr key"
 msgstr "Nincs AltGr billentyű"
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -784,6 +817,9 @@ msgstr "Nincs AltGr billentyű"
 msgid "Keypad Enter key"
 msgstr "Numerikus Enter"
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -791,13 +827,19 @@ msgstr "Numerikus Enter"
 msgid "Both Alt keys"
 msgstr "Mindkét Alt billentyű"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "AltGr funkció billentyű:"
+msgstr "AltGr-ként működő billentyű:"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
@@ -808,11 +850,14 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"Egyes kiosztásokon az AltGr egy bizonyos karakterek bevitelére használt "
-"módosító billentyű, főleg azokéra, melyek szokatlanok kiosztás nyelvén, "
-"például idegen pénzjelek és ékezetes betűk. Ezek gyakran extra jelekként "
-"vannak a billentyűkön."
+"Egyes billentyűzetkiosztásokon az AltGr egy olyan módosító billentyű, amely "
+"főként olyan karakterek bevitelére használható,amelyek szokatlanok a "
+"kiosztás nyelvén, például idegen pénzjelek és ékezetes betűk. Ezek gyakran "
+"extra jelekként vannak a billentyűkön feltüntetve."
 
+# Type: select
+# Choices
+# :sl2:
 #. Type: select
 #. Choices
 #. :sl2:
@@ -820,6 +865,9 @@ msgstr ""
 msgid "No compose key"
 msgstr "Nincs kombinációs billentyű"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
@@ -827,6 +875,9 @@ msgstr "Nincs kombinációs billentyű"
 msgid "Compose key:"
 msgstr "Kombinációs billentyű:"
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
@@ -836,10 +887,13 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"A kombinációs billentyű (másképp: Multi_billentyű) hatására a gép az alábbi "
-"pár billentyűt kombinációként értelmezi a billentyűzeten nem található "
-"karakterek előállítására."
+"A kombinációs billentyű (másképp: Multi_billentyű) hatására a gép a "
+"következő pár billentyűt kombinációként értelmezi a billentyűzeten nem "
+"található karakterek előállítására."
 
+# Type: select
+# Description
+# :sl2:
 #. Type: select
 #. Description
 #. :sl2:
@@ -849,8 +903,9 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"Szöveges konzolon a Kombinációs billentyű nem működik Unicode módban. Más "
-"esetben a Contol+. kombinációt használhatod kombinációs billentyűként."
+"Szöveges konzolon a Kombinációs billentyű nem működik Unicode módban. Nem "
+"Unicode módban - az itteni beállítástól függetlenül - a Control+pont "
+"kombináció is mindig használható kombinációs billentyűként."
 
 #. Type: boolean
 #. Description
