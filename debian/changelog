@@ -1,4 +1,4 @@
-console-setup (1.105) UNRELEASED; urgency=low
+console-setup (1.105) unstable; urgency=low
 
   [ Updated translations ]
   * Belarusian (be.po) by Viktar Siarheichyk
@@ -6,7 +6,7 @@ console-setup (1.105) UNRELEASED; urgency=low
   [ Christian Perrier ]
   * Explicitly link to GPL-2 document in debian/copyright
 
- -- Christian Perrier <bubulle@debian.org>  Tue, 07 Jan 2014 09:07:22 +0100
+ -- Christian Perrier <bubulle@debian.org>  Tue, 07 Jan 2014 13:41:32 +0100
 
 console-setup (1.104) unstable; urgency=low
 
