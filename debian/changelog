@@ -1,3 +1,11 @@
+console-setup (1.106) unstable; urgency=low
+
+  [ Updated translations ]
+  * Korean (ko.po) by Changwoo Ryu
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 19 Mar 2014 09:07:41 +0100
+
 console-setup (1.105) unstable; urgency=low
 
   [ Updated translations ]
