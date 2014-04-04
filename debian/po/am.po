@@ -18,14 +18,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2013-03-24 06:47+0100\n"
-"Last-Translator: Tegegne Tefera <tefera.tegegne@gmail.com>\n"
+"PO-Revision-Date: 2014-04-04 22:07+0100\n"
+"Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
-"Language: \n"
+"Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: n>1\n"
+"Plural-Forms: n>1;\n"
 
 #. Type: text
 #. Description
@@ -1259,7 +1259,7 @@ msgstr "ያስዊስ ጀርመንኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "ታጂክኛ"
 
 #. Type: select
 #. Choices
@@ -1283,7 +1283,7 @@ msgstr "ታይኛ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "ቲቤትኛ"
 
 #. Type: select
 #. Choices
