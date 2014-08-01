@@ -51,10 +51,10 @@ which () {
 # the boot process /tmp is mounted read-only, so lets have some other
 # options...  I am not sure all non-GNU versions of mktemp understand
 # the -q option so redirections of stderr are used instead.
-TMPFILE=''
+tempfiles=''
+trap 'rm -f $tempfiles >/dev/null 2>&1' 0
+trap "exit 2" 1 2 3 13 15
 tempfile () {
-    local tmp
-    tmp="$TMPFILE"
     if \
         TMPFILE=`mktemp /tmp/tmpkbd.XXXXXX 2>/dev/null` \
             || TMPFILE=`mktemp /run/tmpkbd.XXXXXX 2>/dev/null` \
@@ -62,10 +62,7 @@ tempfile () {
             || TMPFILE=`mktemp /lib/init/rw/tmpkbd.XXXXXX 2>/dev/null` \
             || TMPFILE=`mktemp 2>/dev/null`
     then
-        if [ -z "$tmp" ]; then
-            trap 'rm -f "$TMPFILE" >/dev/null 2>&1' 0
-            trap "exit 2" 1 2 3 13 15
-        fi
+        tempfiles="$tempfiles $TMPFILE"
         return 0
     else
         TMPFILE=''
@@ -88,10 +85,13 @@ report () {
 # but the standard input is being redirected, 'other argument'=do not
 # redirect the standard input or output but use this as a tty option.
 #
-# 2rd argument: option(s) for verbose output; 3nd argument: command to
-# run; other arguments: other options
+# 2nd argument: option(s) for verbose output.  NONE=no output,
+# ECHO=print the executed command, 'other argument'=give this option
+# to the executed command.
 #
-# Example: run '-C ' -v setfont font.psf
+# 3rd argument: command to run; other arguments: other options
+#
+# Example 1: run '-C ' -v setfont font.psf
 # If ACTIVE_CONSOLES='/dev/tty1 /dev/tty2 /dev/tty3', then this results in
 #
 # setfont -C /dev/tty1 font.psf -v
@@ -105,6 +105,12 @@ report () {
 # setfont -C /dev/tty3 font.psf >/dev/null 2>&1
 #
 # depending on the value of $do_verbose
+#
+# Example 2: `run plain '' echo hello` results in `echo hello`
+# regardless of the value of $do_verbose.
+#
+# Example 3: `run plain NONE echo hello` results in `echo hello` or
+# `echo hello >/dev/null 2>&1` depending on the value of $do_verbose.
 
 run () {
     local ttyarg cmd verbose tty x
@@ -126,27 +132,49 @@ run () {
 			report Executing $cmd "$@".
 			$cmd "$@"
 			;;
+		    NONE)
+			$cmd "$@"
+			;;
 		    *)
 			$cmd "$@" $verbose
 			;;
 		esac
             else
-                $cmd "$@" >/dev/null 2>&1
+		case "$verbose" in
+		    NONE)
+                        $cmd "$@" >/dev/null 2>&1
+                        ;;
+                    *)
+                        $cmd "$@"
+                        ;;
+                esac
             fi
             ;;
         in)
             for tty in $ACTIVE_CONSOLES; do
-                if [ -r $tty ]; then
-                    if [ "$setupdir" ]; then
-                        # keep the space between < and $tty
-                        SETUP="$SETUP$cmd $@ < $tty
+                if [ "$setupdir" ]; then
+                    # keep the space between < and $tty
+                    SETUP="$SETUP$cmd $@ < $tty
 "
-                    else
-                        report For $tty:
-                        run plain "$verbose" "$cmd" "$@" <$tty
-                    fi
+                elif [ -r $tty ]; then
+                    report For $tty:
+                    run plain "$verbose" "$cmd" "$@" <$tty
                 else
                     report No read access from $tty. Can not execute $cmd.
+                fi
+            done
+            ;;
+        out)
+            for tty in $ACTIVE_CONSOLES; do
+                if [ "$setupdir" ]; then
+                    # keep the space between > and $tty
+                    SETUP="$SETUP$cmd $@ > $tty
+"
+                elif [ -w $tty ]; then
+                    report For $tty:
+                    run plain "$verbose" "$cmd" "$@" >$tty
+                else
+                    report No write access to $tty. Can not execute $cmd.
                 fi
             done
             ;;
@@ -179,28 +207,6 @@ findfile () {
     x=`echo $x`
     [ "${x%% *}" ] || report Unable to find "$2".
     echo "${x%% *}"
-}
-
-# Usage: utf_start /dev/tty5
-# Configure a console for unicode output
-utf_start () {
-    if [ -w "$1" ]; then
-        report Configuring "$1" in Unicode mode.
-        printf '\033%%G' >"$1"
-    else
-        report No write access to $tty. Can not configure Unicode mode.
-    fi
-}
-
-# Usage: utf_stop /dev/tty5
-# Configure a console for non-unicode output
-utf_stop () {
-    if [ -w "$1" ]; then
-        report Configuring "$1" in non-Unicode mode.
-        printf '\033%%@' >"$1"
-    else
-        report No write access to $tty. Can not configure non-Unicode mode.
-    fi
 }
 
 # Return code 0: we are on the console; 1: we are not on the console
@@ -320,6 +326,10 @@ case "$installdir" in
     *) installdir=$installdir/.. ;;
 esac
 [ -n "$installdir" -a -d "$installdir"/bin ] || installdir=/usr
+case "$installdir" in
+    /*) ;;
+    *) installdir="`pwd`\$installdir" ;;
+esac
 
 
 ###########################################################################
@@ -738,13 +748,6 @@ if \
 then
     savekbdfile="$cached"
 fi
-if [ -z "$savekbdfile" -a -n "$setupdir" ]; then
-    mkdir -p "$setupdir"/etc/console-setup
-    case "$kernel" in
-        linux) savekbdfile="$setupdir"/etc/console-setup/cached.kmap.gz ;;
-        freebsd) savekbdfile="$setupdir"/etc/console-setup/cached.kbd ;;
-    esac
-fi
 [ "$XKBMODEL" ] || savekbdfile=''
 if [ "$kernel" = linux ] && ! which gzip >/dev/null; then
     savekbdfile=''
@@ -789,7 +792,6 @@ if [ "$savekbdfile" ]; then
 	            "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE \
                     && gzip -9 <$TMPFILE >"$savekbdfile"
             } || exit 1
-            rm $TMPFILE
             ;;
         freebsd)
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
@@ -840,9 +842,9 @@ case "$do_font" in
     # utf to 8-bit and vice versa (its a compile time option).
     linux*)
         if [ "$unicode" ]; then
-            run '' ECHO utf_start
+            run out '' printf '\033%%G'
         else
-            run '' ECHO utf_stop
+            run out '' printf '\033%%@'
         fi
         ;;
 esac
@@ -946,7 +948,7 @@ fi
 
 if [ "$KMAP" ]; then
     case "$do_kbd" in
-        linux) run plain '' loadkeys "$KMAP" ;;
+        linux) run plain NONE loadkeys "$KMAP" ;;
         freebsd) run in ECHO kbdcontrol -l "$KMAP" ;;
     esac
 else
@@ -966,7 +968,6 @@ else
             run in ECHO kbdcontrol -f 70 "`printf '\033[3~'`"
             ;;
     esac
-    rm $TMPFILE
 fi
 
 
@@ -975,63 +976,58 @@ fi
 ###########################################################################
 
 
-
 if [ "$setupdir" ]; then
 
     filearg () {
+        local f
         case "$1" in
-            *.kmap.gz|*.kbd|*/tmpkbd.*)
-                echo -n "/etc/console-setup/${savekbdfile##*/} "
-                ;;
             /*)
                 if [ -e "$1" ]; then
-                    if [ ! -e "$setupdir/etc/console-setup/${1##*/}" ]; then
-                        cp -a "$1" "$setupdir/etc/console-setup/${1##*/}"
-                    fi
-                    echo -n "/etc/console-setup/${1##*/} "
+                    f="${1##*/}"
+                    f="${f%.gz}"
+                    case "$1" in
+                        *.gz) zcat "$1" >"$setupdir/etc/console-setup/$f" ;;
+                        *) cp -a "$1" "$setupdir/etc/console-setup/$f" ;;
+                    esac
+                    printf "%s" "/etc/console-setup/$f"
                 else
-                    echo -n "$1 "
+                    printf "%s" "$1"
                 fi
                 ;;
             *)
-                echo -n "$1 "
+                # printf instead of echo because different versions of
+                # echo process backslashes differently.
+                printf "%s" "$1"
                 ;;
         esac
     }
 
     mkdir -p "$setupdir"/bin
+    mkdir -p "$setupdir"/etc/console-setup
 
     echo '#!/bin/sh' >"$setupdir"/bin/setupcon
     echo '# A micro-version of setupcon with static configuration.' >>"$setupdir"/bin/setupcon
     chmod +x "$setupdir"/bin/setupcon
     tempfile || { echo Can not create temporary file >&2; exit 1; }
-    echo "$SETUP" |
+    printf "%s" "$SETUP" |
     while read cmd args; do
-        case "$cmd $args" in
-            utf_start*)
-                echo -n printf \'\\\\'033%%G'\'' >' # not for FreeBSD
-                filearg "${args%% *}"
-                echo
-                ;;
-            utf_stop*)
-                echo -n printf \'\\\\'033%%@'\'' >' # not for FreeBSD
-                filearg "${args%% *}"
-                echo
-                ;;
-            kbdcontrol?-f?70*)
-                echo kbdcontrol -f 70 \"\`printf \'\\\\033[3~\'\`\"
-                ;;
-            *)
-                which "$cmd" >>$TMPFILE || true
-                echo -n "$cmd "
-                for arg in $args; do
-                    filearg "$arg"
-                done
-                echo
-                ;;
-        esac
+        which "$cmd" >>$TMPFILE || true
+        printf "%s " "$cmd"
+        for arg in $args; do
+            case "$arg" in
+                \>|\<)
+                    echo -n "$arg"
+                    ;;
+                *)
+                    echo -n "'"
+                    filearg "$arg" | sed "s/'/\'\\\\\'\'/g"
+                    echo -n "'"
+                    ;;
+            esac
+            echo -n ' '
+        done
+        echo
     done >>"$setupdir"/bin/setupcon
     echo exit 0 >>"$setupdir"/bin/setupcon
-    sort $TMPFILE | uniq >"$setupdir"/morefiles
-    rm $TMPFILE
+    sort $TMPFILE | uniq | grep -v 'printf$' >"$setupdir"/morefiles
 fi
