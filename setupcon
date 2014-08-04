@@ -72,8 +72,19 @@ tempfile () {
 
 # Print the arguments to stderr if $do_verbose is yes
 report () {
+    local nl
+    case "$1" in
+        -n)
+            shift
+            nl=''
+            ;;
+        *)
+            nl='
+'
+            ;;
+    esac
     if [ "$do_verbose" ]; then
-        echo "$@" >&2
+        echo -n "$@" "$nl" >&2
     fi
 }
 
@@ -129,22 +140,34 @@ run () {
             elif [ "$do_verbose" ]; then
 		case "$verbose" in
 		    ECHO)
-			report Executing $cmd "$@".
+			report executing $cmd "$@".
 			$cmd "$@"
 			;;
 		    NONE)
+			report executing $cmd "$@".
+			$cmd "$@"
+			;;
+		    '')
+			report executing $cmd.
 			$cmd "$@"
 			;;
 		    *)
+			report executing $cmd "$@".
 			$cmd "$@" $verbose
 			;;
 		esac
             else
 		case "$verbose" in
 		    NONE)
+			report executing $cmd "$@".
                         $cmd "$@" >/dev/null 2>&1
                         ;;
+                    '')
+			report executing $cmd.
+                        $cmd "$@"
+                        ;;
                     *)
+			report executing $cmd "$@".
                         $cmd "$@"
                         ;;
                 esac
@@ -157,7 +180,7 @@ run () {
                     SETUP="$SETUP$cmd $@ < $tty
 "
                 elif [ -r $tty ]; then
-                    report For $tty:
+                    report -n on $tty ''
                     run plain "$verbose" "$cmd" "$@" <$tty
                 else
                     report No read access from $tty. Can not execute $cmd.
@@ -171,7 +194,7 @@ run () {
                     SETUP="$SETUP$cmd $@ > $tty
 "
                 elif [ -w $tty ]; then
-                    report For $tty:
+                    report -n on $tty ''
                     run plain "$verbose" "$cmd" "$@" >$tty
                 else
                     report No write access to $tty. Can not execute $cmd.
@@ -201,9 +224,13 @@ findfile () {
             fi
             ;;
     esac
-    x=`(ls "$installdir"/$1/$2 /usr/local/$1/$2 \
-	   /usr/$1/$2 /etc/console-setup/$2 \
-	   "$installdir"/etc/console-setup/$2) 2>/dev/null`
+    x=`(ls "$installdir"/$1/$2 \
+           /usr/local/$1/$2 \
+	   /usr/$1/$2 \
+           /etc/console-setup/cached_$2 \
+           /etc/console-setup/$2 \
+           "$installdir"/etc/console-setup/cached_$2 \
+           "$installdir"/etc/console-setup/$2) 2>/dev/null`
     x=`echo $x`
     [ "${x%% *}" ] || report Unable to find "$2".
     echo "${x%% *}"
@@ -768,17 +795,17 @@ fi
 if [ -n "$do_save" ]; then
     case "$CONSOLE_MAP" in
         /etc/console-setup/*) ;;
-        ?*) cp "$CONSOLE_MAP" /etc/console-setup/ ;;
+        ?*) cp "$CONSOLE_MAP" /etc/console-setup/cached_"${CONSOLE_MAP##*/}" ;;
     esac
     for font in $FONTFILES; do
         case "$font" in
             /etc/console-setup/*) ;;
-            ?*) cp "$font" /etc/console-setup/ ;;
+            ?*) cp "$font" /etc/console-setup/cached_"${font##*/}" ;;
         esac
     done
     case "$FONTMAPFILE" in
         /etc/console-setup/*) ;;
-        ?*) cp "$FONTMAPFILE" /etc/console-setup/ ;;
+        ?*) cp "$FONTMAPFILE" /etc/console-setup/cached_"${FONTMAPFILE##*/}" ;;
     esac
 fi
 
