@@ -1,3 +1,21 @@
+console-setup (1.111) UNRELEASED; urgency=low
+
+  [ Anton Zinoviev ]
+  * setupcon --setup-dir:
+    - generate commands which do not require gzip in initrd;
+    - simplify the code by more general handling of special shell symbols
+      in command arguments.
+    - do not remove temporary files before the script exits so that the
+      code of --setup-dir is able to use a keymap stored in a termporary file;
+  * Give prefix cached_ to files created in /etc/console-setup.  Remove
+    such files when console-setup or console-setup-mini are removed or
+    purged and /bin/setupcon doesn't exist.  Thanks to Andreas Beckmann
+    and all contributors to the bug report.  Closes: #672160.  Files
+    created by older versions of the package will not be removed.
+  * Improve the output of setupcon --verbose.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 04 Aug 2014 17:19:20 +0300
+
 console-setup (1.110) unstable; urgency=low
 
   [ Anton Zinoviev ]
