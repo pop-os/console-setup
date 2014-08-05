@@ -1,11 +1,11 @@
-console-setup (1.110) UNRELEASED; urgency=low
+console-setup (1.110) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * Do not remember answer 'no' given to the question 'keep unsupported
     configuration'.  Thanks to Bernhard R. Link and Steve Cotton,
     closes: #729321.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 01 Aug 2014 14:03:49 +0300
+ -- Christian Perrier <bubulle@debian.org>  Sun, 03 Aug 2014 09:00:30 +0200
 
 console-setup (1.109) unstable; urgency=low
 
