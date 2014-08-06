@@ -13,8 +13,12 @@ console-setup (1.111) UNRELEASED; urgency=low
     and all contributors to the bug report.  Closes: #672160.  Files
     created by older versions of the package will not be removed.
   * Improve the output of setupcon --verbose.
+  * ckbcomp: change the approximation method for non-defined symbols
+    during the flattening phase.  This is a dangerous change, let's hope
+    I've done it right.  Thanks to Artem Rusanov for the informative bug
+    report, closes: #722566.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Mon, 04 Aug 2014 17:19:20 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 06 Aug 2014 20:16:41 +0300
 
 console-setup (1.110) unstable; urgency=low
 
