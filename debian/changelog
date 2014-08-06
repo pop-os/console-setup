@@ -17,8 +17,11 @@ console-setup (1.111) UNRELEASED; urgency=low
     during the flattening phase.  This is a dangerous change, let's hope
     I've done it right.  Thanks to Artem Rusanov for the informative bug
     report, closes: #722566.
+  * bdf2psf: allow omited trailing zero bytes in the BITMAP part of a BDF
+    character definition.  Thanks to Ben Harris for the bug report and the
+    patch, closes: #730430.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 06 Aug 2014 20:16:41 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 06 Aug 2014 21:21:47 +0300
 
 console-setup (1.110) unstable; urgency=low
 

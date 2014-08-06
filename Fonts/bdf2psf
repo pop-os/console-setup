@@ -455,15 +455,14 @@ for my $bdf (@bdfs) {
 	}
 	
 	if (/^(([0-9a-fA-F]{2})+)$/) {
-	    my $row;
 	    $bbx or die "$0: $bdf: no BBX at line $current_line\n";
-	    if ($shiftbits > 0) {
-		$row = hex ($1) << $shiftbits;
-	    } else {
-		$row = hex ($1) >> -$shiftbits;
-	    }
-	    if (($u >= 0x2500 && $u <= 0x259f)
-		|| length($1) == 2 * matrix_row_size ()) {
+	    if (length($1) <= 2 * matrix_row_size ()) {
+                my $row = hex ($1);
+                if ($shiftbits > 0) {
+                    $row <<= $shiftbits;
+                } else {
+                    $row >>= -$shiftbits;
+                }
 		for my $i (1 ... matrix_row_size ()) {
 		    push (@glyph_bytes,
 			  ($row >> 8 * (matrix_row_size () - $i)) & 0xff);
