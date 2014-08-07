@@ -22,8 +22,10 @@ console-setup (1.111) UNRELEASED; urgency=low
   * setupcon:
     - improve the output of setupcon --verbose;
     - run printf '\033%%@' and printf '\033%%G' in background.  I suppose
-      this closes: #678897.  Thanks to Matteo Croce, John A. Livingston and
-      Alban Browaeys;
+      this closes: #678897, #705971.  Thanks to Matteo Croce,
+      John A. Livingston, Alban Browaeys, Stefano Forli,
+      John D. Hendrickson, Sara Darnell, Hendrik Bijlsma and
+      Daniele Di Domizio.
     - issue warnings about /etc being mounted read-only only if it actually
       needs to write something there.  Thanks to Michael Tokarev,
       closes: #691060;
