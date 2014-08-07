@@ -31,8 +31,10 @@ console-setup (1.111) UNRELEASED; urgency=low
       closes: #691060;
     - Fix bugs related to setupcon VARIANT.  Thanks to Trent W. Buck,
       closes: #743476.
+  * Mark all packages as "Multi-Arch: foreign".  Thanks to Guillem Jover
+    and Noel David Torres Taño, closes: #693922.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 14:58:37 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 17:16:35 +0300
 
 console-setup (1.110) unstable; urgency=low
 
