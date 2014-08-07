@@ -425,9 +425,6 @@ if [ -n "$do_save" ]; then
     if [ ! -d /usr/share ]; then
         echo It seems /usr is not mounted.  Will not save files in /etc. >&2
         do_save=''
-    elif [ ! -w /etc/console-setup/ ]; then
-        echo /etc/console-setup is not writable.  No files will be saved there. >&2
-        do_save=''
     fi
 fi
 
@@ -793,6 +790,16 @@ fi
 ###########################################################################
 ### SAVE THE FILES IN /etc
 ###########################################################################
+
+for i in /etc/console-setup $CONSOLE_MAP $FONTFILES $FONTMAPFILE $savekbdfile; do
+    if [ "$i" = "${i#/etc/console-setup}" -a -n "$do_save" ]; then
+        if [ ! -w /etc/console-setup/ ]; then
+            echo /etc/console-setup is not writable.  No files will be saved there. >&2
+            do_save=''
+        fi
+        break
+    fi
+done
 
 if [ -n "$do_save" ]; then
     case "$CONSOLE_MAP" in

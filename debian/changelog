@@ -23,8 +23,11 @@ console-setup (1.111) UNRELEASED; urgency=low
   * setupcon: run printf '\033%%@' and printf '\033%%G' in background.  I
     suppose this closes: #678897.  Thanks to Matteo Croce,
     John A. Livingston and Alban Browaeys.
+  * setupcon: issue warnings about /etc being mounted read-only only if it
+    actually needs to write something there.  Thanks to Michael Tokarev,
+    closes: #691060.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 12:16:36 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 14:33:36 +0300
 
 console-setup (1.110) unstable; urgency=low
 
