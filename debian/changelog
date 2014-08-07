@@ -35,8 +35,10 @@ console-setup (1.111) UNRELEASED; urgency=low
     and Noel David Torres Taño, closes: #693922.
   * keyboard.5: add https://wiki.archlinux.org/index.php/X_KeyBoard_extension
     as another source for further information.
+  * setupcon.1: document the options --save-keyboard and --setup-dir to be
+    used by initrd builders.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 21:12:19 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 21:55:11 +0300
 
 console-setup (1.110) unstable; urgency=low
 
