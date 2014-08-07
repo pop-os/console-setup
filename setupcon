@@ -326,7 +326,7 @@ Sets up the font and the keyboard on Linux console.
 
 If VARIANT is not specified setupcon looks for the configuration files
 (in this order) ~/.console-setup and if this doesn't exist then the
-combination/etc/default/keyboard + /etc/default/console-setup.  When
+combination /etc/default/keyboard + /etc/default/console-setup.  When
 a VARIANT is specified then setupcon looks for the configuration files
 ~/.console-setup.VARIANT and /etc/default/console-setup.VARIANT.
 EOF
@@ -373,19 +373,21 @@ USER_CONFIG=${HOME}/.console-setup"$VARIANT"
 USER_CONFIG2=${HOME}/.keyboard"$VARIANT"
 MAIN_CONFIG=/etc/default/keyboard"$VARIANT"
 [ -f "$MAIN_CONFIG" ] \
+    || [ ! -f "$installdir"/etc/default/keyboard"$VARIANT" ] \
     || MAIN_CONFIG="$installdir"/etc/default/keyboard"$VARIANT"
 MAIN_CONFIG2=/etc/default/console-setup"$VARIANT"
 [ -f "$MAIN_CONFIG2" ] \
+    || [ ! -f "$installdir"/etc/default/console-setup"$VARIANT" ] \
     || MAIN_CONFIG2="$installdir"/etc/default/console-setup"$VARIANT"
 
-if [ -f "$USER_CONFIG" ]; then
+if [ -f "$USER_CONFIG" -o -f "$USER_CONFIG2" ]; then
     CONFIG="$USER_CONFIG"
     CONFIG2="$USER_CONFIG2"
-elif [ -f "$MAIN_CONFIG" ]; then
+elif [ -f "$MAIN_CONFIG" -o -f "$MAIN_CONFIG2" ]; then
     CONFIG="$MAIN_CONFIG"
     CONFIG2="$MAIN_CONFIG2"
 else
-    echo "setupcon: None of $MAIN_CONFIG nor $USER_CONFIG exists." >&2
+    echo "setupcon: None of $MAIN_CONFIG, $MAIN_CONFIG2, $USER_CONFIG, $USER_CONFIG2 exists." >&2
     exit 1
 fi
 
@@ -395,7 +397,9 @@ else
     # in order to permit "if [ cached.kmap.gz -ot $CONFIG2 ]; then ... fi"
     CONFIG2="$CONFIG"
 fi
-. "$CONFIG"
+if [ -f "$CONFIG" ]; then
+    . "$CONFIG"
+fi
 
 ###########################################################################
 ### INITIALIZATION AND DEFAULT VALUES

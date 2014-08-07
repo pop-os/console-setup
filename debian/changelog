@@ -12,7 +12,6 @@ console-setup (1.111) UNRELEASED; urgency=low
     purged and /bin/setupcon doesn't exist.  Thanks to Andreas Beckmann
     and all contributors to the bug report.  Closes: #672160.  Files
     created by older versions of the package will not be removed.
-  * Improve the output of setupcon --verbose.
   * ckbcomp: change the approximation method for non-defined symbols
     during the flattening phase.  This is a dangerous change, let's hope
     I've done it right.  Thanks to Artem Rusanov for the informative bug
@@ -20,14 +19,18 @@ console-setup (1.111) UNRELEASED; urgency=low
   * bdf2psf: allow omited trailing zero bytes in the BITMAP part of a BDF
     character definition.  Thanks to Ben Harris for the bug report and the
     patch, closes: #730430.
-  * setupcon: run printf '\033%%@' and printf '\033%%G' in background.  I
-    suppose this closes: #678897.  Thanks to Matteo Croce,
-    John A. Livingston and Alban Browaeys.
-  * setupcon: issue warnings about /etc being mounted read-only only if it
-    actually needs to write something there.  Thanks to Michael Tokarev,
-    closes: #691060.
+  * setupcon:
+    - improve the output of setupcon --verbose;
+    - run printf '\033%%@' and printf '\033%%G' in background.  I suppose
+      this closes: #678897.  Thanks to Matteo Croce, John A. Livingston and
+      Alban Browaeys;
+    - issue warnings about /etc being mounted read-only only if it actually
+      needs to write something there.  Thanks to Michael Tokarev,
+      closes: #691060;
+    - Fix bugs related to setupcon VARIANT.  Thanks to Trent W. Buck,
+      closes: #743476.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 14:33:36 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 14:58:37 +0300
 
 console-setup (1.110) unstable; urgency=low
 
