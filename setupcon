@@ -97,8 +97,8 @@ report () {
 # redirect the standard input or output but use this as a tty option.
 #
 # 2nd argument: option(s) for verbose output.  NONE=no output,
-# FORK=run the command in background, ECHO=print the executed command,
-# 'other argument'=give this option to the executed command.
+# FORK=run the command in background, 'other argument'=give this
+# option to the executed command.
 #
 # 3rd argument: command to run; other arguments: other options
 #
@@ -139,10 +139,6 @@ run () {
 "
             elif [ "$do_verbose" ]; then
 		case "$verbose" in
-		    ECHO)
-			report executing $cmd "$@".
-			$cmd "$@"
-			;;
 		    NONE)
 			report executing $cmd "$@".
 			$cmd "$@"
@@ -863,12 +859,12 @@ fi
 if [ "$VIDEOMODE" ]; then
     case "$do_font" in
         freebsd)
-            run in ECHO vidcontrol "$VIDEOMODE"
+            run in '' vidcontrol "$VIDEOMODE"
             ;;
         linux*)
             # this is a bit pointless as vesafb doesn't support changing mode
             if which fbset >/dev/null; then
-                run plain ECHO fbset -a "$VIDEOMODE"
+                run plain '' fbset -a "$VIDEOMODE"
             else
                 report fbset is not installed
             fi
@@ -896,7 +892,7 @@ if [ "$FONTFILES" ]; then
         freebsd)
             if [ -z "$unicode" ]; then
                 for font in $FONTFILES; do
-                    run plain ECHO vidcontrol -f $font
+                    run plain '' vidcontrol -f $font
                 done
             fi
             ;;
@@ -922,7 +918,7 @@ if [ "$CONSOLE_MAP" ]; then
     case "$do_font" in
         freebsd)
             if [ -z "$unicode" ]; then
-                run plain ECHO vidcontrol -l "$CONSOLE_MAP"
+                run plain '' vidcontrol -l "$CONSOLE_MAP"
             fi
             ;;
         linuxkbd)
@@ -941,7 +937,7 @@ if [ "$do_font" ]; then
     [ -z "$SCREEN_HEIGHT" ] || STTY="$STTY rows $SCREEN_HEIGHT"
 
     if [ "$STTY" ]; then
-        run in ECHO stty $STTY
+        run in '' stty $STTY
     fi
 fi
 
@@ -971,9 +967,9 @@ fi
 if [ "$do_kbd" = linux ]; then
     if which kbd_mode >/dev/null; then
         if [ "$unicode" ]; then
-            run in ECHO kbd_mode -u
+            run in '' kbd_mode -u
         else
-            run in ECHO kbd_mode -a
+            run in '' kbd_mode -a
         fi
     else
         report kbd_mode is not accessible.  Unable to setup unicode/non-unicode keyboard mode.
@@ -990,7 +986,7 @@ fi
 if [ "$KMAP" ]; then
     case "$do_kbd" in
         linux) run plain NONE loadkeys "$KMAP" ;;
-        freebsd) run in ECHO kbdcontrol -l "$KMAP" ;;
+        freebsd) run in '' kbdcontrol -l "$KMAP" ;;
     esac
 else
     tempfile || { echo Can not create temporary file >&2; exit 1; }
@@ -999,14 +995,14 @@ else
 	    $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                 $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
-            run plain ECHO loadkeys $TMPFILE
+            run plain NONE loadkeys $TMPFILE
             ;;
         freebsd)
 	    $installdir/bin/ckbcomp -freebsd -backspace "$backspace" \
                 $acm_option $rules_option -model "$XKBMODEL" \
 	        "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE
-            run in ECHO kbdcontrol -l $TMPFILE
-            run in ECHO kbdcontrol -f 70 "`printf '\033[3~'`"
+            run in '' kbdcontrol -l $TMPFILE
+            run in '' kbdcontrol -f 70 "`printf '\033[3~'`"
             ;;
     esac
 fi
