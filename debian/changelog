@@ -20,8 +20,11 @@ console-setup (1.111) UNRELEASED; urgency=low
   * bdf2psf: allow omited trailing zero bytes in the BITMAP part of a BDF
     character definition.  Thanks to Ben Harris for the bug report and the
     patch, closes: #730430.
+  * setupcon: run printf '\033%%@' and printf '\033%%G' in background.  I
+    suppose this closes: #678897.  Thanks to Matteo Croce,
+    John A. Livingston and Alban Browaeys.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 06 Aug 2014 21:21:47 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 12:16:36 +0300
 
 console-setup (1.110) unstable; urgency=low
 

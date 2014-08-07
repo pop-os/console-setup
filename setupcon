@@ -97,8 +97,8 @@ report () {
 # redirect the standard input or output but use this as a tty option.
 #
 # 2nd argument: option(s) for verbose output.  NONE=no output,
-# ECHO=print the executed command, 'other argument'=give this option
-# to the executed command.
+# FORK=run the command in background, ECHO=print the executed command,
+# 'other argument'=give this option to the executed command.
 #
 # 3rd argument: command to run; other arguments: other options
 #
@@ -117,7 +117,7 @@ report () {
 #
 # depending on the value of $do_verbose
 #
-# Example 2: `run plain '' echo hello` results in `echo hello`
+# Example 2: `run plain FORK echo hello` results in `echo hello`
 # regardless of the value of $do_verbose.
 #
 # Example 3: `run plain NONE echo hello` results in `echo hello` or
@@ -147,9 +147,10 @@ run () {
 			report executing $cmd "$@".
 			$cmd "$@"
 			;;
-		    '')
+		    FORK)
+                        # no arguments to suppress '\033%%@' and '\033%%G'
 			report executing $cmd.
-			$cmd "$@"
+			$cmd "$@" &
 			;;
 		    *)
 			report executing $cmd "$@".
@@ -162,9 +163,10 @@ run () {
 			report executing $cmd "$@".
                         $cmd "$@" >/dev/null 2>&1
                         ;;
-                    '')
+                    FORK)
+                        # no arguments to suppress '\033%%@' and '\033%%G'
 			report executing $cmd.
-                        $cmd "$@"
+                        $cmd "$@" &
                         ;;
                     *)
 			report executing $cmd "$@".
@@ -868,10 +870,11 @@ case "$do_font" in
     # So far the FreeBSD kernel doesn't support changes of the mode from
     # utf to 8-bit and vice versa (its a compile time option).
     linux*)
+        # FORK because of #678897
         if [ "$unicode" ]; then
-            run out '' printf '\033%%G'
+            run out FORK printf '\033%%G'
         else
-            run out '' printf '\033%%@'
+            run out FORK printf '\033%%@'
         fi
         ;;
 esac
