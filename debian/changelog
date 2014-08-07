@@ -25,7 +25,7 @@ console-setup (1.111) UNRELEASED; urgency=low
       this closes: #678897, #705971.  Thanks to Matteo Croce,
       John A. Livingston, Alban Browaeys, Stefano Forli,
       John D. Hendrickson, Sara Darnell, Hendrik Bijlsma and
-      Daniele Di Domizio.
+      Daniele Di Domizio;
     - issue warnings about /etc being mounted read-only only if it actually
       needs to write something there.  Thanks to Michael Tokarev,
       closes: #691060;
@@ -33,8 +33,10 @@ console-setup (1.111) UNRELEASED; urgency=low
       closes: #743476.
   * Mark all packages as "Multi-Arch: foreign".  Thanks to Guillem Jover
     and Noel David Torres Taño, closes: #693922.
+  * keyboard.5: add https://wiki.archlinux.org/index.php/X_KeyBoard_extension
+    as another source for further information.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 17:16:35 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 21:12:19 +0300
 
 console-setup (1.110) unstable; urgency=low
 
