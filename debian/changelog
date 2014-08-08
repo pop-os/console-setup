@@ -1,4 +1,4 @@
-console-setup (1.111) UNRELEASED; urgency=low
+console-setup (1.111) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * setupcon --setup-dir:
@@ -37,8 +37,9 @@ console-setup (1.111) UNRELEASED; urgency=low
     as another source for further information.
   * setupcon.1: document the options --save-keyboard and --setup-dir to be
     used by initrd builders.
+  * Use which instead of type in the config scripts to avoid lintian warnings.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 07 Aug 2014 21:55:11 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 08 Aug 2014 14:21:19 +0300
 
 console-setup (1.110) unstable; urgency=low
 
