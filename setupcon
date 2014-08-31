@@ -958,7 +958,7 @@ if [ "$do_kbd" = linux ]; then
     if [ -x /sbin/sysctl -a -r /etc/sysctl.conf ]; then
 	if grep -v '^\#' /etc/sysctl.conf | grep -q keycodes ; then
 	    grep keycodes /etc/sysctl.conf | grep -v "^#" \
-		| while read d ; do
+		| while read -r d ; do
                 /sbin/sysctl -w $d 2> /dev/null || true
             done
 	fi
@@ -1017,28 +1017,45 @@ fi
 
 if [ "$setupdir" ]; then
 
-    filearg () {
-        local f
-        case "$1" in
-            /*)
-                if [ -e "$1" ]; then
-                    f="${1##*/}"
-                    f="${f%.gz}"
-                    case "$1" in
-                        *.gz) zcat "$1" >"$setupdir/etc/console-setup/$f" ;;
-                        *) cp -a "$1" "$setupdir/etc/console-setup/$f" ;;
-                    esac
-                    printf "%s" "/etc/console-setup/$f"
-                else
-                    printf "%s" "$1"
-                fi
-                ;;
-            *)
-                # printf instead of echo because different versions of
-                # echo process backslashes differently.
-                printf "%s" "$1"
-                ;;
-        esac
+    fileargs () {
+        local arg args f
+        if [ "$1" ]; then
+            printf "%s" "$1" | {
+                read -r arg args
+                case "$arg" in
+                    \>|\<)
+                        echo -n "$arg"
+                        ;;
+                    /*)
+                        echo -n "'"
+                        if [ -e "$arg" ]; then
+                            f="${arg##*/}"
+                            f="${f%.gz}"
+                            case "$arg" in
+                                *.gz) zcat "$arg" >"$setupdir/etc/console-setup/$f" ;;
+                                *) cp -a "$arg" "$setupdir/etc/console-setup/$f" ;;
+                            esac
+                            printf "%s" "/etc/console-setup/$f" \
+                                | sed "s/'/\'\\\\\'\'/g"
+                        else
+                            printf "%s" "$arg" \
+                                | sed "s/'/\'\\\\\'\'/g"
+                        fi
+                        echo -n "'"
+                        ;;
+                    *)
+                        echo -n "'"
+                        # printf instead of echo because different versions of
+                        # echo process backslashes differently.
+                        printf "%s" "$arg" \
+                            | sed "s/'/\'\\\\\'\'/g"
+                        echo -n "'"
+                        ;;
+                esac
+                echo -n ' '
+                fileargs "$args"
+                }
+        fi
     }
 
     mkdir -p "$setupdir"/bin
@@ -1049,22 +1066,10 @@ if [ "$setupdir" ]; then
     chmod +x "$setupdir"/bin/setupcon
     tempfile || { echo Can not create temporary file >&2; exit 1; }
     printf "%s" "$SETUP" |
-    while read cmd args; do
+    while read -r cmd args; do
         which "$cmd" >>$TMPFILE || true
         printf "%s " "$cmd"
-        for arg in $args; do
-            case "$arg" in
-                \>|\<)
-                    echo -n "$arg"
-                    ;;
-                *)
-                    echo -n "'"
-                    filearg "$arg" | sed "s/'/\'\\\\\'\'/g"
-                    echo -n "'"
-                    ;;
-            esac
-            echo -n ' '
-        done
+        fileargs "$args"
         echo
     done >>"$setupdir"/bin/setupcon
     echo exit 0 >>"$setupdir"/bin/setupcon
