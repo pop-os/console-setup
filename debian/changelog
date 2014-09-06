@@ -1,10 +1,15 @@
-console-setup (1.112) UNRELEASED; urgency=low
+console-setup (1.112) unstable; urgency=low
 
   [ Anton Zinoviev ]
   * setupcpn --setup-dir: process arguments differently to leave
     backslashes alone.  Thanks to Giorgio Marinelli, closes: #759546.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 31 Aug 2014 13:46:46 +0300
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Estonian (et.po) by Mattias Põldaru
+  * Panjabi (pa.po) by A S Alam
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 06 Sep 2014 11:32:12 +0200
 
 console-setup (1.111) unstable; urgency=low
 
