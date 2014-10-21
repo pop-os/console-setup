@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2012-10-18 12:56+0100\n"
+"PO-Revision-Date: 2014-10-21 14:42+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
 "Language: sl\n"
@@ -1321,7 +1321,7 @@ msgstr "Švicarska (Nemška)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Tadžiščina"
 
 #. Type: select
 #. Choices
@@ -1344,9 +1344,8 @@ msgstr "Tajska"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Anetan"
+msgstr "Tibetanščina"
 
 #. Type: select
 #. Choices
