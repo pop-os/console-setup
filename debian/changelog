@@ -1,3 +1,9 @@
+console-setup (1.117) UNRELEASED; urgency=medium
+
+  * Fix default South Korea keymap in d-i, closes: #777740.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 15 Feb 2015 20:59:46 +0100
+
 console-setup (1.116) unstable; urgency=medium
 
   * Re-upload a clean(er) source package.
