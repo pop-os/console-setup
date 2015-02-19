@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2014-08-21 21:30-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -936,6 +936,12 @@ msgstr "ਬੁਲਗਾਰੀਅਨ (ਫਨੋਟਿਕ ਲੇਆਉਟ)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr "ਕਨੇਡੀਅਨ ਫ੍ਰੈਂਚ"
 
@@ -1196,6 +1202,12 @@ msgstr "# ਜਾਰਜੀਆਈ"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "ਫਾਰਸੀ"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 #. Type: select
 #. Choices

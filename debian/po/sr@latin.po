@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2010-11-14 18:12+0100\n"
 "Last-Translator: Janos Guljas <janos@janos.in.rs>\n"
 "Language-Team: Serbian/Latin\n"
@@ -467,9 +467,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Podrazumevana vrednost za opcije rasporeda tastature je "
-"XKBOPTIONS=„${XKBOPTIONS}“.  Bazirana je na trenutno definisanim jeziku/"
-"regionu i podešavanjima u /etc/X11/xorg.conf."
+"Podrazumevana vrednost za opcije rasporeda tastature je XKBOPTIONS="
+"„${XKBOPTIONS}“.  Bazirana je na trenutno definisanim jeziku/regionu i "
+"podešavanjima u /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -945,6 +945,12 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr ""
 
@@ -1216,6 +1222,12 @@ msgstr "# gruzijski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
 msgstr ""
 
 #. Type: select

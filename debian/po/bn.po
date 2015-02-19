@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2012-03-13 19:06+0600\n"
 "Last-Translator: Ayesha Akhtar <ayesha@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -952,6 +952,12 @@ msgstr "বুলগেরীয়"
 msgid "Bulgarian (phonetic layout)"
 msgstr "বুলগেরীয় (phonetic লেআউট)"
 
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
 # console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
@@ -1232,6 +1238,12 @@ msgstr "নরওয়েজীয়"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "ফারসি"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 # console-keymaps-acorn, Polish
 #. Type: select

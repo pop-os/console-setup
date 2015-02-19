@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2012-04-14 22:12+0600\n"
 "Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
 "Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
@@ -906,6 +906,12 @@ msgstr "པུར་ཀ་རི་ཡ་སྐད (གསལ་བྱེད་�
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr "ཁ་ན་ཏའི་ཧྥ་རན་སེའི་སྐད"
 
@@ -1167,6 +1173,12 @@ msgstr "ནོར་ཝེའི་སྐད"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "པར་སིའི་སྐད"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 #. Type: select
 #. Choices

@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2012-04-29 12:48+0300\n"
 "Last-Translator: ioan-eugen stan <stan.ieugen@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -972,6 +972,12 @@ msgstr "Bulgară (aranjament fonetic)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr "Franceză canadiană"
 
@@ -1232,6 +1238,12 @@ msgstr "Norvegiană"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "Persană"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 #. Type: select
 #. Choices

@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2014-08-10 20:20+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
@@ -979,6 +979,12 @@ msgstr "Bulgarsk kyrillisk"
 msgid "Bulgarian (phonetic layout)"
 msgstr "Bulgarsk kyrillisk (phonetic-udgave)"
 
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
 # console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
@@ -1259,6 +1265,12 @@ msgstr "Norsk"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "Persisk"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 # console-keymaps-acorn, Polish
 #. Type: select

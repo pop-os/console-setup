@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2012-03-20 16:35+0200\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
@@ -962,6 +962,12 @@ msgstr "bulgarialainen"
 msgid "Bulgarian (phonetic layout)"
 msgstr "bulgarialainen (phonetic-asettelu)"
 
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
 # console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
@@ -1242,6 +1248,12 @@ msgstr "norjalainen"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "Persia"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 # console-keymaps-acorn, Polish
 #. Type: select

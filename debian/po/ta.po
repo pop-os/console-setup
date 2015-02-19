@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2012-06-07 19:44-0500\n"
 "Last-Translator: Kumar Appaiah\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -953,6 +953,12 @@ msgstr "பல்கேரியன் "
 msgid "Bulgarian (phonetic layout)"
 msgstr "பல்கேரியன்  (phonetic அமைப்பு)"
 
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
 # console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
@@ -1233,6 +1239,12 @@ msgstr "நார்வேஜியன்"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "பெர்சியன்"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 # console-keymaps-acorn, Polish
 #. Type: select

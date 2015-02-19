@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_he\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
 "PO-Revision-Date: 2013-10-02 11:05+0300\n"
 "Last-Translator: Omer Zak <w1@zak.co.il>\n"
 "Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
@@ -953,6 +953,12 @@ msgstr "בולגרית"
 msgid "Bulgarian (phonetic layout)"
 msgstr "בולגרית (פריסה פונטית)"
 
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
 # console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
@@ -1234,6 +1240,12 @@ msgstr "נורבגית"
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "פרסית"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
 
 # console-keymaps-acorn, Polish
 #. Type: select
