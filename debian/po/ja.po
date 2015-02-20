@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2015-02-19 22:00+0000\n"
-"PO-Revision-Date: 2013-09-22 10:10+0900\n"
+"PO-Revision-Date: 2015-02-20 18:25+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
@@ -958,7 +958,7 @@ msgstr "ブルガリア語 (phonetic レイアウト)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "ビルマ語"
 
 #. Type: select
 #. Choices
@@ -1260,7 +1260,7 @@ msgstr "ペルシア語"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "フィリピン"
 
 #. Type: select
 #. Choices
