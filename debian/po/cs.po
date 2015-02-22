@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2015-02-19 22:00+0000\n"
-"PO-Revision-Date: 2013-10-05 17:48+0200\n"
+"PO-Revision-Date: 2015-02-22 08:40+0100\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -949,7 +949,7 @@ msgstr "bulharská (rozložení phonetic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "barmská"
 
 #. Type: select
 #. Choices
@@ -1219,7 +1219,7 @@ msgstr "perská"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "filipínská"
 
 #. Type: select
 #. Choices
