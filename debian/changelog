@@ -1,3 +1,14 @@
+console-setup (1.118) unstable; urgency=low
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 03 Mar 2015 08:25:24 +0100
+
 console-setup (1.117) unstable; urgency=medium
 
   [ Samuel Thibault ]
