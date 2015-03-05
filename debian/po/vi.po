@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2015-02-19 22:00+0000\n"
-"PO-Revision-Date: 2013-05-22 09:21+0100\n"
+"PO-Revision-Date: 2015-03-05 11:15+0100\n"
 "Last-Translator: Hai-Nam Nguyen <hainam@jcisio.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
@@ -951,7 +951,7 @@ msgstr "Bảo Gia Lơi (bố trí phonetic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "Miến Điện"
 
 #. Type: select
 #. Choices
@@ -1221,7 +1221,7 @@ msgstr "Tiếng Ba Tư"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "Phi-líp-pin"
 
 #. Type: select
 #. Choices
@@ -1311,7 +1311,7 @@ msgstr "Đức Thuỵ Sĩ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Tajik"
 
 #. Type: select
 #. Choices
@@ -1334,9 +1334,8 @@ msgstr "Thái"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Anetan"
+msgstr "Tiếng Ti-bê"
 
 #. Type: select
 #. Choices
