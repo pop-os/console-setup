@@ -1,3 +1,15 @@
+console-setup (1.119) unstable; urgency=low
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Polish (pl.po) by Michał Kułach
+  * Turkish (tr.po) by Mert Dirik
+  * Ukrainian (uk.po) by Anton Gladky
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 09 Mar 2015 08:57:14 +0100
+
 console-setup (1.118) unstable; urgency=low
 
   [ Updated translations ]
