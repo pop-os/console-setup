@@ -965,7 +965,7 @@ msgstr "Bulgárach (leagan amach phonetic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "Burmais"
 
 #. Type: select
 #. Choices
@@ -1238,7 +1238,7 @@ msgstr "Peirseach"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "Na hOileáin Fhilipíneacha"
 
 #. Type: select
 #. Choices
