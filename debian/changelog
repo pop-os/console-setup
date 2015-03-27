@@ -1,3 +1,13 @@
+console-setup (1.120) unstable; urgency=low
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Galician (gl.po) by Jorge Barreiro
+  * Russian (ru.po) by Yuri Kozlov
+  * Romanian (ro.po) by Bradut Boghita
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 27 Mar 2015 07:25:31 +0100
+
 console-setup (1.119) unstable; urgency=low
 
   [ Updated translations ]
