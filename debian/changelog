@@ -1,3 +1,11 @@
+console-setup (1.121) unstable; urgency=low
+
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 10 Apr 2015 22:41:15 +0200
+
 console-setup (1.120) unstable; urgency=low
 
   [ Updated translations ]
