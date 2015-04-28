@@ -1,3 +1,10 @@
+console-setup (1.124) unstable; urgency=low
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 27 Apr 2015 07:04:50 +0200
+
 console-setup (1.123) unstable; urgency=low
 
   [ Updated translations ]
