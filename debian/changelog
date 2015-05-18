@@ -1,3 +1,10 @@
+console-setup (1.127) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 18 May 2015 15:05:08 +0200
+
 console-setup (1.126) unstable; urgency=medium
 
   [ Updated translations ]
