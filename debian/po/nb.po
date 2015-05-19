@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2015-02-19 22:00+0000\n"
-"PO-Revision-Date: 2015-03-05 07:26+0100\n"
+"PO-Revision-Date: 2015-05-19 09:15+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -256,7 +256,7 @@ msgid ""
 msgstr ""
 "«VGA» har et tradisjonelt utseende og har medium dekning av internasjonale "
 "tegn. «Fixed» har et enkelt utseende og har bedre dekning av internasjonale "
-"tegn. «Terminus» kan redusere øyetrøtthet, selvom noen symbok har lignende "
+"tegn. «Terminus» kan redusere øyetrøtthet, selvom noen symbol har lignende "
 "aspekt som kan skape problemer for programmere."
 
 #. Type: select
@@ -271,7 +271,7 @@ msgid ""
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
 "Hvis du foretrekker en fet versjon av Terminus-skriften, velg enten "
-"TerminusBold (hvis du bruker framebuffer) eller TerminusBoldVGA ellers."
+"TerminusBold (hvis du bruker framebuffer) eller TerminusBoldVGA (ellers)."
 
 #. Type: select
 #. Description
