@@ -1,3 +1,11 @@
+console-setup (1.130) UNRELEASED; urgency=medium
+
+  * Teach ckbcomp about PC_FN_LEVEL2, fixing issues with Nokia N900
+    keyboard model (nokiarx51). Thanks to Sebastian Reichel for the report
+    and the patch (Closes: #789816).
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 24 Jun 2015 20:36:10 +0200
+
 console-setup (1.129) unstable; urgency=medium
 
   [ Updated translations ]
