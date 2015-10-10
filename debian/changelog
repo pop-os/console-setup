@@ -1,3 +1,11 @@
+console-setup (1.141) UNRELEASED; urgency=medium
+
+  * Team upload.
+  * Add systemd units wrapping the init scripts.
+    Closes: #796603
+
+ -- Felipe Sateler <fsateler@debian.org>  Thu, 08 Oct 2015 20:18:37 -0300
+
 console-setup (1.140) unstable; urgency=medium
 
   [ Jon Boden ]
