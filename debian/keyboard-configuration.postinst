@@ -85,13 +85,14 @@ then
     if [ "$DISPLAY" ] && which setxkbmap >/dev/null; then
 	setxkbmap -option '' -model "$model" "$layout" "$variant" "$options"
     else
-	OS=`udpkg --print-os`
-	if [ "$OS" = hurd ]
-	then
-	    [ ! -f /var/run/hurd-console.pid ] || kill `cat /var/run/hurd-console.pid`
-	else
-	    setupcon --force --save
-	fi
+	case "`uname`" in
+	    *GNU*)
+		[ ! -f /var/run/hurd-console.pid ] || kill `cat /var/run/hurd-console.pid`
+		;;
+	    *)
+		setupcon --force --save
+		;;
+	esac
     fi
 fi
 

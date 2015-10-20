@@ -1,3 +1,10 @@
+console-setup (1.134) UNRELEASED; urgency=medium
+
+  * debian/keyboard-configuration.postinst: Test for the Hurd using uname
+    rather than udpkg, to avoid stderr noise in non-d-i contexts.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 20 Oct 2015 12:44:12 +0100
+
 console-setup (1.133) unstable; urgency=medium
 
   [ Updated translations ]
