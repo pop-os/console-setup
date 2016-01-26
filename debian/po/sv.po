@@ -19,15 +19,15 @@
 # Alastair McKinstry <mckinstry@computer.org>, 2001.
 # Christian Rose <menthos@menthos.com>, 2004.
 # Daniel Nylander <po@danielnylander.se>, 2007.
-# Martin Bagge <martin.bagge@bthstudent.se>, 2008.
+# Martin Bagge <martin.bagge@bthstudent.se>, 2008, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2015-02-19 22:00+0000\n"
-"PO-Revision-Date: 2012-04-09 12:32+0100\n"
-"Last-Translator: Martin Bagge (brother) <brother@bsnet.se>\n"
+"PO-Revision-Date: 2016-01-26 22:19+0100\n"
+"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -963,7 +963,7 @@ msgstr "Bulgarisk (fonetisk)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "Burmesiska"
 
 # "Kanadafranska" (eller kanadensisk franska?) �r ett spr�k som talas i
 # Kanada, medan "franskkanadensisk" beskriver n�got eller n�gon fr�n
@@ -1239,7 +1239,7 @@ msgstr "Persiska"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "Filippinerna"
 
 #. Type: select
 #. Choices
@@ -1329,7 +1329,7 @@ msgstr "Tyskschweizisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Tadzjikiska"
 
 #. Type: select
 #. Choices
@@ -1352,9 +1352,8 @@ msgstr "Thai"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Österrike"
+msgstr "Tibetanska"
 
 #. Type: select
 #. Choices
