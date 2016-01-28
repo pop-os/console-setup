@@ -1,3 +1,10 @@
+console-setup (1.135) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Swedish (sv.po) by Martin Bagge / brother
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 28 Jan 2016 08:09:47 +0100
+
 console-setup (1.134) unstable; urgency=medium
 
   [ Colin Watson ]
