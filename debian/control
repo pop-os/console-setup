@@ -6,8 +6,8 @@ Uploaders: Anton Zinoviev <zinoviev@debian.org>, Christian Perrier <bubulle@debi
 Build-Depends-Indep: xkb-data (>= 1.6), locales-all, sharutils
 Build-Depends: perl, debhelper (>= 9), po-debconf, libxml-parser-perl, bdfresize, liblocale-gettext-perl
 Standards-Version: 3.9.1
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=d-i/console-setup.git
-Vcs-Git: git://anonscm.debian.org/d-i/console-setup.git
+Vcs-Browser: https://anonscm.debian.org/cgit/d-i/console-setup.git
+Vcs-Git: https://anonscm.debian.org/git/d-i/console-setup.git
 
 Package: keyboard-configuration
 Section: utils
