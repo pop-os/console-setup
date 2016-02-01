@@ -1,8 +1,9 @@
-console-setup (1.136) UNRELEASED; urgency=medium
+console-setup (1.136) unstable; urgency=medium
 
+  [ Colin Watson ]
   * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.
 
- -- Colin Watson <cjwatson@debian.org>  Fri, 29 Jan 2016 13:35:15 +0000
+ -- Christian Perrier <bubulle@debian.org>  Mon, 01 Feb 2016 06:56:04 +0100
 
 console-setup (1.135) unstable; urgency=medium
 
