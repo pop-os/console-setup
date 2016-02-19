@@ -124,6 +124,10 @@ EOF
     db_set console-setup/store_defaults_in_debconf_db true
 fi
 
+# The second setupcon may start background processes inheriting file
+# descriptors from debconf.
+db_stop
+
 # This works even if we are not on the console
 setupcon --save-only || true
 # This will protest if we are not on the console
