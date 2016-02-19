@@ -1,3 +1,11 @@
+console-setup (1.137) UNRELEASED; urgency=medium
+
+  [ Anton Zinoviev ]
+  * bug-control: add gnome-control-center to the packages in the
+    package-status list as it modifies /etc/default/keyboard.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 19 Feb 2016 15:57:05 +0300
+
 console-setup (1.136) unstable; urgency=medium
 
   [ Colin Watson ]
