@@ -255,7 +255,7 @@ console-setup (1.111) unstable; urgency=low
     - Fix bugs related to setupcon VARIANT.  Thanks to Trent W. Buck,
       closes: #743476.
   * Mark all packages as "Multi-Arch: foreign".  Thanks to Guillem Jover
-    and Noel David Torres Taño, closes: #693922.
+    and Noel David Torres Taño, closes: #694679.
   * keyboard.5: add https://wiki.archlinux.org/index.php/X_KeyBoard_extension
     as another source for further information.
   * setupcon.1: document the options --save-keyboard and --setup-dir to be
