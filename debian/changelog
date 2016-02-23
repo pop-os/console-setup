@@ -1,13 +1,20 @@
-console-setup (1.137) UNRELEASED; urgency=medium
+console-setup (1.138) UNRELEASED; urgency=medium
 
   [ Anton Zinoviev ]
-  * bug-control: add gnome-control-center and systemd to the packages in the
-    package-status list as they modify /etc/default/keyboard.
+  * bug-control: add systemd to the packages in the package-status list.
   * Put db_stop near the end of console-setup.postinst.  Hopefully, this
     closes: #782753.  Thanks to Jean-Michel Nirgal Vourgère and Vivek Das
     Mohapatra.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 19 Feb 2016 16:05:58 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 23 Feb 2016 18:06:34 +0300
+
+console-setup (1.137) unstable; urgency=medium
+
+  [ Anton Zinoviev ]
+  * bug-control: add gnome-control-center to the packages in the
+    package-status list as it modifies /etc/default/keyboard.
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 22 Feb 2016 07:08:37 +0100
 
 console-setup (1.136) unstable; urgency=medium
 
