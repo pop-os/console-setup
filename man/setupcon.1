@@ -83,11 +83,19 @@ experimenting with the configuration files.
 
 .TP
 .BR -k ,\  --keyboard-only
-Setup the keyboard only, do not setup the font.
+Setup the keyboard only, do not setup the font or the terminal.  On
+Linux it is enough to do this configuration only once.
 
 .TP
 .BR -f ,\  --font-only
-Setup the font only, do not setup the keyboard.
+Setup the font only, do not setup the keyboard or the terminal.  On
+Linux this configuration should be repeated each time a new console
+driver is activated (for example when the frame buffer becomes
+active).
+
+.TP
+.BR -f ,\  --terminal-only
+Setup the terminal only, do not setup the keyboard or the font.
 
 .TP
 .BR --force
@@ -118,9 +126,8 @@ after every change of the console configuration.
 .BR --save-only
 The same as
 .IR --save ,
-but does not setup the keyboard and the font.  This option can be
-useful if you want to save the required files while the screen is
-controlled by a X server.
+but does not setup anything.  This option can be useful if you want to
+save the required files while the screen is controlled by a X server.
 
 .TP
 .BI --save-keyboard\  FILE

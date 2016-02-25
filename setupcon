@@ -24,11 +24,13 @@
 
 ###########################################################################
 
-do_font=yes     # configure font
-do_kbd=yes      # configure keyboard
+do_font=''      # configure font
+do_kbd=''       # configure the keyboard
+do_term=''      # configure the terminal
 do_check=yes    # test whether we are on the console
 do_verbose=''   # explain what is being doing
 do_save=''      # save the required files in /etc/console-setup
+do_saveonly=''  # save the required files, do not configure anything
 savekbdfile=''  # save the keyboard map in $savekbdfile
 setupdir=''     # directory for --setup-dir
 SETUP=''
@@ -273,10 +275,13 @@ test_console () {
 while [ "$1" ]; do
     case "$1" in
 	-k|--keyboard-only)
-	    do_font=''
+	    do_kbd=yes
 	    ;;
 	-f|--font-only)
-	    do_kbd=''
+	    do_font=yes
+	    ;;
+	-t|--terminal-only)
+	    do_term=yes
 	    ;;
 	-v|--verbose)
 	    do_verbose=yes
@@ -289,15 +294,13 @@ while [ "$1" ]; do
 	    ;;
 	--save-only)
 	    do_save=yes
-            do_kbd=''
-            do_font=''
+	    do_saveonly=yes
             do_check=''
 	    ;;
         --save-keyboard)
             shift
             savekbdfile="$1"
-            do_kbd=''
-            do_font=''
+	    do_saveonly=yes
             do_check=''
             ;;
         --setup-dir)
@@ -312,6 +315,7 @@ Sets up the font and the keyboard on Linux console.
 
   -k, --keyboard-only  setup the keyboard only, do not setup the font
   -f, --font-only      setup the font only, do not setup the keyboard
+  -t, --terminal-only  setup the terminal only
       --force          do not check whether we are on the console
   -v, --verbose        explain what is being doing, try it if s.t. goes wrong
       --save           copy the font and the console map in /etc/console-setup,
@@ -345,6 +349,12 @@ EOF
     esac
     shift
 done
+
+if [ -z "$do_saveonly$do_kbd$do_font$do_term" ]; then
+    do_kbd=yes
+    do_font=yes
+    do_term=yes
+fi
 
 # installdir
 installdir=${0%/*}
@@ -757,6 +767,18 @@ case "$backspace" in
     *) echo Wrong BackSpace option >&2 ;;
 esac
 
+# do_term
+if [ "$do_term" ]; then
+    case "$kernel" in
+        linux)
+            do_term=linux
+            ;;
+        freebsd)
+            do_term=freebsd
+            ;;
+    esac
+fi
+
 # cached
 case "$kernel" in
     linux)
@@ -874,20 +896,6 @@ if [ "$VIDEOMODE" ]; then
     esac
 fi
 
-# Setup unicode/non-unicode mode
-case "$do_font" in
-    # So far the FreeBSD kernel doesn't support changes of the mode from
-    # utf to 8-bit and vice versa (its a compile time option).
-    linux*)
-        # FORK because of #678897
-        if [ "$unicode" ]; then
-            run out FORK printf '\033%%G'
-        else
-            run out FORK printf '\033%%@'
-        fi
-        ;;
-esac
-
 # Load the font(s)
 if [ "$FONTFILES" ]; then
     case "$do_font" in
@@ -935,8 +943,22 @@ if [ "$FONTFILES" ]; then
     esac
 fi
 
+# Setup unicode/non-unicode mode
+case "$do_term" in
+    # So far the FreeBSD kernel doesn't support changes of the mode from
+    # utf to 8-bit and vice versa (its a compile time option).
+    linux*)
+        # FORK because of #678897
+        if [ "$unicode" ]; then
+            run out FORK printf '\033%%G'
+        else
+            run out FORK printf '\033%%@'
+        fi
+        ;;
+esac
+
 # Setup the terminal width and height
-if [ "$do_font" ]; then
+if [ "$do_term" ]; then
     STTY=''
     [ -z "$SCREEN_WIDTH"  ] || STTY="$STTY cols $SCREEN_WIDTH"
     [ -z "$SCREEN_HEIGHT" ] || STTY="$STTY rows $SCREEN_HEIGHT"
@@ -969,7 +991,7 @@ if [ "$do_kbd" = linux ]; then
 fi
 
 # Setup unicode/non-unicode mode
-if [ "$do_kbd" = linux ]; then
+if [ "$do_kbd" = linux -o "$do_term" = linux ]; then
     if which kbd_mode >/dev/null; then
         if [ "$unicode" ]; then
             run in '' kbd_mode -u

@@ -6,8 +6,10 @@ console-setup (1.138) UNRELEASED; urgency=medium
     closes: #782753.  Thanks to Jean-Michel Nirgal Vourgère and Vivek Das
     Mohapatra.
   * Load the font and the console map with one setfont command.
+  * setupcon: new option -t|--terminal-only.  The old command 'setupcon
+    -f' is now equivalent to 'setupcon -f -t'.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Thu, 25 Feb 2016 14:31:33 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 25 Feb 2016 16:06:27 +0300
 
 console-setup (1.137) unstable; urgency=medium
 
