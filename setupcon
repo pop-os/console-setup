@@ -896,38 +896,41 @@ if [ "$FONTFILES" ]; then
                 for font in $FONTFILES; do
                     run plain '' vidcontrol -f $font
                 done
+                if [ "$CONSOLE_MAP" ]; then
+                    run plain '' vidcontrol -l "$CONSOLE_MAP"
+                fi
             fi
             ;;
         linuxkbd)
             if [ "$FONTMAPFILE" ]; then
-	        run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE"
+                if [ "$CONSOLE_MAP" ]; then
+	            run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE" -m "$CONSOLE_MAP"
+                else
+	            run '-C ' -v setfont $FONTFILES -u "$FONTMAPFILE"
+                fi
             else
-	        run '-C ' -v setfont $FONTFILES
+                if [ "$CONSOLE_MAP" ]; then
+	            run '-C ' -v setfont $FONTFILES -m "$CONSOLE_MAP"
+                else
+	            run '-C ' -v setfont $FONTFILES
+                fi
             fi
             ;;
         linuxct)
             if [ "$FONTMAPFILE" ]; then
-	        run --tty= -v consolechars -f ${FONTFILES%% *} -u "$FONTMAPFILE"
+                if [ "$CONSOLE_MAP" ]; then
+	            run --tty= -v consolechars -f ${FONTFILES%% *} \
+                        -u "$FONTMAPFILE" --acm "$CONSOLE_MAP"
+                else
+	            run --tty= -v consolechars -f ${FONTFILES%% *} -u "$FONTMAPFILE"
+                fi
             else
-	        run --tty= -v consolechars -f ${FONTFILES%% *}
+                if [ "$CONSOLE_MAP" ]; then
+	            run --tty= -v consolechars -f ${FONTFILES%% *} --acm "$CONSOLE_MAP"
+                else
+	            run --tty= -v consolechars -f ${FONTFILES%% *}
+                fi
             fi
-            ;;
-    esac
-fi
-
-# Load the console map
-if [ "$CONSOLE_MAP" ]; then
-    case "$do_font" in
-        freebsd)
-            if [ -z "$unicode" ]; then
-                run plain '' vidcontrol -l "$CONSOLE_MAP"
-            fi
-            ;;
-        linuxkbd)
-	    run '-C ' -v setfont -m "$CONSOLE_MAP"
-            ;;
-        linuxct)
-            run --tty= -v consolechars --acm "$CONSOLE_MAP"
             ;;
     esac
 fi

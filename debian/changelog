@@ -5,8 +5,9 @@ console-setup (1.138) UNRELEASED; urgency=medium
   * Put db_stop near the end of console-setup.postinst.  Hopefully, this
     closes: #782753.  Thanks to Jean-Michel Nirgal Vourgère and Vivek Das
     Mohapatra.
+  * Load the font and the console map with one setfont command.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Tue, 23 Feb 2016 18:06:34 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 25 Feb 2016 14:31:33 +0300
 
 console-setup (1.137) unstable; urgency=medium
 
