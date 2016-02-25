@@ -1,11 +1,4 @@
 build
-debian/console-setup-freebsd/
-debian/console-setup-freebsd-fonts-udeb/
-debian/console-setup-linux/
-debian/console-setup-linux-charmaps-udeb/
-debian/console-setup-linux-fonts-udeb/
-debian/kbdnames.gz
-debian/keyboard-configuration/
 Fonts/Armenian-Fixed14.fnt
 Fonts/Armenian-Fixed14.raw
 Fonts/Armenian-Fixed16.fnt
@@ -604,6 +597,13 @@ Keyboard/freebsd-keymaps/
 Keyboard/KeyboardNames.pl
 Keyboard/linux-keymaps/
 Keyboard/pc105.ekbd.gz
+amiga.ekmap.gz
+ataritt.ekmap.gz
+macintosh_old.ekmap.gz
+pc105.ekbd.gz
+pc105.ekmap.gz
+sun4.ekmap.gz
+sun5.ekmap.gz
 main_build
 man/bdf2psf.1.txt
 man/ckbcomp.1.txt
