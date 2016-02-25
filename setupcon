@@ -33,6 +33,7 @@ do_save=''       # save the required files in /etc/console-setup
 do_saveonly=''   # save the required files, do not configure anything
 do_currenttty='' # configure only current tty
 savekbdfile=''   # save the keyboard map in $savekbdfile
+do_printonly=''  # only print the configuration commands
 setupdir=''      # directory for --setup-dir
 SETUP=''
 
@@ -137,7 +138,7 @@ run () {
     fi
     case "$ttyarg" in
         plain)
-            if [ "$setupdir" ]; then
+            if [ "$setupdir$do_printonly" ]; then
                 SETUP="$SETUP$cmd $@
 "
             elif [ "$do_verbose" ]; then
@@ -176,7 +177,7 @@ run () {
             ;;
         in)
             for tty in $ACTIVE_CONSOLES; do
-                if [ "$setupdir" ]; then
+                if [ "$setupdir$do_printonly" ]; then
                     # keep the space between < and $tty
                     SETUP="$SETUP$cmd $@ < $tty
 "
@@ -190,7 +191,7 @@ run () {
             ;;
         out)
             for tty in $ACTIVE_CONSOLES; do
-                if [ "$setupdir" ]; then
+                if [ "$setupdir$do_printonly" ]; then
                     # keep the space between > and $tty
                     SETUP="$SETUP$cmd $@ > $tty
 "
@@ -307,6 +308,10 @@ while [ "$1" ]; do
 	    do_saveonly=yes
             do_check=''
             ;;
+        --print-commands-only)
+            do_printonly=yes
+            do_check=''
+            ;;
         --setup-dir)
             shift
             setupdir="$1"
@@ -327,8 +332,8 @@ Sets up the font and the keyboard on Linux console.
                          update /etc/console-setup/cached.*
       --save-only      only save; don't setup keyboard/font immediately
                          (implies --force)
-      --save-keyboard FILE, --setup-dir DIR
-                       options for initrd builders
+      --print-commands-only, --save-keyboard FILE, --setup-dir DIR
+                       options for initrd builders and boot scripts
   -h, --help           display this help and exit
 
 If VARIANT is not specified setupcon looks for the configuration files
@@ -703,7 +708,10 @@ if [ "$kernel" = linux -a -n "$FONT_MAP" ]; then
 fi
 
 # XKBMODEL
-if [ -n "$do_kbd$do_save$savekbdfile$setupdir" -a "$XKBMODEL" = unknown ]; then
+if \
+    [ -n "$do_kbd$do_save$savekbdfile$setupdir$do_printonly" \
+         -a "$XKBMODEL" = unknown ]
+then
     echo The keyboard model is unknown.  Keyboard will not be configured. >&2
     XKBMODEL=''
 fi
@@ -1044,6 +1052,40 @@ fi
 ### SETUPDIR
 ###########################################################################
 
+
+if [ "$do_printonly" ]; then
+
+    fileargs () {
+        local arg args f
+        if [ "$1" ]; then
+            printf "%s" "$1" | {
+                read -r arg args
+                case "$arg" in
+                    \>|\<)
+                        echo -n "$arg"
+                        ;;
+                    *)
+                        echo -n "'"
+                        # printf instead of echo because different versions of
+                        # echo process backslashes differently.
+                        printf "%s" "$arg" \
+                            | sed "s/'/\'\\\\\'\'/g"
+                        echo -n "'"
+                        ;;
+                esac
+                echo -n ' '
+                fileargs "$args"
+                }
+        fi
+    }
+
+    printf "%s" "$SETUP" |
+    while read -r cmd args; do
+        printf "%s " "$cmd"
+        fileargs "$args"
+        echo
+    done
+fi
 
 if [ "$setupdir" ]; then
 
