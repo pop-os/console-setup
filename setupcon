@@ -24,15 +24,16 @@
 
 ###########################################################################
 
-do_font=''      # configure font
-do_kbd=''       # configure the keyboard
-do_term=''      # configure the terminal
-do_check=yes    # test whether we are on the console
-do_verbose=''   # explain what is being doing
-do_save=''      # save the required files in /etc/console-setup
-do_saveonly=''  # save the required files, do not configure anything
-savekbdfile=''  # save the keyboard map in $savekbdfile
-setupdir=''     # directory for --setup-dir
+do_font=''       # configure font
+do_kbd=''        # configure the keyboard
+do_term=''       # configure the terminal
+do_check=yes     # test whether we are on the console
+do_verbose=''    # explain what is being doing
+do_save=''       # save the required files in /etc/console-setup
+do_saveonly=''   # save the required files, do not configure anything
+do_currenttty='' # configure only current tty
+savekbdfile=''   # save the keyboard map in $savekbdfile
+setupdir=''      # directory for --setup-dir
 SETUP=''
 
 # The same as /usr/bin/which - in order to make "which" available before
@@ -131,7 +132,7 @@ run () {
     verbose="$2"
     cmd="$3"
     shift; shift; shift
-    if [ -z "$ACTIVE_CONSOLES" ]; then
+    if [ -z "$ACTIVE_CONSOLES" -o -n "$do_currenttty" ]; then
         ttyarg=plain
     fi
     case "$ttyarg" in
@@ -283,6 +284,9 @@ while [ "$1" ]; do
 	-t|--terminal-only)
 	    do_term=yes
 	    ;;
+        --current-tty)
+            do_currenttty=yes
+            ;;
 	-v|--verbose)
 	    do_verbose=yes
 	    ;;
@@ -316,6 +320,7 @@ Sets up the font and the keyboard on Linux console.
   -k, --keyboard-only  setup the keyboard only, do not setup the font
   -f, --font-only      setup the font only, do not setup the keyboard
   -t, --terminal-only  setup the terminal only
+      --current-tty    setup only the current virtual terminal
       --force          do not check whether we are on the console
   -v, --verbose        explain what is being doing, try it if s.t. goes wrong
       --save           copy the font and the console map in /etc/console-setup,
