@@ -332,8 +332,9 @@ Sets up the font and the keyboard on Linux console.
                          update /etc/console-setup/cached.*
       --save-only      only save; don't setup keyboard/font immediately
                          (implies --force)
-      --print-commands-only, --save-keyboard FILE, --setup-dir DIR
-                       options for initrd builders and boot scripts
+      --print-commands-only
+                       print the configuration commands, do not configure
+      --save-keyboard FILE, --setup-dir DIR    options for initrd builders
   -h, --help           display this help and exit
 
 If VARIANT is not specified setupcon looks for the configuration files
