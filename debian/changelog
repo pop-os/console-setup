@@ -11,9 +11,11 @@ console-setup (1.138) UNRELEASED; urgency=medium
     - new options --current-tty and --print-commands-only;
     - on Linux 'setupcon --save' creates in /etc/console-setup/
       configuration scripts for faster boot configuration.
-    - load the font and the console map with only one setfont command;
+    - on Linux load the font and the console map using only one
+      setfont command;
+  * On Linux: use precomputed scripts and Udev to configure the console.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 26 Feb 2016 11:43:09 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 26 Feb 2016 19:15:18 +0300
 
 console-setup (1.137) unstable; urgency=medium
 

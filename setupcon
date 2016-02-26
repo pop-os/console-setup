@@ -886,7 +886,9 @@ if [ -n "$do_save" ]; then
         ?*) cp "$FONTMAPFILE" /etc/console-setup/cached_"${FONTMAPFILE##*/}" ;;
     esac
     if [ "$kernel" = linux ]; then
-        commands=$($0 -k --current-tty --print-commands-only)
+        commands_k=$($0 -k --current-tty --print-commands-only)
+        commands_f=$($0 -f --current-tty --print-commands-only)
+        commands_t=$($0 -t --current-tty --print-commands-only)
         cat >/etc/console-setup/cached_setup_keyboard.sh <<EOF
 #!/bin/sh
 
@@ -894,33 +896,39 @@ if [ -f /run/console-setup/keymap_loaded ]; then
     rm /run/console-setup/keymap_loaded
     exit 0
 fi
-$commands
+$commands_k
 EOF
-        commands=$($0 -f --current-tty --print-commands-only)
         cat >/etc/console-setup/cached_setup_font.sh <<EOF
 #!/bin/sh
 
-# It is difficult to be sure that with paralel boots everything goes
-# fine.  There will be a problem if a program reads the console
-# configuration before the first of the following setfont commands and
-# then creates a new console after the following loop has begun.
+$commands_f
 
-$commands
+if ls /dev/fb* >/dev/null 2>/dev/null; then
+    for i in /dev/vcs[0-9]*; do
+        {
+            $commands_f
+        } < /dev/tty\${i#/dev/vcs} > /dev/tty\${i#/dev/vcs}
+    done
+fi
+
+mkdir -p /run/console-setup
+> /run/console-setup/font-loaded
 for i in /dev/vcs[0-9]*; do
     {
-        $commands
+$commands_t
     } < /dev/tty\${i#/dev/vcs} > /dev/tty\${i#/dev/vcs}
 done
 EOF
-        commands=$($0 -t --current-tty --print-commands-only)
         cat >/etc/console-setup/cached_setup_terminal.sh <<EOF
 #!/bin/sh
 
-tty=/dev/tty\${1#vcs}
 {
-$commands
-} < \$tty > \$tty
+$commands_t
+} < /dev/tty\${1#vcs} > /dev/tty\${1#vcs}
 EOF
+        chmod +x /etc/console-setup/cached_setup_keyboard.sh \
+              /etc/console-setup/cached_setup_font.sh \
+              /etc/console-setup/cached_setup_terminal.sh
     fi
 fi
 

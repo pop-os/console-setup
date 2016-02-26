@@ -99,6 +99,8 @@ install-linux: build
 	dh_prep -p console-setup-linux
 	$(MAKE) etcdir=debian/console-setup-linux/etc \
 		prefix=debian/console-setup-linux/usr install-common-linux
+	dh_install -p console-setup-linux \
+		90-console-setup.rules etc/udev/rules.d/
 
 .PHONY : install-freebsd
 install-freebsd: build

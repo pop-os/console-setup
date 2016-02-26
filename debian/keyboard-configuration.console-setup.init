@@ -10,53 +10,82 @@
 # Short-Description: Set console font and keymap
 ### END INIT INFO
 
-set -e
-
 # This script is used jointly by console-setup and console-setup-mini.
 # It belongs to keyboard-configuration because it is forbidden two
 # different packages to share common configuration file.
 
-test -f /bin/setupcon || exit 0
-
-if [ -f /etc/default/locale ]; then
-    # In order to permit auto-detection of the charmap when
-    # console-setup-mini operates without configuration file.
-    . /etc/default/locale
-    export LANG
-fi
-
-if [ -f /lib/lsb/init-functions ]; then
-    . /lib/lsb/init-functions
-else
-    log_action_begin_msg () {
-	echo -n "$@... "
-    }
-
-    log_action_end_msg () {
-	if [ "$1" -eq 0 ]; then 
-	    echo done.
-	else
-	    echo failed.
-	fi
-    }
-fi
-
-case "$1" in
-    stop|status)
+do_configure=no
+if [ -f /bin/setupcon ]; then
+    case "$1" in
+        stop|status)
         # console-setup isn't a daemon
         ;;
-    start|force-reload|restart|reload)
-	log_action_begin_msg "Setting up console font and keymap"
-	if setupcon --save; then
-	    log_action_end_msg 0
-	else
-	    log_action_end_msg $?
-	fi
-	;;
-    *)
-        echo 'Usage: /etc/init.d/console-setup {start|reload|restart|force-reload|stop|status}'
-        exit 1
-        ;;
-esac
+        start|force-reload|restart|reload)
+            case "`uname 2>/dev/null`" in
+            *FreeBSD*)
+                do_configure=yes
+                ;;
+            *) # assuming Linux with udev
 
-exit 0
+                # Skip only the first time (i.e. when the system boots)
+                [ ! -f /run/console-setup/boot_completed ] || do_configure=yes
+                mkdir -p /run/console-setup
+                > /run/console-setup/boot_completed
+
+                # If we want to be fast when configuring the console,
+                # then we have no time to look at the configuration
+                # files and to compute how exactly to configure the
+                # console.  One solution is to ask from the sysadmin
+                # to run 'setupcon --save' after each change in the
+                # configuration files.  But when we do this, we
+                # receive bugs that the console configuration doesn't
+                # work.  The following code is a compromise: we test
+                # whether the confinguration files have changed and if
+                # they have, we run 'setupcon --save'.  The next time
+                # the system boots, we will be able to configure the
+                # console quickly.
+
+                [ /etc/console-setup/cached_setup_terminal.sh \
+                      -nt /etc/default/keyboard ] || do_configure=yes
+                [ /etc/console-setup/cached_setup_terminal.sh \
+                      -nt /etc/default/console-setup ] || do_configure=yes
+                ;;
+            esac
+	    ;;
+        *)
+            echo 'Usage: /etc/init.d/console-setup {start|reload|restart|force-reload|stop|status}'
+            exit 3
+            ;;
+    esac
+fi
+
+if [ "$do_configure" = yes ]; then
+    if [ -f /lib/lsb/init-functions ]; then
+        . /lib/lsb/init-functions
+    else
+        log_action_begin_msg () {
+	    echo -n "$@... "
+        }
+
+        log_action_end_msg () {
+	    if [ "$1" -eq 0 ]; then
+	        echo done.
+	    else
+	        echo failed.
+	    fi
+        }
+    fi
+
+    if [ -f /etc/default/locale ]; then
+        # In order to permit auto-detection of the charmap when
+        # console-setup-mini operates without configuration file.
+        . /etc/default/locale
+        export LANG
+    fi
+    log_action_begin_msg "Setting up console font and keymap"
+    if setupcon --save; then
+        log_action_end_msg 0
+    else
+        log_action_end_msg $?
+    fi
+fi
