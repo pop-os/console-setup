@@ -838,23 +838,6 @@ for i in /etc/console-setup $CONSOLE_MAP $FONTFILES $FONTMAPFILE $savekbdfile; d
     fi
 done
 
-if [ -n "$do_save" ]; then
-    case "$CONSOLE_MAP" in
-        /etc/console-setup/*) ;;
-        ?*) cp "$CONSOLE_MAP" /etc/console-setup/cached_"${CONSOLE_MAP##*/}" ;;
-    esac
-    for font in $FONTFILES; do
-        case "$font" in
-            /etc/console-setup/*) ;;
-            ?*) cp "$font" /etc/console-setup/cached_"${font##*/}" ;;
-        esac
-    done
-    case "$FONTMAPFILE" in
-        /etc/console-setup/*) ;;
-        ?*) cp "$FONTMAPFILE" /etc/console-setup/cached_"${FONTMAPFILE##*/}" ;;
-    esac
-fi
-
 if [ "$savekbdfile" ]; then
     case "$kernel" in
         linux)
@@ -873,6 +856,60 @@ if [ "$savekbdfile" ]; then
                 || exit 1
             ;;
     esac
+fi
+
+if [ -n "$do_save" ]; then
+    case "$CONSOLE_MAP" in
+        /etc/console-setup/*) ;;
+        ?*) cp "$CONSOLE_MAP" /etc/console-setup/cached_"${CONSOLE_MAP##*/}" ;;
+    esac
+    for font in $FONTFILES; do
+        case "$font" in
+            /etc/console-setup/*) ;;
+            ?*) cp "$font" /etc/console-setup/cached_"${font##*/}" ;;
+        esac
+    done
+    case "$FONTMAPFILE" in
+        /etc/console-setup/*) ;;
+        ?*) cp "$FONTMAPFILE" /etc/console-setup/cached_"${FONTMAPFILE##*/}" ;;
+    esac
+    if [ "$kernel" = linux ]; then
+        commands=$($0 -k --current-tty --print-commands-only)
+        cat >/etc/console-setup/cached_setup_keyboard.sh <<EOF
+#!/bin/sh
+
+if [ -f /run/console-setup/keymap_loaded ]; then
+    rm /run/console-setup/keymap_loaded
+    exit 0
+fi
+$commands
+EOF
+        commands=$($0 -f --current-tty --print-commands-only)
+        cat >/etc/console-setup/cached_setup_font.sh <<EOF
+#!/bin/sh
+
+# It is difficult to be sure that with paralel boots everything goes
+# fine.  There will be a problem if a program reads the console
+# configuration before the first of the following setfont commands and
+# then creates a new console after the following loop has begun.
+
+$commands
+for i in /dev/vcs[0-9]*; do
+    {
+        $commands
+    } < /dev/tty\${i#/dev/vcs} > /dev/tty\${i#/dev/vcs}
+done
+EOF
+        commands=$($0 -t --current-tty --print-commands-only)
+        cat >/etc/console-setup/cached_setup_terminal.sh <<EOF
+#!/bin/sh
+
+tty=/dev/tty\${1#vcs}
+{
+$commands
+} < \$tty > \$tty
+EOF
+    fi
 fi
 
 
