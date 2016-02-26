@@ -139,8 +139,14 @@ run () {
     case "$ttyarg" in
         plain)
             if [ "$setupdir$do_printonly" ]; then
-                SETUP="$SETUP$cmd $@
+                if [ "$verbose" = NONE ]; then
+                    # keep the space after >
+                    SETUP="$SETUP$cmd $@ > /dev/null
 "
+                else
+                    SETUP="$SETUP$cmd $@
+"
+                fi
             elif [ "$do_verbose" ]; then
 		case "$verbose" in
 		    NONE)
@@ -178,9 +184,14 @@ run () {
         in)
             for tty in $ACTIVE_CONSOLES; do
                 if [ "$setupdir$do_printonly" ]; then
-                    # keep the space between < and $tty
-                    SETUP="$SETUP$cmd $@ < $tty
+                    # keep the space around > and <
+                    if [ "$verbose" = NONE ]; then
+                        SETUP="$SETUP$cmd $@ < $tty > /dev/null
 "
+                    else
+                        SETUP="$SETUP$cmd $@ < $tty
+"
+                    fi
                 elif [ -r $tty ]; then
                     report -n on $tty ''
                     run plain "$verbose" "$cmd" "$@" <$tty
