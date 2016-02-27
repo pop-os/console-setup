@@ -1,6 +1,6 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          keyboard-setup
+# Provides:          keyboard-setup.sh
 # Required-Start:    mountkernfs
 # Required-Stop:
 # Should-Start:      keymap udev
@@ -14,9 +14,6 @@
 #                    can interact.  At this stage of the boot process
 #                    only the ASCII symbols are supported.
 ### END INIT INFO
-
-# This script is not used by keyboard-configuration.  It is used
-# jointly by console-setup and console-setup-mini
 
 if [ -f /bin/setupcon ]; then
     case "$1" in

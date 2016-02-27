@@ -14,8 +14,12 @@ console-setup (1.138) UNRELEASED; urgency=medium
     - on Linux load the font and the console map using only one
       setfont command;
   * On Linux: use precomputed scripts and Udev to configure the console.
+  * Move the init scripts from keyboard-configuration to
+    console-setup-linux and console-setup-freebsd.  Give them a .sh
+    extension to be sourcable.
+  * postinst: run update-rc.d with parameter 'defaults'.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Fri, 26 Feb 2016 19:15:18 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 13:28:28 +0300
 
 console-setup (1.137) unstable; urgency=medium
 

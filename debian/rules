@@ -101,6 +101,10 @@ install-linux: build
 		prefix=debian/console-setup-linux/usr install-common-linux
 	dh_install -p console-setup-linux \
 		90-console-setup.rules etc/udev/rules.d/
+	dh_installinit -p console-setup-linux \
+		--no-start --name keyboard-setup.sh
+	dh_installinit -p console-setup-linux \
+		--no-start --name console-setup.sh
 
 .PHONY : install-freebsd
 install-freebsd: build
@@ -109,6 +113,10 @@ install-freebsd: build
 	dh_prep -p console-setup-freebsd
 	$(MAKE) etcdir=debian/console-setup-freebsd/etc \
 		prefix=debian/console-setup-freebsd/usr install-common-freebsd
+	dh_installinit -p console-setup-freebsd \
+		--no-start --name keyboard-setup.sh
+	dh_installinit -p console-setup-freebsd \
+		--no-start --name console-setup.sh
 
 .PHONY : install-main
 install-main: build
@@ -147,10 +155,6 @@ install-main: build
 		usr/share/console-setup/
 	dh_link -pkeyboard-configuration usr/share/X11/xkb/rules/xorg.lst \
 		usr/share/doc/keyboard-configuration/xorg.lst
-	dh_installinit -pkeyboard-configuration \
-		--no-start --name keyboard-setup -- start 06 S .
-	dh_installinit -pkeyboard-configuration \
-		--no-start --name console-setup -- start 49 S .
 
 .PHONY : install-bdf2psf
 install-bdf2psf: build
