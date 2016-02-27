@@ -21,8 +21,11 @@ console-setup (1.138) UNRELEASED; urgency=medium
     console-setup-linux and console-setup-freebsd.  Closes: #805928.
     Give them a .sh extension to make them sourcable.
   * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
+  * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
+    not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.
+    Thanks to Samuel Thibault for #778721 and #778722.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 13:28:28 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 19:25:23 +0300
 
 console-setup (1.137) unstable; urgency=medium
 
