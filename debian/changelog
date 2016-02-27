@@ -2,9 +2,9 @@ console-setup (1.138) UNRELEASED; urgency=medium
 
   [ Anton Zinoviev ]
   * bug-control: add systemd to the packages in the package-status list.
-  * Put db_stop near the end of console-setup.postinst.  Hopefully, this
-    closes: #782753.  Thanks to Jean-Michel Nirgal Vourgère and Vivek Das
-    Mohapatra.
+  * Put db_stop near the end of console-setup.postinst.  Redirect all
+    output of setupcon to /dev/null.  Hopefully, this
+    closes: #782753, #776101.
   * Changes in setupcon:
     - new option -t|--terminal-only.  The functionality of the
       old command 'setupcon -f' is now covered by 'setupcon -f -t';
@@ -14,6 +14,7 @@ console-setup (1.138) UNRELEASED; urgency=medium
     - on Linux load the font and the console map using only one
       setfont command;
   * On Linux: use precomputed scripts and Udev to configure the console.
+    Closes: #759657.
   * Move the init scripts from keyboard-configuration to
     console-setup-linux and console-setup-freebsd.  Give them a .sh
     extension to be sourcable.
