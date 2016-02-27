@@ -30,6 +30,8 @@ console-setup (1.138) UNRELEASED; urgency=medium
     not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.
     Thanks to Samuel Thibault for #778721 and #778722.
   * Remove Keyboard/locale/lib/ from the source package.  Closes: #787528
+  * Make the builds reproducible.  Thanks to Reiner Herrmann for the
+    patch.  Closes: #775531.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 19:28:22 +0300
 

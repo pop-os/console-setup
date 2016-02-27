@@ -49,7 +49,7 @@ main_build:
 debian/kbdnames.gz: main_build
 	( cd Keyboard \
 	&& ./kbdnames-maker KeyboardNames.pl \
-		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9 ) >$@
+		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9n ) >$@
 
 models = amiga ataritt macintosh_old pc105 sun4 sun5
 
@@ -61,7 +61,7 @@ gzipped_ekbds = pc105.ekbd.gz
 di-kbdnames = $(shell grep -A 2 keyboard-configuration/xkb-keymap debian/console-setup-udeb.templates | tail -n 1 | cut -d ' ' -f 2- | tr -d , | tr ' ' '\n' | grep -v skip-config)
 
 %.gz : %
-	gzip -9 <$< >$@
+	gzip -9n <$< >$@
 
 %.ekmap : main_build
 	(cd Keyboard \

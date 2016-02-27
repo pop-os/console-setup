@@ -7,7 +7,7 @@ build-any:
 
 
 %.gz : %
-	gzip -9 <$< >$@
+	gzip -9n <$< >$@
 
 # All available non-legacy font faces
 FACES = Fixed13 Fixed14 Fixed15 Fixed16 \

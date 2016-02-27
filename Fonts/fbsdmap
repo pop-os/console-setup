@@ -97,7 +97,7 @@ sub lines {
 
 sub print_term {
     my $ac = "";
-    for my $name (keys %acsc) {
+    for my $name (sort keys %acsc) {
         if ($acsc{$name}[1]) {
             $ac = $ac . sprintf("%s\\%03o", $acsc{$name}[0], $acsc{$name}[1]);
         }
@@ -316,7 +316,7 @@ while (<ACM>) {
 close ACM;
 
 my @acm2acsname;
-for my $name (keys %acsc) {
+for my $name (sort keys %acsc) {
     my $a = $acsc{$name}[1];
     next if ($a == 0);
     my $uni = hex($acs2uni{$name});

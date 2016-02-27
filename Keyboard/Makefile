@@ -15,7 +15,7 @@ build-mini-linux : $(gzipped_ekmaps) charmap_functions.sh
 build-mini-freebsd : $(gzipped_ekbds) charmap_functions.sh
 
 %.gz : %
-	gzip -9 <$< >$@
+	gzip -9n <$< >$@
 
 %.ekmap : 
 	./kbdcompiler $(@:%.ekmap=%) KeyboardNames.pl $(xkbdir) >$@

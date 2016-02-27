@@ -861,7 +861,7 @@ if [ "$savekbdfile" ]; then
 	        $installdir/bin/ckbcomp -backspace "$backspace" $acm_option \
                     $rules_option -model "$XKBMODEL" \
 	            "$XKBLAYOUT" "$XKBVARIANT" "$XKBOPTIONS" >$TMPFILE \
-                    && gzip -9 <$TMPFILE >"$savekbdfile"
+                    && gzip -9n <$TMPFILE >"$savekbdfile"
             } || exit 1
             ;;
         freebsd)

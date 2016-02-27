@@ -182,12 +182,12 @@ for $k1 (keys %kmaps) {
 
 printf STDERR "Reducing the keymaps for %s...\n", $model;
 
-while (keys %kmaps) {
+while (sort keys %kmaps) {
     my $mink1 = '';
     my $mink2 = '';
     my $minsub = 10000000;
-    for $k1 (keys %kmaps) {
-	for $k2 (keys %kmaps) {
+    for $k1 (sort keys %kmaps) {
+	for $k2 (sort keys %kmaps) {
 	    next if ($k1 eq $k2);
 	    if ($matrice{$k1}{$k2} < $minsub) {
 		$mink1 = $k1;
@@ -197,7 +197,7 @@ while (keys %kmaps) {
 	}
     }
     if ($mink1 eq '') {
-        for $k2 (keys %kmaps) {
+        for $k2 (sort keys %kmaps) {
             $mink1 = $k2;
             last;
         }
@@ -208,7 +208,7 @@ while (keys %kmaps) {
 
 printf STDERR "Dumping the encoded keymaps for %s...\n", $model;
 
-for $k1 (keys %reduce) {
+for $k1 (sort keys %reduce) {
     my $kmap1 = $keymaps{$k1};
     $k2 = $reduce{$k1};
     if ($k2 ne '') {
@@ -298,7 +298,7 @@ my %keycodes = (
 my $keycodes =  (defined $keycodes {$model}
 		 ? $keycodes {$model}
 		 : 'xfree86');
-for my $option (keys %options) {
+for my $option (sort keys %options) {
     my $layout = '';
     for my $mod (@{$options{$option}}) {
 	$layout = $layout . "+stdmodifiers($mod)";
