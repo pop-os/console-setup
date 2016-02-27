@@ -14,7 +14,9 @@ console-setup (1.138) UNRELEASED; urgency=medium
     - on Linux load the font and the console map using only one
       setfont command;
     - when the keyboard model is unknown, use a default value and
-      issue a warning.  Closes: #751955.
+      issue a warning.  Closes: #751955, #788441.  Apply a patch about
+      KMAP by Michal Maruska;
+    - more robust test whether /etc is writable.  Closes: #810246.
   * On Linux: use precomputed scripts and Udev to configure the console.
     Closes: #759657, #763695.
   * Move the init scripts from keyboard-configuration to
@@ -24,8 +26,9 @@ console-setup (1.138) UNRELEASED; urgency=medium
   * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
     not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.
     Thanks to Samuel Thibault for #778721 and #778722.
+  * Remove Keyboard/locale/lib/ from the source package.  Closes: #787528
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 19:25:23 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 19:28:22 +0300
 
 console-setup (1.137) unstable; urgency=medium
 

@@ -730,7 +730,7 @@ fi
 [ -n "$XKBMODEL" -o -z "$savekbdfile" ] || exit 1
 
 # do_kbd
-[ "$XKBMODEL" ] || do_kbd=''
+[ "$XKBMODEL$KMAP" ] || do_kbd=''
 if [ "$do_kbd" ]; then
     case "$kernel" in
         linux)
@@ -842,7 +842,10 @@ fi
 
 for i in /etc/console-setup $CONSOLE_MAP $FONTFILES $FONTMAPFILE $savekbdfile; do
     if [ "$i" = "${i#/etc/console-setup}" -a -n "$do_save" ]; then
-        if [ ! -w /etc/console-setup/ ]; then
+        if \
+            ! touch /etc/console-setup/cached_rwtest 2>/dev/null \
+                || ! rm /etc/console-setup/cached_rwtest 2>/dev/null
+        then
             echo /etc/console-setup is not writable.  No files will be saved there. >&2
             do_save=''
         fi
