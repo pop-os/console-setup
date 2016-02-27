@@ -1,10 +1,6 @@
 console-setup (1.138) UNRELEASED; urgency=medium
 
   [ Anton Zinoviev ]
-  * bug-control: add systemd to the packages in the package-status list.
-  * Put db_stop near the end of console-setup.postinst.  Redirect all
-    output of setupcon to /dev/null.  Hopefully, this
-    closes: #782753, #776101.
   * Changes in setupcon:
     - new option -t|--terminal-only.  The functionality of the
       old command 'setupcon -f' is now covered by 'setupcon -f -t';
@@ -17,11 +13,18 @@ console-setup (1.138) UNRELEASED; urgency=medium
       issue a warning.  Closes: #751955, #788441.  Apply a patch about
       KMAP by Michal Maruska;
     - more robust test whether /etc is writable.  Closes: #810246.
+  * Changes in ckbcomp:
+    - remove the 'use locale' pragma as suggested by Klaus Ethgen.
+      Closes: #810538.
   * On Linux: use precomputed scripts and Udev to configure the console.
     Closes: #759657, #763695.
   * Move the init scripts from keyboard-configuration to
     console-setup-linux and console-setup-freebsd.  Closes: #805928.
     Give them a .sh extension to make them sourcable.
+  * bug-control: add systemd to the packages in the package-status list.
+  * Put db_stop near the end of console-setup.postinst.  Redirect all
+    output of setupcon to /dev/null.  Hopefully, this
+    closes: #782753, #776101.
   * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
   * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
     not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.

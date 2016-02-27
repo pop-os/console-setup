@@ -19,7 +19,6 @@
 
 use warnings 'all';
 use strict;
-use locale;
 
 my $debug_flag = 1;
 sub debug {
