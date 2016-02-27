@@ -10,15 +10,17 @@ console-setup (1.138) UNRELEASED; urgency=medium
       old command 'setupcon -f' is now covered by 'setupcon -f -t';
     - new options --current-tty and --print-commands-only;
     - on Linux 'setupcon --save' creates in /etc/console-setup/
-      configuration scripts for faster boot configuration.
+      configuration scripts for faster boot configuration;
     - on Linux load the font and the console map using only one
       setfont command;
+    - when the keyboard model is unknown, use a default value and
+      issue a warning.  Closes: #751955.
   * On Linux: use precomputed scripts and Udev to configure the console.
-    Closes: #759657.
+    Closes: #759657, #763695.
   * Move the init scripts from keyboard-configuration to
-    console-setup-linux and console-setup-freebsd.  Give them a .sh
-    extension to be sourcable.
-  * postinst: run update-rc.d with parameter 'defaults'.
+    console-setup-linux and console-setup-freebsd.  Closes: #805928.
+    Give them a .sh extension to make them sourcable.
+  * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Sat, 27 Feb 2016 13:28:28 +0300
 

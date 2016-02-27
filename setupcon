@@ -722,10 +722,10 @@ fi
 # XKBMODEL
 if \
     [ -n "$do_kbd$do_save$savekbdfile$setupdir$do_printonly" \
-         -a "$XKBMODEL" = unknown ]
+         -a -z "$XKBMODEL" ]
 then
-    echo The keyboard model is unknown.  Keyboard will not be configured. >&2
-    XKBMODEL=''
+    echo The keyboard model is unknown, assuming \'pc105\'.  Keyboard may be configured incorrectly. >&2
+    XKBMODEL='pc105'
 fi
 [ -n "$XKBMODEL" -o -z "$savekbdfile" ] || exit 1
 
