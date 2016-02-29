@@ -336,6 +336,8 @@ gzipped_good_psf_fonts : $(GZIPPED_GOOD_PSF_FONTS)
 
 uuencoded_good_raw_fonts : $(UUENCODED_GOOD_RAW_FONTS)
 
+gzipped_psf_fonts : $(GZIPPED_PSF_FONTS)
+
 
 SCRNMAPS = $(addsuffix .scm, $(ENCODING_FONTSET))
 
