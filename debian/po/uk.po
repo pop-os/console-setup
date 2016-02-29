@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-03-07 16:03+0100\n"
 "Last-Translator: Anton Gladky <gladk@debian.org>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -952,8 +952,10 @@ msgstr "Британська англійська"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Болгарська"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Болгарська (розкладка phonetic)"
 
 #. Type: select
 #. Choices
@@ -1386,3 +1388,6 @@ msgstr "В'єтнамська"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Розкладка клавіатури:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Болгарська"

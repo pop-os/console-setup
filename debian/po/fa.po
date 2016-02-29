@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-03-03 13:05+0330\n"
 "Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
@@ -937,8 +937,10 @@ msgstr "انگليسي بريتانيا"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "بلغاري"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "بلغاري (phonetic layout)"
 
 #. Type: select
 #. Choices
@@ -1371,3 +1373,6 @@ msgstr "ویتنامی"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ﻦﻘﺸﻫ ﻚﻠﻳﺪﻫﺍ"
+
+#~ msgid "Bulgarian"
+#~ msgstr "بلغاري"

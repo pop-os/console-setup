@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: d-i\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2008-08-07 11:42+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -931,8 +931,10 @@ msgstr "બ્રિટિશ અંગ્રેજી"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "બલ્ગેરિયન"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
 
 #. Type: select
 #. Choices
@@ -1365,3 +1367,6 @@ msgstr "વિયેતનામી"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ઉપયોગ કરવાનો કીમેપ:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "બલ્ગેરિયન"

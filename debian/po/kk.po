@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-04-02 12:00+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh\n"
@@ -941,8 +941,10 @@ msgstr "Ұлыбританиялық ағылшын"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Болгар"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Болгар (phonetic layout)"
 
 #. Type: select
 #. Choices
@@ -1375,3 +1377,6 @@ msgstr "Вьетнам"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Қолданылатын пернетақта жаймасы:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Болгар"

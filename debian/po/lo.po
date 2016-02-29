@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lo\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-04-25 09:05+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
@@ -897,8 +897,10 @@ msgstr "ພາສາອັງກິດ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ບັລເກເຣຍ"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ບັລເກເຣຍຮູບແບບການອອກສຽງ"
 
 #. Type: select
 #. Choices
@@ -1331,3 +1333,6 @@ msgstr "ພາສາຫວຽດ"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ຜັງແປ້ນພິມທີ່ໃຊ້:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ບັລເກເຣຍ"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2006-03-21 14:42-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -952,8 +952,10 @@ msgstr "Béarla Sasanach"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Bulgárach"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Bulgárach (leagan amach phonetic)"
 
 #. Type: select
 #. Choices
@@ -1391,3 +1393,6 @@ msgstr "Vítneamach"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Eochairmhapáil le húsáid:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulgárach"

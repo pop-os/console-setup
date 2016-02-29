@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-10-19 19:41+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: debian-l10n-eu@lists.debian.org\n"
@@ -951,8 +951,10 @@ msgstr "Erresuma Batuko ingelesa"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Bulgariarra"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Bulgariarra (diseinu fonetikoa)"
 
 #. Type: select
 #. Choices
@@ -1386,3 +1388,6 @@ msgstr "Vietnamera"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Erabiliko den teklatu-mapa:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulgariarra"

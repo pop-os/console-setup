@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-02-21 09:17+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
@@ -944,8 +944,10 @@ msgstr "Inglês Britânico"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Búlgaro"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Búlgaro (layout phonetic)"
 
 #. Type: select
 #. Choices
@@ -1378,3 +1380,6 @@ msgstr "Vietnamita"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Mapa de teclado a utilizar:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Búlgaro"

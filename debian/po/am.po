@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2014-04-04 22:07+0100\n"
 "Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
@@ -898,8 +898,10 @@ msgstr "የእንግሊዝ እንግሊዘኛ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ቡልጋሪያዊ"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ቡልጋርኛ  (phonetic layout)"
 
 #. Type: select
 #. Choices
@@ -1332,3 +1334,6 @@ msgstr "ቪትናምኛ"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ጥቅም ላይ የሚውልው የፊደል ገበታ፦"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ቡልጋሪያዊ"

@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-03-13 19:06+0600\n"
 "Last-Translator: Ayesha Akhtar <ayesha@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -938,12 +938,14 @@ msgstr "ব্রাজিলীয়"
 msgid "British English"
 msgstr "বৃটিশ ইংরেজী"
 
-# console-keymaps-acorn, Bulgarian
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "বুলগেরীয়"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "বুলগেরীয় (phonetic লেআউট)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -1405,3 +1407,7 @@ msgstr "ভিয়েতনামী"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "যে কি-ম্যাপ ব্যবহার করা হবে:"
+
+# console-keymaps-acorn, Bulgarian
+#~ msgid "Bulgarian"
+#~ msgstr "বুলগেরীয়"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2010-08-16 00:19+0200\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
@@ -933,8 +933,10 @@ msgstr "Îngilîziya Brîtanya"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Bulgarî"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Bulgarî (phonetic)"
 
 #. Type: select
 #. Choices
@@ -1374,3 +1376,6 @@ msgstr "vîyetnamî"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Plana bişkojan a dê were bikaranîn:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulgarî"

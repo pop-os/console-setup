@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-01-18 15:40+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -918,8 +918,10 @@ msgstr "​អង់គ្លេស អង់គ្លេស"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ប៊ុលហ្គារី"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ប៊ុលហ្គារី-phonetic"
 
 #. Type: select
 #. Choices
@@ -1352,3 +1354,6 @@ msgstr "វៀតណាម"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ផែនទី​គ្រាប់ចុច​ត្រូវ​ប្រើ ៖"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ប៊ុលហ្គារី"

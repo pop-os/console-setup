@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-04-11 15:54+0200\n"
 "Last-Translator: Arangel Angov <arangel@linux.net.mk>\n"
 "Language-Team: Macedonian <>\n"
@@ -949,8 +949,10 @@ msgstr "Британски англиски"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Бугарски"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Бугарски (фонетски распоред)"
 
 #. Type: select
 #. Choices
@@ -1383,3 +1385,6 @@ msgstr "Виетнамски"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Распоред на тастатура кој ќе се користи:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Бугарски"

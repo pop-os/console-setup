@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-04-25 17:18+0300\n"
 "Last-Translator: Viktar Siarheichyk <vics@eq.by>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -939,8 +939,10 @@ msgstr "Брытанская англійская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Балгарская"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Балгарская (раскладка phonetic)"
 
 #. Type: select
 #. Choices
@@ -1373,3 +1375,6 @@ msgstr "В'етнамская"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Ужываць кодавы набор:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Балгарская"

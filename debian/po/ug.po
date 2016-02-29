@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-09-27 09:51+0600\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -854,8 +854,8 @@ msgid ""
 "the Control+period combination as a Compose key."
 msgstr ""
 "تېكىست تىزگىن سۇپىسىدا بىرىكمە كۇنۇپكا يۇنىكود ھالەتتە ئىشلىمەيدۇ. ئەگەر "
-"يۇنىكود ھالەتتە بولمىسا، مەيلى سىز قانداق تاللىماڭ، Control + . (چېكىت)"
-"بىرىكمە كۇنۇپكىسى قىلىپ  ئىشلەتكىلى بولىدۇ."
+"يۇنىكود ھالەتتە بولمىسا، مەيلى سىز قانداق تاللىماڭ، Control + . "
+"(چېكىت)بىرىكمە كۇنۇپكىسى قىلىپ  ئىشلەتكىلى بولىدۇ."
 
 #. Type: boolean
 #. Description
@@ -945,8 +945,10 @@ msgstr "ئەنگلىيە ئىنگلىزچە"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "بۇلغارچە"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "بۇلغارچە (فونېتىكىلىق جايلاشتۇرۇش)"
 
 #. Type: select
 #. Choices
@@ -1379,3 +1381,6 @@ msgstr "ۋىيېتنامچە"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ئىشلىتىدىغان ھەرپتاختا خەرىتىسى:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "بۇلغارچە"

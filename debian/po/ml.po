@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-09-30 12:04+0530\n"
 "Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
@@ -934,12 +934,14 @@ msgstr "ബ്രസീലിയന്‍"
 msgid "British English"
 msgstr "ബ്രിട്ടീഷ് ഇംഗ്ലീഷ്"
 
-# console-keymaps-acorn, Bulgarian
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ബള്‍ഗേറിയന്‍"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ബള്‍ഗേറിയന്‍ (phonetic layout)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -1401,3 +1403,7 @@ msgstr "വിയറ്റ്നാമീസ്"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ഉപയോഗിയ്ക്കേണ്ട കീമാപ്:"
+
+# console-keymaps-acorn, Bulgarian
+#~ msgid "Bulgarian"
+#~ msgstr "ബള്‍ഗേറിയന്‍"

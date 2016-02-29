@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-10-19 22:10+0100\n"
 "Last-Translator: Karolina Kalic <karolina@resenje.org>\n"
 "Language-Team: Serbian <debian-l10n-serbian@lists.debian.org>\n"
@@ -472,9 +472,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Подразумевана вредност за опције распореда тастатуре је XKBOPTIONS="
-"„${XKBOPTIONS}“.  Базирана је на тренутно дефинисаним језику/региону и "
-"подешавањима у /etc/X11/xorg.conf."
+"Подразумевана вредност за опције распореда тастатуре је "
+"XKBOPTIONS=„${XKBOPTIONS}“.  Базирана је на тренутно дефинисаним језику/"
+"региону и подешавањима у /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -936,8 +936,10 @@ msgstr "британски енглески"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "бугарски"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "бугарски (phonetic распоред)"
 
 #. Type: select
 #. Choices
@@ -1370,3 +1372,6 @@ msgstr "вијетнамски"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Распоред тастатуре за употребу:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "бугарски"

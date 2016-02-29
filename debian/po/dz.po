@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dDz.po\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2012-02-29 04:41-0500\n"
 "Last-Translator: Jurmey Rabgay <jrabgay@dit.gov.bt>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -935,12 +935,14 @@ msgstr "བཱ་ར་ཛི་ལི་ཡཱན།"
 msgid "British English"
 msgstr "བིརི་ཊིཤ་ཨིང་ལིཤ།"
 
-# console-keymaps-acorn, Bulgarian
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "བཱལ་ག་རི་ཡཱན།"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "བཱལ་ག་རི་ཡཱན། (phonetic layout)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -1410,3 +1412,7 @@ msgstr ". ལེ་ཊིན་ - ཝེཊི་ན་མིསི།"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ས་ཁྲ་གཙོ་བོ :"
+
+# console-keymaps-acorn, Bulgarian
+#~ msgid "Bulgarian"
+#~ msgstr "བཱལ་ག་རི་ཡཱན།"

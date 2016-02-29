@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-03-05 11:15+0100\n"
 "Last-Translator: Hai-Nam Nguyen <hainam@jcisio.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
@@ -938,8 +938,10 @@ msgstr "Anh Quốc Anh"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Bảo Gia Lơi"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Bảo Gia Lơi (bố trí phonetic)"
 
 #. Type: select
 #. Choices
@@ -1372,3 +1374,6 @@ msgstr "Tiếng Việt"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Bàn phím cần dùng:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bảo Gia Lơi"

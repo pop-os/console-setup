@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2011-03-01 12:49+0400\n"
 "Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
 "Language-Team: Georgian\n"
@@ -919,8 +919,10 @@ msgstr "ბრიტანული ინგლისური"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ბულგარული"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ბულგარული (phonetic განლაგება)"
 
 #. Type: select
 #. Choices
@@ -1361,3 +1363,6 @@ msgstr ". ლათინური - ვიეტნამური"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "სასურველი განლაგება:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ბულგარული"

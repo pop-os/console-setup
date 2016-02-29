@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-10-02 12:33+0300\n"
 "Last-Translator: galaxico <galaxico@quad-nrg.net>\n"
 "Language-Team: Greek <debian-l10n-greek@lists.debian.org>\n"
@@ -968,8 +968,10 @@ msgstr "Αγγλική"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Βουλγάρικη"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Βουλγάρικη (φωνητική διάταξη)"
 
 #. Type: select
 #. Choices
@@ -1404,3 +1406,6 @@ msgstr "Βιετναμέζικα"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Απεικόνιση πληκτρολογίου για χρήση:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Βουλγάρικη"

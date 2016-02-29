@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_is\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-10-03 13:25+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
@@ -952,8 +952,10 @@ msgstr "Bresk enskt"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "Búlgarskt"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "Búlgarskt (phonetic uppsetning)"
 
 #. Type: select
 #. Choices
@@ -1386,3 +1388,6 @@ msgstr "Víetnamskt"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Lyklaborðsvörpun sem á að nota:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Búlgarskt"

@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2015-02-27 11:26+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -923,8 +923,10 @@ msgstr "อังกฤษบริเตน"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "บัลแกเรีย"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "บัลแกเรีย (ผัง phonetic)"
 
 #. Type: select
 #. Choices
@@ -1357,3 +1359,6 @@ msgstr "เวียดนาม"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ผังแป้นพิมพ์ที่จะใช้:"
+
+#~ msgid "Bulgarian"
+#~ msgstr "บัลแกเรีย"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-09-30 16:17+0530\n"
 "Last-Translator: Prabodh C P (FSMK Localisation Team) <prabodh@fsmk.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -933,8 +933,10 @@ msgstr "ಬ್ರಿಟಿಷ್ ಇಂಗ್ಲೀಷ್"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "ಬಲ್ಗೇರಿಯನ್"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "ಬಲ್ಗೇರಿಯನ್ (ಉಚ್ಚಾರಣಾನುರೂಪವಾಗಿರುವ ವಿನ್ಯಾಸ)"
 
 #. Type: select
 #. Choices
@@ -1367,3 +1369,6 @@ msgstr "ವಿಯೆಟ್ನಾಮೀಸ್"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ಉಪಯೇಗಿಸುವ ಕೀಲಿ ಗಾತ್ರ::"
+
+#~ msgid "Bulgarian"
+#~ msgstr "ಬಲ್ಗೇರಿಯನ್"

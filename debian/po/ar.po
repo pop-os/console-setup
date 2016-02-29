@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
 "PO-Revision-Date: 2013-09-30 11:24+0300\n"
 "Last-Translator: Ossama Khayat <okhayat@gmail.com>\n"
 "Language-Team: American English <okhayat@gmail.com>\n"
@@ -931,12 +931,14 @@ msgstr "البرازيلية"
 msgid "British English"
 msgstr "البريطانية"
 
-# console-keymaps-acorn, Bulgarian
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Bulgarian"
-msgstr "البلغارية"
+#, fuzzy
+#| msgid "Bulgarian (phonetic layout)"
+msgid "Bulgarian (BDS layout)"
+msgstr "البلغارية - تخطيط phonetic"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -1398,3 +1400,7 @@ msgstr "الفييتنامية"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "خارطة المفاتيح التي ستستخدم:"
+
+# console-keymaps-acorn, Bulgarian
+#~ msgid "Bulgarian"
+#~ msgstr "البلغارية"
