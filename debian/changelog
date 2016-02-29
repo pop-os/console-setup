@@ -32,8 +32,9 @@ console-setup (1.138) UNRELEASED; urgency=medium
   * debian/keyboard_present.sh: add a pattern for Bluetooth keyboards,
     closes: #807945.
   * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
-    not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.
-    Thanks to Samuel Thibault for #778721 and #778722.
+    not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.  Do
+    not set default variant 'bds' for Bulgarian or 'latin' for Serbian.
+    Closes: #778721, #778722.
   * Remove Keyboard/locale/lib/ from the source package.  Closes: #787528
   * bug-control: add systemd to the packages in the package-status list.
   * Make the builds reproducible.  Thanks to Reiner Herrmann for the
