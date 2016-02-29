@@ -25,15 +25,17 @@ console-setup (1.138) UNRELEASED; urgency=medium
     Give them a .sh extension to make them sourcable.  Downgrade the
     dependency on initscripts to Recommends on FreeBSD and Suggests on
     Linux.  Closes: #804988.
-  * bug-control: add systemd to the packages in the package-status list.
+  * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
   * Put db_stop near the end of console-setup.postinst.  Redirect all
     output of setupcon to /dev/null.  Hopefully, this
     closes: #782753, #776101.
-  * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
+  * debian/keyboard_present.sh: add a pattern for Bluetooth keyboards,
+    closes: #807945.
   * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
     not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.
     Thanks to Samuel Thibault for #778721 and #778722.
   * Remove Keyboard/locale/lib/ from the source package.  Closes: #787528
+  * bug-control: add systemd to the packages in the package-status list.
   * Make the builds reproducible.  Thanks to Reiner Herrmann for the
     patch.  Closes: #775531.
 
