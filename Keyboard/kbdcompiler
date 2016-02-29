@@ -94,13 +94,13 @@ printf STDERR "Compiling compact keymaps for %s...\n", $model;
 for my $layout (values %KeyboardNames::layouts) {
     next if ($layout eq 'nec/jp');
     next if ($layout eq 'nec_vndr/jp');
-    my $actual_layout = (($layout eq 'cs') ? 'cs,cs'
+    my $actual_layout = (($layout eq 'rs') ? 'rs,rs'
 			 : (($layout eq 'lt') ? 'lt,lt'
 			    : (($nonlatin =~ / $layout /)
 			       ? "us,$layout" : $layout)));
     for my $variant ('', values %{$KeyboardNames::variants{$layout}}) {
 	my $actual_variant;
-	if ($actual_layout eq 'cs,cs') {
+	if ($actual_layout eq 'rs,rs') {
 	    if ($variant =~ /latin/) {
 		$actual_variant = "$variant,$variant";
 	    } elsif ($variant eq 'yz') {
