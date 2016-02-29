@@ -4,7 +4,7 @@
 # Required-Start:    $remote_fs
 # Required-Stop:
 # Should-Start:      console-screen kbd
-# Default-Start:     S
+# Default-Start:     RUNLEVEL
 # Default-Stop:
 # X-Interactive:     true
 # Short-Description: Set console font and keymap

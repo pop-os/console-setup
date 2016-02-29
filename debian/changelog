@@ -18,6 +18,8 @@ console-setup (1.138) UNRELEASED; urgency=medium
       Closes: #810538.
   * On Linux: use precomputed scripts and Udev to configure the console.
     Closes: #759657, #763695.
+  * On Linux: move init.d/console-setup.sh out of singe user mode.
+    Closes: #796603, #796603.
   * Move the init scripts from keyboard-configuration to
     console-setup-linux and console-setup-freebsd.  Closes: #805928.
     Give them a .sh extension to make them sourcable.
