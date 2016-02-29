@@ -126,7 +126,8 @@ for my $layout (values %KeyboardNames::layouts) {
 	    execute ("./ckbcomp $freebsd -compact -I. -I${xkbdir} -rules xorg"
 		     ." -model $model"
 		     ." -layout $actual_layout -variant $actual_variant"
-		     ." >$dir/$model-$layout:$variant.new")
+		     ." >$dir/$model-$layout:$variant.new"
+                     ." 2>>ckbcomp.log")
 		and die "$0: ckbcomp failed\n" if (! -f "$dir/$model-$layout:$variant.new");
 	    checkrename "$dir/$model-$layout:$variant.new", "$dir/$model-$layout:$variant";
 	}
@@ -182,7 +183,7 @@ for $k1 (keys %kmaps) {
 
 printf STDERR "Reducing the keymaps for %s...\n", $model;
 
-while (sort keys %kmaps) {
+while (keys %kmaps) {
     my $mink1 = '';
     my $mink2 = '';
     my $minsub = 10000000;

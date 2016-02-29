@@ -65,7 +65,7 @@ dkey_files : $(dkey_files)
 clean:
 	-rm -f *~
 	-rm -rf compose $(compose_files) $(dkey_files)
-	-rm -rf linux-keymaps freebsd-keymaps keymaps
+	-rm -rf linux-keymaps freebsd-keymaps keymaps ckbcomp.log
 	-rm -f keymaps.dir names.list
 	-rm -f charmap_functions.sh
 	-rm -f $(gzipped_ekmaps) $(gzipped_ekbds)

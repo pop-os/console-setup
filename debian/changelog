@@ -19,6 +19,7 @@ console-setup (1.138) UNRELEASED; urgency=medium
   * Changes in ckbcomp:
     - remove the 'use locale' pragma as suggested by Klaus Ethgen.
       Closes: #810538.
+  * kbdcompiler: create a log file ckbcomp.log.
   * On Linux: use precomputed scripts and Udev to configure the console.
     Closes: #759657, #763695.
   * On Linux: move init.d/console-setup.sh out of singe user mode.
