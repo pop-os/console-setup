@@ -12,7 +12,10 @@ console-setup (1.138) UNRELEASED; urgency=medium
     - when the keyboard model is unknown, use a default value and
       issue a warning.  Closes: #751955, #788441.  Apply a patch about
       KMAP by Michal Maruska;
-    - more robust test whether /etc is writable.  Closes: #810246.
+    - more robust test whether /etc is writable, closes: #810246;
+    - setup-dir: configure only the keyboard and only the current
+      console.  Create a flag file /run/console-setup/keymap_loaded so
+      that we can avoid loading the keyboard second time.
   * Changes in ckbcomp:
     - remove the 'use locale' pragma as suggested by Klaus Ethgen.
       Closes: #810538.

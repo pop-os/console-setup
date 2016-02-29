@@ -325,6 +325,8 @@ while [ "$1" ]; do
             ;;
         --setup-dir)
             shift
+            do_kbd=yes
+            do_currenttty=yes
             setupdir="$1"
             do_check=''
             ;;
@@ -1109,7 +1111,7 @@ fi
 
 
 ###########################################################################
-### SETUPDIR
+### PRINTONLY
 ###########################################################################
 
 
@@ -1146,6 +1148,11 @@ if [ "$do_printonly" ]; then
         echo
     done
 fi
+
+###########################################################################
+### SETUPDIR
+###########################################################################
+
 
 if [ "$setupdir" ]; then
 
@@ -1204,6 +1211,8 @@ if [ "$setupdir" ]; then
         fileargs "$args"
         echo
     done >>"$setupdir"/bin/setupcon
+    echo 'mkdir /run/console-setup' >>"$setupdir"/bin/setupcon
+    echo '>/run/console-setup/keymap_loaded' >>"$setupdir"/bin/setupcon
     echo exit 0 >>"$setupdir"/bin/setupcon
     sort $TMPFILE | uniq | grep -v 'printf$' >"$setupdir"/morefiles
 fi
