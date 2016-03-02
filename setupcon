@@ -891,7 +891,7 @@ if [ -n "$do_save" ]; then
         ?*) cp "$FONTMAPFILE" /etc/console-setup/cached_"${FONTMAPFILE##*/}" ;;
     esac
     if [ "$kernel" = linux ]; then
-        commands_k=$($0 -k --current-tty --print-commands-only)
+        commands_k=$($0 -k               --print-commands-only)
         commands_f=$($0 -f --current-tty --print-commands-only)
         commands_t=$($0 -t --current-tty --print-commands-only)
         cat >/etc/console-setup/cached_setup_keyboard.sh <<EOF
@@ -1066,7 +1066,10 @@ if [ "$do_kbd" = linux ]; then
 fi
 
 # Setup unicode/non-unicode mode
-if [ "$do_kbd" = linux -o "$do_term" = linux ]; then
+# The following had to be [ "$do_kbd" = linux -o "$do_term" = linux ].
+# Unfortunately, that way the X keyboard will be damaged when
+# console-setup modifies the keyboard mode of X.
+if [ "$do_kbd" = linux ]; then
     if which kbd_mode >/dev/null; then
         if [ "$unicode" ]; then
             run in '' kbd_mode -u
