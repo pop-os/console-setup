@@ -100,7 +100,7 @@ install-linux: build
 	$(MAKE) etcdir=debian/console-setup-linux/etc \
 		prefix=debian/console-setup-linux/usr install-common-linux
 	dh_install -p console-setup-linux \
-		90-console-setup.rules etc/udev/rules.d/
+		90-console-setup.rules lib/udev/rules.d/
 	dh_installinit -p console-setup-linux \
 		--no-start --name keyboard-setup.sh
 	dh_installinit -p console-setup-linux \
