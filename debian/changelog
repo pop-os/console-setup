@@ -43,8 +43,10 @@ console-setup (1.138) UNRELEASED; urgency=medium
   * Make the builds reproducible.  Thanks to Reiner Herrmann for the
     patch.  Closes: #775531.
   * Minor clarifications in man/keyboard.5
+  * Make console-setup-linux and console-setup-freebsd conflict with each
+    other so that lintian is pleased.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Mon, 29 Feb 2016 18:28:13 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 02 Mar 2016 20:28:13 +0300
 
 console-setup (1.137) unstable; urgency=medium
 
