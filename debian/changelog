@@ -26,9 +26,8 @@ console-setup (1.138) UNRELEASED; urgency=medium
     Closes: #796603, #816090.
   * Move the init scripts from keyboard-configuration to
     console-setup-linux and console-setup-freebsd.  Closes: #805928.
-    Give them a .sh extension to make them sourcable.  Downgrade the
-    dependency on initscripts to Recommends on FreeBSD and Suggests on
-    Linux.  Closes: #804988.
+    Give them a .sh extension to make them sourcable.  Move the
+    dependency on initscripts to these two packages.  Closes: #804988.
   * postinst: run update-rc.d with parameter 'defaults'. Closes: #722064.
   * Put db_stop near the end of console-setup.postinst.  Redirect all
     output of setupcon to /dev/null.  Hopefully, this
@@ -37,8 +36,8 @@ console-setup (1.138) UNRELEASED; urgency=medium
     closes: #807945.
   * keyboard-configuration.config: the Serbian keyboard layout is 'rs',
     not 'cs'.  For Bulgarian consider bg,bg as unsupported by Debconf.  Do
-    not set default variant 'bds' for Bulgarian or 'latin' for Serbian.
-    Closes: #778721, #778722.
+    not set default variant 'bds' for Bulgarian or 'latin' for Serbian but
+    use default values instead.  Closes: #778721, #778722.
   * Remove Keyboard/locale/lib/ from the source package.  Closes: #787528
   * bug-control: add systemd to the packages in the package-status list.
   * Make the builds reproducible.  Thanks to Reiner Herrmann for the

@@ -71,8 +71,8 @@ Section: utils
 Priority: optional
 Architecture: all
 Multi-Arch: foreign
-Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= ${source:Version}), ${misc:Depends}
-Suggests: console-setup, initscripts
+Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= ${source:Version}), ${misc:Depends}, initscripts
+Suggests: console-setup
 Breaks: console-terminus, console-cyrillic (<= 0.9-11), console-setup (<< 1.71)
 Replaces: console-terminus, console-setup (<< 1.71)
 Provides: console-terminus
@@ -85,8 +85,7 @@ Section: utils
 Priority: optional
 Architecture: all
 Multi-Arch: foreign
-Depends: vidcontrol, kbdcontrol, keyboard-configuration (= ${source:Version}), ${misc:Depends}
-Recommends: initscripts
+Depends: vidcontrol, kbdcontrol, keyboard-configuration (= ${source:Version}), ${misc:Depends}, initscripts
 Suggests: console-setup
 Breaks: console-setup (<< 1.71)
 Replaces: console-setup (<< 1.71)
