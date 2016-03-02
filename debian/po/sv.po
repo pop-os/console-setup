@@ -951,7 +951,6 @@ msgstr "Engelskbrittisk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgarisk (fonetisk)"
 
@@ -1392,6 +1391,3 @@ msgstr "Vietnamesiska"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Tangentuppsättning som ska användas:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgarisk"

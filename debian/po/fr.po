@@ -17,7 +17,7 @@
 # Christian Perrier <bubulle@debian.org>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
 #   Alastair McKinstry <mckinstry@computer.org>, 2001.
 #   Cedric De Wilde <daique@tiscalinet.be>, 2001.
-#   Christian Perrier <bubulle@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015.
+#   Christian Perrier <bubulle@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2013, 2014, 2015, 2016.
 #   Christophe Fergeau <christophe.fergeau@ensimag.imag.fr>, 2000-2001.
 #   Christophe Merlet (RedFox) <redfox@eikonex.org>, 2001.
 #   Free Software Foundation, Inc., 2000-2001, 2004, 2005, 2006.
@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-02-20 07:09+0100\n"
+"PO-Revision-Date: 2016-02-29 06:42+0100\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
@@ -971,7 +971,6 @@ msgstr "Britannique"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgare (phonétique)"
 
@@ -1406,6 +1405,3 @@ msgstr "Vietnamien"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Disposition de clavier à utiliser :"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgare"

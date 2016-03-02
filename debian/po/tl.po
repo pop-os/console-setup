@@ -924,7 +924,6 @@ msgstr "Ingles ng Britanya"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgarian (phonetic layout)"
 
@@ -1396,7 +1395,3 @@ msgstr ""
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Anyo ng tiklado na gamitin:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgarian"

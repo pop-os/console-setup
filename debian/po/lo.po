@@ -17,7 +17,7 @@ msgstr ""
 "PO-Revision-Date: 2012-04-25 09:05+0700\n"
 "Last-Translator: Anousak Souphavanh <anousak@gmail.com>\n"
 "Language-Team: Lao <lo@li.org>\n"
-"Language: \n"
+"Language: lo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -898,7 +898,6 @@ msgstr "ພາສາອັງກິດ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "ບັລເກເຣຍຮູບແບບການອອກສຽງ"
 
@@ -1333,6 +1332,3 @@ msgstr "ພາສາຫວຽດ"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ຜັງແປ້ນພິມທີ່ໃຊ້:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "ບັລເກເຣຍ"

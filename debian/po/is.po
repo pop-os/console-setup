@@ -953,7 +953,6 @@ msgstr "Bresk enskt"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Búlgarskt (phonetic uppsetning)"
 
@@ -1388,6 +1387,3 @@ msgstr "Víetnamskt"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Lyklaborðsvörpun sem á að nota:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Búlgarskt"

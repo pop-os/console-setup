@@ -7,7 +7,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # Console-setup strings translations:
 # (identified by "./console-setup.templates")
-# Copyright (C) 2003-2014 Miguel Figueiredo <elmig@debianpt.org>
+# Copyright (C) 2003-2016 Miguel Figueiredo <elmig@debianpt.org>
 # This file is distributed under the same license as debian-installer.
 #
 #
@@ -17,14 +17,14 @@
 #   Free Software Foundation, Inc., 2001,2004
 #   Filipe Maia <fmaia@gmx.net>, 2001.
 #   Alastair McKinstry <mckinstry@computer.org>, 2001.
-#   Miguel Figueiredo <elmig@debianpt.org>, 2005-2015
+#   Miguel Figueiredo <elmig@debianpt.org>, 2005-2016
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-02-21 09:17+0000\n"
+"PO-Revision-Date: 2016-02-29 20:16+0000\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -945,7 +945,6 @@ msgstr "Inglês Britânico"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Búlgaro (layout phonetic)"
 
@@ -1380,6 +1379,3 @@ msgstr "Vietnamita"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Mapa de teclado a utilizar:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Búlgaro"

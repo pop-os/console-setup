@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2012-03-20 16:35+0200\n"
+"PO-Revision-Date: 2013-08-19 15:04+0300\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "Language: fi\n"
@@ -953,7 +953,6 @@ msgstr "brittienglantilainen"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "bulgarialainen (phonetic-asettelu)"
 
@@ -1417,7 +1416,3 @@ msgstr "Vietnam"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Käytettävä näppäinkartta:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "bulgarialainen"

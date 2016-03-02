@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2013-09-27 09:51+0600\n"
+"PO-Revision-Date: 2014-03-03 14:41+0600\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -946,7 +946,6 @@ msgstr "ئەنگلىيە ئىنگلىزچە"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "بۇلغارچە (فونېتىكىلىق جايلاشتۇرۇش)"
 
@@ -1381,6 +1380,3 @@ msgstr "ۋىيېتنامچە"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ئىشلىتىدىغان ھەرپتاختا خەرىتىسى:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "بۇلغارچە"

@@ -935,7 +935,6 @@ msgstr "英語"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "保加利亞語 (拼音排列)"
 
@@ -1399,7 +1398,3 @@ msgstr "越南語"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "要使用的鍵盤對應:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "保加利亞語"

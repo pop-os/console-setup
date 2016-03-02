@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2012-05-27 19:07+0300\n"
+"PO-Revision-Date: 2012-08-26 02:00+0300\n"
 "Last-Translator: Rimas Kudelis <rq@akl.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
@@ -956,7 +956,6 @@ msgstr "Britų angliškas"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgarų (fonetinis)"
 
@@ -1391,6 +1390,3 @@ msgstr "Vietnamiečių"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Naudotinas klavišų išdėstymas:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgarų"

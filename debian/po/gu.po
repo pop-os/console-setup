@@ -932,7 +932,6 @@ msgstr "બ્રિટિશ અંગ્રેજી"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
 
@@ -1367,6 +1366,3 @@ msgstr "વિયેતનામી"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ઉપયોગ કરવાનો કીમેપ:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "બલ્ગેરિયન"

@@ -934,7 +934,6 @@ msgstr "Îngilîziya Brîtanya"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgarî (phonetic)"
 
@@ -1376,6 +1375,3 @@ msgstr "vîyetnamî"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Plana bişkojan a dê were bikaranîn:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgarî"

@@ -961,7 +961,6 @@ msgstr "Angleška (Velika Britanija)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bolgarska (phonetic)"
 
@@ -1396,6 +1395,3 @@ msgstr "Vietnamščina"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Postavitev tipkovnice, ki jo želite uporabljati:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bolgarska"

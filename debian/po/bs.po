@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_bs\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2013-11-29 19:21+0100\n"
+"PO-Revision-Date: 2014-05-21 11:20+0100\n"
 "Last-Translator: Amila Valjevčić <valjevcic.amila@gmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
@@ -951,7 +951,6 @@ msgstr "Britanski engleski"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bugarski (fonetski raspored)"
 
@@ -1386,6 +1385,3 @@ msgstr "Vijetnamski"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Raspored tipki za upotrebu:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bugarski"

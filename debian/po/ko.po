@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-02-22 21:40+0900\n"
+"PO-Revision-Date: 2015-05-17 09:49+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -931,7 +931,6 @@ msgstr "영국 영어"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "불가리아어 (음성 표기)"
 
@@ -1367,6 +1366,3 @@ msgstr "베트남어"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "사용할 키맵:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "불가리아어"

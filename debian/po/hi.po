@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2012-02-23 22:25-0600\n"
+"PO-Revision-Date: 2012-10-02 08:22-0500\n"
 "Last-Translator: Kumar Appaiah\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: en_US\n"
@@ -938,7 +938,6 @@ msgstr "ब्रिटिश अंग्रेज़ी"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "बल्गारियाई (phonetic खाका)"
 
@@ -1402,7 +1401,3 @@ msgstr "वियेतनामी"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "कुंजीपट खाका जिसे इस्तेमाल करना है:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "बल्गारियाई"

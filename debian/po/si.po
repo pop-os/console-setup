@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2012-02-27 21:09+0530\n"
+"PO-Revision-Date: 2012-02-28 10:16+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
 "Language: si\n"
@@ -922,7 +922,6 @@ msgstr "බ්‍රිතාන්‍ය ඉංග්‍රීසි"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "බල්ගේරියානු (ශබ්දානුකූල)"
 
@@ -1357,6 +1356,3 @@ msgstr "වියෙට්නාම"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "භාවිත යතුරු සැකැස්ම:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "බල්ගේරියානු"

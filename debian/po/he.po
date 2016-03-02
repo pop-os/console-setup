@@ -943,7 +943,6 @@ msgstr "אנגלית בריטית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "בולגרית (פריסה פונטית)"
 
@@ -1408,7 +1407,3 @@ msgstr "וייטנאמית"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "מפת תווים לשימוש:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "בולגרית"

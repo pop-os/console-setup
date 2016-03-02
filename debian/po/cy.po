@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2012-06-14 09:46-0000\n"
+"PO-Revision-Date: 2012-10-18 14:11-0000\n"
 "Last-Translator: Dafydd Tomos <l10n@da.fydd.org>\n"
 "Language-Team: Welsh <>\n"
 "Language: cy\n"
@@ -941,7 +941,6 @@ msgstr "Saesneg Prydeinig"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bwlgareg (cynllun ffonetig)"
 
@@ -1376,6 +1375,3 @@ msgstr "Fietnameg"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Map bysell i'w ddefnyddio:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bwlgareg"

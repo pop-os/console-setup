@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-02-20 18:25+0900\n"
+"PO-Revision-Date: 2016-03-02 18:00+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
@@ -946,7 +946,6 @@ msgstr "イギリス英語"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "ブルガリア語 (phonetic レイアウト)"
 
@@ -1419,6 +1418,3 @@ msgstr "ベトナム語"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "利用するキーマップ:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "ブルガリア語"

@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2013-11-18 21:15+0100\n"
+"PO-Revision-Date: 2014-01-08 11:31:26 GMT+0100\n"
 "Last-Translator: Judit Gyimesi <judit.gyimesi.x@gmail.com>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
@@ -995,7 +995,6 @@ msgstr "brit angol"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "bolgár (fonetikus elrendezés)"
 
@@ -1430,6 +1429,3 @@ msgstr "vietnami"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Használni kívánt billentyűkiosztás:"
-
-#~ msgid "Bulgarian"
-#~ msgstr "bolgár"

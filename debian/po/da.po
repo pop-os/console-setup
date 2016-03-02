@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-03-05 20:12+0200\n"
+"PO-Revision-Date: 2015-08-16 20:20+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -970,7 +970,6 @@ msgstr "Britisk-engelsk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "Bulgarian (phonetic layout)"
 msgid "Bulgarian (BDS layout)"
 msgstr "Bulgarsk kyrillisk (phonetic-udgave)"
 
@@ -1435,7 +1434,3 @@ msgstr "Vietnamesisk"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Tastaturudlæg der skal bruges:"
-
-# console-keymaps-acorn, Bulgarian
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgarsk kyrillisk"
