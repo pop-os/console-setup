@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2016-03-02 18:00+0900\n"
+"PO-Revision-Date: 2016-03-03 18:16+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
@@ -945,9 +945,8 @@ msgstr "イギリス英語"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "ブルガリア語 (phonetic レイアウト)"
+msgstr "ブルガリア語 (BDS レイアウト)"
 
 #. Type: select
 #. Choices
