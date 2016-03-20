@@ -86,7 +86,7 @@ then
 	setxkbmap -option '' -model "$model" "$layout" "$variant" "$options"
     else
 	case "`uname`" in
-	    *GNU*)
+	    GNU)
 		[ ! -f /var/run/hurd-console.pid ] || kill `cat /var/run/hurd-console.pid`
 		;;
 	    *)
