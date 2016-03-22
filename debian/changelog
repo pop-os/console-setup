@@ -1,10 +1,10 @@
-console-setup (1.140) UNRELEASED; urgency=medium
+console-setup (1.140) unstable; urgency=medium
 
   [ Jon Boden ]
   * keyboard-configuration.postinst: Avoid hurd check on non-hurd systems,
     closes: #818842.
 
- -- Samuel Thibault <sthibault@debian.org>  Sun, 20 Mar 2016 23:20:06 +0100
+ -- Christian Perrier <bubulle@debian.org>  Tue, 22 Mar 2016 07:46:45 +0100
 
 console-setup (1.139) unstable; urgency=medium
 
