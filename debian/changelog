@@ -1,3 +1,17 @@
+console-setup (1.142) UNRELEASED; urgency=medium
+
+  [ Anton Zinoviev ]
+  * Keyboard/{xmlreader,compose_translator}: use utf8 instead of the
+    deprecated encoding pragma.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 06 Apr 2016 17:20:58 +0300
+
+console-setup (1.141) unstable; urgency=medium
+
+  * 
+
+ -- 
+
 console-setup (1.140) unstable; urgency=medium
 
   [ Jon Boden ]
