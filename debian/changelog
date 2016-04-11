@@ -4,9 +4,11 @@ console-setup (1.142) UNRELEASED; urgency=medium
   * Keyboard/{xmlreader,compose_translator}: use utf8 instead of the
     deprecated encoding pragma.
   * Keyboard/kbdcompiler: generate properly the precomiled keymaps for
-    console-setup-mini (they have been totaly for a very long time...).
+    console-setup-mini; they have been totaly broken for a very long time...
+  * Use non-recursive make-files.  Closes: #767260.  Some ideas borrowed
+    from http://mischasan.wordpress.com.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Mon, 11 Apr 2016 13:52:12 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Mon, 11 Apr 2016 15:27:03 +0300
 
 console-setup (1.141) unstable; urgency=medium
 
