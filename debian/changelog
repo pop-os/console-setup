@@ -14,9 +14,10 @@ console-setup (1.142) UNRELEASED; urgency=medium
 
 console-setup (1.141) unstable; urgency=medium
 
-  * 
+  * Add systemd units wrapping the init scripts.
+    Closes: #796603
 
- -- 
+ -- Felipe Sateler <fsateler@debian.org>  Fri, 01 Apr 2016 20:24:38 -0300
 
 console-setup (1.140) unstable; urgency=medium
 
