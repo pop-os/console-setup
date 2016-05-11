@@ -9,12 +9,14 @@ console-setup (1.143) UNRELEASED; urgency=medium
     init-system-helpers (>= 1.29~) to initscripts.  Closes: #804988.
   * keyboard-setup.sh.init: remove the unnecessary "Should-Start: keymap
     udev".  Thanks to Felipe Sateler for the helpful discussion.
+  * Move the main logic out of the init.d scripts into scripts installed in
+    /lib/console-setup.
   * Keyboard/kbdcompiler: generate properly the precomiled keymaps for
     console-setup-mini; they have been totaly broken for a while...
   * Keyboard/{xmlreader,compose_translator}: use utf8 instead of the
     deprecated encoding pragma.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 11 May 2016 15:10:07 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 11 May 2016 20:31:21 +0300
 
 console-setup (1.142) unstable; urgency=medium
 

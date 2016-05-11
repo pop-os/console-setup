@@ -100,7 +100,11 @@ deb-install-linux: build
 	$(MAKE) etcdir=debian/console-setup-linux/etc \
 		prefix=debian/console-setup-linux/usr install-common-linux
 	dh_install -p console-setup-linux \
-		90-console-setup.rules lib/udev/rules.d/
+		init/90-console-setup.rules lib/udev/rules.d/
+	dh_install -p console-setup-linux \
+		init/keyboard-setup.sh lib/console-setup/
+	dh_install -p console-setup-linux \
+		init/console-setup.sh lib/console-setup/
 	dh_systemd_enable -p console-setup-linux \
 		--name keyboard-setup
 	dh_systemd_enable -p console-setup-linux \
@@ -123,6 +127,10 @@ deb-install-freebsd: build
 	dh_prep -p console-setup-freebsd
 	$(MAKE) etcdir=debian/console-setup-freebsd/etc \
 		prefix=debian/console-setup-freebsd/usr install-common-freebsd
+	dh_install -p console-setup-freebsd \
+		init/keyboard-setup.sh lib/console-setup/
+	dh_install -p console-setup-freebsd \
+		init/console-setup.sh lib/console-setup/
 	dh_systemd_enable -p console-setup-freebsd \
 		--name keyboard-setup
 	dh_systemd_enable -p console-setup-freebsd \

@@ -7,7 +7,7 @@ ConditionPathExists=/bin/setupcon
 
 [Service]
 Type=oneshot
-ExecStart=/etc/init.d/console-setup.sh start
+ExecStart=/lib/console-setup/console-setup.sh
 RemainAfterExit=yes
 
 [Install]
