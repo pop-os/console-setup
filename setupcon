@@ -1069,7 +1069,7 @@ case "$do_term" in
             esac
 
             if [ "$SETTERM" ]; then
-                run in '' setterm $SETTERM
+                run out '' setterm $SETTERM
             fi
         fi
         ;;
