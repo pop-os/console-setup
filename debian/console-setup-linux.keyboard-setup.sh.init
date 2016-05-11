@@ -3,7 +3,6 @@
 # Provides:          keyboard-setup.sh
 # Required-Start:    mountkernfs
 # Required-Stop:
-# Should-Start:      keymap udev
 # X-Start-Before:    checkroot
 # Default-Start:     S
 # Default-Stop:

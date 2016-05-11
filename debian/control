@@ -71,7 +71,7 @@ Section: utils
 Priority: optional
 Architecture: all
 Multi-Arch: foreign
-Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= ${source:Version}), ${misc:Depends}, initscripts
+Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= ${source:Version}), ${misc:Depends}, init-system-helpers (>= 1.29~) | initscripts
 Suggests: console-setup
 Conflicts: console-setup-freebsd
 Breaks: console-terminus, console-cyrillic (<= 0.9-11), console-setup (<< 1.71)
@@ -86,7 +86,7 @@ Section: utils
 Priority: optional
 Architecture: all
 Multi-Arch: foreign
-Depends: vidcontrol, kbdcontrol, keyboard-configuration (= ${source:Version}), ${misc:Depends}, initscripts
+Depends: vidcontrol, kbdcontrol, keyboard-configuration (= ${source:Version}), ${misc:Depends}, init-system-helpers (>= 1.29~) | initscripts
 Suggests: console-setup
 Conflicts: console-setup-linux
 Breaks: console-setup (<< 1.71)
