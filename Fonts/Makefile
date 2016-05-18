@@ -383,7 +383,7 @@ $~clean:
 # The script 'fontcodesets' computes which codesets a font supports
 maintainer-clean .PHONY : $~maintainer-clean
 $~maintainer-clean : $~clean
-	rm $(doubled_bdfs)
+	rm -f $(doubled_bdfs)
 	$(MAKE) $(doubled_bdfs)
 	echo "I18N_FONT_NAMES := " $(sort $(foreach face, $(NONLEGACY_FACES), \
 	$(addsuffix -$(face), $(shell cd $(fntdir); ./fontcodesets $($(face)-BDFS)))) \
