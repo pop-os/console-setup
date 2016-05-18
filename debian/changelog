@@ -12,7 +12,7 @@ console-setup (1.143) UNRELEASED; urgency=medium
   * Move the main logic out of the init.d scripts into scripts installed in
     /lib/console-setup.
   * Remove 'Before=' and 'WantedBy=' from console-setup.service as it is
-    not necessary to run it before getty and in single user mode.
+    not necessary to run it in single user mode and before getty.
   * Keyboard/kbdcompiler: generate properly the precomiled keymaps for
     console-setup-mini; they have been totaly broken for a while...
   * Keyboard/{xmlreader,compose_translator}: use utf8 instead of the
