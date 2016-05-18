@@ -1048,28 +1048,37 @@ case "$do_term" in
     linux*)
         SETTERM=''
         if [ -n "$BEEP" ]; then
+            # we use hardcoded ESC sequences instead of setterm
+            # because we TERM is unset in scripts run by udev
             case "$BEEP" in
                 default) ;;
                 standard)
-                    SETTERM='--bfreq 750 --blength 100' ;;
+                    # --bfreq 750 --blength 100
+                    SETTERM='\033[11;100]\033[10;750]' ;;
                 short)
-                    SETTERM='--bfreq 750 --blength 40' ;;
+                    # --bfreq 750 --blength 40
+                    SETTERM='\033[11;40]\033[10;750]' ;;
                 shortest)
-                    SETTERM='--bfreq 750 --blength 9' ;;
+                    # --bfreq 750 --blength 9
+                    SETTERM='\033[11;9]\033[10;750]' ;;
                 polite)
-                    SETTERM='--bfreq 130 --blength 9' ;;
+                    # --bfreq 130 --blength 9
+                    SETTERM='\033[11;9]\033[10;130]' ;;
                 attention)
-                    SETTERM='--bfreq 130 --blength 600' ;;
+                    # --bfreq 130 --blength 600
+                    SETTERM='\033[11;600]\033[10;130]' ;;
                 annoying)
-                    SETTERM='--bfreq 550 --blength 1000' ;;
+                    # --bfreq 550 --blength 1000
+                    SETTERM='\033[11;1000]\033[10;550]' ;;
                 off)
-                    SETTERM='--blength 0' ;;
+                    # --blength 0
+                    SETTERM='\033[11;0]' ;;
                 *)
                     echo setupcon: Unrecognised setting BEEP="$BEEP" >&2 ;;
             esac
 
             if [ "$SETTERM" ]; then
-                run out '' setterm $SETTERM
+                run out FORK printf "$SETTERM"
             fi
         fi
         ;;
