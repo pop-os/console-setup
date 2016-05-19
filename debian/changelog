@@ -11,14 +11,14 @@ console-setup (1.143) UNRELEASED; urgency=medium
     udev".  Thanks to Felipe Sateler for the helpful discussion.
   * Move the main logic out of the init.d scripts into scripts installed in
     /lib/console-setup.
-  * Remove 'Before=' and 'WantedBy=' from console-setup.service as it is
-    not necessary to run it in single user mode and before getty.
+  * console-setup.service: move this service out of single user mode.  Do
+    not require to run it before getty.
   * Keyboard/kbdcompiler: generate properly the precomiled keymaps for
     console-setup-mini; they have been totaly broken for a while...
   * Keyboard/{xmlreader,compose_translator}: use utf8 instead of the
     deprecated encoding pragma.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 18 May 2016 14:37:10 +0300
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 19 May 2016 22:31:27 +0300
 
 console-setup (1.142) unstable; urgency=medium
 

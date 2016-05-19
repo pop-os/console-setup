@@ -9,3 +9,6 @@ ConditionPathExists=/bin/setupcon
 Type=oneshot
 ExecStart=/lib/console-setup/console-setup.sh
 RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
