@@ -76,7 +76,7 @@ console-setup (1.138) unstable; urgency=medium
   * kbdcompiler: create a log file ckbcomp.log.
   * On Linux: use precomputed scripts and Udev to configure the console.
     Closes: #759657, #763695.
-  * On Linux: move init.d/console-setup.sh out of singe user mode.
+  * On Linux: move init.d/console-setup.sh out of single user mode.
     Closes: #796603, #816090.
   * Move the init scripts from keyboard-configuration to
     console-setup-linux and console-setup-freebsd.  Closes: #805928.
