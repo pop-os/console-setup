@@ -1,3 +1,10 @@
+console-setup (1.144) unstable; urgency=medium
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 28 May 2016 15:13:01 +0200
+
 console-setup (1.143) unstable; urgency=medium
 
   [ Anton Zinoviev ]
