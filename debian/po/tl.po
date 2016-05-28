@@ -169,9 +169,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
-#, fuzzy
 msgid "Character set to support:"
-msgstr "Pumili ng iba pang mga lokalisasyon na susuportahan:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -1007,13 +1006,11 @@ msgstr ""
 msgid "Hindi"
 msgstr ""
 
-# console-keymaps-acorn, Bulgarian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Hungarian"
-msgstr "Bulgarian"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1108,9 +1105,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Macedonian"
-msgstr "Maceio"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1196,21 +1192,17 @@ msgstr ""
 msgid "Sinhala"
 msgstr ""
 
-# console-keymaps-acorn, Slovenian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "Slovene"
+msgstr ""
 
-# console-keymaps-acorn, Slovenian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Slovene"
+msgstr ""
 
 #. Type: select
 #. Choices
