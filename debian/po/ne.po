@@ -3,41 +3,12 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of debian-installer_packages_po_sublevel1_ne.po to Nepali
-# Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
-# Shiva Pokharel <shiva@mpp.org.np>, 2006.
-# Shyam Krishna Bal <shyam@mpp.org.np>, 2006.
-# Shiva Prasad Pokharel <shiva@mpp.org.np>, 2006.
-# Shiva Pokharel <shiva@mpp.org.np>, 2007, 2008.
-# Shiva Prasad Pokharel <pokharelshiv@gmail.com>, 2007.
-# shyam krishna bal <shyamkrishna_bal@yahoo.com>, 2007.
-# Nabin Gautam <nabin@mpp.org.np>, 2007.
-# Shyam Krishna Bal <balshyam24@yahoo.com>, 2008.
-# Shiva Prasad Pokharel <shiva@mpp.org.np>, 2008, 2010, 2011.
-#
-# Translations from iso-codes:
-#   Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>, 2006.
-# Shiva Prasad Pokharel <shiva@mpp.org.np>, 2006, 2011.
-msgid ""
-msgstr ""
-"Project-Id-Version: debian-installer_packages_po_sublevel1_ne\n"
-"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2011-02-22 17:11-0600\n"
-"Last-Translator: Shiva Prasad Pokharel <shiva@mpp.org.np>\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: ne\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n !=1\n"
-
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "बूट/फन्ट कर्नेल परिवर्त नगर्नुहोस्"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -100,25 +71,22 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Georgian"
-msgstr "नर्वेली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Greek"
-msgstr "ग्रिक"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "# Hebrew"
-msgstr "हिब्रु"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -194,17 +162,15 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "अनियमित क्यारेक्टरहरू प्रविष्ट गर्नुहोस्"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
-#, fuzzy
 msgid "Character set to support:"
-msgstr "वास्तुकला समर्थित छैन"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -231,7 +197,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr "कन्सोलको लागि फन्ट:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -247,9 +213,6 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"\"VGA\" को पुरानो देखावट र आन्तरिक स्क्रिप्टको मध्यम कभरेज । \"स्थिर\" को सरल देखावट र "
-"आन्तरिक स्क्रिप्टको उचित कभरेज । कार्यक्रम बनाउनेको लागि समस्या हुनसक्ने उस्तै प्रकारका केहि "
-"संकेत हरू बनाउनलाई \"टरमिनस\"ले दृष्टि घटाउन सहयोग पुर्याउन सक्छ ।"
 
 #. Type: select
 #. Description
@@ -262,8 +225,6 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"यदि तपाईँ टर्मिनस फन्ट को बोल्ड संस्करण चाहानुहुन्छ भने, कि त TerminusBold (यदि तपाईँ "
-"फ्रेम बफर प्रयोग गर्नुहुन्छ भने) कि त TerminusBoldVGA (अन्य तरिकाद्वारा) छनौट गर्नुहोस् ।"
 
 #. Type: select
 #. Description
@@ -273,81 +234,69 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "फन्ट साइज:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"लिनक्स कन्सोलको लागि फन्टको साईज चयन गर्नुहोस् । सन्दर्भको लागि, कप्यूटरको बूट साईज १६ "
-"हुँदा फन्ट प्रयोग हुन्छ ।"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"लिनक्स कन्सोलको लागि फन्टको साईज चयन गर्नुहोस् । सन्दर्भको लागि, कप्यूटरको बूट साईज १६ "
-"हुँदा फन्ट प्रयोग हुन्छ ।"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
-#, fuzzy
 msgid "Encoding to use on the console:"
-msgstr "क्रमिक कन्सोल प्रयोग गर्न LILO कन्फिगर गरियो"
+msgstr ""
 
 #. Type: text
 #. Description
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "सञ्जाल कन्फिगर गर्नुहोस्"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
-msgstr "अन्य"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "एउटा कुञ्जीपाटी सजावट चयन गर्नुहोस् "
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "कृपया कन्फिगर गर्नका लागि कुञ्जीपाटीको प्रकार रोज्नुहोस् ।"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "कुञ्जीपाटीको प्रकार:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -363,25 +312,22 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "एउटा कुञ्जीपाटी सजावट चयन गर्नुहोस् "
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "कृपया एउटा हार्ड डिस्क यो मेसिन सँग सलग्न छ भन्ने कुरा जाँच गर्नुहोस् ।"
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "हालको विभाजन सजावट राख्नुहुन्छ र LVM कन्फिगर गर्नुहुन्छ?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -396,14 +342,11 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"कृपया रोज्नुहोस् कि तपाईँ नयाँ विभाजन उपलब्ध खाली ठाउँको सुरुमा वा अन्त्यमा सिर्जना भएको "
-"हेर्न चाहानुहुन्छ ।"
 
 #. Type: boolean
 #. Description
@@ -426,21 +369,17 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"कृपया रोज्नुहोस् कि तपाईँ नयाँ विभाजन उपलब्ध खाली ठाउँको सुरुमा वा अन्त्यमा सिर्जना भएको "
-"हेर्न चाहानुहुन्छ ।"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "गुप्तीकरण कन्फिगरेशन असफल भयो "
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -455,13 +394,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"कृपया रोज्नुहोस् कि तपाईँ नयाँ विभाजन उपलब्ध खाली ठाउँको सुरुमा वा अन्त्यमा सिर्जना भएको "
-"हेर्न चाहानुहुन्छ ।"
 
 #. Type: boolean
 #. Description
@@ -484,13 +420,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"कृपया रोज्नुहोस् कि तपाईँ नयाँ विभाजन उपलब्ध खाली ठाउँको सुरुमा वा अन्त्यमा सिर्जना भएको "
-"हेर्न चाहानुहुन्छ ।"
 
 #. Type: select
 #. Choices
@@ -757,9 +690,8 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "एउटा कुञ्जीपाटी सजावट चयन गर्नुहोस् "
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -804,17 +736,15 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "No compose key"
-msgstr "डिस्क रोज्नुहोस्:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "डिस्क रोज्नुहोस्:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -856,14 +786,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "अमेरिकि अङ्ग्रेजी"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Albanian"
-msgstr "रोमानियन"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -881,13 +810,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "बंगलादेश"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "द्वारा"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -899,39 +828,37 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "बेल्जियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "इस्टोनियाली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr "ब्राजिली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "ब्रिटिस अङ्ग्रेजी"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "बुल्गेरिया (phonetic सजावट)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "बुल्गेरिया (phonetic सजावट)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -943,7 +870,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "क्यानडा फ्रान्सेली"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -967,31 +894,31 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr "क्रोएसियाली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "चेक"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr "डेनिस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr "डच"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "डिभोरक"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1009,7 +936,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr "इस्टोनियाली"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1021,32 +948,31 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr "फिनीस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "फ्रान्सेली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Georgian"
-msgstr "नर्वेली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "जर्मन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "ग्रिक"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1064,7 +990,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr "हिब्रु"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1076,13 +1002,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "हङ्गेरियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr "आइसल्यान्डिक"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1094,13 +1020,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "इटालियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "जापानी"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1135,16 +1061,14 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr "टर्किस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr "टर्किस (Q सजावट)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1156,25 +1080,25 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "ल्याटिन-अमेरिकि"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "ल्याटभियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr "लिथुनियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr "म्यासडोनियन"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1191,22 +1115,20 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "उत्तर अमेरिका"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "नर्वेली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Persian"
-msgstr "द्वारा"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1218,13 +1140,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr "पोलिस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr "पोर्तुगाली"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1236,19 +1158,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "रोमानियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "रसियाली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "सर्बियन-सिरिलिक"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1265,40 +1187,38 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
-msgstr "स्लोभाकियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "स्लोभाकियन"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr "स्पेनी"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr "स्विडिस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "स्विस-फ्रान्सेली"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "स्वीस जर्मनी"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1334,19 +1254,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "टर्किस"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "टर्किस (Q सजावट)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "युक्रेनी"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1364,4 +1284,4 @@ msgstr ""
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "प्रयोग गर्नका लागि कुञ्जी मानचित्र:"
+msgstr ""

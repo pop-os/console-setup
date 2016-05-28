@@ -3,41 +3,19 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# Irish messages for debian-installer.
-# Copyright (C) 2003 Software in the Public Interest, Inc.
-# This file is distributed under the same license as debian-installer.
-#
-# Translations from iso-codes:
-# Alastair McKinstry <mckinstry@computer.org>, 2001,2002
-# Free Software Foundation, Inc., 2001,2003
-# Kevin Patrick Scannell <scannell@SLU.EDU>, 2004, 2008, 2009, 2011.
-# Sean V. Kelley <s_oceallaigh@yahoo.com>, 1999
-msgid ""
-msgstr ""
-"Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2006-03-21 14:42-0500\n"
-"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
-"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
-"Language: ga\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Ná hathraigh an cló tosaithe/eithne"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr "Lig don chóras clófhoireann oiriúnach a roghnú"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -45,35 +23,35 @@ msgstr "Lig don chóras clófhoireann oiriúnach a roghnú"
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr "framebuffer amháin"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ". Arabach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "# Airméanach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# Coireallach - KOI8-R agus KOI8-U"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# Coireallach - teangacha neamh-Slavacha"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -81,56 +59,55 @@ msgstr "# Coireallach - teangacha neamh-Slavacha"
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
-"# Coireallach - teangacha Slavacha (Boisnis agus Seirbis Laidineach freisin)"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ". Aetópach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr "# Seoirseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr "# Gréagach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Hebrew"
-msgstr "# Eabhrach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr "# Laoch"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# Laidin-1 agus Laidin-5 - iarthar na hEorpa agus teangacha Tuircice"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# Laidin-2 - lár na hEorpa agus an Rómáinis"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -138,29 +115,27 @@ msgstr "# Laidin-2 - lár na hEorpa agus an Rómáinis"
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr ""
-"# Laidin-3 agus Laidin-8 - Siseivis; Esperanto; Gaeilge; Máltais agus "
-"Breatnais"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "# Laidin-7 - Liotuáinis; Laitvis; Maorais agus Marascailis"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ". Laidin - Vítneamais"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr "# Téalannach"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -168,35 +143,34 @@ msgstr "# Téalannach"
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ""
-". Comhcheangailte - Laidin; Coireallach Slavach; Eabhrach; Arabach bunúsach"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". Comhcheangailte - Laidin; Coireallach Slavach; Gréagach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". Comhcheangailte - Laidin; Coireallach Slavach agus neamh-Slavach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr "Tomhais an tacar carachtar is fearr"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "Tacar carachtar le tacú:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -204,7 +178,7 @@ msgstr "Tacar carachtar le tacú:"
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "Roghnaigh an tacar carachtar a dtacóidh an cló consól leis."
+msgstr ""
 
 #. Type: select
 #. Description
@@ -214,8 +188,6 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Mura mbaineann tú úsáid as maolán fráma, beidh níos lú dathanna agat ar an "
-"gconsól má roghnaíonn tú tacar carachtar a thosaíonn le \".\""
 
 #. Type: select
 #. Description
@@ -225,7 +197,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr "Cló an chonsóil:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -241,11 +213,6 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"Tá cuma thraidisiúnta ar \"VGA\" agus cuimsiú measartha maith ar scripteanna "
-"idirnáisiúnta. Tá cuma an-simplí ar \"Fixed\" agus cuimsiú níos fearr ar "
-"scripteanna idirnáisiúnta. Seans go laghdaíonn \"Terminus\" tuirse súl, cé "
-"go bhfuil dealramh ag roinnt siombailí lena chéile, rud fadhbach le haghaidh "
-"ríomhchláraitheoirí."
 
 #. Type: select
 #. Description
@@ -258,8 +225,6 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Más fearr leat leagan trom den chló Terminus, roghnaigh TerminusBold (má "
-"bhaineann tú úsáid as maolán fráma) nó TerminusBoldVGA (mura mbaineann)."
 
 #. Type: select
 #. Description
@@ -269,7 +234,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "Clómhéid:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -279,8 +244,6 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Roghnaigh an chlómhéid don chonsól.  Mar áis tagartha, úsáideann an "
-"ríomhaire cló 8x16 nuair a thosaíonn sé."
 
 #. Type: select
 #. Description
@@ -291,17 +254,13 @@ msgid ""
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Roghnaigh an chlómhéid don chonsól.  Mar áis tagartha, úsáideann an "
-"ríomhaire cló 8x16 nuair a thosaíonn sé. Ní mór duit an pacáiste consóil kbd "
-"(in ionad console-tools) agus framebuffer a shuiteáil le clómhéideanna "
-"áirithe."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
-msgstr "Ionchódú le húsáid ar an gconsól:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -309,35 +268,35 @@ msgstr "Ionchódú le húsáid ar an gconsól:"
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "Cumraigh an méarchlár"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
 msgid "Other"
-msgstr "Eile"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "Cineál an mhéarchláir:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Roghnaigh cineál mhéarchlár an ríomhaire seo."
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "An tír ina n-úsáidtear an méarchlár seo:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -348,23 +307,20 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"Tá leaganacha amach éagsúla ar mhéarchláir i dtíortha éagsúla, fiú níos mó "
-"ná leagan amach amháin in úsáid go coitianta i roinnt tíortha. Roghnaigh an "
-"tír ina n-úsáidtear méarchlár an ríomhaire seo."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr "Leagan amach an mhéarchláir:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "Roghnaigh leagan amach an mhéarchláir le haghaidh an ríomhaire seo."
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -372,8 +328,6 @@ msgstr "Roghnaigh leagan amach an mhéarchláir le haghaidh an ríomhaire seo."
 #: ../keyboard-configuration.templates:7001
 msgid "Keep the current keyboard layout in the configuration file?"
 msgstr ""
-"An bhfuil fonn ort leagan amach reatha an mhéarchláir a choinneáil sa "
-"chomhad cumraíochta?"
 
 #. Type: boolean
 #. Description
@@ -383,8 +337,6 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"Is é XKBLAYOUT=\"${XKBLAYOUT}\" agus XKBVARIANT=\"${XKBVARIANT}\" an leagan "
-"amach reatha sa chomhad cumraíochta /etc/default/keyboard."
 
 #. Type: boolean
 #. Description
@@ -395,9 +347,6 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Roghnaigh an bhfuil fonn ort é a choinneáil. Má roghnaíonn tú é seo, ní "
-"chuirfear aon cheisteanna ort faoi leagan amach an mhéarchláir agus "
-"coinneofar an chumraíocht atá ann faoi láthair."
 
 #. Type: boolean
 #. Description
@@ -405,8 +354,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
 msgstr ""
-"An bhfuil fonn ort an leagan amach réamhshocraithe a choinneáil "
-"(${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
@@ -417,10 +364,6 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Is é seo leagan amach réamhshocraithe an mhéarchláir: XKBLAYOUT="
-"\"${XKBLAYOUT}\" agus XKBVARIANT=\"${XKBVARIANT}\". Tá an leagan amach "
-"réamhshocraithe seo bunaithe ar an teanga/réigiún atá i bhfeidhm faoi "
-"láthair, agus na socruithe in /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -430,8 +373,6 @@ msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"Roghnaigh an bhfuil fonn ort é a choinneáil. Má roghnaíonn tú é seo, ní "
-"chuirfear aon cheisteanna ort faoi leagan amach an mhéarchláir."
 
 #. Type: boolean
 #. Description
@@ -439,8 +380,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:9001
 msgid "Keep current keyboard options in the configuration file?"
 msgstr ""
-"An bhfuil fonn ort na roghanna reatha méarchláir a choinneáil sa chomhad "
-"cumraíochta?"
 
 #. Type: boolean
 #. Description
@@ -450,8 +389,6 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"Seo iad na roghanna reatha méarchláir sa chomhad cumraíochta /etc/default/"
-"keyboard: XKBOPTIONS=\"${XKBOPTIONS}\"."
 
 #. Type: boolean
 #. Description
@@ -461,8 +398,6 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Má choinníonn tú na roghanna seo, ní chuirfear aon cheisteanna ort faoi "
-"roghanna an mhéarchláir."
 
 #. Type: boolean
 #. Description
@@ -470,8 +405,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
 msgstr ""
-"An bhfuil fonn ort na roghanna réamhshocraithe méarchláir a choinneáil "
-"(${XKBOPTIONS})?"
 
 #. Type: boolean
 #. Description
@@ -482,10 +415,6 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Is iad seo na roghanna réamhshocraithe a bhaineann le leagan amach an "
-"mhéarchláir: XKBOPTIONS=\"${XKBOPTIONS}\".  Tá siad bunaithe ar an teanga/"
-"réigiún atá i bhfeidhm faoi láthair agus ar na socruithe in /etc/X11/xorg."
-"conf."
 
 #. Type: boolean
 #. Description
@@ -495,8 +424,6 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Má choinníonn tú é, ní chuirfear aon cheisteanna ort faoi roghanna an "
-"mhéarchláir."
 
 #. Type: select
 #. Choices
@@ -507,7 +434,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "Glas Ceannlitreacha"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -526,7 +453,7 @@ msgstr "Glas Ceannlitreacha"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr "Alt Ar Dheis (AltGr)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -541,14 +468,14 @@ msgstr "Alt Ar Dheis (AltGr)"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr "Ctrl Ar Dheis"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr "Shift Ar Dheis"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -567,7 +494,7 @@ msgstr "Shift Ar Dheis"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr "Eochair lógó ar dheis"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -582,42 +509,42 @@ msgstr "Eochair lógó ar dheis"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "Eochair roghchláir"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "Alt+Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr "Ctrl+Shift"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr "Ctrl+Alt"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr "Alt+Caps Lock"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr "Ctrl Ar Chlé+Shift Ar Chlé"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -632,21 +559,21 @@ msgstr "Ctrl Ar Chlé+Shift Ar Chlé"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr "Alt Ar Chlé"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "Ctrl Ar Chlé"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "Shift Ar Chlé"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -665,28 +592,28 @@ msgstr "Shift Ar Chlé"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr "Eochair lógó ar chlé"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "Eochair Scroll Lock"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr "Gan scoránú"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "Modh scoránaithe idir an mód náisiúnta agus an mód Laidineach:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -696,8 +623,6 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"Teastaíonn uait modh scoránaithe idir an leagan amach náisiúnta agus an "
-"gnáthleagan amach Laidineach."
 
 #. Type: select
 #. Description
@@ -709,25 +634,20 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"Baintear úsáid as an eochair Alt ar dheis nó Caps Lock go minic, ar "
-"chúiseanna eirgeanamaice (sa dara cás, úsáid Shift+Caps Lock le haghaidh an "
-"ghnáthoibríocht Caps Lock). Baintear úsáid as Alt+Shift go minic freisin; "
-"ach sa chás seo ní bheidh a ghnáthoibríocht ar fáil in Emacs nó i "
-"ríomhchláir eile a úsáideann é."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "Níl gach eochair anseo ar fáil ar gach méarchlár."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr "Gan athrú sealadach"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -738,14 +658,14 @@ msgstr "Gan athrú sealadach"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "An dá eochair lógó"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "Modh scoránaithe idir ionchur náisiúnta agus ionchur Laidineach:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -758,11 +678,6 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"Nuair atá an méarchlár sa mhód náisiúnta agus ba mhaith leat cúpla litir "
-"Laidineach a chlóscríobh, bheadh sé níos fearr athrú go dtí an mód "
-"Laidineach go sealadach. Fanann an méarchlár sa mhód sin fad is go bhfuil an "
-"eochair roghnaithe brúite síos. Is féidir an eochair chéanna a úsáid chun "
-"litreacha náisiúnta a chlóscríobh nuair atá an méarchlár sa mhód Laidineach."
 
 #. Type: select
 #. Description
@@ -770,42 +685,41 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
-"Tig leat an ghné seo a dhíchumasú tríd an rogha \"Gan athrú sealadach\"."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "The default for the keyboard layout"
-msgstr "Leagan amach réamhshocraithe"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "Gan eochair AltGr"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "Eochair Enter ar an eochaircheap"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "An dá eochair Alt"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "Eochair le húsáid mar AltGr:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -817,25 +731,20 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"Le roinnt leaganacha amach, is eochair mhionathraithe é AltGr a úsáidtear "
-"chun litreacha áirithe a chlóscríobh, go háirithe litreacha nach bhfuil "
-"coitianta i dteanga leagan amach an mhéarchláir, mar shampla siombailí "
-"airgeadra eachtraigh agus litreacha le síntí fada. Go minic, tá na "
-"carachtair seo priontáilte mar shiombail bhreise ar na heochracha."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr "Gan eochair athraithe"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr "Eochair athraithe:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -846,9 +755,6 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"Nuair a bhrúitear an eochair athraithe, glacann an ríomhaire leis na "
-"carachtair ina dhiaidh mar theaglaim, chun carachtar nach bhfuil ar an "
-"méarchlár a ghiniúint."
 
 #. Type: select
 #. Description
@@ -859,9 +765,6 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"Ar an gconsól téacs, ní oibríonn an eochair athraithe sa mhód Unicode.  Mura "
-"bhfuil tú sa mhód Unicode, is féidir an teaglaim Ctrl+ponc a úsáid mar "
-"eochair athraithe i gcónaí, is cuma céard atá roghnaithe anseo."
 
 #. Type: boolean
 #. Description
@@ -869,7 +772,6 @@ msgstr ""
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
 msgstr ""
-"An bhfuil fonn ort Ctrl+Alt+Backspace a úsáid chun an freastalaí X a mharú?"
 
 #. Type: boolean
 #. Description
@@ -879,516 +781,507 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"De réir réamhshocraithe, ní dhéanann Ctrl+Alt+Backspace faic.  Más mian "
-"leat, is féidir é a úsáid chun an freastalaí X a mharú."
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "Béarla Meiriceánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr "Albánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr "Arabach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr "Astúrach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "An Bhanglaidéis"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "Bealarúiseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr "Beangálach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "Beilgeach"
+msgstr ""
 
-# google
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr "Boisniach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr "Brasaíleach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "Béarla Sasanach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Bulgárach (leagan amach phonetic)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bulgárach (leagan amach phonetic)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr "Burmais"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "Francach (Ceanada)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "Ceanadach Ilteangach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "Catalónach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Síneach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr "Crótach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "Seiceach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr "Danmhargach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr "Ollannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "Dvorak"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr "Seoiniach"
+msgstr ""
 
-# google uirlisí teanga as is
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr "Esperanto"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr "Eastónach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
-msgstr "Aetópach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr "Fionlannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "Francach"
+msgstr ""
 
-# google
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "Seoirseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "Gearmánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "Gréagach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "Gúisearátach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "Gurmúcaí"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr "Eabhrach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr "Hiondúis"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "Ungárach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr "Íoslannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr "Gaeilge"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "Iodálach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "Seapánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "Cannadach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "Casacach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "Ciméarach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr "Cirgiseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr "Cóiréach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "Coirdínach (leagan amach F)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "Coirdíneach (leagan amach Q)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "Laoch"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "Meiriceánach Laidineach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "Laitviach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr "Liotuánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr "Macadónach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "Mailéalamach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "Neipealach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Northern Sami"
-msgstr "Sáimis Thuaidh"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "Ioruach"
+msgstr ""
 
-# also Fairsis (An CT)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "Peirseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr "Na hOileáin Fhilipíneacha"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr "Polannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr "Portaingéalach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "Puinseábach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "Rómánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "Rúiseach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "Seirbiach (Coireallach)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr "Sindeach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr "Siolónach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
-msgstr "Slóvacach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovenian"
-msgstr "Slóivéanach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr "Spáinneach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr "Sualannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "Francach (An Eilvéis)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "Gearmánach (An Eilvéis)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr "Táidsíceastánach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "Tamalach"
+msgstr ""
 
-# beware mistakes in OLT
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "Teileagúch"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "Téalannach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr "Tibéadach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "Turcach (leagan amach F)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "Turcach (leagan amach Q)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "Úcránach"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr "Uigiúrach"
+msgstr ""
 
-# google, An CT slender
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr "Vítneamach"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "Eochairmhapáil le húsáid:"
+msgstr ""
