@@ -3,12 +3,43 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
+# Norwegian Nynorsk translation of debian-installer.
+# Copyright (C) 2003–2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+#
+# Håvard Korsvoll <korsvoll@skulelinux.no>, 2004, 2005, 2006, 2007, 2008.
+# Eirik U. Birkeland <eirbir@gmail.com>, 2010.
+#
+# Translations from iso-codes:
+#   Alastair McKinstry <mckinstry@computer.org>, 2001.
+#   Free Software Foundation, Inc., 2001, 2004.
+#   Håvard Korsvoll <korsvoll@gmail.com>, 2004,2006, 2007.
+#   Karl Ove Hufthammer <karl@huftis.org>, 2003-2004, 2006. (New translation done from scratch.).
+#   Kjartan Maraas  <kmaraas@gnome.org>, 2001.
+#   Roy-Magne Mo <rmo@sunnmore.net>, 2001.
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+msgid ""
+msgstr ""
+"Project-Id-Version: nn\n"
+"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"nynorsk@lists.debian.org>\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr ""
+msgstr "Ikkje endra oppstarts-/kjerneskrifta"
 
 #. Type: text
 #. Description
@@ -30,28 +61,28 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ""
+msgstr ". Arabisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr ""
+msgstr "# Armensk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr ""
+msgstr "# Kyrillisk – KOI8-R og KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr ""
+msgstr "# Kyrillisk – ikkje-slaviske språk"
 
 #. Type: select
 #. Choices
@@ -59,83 +90,85 @@ msgstr ""
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr ""
+"# Kyrillisk – slaviske språk (også bosnisk og serbisk med det latinske "
+"alfabetet)"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ""
+msgstr ". Etiopisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr ""
+msgstr "# Georgisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr ""
+msgstr "# Gresk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Hebrew"
-msgstr ""
+msgstr "# Hebraisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr ""
+msgstr "# Laotisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr ""
+msgstr "# Latin1 og Latin5 – Vest-Europa og tyrkiske språk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr ""
+msgstr "# Latin2 – Sentral-Europa og rumensk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr ""
+msgstr "# Latin3 og Latin8 – chichewa, esperanto, irsk, maltesisk og walisisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr ""
+msgstr "# Latin7 – litauisk, latvisk, maori og marshallesisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ""
+msgstr ". Latin – vietnamesisk"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr ""
+msgstr "# Thai"
 
 #. Type: select
 #. Choices
@@ -143,6 +176,8 @@ msgstr ""
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ""
+". Kombinert – det latinske alfabetet, det slavisk-kyrilliske, det hebraiske "
+"og det grunnleggjande arabiske"
 
 #. Type: select
 #. Choices
@@ -150,6 +185,7 @@ msgstr ""
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ""
+". Kombinert – det latinske alfabetet, det slavisk-kyrilliske og det greske"
 
 #. Type: select
 #. Choices
@@ -157,20 +193,23 @@ msgstr ""
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ""
+". Kombinert – det latinske alfabetet, det slavisk-kyrilliske og det ikkje-"
+"slavisk-kyrilliske"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "Guess optimal character set"
-msgstr ""
+msgstr "Tast inn vilkårlege teikn"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr ""
+msgstr "Teiknkodingar som skal støttast:"
 
 #. Type: select
 #. Description
@@ -178,7 +217,7 @@ msgstr ""
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr ""
+msgstr "Vel teiknkodinga som skrifta i konsollen skal støtta."
 
 #. Type: select
 #. Description
@@ -188,6 +227,8 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
+"Viss du ikkje brukar biletmellomlager, vil vala som byrjar med «.» minska "
+"talet på tilgjengelege fargar i konsollen."
 
 #. Type: select
 #. Description
@@ -197,7 +238,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr ""
+msgstr "Skrift i konsollen:"
 
 #. Type: select
 #. Description
@@ -213,6 +254,10 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
+"«VGA» har ein tradisjonell utsjånad og ei mellom dekning av internasjonale "
+"teikn. «Fixed» har ein enkel utsjånad og betre støtte for internasjonale "
+"teikn. «Terminus» kan gjera til at du ikkje så fort vert sliten i auga, men "
+"nokre teikn kan vera ganske like og såleis skapa problem for utviklarar."
 
 #. Type: select
 #. Description
@@ -225,6 +270,9 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
+"Viss du føretrekk ein halvfeit versjon av Terminus-skrifta, vel du anten "
+"TerminusBold (viss du brukar mellomlagring av bilete) eller TerminusBoldVGA "
+"(viss ikkje)."
 
 #. Type: select
 #. Description
@@ -234,69 +282,80 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr ""
+msgstr "Skriftstorleik:"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
+#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
+"Vel storleik på skrifta i Linux-konsollen. Til samanlikning har skrifta som "
+"vert brukt i oppstarten storleik 16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  For reference, the font "
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
+"Vel storleik på skrifta i Linux-konsollen. Til samanlikning har skrifta som "
+"vert brukt i oppstarten storleik 16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
-msgstr ""
+msgstr "Teiknkoding som skal brukast i konsollen:"
 
 #. Type: text
 #. Description
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
+#, fuzzy
 msgid "Configure the keyboard"
-msgstr ""
+msgstr "Set opp nettverket"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
+#, fuzzy
 msgid "Other"
-msgstr ""
+msgstr "andre"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
+#, fuzzy
 msgid "Keyboard model:"
-msgstr ""
+msgstr "Vel eit tastaturoppsett"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
+#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr ""
+msgstr "Vel tastaturtypen som skal setjast opp."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
+#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr ""
+msgstr "Tastaturtype:"
 
 #. Type: select
 #. Description
@@ -312,22 +371,25 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
+#, fuzzy
 msgid "Keyboard layout:"
-msgstr ""
+msgstr "Vel eit tastaturoppsett"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
+#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr ""
+msgstr "Sjå etter at det er kobla til ein harddisk til denne maskina."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr ""
+msgstr "Halde på noverande partisjonsoppsett og setje opp logisk volumstyring?"
 
 #. Type: boolean
 #. Description
@@ -342,11 +404,14 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
+"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
+"slutten av det ledige området."
 
 #. Type: boolean
 #. Description
@@ -369,17 +434,21 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
+"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
+"slutten av det ledige området."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
+#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr ""
+msgstr "Krypteringsoppsett mislukkast"
 
 #. Type: boolean
 #. Description
@@ -394,10 +463,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
+#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
+"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
+"slutten av det ledige området."
 
 #. Type: boolean
 #. Description
@@ -420,10 +492,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
+#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
+"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
+"slutten av det ledige området."
 
 #. Type: select
 #. Choices
@@ -690,8 +765,9 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
+#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr ""
+msgstr "Vel eit tastaturoppsett"
 
 #. Type: select
 #. Choices
@@ -736,15 +812,17 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
+#, fuzzy
 msgid "No compose key"
-msgstr ""
+msgstr "Vel harddisk:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
+#, fuzzy
 msgid "Compose key:"
-msgstr ""
+msgstr "Vel harddisk:"
 
 #. Type: select
 #. Description
@@ -786,19 +864,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr ""
+msgstr "Engelsk (USA)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr ""
+msgstr "Albansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr ""
+msgstr "Arabisk"
 
 #. Type: select
 #. Choices
@@ -810,55 +888,56 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr ""
+msgstr "Kviterussisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Bengali"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr ""
+msgstr "Belgisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr ""
+msgstr "Bosnisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr ""
+msgstr "Brasiliansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr ""
+msgstr "Engelsk (Storbritannia)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr ""
+msgstr "Bulgarsk (phonetic-oppsett)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr ""
+msgstr "Bulgarsk (phonetic-oppsett)"
 
 #. Type: select
 #. Choices
@@ -870,13 +949,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr ""
+msgstr "Fransk (Canada)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "Kanadisk, fleirspråkleg"
 
 #. Type: select
 #. Choices
@@ -888,157 +967,158 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Kinesisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr ""
+msgstr "Kroatisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr ""
+msgstr "Tsjekkisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr ""
+msgstr "Dansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr ""
+msgstr "Nederlandsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr ""
+msgstr "Dvorak"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Dzongkha"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr ""
+msgstr "Estisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Ethiopian"
-msgstr ""
+msgstr ". Etiopisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr ""
+msgstr "Finsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr ""
+msgstr "Fransk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr ""
+msgstr "Georgisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr ""
+msgstr "Tysk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr ""
+msgstr "Gresk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "gurmukhi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebraisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Hindi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr ""
+msgstr "Ungarsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr ""
+msgstr "Islandsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Irsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr ""
+msgstr "Italiensk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr ""
+msgstr "Japansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Kasakhisk"
 
 #. Type: select
 #. Choices
@@ -1050,85 +1130,86 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr ""
+msgstr "Kirgisisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Koreansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr ""
+msgstr "Kurdisk (F-oppsett)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr ""
+msgstr "Kurdisk (Q-oppsett)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr ""
+msgstr "Laotisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr ""
+msgstr "Latinamerikansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr ""
+msgstr "Latvisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr ""
+msgstr "Litauisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr ""
+msgstr "Makedonsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Malayalam"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Nepali"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Nord-Amerika"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr ""
+msgstr "Norsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr ""
+msgstr "Persisk"
 
 #. Type: select
 #. Choices
@@ -1140,13 +1221,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr ""
+msgstr "Polsk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr ""
+msgstr "Portugisisk"
 
 #. Type: select
 #. Choices
@@ -1158,19 +1239,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr ""
+msgstr "Rumensk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr ""
+msgstr "Russisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr ""
+msgstr "Serbisk (kyrillisk)"
 
 #. Type: select
 #. Choices
@@ -1187,38 +1268,40 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Slovak"
-msgstr ""
+msgstr "Slovakisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Slovenian"
-msgstr ""
+msgstr "Slovakisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr ""
+msgstr "Spansk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr ""
+msgstr "Svensk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr ""
+msgstr "Fransk (Sveits)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr ""
+msgstr "Tysk (Sveits)"
 
 #. Type: select
 #. Choices
@@ -1230,19 +1313,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 #. Type: select
 #. Choices
@@ -1254,19 +1337,19 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr ""
+msgstr "Russisk"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr ""
+msgstr "Tyrkisk (Q-oppsett)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukrainsk"
 
 #. Type: select
 #. Choices
@@ -1278,10 +1361,10 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr ""
+msgstr "Vietnamesisk"
 
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr ""
+msgstr "Tasteoppsett som skal brukast:"

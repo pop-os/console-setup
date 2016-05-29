@@ -3,6 +3,36 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
+# Tagalog messages for debian-installer.
+# Copyright (C) 2004-2010 Software in the Public Interest, Inc.
+# This file is distributed under the same license as debian-installer.
+# Ipinamamahagi ang talaksang ito alinsunod sa lisensiya ng debian-installer.
+# Eric Pareja <xenos@upm.edu.ph>, 2004-200
+# Rick Bahague, Jr. <rbahaguejr@gmail.com>, 2004
+# Reviewed by Roel Cantada on Feb-Mar 2005.
+# Sinuri ni Roel Cantada noong Peb-Mar 2005.
+# This file is maintained by Eric Pareja <eric.pareja@gmail.com>
+# Inaalagaan ang talaksang ito ni Eric Pareja <eric.pareja@gmail.com>
+#
+# ituloy angsulong mga kapatid http://www.upm.edu.ph/~xenos
+#
+#
+# Translations from iso-codes:
+#   Eric Pareja <xenos@upm.edu.ph> 2005,2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Tagalog <debian-tl@banwa.upm.edu.ph>\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 #. Type: text
 #. Description
 #. :sl3:
@@ -67,26 +97,31 @@ msgstr ""
 msgid ". Ethiopic"
 msgstr ""
 
+# console-keymaps-acorn, Norwegian
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Georgian"
-msgstr ""
+msgstr "Norwegian"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Greek"
-msgstr ""
+msgstr "Griyego"
 
+# console-keymaps-acorn, Hebrew
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Hebrew"
-msgstr ""
+msgstr "Hebreo"
 
 #. Type: select
 #. Choices
@@ -134,8 +169,9 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "# Thai"
-msgstr ""
+msgstr "Thai"
 
 #. Type: select
 #. Choices
@@ -162,15 +198,17 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
 msgid "Guess optimal character set"
-msgstr ""
+msgstr "Magbigay ng random na mga karakter"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
+#, fuzzy
 msgid "Character set to support:"
-msgstr ""
+msgstr "Hindi suportadong arkitektura"
 
 #. Type: select
 #. Description
@@ -196,8 +234,9 @@ msgstr ""
 #. relatively short.
 #. :sl3:
 #: ../console-setup.templates:6001
+#, fuzzy
 msgid "Font for the console:"
-msgstr ""
+msgstr "Ibigay ang buong pangalan ng bagong user:"
 
 #. Type: select
 #. Description
@@ -233,8 +272,9 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
+#, fuzzy
 msgid "Font size:"
-msgstr ""
+msgstr "Laki ng susi:"
 
 #. Type: select
 #. Description
@@ -261,7 +301,7 @@ msgstr ""
 #: ../console-setup.templates:9001
 #, fuzzy
 msgid "Encoding to use on the console:"
-msgstr "Nakasaayos ang delo na gamitin ang serial console"
+msgstr "Nakaayos ang LILO na gumamit ng serial console"
 
 #. Type: text
 #. Description
@@ -270,21 +310,23 @@ msgstr "Nakasaayos ang delo na gamitin ang serial console"
 #: ../keyboard-configuration.templates:2001
 #, fuzzy
 msgid "Configure the keyboard"
-msgstr "Isinasaayos ang tiklado ..."
+msgstr "Isaayos ang network"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
+#, fuzzy
 msgid "Other"
-msgstr ""
+msgstr "iba pa"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
+#, fuzzy
 msgid "Keyboard model:"
-msgstr ""
+msgstr "Pumili ng tamang pagkakalatag ng tiklado"
 
 #. Type: select
 #. Description
@@ -324,8 +366,9 @@ msgstr "Pumili ng tamang pagkakalatag ng tiklado"
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
+#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr ""
+msgstr "Pakisuri na may hard disk na nakakabit sa makinang ito."
 
 #. Type: boolean
 #. Description
@@ -333,7 +376,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:7001
 #, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Bigo ang pagsasaayos ng encryption"
+msgstr "Ipanatili ang kasalukuyang layout ng partisyon at magsaayos ng LVM?"
 
 #. Type: boolean
 #. Description
@@ -348,11 +391,14 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
+"Piliin kung nais niyong gawin ang bagong partisyon sa umpisa o sa dulo ng "
+"magagamit na puwang."
 
 #. Type: boolean
 #. Description
@@ -375,10 +421,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
+#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
+"Piliin kung nais niyong gawin ang bagong partisyon sa umpisa o sa dulo ng "
+"magagamit na puwang."
 
 #. Type: boolean
 #. Description
@@ -401,10 +450,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
+#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
+"Piliin kung nais niyong gawin ang bagong partisyon sa umpisa o sa dulo ng "
+"magagamit na puwang."
 
 #. Type: boolean
 #. Description
@@ -427,10 +479,13 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
+#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
+"Piliin kung nais niyong gawin ang bagong partisyon sa umpisa o sa dulo ng "
+"magagamit na puwang."
 
 #. Type: select
 #. Choices
@@ -744,15 +799,17 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
+#, fuzzy
 msgid "No compose key"
-msgstr ""
+msgstr "Pumili ng disk:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
+#, fuzzy
 msgid "Compose key:"
-msgstr ""
+msgstr "Pumili ng disk:"
 
 #. Type: select
 #. Description
@@ -790,17 +847,19 @@ msgid ""
 "it can be used to terminate the X server."
 msgstr ""
 
+# console-keymaps-acorn, American
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr ""
+msgstr "Ingles ng Amerikano"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Albanian"
-msgstr ""
+msgstr "Romanian"
 
 #. Type: select
 #. Choices
@@ -818,13 +877,13 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladesh"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr ""
+msgstr "Belarusian"
 
 #. Type: select
 #. Choices
@@ -832,41 +891,48 @@ msgstr ""
 msgid "Bengali"
 msgstr ""
 
+# console-keymaps-acorn, Belgian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr ""
+msgstr "Belgian"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Bosnian"
-msgstr ""
+msgstr "Estonian"
 
+# console-keymaps-acorn, Brazilian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr ""
+msgstr "Brazilian"
 
+# console-keymaps-acorn, British
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr ""
+msgstr "Ingles ng Britanya"
 
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr ""
+msgstr "Bulgarian (phonetic layout)"
 
+# console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr ""
+msgstr "Bulgarian (phonetic layout)"
 
 #. Type: select
 #. Choices
@@ -874,17 +940,18 @@ msgstr ""
 msgid "Burmese"
 msgstr ""
 
+# console-keymaps-acorn, Canadian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr ""
+msgstr "Canadian French"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "Canadian na multilingual"
 
 #. Type: select
 #. Choices
@@ -898,35 +965,39 @@ msgstr ""
 msgid "Chinese"
 msgstr ""
 
+# console-keymaps-acorn, Croatian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr ""
+msgstr "Croatian"
 
+# console-keymaps-acorn, Czech
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr ""
+msgstr "Czech"
 
+# console-keymaps-acorn, Danish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr ""
+msgstr "Danish"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr ""
+msgstr "Dutch"
 
+# console-keymaps-acorn, Dvorak
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr ""
+msgstr "Dvorak"
 
 #. Type: select
 #. Choices
@@ -944,7 +1015,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr ""
+msgstr "Estonian"
 
 #. Type: select
 #. Choices
@@ -952,35 +1023,40 @@ msgstr ""
 msgid "Ethiopian"
 msgstr ""
 
+# console-keymaps-acorn, Finnish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr ""
+msgstr "Finnish"
 
+# console-keymaps-acorn, French
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr ""
+msgstr "French"
 
+# console-keymaps-acorn, Norwegian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Georgian"
-msgstr ""
+msgstr "Norwegian"
 
+# console-keymaps-acorn, German
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr ""
+msgstr "Aleman"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr ""
+msgstr "Griyego"
 
 #. Type: select
 #. Choices
@@ -994,11 +1070,12 @@ msgstr ""
 msgid "Gurmukhi"
 msgstr ""
 
+# console-keymaps-acorn, Hebrew
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebreo"
 
 #. Type: select
 #. Choices
@@ -1010,13 +1087,14 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr ""
+msgstr "Hungarian"
 
+# console-keymaps-acorn, Icelandic
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr ""
+msgstr "Icelandic"
 
 #. Type: select
 #. Choices
@@ -1024,17 +1102,19 @@ msgstr ""
 msgid "Irish"
 msgstr ""
 
+# console-keymaps-acorn, Italian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr ""
+msgstr "Italyano"
 
+# console-keymaps-acorn, Japanese
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr ""
+msgstr "Hapones"
 
 #. Type: select
 #. Choices
@@ -1066,17 +1146,21 @@ msgstr ""
 msgid "Korean"
 msgstr ""
 
+# console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Kurdish (F layout)"
-msgstr ""
+msgstr "Turkish (F layout)"
 
+# console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Kurdish (Q layout)"
-msgstr ""
+msgstr "Turkish (Q layout)"
 
 #. Type: select
 #. Choices
@@ -1084,29 +1168,31 @@ msgstr ""
 msgid "Lao"
 msgstr ""
 
+# console-keymaps-acorn, Swiss
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr ""
+msgstr "Latin American"
 
+# console-keymaps-acorn, Swiss
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr ""
+msgstr "Latvian"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr ""
+msgstr "Lithuanian"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr ""
+msgstr "Macedonian"
 
 #. Type: select
 #. Choices
@@ -1123,20 +1209,23 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Northern Sami"
-msgstr ""
+msgstr "Hilagang America"
 
+# console-keymaps-acorn, Norwegian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr ""
+msgstr "Norwegian"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Persian"
-msgstr ""
+msgstr "Belarusian"
 
 #. Type: select
 #. Choices
@@ -1144,17 +1233,19 @@ msgstr ""
 msgid "Philippines"
 msgstr ""
 
+# console-keymaps-acorn, Polish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr ""
+msgstr "Polish"
 
+# console-keymaps-acorn, Portuguese
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr ""
+msgstr "Portuges"
 
 #. Type: select
 #. Choices
@@ -1166,19 +1257,20 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr ""
+msgstr "Romanian"
 
+# console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr ""
+msgstr "Ruso"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr ""
+msgstr "Serbian (Cyrillic)"
 
 #. Type: select
 #. Choices
@@ -1192,41 +1284,49 @@ msgstr ""
 msgid "Sinhala"
 msgstr ""
 
+# console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Slovak"
-msgstr ""
+msgstr "Slovakian"
 
+# console-keymaps-acorn, Slovakian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Slovenian"
-msgstr ""
+msgstr "Slovakian"
 
+# console-keymaps-acorn, Spanish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr ""
+msgstr "Espanyol"
 
+# console-keymaps-acorn, Swedish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr ""
+msgstr "Swedish"
 
+# console-keymaps-acorn, Swiss
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr ""
+msgstr "Swiss French"
 
+# console-keymaps-acorn, Swiss
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr ""
+msgstr "Swiss German"
 
 #. Type: select
 #. Choices
@@ -1250,7 +1350,7 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 #. Type: select
 #. Choices
@@ -1258,23 +1358,25 @@ msgstr ""
 msgid "Tibetan"
 msgstr ""
 
+# console-keymaps-acorn, Russian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr ""
+msgstr "Turkish (F layout)"
 
+# console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr ""
+msgstr "Turkish (Q layout)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukrainian"
 
 #. Type: select
 #. Choices
@@ -1292,4 +1394,4 @@ msgstr ""
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr ""
+msgstr "Anyo ng tiklado na gamitin:"
