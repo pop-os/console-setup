@@ -3,19 +3,41 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
+#
+# Debian Installer master translation file template
+# Don't forget to properly fill-in the header of PO files
+#
+# Debian Installer translators, please read the D-I i18n documentation
+# in doc/i18n/i18n.txt
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debian-installer\n"
+"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
+"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"PO-Revision-Date: 2014-01-05 13:26+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
+"Language: Tajik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr ""
+msgstr "Шрифти роҳандозӣ/ҳастаро тағйир надиҳед"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Иҷозат диҳед, ки система шрифти мувофиқро интихоб кунад"
 
 #. Type: text
 #. Description
@@ -23,154 +45,154 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr ""
+msgstr "танҳо чорчӯбаи миёнҷӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ""
+msgstr ". Арабӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr ""
+msgstr "# Арманӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr ""
+msgstr "# Кириллӣ - KOI8-R ва KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr ""
+msgstr "# Кириллӣ - забонҳои ғайриславянӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr ""
+msgstr "# Кириллӣ - забонҳои славянӣ (инчунин Боснӣ ва лотинии Сербиягӣ)"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ""
+msgstr ". Эфиопиягӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr ""
+msgstr "# Гурҷӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr ""
+msgstr "# Юнонӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Hebrew"
-msgstr ""
+msgstr "# Ибронӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr ""
+msgstr "# Лао"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr ""
+msgstr "# Latin1 ва Latin5 - забонҳои Аврупои ғарбӣ ва туркӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr ""
+msgstr "# Latin2 - Аврупои Марказӣ ва Руминӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr ""
+msgstr "# Latin3 ва Latin8 - Чичева; Эсперанто; Ирландӣ; Малтӣ ва Валлӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr ""
+msgstr "# Latin7 - Литвонӣ; Латвиягӣ; Маори ва Маршаллӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ""
+msgstr ". Лотинӣ - Ветнамӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr ""
+msgstr "# Тайӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ""
+msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ; Ибронӣ; Арабии оддӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ""
+msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ; Юнонӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ""
+msgstr ". Ҳамҷояшуда - Лотинӣ; Кириллии славянӣ ва ғайриславянӣ"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr ""
+msgstr "Пешниҳоди маҷмӯи аломатҳои мувофиқтар"
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr ""
+msgstr "Маҷмӯи аломатҳои дастгиришаванда:"
 
 #. Type: select
 #. Description
@@ -179,6 +201,8 @@ msgstr ""
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr ""
+"Лутфан, маҷмӯи аломатҳоеро интихоб кунед, ки бояд бо шрифти консолӣ дастгирӣ "
+"карда шавад."
 
 #. Type: select
 #. Description
@@ -188,6 +212,8 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
+"Агар шумо миёнгири чорчӯбаҳоро истифода набаред, интихобҳое, ки бо \".\" "
+"оғоз меёбанд, миқдори рангҳои дастраси консолро паст мекунанд."
 
 #. Type: select
 #. Description
@@ -197,7 +223,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr ""
+msgstr "Шрифт барои консол:"
 
 #. Type: select
 #. Description
@@ -213,6 +239,11 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
+"\"VGA\" намуди зоҳирии пешфарз дорад ва тарзҳои навишти байналмиллалиро ба "
+"таври миёна дастгирӣ мекунад. \"Fixed\" намуди зоҳирии оддӣ дорад, ва "
+"тарзҳои навишти байналмиллалиро беҳтар дастгирӣ мекунад. \"Terminus\" "
+"метавонад мондашавии чашмро пасттар кунад, аммо баъзе аломатҳо ба якдигар "
+"монанд мебошанд, ки ин метавонад барои барномасозон мушкил гардад."
 
 #. Type: select
 #. Description
@@ -225,6 +256,9 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
+"Агар ба шумо версияи пурранги шрифти Terminus маъқул бошад, TerminusBold "
+"(агар шумо фреймбуферро истифода баред) ё TerminusBoldVGA-ро (агар "
+"фреймбуферро истифода набаред) интихоб кунед."
 
 #. Type: select
 #. Description
@@ -234,7 +268,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr ""
+msgstr "Андозаи шрифт:"
 
 #. Type: select
 #. Description
@@ -244,6 +278,8 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
+"Лутфан, андозаи шрифтро барои консол интихоб намоед. Масалан, андозаи шрифт "
+"барои экрани роҳандозии компютер 8x16 мебошад."
 
 #. Type: select
 #. Description
@@ -254,13 +290,16 @@ msgid ""
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
+"Лутфан, андозаи шрифтро барои консол интихоб намоед. Масалан, андозаи шрифт "
+"барои экрани роҳандозии компютер 8x16 мебошад. Баъзе андозаҳои шрифт бастаи "
+"консоли kbd (абзорҳои ғайри консолӣ) ва чорчӯбаи миёнҷиро талаб мекунанд."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
-msgstr ""
+msgstr "Рамзгузорие, ки дар сатри фармон истифода мешавад:"
 
 #. Type: text
 #. Description
@@ -268,35 +307,35 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr ""
+msgstr "Конфигуратсия кардани клавиатура"
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
 msgid "Other"
-msgstr ""
+msgstr "Дигар"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr ""
+msgstr "Намунаи клавиатура:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr ""
+msgstr "Лутфан, модели клавиатураро дар ин компютер интихоб кунед."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr ""
+msgstr "Кишвари истеҳсоли клавиатура:"
 
 #. Type: select
 #. Description
@@ -307,13 +346,16 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
+"Тарҳбандии клавиатураҳо барои ҳар як кишвар фарқ мекунанд, ва баъзе кишварҳо "
+"дорои якчанд тарҳбандии умумӣ доранд. Лутфан, кишвари истеҳсоли клавиатураи "
+"ин компютерро интихоб кунед."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr ""
+msgstr "Тарҳбандии клавиатура:"
 
 #. Type: select
 #. Description
@@ -321,13 +363,15 @@ msgstr ""
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
 msgstr ""
+"Лутфан, тарҳбандиеро интихоб кунед, ки ба клавиатураи ин компютер мувофиқат "
+"мекунад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr ""
+msgstr "Тарҳбандии ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -337,6 +381,9 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
+"Тарҳбандии ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
+"ҳамчун XKBLAYOUT=\"${XKBLAYOUT}\" ва XKBVARIANT=\"${XKBVARIANT}\" муайян "
+"карда шудааст."
 
 #. Type: boolean
 #. Description
@@ -347,6 +394,9 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
+"Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
+"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
+"намешавад, ва конфигуратсияи ҷорӣ нигоҳ дошта мешавад."
 
 #. Type: boolean
 #. Description
@@ -354,6 +404,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
 msgstr ""
+"Тарҳбандии пешфарзи клавиатураи (${XKBLAYOUTVARIANT})-ро нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -364,6 +415,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
+"Қимати пешфарз барои тарҳбандии клавиатура XKBLAYOUT=\"${XKBLAYOUT}\" ва "
+"XKBVARIANT=\"${XKBVARIANT}\" мебошад.  Ин қимати пешфарз бо забон/минтақаи "
+"муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос ёфтааст."
 
 #. Type: boolean
 #. Description
@@ -373,13 +427,16 @@ msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
+"Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
+"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
+"намешавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
 msgid "Keep current keyboard options in the configuration file?"
-msgstr ""
+msgstr "Имконоти ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -389,6 +446,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
+"Имконоти ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
+"ҳамчун XKBOPTIONS=\"${XKBOPTIONS}\" муайян карда шудаанд."
 
 #. Type: boolean
 #. Description
@@ -398,13 +457,15 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
+"Агар шумо интихоб кунед, ки ин имконотро нигоҳ доред, ягон савол дар бораи "
+"имконоти клавиатура пурсида намешавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr ""
+msgstr "Имконоти пешфарзи клавиатураи (${XKBOPTIONS})-ро нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -415,6 +476,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
+"Қимати пешфарзи тарҳбандии клавиатура XKBOPTIONS=\"${XKBOPTIONS}\" мебошад.  "
+"Он бо забон/минтақаи муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос "
+"ёфтааст."
 
 #. Type: boolean
 #. Description
@@ -424,6 +488,8 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
+"Агар шумо интихоб кунед, ки онро нигощ медоред, ягон савол дар бораи "
+"имконоти клавиатура пурсида намешавад."
 
 #. Type: select
 #. Choices
@@ -434,7 +500,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #. Type: select
 #. Choices
@@ -453,7 +519,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr ""
+msgstr "Alt-и рост (AltGr)"
 
 #. Type: select
 #. Choices
@@ -468,14 +534,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr ""
+msgstr "Control-и рост"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr ""
+msgstr "Shift-и рост"
 
 #. Type: select
 #. Choices
@@ -494,7 +560,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr ""
+msgstr "Тугмаи рости тамға"
 
 #. Type: select
 #. Choices
@@ -509,42 +575,42 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr ""
+msgstr "Тугмаи меню"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr ""
+msgstr "Control+Shift"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr ""
+msgstr "Control+Alt"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Caps Lock"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr ""
+msgstr "Control-и чап+Shift-и чап"
 
 #. Type: select
 #. Choices
@@ -559,21 +625,21 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr ""
+msgstr "Alt-и чап"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr ""
+msgstr "Control-и чап"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr ""
+msgstr "Shift-и чап"
 
 #. Type: select
 #. Choices
@@ -592,28 +658,28 @@ msgstr ""
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr ""
+msgstr "Тугмаи чапи тамға"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr ""
+msgstr "Тугмаи Scroll Lock"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr ""
+msgstr "Бе интихобкунӣ"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr ""
+msgstr "Усули интихобкунии ҳолати миллӣ ва лотинӣ:"
 
 #. Type: select
 #. Description
@@ -623,6 +689,8 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
+"Ба шумо усуле лозим мешавад, ки клавиатураро дар байни тарҳбандии миллӣ ва "
+"тарҳбандии стандартии лотинӣ интихоб кунед."
 
 #. Type: select
 #. Description
@@ -634,20 +702,26 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
+"Тугмаҳои Alt-и рост ё Caps Lock одатан барои сабабҳои эргономӣ интихоб карда "
+"мешаванд (дар ҳолати пешина, вобастагии тугмаҳои Shift+Caps Lock-ро барои "
+"интихобкунии муқаррарии ҳарфҳои калон истифода баред). Alt+Shift низ "
+"вобастагии машҳур мебошад; аммо, он рафтори оддии худро дар Emacs ва "
+"барномаҳои дигаре, ки онро барои эҳтиёҷоти мушаххаси худ истифода мебаранд, "
+"гум мекунад."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr ""
+msgstr "На ҳамаи тугмаҳои номбаршуда дар ҳамаи клавиатураҳо мавҷуданд."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "Васлкунаки муваққатӣ нест"
 
 #. Type: select
 #. Choices
@@ -658,14 +732,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "Ҳар дуи тугмаи тамға"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "Усул барои фаъолсозии муваққатӣ байни вуруди лотинӣ ва миллӣ:"
 
 #. Type: select
 #. Description
@@ -678,6 +752,11 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
+"Вақте ки клавиатура дар ҳолати миллӣ мебошад ва касе мехоҳад танҳо якчанд "
+"ҳарфи лотиниро чоп кунад, беҳтар аст ки ҳолати лотинӣ муваққатан истифода "
+"бурда шавад. Клавиатура ҳолати муваққатиро истифода мебарад, то вақт ки "
+"тугмаи интихобшуда озод карда нашавад. Ин тугма инчунин барои вориди ҳарфҳои "
+"миллӣ истифода бурда мешавад, вақте ки клавиатура дар ҳолати лотинӣ мебошад."
 
 #. Type: select
 #. Description
@@ -685,41 +764,43 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
+"Шумо метавонед ин хусусиятро тавассути интихоби \"Васлкунаки муваққатӣ нест"
+"\" ғайрифаъол кунед."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "The default for the keyboard layout"
-msgstr ""
+msgstr "Тарҳбандии пешфарз барои клавиатура"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "Бе тугмаи AltGr"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "Тугмаи Enter дар клавиатураи рақамӣ"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "Ҳар дуи тугмаи Alt"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "Тугмае, ки ҳамчун AltGr амал мекунад:"
 
 #. Type: select
 #. Description
@@ -731,20 +812,25 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
+"Баъзе тарҳбандиҳои клавиатура тугмаи тағйирёбандаи AltGr барои вуруди баъзе "
+"аломатҳо истифода мешавад, асосан аломатҳое, ки барои забони тарҳбандии "
+"клавиатура ғайриоддӣ мебошанд, монанди рамзҳои асъорӣ ва ҳарфҳои заданок. "
+"Бисёр мартаба ин аломатҳо ҳамчун иловагӣ дар тугмаҳои клавиатура чоп карда "
+"мешаванд."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr ""
+msgstr "Бе тугмаи эҷодкунӣ"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr ""
+msgstr "Тугмаи эҷодкунӣ:"
 
 #. Type: select
 #. Description
@@ -755,6 +841,9 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
+"Тугмаи эҷодкунӣ (инчунин номи \"Тугмаи чанд_вазифа\" дорад) фармон медиҳад, "
+"ки компютер якчанд зарби тугмаро ҳамчун тугмабандии эҷоди ҳарфи дар "
+"клавиатура ёфтнашуда тарҷума кунад."
 
 #. Type: select
 #. Description
@@ -765,6 +854,10 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
+"Дар консоли матнӣ Тугмаи эҷодкунӣ дар ҳолати Юникод кор намекунад. Агар "
+"ҳолати Юникод истифода нашавад, вобаста аз интихоби инҷоӣ, шумо инчунин "
+"доимо метавонед тугмабандии Control+фосила-ро ҳамчун Тугмаи эҷодкунӣ "
+"истифода баред."
 
 #. Type: boolean
 #. Description
@@ -772,6 +865,8 @@ msgstr ""
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
 msgstr ""
+"Тугмаҳои \"Control+Alt+Backspace\"-ро барои қатъ кардани X server истифода "
+"мебаред?"
 
 #. Type: boolean
 #. Description
@@ -781,84 +876,88 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
+"Ба таври пешфарз, маҷмӯи тугмаҳои Control+Alt+Backspace ягон амалро иҷро "
+"намекунад.  Агар хоҳед, он метавонад барои қатъ кардани X server истифода "
+"шавад."
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr ""
+msgstr "Англисии амрикоӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr ""
+msgstr "Албанӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr ""
+msgstr "Арабӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Астурӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr ""
+msgstr "Бангладешӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr ""
+msgstr "Белорусӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr ""
+msgstr "Банголӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr ""
+msgstr "Белгиягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr ""
+msgstr "Босниягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr ""
+msgstr "Бразилиягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr ""
+msgstr "Англисии британӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr ""
+msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr ""
+msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
 
 #. Type: select
 #. Choices
@@ -870,265 +969,265 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr ""
+msgstr "Франсузии канадӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr ""
+msgstr "Бисёрзабонаи канадӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Каталонӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Хитоӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr ""
+msgstr "Хорватӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr ""
+msgstr "Чехӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr ""
+msgstr "Даниягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr ""
+msgstr "Голландӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr ""
+msgstr "Дровакӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr ""
+msgstr "Дзонгха"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr ""
+msgstr "Эсперанто"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr ""
+msgstr "Эстонӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
-msgstr ""
+msgstr "Эфиопӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr ""
+msgstr "Финнӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr ""
+msgstr "Франсузӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr ""
+msgstr "Гурҷӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr ""
+msgstr "Олмонӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr ""
+msgstr "Юнонӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr ""
+msgstr "Гуҷаротӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Гурмухӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr ""
+msgstr "Ибрӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Ҳиндӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr ""
+msgstr "Венгерӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr ""
+msgstr "Исландӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Ирландӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr ""
+msgstr "Италиявӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr ""
+msgstr "Ҷопонӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr ""
+msgstr "Каннада"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr ""
+msgstr "Қазоқӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr ""
+msgstr "Кхмерӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr ""
+msgstr "Кирғизӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr ""
+msgstr "Кореягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr ""
+msgstr "Курдӣ (Тарҳбандии F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr ""
+msgstr "Курдӣ (Тарҳбандии Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr ""
+msgstr "Лао"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr ""
+msgstr "Америкаи Лотинӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr ""
+msgstr "Латишӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr ""
+msgstr "Литвиягӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr ""
+msgstr "Мақдунӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr ""
+msgstr "Малаялам"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr ""
+msgstr "Непалӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Northern Sami"
-msgstr ""
+msgstr "Самии Шимолӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr ""
+msgstr "Норвегӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr ""
+msgstr "Форсӣ"
 
 #. Type: select
 #. Choices
@@ -1140,148 +1239,148 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr ""
+msgstr "Полякӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr ""
+msgstr "Португалӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr ""
+msgstr "Панҷобӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr ""
+msgstr "Руминӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr ""
+msgstr "Русӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr ""
+msgstr "Сербӣ (Кириллӣ)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr ""
+msgstr "Синдӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr ""
+msgstr "Синҳалӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
-msgstr ""
+msgstr "Словакӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovenian"
-msgstr ""
+msgstr "Словенӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr ""
+msgstr "Испанӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr ""
+msgstr "Шведӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr ""
+msgstr "Франсузии шведӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr ""
+msgstr "Олмонии шведӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Тоҷикӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr ""
+msgstr "Тамилӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr ""
+msgstr "Телугу"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr ""
+msgstr "Тайӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "Тибетӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr ""
+msgstr "Туркӣ (Тарҳбандии F)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr ""
+msgstr "Туркӣ (Тарҳбандии Q)"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr ""
+msgstr "Украинӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr ""
+msgstr "Ӯйғурӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr ""
+msgstr "Ветнамӣ"
 
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr ""
+msgstr "Тарҳбандии клавиатура барои истифода:"
