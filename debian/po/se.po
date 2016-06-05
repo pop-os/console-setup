@@ -3,28 +3,6 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of se.po to Northern Saami
-#
-# Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files#
-# Debian Installer translators, please read the D-I i18n documentation
-# in doc/i18n/i18n.txt#
-#
-# Børre Gaup <boerre@skolelinux.no>, 2006, 2010.
-msgid ""
-msgstr ""
-"Project-Id-Version: se\n"
-"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2010-12-31 02:09+0100\n"
-"Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
-"Language-Team: Northern Sami <i18n-sme@lister.ping.uio.no>\n"
-"Language: se\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-
 #. Type: text
 #. Description
 #. :sl3:
@@ -191,9 +169,8 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
-#, fuzzy
 msgid "Character set to support:"
-msgstr "Arkitektuvra ii dorjojuvvo"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -219,9 +196,8 @@ msgstr ""
 #. relatively short.
 #. :sl3:
 #: ../console-setup.templates:6001
-#, fuzzy
 msgid "Font for the console:"
-msgstr "Ođđa geavaheaddji olles namma:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -283,50 +259,44 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
-#, fuzzy
 msgid "Encoding to use on the console:"
-msgstr "Ođđa geavaheaddji olles namma:"
+msgstr ""
 
 #. Type: text
 #. Description
 #. Main menu item. Please keep below 55 columns
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
-#, fuzzy
 msgid "Configure the keyboard"
-msgstr "Heivet fierpmádaga"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
-#, fuzzy
 msgid "Other"
-msgstr "eará"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "Vállje boallobeavdehápmi"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Vállje boallobeavdešlája maid heivehit."
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
-#, fuzzy
 msgid "Country of origin for the keyboard:"
-msgstr "Heivet fierpmádaga"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -342,25 +312,22 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "Vállje boallobeavdehápmi"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "Čális dán vuogádaga guossoheaddjenama."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Automáhtalaš fierpmádatheivehus filtii"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -375,14 +342,11 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Válljes jus áiggut bidjat ođđa partišuvnna álggus dahje loahpas olamuttus "
-"sajis."
 
 #. Type: boolean
 #. Description
@@ -405,21 +369,17 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"Válljes jus áiggut bidjat ođđa partišuvnna álggus dahje loahpas olamuttus "
-"sajis."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Automáhtalaš fierpmádatheivehus filtii"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -434,13 +394,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Válljes jus áiggut bidjat ođđa partišuvnna álggus dahje loahpas olamuttus "
-"sajis."
 
 #. Type: boolean
 #. Description
@@ -463,13 +420,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Válljes jus áiggut bidjat ođđa partišuvnna álggus dahje loahpas olamuttus "
-"sajis."
 
 #. Type: select
 #. Choices
@@ -736,9 +690,8 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "Vállje boallobeavdehápmi"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -790,9 +743,8 @@ msgstr ""
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "Ráhkadeamen ovttadatfiillaid ..."
+msgstr ""
 
 #. Type: select
 #. Description
@@ -881,9 +833,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "Nuorta-Indiana"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -942,9 +893,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Croatian"
-msgstr "Joatkke"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -955,9 +905,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Danish"
-msgstr "Davis"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -986,9 +935,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Estonian"
-msgstr "Nuorta-Indiana"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1059,9 +1007,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Icelandic"
-msgstr "Oseania"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1132,9 +1079,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Latin American"
-msgstr "Davvi Amerihkká"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1151,9 +1097,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Macedonian"
-msgstr "Maceio"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1170,9 +1115,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Northern Sami"
-msgstr "Davvi Amerihkká"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1249,9 +1193,8 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovenian"
-msgstr "Nuorta-Indiana"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1340,6 +1283,5 @@ msgstr ""
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
-#, fuzzy
 msgid "Keymap to use:"
-msgstr "Nammabálvváid čujuhusat:"
+msgstr ""

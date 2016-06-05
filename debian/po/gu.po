@@ -3,49 +3,19 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of d-i.po to Gujarati
-#
-# Debian Installer master translation file template
-# Don't forget to properly fill-in the header of PO files#
-# Debian Installer translators, please read the D-I i18n documentation
-# in doc/i18n/i18n.txt
-# Contributor:
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2013
-#
-#
-# Translations from iso-codes:
-#   - translations from ICU-3.0
-#
-#   Alastair McKinstry <mckinstry@debian.org>, 2004.
-#   Kartik Mistry <kartik.mistry@gmail.com>, 2006, 2007, 2008.
-#   Ankit Patel <ankit644@yahoo.com>, 2009,2010.
-#   Sweta Kothari <swkothar@redhat.com>, 2009, 2010.
-msgid ""
-msgstr ""
-"Project-Id-Version: d-i\n"
-"Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: Gujarati <team@utkarsh.org>\n"
-"Language: gu\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "બૂટ/કર્નલ ફોન્ટ ન બદલો"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr "સિસ્ટમને યોગ્ય ફોન્ટ પસંદ કરવા દો"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -53,154 +23,154 @@ msgstr "સિસ્ટમને યોગ્ય ફોન્ટ પસંદ �
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr "માત્ર ફ્રેમબફર"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ". અરેબિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "# અર્મેનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# સિરિલિક - KOI8-R અને KOI8-U"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# સિરિલિક - સ્લાવિક ન હોય તેવી ભાષાઓ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# સિરિલિક - સ્લાવિક ભાષાઓ (બોસ્નિઅન અને સર્બિઅન લેટિન પણ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Ethiopic"
-msgstr ". ઇથિઓપિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Georgian"
-msgstr "# જ્યોર્જિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr "# ગ્રીક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Hebrew"
-msgstr "# હિબ્રુ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Lao"
-msgstr "# લાઓ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# લેટિન૧ અને લેટિન૫ - પ્શ્ચિમ યુરોપ અને તુર્કિક ભાષાઓ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
-msgstr "# લેટિન૨ - મધ્ય યુરોપ અને રોમેનિઅન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "# લેટિન૩ અને લેટિન૮ - ચેચેન્વા; એસ્પેરેન્ટો; આયરિશ; માલ્ટેઝ અને વેલ્શ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "# લેટિન૭ - લિથુઆનિઅન; લેટવિઅન; માઓરી અને માર્શેલિઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
-msgstr ". લેટિન - વિએતનામીઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr "# થાઈ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". જોડેલ - લેટિન; સ્લાવિક સિરિલિક; હિબ્રુ; સામાન્ય અરેબિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". જોડેલ - લેટિન; સ્લેવિક સિરિલિક; ગ્રીક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". જોડેલ - લેટિન; સ્લેવિક સિરિલિક નહીં"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr "સૌથી યોગ્ય અક્ષર ગણ ધારી લો"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "આધાર આપવા માટે અક્ષર ગણ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -208,7 +178,7 @@ msgstr "આધાર આપવા માટે અક્ષર ગણ:"
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "કોન્સોલ ફોન્ટ દ્વારા આધાર આપી શકાતો અક્ષર સમૂહ પસંદ કરો."
+msgstr ""
 
 #. Type: select
 #. Description
@@ -218,8 +188,6 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"જો તમે ફ્રેમબફર ઉપયોગ નહી કરો તો, \".\" સાથે શરુ થતાં વિકલ્પો કોન્સોલમાં પ્રાપ્ત રંગોની "
-"સંખ્યા ઘટશે."
 
 #. Type: select
 #. Description
@@ -229,7 +197,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr "કૉન્સોલ માટે ફોન્ટ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -245,10 +213,6 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"\"VGA\" એ પરંપરાગત દેખાવ છે અને આંતરરાષ્ટ્રિય સ્ક્પ્ટિસ માટે મધ્યમ આધાર છે. \"Fixed\" એ "
-"સરળ દેખાવ છે અને આંતરરાષ્ટ્રિય સ્ક્પ્ટિસ માટે સારો આધાર છે. \"Terminus\" કદાચ આંખોને થતું "
-"નુકશાન અટકાવશે પણ, કેટલીક સંજ્ઞાઓનો દેખાવ એકસરખો હોય છે જે પ્રોગ્રામર્સ માટે મુશ્કેલી કરી "
-"શકે છે."
 
 #. Type: select
 #. Description
@@ -261,8 +225,6 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"જો તમે ટર્મિનસ ફોન્ટની ઘાટી આવૃત્તિ પસંદ કરવા માંગતા હોવ તો, TerminusBold (જો તમે "
-"ફ્રેમબફર ઉપયોગ કરતા હોવ) અથવા TerminusBoldVGA (બાકીનું) પસંદ કરો."
 
 #. Type: select
 #. Description
@@ -272,7 +234,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "ફોન્ટ માપ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -282,8 +244,6 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"મહેરબાની કરી કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે વખતે "
-"વપરાતા ફોન્ટનું માપ ૮x૧૬ હોય છે."
 
 #. Type: select
 #. Description
@@ -294,16 +254,13 @@ msgid ""
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"મહેરબાની કરી કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે વખતે "
-"વપરાતા ફોન્ટનું માપ ૮x૧૬ હોય છે.  કેટલાક ફોન્ટ માપ માટે kbd કોન્સોલ પેકેજો (console-"
-"tools નહી) વત્તા ફ્રેમબફર જરૂરી છે."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
-msgstr "કોન્સોલ પર વાપરવા માટેનું એનકોડિંગ:"
+msgstr ""
 
 #. Type: text
 #. Description
@@ -311,35 +268,35 @@ msgstr "કોન્સોલ પર વાપરવા માટેનું �
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "કીબોર્ડ રૂપરેખાંકિત કરો"
+msgstr ""
 
 #. Type: text
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
 msgid "Other"
-msgstr "બીજું"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "કીબોર્ડ મોડેલ:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "મહેરબાની કરીને આ મશીન માટે કીબોર્ડનો પ્રકાર પસંદ કરો."
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "કીબોર્ડ માટેનો મૂળ દેશ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -350,29 +307,27 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"કીબોર્ડ્સનો દેખાવ દેશ પ્રમાણે બદલાય છે, જ્યાં કેટલાક દેશોને અનેક સામાન્ય દેખાવો હોય છે. "
-"મહેરબાની કરી આ કોમ્પ્યુટરના કીબોર્ડ માટે મૂળ દેશ પસંદ કરો."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr "કીબોર્ડ દેખાવ:"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "મહેરબાની કરી આ મશીન માટે સંબંધિત કીબોર્ડ દેખાવ પસંદ કરો."
+msgstr ""
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "રૂપરેખાંકન ફાઈલમાં હાલનો કીબોર્ડ દેખાવ એમ જ રાખશો?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -382,8 +337,6 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"રૂપરેખાંકન ફાઈલ /etc/default/keyboard માં હાલનો કીબોર્ડ દેખાવ XKBLAYOUT="
-"\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\" તરીકે વ્યાખ્યાયિત છે."
 
 #. Type: boolean
 #. Description
@@ -394,15 +347,13 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"મહેરબાની કરી પસંદ કરો કે તમે રાખવા માંગો છો. જો તમે આ વિકલ્પ પસંદ કરશો તો, કીબોર્ડ "
-"દેખાવ વિશે કોઈપણ પ્રશ્નો પૂછવામાં આવશે નહી અને હાલનું રૂપરેખાંકન સાચવવામાં આવશે."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr "મૂળભૂત કીબોર્ડ દેખાવ રાખશો (${XKBLAYOUTVARIANT})?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -413,9 +364,6 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"કીબોર્ડ દેખાવની મૂળભૂત કિંમત XKBLAYOUT=\"${XKBLAYOUT}\" અને XKBVARIANT="
-"\"${XKBVARIANT}\" છે.  આ મૂળભૂત કિંમત હાલમાં વ્યાખ્યાયિત ભાષા/વિસ્તારઅને /etc/X11/"
-"xorg.conf ની ગોઠવણીઓ પર આધારિત છે."
 
 #. Type: boolean
 #. Description
@@ -425,15 +373,13 @@ msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"મહેરબાની કરી પસંદ કરો કે તમારે રાખવું છે. જો તમે આ વિકલ્પ પસંદ કરશો તો, કીબોર્ડ દેખાવ "
-"વિશે કોઇપણ પ્રશ્ર્નો પૂછવામાં આવશે નહીં."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "રૂપરેખાંકન ફાઇલમાં હાલનાં કીબોર્ડ વિકલ્પો રાખશો?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -443,8 +389,6 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"રૂપરેખાંકન ફાઇલ /etc/default/keyboard માં કીબોર્ડ વિકલ્પો XKBOPTIONS="
-"\"${XKBOPTIONS}\" તરીકે વ્યાખ્યાયિત કરેલ છે."
 
 #. Type: boolean
 #. Description
@@ -454,15 +398,13 @@ msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"જો તમે આ વિકલ્પો રાખવાનું પસંદ કરશો તો, કીબોર્ડ વિકલ્પો વિશે કોઇપણ પ્રશ્ર્નો પૂછવામાં આવશે "
-"નહી."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "મૂળભૂત કીબોર્ડ વિકલ્પો (${XKBOPTIONS}) રાખશો?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -473,8 +415,6 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"કીબોર્ડ દેખાવના વિકલ્પોની મૂળભૂત કિંમત XKBOPTIONS=\"${XKBOPTIONS}\" છે.  તે હાલમાં "
-"વ્યાખ્યાયિતકરેલ ભાષા/વિસ્તાર અને /etc/X11/xorg.conf ની ગોઠવણીઓ પર આધારિત છે."
 
 #. Type: boolean
 #. Description
@@ -484,8 +424,6 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"જો તમે જાળવી રાખવાનું પસંદ કરશો તો, કીબોર્ડ વિકલ્પો વિશે કોઇપણ પ્રશ્ર્નો પૂછવામાં આવશે "
-"નહી."
 
 #. Type: select
 #. Choices
@@ -496,7 +434,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "કેપ્સ-લૉક"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -515,7 +453,7 @@ msgstr "કેપ્સ-લૉક"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr "જમણી અલ્ટ (AltGr)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -530,14 +468,14 @@ msgstr "જમણી અલ્ટ (AltGr)"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr "જમણી કંટ્રોલ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr "જમણી શીફ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -556,7 +494,7 @@ msgstr "જમણી શીફ્ટ"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr "જમણી લોગો કળ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -571,42 +509,42 @@ msgstr "જમણી લોગો કળ"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "મેનુ કળ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "અલ્ટ+શીફ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr "કંટ્રોલ+શીફ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr "કંટ્રોલ+અલ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr "અલ્ટ+કેપ્સ લૉક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr "ડાબી કંટ્રોલ+ડાબી શીફ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -621,21 +559,21 @@ msgstr "ડાબી કંટ્રોલ+ડાબી શીફ્ટ"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr "ડાબી અલ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "ડાબી કંટ્રોલ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "ડાબી શીફ્ટ"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -654,28 +592,28 @@ msgstr "ડાબી શીફ્ટ"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr "ડાબી લોગો કળ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "સ્ક્રોલ લૉક કળ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "No toggling"
-msgstr "ટોગલિંગ નહીં"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "રાષ્ટ્રિય અને લેટિન સ્થિતિ વચ્ચે બદલાવાની રીત:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -685,7 +623,6 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"તમને રાષ્ટ્રિય દેખાવ અને પ્રમાણભૂત લેટિન દેખાવ વચ્ચે કીબોર્ડ અદલા-બદલી કરવાની રીત જોઇશે."
 
 #. Type: select
 #. Description
@@ -697,24 +634,20 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"જમણી અલ્ટર અથવા કેપ્સ લોક કળો મોટાભાગે ઇર્ગોનોમિક કારણોસર (પછીના કિસ્સામાં, શીફ્ટ + "
-"કેપ્સ લોકનું જોડાણ સામાન્ય કેપ્સની બદલી માટે) પસંદ કરવામાં આવે છે. અલ્ટર+શીફ્ટ એ પણ "
-"લોકપ્રિય જોડાણ છે; તે જોકે ઈમેક્સ અને બીજા ચોક્કસ જરૂરિયાત વાળા ઉપયોગ કરતાંકાર્યક્રમોમાં "
-"તેમની સામાન્ય વર્તણૂક ગુમાવી દેશે."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "યાદી કરેલ બધી કળો બધાં કીબોર્ડમાં હાજર હોતી નથી."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr "કોઇ તત્પૂરતી બદલી નહીં"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -725,14 +658,14 @@ msgstr "કોઇ તત્પૂરતી બદલી નહીં"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "બન્ને લૉગો કળો"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "રાષ્ટ્રિય અને લેટિન ઇનપુટ વચ્ચે બદલાવાની કામચલાઉ રીત:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -745,52 +678,48 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"જ્યારે કીબોર્ડ રાષ્ટ્રિય સ્થિતિમાં હોય અને કોઈ માત્ર કેટલાક લેટિન અક્ષરો છાપવા માંગે તો, "
-"લેટિન સ્થિતિમાં કામચલાઉ જવું એ વધુ યોગ્ય છે. કીબોર્ડ તે સ્થિતિમાં રહેશે જ્યાં સુધી પસંદ કરેલ કળ "
-"દબાવી રાખવામાં આવશે. તે કળ જ્યારે કીબોર્ડ લેટિન સ્થિતિમાં હોય ત્યારે રાષ્ટ્રિય સંજ્ઞાઓ દાખલ "
-"કરવા માટે પણ વાપરી શકાશે."
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr "તમે \"કોઇ કામચલાઉ બદલાવો નહીં\" પસંદ કરી આ લાક્ષણિકતા નિષ્ક્રિય કરી શકો છો."
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "The default for the keyboard layout"
-msgstr "કીબોર્ડ દેખાવ માટે મૂળભૂત"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "અલ્ટર કળ નહી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "કીપેડ એન્ટર કળ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "બન્ને અલ્ટર કળો"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "AltGr તરીકે કાર્ય કરવા માટેની કળ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -802,23 +731,20 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"કેટલાક કીબોર્ડ દેખાવની સાથે, AltGr બદલાવ કળ કેટલાક અક્ષરો દાખલ કરવા માટે વપરાય છે, "
-"મોટાભાગે જેઓ કીબોર્ડની ભાષા માટે અસામાન્ય હોય છે, દાખલા તરીકે વિદેશી ચલણ સંજ્ઞા અને "
-"એસેન્ટ અક્ષરો. આ મોટોભાગે કળો પર વધારાની સંજ્ઞા તરીકે છાપેલ હોય છે."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
 msgid "No compose key"
-msgstr "કોઇ કોમ્પોઝ કળ નહીં"
+msgstr ""
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
 msgid "Compose key:"
-msgstr "કોમ્પોઝ કળ:"
+msgstr ""
 
 #. Type: select
 #. Description
@@ -829,8 +755,6 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"જોડાણ કળ (અનેક_કળ તરીકે પણ જાણીતી) કોમ્પ્યુટરને કેટલાક આગામી કળનું અનુમાન કરવા દે છે જે "
-"કીબોર્ડ પર ન મળતાં અક્ષરો રજૂ કરવા માટે વપરાય છે."
 
 #. Type: select
 #. Description
@@ -841,15 +765,13 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"લખાણ કોન્સોલ પર જોડાણ કળ યુનિકોડ સ્થિતિમાં કામ કરતી નથી. જો યુનિકોડ સ્થિતિમાં ન હોય "
-"તો, તમે અહીં ગમે તે પસંદ કરેલ હોય, તમે હંમેશા કંટ્રોલ+ટપકું જોડાણ કળ તરીકે વાપરી શકો છો."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr "X સર્વર બંધ કરવા માટે કંટ્રોલ+અલ્ટર+બેકસ્પેસ વાપરશો?"
+msgstr ""
 
 #. Type: boolean
 #. Description
@@ -859,87 +781,84 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"મૂળભૂત રીતે કંટ્રોલ+અલ્ટર+બેકસ્પેસ જોડાણ કંઈ કરતું નથી.  જો તમે ઈચ્છો તો તે X સર્વરને બંધ કરવા "
-"વાપરી શકાય છે."
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "અમેરિકન અંગ્રેજી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
-msgstr "અલ્બેનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
-msgstr "અરેબિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr "એસ્ટુરિઅન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "બાંગ્લાદેશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "બેલારશિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
-msgstr "બંગાળી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "બેલ્જીયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
-msgstr "બોસનીયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
-msgstr "બ્રાજીલિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "બ્રિટિશ અંગ્રેજી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -951,265 +870,265 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "કેનેડિયન ફ્રેન્ચ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "કેનેડિયન બહુભાષીય"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "કેટેલાન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "ચીની"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr "ક્રોએશિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "ચૅઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
-msgstr "ડેનિશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr "ડચ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "ડવોરાક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr "ડ્જોન્ગખા"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
-msgstr "ઇસ્પેરાન્ટો"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
-msgstr "ઇસ્ટોનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
-msgstr "ઇથિઓપિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
-msgstr "ફિનિશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "ફ્રેન્ચ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
-msgstr "જોર્જિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "જર્મન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "ગ્રીક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "ગુજરાતી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
-msgstr "ગુરુમુખી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
-msgstr "હિબ્રુ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr "હિન્દી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "હંગેરિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
-msgstr "આઇસલેન્ડિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr "ઇરિશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "ઇટાલિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "જાપાનીઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "કન્નડ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "કઝાખ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "ખ્મેર"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
-msgstr "કિર્ગિઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
-msgstr "કોરિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "કુર્દીશ (F દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "કુર્દીશ (Q દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "લાઓ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "લેટિન અમેરિકન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "લેટવિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr "લિથુઆનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
-msgstr "મેસેડોનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "મલયાલમ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
-msgstr "નેપાળી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Northern Sami"
-msgstr "ઉત્તરી સામી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "નોર્વેજીયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "પર્સિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
@@ -1221,148 +1140,148 @@ msgstr ""
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
-msgstr "પોલીશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr "પોર્ટુગીઝ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "પંજાબી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "રોમાનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "રશિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "સર્બિયન (સિરીલીક)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
-msgstr "સિંધી"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
-msgstr "સિંહાલા"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
-msgstr "સ્લોવેક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Slovenian"
-msgstr "સ્લોવેનિઅન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
-msgstr "સ્પેનિશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
-msgstr "સ્વિડિશ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "સ્વીશ ફ્રેન્ચ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "સ્વીસ જર્મન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr "તાજિક"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "તમિલ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "તેલુગુ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "થાઇ"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr "તિબેટાન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "તુર્કિશ (F દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "તુર્કિશ (Q દેખાવ)"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "યુક્રેનિયન"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
-msgstr "ઉગ્હુર"
+msgstr ""
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
-msgstr "વિયેતનામી"
+msgstr ""
 
 #. Type: select
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "ઉપયોગ કરવાનો કીમેપ:"
+msgstr ""
