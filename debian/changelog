@@ -1,3 +1,16 @@
+console-setup (1.146) unstable; urgency=medium
+
+  * Rebuild with translation files that include complete information
+    about translator and last update information.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 05 Jun 2016 21:49:08 +0200
+
+console-setup (1.145) unstable; urgency=medium
+
+  * Rebuild with translations back in place
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 29 May 2016 19:25:22 +0200
+
 console-setup (1.144) unstable; urgency=medium
 
   [ Updated translations ]
