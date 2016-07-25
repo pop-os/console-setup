@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2016-02-12 14:46+0200\n"
+"PO-Revision-Date: 2016-07-25 23:45+0300\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10N Turkish\n"
 "Language: tr\n"
@@ -964,9 +964,8 @@ msgstr "Britanya İngilizcesi"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Bulgarca (fonetik düzeni)"
+msgstr "Bulgarca (BDS düzeni)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
