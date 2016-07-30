@@ -1,9 +1,12 @@
-console-setup (1.148) UNRELEASED; urgency=medium
+console-setup (1.148) unstable; urgency=medium
 
   [ Karsten Merker ]
   * Typo fix in the setupcon manpage. Closes: #832595.
 
- -- Karsten Merker <merker@debian.org>  Wed, 27 Jul 2016 19:40:25 +0200
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 29 Jul 2016 08:06:33 +0200
 
 console-setup (1.147) unstable; urgency=medium
 
