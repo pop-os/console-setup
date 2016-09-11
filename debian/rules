@@ -139,7 +139,8 @@ install-main: build
 		prefix=debian/console-setup-mini/usr install-ckbcomp-mini
 	$(pre) --mini debian/console-setup-mini/bin/setupcon
 	$(pre) --mini debian/console-setup-mini/usr/bin/ckbcomp-mini
-	ls debian/console-setup*/usr/share/man/*/* \
+	ls debian/console-setup/usr/share/man/*/* \
+	   debian/console-setup-mini/usr/share/man/*/* \
 		| xargs -n 1 $(manprocessor) -i
 	install -d debian/keyboard-configuration/usr/share/console-setup/
 	mv debian/console-setup/etc/default/keyboard \
