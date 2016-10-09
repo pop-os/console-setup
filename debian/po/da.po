@@ -6,7 +6,7 @@
 # translation of debian-installer_packages_po_sublevel1_da.po to
 # Danish messages for debian-installer.
 # This file is distributed under the same license as debian-installer.
-# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013, 2014, 2015.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013, 2014, 2015, 2016.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2010.
 # Mads Bille Lundby <lundbymads@gmail.com, 2009.
 # Henrik Christian Grove <debian@3001.dk>, 2008.
@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-08-16 20:20+0200\n"
+"PO-Revision-Date: 2016-09-18 20:20+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -969,16 +969,15 @@ msgstr "Britisk-engelsk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Bulgarsk kyrillisk (phonetic-udgave)"
+msgstr "Bulgarsk (BDS-layout)"
 
 # console-keymaps-acorn, Bulgarian
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Bulgarsk kyrillisk (phonetic-udgave)"
+msgstr "Bulgarsk kyrillisk (phonetic-layout)"
 
 #. Type: select
 #. Choices
@@ -1195,14 +1194,14 @@ msgstr "Koreansk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
-msgstr "Kurdisk (F-udgave)"
+msgstr "Kurdisk (F-layout)"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
-msgstr "Kurdisk (Q-udgave)"
+msgstr "Kurdisk (Q-layout)"
 
 #. Type: select
 #. Choices
@@ -1402,14 +1401,14 @@ msgstr "Tibetansk"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
-msgstr "Tyrkisk (F-udgave)"
+msgstr "Tyrkisk (F-layout)"
 
 # console-keymaps-acorn, Turkish
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
-msgstr "Tyrkisk (Q-udgave)"
+msgstr "Tyrkisk (Q-layout)"
 
 #. Type: select
 #. Choices

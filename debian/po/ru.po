@@ -20,13 +20,13 @@
 # Mikhail Zabaluev <mhz@altlinux.org>, 2006.
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
 # Pavel Maryanov <acid@jack.kiev.ua>, 2009,2010.
-# Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
+# Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-11-04 09:36+0300\n"
+"PO-Revision-Date: 2016-07-16 09:14+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -954,9 +954,8 @@ msgstr "Английская великобританская"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Болгарская (раскладка phonetic)"
+msgstr "Болгарская (раскладка BDS)"
 
 #. Type: select
 #. Choices
