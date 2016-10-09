@@ -17,12 +17,12 @@ xkbdir ?= $(kbddir)/ckb
 $./%.ekmap : model = $(notdir $(@:%.ekmap=%))
 $./%.ekmap :
 	(cd $(kbddir) && \
-		./kbdcompiler $(model) KeyboardNames.pl $(xkbdir)) >$@
+		./kbdcompiler $(model) ./KeyboardNames.pl $(xkbdir)) >$@
 
 $./%.ekbd : model = $(notdir $(@:%.ekbd=%))
 $./%.ekbd :
 	(cd $(kbddir) && \
-		./kbdcompiler freebsd-$(model) KeyboardNames.pl $(xkbdir)) >$@
+		./kbdcompiler freebsd-$(model) ./KeyboardNames.pl $(xkbdir)) >$@
 
 $./charmap_functions.sh : $(acmfiles)
 	$(kbddir)/make_charmap_functions $(kbddir)/../acm $(charmaps) >$@

@@ -57,13 +57,13 @@ di-kbdnames := $(shell grep -A 2 keyboard-configuration/xkb-keymap debian/consol
 $./%.ekmap : model = $(notdir $(@:%.ekmap=%))
 $./%.ekmap :
 	(cd Keyboard \
-	&& ./kbdcompiler $(model) KeyboardNames.pl $(xkbdir) \
+	&& ./kbdcompiler $(model) ./KeyboardNames.pl $(xkbdir) \
 		"$(di-kbdnames)") >$@
 
 $./%.ekbd : model = $(notdir $(@:%.ekbd=%))
 $./%.ekbd :
 	(cd Keyboard \
-	&& ./kbdcompiler freebsd-$(model) KeyboardNames.pl $(xkbdir) \
+	&& ./kbdcompiler freebsd-$(model) ./KeyboardNames.pl $(xkbdir) \
 		"$(di-kbdnames)") >$@
 
 # The following rules ensure that kbdcompiler is not run

@@ -2,9 +2,12 @@ console-setup (1.151) unstable; urgency=medium
 
   [ Samuel Thibault ]
   * rules: Fix race in parallel builds, closes: #837327.
-  * Keyboard/kbdnames-maker, debian/preprocessor, debian/rules: Pass
-    ./KeyboardNames.pl to kbdnames-maker instead of KeyboardNames.pl, since
-    perl does not look at '.' any more. Closes: #840209.
+
+  [ gregor herrmann and Samuel Thibault ]
+  * Keyboard/kbdnames-maker, Keyboard/kbdcompiler, Keyboard/Makefile,
+    debian/preprocessor, debian/rules: Pass ./KeyboardNames.pl to kbdnames-maker
+    instead of KeyboardNames.pl, since perl does not look at '.' any
+    more. Closes: #840209.
 
   [ Dominik George ]
   * keyboard-configuration.config: Fix mksh compatibility. Closes: #833378.
