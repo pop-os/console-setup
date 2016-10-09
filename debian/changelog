@@ -3,6 +3,9 @@ console-setup (1.151) UNRELEASED; urgency=medium
   [ Samuel Thibault ]
   * rules: Fix race in parallel builds, closes: #837327.
 
+  [ Dominik George ]
+  * keyboard-configuration.config: Fix mksh compatibility.
+
  -- Samuel Thibault <sthibault@debian.org>  Sun, 20 Mar 2016 23:20:06 +0100
 
 console-setup (1.150) unstable; urgency=medium
