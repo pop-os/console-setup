@@ -42,7 +42,7 @@ udeb-fonts-freebsd = $(addprefix Fonts/, $(addsuffix .fnt, $(udeb-fonts)))
 
 debian/kbdnames.gz: $./Keyboard/KeyboardNames.pl
 	( cd Keyboard \
-	&& ./kbdnames-maker KeyboardNames.pl \
+	&& ./kbdnames-maker ./KeyboardNames.pl \
 		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9n ) >$@
 
 models := amiga ataritt macintosh_old pc105 sun4 sun5
