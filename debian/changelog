@@ -1,6 +1,7 @@
 console-setup (1.151) unstable; urgency=medium
 
   [ Samuel Thibault ]
+  * Team upload.
   * rules: Fix race in parallel builds, closes: #837327.
 
   [ gregor herrmann and Samuel Thibault ]
