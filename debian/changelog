@@ -1,3 +1,9 @@
+console-setup (1.152) UNRELEASED; urgency=medium
+
+  * ensure setupcon generated script never has empty braces. Closes: 833053
+
+ -- Philip Hands <phil@hands.com>  Tue, 11 Oct 2016 21:46:04 +0200
+
 console-setup (1.151) unstable; urgency=medium
 
   [ Samuel Thibault ]

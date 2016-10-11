@@ -910,7 +910,7 @@ $commands_f
 
 if ls /dev/fb* >/dev/null 2>/dev/null; then
     for i in /dev/vcs[0-9]*; do
-        {
+        { :
             $commands_f
         } < /dev/tty\${i#/dev/vcs} > /dev/tty\${i#/dev/vcs}
     done
@@ -919,7 +919,7 @@ fi
 mkdir -p /run/console-setup
 > /run/console-setup/font-loaded
 for i in /dev/vcs[0-9]*; do
-    {
+    { :
 $commands_t
     } < /dev/tty\${i#/dev/vcs} > /dev/tty\${i#/dev/vcs}
 done
@@ -927,7 +927,7 @@ EOF
         cat >/etc/console-setup/cached_setup_terminal.sh <<EOF
 #!/bin/sh
 
-{
+{ :
 $commands_t
 } < /dev/tty\${1#vcs} > /dev/tty\${1#vcs}
 EOF
