@@ -1,6 +1,10 @@
 console-setup (1.152) UNRELEASED; urgency=medium
 
+  [ Philip Hands ]
   * ensure setupcon generated script never has empty braces. Closes: 833053
+
+  [ Samuel Thibault ]
+  * Make console-setup installable on hurd-any, d-i insists on having it.
 
  -- Philip Hands <phil@hands.com>  Tue, 11 Oct 2016 21:46:04 +0200
 
