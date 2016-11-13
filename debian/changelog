@@ -1,10 +1,10 @@
-console-setup (1.153) UNRELEASED; urgency=medium
+console-setup (1.153) unstable; urgency=medium
 
   [ Anton Zinoviev ]
   * keyboard-configuration.config: use untranslated C kbdnames strings in
     case of failed iconv.  Thanks to ishikawa, closes: #842324.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 05 Nov 2016 13:26:05 +0300
+ -- Christian Perrier <bubulle@debian.org>  Sun, 13 Nov 2016 07:43:27 +0100
 
 console-setup (1.152) unstable; urgency=medium
 
