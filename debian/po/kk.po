@@ -8,7 +8,7 @@
 # This file is distributed under the same license as debian-installer.
 #
 # Talgat Daniyarov
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008-2011
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2008-2016
 # Dauren Sarsenov <daur88@inbox.ru>, 2008, 2009
 #
 # Translations from iso-codes:
@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2015-04-02 12:00+0500\n"
+"PO-Revision-Date: 2016-11-17 11:17+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh\n"
 "Language: kk\n"
@@ -941,9 +941,8 @@ msgstr "Ұлыбританиялық ағылшын"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Болгар (phonetic layout)"
+msgstr "Болгар (BDS layout)"
 
 #. Type: select
 #. Choices
