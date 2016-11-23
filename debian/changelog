@@ -1,3 +1,10 @@
+console-setup (1.154) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 22 Nov 2016 09:13:24 +0100
+
 console-setup (1.153) unstable; urgency=medium
 
   [ Anton Zinoviev ]
