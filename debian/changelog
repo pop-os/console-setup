@@ -1,11 +1,11 @@
-console-setup (1.155) UNRELEASED; urgency=medium
+console-setup (1.155) unstable; urgency=medium
 
   [ Anton Zinoviev ]
   * Add three Kazakh symbols to CyrAsia: Cyrillic capital and small letter
     U with stroke and Tenge sign.  Thanks to Baurzhan Muftakhidinov,
     closes: #844579.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sat, 10 Dec 2016 12:41:54 +0300
+ -- Christian Perrier <bubulle@debian.org>  Mon, 12 Dec 2016 06:54:02 +0100
 
 console-setup (1.154) unstable; urgency=medium
 
