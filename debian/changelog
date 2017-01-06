@@ -1,3 +1,10 @@
+console-setup (1.156) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Slovak (sk.po) by Ivan Masár
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Jan 2017 08:43:55 +0100
+
 console-setup (1.155) unstable; urgency=medium
 
   [ Anton Zinoviev ]
