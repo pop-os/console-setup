@@ -1,3 +1,10 @@
+console-setup (1.157) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Japanese (ja.po) by Kenshi Muto
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 11 Jan 2017 06:55:54 +0100
+
 console-setup (1.156) unstable; urgency=medium
 
   [ Updated translations ]
