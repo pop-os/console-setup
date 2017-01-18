@@ -1,3 +1,10 @@
+console-setup (1.158) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 18 Jan 2017 07:05:30 +0100
+
 console-setup (1.157) unstable; urgency=medium
 
   [ Updated translations ]
