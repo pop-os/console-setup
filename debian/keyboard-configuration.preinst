@@ -2,11 +2,13 @@
 
 set -e
 
-for file in keyboard-setup console-setup; do
-    dpkg-maintscript-helper rm_conffile /etc/init.d/$file 1.138~ -- "$@"
-    if [ -x /etc/init.d/$file ]; then
-        update-rc.d $file remove >/dev/null
-    fi
-done
+dpkg-maintscript-helper rm_conffile /etc/init.d/keyboard-setup 1.138~ -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/init.d/console-setup 1.138~ -- "$@"
+if [ -x "/etc/init.d/keyboard-setup" ]; then
+    update-rc.d keyboard-setup remove >/dev/null
+fi
+if [ -x "/etc/init.d/console-setup" ]; then
+    update-rc.d console-setup remove >/dev/null
+fi
 
 #DEBHELPER#
