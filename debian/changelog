@@ -1,11 +1,15 @@
-console-setup (1.159) UNRELEASED; urgency=medium
+console-setup (1.160) unstable; urgency=medium
 
   [ Anton Zinoviev ]
   * keyboard-configuration.preinst: run update-rc.d only after the
     obsoleted configuration files have been removed. Thanks to
     sacrificial-spam-address@ and Mateusz Łukasik, closes: #817232.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Sun, 22 Jan 2017 22:07:38 +0300
+  [ Updated translations ]
+  * Catalan (ca.po) by Jordi Mallach
+  * Spanish (es.po) by Javier Fernández-Sanguino Peña
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 09 Feb 2017 07:11:47 +0100
 
 console-setup (1.158) unstable; urgency=medium
 
