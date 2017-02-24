@@ -1,3 +1,10 @@
+console-setup (1.162) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 24 Feb 2017 11:42:15 +0100
+
 console-setup (1.161) unstable; urgency=medium
 
   [ Updated translations ]
