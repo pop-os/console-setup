@@ -1,3 +1,10 @@
+console-setup (1.164) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Valentin Vidic
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 07 Apr 2017 05:55:28 +0200
+
 console-setup (1.163) unstable; urgency=medium
 
   [ Updated translations ]
