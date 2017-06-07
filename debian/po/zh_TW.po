@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2013-09-30 14:59+0800\n"
+"PO-Revision-Date: 2017-06-06 20:39+0800\n"
 "Last-Translator: Yao Wei (魏銘廷) <mwei@lxde.org>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
@@ -934,9 +934,8 @@ msgstr "英語"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "保加利亞語 (拼音排列)"
+msgstr "保加利亞語 (BDS 排列)"
 
 # console-keymaps-acorn, Bulgarian (BDS layout)
 #. Type: select
@@ -949,7 +948,7 @@ msgstr "保加利亞語 (拼音排列)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "緬甸語"
 
 # console-keymaps-acorn, Canadian
 #. Type: select
@@ -1236,7 +1235,7 @@ msgstr "波斯語"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "菲律賓"
 
 # console-keymaps-acorn, Polish
 #. Type: select
