@@ -1,3 +1,10 @@
+console-setup (1.166) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Bokmål, Norwegian (nb.po) by Petter Reinholdtsen
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 03 Jul 2017 10:22:46 +0200
+
 console-setup (1.165) unstable; urgency=medium
 
   [ Updated translations ]
