@@ -931,9 +931,8 @@ msgstr "બ્રિટિશ અંગ્રેજી"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
+msgstr "બલ્ગેરિયન (BDS દેખાવ)"
 
 #. Type: select
 #. Choices
@@ -945,7 +944,7 @@ msgstr "બલ્ગેરિયન (ફોનેટિક દેખાવ)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "બર્મીઝ"
 
 #. Type: select
 #. Choices
