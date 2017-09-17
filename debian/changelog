@@ -1,3 +1,12 @@
+console-setup (1.167) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by Sotirios Vrachas
+  * Hebrew (he.po) by Lior Kaplan
+  * Albanian (sq.po) by Silva Arapi
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 15 Sep 2017 06:16:35 +0200
+
 console-setup (1.166) unstable; urgency=medium
 
   [ Updated translations ]
