@@ -1,3 +1,10 @@
+console-setup (1.169) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 18 Oct 2017 06:51:11 +0200
+
 console-setup (1.168) unstable; urgency=medium
 
   [ Updated translations ]
