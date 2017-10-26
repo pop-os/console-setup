@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2016-05-24 20:40+0200\n"
+"PO-Revision-Date: 2016-11-23 20:25+0100\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -103,7 +103,7 @@ msgstr "# Kyrillisch - nicht-slawische Sprachen"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# Kyrillisch - slawische Sprachen (auch Bosnisch und Serbisch-Latein)"
+msgstr "# Kyrillisch - slawisch (auch Bosnisch und Serbisch-Latein)"
 
 #. Type: select
 #. Choices
