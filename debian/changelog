@@ -1,3 +1,10 @@
+console-setup (1.170) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Panjabi (pa.po) by A S Alam
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 31 Oct 2017 08:20:17 +0100
+
 console-setup (1.169) unstable; urgency=medium
 
   [ Updated translations ]
