@@ -6,12 +6,10 @@
 # Swedish messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-#
 # Swedish translation by:
 # Per Olofsson <pelle@debian.org>
 # Daniel Nylander <po@danielnylander.se>, 2006.
 # Martin Bagge / brother <brother@bsnet.se>, 2012
-#
 # Translations from iso-codes:
 #   Tobias Quathamer <toddy@debian.org>, 2007.
 #     Translations taken from ICU SVN on 2007-09-09
@@ -20,19 +18,19 @@
 # Christian Rose <menthos@menthos.com>, 2004.
 # Daniel Nylander <po@danielnylander.se>, 2007.
 # Martin Bagge <martin.bagge@bthstudent.se>, 2008, 2016.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2016-01-26 22:19+0100\n"
-"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
+"PO-Revision-Date: 2017-11-19 22:25+0000\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -110,7 +108,7 @@ msgstr "# Georgiska"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Greek"
-msgstr "# Grekiska "
+msgstr "# Grekiska"
 
 #. Type: select
 #. Choices
@@ -683,7 +681,7 @@ msgstr "Ingen utbytbarhet"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "Metod att byta melan inställning fär nationellt och latin."
+msgstr "Metod att byta mellan inställning för nationellt och latin:"
 
 #. Type: select
 #. Description
@@ -950,9 +948,8 @@ msgstr "Engelskbrittisk"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Bulgarisk (fonetisk)"
+msgstr "Bulgarisk (BDS)"
 
 #. Type: select
 #. Choices

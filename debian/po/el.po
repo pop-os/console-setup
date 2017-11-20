@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2017-09-02 23:06+0300\n"
+"PO-Revision-Date: 2017-11-17 01:07+0200\n"
 "Last-Translator: Sotirios Vrachas <sotirios@vrachas.net>\n"
 "Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
 "Language: el\n"
@@ -183,7 +183,7 @@ msgstr "# Ταϋλάνδης"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Συνδυασμένες - Λατινική; Σλαβική Κυριλλική; Εβραϊκή; βασική Αραβική "
+msgstr ". Συνδυασμένες - Λατινική; Σλαβική Κυριλλική; Εβραϊκή; βασική Αραβική"
 
 #. Type: select
 #. Choices
@@ -757,7 +757,7 @@ msgstr "Και τα δυο πλήκτρα Logo"
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr "Μέθοδος για προσωρινή εναλλαγή μεταξύ εθνικής και λατινικής εισόδου: "
+msgstr "Μέθοδος για προσωρινή εναλλαγή μεταξύ εθνικής και λατινικής εισόδου:"
 
 #. Type: select
 #. Description
@@ -805,14 +805,14 @@ msgstr "Μη διαθέσιμο πλήκτρο AltGr"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "πλήκτρο Enter για το keypad"
+msgstr "Πλήκτρο Enter για το keypad"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr "Και τα δύο πλήκτρα Alt "
+msgstr "Και τα δύο πλήκτρα Alt"
 
 #. Type: select
 #. Description
@@ -885,7 +885,7 @@ msgstr ""
 msgid "Use Control+Alt+Backspace to terminate the X server?"
 msgstr ""
 "Να γίνει χρήση του Control+Alt+Backspace για τον τερματισμό του εξυπηρετητή "
-"X; "
+"X;"
 
 #. Type: boolean
 #. Description
