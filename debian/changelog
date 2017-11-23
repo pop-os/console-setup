@@ -1,3 +1,12 @@
+console-setup (1.171) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Greek (el.po) by Sotirios Vrachas
+  * Estonian (et.po) by Kristjan Räts
+  * Swedish (sv.po) by Anders Jonsson
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 22 Nov 2017 20:09:22 +0100
+
 console-setup (1.170) unstable; urgency=medium
 
   [ Updated translations ]
