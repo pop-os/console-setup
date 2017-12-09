@@ -1,3 +1,12 @@
+console-setup (1.173) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Esperanto (eo.po) by Felipe Castro
+  * Swedish (sv.po) by Anders Jonsson
+  * Tagalog (tl.po) by Eric Pareja
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 09 Dec 2017 08:07:42 +0100
+
 console-setup (1.172) unstable; urgency=medium
 
   [ Updated translations ]
