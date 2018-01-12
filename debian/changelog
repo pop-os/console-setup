@@ -1,3 +1,12 @@
+console-setup (1.175) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Bokmål, Norwegian (nb.po) by Alexander Jansen
+  * Panjabi (pa.po) by Aman ALam
+  * Serbian (sr.po) by Filipovic Dragan
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 12 Jan 2018 11:53:28 +0100
+
 console-setup (1.174) unstable; urgency=medium
 
   [ Updated translations ]
