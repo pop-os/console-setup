@@ -16,10 +16,10 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2014-01-05 13:26+0500\n"
+"PO-Revision-Date: 2018-01-19 13:34+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
-"Language: Tajik\n"
+"Language: tg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -949,9 +949,8 @@ msgstr "Англисии британӣ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
+msgstr "Булғорӣ (тарҳбандии БДС)"
 
 #. Type: select
 #. Choices
@@ -963,7 +962,7 @@ msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "Бирманӣ"
 
 #. Type: select
 #. Choices
@@ -1233,7 +1232,7 @@ msgstr "Форсӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "Филиппинӣ"
 
 #. Type: select
 #. Choices
