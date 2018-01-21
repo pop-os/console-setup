@@ -1,3 +1,11 @@
+console-setup (1.176) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Norwegian Nynorsk (nn.po) by Petter Reinholdtsen
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 21 Jan 2018 08:19:36 +0100
+
 console-setup (1.175) unstable; urgency=medium
 
   [ Updated translations ]
