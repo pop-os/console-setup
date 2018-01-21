@@ -9,14 +9,14 @@
 #
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
-# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2018-01-19 13:34+0500\n"
+"PO-Revision-Date: 2018-01-21 20:21+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: tg\n"
@@ -37,7 +37,7 @@ msgstr "Шрифти роҳандозӣ/ҳастаро тағйир надиҳе
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr "Иҷозат диҳед, ки система шрифти мувофиқро интихоб кунад"
+msgstr "Иҷозат диҳед, ки низом шрифти мувофиқро интихоб кунад"
 
 #. Type: text
 #. Description
@@ -256,9 +256,9 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Агар ба шумо версияи пурранги шрифти Terminus маъқул бошад, TerminusBold "
-"(агар шумо фреймбуферро истифода баред) ё TerminusBoldVGA-ро (агар "
-"фреймбуферро истифода набаред) интихоб кунед."
+"Агар ба шумо гунаи пурранги шрифти Terminus маъқул бошад, TerminusBold (агар "
+"шумо фреймбуферро истифода баред) ё TerminusBoldVGA-ро (агар фреймбуферро "
+"истифода набаред) интихоб кунед."
 
 #. Type: select
 #. Description
@@ -307,7 +307,7 @@ msgstr "Рамзгузорие, ки дар сатри фармон истифо
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "Конфигуратсия кардани клавиатура"
+msgstr "Танзим кардани ҳарфкалид"
 
 #. Type: text
 #. Description
@@ -321,21 +321,21 @@ msgstr "Дигар"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "Намунаи клавиатура:"
+msgstr "Намунаи ҳарфкалид:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Лутфан, модели клавиатураро дар ин компютер интихоб кунед."
+msgstr "Лутфан, намунаи ҳарфкалидро дар ин компютер интихоб кунед."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "Кишвари истеҳсоли клавиатура:"
+msgstr "Кишвари истеҳсоли ҳарфкалид:"
 
 #. Type: select
 #. Description
@@ -346,16 +346,16 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"Тарҳбандии клавиатураҳо барои ҳар як кишвар фарқ мекунанд, ва баъзе кишварҳо "
-"дорои якчанд тарҳбандии умумӣ доранд. Лутфан, кишвари истеҳсоли клавиатураи "
-"ин компютерро интихоб кунед."
+"Тарҳбандии ҳарфкалидҳо барои ҳар як кишвар фарқ мекунанд, ва баъзе кишварҳо "
+"якчанд тарҳбандии умумӣ доранд. Лутфан, кишвари истеҳсоли ҳарфкалиди ин "
+"компютерро интихоб кунед."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr "Тарҳбандии клавиатура:"
+msgstr "Тарҳбандии ҳарфкалид:"
 
 #. Type: select
 #. Description
@@ -363,7 +363,7 @@ msgstr "Тарҳбандии клавиатура:"
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
 msgstr ""
-"Лутфан, тарҳбандиеро интихоб кунед, ки ба клавиатураи ин компютер мувофиқат "
+"Лутфан, тарҳбандиеро интихоб кунед, ки ба ҳарфкалиди ин компютер мувофиқат "
 "мекунад."
 
 #. Type: boolean
@@ -371,7 +371,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Тарҳбандии ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
+msgstr "Тарҳбандии ҷории ҳарфкалидро дар файли танзим нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -381,9 +381,9 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"Тарҳбандии ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
-"ҳамчун XKBLAYOUT=\"${XKBLAYOUT}\" ва XKBVARIANT=\"${XKBVARIANT}\" муайян "
-"карда шудааст."
+"Тарҳбандии ҷории ҳарфкалид дар файли танзими /etc/default/keyboard ҳамчун "
+"XKBLAYOUT=\"${XKBLAYOUT}\" ва XKBVARIANT=\"${XKBVARIANT}\" муайян карда "
+"шудааст."
 
 #. Type: boolean
 #. Description
@@ -395,16 +395,15 @@ msgid ""
 "configuration will be preserved."
 msgstr ""
 "Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
-"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
-"намешавад, ва конфигуратсияи ҷорӣ нигоҳ дошта мешавад."
+"имконро интихоб кунед, ягон савол дар бораи тарҳбандии ҳарфкалид пурсида "
+"намешавад, ва танзими ҷорӣ нигоҳ дошта мешавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr ""
-"Тарҳбандии пешфарзи клавиатураи (${XKBLAYOUTVARIANT})-ро нигоҳ медоред?"
+msgstr "Тарҳбандии пешфарзи ҳарфкалиди (${XKBLAYOUTVARIANT})-ро нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -415,7 +414,7 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Қимати пешфарз барои тарҳбандии клавиатура XKBLAYOUT=\"${XKBLAYOUT}\" ва "
+"Қимати пешфарз барои тарҳбандии ҳарфкалид XKBLAYOUT=\"${XKBLAYOUT}\" ва "
 "XKBVARIANT=\"${XKBVARIANT}\" мебошад.  Ин қимати пешфарз бо забон/минтақаи "
 "муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос ёфтааст."
 
@@ -428,7 +427,7 @@ msgid ""
 "questions about the keyboard layout will be asked."
 msgstr ""
 "Лутфан, интихоб кунед, ки дар куҷо мехоҳед онро нигоҳ доред. Агар шумо ин "
-"имконро интихоб кунед, ягон савол дар бораи тарҳбандии клавиатура пурсида "
+"имконро интихоб кунед, ягон савол дар бораи тарҳбандии ҳарфкалид пурсида "
 "намешавад."
 
 #. Type: boolean
@@ -436,7 +435,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Имконоти ҷории клавиатураро дар файли конфигуратсия нигоҳ медоред?"
+msgstr "Имконоти ҷории ҳарфкалидро дар файли танзим нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -446,8 +445,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"Имконоти ҷории клавиатура дар файли конфигуратсияи /etc/default/keyboard "
-"ҳамчун XKBOPTIONS=\"${XKBOPTIONS}\" муайян карда шудаанд."
+"Имконоти ҷории ҳарфкалид дар файли танзими /etc/default/keyboard ҳамчун "
+"XKBOPTIONS=\"${XKBOPTIONS}\" муайян карда шудаанд."
 
 #. Type: boolean
 #. Description
@@ -458,14 +457,14 @@ msgid ""
 "will be asked."
 msgstr ""
 "Агар шумо интихоб кунед, ки ин имконотро нигоҳ доред, ягон савол дар бораи "
-"имконоти клавиатура пурсида намешавад."
+"имконоти ҳарфкалид пурсида намешавад."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "Имконоти пешфарзи клавиатураи (${XKBOPTIONS})-ро нигоҳ медоред?"
+msgstr "Имконоти пешфарзи ҳарфкалиди (${XKBOPTIONS})-ро нигоҳ медоред?"
 
 #. Type: boolean
 #. Description
@@ -476,7 +475,7 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Қимати пешфарзи тарҳбандии клавиатура XKBOPTIONS=\"${XKBOPTIONS}\" мебошад.  "
+"Қимати пешфарзи тарҳбандии ҳарфкалид XKBOPTIONS=\"${XKBOPTIONS}\" мебошад.  "
 "Он бо забон/минтақаи муайяншудаи ҷорӣ ва танзимоти /etc/X11/xorg.conf асос "
 "ёфтааст."
 
@@ -488,8 +487,8 @@ msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Агар шумо интихоб кунед, ки онро нигощ медоред, ягон савол дар бораи "
-"имконоти клавиатура пурсида намешавад."
+"Агар шумо интихоб кунед, ки онро нигоҳ медоред, ягон савол дар бораи "
+"имконоти ҳарфкалид пурсида намешавад."
 
 #. Type: select
 #. Choices
@@ -679,7 +678,7 @@ msgstr "Бе интихобкунӣ"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "Усули интихобкунии ҳолати миллӣ ва лотинӣ:"
+msgstr "Усули интихобкунии реҷаи миллӣ ва лотинӣ:"
 
 #. Type: select
 #. Description
@@ -689,8 +688,8 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"Ба шумо усуле лозим мешавад, ки клавиатураро дар байни тарҳбандии миллӣ ва "
-"тарҳбандии стандартии лотинӣ интихоб кунед."
+"Ба шумо усуле лозим мешавад, ки ҳарфкалидро дар байни тарҳбандии миллӣ ва "
+"тарҳбандии стандартии лотинӣ интихоб мекунад."
 
 #. Type: select
 #. Description
@@ -714,7 +713,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "На ҳамаи тугмаҳои номбаршуда дар ҳамаи клавиатураҳо мавҷуданд."
+msgstr "На ҳамаи тугмаҳои номбаршуда дар ҳамаи ҳарфкалидҳо мавҷуданд."
 
 #. Type: select
 #. Choices
@@ -752,11 +751,11 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"Вақте ки клавиатура дар ҳолати миллӣ мебошад ва касе мехоҳад танҳо якчанд "
-"ҳарфи лотиниро чоп кунад, беҳтар аст ки ҳолати лотинӣ муваққатан истифода "
-"бурда шавад. Клавиатура ҳолати муваққатиро истифода мебарад, то вақт ки "
-"тугмаи интихобшуда озод карда нашавад. Ин тугма инчунин барои вориди ҳарфҳои "
-"миллӣ истифода бурда мешавад, вақте ки клавиатура дар ҳолати лотинӣ мебошад."
+"Вақте ки ҳарфкалид дар реҷаи миллӣ мебошад ва касе мехоҳад танҳо якчанд "
+"ҳарфи лотиниро чоп кунад, беҳтар аст ки реҷаи лотинӣ муваққатан истифода "
+"бурда шавад. Ҳарфкалид реҷаи муваққатиро истифода мебарад, то вақт ки тугмаи "
+"интихобшуда озод карда нашавад. Ин тугма инчунин барои вориди ҳарфҳои миллӣ "
+"истифода бурда мешавад, вақте ки ҳарфкалид дар реҷаи лотинӣ мебошад."
 
 #. Type: select
 #. Description
@@ -772,7 +771,7 @@ msgstr ""
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "The default for the keyboard layout"
-msgstr "Тарҳбандии пешфарз барои клавиатура"
+msgstr "Тарҳбандии пешфарз барои ҳарфкалид"
 
 #. Type: select
 #. Choices
@@ -786,7 +785,7 @@ msgstr "Бе тугмаи AltGr"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr "Тугмаи Enter дар клавиатураи рақамӣ"
+msgstr "Тугмаи Enter дар ҳарфкалиди рақамӣ"
 
 #. Type: select
 #. Choices
@@ -812,10 +811,10 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"Баъзе тарҳбандиҳои клавиатура тугмаи тағйирёбандаи AltGr барои вуруди баъзе "
+"Баъзе тарҳбандиҳои ҳарфкалид тугмаи тағйирёбандаи AltGr барои вуруди баъзе "
 "аломатҳо истифода мешавад, асосан аломатҳое, ки барои забони тарҳбандии "
-"клавиатура ғайриоддӣ мебошанд, монанди рамзҳои асъорӣ ва ҳарфҳои заданок. "
-"Бисёр мартаба ин аломатҳо ҳамчун иловагӣ дар тугмаҳои клавиатура чоп карда "
+"ҳарфкалид ғайриоддӣ мебошанд, монанди рамзҳои асъорӣ ва ҳарфҳои заданок. "
+"Бисёр мартаба ин аломатҳо ҳамчун иловагӣ дар тугмаҳои ҳарфкалид чоп карда "
 "мешаванд."
 
 #. Type: select
@@ -843,7 +842,7 @@ msgid ""
 msgstr ""
 "Тугмаи эҷодкунӣ (инчунин номи \"Тугмаи чанд_вазифа\" дорад) фармон медиҳад, "
 "ки компютер якчанд зарби тугмаро ҳамчун тугмабандии эҷоди ҳарфи дар "
-"клавиатура ёфтнашуда тарҷума кунад."
+"ҳарфкалид ёфтнашуда тарҷума кунад."
 
 #. Type: select
 #. Description
@@ -854,10 +853,10 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"Дар консоли матнӣ Тугмаи эҷодкунӣ дар ҳолати Юникод кор намекунад. Агар "
-"ҳолати Юникод истифода нашавад, вобаста аз интихоби инҷоӣ, шумо инчунин "
-"доимо метавонед тугмабандии Control+фосила-ро ҳамчун Тугмаи эҷодкунӣ "
-"истифода баред."
+"Дар консоли матнӣ Тугмаи эҷодкунӣ дар реҷаи Юникод кор намекунад. Агар реҷаи "
+"Юникод истифода нашавад, вобаста аз интихоби инҷоӣ, шумо инчунин доимо "
+"метавонед тугмабандии Control+фосила-ро ҳамчун Тугмаи эҷодкунӣ истифода "
+"баред."
 
 #. Type: boolean
 #. Description
@@ -1382,4 +1381,4 @@ msgstr "Ветнамӣ"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "Тарҳбандии клавиатура барои истифода:"
+msgstr "Тарҳбандии ҳарфкалид барои истифода:"
