@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2018-01-21 20:21+0500\n"
+"PO-Revision-Date: 2018-02-03 14:48+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: tg\n"
@@ -961,13 +961,13 @@ msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr "Бирманӣ"
+msgstr "Бирмавӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
-msgstr "Франсузии канадӣ"
+msgstr "Фаронсавии канадӣ"
 
 #. Type: select
 #. Choices
@@ -985,7 +985,7 @@ msgstr "Каталонӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Хитоӣ"
+msgstr "Чинӣ"
 
 #. Type: select
 #. Choices
@@ -1009,7 +1009,7 @@ msgstr "Даниягӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
-msgstr "Голландӣ"
+msgstr "Ҳолландӣ"
 
 #. Type: select
 #. Choices
@@ -1021,7 +1021,7 @@ msgstr "Дровакӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
-msgstr "Дзонгха"
+msgstr "Дзонгхагӣ"
 
 #. Type: select
 #. Choices
@@ -1099,7 +1099,7 @@ msgstr "Ҳиндӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
-msgstr "Венгерӣ"
+msgstr "Манҷурӣ"
 
 #. Type: select
 #. Choices
@@ -1129,7 +1129,7 @@ msgstr "Ҷопонӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
-msgstr "Каннада"
+msgstr "Каннадагӣ"
 
 #. Type: select
 #. Choices
@@ -1141,7 +1141,7 @@ msgstr "Қазоқӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
-msgstr "Кхмерӣ"
+msgstr "Кҳмерӣ"
 
 #. Type: select
 #. Choices
@@ -1171,13 +1171,13 @@ msgstr "Курдӣ (Тарҳбандии Q)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
-msgstr "Лао"
+msgstr "Лаосӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
-msgstr "Америкаи Лотинӣ"
+msgstr "Амрикои Лотинӣ"
 
 #. Type: select
 #. Choices
@@ -1201,7 +1201,7 @@ msgstr "Мақдунӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
-msgstr "Малаялам"
+msgstr "Малаяламӣ"
 
 #. Type: select
 #. Choices
@@ -1255,7 +1255,7 @@ msgstr "Панҷобӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "Руминӣ"
+msgstr "Ромонӣ"
 
 #. Type: select
 #. Choices
@@ -1267,7 +1267,7 @@ msgstr "Русӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "Сербӣ (Кириллӣ)"
+msgstr "Сербӣ (Сириллӣ)"
 
 #. Type: select
 #. Choices
@@ -1309,7 +1309,7 @@ msgstr "Шведӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "Франсузии шведӣ"
+msgstr "Фаронсавии шведӣ"
 
 #. Type: select
 #. Choices
@@ -1327,13 +1327,13 @@ msgstr "Тоҷикӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
-msgstr "Тамилӣ"
+msgstr "Томилӣ"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
-msgstr "Телугу"
+msgstr "Телугуӣ"
 
 #. Type: select
 #. Choices
