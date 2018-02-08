@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2018-02-07 12:45+0500\n"
+"PO-Revision-Date: 2018-02-08 14:24+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: tg\n"
@@ -80,7 +80,7 @@ msgstr "# Кириллӣ - забонҳои ғайриславянӣ"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# Кириллӣ - забонҳои славянӣ (инчунин Боснӣ ва лотинии Сербиягӣ)"
+msgstr "# Кириллӣ - забонҳои славянӣ (инчунин босниягӣ ва лотинии сербӣ)"
 
 #. Type: select
 #. Choices
@@ -840,7 +840,7 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"Тугмаи эҷодкунӣ (инчунин номи \"Тугмаи чанд_вазифа\" дорад) фармон медиҳад, "
+"Тугмаи эҷодкунӣ (инчунин номи \"Тугмаи сер_вазифа\" дорад) фармон медиҳад, "
 "ки компютер якчанд зарби тугмаро ҳамчун тугмабандии эҷоди ҳарфи дар "
 "ҳарфкалид ёфтнашуда тарҷума кунад."
 
@@ -864,7 +864,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
 msgstr ""
-"Тугмаҳои \"Control+Alt+Backspace\"-ро барои қатъ кардани хидматгоҳи Х "
+"Тугмаҳои \"Control+Alt+Backspace\"-ро барои қатъ кардани хидматрасони Х "
 "истифода мебаред?"
 
 #. Type: boolean
@@ -876,7 +876,7 @@ msgid ""
 "it can be used to terminate the X server."
 msgstr ""
 "Ба таври пешфарз, маҷмӯи тугмаҳои Control+Alt+Backspace ягон амалро иҷро "
-"намекунад.  Агар хоҳед, он метавонад барои қатъ кардани хидматгоҳи Х "
+"намекунад.  Агар хоҳед, он метавонад барои қатъ кардани хидматрасони Х "
 "истифода шавад."
 
 #. Type: select
