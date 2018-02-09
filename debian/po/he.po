@@ -21,20 +21,21 @@
 # Meni Livne <livne@kde.org>, 2000.
 # Meital Bourvine <meitalbourvine@gmail.com>, 2007.
 # Lior Kaplan <kaplan@debian.org>, 2004-2007, 2008, 2010, 2011, 2015, 2017.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer_packages_po_sublevel1_he\n"
+"Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2016-02-29 19:44+0300\n"
-"PO-Revision-Date: 2017-09-02 21:07+0300\n"
-"Last-Translator: Lior Kaplan <kaplan@debian.org>\n"
-"Language-Team: Hebrew <debian-hebrew-common@lists.alioth.debian.org>\n"
+"PO-Revision-Date: 2018-02-06 08:37+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -314,7 +315,7 @@ msgstr "קידוד לשימוש במסוף:"
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "הגדרות מקלדת"
+msgstr "הגדרת המקלדת"
 
 #. Type: text
 #. Description
@@ -342,7 +343,7 @@ msgstr "נא לבחור את מודל המקלדת של מכונה זאת."
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "מדינת מוצא של המקלדת:"
+msgstr "מדינת מוצאה של המקלדת:"
 
 #. Type: select
 #. Description
@@ -353,7 +354,7 @@ msgid ""
 "multiple common layouts. Please select the country of origin for the "
 "keyboard of this computer."
 msgstr ""
-"פריסת המקלדות משתנית מארץ לארץ, ויש ארצות שיש להן כמה פריסות מקלדות נפוצות. "
+"פריסת המקלדות משתנה מארץ לארץ, ויש ארצות שיש להן כמה פריסות מקלדות נפוצות. "
 "נא לבחור את ארץ המוצא של המקלדת של מחשב זה."
 
 #. Type: select
@@ -368,7 +369,7 @@ msgstr "פריסת מקלדת:"
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "בחר בבקשה את הפריסה המתאימה למקלדת של מכונה זאת."
+msgstr "נא לבחור את הפריסה התואמת למקלדת של המכונה הזו."
 
 #. Type: boolean
 #. Description
@@ -660,7 +661,7 @@ msgstr "מקש לוגו שמאלי"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "מקש נעילה גלילה"
+msgstr "מקש Scroll Lock"
 
 #. Type: select
 #. Choices
@@ -683,7 +684,8 @@ msgstr "שיטת מעבר בין מצב עבודה לאומי ומצב עבוד�
 msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
-msgstr "תצטרכו דרך להעביר את המקלדת בין מצב עבודה לאומי ומצב עבודה לטיני."
+msgstr ""
+"יהיה עליך להעביר את המקלדת בין הפריסה המקומית שלך לבין הפריסה הלטינית התקנית."
 
 #. Type: select
 #. Description
@@ -705,7 +707,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "לא כל המקשים הרשומים נמצאים בכל המקלדות."
+msgstr "לא כל המקשים המופיעים נמצאים בכל המקלדות."
 
 #. Type: select
 #. Choices
@@ -890,7 +892,7 @@ msgstr "אסטורית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
-msgstr "בנגלדש"
+msgstr "בנגלדשית"
 
 #. Type: select
 #. Choices
@@ -936,7 +938,7 @@ msgstr "אנגלית בריטית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (BDS layout)"
-msgstr "בולגרית (פריסה BDS)"
+msgstr "בולגרית (פריסת BDS)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -962,7 +964,7 @@ msgstr "צרפתית קנדית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "קנדית (ריבוי שפות)"
+msgstr "מגוון שפות קנדיות"
 
 #. Type: select
 #. Choices
@@ -988,7 +990,7 @@ msgstr "קרואטית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "צ'כית"
+msgstr "צ׳כית"
 
 # console-keymaps-acorn, Danish
 #. Type: select
@@ -1008,7 +1010,7 @@ msgstr "הולנדית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
-msgstr "דובראק"
+msgstr "דבוראק"
 
 #. Type: select
 #. Choices
@@ -1071,7 +1073,7 @@ msgstr "יוונית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
-msgstr "גוג'ראטית"
+msgstr "גוג׳ראטית"
 
 # # Thanks Amir E. Aharoni for the Hebrew translation
 #. Type: select
@@ -1194,7 +1196,7 @@ msgstr "לאטבית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
-msgstr "ליטואנית"
+msgstr "ליטאית"
 
 #. Type: select
 #. Choices
@@ -1225,7 +1227,7 @@ msgstr "סאמי צפוני"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "נורבגית"
+msgstr "נורווגית"
 
 #. Type: select
 #. Choices
@@ -1251,13 +1253,13 @@ msgstr "פולנית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
-msgstr "פורטוגזית"
+msgstr "פורטוגלית"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "פנג'אבי"
+msgstr "פנג׳אבי"
 
 #. Type: select
 #. Choices
@@ -1276,7 +1278,7 @@ msgstr "רוסית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
-msgstr "סרבית (קרילית)"
+msgstr "סרבית (קירילית)"
 
 #. Type: select
 #. Choices
@@ -1323,20 +1325,20 @@ msgstr "שוודית"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "צרפתית שווצרית"
+msgstr "צרפתית שוויצרית"
 
 # console-keymaps-acorn, Swiss
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "גרמנית שווצרית"
+msgstr "גרמנית שוויצרית"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr "טג'יקית"
+msgstr "טג׳יקית"
 
 #. Type: select
 #. Choices
@@ -1354,7 +1356,7 @@ msgstr "טלוגו"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "תיאלנדית"
+msgstr "תאית"
 
 #. Type: select
 #. Choices
