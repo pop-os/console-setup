@@ -1,6 +1,8 @@
 console-setup (1.179) UNRELEASED; urgency=medium
 
   * debian/font-switch: Complete language coverage.
+  * debian/rules: Include more fonts for more complete speakup & brltty
+    support.
 
  -- Samuel Thibault <sthibault@debian.org>  Sat, 10 Mar 2018 10:31:00 +0100
 
