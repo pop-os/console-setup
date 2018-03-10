@@ -199,7 +199,7 @@ CODESETS := $(SMALL_CODESETS) $(LARGE_CODESETS)
 # Inside soft.Makefile the following variables are defined:
 # I18N_FONT_NAMES - the names of all available fonts with enough i18n
 # ENCODING_FONTSET - all sensible ENCODING - FONTSET combinations
-# Use rm soft.Makefile && make soft.Makefile in order to update soft.Makefile
+# Use make maintainer-clean to update soft.Makefile
 include $(fntdir)/soft.Makefile
 
 # A list of all available font names
