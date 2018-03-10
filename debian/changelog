@@ -1,3 +1,9 @@
+console-setup (1.179) UNRELEASED; urgency=medium
+
+  * debian/font-switch: Complete language coverage.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 10 Mar 2018 10:31:00 +0100
+
 console-setup (1.178) unstable; urgency=medium
 
   [ Updated translations ]
