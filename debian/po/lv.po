@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"POT-Creation-Date: 2018-03-10 23:15+0100\n"
 "PO-Revision-Date: 2017-10-12 18:37+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
@@ -92,7 +92,25 @@ msgstr "# Kirilica - ne-slāvu valodas"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - non-Slavic languages"
+msgid ". Cyrillic - non-Slavic languages (for blind users)"
+msgstr "# Kirilica - ne-slāvu valodas"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgstr "# Kirilica - slāvu valodas (ieskaitot bosniešu un serbu latīņu)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# Kirilica - slāvu valodas (ieskaitot bosniešu un serbu latīņu)"
 
 #. Type: select
@@ -115,6 +133,13 @@ msgstr "# Gruzīnu"
 #: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# Grieķu"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+msgid ". Greek (for blind users)"
+msgstr ""
 
 #. Type: select
 #. Choices

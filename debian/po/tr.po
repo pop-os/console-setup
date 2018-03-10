@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"POT-Creation-Date: 2018-03-10 23:15+0100\n"
 "PO-Revision-Date: 2016-07-25 23:45+0300\n"
 "Last-Translator: Mert Dirik <mertdirik@gmail.com>\n"
 "Language-Team: Debian L10N Turkish\n"
@@ -92,7 +92,25 @@ msgstr "# Kiril - Slav olmayan diller"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - non-Slavic languages"
+msgid ". Cyrillic - non-Slavic languages (for blind users)"
+msgstr "# Kiril - Slav olmayan diller"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgstr "# Kiril - Slav dilleri (ayrıca Boşnakça ve Latin Sırpça)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# Kiril - Slav dilleri (ayrıca Boşnakça ve Latin Sırpça)"
 
 #. Type: select
@@ -115,6 +133,13 @@ msgstr "# Gürcü Dili"
 #: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# Yunanca"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+msgid ". Greek (for blind users)"
+msgstr ""
 
 #. Type: select
 #. Choices

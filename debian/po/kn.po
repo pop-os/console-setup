@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"POT-Creation-Date: 2018-03-10 23:15+0100\n"
 "PO-Revision-Date: 2018-01-04 06:20+0000\n"
 "Last-Translator: Yogesh <yogesh@kalike.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -84,7 +84,25 @@ msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಅಲ್ಲದ �
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - non-Slavic languages"
+msgid ". Cyrillic - non-Slavic languages (for blind users)"
+msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಅಲ್ಲದ ಭಾಷೆಗಳು"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಭಾಷೆಗಳು(ಬೋಸ್ನಿಯನ್ ಮತ್ತು ಸೆರ್ಬಿಯನ್ ಕೂಡ)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# ಸಿರಿಲಿಕ್ - ಸ್ಲಾವಿಕ್ ಭಾಷೆಗಳು(ಬೋಸ್ನಿಯನ್ ಮತ್ತು ಸೆರ್ಬಿಯನ್ ಕೂಡ)"
 
 #. Type: select
@@ -107,6 +125,13 @@ msgstr "# ಜಾರ್ಜಿಯನ್"
 #: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# ಗ್ರೀಕ್"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+msgid ". Greek (for blind users)"
+msgstr ""
 
 #. Type: select
 #. Choices

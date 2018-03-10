@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2016-02-29 19:44+0300\n"
+"POT-Creation-Date: 2018-03-10 23:15+0100\n"
 "PO-Revision-Date: 2018-01-04 06:20+0000\n"
 "Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
@@ -87,7 +87,25 @@ msgstr "# സിറിലിക്ക് - സ്ലേവിക്ക് അല
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - non-Slavic languages"
+msgid ". Cyrillic - non-Slavic languages (for blind users)"
+msgstr "# സിറിലിക്ക് - സ്ലേവിക്ക് അല്ലാത്ത ഭാഷകള്‍"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgstr "# സിറിലിക്ക് - സ്ലേവിക്ക് ഭാഷകള്‍ (ബോസ്നിയന്‍, സെര്‍ബിയന്‍ ലാറ്റിന്‍ കൂടി)"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+#, fuzzy
+#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
+msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# സിറിലിക്ക് - സ്ലേവിക്ക് ഭാഷകള്‍ (ബോസ്നിയന്‍, സെര്‍ബിയന്‍ ലാറ്റിന്‍ കൂടി)"
 
 #. Type: select
@@ -111,6 +129,13 @@ msgstr "# ജോര്‍ജ്യന്‍"
 #: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# ഗ്രീക്ക്"
+
+#. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+msgid ". Greek (for blind users)"
+msgstr ""
 
 # console-keymaps-acorn, Hebrew
 #. Type: select
@@ -446,8 +471,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"/etc/default/keyboard ക്രമീകരണ ഫയലിലെ ഇപ്പോഴത്തെ കീബോര്‍ഡ് ക്രമീകരണം "
-"നിര്‍വ്വചിച്ചിരിക്കുന്നത് XKBOPTIONS=\"${XKBOPTIONS}\" എന്നാണ്."
+"/etc/default/keyboard ക്രമീകരണ ഫയലിലെ ഇപ്പോഴത്തെ കീബോര്‍ഡ് ക്രമീകരണം നിര്‍"
+"വ്വചിച്ചിരിക്കുന്നത് XKBOPTIONS=\"${XKBOPTIONS}\" എന്നാണ്."
 
 #. Type: boolean
 #. Description
@@ -746,8 +771,8 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"കീബോര്‍ഡ് ദേശീയ ദശയിലായിരിയ്ക്കുമ്പോള്‍ ചില ലാറ്റിന്‍ അക്ഷരങ്ങള്‍ മാത്രം ടൈപ്പ് ചെയ്യേണ്ട "
-"സന്ദര്‍ഭങ്ങളില്‍ താത്കാലികമായി ലാറ്റിന്‍ ദശയിലേയ്ക്കു് മാറുന്നതായിരിയ്ക്കാം കൂടുതല്‍ അനുയോജ്യം. "
+"കീബോര്‍ഡ് ദേശീയ ദശയിലായിരിയ്ക്കുമ്പോള്‍ ചില ലാറ്റിന്‍ അക്ഷരങ്ങള്‍ മാത്രം ടൈപ്പ് ചെയ്യേണ്ട സന്ദര്‍"
+"ഭങ്ങളില്‍ താത്കാലികമായി ലാറ്റിന്‍ ദശയിലേയ്ക്കു് മാറുന്നതായിരിയ്ക്കാം കൂടുതല്‍ അനുയോജ്യം. "
 "തിരഞ്ഞെടുത്ത കീ അമര്‍ത്തിയിരിയ്ക്കുന്നിടത്തോളം ആ ദശയിലിരിയ്ക്കും. അതേ കീ തന്നെ ലാറ്റിന്‍ "
 "ദശയിലായിരിയ്ക്കുമ്പോള്‍ ദേശീയ അക്ഷരങ്ങള്‍ ഇന്‍പുട്ട് ചെയ്യാന്‍ ഉപയോഗിയ്ക്കാം."
 
@@ -842,8 +867,8 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"അടുത്ത കണ്‍സോളില്‍ കോമ്പോസ് കീ യൂണിക്കോഡ് മോഡില്‍ പ്രവര്‍ത്തിക്കില്ല. യൂണിക്കോഡ് മോഡിലല്ലെങ്കില്‍ "
-"കണ്‍ട്രോ‌‌ള്‍ + പിരീഡ് കോമ്പിനേഷന്‍ ഒരു കോമ്പോസ് കീ ആയി ഉപയോഗിക്കാവുന്നതാണ്. ഇവിടെ താങ്കള്‍ "
+"അടുത്ത കണ്‍സോളില്‍ കോമ്പോസ് കീ യൂണിക്കോഡ് മോഡില്‍ പ്രവര്‍ത്തിക്കില്ല. യൂണിക്കോഡ് മോഡിലല്ലെങ്കില്‍ കണ്‍"
+"ട്രോ‌‌ള്‍ + പിരീഡ് കോമ്പിനേഷന്‍ ഒരു കോമ്പോസ് കീ ആയി ഉപയോഗിക്കാവുന്നതാണ്. ഇവിടെ താങ്കള്‍ "
 "തിരഞ്ഞെടുത്തത് അതിനെ ബാധിക്കില്ല"
 
 #. Type: boolean

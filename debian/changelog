@@ -4,6 +4,9 @@ console-setup (1.179) UNRELEASED; urgency=medium
   * debian/rules: Include more fonts for more complete speakup & brltty
     support.
   * debian/console-setup.config: Fix typo for Ethiopian font codeset.
+  * Add FullCyrAsia, FullCyrSlav and FullGreek variants which are 512-glyph
+    fonts without the character equivalence, which is needed for screen
+    readers to properly get the text.
 
  -- Samuel Thibault <sthibault@debian.org>  Sat, 10 Mar 2018 10:31:00 +0100
 

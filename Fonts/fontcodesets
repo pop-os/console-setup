@@ -45,8 +45,9 @@ for my $bdf (@bdfs) {
     close BDF;
 }
 
-my @codesets_names = ("Arabic", "Armenian", "CyrAsia", "CyrKoi",
-		      "CyrSlav", "Ethiopian", "Georgian", "Greek",
+my @codesets_names = ("Arabic", "Armenian", "CyrAsia", "FullCyrAsia",
+		      "CyrKoi", "CyrSlav", "FullCyrSlav", "Ethiopian",
+		      "Georgian", "Greek", "FullGreek",
 		      "Hebrew", "Lao", "Lat15", "Lat2", "Lat38",
 		      "Lat7", "Thai", "Vietnamese");
 
@@ -1414,6 +1415,7 @@ push @{$codesets{"CyrKoi"}}, "U+044F";
 # U+044F:   CYRILLIC SMALL LETTER YA
 
 $codesets{"CyrSlav"} = $codesets{"CyrKoi"};
+$codesets{"FullCyrSlav"} = $codesets{"CyrSlav"};
 
 push @{$codesets{"CyrAsia"}}, "U+0492";
 # U+0492:   CYRILLIC CAPITAL LETTER GHE WITH STROKE
@@ -1545,6 +1547,8 @@ push @{$codesets{"CyrAsia"}}, "U+04F9";
 # U+04F9:   CYRILLIC SMALL LETTER YERU WITH DIAERESIS
 push @{$codesets{"CyrAsia"}}, "U+20AE";
 # U+20AE:   TUGRIK SIGN
+
+$codesets{"FullCyrAsia"} = $codesets{"CyrAsia"};
 
 
 push @{$codesets{"Ethiopian"}}, "U+1200";
@@ -2472,6 +2476,7 @@ push @{$codesets{"Greek"}}, "U+03CE";
 push @{$codesets{"Greek"}}, "U+03F3";
 # U+03F3:   GREEK LETTER YOT
 
+$codesets{"FullGreek"} = $codesets{"Greek"};
 
 
 push @{$codesets{"Hebrew"}}, "U+05B0";

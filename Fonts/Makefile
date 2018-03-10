@@ -75,11 +75,11 @@ GohaClassic16-BDFS := GohaClassic16.bdf
 
 ###################################################################
 
-VGA8-CODESETS := Arabic CyrKoi CyrSlav Greek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
+VGA8-CODESETS := Arabic CyrKoi CyrSlav FullCyrSlav Greek FullGreek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
 VGA10-CODESETS := Lat15 Lat2
 VGA12-CODESETS := Lat15 Lat2
-VGA14-CODESETS := Arabic CyrKoi CyrSlav Greek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
-VGA16-CODESETS := Arabic CyrKoi CyrSlav Greek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
+VGA14-CODESETS := Arabic CyrKoi CyrSlav FullCyrSlav Greek FullGreek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
+VGA16-CODESETS := Arabic CyrKoi CyrSlav FullCyrSlav Greek FullGreek Hebrew Lat15 Lat2 Lat38 Lat7 Uni1 Uni2
 VGA19-CODESETS := Lat15
 
 VGA28x16-CODESETS := $(VGA14-CODESETS)
@@ -190,11 +190,18 @@ LEGACY_FACES := VGA8 VGA10 VGA12 VGA14 VGA16 VGA19 VGA28x16 VGA32x16
 
 FACES := $(NONLEGACY_FACES) $(LEGACY_FACES)
 
+# 256-glyph codesets
 SMALL_CODESETS := Armenian CyrAsia CyrKoi CyrSlav Georgian Greek Hebrew Lao Lat15 Lat2 Lat38 Lat7 Thai
 
+# 256-glyph codesets which had to be compressed at the expense of semantic, and
+# thus for which a Full uncompressed 512-glyph variant is useful for console
+# screen readers like speakup or brltty
+COMPRESSED_CODESETS := CyrAsia CyrSlav Greek
+
+# 512-glyph codesets
 LARGE_CODESETS := Arabic Ethiopian Uni1 Uni2 Uni3 Vietnamese
 
-CODESETS := $(SMALL_CODESETS) $(LARGE_CODESETS)
+CODESETS := $(SMALL_CODESETS) $(LARGE_CODESETS) $(addprefix Full, $(COMPRESSED_CODESETS))
 
 # Inside soft.Makefile the following variables are defined:
 # I18N_FONT_NAMES - the names of all available fonts with enough i18n
@@ -254,6 +261,9 @@ ALL_LINUX_FONTS := $(ALL_LINUX_FB_FONTS) $(ALL_LINUX_NONFB_FONTS)
 ALL_BSD_FONTS := $(addprefix $./, $(addsuffix .raw, $(ALL_BSD_FONT_NAMES)))
 ALL_FONTS := $(ALL_LINUX_FONTS) $(ALL_BSD_FONTS)
 
+ALL_NONFULL_FONTS := $(filter-out $./Full%,$(ALL_FONTS))
+ALL_FULL_FONTS := $(filter $./Full%,$(ALL_FONTS))
+
 ###########################################################################
 
 doubled_bdfs := $(call adddouble, \
@@ -278,7 +288,7 @@ add_bdf = $(patsubst +%, %, \
 $(ALL_LINUX_FONTS) : basefilename = $(@:%.psf=%)
 $(ALL_BSD_FONTS) : basefilename = $(@:%.raw=%)
 # i.e. Arabic/univga16
-$(ALL_FONTS) : codeset/face = $(subst -,/,$(strip $(notdir $(basefilename))))
+$(ALL_FONTS) : codeset/face = $(subst -,/,$(strip $(patsubst Full%,%,$(notdir $(basefilename)))))
 # i.e. Arabic/
 $(ALL_FONTS) : codeset/ = $(dir $(codeset/face))
 # i.e. Arabic
@@ -303,15 +313,18 @@ $(ALL_FONTS)  : VGA28x16-BDFS = $(if $(strip $($(codeset)-legacy28x16-BDFS)),\
 $(ALL_FONTS)  : VGA32x16-BDFS = $(if $(strip $($(codeset)-legacy32x16-BDFS)),\
 			$($(codeset)-legacy32x16-BDFS),u_vga16-double.bdf)
 # i.e. ./bdf/univga16.bdf
-$(ALL_FONTS) : bdfs = $(call add_bdf, $($(face)-BDFS))
+$(ALL_FONTS) : bdfs = $(call add_bdf, $($(patsubst Full%,%,$(face))-BDFS))
 # i.e. ./fontsets/Arabic.512
 $(ALL_FONTS) : codesetfile = $(wildcard $(fntdir)/fontsets/$(codeset).*)
 # i.e. 512
-$(ALL_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
+$(ALL_NONFULL_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
+$(ALL_FULL_FONTS) : size = 512
 
-$(ALL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)), \
+$(ALL_NONFULL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)), \
 		$(fntdir)/standard.equivalents+$(fntdir)/arabic.equivalents, \
 			$(fntdir)/standard.equivalents)
+$(ALL_FULL_FONTS) : equivalents = /dev/null
+
 $(ALL_LINUX_FONTS) : symbolsets = \
  $(fntdir)/ascii.set+$(fntdir)/linux.set+$(codesetfile)+:$(fntdir)/useful.set
 $(ALL_BSD_FONTS) : symbolsets = \

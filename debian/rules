@@ -25,6 +25,9 @@ udeb-fonts-big :=
 udeb-fonts += Armenian-Fixed16 Georgian-Fixed16 Hebrew-VGA16 Lao-Fixed16 Thai-Fixed16
 udeb-fonts-big += Arabic-VGA16 Ethiopian-Goha16 Vietnamese-Fixed16
 
+# These are needed for proper text screen reading by speakup and brltty
+udeb-fonts-big += FullCyrAsia-Fixed16 FullCyrSlav-TerminusBold16 FullGreek-VGA16
+
 # This is not useful (KOI8-R encoding)
 # CyrKoi-TerminusBold16
 
