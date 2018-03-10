@@ -10,10 +10,10 @@ case "$LANGUAGE" in
 	ab|av|az|ba|chm|ce|cv|ik|kaa|kk|ku|kum|kv|ky|lez|mn|os|sah|sel|tg|tk|tt|tyv|uz)
 				CODESET=CyrAsia ;;
 	be|bg|mk|ru|sr|uk)	CODESET=CyrSlav ;;
-	am|gez|ti|tig)		CODESET=Ethiopian ;;
+	am|byn|gez|ti|tig)	CODESET=Ethiopian ;;
 	ka)			CODESET=Georgian ;;
 	el)			CODESET=Greek ;;
-	he|yi)			CODESET=Hebrew ;;
+	he|iw|yi)		CODESET=Hebrew ;;
 	lo)			CODESET=Lao ;;
 	ast|et|sq|tr|xh)	CODESET=Lat15 ;;
 	bs|cs|hr|hu|pl|ro|sk|sl|dsb|hsb)
