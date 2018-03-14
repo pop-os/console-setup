@@ -1,3 +1,10 @@
+console-setup (1.180) unstable; urgency=medium
+
+  * debian/console-setup.config: Fix getting codeset from codesets
+    (Closes: Bug#892900)
+
+ -- Samuel Thibault <sthibault@debian.org>  Wed, 14 Mar 2018 10:02:13 +0100
+
 console-setup (1.179) unstable; urgency=medium
 
   [ Samuel Thibault ]
