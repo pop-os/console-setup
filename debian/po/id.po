@@ -33,8 +33,8 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-02-06 04:37+0000\n"
-"Last-Translator: Al Qalit <qal.smith@gmail.com>\n"
+"PO-Revision-Date: 2018-03-04 12:38+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
 "debian.org>\n"
 "Language: id\n"
@@ -98,7 +98,6 @@ msgstr "# Cyrilic - bahasa selain-Slavia"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# Cyrilic - bahasa selain-Slavia"
 
@@ -114,7 +113,6 @@ msgstr "# Cyrillic - bahasa Slavia (juga Bosnia dan Latin Serbia)"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# Cyrillic - bahasa Slavia (juga Bosnia dan Latin Serbia)"
 
@@ -330,9 +328,9 @@ msgid ""
 "used when the computer boots has size 8x16.  Some font sizes require the kbd "
 "console package (not console-tools) plus framebuffer."
 msgstr ""
-"Silakan pilih ukuran font untuk konsol Linux. Sebagai acuan, font yang "
-"digunakan ketika komputer booting berukuran 8x16. Beberapa ukuran font "
-"membutuhkan paket kbd konsol (bukan contole-tools) ditambah framebuffer"
+"Silakan pilih ukuran fonta untuk konsol. Sebagai acuan, fonta yang digunakan "
+"ketika komputer boot berukuran 8x16.  Beberapa ukuran fonta membutuhkan "
+"paket kbd konsol (bukan console-tools) ditambah framebuffer."
 
 #. Type: select
 #. Description
@@ -439,7 +437,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr "Gunakan pola keyboard yang ada:(${XKBLAYOUTVARIANT})? "
+msgstr "Pertahankan tata letak papan ketik baku (${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
@@ -990,7 +988,7 @@ msgstr "Bulgaria (phonetic)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "Burma"
 
 #. Type: select
 #. Choices
@@ -1260,7 +1258,7 @@ msgstr "Persia"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "Filipina"
 
 #. Type: select
 #. Choices
@@ -1350,7 +1348,7 @@ msgstr "Jerman Swiss"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "Tajik"
 
 #. Type: select
 #. Choices
@@ -1373,9 +1371,8 @@ msgstr "Thailand"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Tibetan"
-msgstr "Anetan"
+msgstr "Tibet"
 
 #. Type: select
 #. Choices
