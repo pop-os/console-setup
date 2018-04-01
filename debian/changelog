@@ -1,3 +1,11 @@
+console-setup (1.182) unstable; urgency=medium
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 31 Mar 2018 08:29:50 +0200
+
 console-setup (1.181) unstable; urgency=medium
 
   [ Updated translations ]
