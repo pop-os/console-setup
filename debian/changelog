@@ -1,3 +1,11 @@
+console-setup (1.183) unstable; urgency=medium
+
+  [ Anton Zinoviev ]
+  * Support for U+202F NARROW NO-BREAK SPACE.  Thanks to Alexey Shilin,
+    closes: #895047.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 11 Apr 2018 23:15:51 +0300
+
 console-setup (1.182) unstable; urgency=medium
 
   [ Updated translations ]

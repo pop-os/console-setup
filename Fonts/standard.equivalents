@@ -42,6 +42,7 @@
 # 2009-12-7   Add approximations for some symbols, required by mc
 #             (white diamond, containing black small diamond and black
 #             small triangles) 
+# 2018-04-11  U+202F NARROW NO-BREAK SPACE
 
 # SOME EXPERIMENTAL NOT VERY ACURATE APPROXIMATIONS
 # For symbols used by some popular slang, dialog, whiptail, and
@@ -322,7 +323,8 @@ U+FFFD U+25C8 U+2666
 # U+FFFD:   REPLACEMENT CHARACTER
 # U+25C8:   WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
 # U+2666:   BLACK DIAMOND SUIT
-U+200A U+2009 U+2008 U+2007 U+2006 U+2005 U+2004 U+2003 U+2002 U+2001 U+2000 U+00A0 U+0020
+U+202F U+200A U+2009 U+2008 U+2007 U+2006 U+2005 U+2004 U+2003 U+2002 U+2001 U+2000 U+00A0 U+0020
+# U+202F:   NARROW NO-BREAK SPACE
 # U+200A:   HAIR SPACE
 # U+2009:   THIN SPACE
 # U+2008:   PUNCTUATION SPACE
