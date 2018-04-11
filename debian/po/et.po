@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-11-19 13:25+0000\n"
+"PO-Revision-Date: 2018-04-11 11:13+0300\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -95,10 +95,8 @@ msgstr "# Kirillits - mitte-slaavi keeled"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Kirillits - mitte-slaavi keeled"
+msgstr ". Kirillits - mitte-slaavi keeled (pimedatele)"
 
 #. Type: select
 #. Choices
@@ -111,10 +109,8 @@ msgstr "# Kirillits - slaavi keeled (ka Bosnia ja Serbia)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Kirillits - slaavi keeled (ka Bosnia ja Serbia)"
+msgstr ". Kirillits - slaavi keeled (pimedatele)"
 
 #. Type: select
 #. Choices
@@ -142,7 +138,7 @@ msgstr "# Kreeka"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Kreeka (pimedatele)"
 
 #. Type: select
 #. Choices
