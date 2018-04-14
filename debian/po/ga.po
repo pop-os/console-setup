@@ -79,10 +79,8 @@ msgstr "# Coireallach - teangacha neamh-Slavacha"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Coireallach - teangacha neamh-Slavacha"
+msgstr ". Coireallach - teangacha neamh-Slavacha (d'úsáideoirí dalla)"
 
 #. Type: select
 #. Choices
@@ -96,11 +94,8 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr ""
-"# Coireallach - teangacha Slavacha (Boisnis agus Seirbis Laidineach freisin)"
+msgstr ". Coireallach - teangacha Slavacha (d'úsáideoirí dalla)"
 
 #. Type: select
 #. Choices
@@ -128,7 +123,7 @@ msgstr "# Gréagach"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Gréigis (d'úsáideoirí dalla)"
 
 #. Type: select
 #. Choices
