@@ -1,3 +1,11 @@
+console-setup (1.185) UNRELEASED; urgency=medium
+
+  * setupcon(findfile): Do not use `ls` in order to find a file because
+    `ls` sorts its argumengs.  Thanks to Alexey Shilin (patch provided),
+    closes: #898303.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 10 May 2018 11:59:04 +0300
+
 console-setup (1.184) unstable; urgency=medium
 
   [ Updated translations ]
