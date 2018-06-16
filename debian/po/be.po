@@ -17,13 +17,13 @@
 # Alexander Nyakhaychyk <nyakhaychyk@gmail.com>, 2009.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007, 2010.
 # Viktar Siarheichyk <viсs@eq.by>, 2014.
-# Viktar Siarheichyk <vics@fsfe.org>, 2014, 2015, 2017.
+# Viktar Siarheichyk <vics@fsfe.org>, 2014, 2015, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-03-01 16:35+0300\n"
+"PO-Revision-Date: 2018-06-12 16:58+0300\n"
 "Last-Translator: Viktar Siarheichyk <vics@fsfe.org>\n"
 "Language-Team: Debian l10n team for Belarusian <debian-l10n-belarusian@lists."
 "debian.org>\n"
@@ -88,10 +88,8 @@ msgstr "# Кірылічны - неславянскія мовы"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Кірылічны - неславянскія мовы"
+msgstr ". Кірылічны - неславянскія мовы (для сляпых карыстальнікаў)"
 
 #. Type: select
 #. Choices
@@ -104,10 +102,8 @@ msgstr "# Кірылічны - славянскія мовы (і баснійс�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Кірылічны - славянскія мовы (і баснійская і сербская лацінка)"
+msgstr ". Кірылічны - славянскія мовы (для сляпых карыстальнікаў)"
 
 #. Type: select
 #. Choices
@@ -135,7 +131,7 @@ msgstr "# Грэцкі"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Грэцкая (для сляпых карыстальнікаў)"
 
 #. Type: select
 #. Choices
