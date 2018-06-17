@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-01-11 20:47+0000\n"
+"PO-Revision-Date: 2018-03-24 10:39+0000\n"
 "Last-Translator: Filipovic Dragan <filipovic@tutanota.com>\n"
 "Language-Team: Serbian <debian-l10n-serbian@lists.debian.org>\n"
 "Language: sr\n"
@@ -77,7 +77,7 @@ msgstr "# јерменски"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# ћирилица  - KOI8-R и KOI8-U"
+msgstr "# ћирилица - KOI8-R и KOI8-U"
 
 #. Type: select
 #. Choices
@@ -90,10 +90,8 @@ msgstr "# ћирилица - несловенски језици"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# ћирилица - несловенски језици"
+msgstr ". ћирилица - несловенски језици (за слепе кориснике)"
 
 #. Type: select
 #. Choices
@@ -106,10 +104,8 @@ msgstr "# ћирилица - словенски језици (такође ср�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# ћирилица - словенски језици (такође српска латиница и босански)"
+msgstr ". ћирилица - словенски језици (такође српска латиница и босански)"
 
 #. Type: select
 #. Choices
@@ -137,7 +133,7 @@ msgstr "# грчки"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". грчки (за слепе кориснике)"
 
 #. Type: select
 #. Choices

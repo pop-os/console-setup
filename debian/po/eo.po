@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-12-01 00:46+0000\n"
+"PO-Revision-Date: 2018-03-22 11:22+0000\n"
 "Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <debian-l10n-esperanto@lists.debian.org>\n"
 "Language: eo\n"
@@ -85,10 +85,8 @@ msgstr "# Cirila - ne-slavaj lingvoj"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Cirila - ne-slavaj lingvoj"
+msgstr ". Cirila - ne-slavaj lingvoj (por blinduloj)"
 
 #. Type: select
 #. Choices
@@ -101,10 +99,8 @@ msgstr "# Cirila - slavaj lingvoj (ankaŭ bosnia kaj serba latina)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Cirila - slavaj lingvoj (ankaŭ bosnia kaj serba latina)"
+msgstr ". Cirila - slavaj lingvoj (por blinduloj)"
 
 #. Type: select
 #. Choices
@@ -132,7 +128,7 @@ msgstr "# Greka"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Greka (por blinduloj)"
 
 #. Type: select
 #. Choices
