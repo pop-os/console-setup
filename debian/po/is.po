@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: Icelandic (Debian Installer)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-01-04 06:20+0000\n"
+"PO-Revision-Date: 2018-04-04 14:38+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -88,10 +88,8 @@ msgstr "# Kyrilískt - önnur en slavnesk tungumál"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Kyrilískt - önnur en slavnesk tungumál"
+msgstr ". Kyrilískt - önnur en slavnesk tungumál (fyrir blinda)"
 
 #. Type: select
 #. Choices
@@ -104,10 +102,8 @@ msgstr "# Kyrilískt - slavnesk tungumál (ásamt bosnísku og serbnesk latína)
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Kyrilískt - slavnesk tungumál (ásamt bosnísku og serbnesk latína)"
+msgstr ". Kyrilískt - slavnesk tungumál (fyrir blinda)"
 
 #. Type: select
 #. Choices
@@ -135,7 +131,7 @@ msgstr "# Gríska"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Gríska (fyrir blinda)"
 
 #. Type: select
 #. Choices

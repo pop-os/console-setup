@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-12-22 19:54+0000\n"
-"Last-Translator: Chang-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2018-04-01 10:37+0000\n"
+"Last-Translator: Anthony Wong <yp@anthonywong.net>\n"
 "Language-Team: Debian-user in Chinese [Big5] <debian-chinese-big5@lists."
 "debian.org>\n"
 "Language: zh_TW\n"
@@ -82,39 +82,35 @@ msgstr "# 亞美尼亞語"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "＃ 西裡爾字母 - KOI8-R 及 KOI8-U"
+msgstr "# 西里爾字母 - KOI8-R 及 KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
-msgstr "# 西裡爾字母 - 非-斯拉夫語系"
+msgstr "# 西里爾字母 - 非斯拉夫語系"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# 西裡爾字母 - 非-斯拉夫語系"
+msgstr ". 西里爾字母 - 非斯拉夫語系（盲人適用）"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
-msgstr "# 西裡爾字母 - 斯拉夫語系（Bosnian 及 賽爾維亞拉丁）"
+msgstr "# 西里爾字母 - 斯拉夫語系（波士尼亞語及賽爾維亞拉丁語）"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# 西裡爾字母 - 斯拉夫語系（Bosnian 及 賽爾維亞拉丁）"
+msgstr ". 西里爾字母 - 斯拉夫語系（盲人適用）"
 
 #. Type: select
 #. Choices
@@ -142,7 +138,7 @@ msgstr "# 希臘語"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". 希臘語（盲人適用）"
 
 #. Type: select
 #. Choices
@@ -205,21 +201,21 @@ msgstr "# 泰語"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". 聯合 - 拉丁語；斯拉夫語西裡爾字母；希伯來語；基本阿拉伯語"
+msgstr ". 聯合 - 拉丁語；斯拉夫語西里爾字母；希伯來語；基本阿拉伯語"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". 聯合 - 拉丁語；斯拉夫語西裡爾字母；希臘語"
+msgstr ". 聯合 - 拉丁語；斯拉夫語西里爾字母；希臘語"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". 聯合 - 拉丁語；斯拉夫語和非-斯拉夫語西裡爾字母"
+msgstr ". 聯合 - 拉丁語；斯拉夫語和非斯拉夫語西里爾字母"
 
 #. Type: select
 #. Choices
