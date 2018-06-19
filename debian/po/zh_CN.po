@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-12-22 19:54+0000\n"
+"PO-Revision-Date: 2018-04-13 09:35+0000\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
@@ -97,10 +97,8 @@ msgstr "# 西里尔语 - 非斯拉夫语"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# 西里尔语 - 非斯拉夫语"
+msgstr ". 西里尔语 - 非斯拉夫语（用于盲人用户）"
 
 #. Type: select
 #. Choices
@@ -113,10 +111,8 @@ msgstr "# 西里尔语 - 斯拉夫语(以及波斯尼亚和塞尔维亚拉丁语
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# 西里尔语 - 斯拉夫语(以及波斯尼亚和塞尔维亚拉丁语)"
+msgstr ". 西里尔语 - 斯拉夫语（用于盲人用户）"
 
 #. Type: select
 #. Choices
@@ -144,7 +140,7 @@ msgstr "# 希腊语"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". 希腊语（用于盲人用户）"
 
 #. Type: select
 #. Choices

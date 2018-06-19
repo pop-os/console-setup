@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-03-04 12:38+0000\n"
+"PO-Revision-Date: 2018-06-16 08:13+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
 "debian.org>\n"
@@ -97,9 +97,8 @@ msgstr "# Cyrilic - bahasa selain-Slavia"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Cyrilic - bahasa selain-Slavia"
+msgstr ". Sirilik - bahasa-bahasa bukan Slavia (untuk pengguna buta)"
 
 #. Type: select
 #. Choices
@@ -112,9 +111,8 @@ msgstr "# Cyrillic - bahasa Slavia (juga Bosnia dan Latin Serbia)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Cyrillic - bahasa Slavia (juga Bosnia dan Latin Serbia)"
+msgstr ". Sirilik - bahasa-bahasa Slavia (untuk pengguna buta)"
 
 #. Type: select
 #. Choices
@@ -142,7 +140,7 @@ msgstr "# Yunani"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Yunani (untuk pengguna buta)"
 
 #. Type: select
 #. Choices
