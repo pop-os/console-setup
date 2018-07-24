@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-06-14 08:38+0000\n"
+"PO-Revision-Date: 2018-07-22 13:38+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
 "Language: he\n"
@@ -792,7 +792,7 @@ msgstr "פריסת המקלדת כבררת המחדל"
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr "ללא מקש AltGr"
+msgstr "אין מקש AltGr"
 
 #. Type: select
 #. Choices
@@ -825,9 +825,9 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"בחלק מפריסות המקלדת, מקש ההחלפה AltGr לצורך הקלדה של כל מיני תווים, בעיקר "
-"כאלו הזרים לפריסת המקלדת, כגון סימני מטבע זרים ואותיות עם סימנים דיאקריטיים. "
-"אלו לרוב מודפסים כסמל נוסף על המקשים."
+"בחלק מפריסות המקלדת, נעשה שימוש במקש ההחלפה AltGr לצורך הקלדה של כל מיני "
+"תווים, בעיקר כאלו הזרים לפריסת המקלדת כגון סימני מטבע זרים ואותיות עם סימנים "
+"דיאקריטיים. אלו לרוב מודפסים כסמל נוסף על המקשים."
 
 #. Type: select
 #. Choices
