@@ -2,6 +2,7 @@ console-setup (1.186) UNRELEASED; urgency=medium
 
   [ Holger Wansing]
   * Change deprecated Priority: extra into optional. 
+  * Fix spelling of 'argumengs' in changelog.
 
  -- Holger Wansing <hwansing@mailbox.org>  Sun, 23 Sep 2018 20:06:37 +0200
 
@@ -11,7 +12,7 @@ console-setup (1.185) unstable; urgency=medium
 
   [ Cyril Brulebois ]
   * setupcon(findfile): Do not use `ls` in order to find a file because
-    `ls` sorts its argumengs.  Thanks to Alexey Shilin (patch provided),
+    `ls` sorts its arguments.  Thanks to Alexey Shilin (patch provided),
     closes: #898303.
   * Update Vcs-{Browser,Git} to point to salsa (alioth's replacement).
 
