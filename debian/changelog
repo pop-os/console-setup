@@ -1,8 +1,15 @@
-console-setup (1.186) UNRELEASED; urgency=medium
+console-setup (1.186) unstable; urgency=medium
+
+  * Team upload
 
   [ Holger Wansing]
   * Change deprecated Priority: extra into optional. 
   * Fix spelling of 'argumengs' in changelog.
+
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Galician (gl.po) by mantinan
+  * Croatian (hr.po) by Valentin Vidic
 
  -- Holger Wansing <hwansing@mailbox.org>  Sun, 23 Sep 2018 20:06:37 +0200
 
