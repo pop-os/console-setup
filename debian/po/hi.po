@@ -3,8 +3,7 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# translation of debian-installer_packages_po_sublevel1_hi.po to Hindi
-# translation of debian-installer_packages_po_sublevel1_hi.po to
+# translation of debian-installer_packages_po_sublevel1 to Hindi
 # Debian Installer master translation file template
 # Don't forget to properly fill-in the header of PO files
 # Debian Installer translators, please read the D-I i18n documentation
@@ -26,19 +25,21 @@
 #   Alastair McKinstry <mckinstry@debian.org>, 2004.
 # Kumar Appaiah <a.kumar@alumni.iitm.ac.in>, 2008.
 # Kumar Appaiah <kumar.appaiah@gmail.com>, 2008, 2011, 2012.
+# Sruthi Chandran <srud@openmailbox.org>, 2018.
+# Himanshu Awasthi <johim9493@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2012-10-02 08:22-0500\n"
-"Last-Translator: Kumar Appaiah\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: en_US\n"
+"PO-Revision-Date: 2018-09-24 21:29+0000\n"
+"Last-Translator: Himanshu Awasthi <johim9493@gmail.com>\n"
+"Language-Team: \n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: 2X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -95,7 +96,6 @@ msgstr "# - सिरिलिक गैर स्लाव भाषाएँ"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# - सिरिलिक गैर स्लाव भाषाएँ"
 
@@ -111,7 +111,6 @@ msgstr "# सिरिलिक - स्लाव भाषाएँ (बोस�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# सिरिलिक - स्लाव भाषाएँ (बोस्नियाई सर्बियाई लेटिन भी)"
 
@@ -962,9 +961,8 @@ msgstr "ब्रिटिश अंग्रेज़ी"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "बल्गारियाई (phonetic खाका)"
+msgstr "बल्गेरियाई (बीडीएस लेआउट)"
 
 # console-keymaps-acorn, Bulgarian (phonetic layout)
 #. Type: select
@@ -977,7 +975,7 @@ msgstr "बल्गारियाई (phonetic खाका)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "बर्मी"
 
 # console-keymaps-acorn, Canadian
 #. Type: select
@@ -1264,7 +1262,7 @@ msgstr "पर्शियन्"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "फिलीपींस"
 
 # console-keymaps-acorn, Polish
 #. Type: select
@@ -1363,7 +1361,7 @@ msgstr "स्विस जर्मनी"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "ताजिक"
 
 #. Type: select
 #. Choices
@@ -1387,7 +1385,7 @@ msgstr "थाई"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "तिब्बती"
 
 # console-keymaps-acorn, Russian
 #. Type: select
