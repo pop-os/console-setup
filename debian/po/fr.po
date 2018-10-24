@@ -23,13 +23,14 @@
 #   Free Software Foundation, Inc., 2000-2001, 2004, 2005, 2006.
 #   Grégoire Colbert <gregus@linux-mandrake.com>, 2001.
 #   Tobias Quathamer <toddy@debian.org>, 2007, 2008.
+# Alban Vidal <alban.vidal@zordhak.fr>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-03-14 06:41+0100\n"
-"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"PO-Revision-Date: 2018-08-28 07:19+0100\n"
+"Last-Translator: Alban Vidal <alban.vidal@zordhak.fr>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -92,7 +93,7 @@ msgstr "# cyrillique : langues autres que slaves"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "Cyrillique : langues autres que slaves (pour aveugles)"
+msgstr ". Cyrillique : langues autres que slaves (pour aveugles)"
 
 #. Type: select
 #. Choices
@@ -107,7 +108,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "Cyrillique : langues slaves (pour aveugles)"
+msgstr ". Cyrillique : langues slaves (pour aveugles)"
 
 #. Type: select
 #. Choices
@@ -135,7 +136,7 @@ msgstr "# grec"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr "Grec (pour aveugles)"
+msgstr ". Grec (pour aveugles)"
 
 #. Type: select
 #. Choices
