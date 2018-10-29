@@ -1,3 +1,24 @@
+console-setup (1.187) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Arabic (ar.po) by ButterflyOfFire
+  * Asturian (ast.po) by Xuacu Saturio
+  * Finnish (fi.po) - minor fixes
+  * French (fr.po) - minor fixes
+  * German (de.po) by Holger Wansing
+  * Hindi (hi.po) by Himanshu Awasthi
+  * Japanese (ja.po) by Kenshi Muto
+  * Korean (ko.po) by Changwoo Ryu
+  * Latvian (lv.po) by Tranzistors
+  * Marathi (mr.po) by Nayan Nakhare
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Russian (ru.po) by Yuri Kozlov
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Holger Wansing <hwansing@mailbox.org>  Mon, 29 Oct 2018 22:16:34 +0100
+
 console-setup (1.186) unstable; urgency=medium
 
   * Team upload
