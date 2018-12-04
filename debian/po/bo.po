@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2012-04-14 22:12+0600\n"
+"PO-Revision-Date: 2018-11-23 06:07+0000\n"
 "Last-Translator: Tennom <tankola@ymail.com, tennomyathog@gmail.com>\n"
 "Language-Team: bo <translation-team-bo@lists.sourceforge.net>\n"
 "Language: bo\n"
@@ -915,9 +915,8 @@ msgstr "དབྱིན་ཇིའི་དབྱིན་སྐད"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bulgarian (BDS layout)"
-msgstr "པུར་ཀ་རི་ཡ་སྐད (གསལ་བྱེད་ཀྱི་བཀོད་པ)"
+msgstr "པུར་ཀ་རི་ཡ་སྐད (BDS ཀྱི་བཀོད་པ)"
 
 #. Type: select
 #. Choices
