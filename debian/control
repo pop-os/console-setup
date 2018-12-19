@@ -124,7 +124,6 @@ Priority: optional
 Depends: archdetect, cdebconf-udeb, kbd-udeb | kbdcontrol-udeb | hurd-udeb, ${misc:Depends}
 Provides: keyboard-setup
 Architecture: all
-Multi-Arch: foreign
 Description: Configure the keyboard
  Keyboard configurator for Debian Installer based on console-setup
 Package-Type: udeb
@@ -136,7 +135,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for Amiga keyboards
 Package-Type: udeb
 
@@ -146,7 +144,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for Atari TT keyboards
 Package-Type: udeb
 
@@ -156,7 +153,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for old-style Macintosh keyboards
 Package-Type: udeb
 
@@ -166,7 +162,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for PC keyboards
 Package-Type: udeb
 
@@ -176,7 +171,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for Sun4 keyboards
 Package-Type: udeb
 
@@ -186,7 +180,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded Linux keyboard layouts for Sun5 keyboards
 Package-Type: udeb
 
@@ -196,7 +189,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: encoded FreeBSD keyboard layouts for PC keyboards
 Package-Type: udeb
 
@@ -205,7 +197,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}, kbd-udeb
 Architecture: all
-Multi-Arch: foreign
 Description: Linux console fonts for Debian Installer
 Package-Type: udeb
 
@@ -214,7 +205,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: FreeBSD console fonts for Debian Installer
 Package-Type: udeb
 
@@ -223,7 +213,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: Linux 8-bit charmaps for console-setup-udeb
 Package-Type: udeb
 
@@ -232,7 +221,6 @@ Section: debian-installer
 Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
-Multi-Arch: foreign
 Description: FreeBSD 8-bit charmaps for console-setup-udeb
 Package-Type: udeb
 

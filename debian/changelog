@@ -1,6 +1,8 @@
 console-setup (1.188) UNRELEASED; urgency=medium
 
   * Remove trailing whitespaces from changelog file, to fix lintian tag.
+  * Remove Multi-Arch declaration for all udebs, there is no point of this
+    ATM; fixes 'unknown-field-in-control' lintian tag.
 
  -- Holger Wansing <hwansing@mailbox.org>  Sun, 16 Dec 2018 15:30:46 +0100
 
