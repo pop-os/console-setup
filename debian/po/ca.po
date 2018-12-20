@@ -4,9 +4,9 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Catalan messages for debian-installer.
-# Copyright 2002-2008, 2010, 2012, 2015, 2017 Software in the Public Interest, Inc.
+# Copyright 2002-2008, 2010, 2012, 2015, 2017-2018 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Jordi Mallach <jordi@debian.org>, 2002-2008, 2010, 2012, 2015, 2017.
+# Jordi Mallach <jordi@debian.org>, 2002-2008, 2010, 2012, 2015, 2017-2018.
 # Guillem Jover <guillem@debian.org>, 2005, 2007.
 #
 # Translations from iso-codes:
@@ -18,10 +18,10 @@
 # Traductor: Jordi Ferré <jordiferre@catalonia.altranet.fr>
 msgid ""
 msgstr ""
-"Project-Id-Version: debian-installer jessie\n"
+"Project-Id-Version: debian-installer buster\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2017-01-31 10:20+0100\n"
+"PO-Revision-Date: 2018-12-17 22:34+0100\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "Language: ca\n"
@@ -83,10 +83,8 @@ msgstr "# ciríl·lic - llengües no eslaves"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# ciríl·lic - llengües no eslaves"
+msgstr ". ciríl·lic - llengües no eslaves (per a usuaris cecs)"
 
 #. Type: select
 #. Choices
@@ -99,10 +97,8 @@ msgstr "# ciríl·lic - Llengües eslaves (i també bosnià i serbi llatí)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# ciríl·lic - Llengües eslaves (i també bosnià i serbi llatí)"
+msgstr ". ciríl·lic - Llengües eslaves (per a usuaris cecs)"
 
 #. Type: select
 #. Choices
@@ -130,7 +126,7 @@ msgstr "# grec"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". grec (per a usuaris cecs)"
 
 #. Type: select
 #. Choices
