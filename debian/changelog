@@ -1,8 +1,21 @@
-console-setup (1.188) UNRELEASED; urgency=medium
+console-setup (1.188) unstable; urgency=medium
 
+  * Team upload
+
+  [ Holger Wansing]
   * Remove trailing whitespaces from changelog file, to fix lintian tag.
   * Remove Multi-Arch declaration for all udebs, there is no point of this
     ATM; fixes 'unknown-field-in-control' lintian tag.
+
+  [ Updated translations ]
+  * Tibetan (bo.po) by Tennom
+  * Catalan (ca.po) by Jordi Mallach
+  * Greek (el.po) by Vangelis Skarmoutsos
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Finnish (fi.po) by Juhani Numminen
+  * Gujarati (gu.po) by Kartik Mistry
+  * Polish (pl.po) by Michał Kułach
+  * Romanian (ro.po) by Andrei Popescu
 
  -- Holger Wansing <hwansing@mailbox.org>  Sun, 16 Dec 2018 15:30:46 +0100
 
