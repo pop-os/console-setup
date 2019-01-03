@@ -1,3 +1,9 @@
+console-setup (1.189) UNRELEASED; urgency=medium
+
+  * Correct release date/time of version 1.188 in changelog file.
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 03 Jan 2019 18:00:03 +0100
+
 console-setup (1.188) unstable; urgency=medium
 
   * Team upload
@@ -17,7 +23,7 @@ console-setup (1.188) unstable; urgency=medium
   * Polish (pl.po) by Michał Kułach
   * Romanian (ro.po) by Andrei Popescu
 
- -- Holger Wansing <hwansing@mailbox.org>  Sun, 16 Dec 2018 15:30:46 +0100
+ -- Holger Wansing <hwansing@mailbox.org>  Sat, 22 Dec 2018 13:50:46 +0100
 
 console-setup (1.187) unstable; urgency=medium
 
