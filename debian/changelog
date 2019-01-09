@@ -1,6 +1,8 @@
 console-setup (1.189) UNRELEASED; urgency=medium
 
   * Correct release date/time of version 1.188 in changelog file.
+  * Remove trailing whitespaces from control and rules files, to fix
+    lintian tag.
 
  -- Holger Wansing <hwansing@mailbox.org>  Thu, 03 Jan 2019 18:00:03 +0100
 

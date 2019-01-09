@@ -223,4 +223,3 @@ Depends: ${misc:Depends}
 Architecture: all
 Description: FreeBSD 8-bit charmaps for console-setup-udeb
 Package-Type: udeb
-

@@ -18,7 +18,7 @@ manprocessor := sed \
 udeb-fonts := CyrAsia-Fixed16 CyrSlav-TerminusBold16 Greek-VGA16 \
 Lat15-TerminusBold16 Lat2-TerminusBold16 Lat38-VGA16 Lat7-TerminusBold16
 # These are Linux-only
-udeb-fonts-big := 
+udeb-fonts-big :=
 
 # These are not properly supported by d-i in text console, but
 # included for completeness for speakup & brltty screen reading
