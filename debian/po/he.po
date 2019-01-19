@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-07-22 13:38+0000\n"
+"PO-Revision-Date: 2019-01-18 15:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
 "Language: he\n"
@@ -723,7 +723,7 @@ msgstr ""
 "מקובל לבחור במקשים Alt ימני או ב־Caps Lock מסיבות ארגונומיות (במקרה השני, נא "
 "להשתמש בצירוף Shift+Caps Lock לטובת החלפת מצב אותיות גדולות). הצירוף Alt"
 "+Shift הוא גם כן צירוף מקובל, אך צירוף זה יאבד את התנהגותו הרגילה ב־Emacs "
-"ובתכינות אחרות שמשתמשות בצירוף למטרות מיוחדות."
+"ובתכניות אחרות שמשתמשות בצירוף למטרות מיוחדות."
 
 #. Type: select
 #. Description
