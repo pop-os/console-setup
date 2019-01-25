@@ -2581,7 +2581,7 @@ if ($freebsd) {
          'any' => 'NoSymbol', # Is this recognised by X ?
          'VoidSymbol' => 'VoidSymbol',
          'voidsymbol' => 'VoidSymbol', # Is this recognised by X ?
-         'ISO_Left_Tab' => 'Tab',
+         'ISO_Left_Tab' => 'Meta_Tab',
          'Clear' => 'VoidSymbol',
          'Pause' => 'Pause',
          'Scroll_Lock' => 'Scroll_Lock',

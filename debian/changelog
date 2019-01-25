@@ -1,8 +1,12 @@
 console-setup (1.189) UNRELEASED; urgency=medium
 
+  [ Holger Wansing ]
   * Correct release date/time of version 1.188 in changelog file.
   * Remove trailing whitespaces from control and rules files, to fix
     lintian tag.
+
+  [ Antonio Larrosa ]
+  * Keyboard: Translate ISO_Left_Tab to Meta_Tab. Closes: #920287
 
  -- Holger Wansing <hwansing@mailbox.org>  Thu, 03 Jan 2019 18:00:03 +0100
 
