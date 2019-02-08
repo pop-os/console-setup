@@ -1,4 +1,4 @@
-console-setup (1.189) UNRELEASED; urgency=medium
+console-setup (1.189) unstable; urgency=medium
 
   [ Holger Wansing ]
   * Correct release date/time of version 1.188 in changelog file.
@@ -8,7 +8,13 @@ console-setup (1.189) UNRELEASED; urgency=medium
   [ Antonio Larrosa ]
   * Keyboard: Translate ISO_Left_Tab to Meta_Tab. Closes: #920287
 
- -- Holger Wansing <hwansing@mailbox.org>  Thu, 03 Jan 2019 18:00:03 +0100
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Finnish (fi.po) by Juhani Numminen
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Traditional Chinese (zh_TW.po) by Louies
+
+ -- Holger Wansing <hwansing@mailbox.org>  Fri, 08 Feb 2019 23:22:53 +0100
 
 console-setup (1.188) unstable; urgency=medium
 
