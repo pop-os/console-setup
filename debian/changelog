@@ -1,3 +1,10 @@
+console-setup (1.190) UNRELEASED; urgency=medium
+
+  * console-setup(5) manpage: correct section of setfont manpage and remove
+    reference to no-longer existing consolechars manpage. Closes: #920312
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 03 Mar 2019 11:07:38 +0100
+
 console-setup (1.189) unstable; urgency=medium
   * Team upload
 
