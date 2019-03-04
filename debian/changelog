@@ -1,9 +1,14 @@
-console-setup (1.190) UNRELEASED; urgency=medium
+console-setup (1.190) unstable; urgency=medium
+  * Team upload
 
   * console-setup(5) manpage: correct section of setfont manpage and remove
     reference to no-longer existing consolechars manpage. Closes: #920312
 
- -- Holger Wansing <hwansing@mailbox.org>  Sun, 03 Mar 2019 11:07:38 +0100
+  [ Updated translations ]
+  * Punjabi (Gurmukhi) (pa.po) by Aman ALam
+  * Vietnamese (vi.po) by Trần Ngọc Quân
+
+ -- Holger Wansing <hwansing@mailbox.org>  Mon, 04 Mar 2019 04:44:51 +0100
 
 console-setup (1.189) unstable; urgency=medium
   * Team upload
