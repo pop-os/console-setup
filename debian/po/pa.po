@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2019-02-11 10:09+0000\n"
+"PO-Revision-Date: 2019-03-11 16:03+0000\n"
 "Last-Translator: Aman ALam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -90,9 +90,8 @@ msgstr "# Cyrillic - non-Slavic ਭਾਸ਼ਾਵਾਂ"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Cyrillic - non-Slavic ਭਾਸ਼ਾਵਾਂ"
+msgstr ". Cyrillic - ਗ਼ੈਰ-ਸਲਾਵਿਕ ਭਾਸ਼ਾਵਾਂ (ਅੰਨ੍ਹੇ ਵਰਤੋਂਕਾਰਾਂ ਲਈ)"
 
 #. Type: select
 #. Choices
@@ -105,9 +104,8 @@ msgstr "# Cyrillic - Slavic languages (also Bosnian ਅਤੇ Serbian Latin)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Cyrillic - Slavic languages (also Bosnian ਅਤੇ Serbian Latin)"
+msgstr ". Cyrillic - ਸਲਾਵਿਕ ਭਾਸ਼ਾਵਾਂ (ਅੰਨ੍ਹੇ ਵਰਤੋਂਕਾਰਾਂ ਲਈ)"
 
 #. Type: select
 #. Choices
