@@ -11,6 +11,7 @@
 # Abdelhak Bougouffa, 2017.
 # najib LAARIBI <supnano@gmail.com>, 2018.
 # ButterflyOfFire <ButterflyOfFire@protonmail.com>, 2018.
+# Osama <osama.ibrahim.89@gmail.com>, 2019.
 #
 # Translations from iso-codes:
 #     Translations taken from ICU SVN on 2007-09-09
@@ -27,7 +28,7 @@ msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-10-05 16:21+0000\n"
+"PO-Revision-Date: 2019-06-10 10:55+0000\n"
 "Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -169,14 +170,15 @@ msgstr "# Latin2 - وسط أوروبا والرومانية"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
-msgstr "# Latin3 و Latin8 - تشيتشيوا; إسبترنتو; الآيرلندية; المالتيز والولش"
+msgstr ""
+"# Latin3 و Latin8 - تشيتشيوا ؛ الإسبترنتو ؛ الإيرلندية ؛ المالتيز والولش"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
-msgstr "# Latin7 - الليتوانية; اللاتفية; الماوري والمارشاليز"
+msgstr "# Latin7 - الليتوانية ؛ اللاتفية ؛ الماوري والمارشاليز"
 
 #. Type: select
 #. Choices
@@ -190,28 +192,28 @@ msgstr ". اللاتينية - الفيتنامية"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Thai"
-msgstr "# التاي"
+msgstr "# التايلندية"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". مركّبة - اللاتينية; السلافية السيريلية; العبرية; العربية الأساسية"
+msgstr ". مركّبة - اللاتينية ؛ السلافية السيريلية ؛ العبرية ؛ العربية الأساسية"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
-msgstr ". مركّبة - اللاتينية; السلافية السيريلية; اليونانية"
+msgstr ". مركّبة - اللاتينية ؛ السلافية السيريلية ؛ اليونانية"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
-msgstr ". مركّبة - اللاتينية; السيريلية السلافية والغير سلافية"
+msgstr ". مركّبة - اللاتينية ؛ السيريلية السلافية وغير السلافية"
 
 #. Type: select
 #. Choices
@@ -306,7 +308,7 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"يرجى إختيار حجم الخط للطرفية. للعلم، الخط المستخدم عند إقلاع الحاسب مقاسه "
+"يرجى اختيار حجم الخط للطرفية. للعلم، الخط المستخدم عند إقلاع الحاسب مقاسه "
 "8×16."
 
 #. Type: select
@@ -426,7 +428,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
 msgid "Keep default keyboard layout (${XKBLAYOUTVARIANT})?"
-msgstr "هل تريد إبقاء مخطط لوحة المفاتيح الإفتراضية (${XKBLAYOUTVARIANT})?"
+msgstr "هل تريد إبقاء مخطط لوحة المفاتيح الافتراضية (${XKBLAYOUTVARIANT})?"
 
 #. Type: boolean
 #. Description
@@ -437,7 +439,7 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"القيمة الإفتراضية لمخطط لوحة المفاتيح هو XKBLAYOUT=\"${XKBLAYOUT}\" و "
+"القيمة الافتراضية لمخطط لوحة المفاتيح هو XKBLAYOUT=\"${XKBLAYOUT}\" و "
 "XKBVARIANT=\"${XKBVARIANT}\".  هذه القيمة محددة وفقاً للغة الدولة/المنطقة "
 "والإعدادات في /etc/X11/xorg.conf."
 
@@ -485,7 +487,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "هل تريد إبقاء خيارات لوحة المفاتيح الإفتراضية (${XKBOPTIONS})؟"
+msgstr "هل تريد إبقاء خيارات لوحة المفاتيح الافتراضية (${XKBOPTIONS})؟"
 
 #. Type: boolean
 #. Description
@@ -697,7 +699,7 @@ msgstr "بدول تبديل"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "طريقة التبديل بين وضع المحلي واللاتيني:"
+msgstr "طريقة التبديل بين الوضع المحلي واللاتيني:"
 
 #. Type: select
 #. Description
@@ -720,10 +722,10 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"زر Alt الأيمن أو Caps Lock عادة تستخدم لأسباب راحة المستخدم (وفي حالةاستخدام "
-"Caps Lock للتبديل، اضغط Shift+Caps Lock للتبديل بين الحروف الصغيرة "
-"والكبيرة). كما يشيع استخدام زري Alt+Shift، إلا أنها قد لا تتوفر فيإيماكس "
-"وبرامج أخرى تستخدمها لأغراض معيّنة."
+"زر Alt الأيمن أو Caps Lock عادة تستخدم لأسباب راحة المستخدم (وفي حالة "
+"استخدام Caps Lock للتبديل، اضغط Shift+Caps Lock للتبديل بين الحروف الصغيرة "
+"والكبيرة). كما يشيع استخدام زرّي Alt+Shift، إلا أنها قد تفقد سلوكها المعتاد "
+"في إيماكس وفي البرامج الأخرى التي تستخدمها لأغراض معيّنة."
 
 #. Type: select
 #. Description
@@ -884,8 +886,8 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"بطبيعة الحال لا يؤثر استخدام Control+Alt+Backspace بأي شيء. إن كنت تريديمكنك "
-"استخدامه لإيقاف خادم X."
+"بطبيعة الحال لا يؤثر استخدام Control+Alt+Backspace بأي شيء. إن كنت تريد "
+"يمكنك استخدامه لإيقاف خادم X."
 
 # console-keymaps-acorn, American
 #. Type: select
