@@ -2,6 +2,8 @@ console-setup (1.192) UNRELEASED; urgency=medium
 
   * Remove Christian Perrier from Uploaders, with many thanks for all
     his contributions over the years! (Closes: #927511)
+  * Merge patch by Iain Lane to fix internationalization issues when
+    switching locales with Perl >= 5.28 (Closes: #924657, LP: #1817453).
 
  -- Cyril Brulebois <kibi@debian.org>  Sat, 20 Apr 2019 22:33:33 +0200
 
