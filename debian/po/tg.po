@@ -9,14 +9,14 @@
 #
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
-# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2015, 2016, 2017, 2018
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013, 2014, 2018, 2019
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-03-05 11:00+0500\n"
+"PO-Revision-Date: 2019-08-02 22:04+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <victor.ibragimov@gmail.com>\n"
 "Language: tg\n"
@@ -79,10 +79,8 @@ msgstr "# Кириллӣ - забонҳои ғайриславянӣ"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Кириллӣ - забонҳои ғайриславянӣ"
+msgstr ". Кириллӣ - забонҳои ғайриславянӣ (барои корбарони нобино)"
 
 #. Type: select
 #. Choices
@@ -95,10 +93,8 @@ msgstr "# Кириллӣ - забонҳои славянӣ (инчунин бо�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Кириллӣ - забонҳои славянӣ (инчунин босниягӣ ва лотинии сербӣ)"
+msgstr ". Кириллӣ - забонҳои славянӣ (барои корбарони нобино)"
 
 #. Type: select
 #. Choices
@@ -126,7 +122,7 @@ msgstr "# Юнонӣ"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Юнонӣ (барои корбарони нобино)"
 
 #. Type: select
 #. Choices
@@ -980,7 +976,7 @@ msgstr "Булғорӣ (тарҳбандии БДС)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Булғорӣ (тарҳбандии фонетикӣ)"
+msgstr "Булғорӣ (тарҳбандии овоӣ)"
 
 #. Type: select
 #. Choices
@@ -1010,7 +1006,7 @@ msgstr "Каталонӣ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "Чинӣ"
+msgstr "Хитоӣ"
 
 #. Type: select
 #. Choices
