@@ -1,3 +1,13 @@
+console-setup (1.193) unstable; urgency=medium
+
+  * Team upload
+
+  [ Updated translations ]
+  * Croatian (hr.po) by gogogogi
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 04 Aug 2019 12:08:32 +0200
+
 console-setup (1.192) unstable; urgency=medium
 
   * Remove Christian Perrier from Uploaders, with many thanks for all
@@ -8,6 +18,7 @@ console-setup (1.192) unstable; urgency=medium
  -- Cyril Brulebois <kibi@debian.org>  Thu, 04 Jul 2019 17:41:47 +0200
 
 console-setup (1.191) unstable; urgency=medium
+
   * Team upload
 
   [ Updated translations ]
@@ -17,6 +28,7 @@ console-setup (1.191) unstable; urgency=medium
  -- Holger Wansing <hwansing@mailbox.org>  Sat, 23 Mar 2019 21:13:24 +0100
 
 console-setup (1.190) unstable; urgency=medium
+
   * Team upload
 
   * console-setup(5) manpage: correct section of setfont manpage and remove
@@ -29,6 +41,7 @@ console-setup (1.190) unstable; urgency=medium
  -- Holger Wansing <hwansing@mailbox.org>  Mon, 04 Mar 2019 04:44:51 +0100
 
 console-setup (1.189) unstable; urgency=medium
+
   * Team upload
 
   [ Holger Wansing ]
