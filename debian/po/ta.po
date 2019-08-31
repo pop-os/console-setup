@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2015-05-09 16:28+0630\n"
-"Last-Translator: Dr.T.Vasudevan <drtvasudevan@gmail.com>\n"
+"PO-Revision-Date: 2019-08-28 18:10+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
@@ -86,7 +86,6 @@ msgstr "# சிரிலிக்- ஸ்லேவ் அல்லாத மெ
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# சிரிலிக்- ஸ்லேவ் அல்லாத மொழிகள்"
 
@@ -102,7 +101,6 @@ msgstr "# சிரிலிக்- ஸ்லேவிய மொழிகள் 
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# சிரிலிக்- ஸ்லேவிய மொழிகள் (போஸ்னியன் மற்றும் செர்பியன் இலத்தீன் கூட)"
 
@@ -489,7 +487,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
 msgid "Keep default keyboard options (${XKBOPTIONS})?"
-msgstr "${XKBOPTIONS} முன்னிருப்பு விசைப்பலகை தேர்வை வைத்துக்கொள்ளலாமா? "
+msgstr "${XKBOPTIONS} முன்னிருப்பு விசைப்பலகை தேர்வை வைத்துக்கொள்ளலாமா?"
 
 #. Type: boolean
 #. Description
