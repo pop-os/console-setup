@@ -7,7 +7,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # Console-setup strings translations:
 # (identified by "./console-setup.templates")
-# Copyright (C) 2003-2016 Miguel Figueiredo <elmig@debianpt.org>
+# Copyright (C) 2003-2019 Miguel Figueiredo <elmig@debianpt.org>
 # This file is distributed under the same license as debian-installer.
 #
 #
@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2018-03-10 23:15+0100\n"
-"PO-Revision-Date: 2018-10-07 17:36+0100\n"
+"PO-Revision-Date: 2019-09-23 20:36+0100\n"
 "Last-Translator:  Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team:  Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -334,7 +334,7 @@ msgstr "Codificação a usar na consola:"
 #. :sl1:
 #: ../keyboard-configuration.templates:2001
 msgid "Configure the keyboard"
-msgstr "Configure o teclado"
+msgstr "Configurar o teclado"
 
 #. Type: text
 #. Description
@@ -420,7 +420,7 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Escolha, por facor, se quer mantê-la. Se escolher esta opção, não serão "
+"Escolha, por favor, se quer mantê-la. Se escolher esta opção, não serão "
 "feitas perguntas sobre a disposição de teclado e a configuração actual será "
 "mantida."
 
@@ -863,7 +863,7 @@ msgid ""
 msgstr ""
 "A tecla Compose (também conhecida como Multi) é uma tecla que sinaliza o "
 "software para interpretar os batimentos de teclas seguintes como uma "
-"combinação de símbolos para produzir um caracter não existente no teclado."
+"combinação de símbolos para produzir um caractere não existente no teclado."
 
 #. Type: select
 #. Description
@@ -972,7 +972,7 @@ msgstr "Búlgaro (layout BDS)"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "Búlgaro (layout phonetic)"
+msgstr "Búlgaro (layout fonético)"
 
 #. Type: select
 #. Choices
