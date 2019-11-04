@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2018-03-10 23:15+0100\n"
+"POT-Creation-Date: 2019-11-02 19:48+0100\n"
 "PO-Revision-Date: 2019-07-04 17:02+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -898,132 +898,154 @@ msgstr ""
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
 msgstr "Američka engleska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Albanian"
 msgstr "Albanska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Arabic"
 msgstr "Arapska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
 msgstr "Asturska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bangladesh"
 msgstr "Bangladeška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
 msgstr "Bjeloruska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bengali"
 msgstr "Bengalska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "Belgijska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bosnian"
 msgstr "Bosanska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Brazilian"
 msgstr "Brazilska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
 msgstr "Britanska engleska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (BDS layout)"
 msgstr "Bugarska (BDS raspored)"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
 msgstr "Bugarska (fonetski raspored)"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
 msgstr "Burmanska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr "Kanadska francuska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
 msgstr "Kanadska višejezična"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
 msgstr "Katalonska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
 msgstr "Kineska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
 msgstr "Hrvatska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
 msgstr "Češka"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Danish"
 msgstr "Danska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Dutch"
 msgstr "Nizozemska"
@@ -1031,6 +1053,7 @@ msgstr "Nizozemska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Dvorak"
 msgstr "Dvorak"
@@ -1038,6 +1061,7 @@ msgstr "Dvorak"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Dzongkha"
 msgstr "Džongkhaška"
@@ -1045,48 +1069,56 @@ msgstr "Džongkhaška"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Esperanto"
 msgstr "Esperanto"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Estonian"
 msgstr "Estonska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Ethiopian"
 msgstr "Etiopska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Finnish"
 msgstr "Finska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "French"
 msgstr "Francuska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Georgian"
 msgstr "Gruzijska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "German"
 msgstr "Njemačka"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
 msgstr "Grčka"
@@ -1094,6 +1126,7 @@ msgstr "Grčka"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Gujarati"
 msgstr "Gudžaratska"
@@ -1101,12 +1134,14 @@ msgstr "Gudžaratska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Gurmukhi"
 msgstr "Gurmukhijska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
 msgstr "Hebrejska"
@@ -1114,36 +1149,42 @@ msgstr "Hebrejska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
 msgstr "Hindska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Hungarian"
 msgstr "Mađarska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Icelandic"
 msgstr "Islandska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
 msgstr "Irska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
 msgstr "Talijanska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
 msgstr "Japanska"
@@ -1151,42 +1192,49 @@ msgstr "Japanska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kannada"
 msgstr "Kanadska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
 msgstr "Kazaška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Khmer"
 msgstr "Kmerska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
 msgstr "Kirgiška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Korean"
 msgstr "Korejska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (F layout)"
 msgstr "Kurdska (F raspored)"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kurdish (Q layout)"
 msgstr "Kurdska (Q raspored)"
@@ -1194,30 +1242,35 @@ msgstr "Kurdska (Q raspored)"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Lao"
 msgstr "Laoska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Latin American"
 msgstr "Latinoamerička"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
 msgstr "Letonska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Lithuanian"
 msgstr "Litavska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Macedonian"
 msgstr "Makedonska"
@@ -1225,12 +1278,14 @@ msgstr "Makedonska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Malayalam"
 msgstr "Malajalamska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Nepali"
 msgstr "Nepalska"
@@ -1238,36 +1293,42 @@ msgstr "Nepalska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Northern Sami"
 msgstr "Sjeverno samska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
 msgstr "Norveška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
 msgstr "Perzijska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
 msgstr "Filipinska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Polish"
 msgstr "Poljska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
 msgstr "Portugalska"
@@ -1275,24 +1336,28 @@ msgstr "Portugalska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
 msgstr "Pandžapska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
 msgstr "Rumunjska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
 msgstr "Ruska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Serbian (Cyrillic)"
 msgstr "Srpska (ćirilična)"
@@ -1300,6 +1365,7 @@ msgstr "Srpska (ćirilična)"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Sindhi"
 msgstr "Sindska"
@@ -1307,54 +1373,63 @@ msgstr "Sindska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Sinhala"
 msgstr "Singaleška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Slovak"
 msgstr "Slovačka"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Slovenian"
 msgstr "Slovenska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Spanish"
 msgstr "Španjolska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Swedish"
 msgstr "Švedska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
 msgstr "Švicarsko-francuska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
 msgstr "Švicarsko-njemačka"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
 msgstr "Tadžikistanska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "Tamilska"
@@ -1362,48 +1437,56 @@ msgstr "Tamilska"
 # ?
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Telugu"
 msgstr "Teluška"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Tajlandska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
 msgstr "Tibetska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (F layout)"
 msgstr "Turska (F raspored)"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Turkish (Q layout)"
 msgstr "Turska (Q raspored)"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
 msgstr "Ukrajinska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Uyghur"
 msgstr "Ujgurska"
 
 #. Type: select
 #. Choices
+#. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Vietnamese"
 msgstr "Vijetnamska"
