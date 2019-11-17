@@ -1,8 +1,16 @@
-console-setup (1.194) UNRELEASED; urgency=medium
+console-setup (1.194) unstable; urgency=medium
 
+  * Team upload
+
+  [ Julien Cristau ]
   * keyboard_present: don't check for Linux 1.x.  Thanks, Ansgar!
 
- -- Julien Cristau <jcristau@debian.org>  Wed, 04 Sep 2019 15:35:32 +0200
+  [ Updated translations ]
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Tamil (ta.po) by leela
+  * Traditional Chinese (zh_TW.po) by Walter Cheuk
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 17 Nov 2019 22:42:11 +0100
 
 console-setup (1.193) unstable; urgency=medium
 
