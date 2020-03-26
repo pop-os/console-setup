@@ -1,3 +1,17 @@
+console-setup (1.195) unstable; urgency=medium
+
+  [ Mantas Kriaučiūnas ]
+  * Fix Lithuanian layout Closes: #951387
+    in keyboard-configuration.config: replace not intuitive second lt(us)
+    layout with us(altgr-intl), which contains Euro (€) and other symbols,
+    often used in Lithuania. us layout is used by the majority of
+    Lithuanian users as second layout.
+
+  [ D-I role ]
+  * [l10n]  Commit changed/added po files (from l10n-sync run at dillon)
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 26 Mar 2020 13:34:12 +0000
+
 console-setup (1.194) unstable; urgency=medium
 
   * Team upload
