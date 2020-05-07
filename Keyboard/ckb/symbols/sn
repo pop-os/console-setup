@@ -1,9 +1,9 @@
-partial default alphanumeric_keys
+default  partial alphanumeric_keys
 xkb_symbols "basic" {
 
     include "latin"
 
-    name[Group1]="Senegal";
+    name[Group1]="Wolof";
 
     key <AE01>	{ [ ampersand,          1,          bar,     NoSymbol ]	};
     key <AE02>	{ [    eacute,          2,   asciitilde,       Eacute ]	};

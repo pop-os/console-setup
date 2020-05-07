@@ -1,4 +1,3 @@
-// $Xorg: jp,v 1.4 2001/02/09 02:05:53 xorgcvs Exp $
 //
 //Copyright 1996, 1998  The Open Group
 //
@@ -24,8 +23,6 @@
 //other dealings in this Software without prior written authorization
 //from The Open Group.
 //
-// $XFree86: xc/programs/xkbcomp/symbols/nec/jp,v 3.9 2001/01/17 23:46:03 dawes Exp $ 
-//
 // symbols for a NEC PC98 keyboard
 default xkb_symbols "pc98" {
 
@@ -43,7 +40,7 @@ default xkb_symbols "pc98" {
     key <AE09> { [ 9, parenright	], [ kana_YO, kana_yo	]	};
     key <AE10> { [ 0 			], [ kana_WA, kana_WO	]	};
     key <AE11> { [ minus, equal		], [ kana_HO		]	};
-    key <AE12> { [ asciicircum,	quoteleft ], [ kana_HE		]	};
+    key <AE12> { [ asciicircum, grave 	], [ kana_HE		]	};
     key <BKSL> { [ backslash, bar 	], [ prolongedsound	]	};
     key <BKSP> { [ BackSpace		]	};
 
@@ -96,7 +93,6 @@ default xkb_symbols "pc98" {
     key <NFER> { [ Muhenkan		]	};
     key <SPCE> { [ space		]	};
     key <XFER> { [ Henkan, Kanji	]	};
-
     // End alphanumeric section
 
     // Begin "Function" section
@@ -157,11 +153,9 @@ default xkb_symbols "pc98" {
 //    key <KPEN> { [ KP_Enter		]	}; 
     // End "Keypad" section
 
-    // begin modifier mappings
     modifier_map Shift  { Shift_L };
     modifier_map Lock   { Caps_Lock };
     modifier_map Control{ Control_L };
     modifier_map Mod1   { Alt_L };
     modifier_map Mod2   { Mode_switch };
 };
-

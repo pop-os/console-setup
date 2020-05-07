@@ -1,4 +1,3 @@
-// $Xorg: pc,v 1.4 2001/02/09 02:05:50 xorgcvs Exp $
 //
 //Copyright 1996, 1998  The Open Group
 //
@@ -24,7 +23,6 @@
 //other dealings in this Software without prior written authorization
 //from The Open Group.
 //
-// $XFree86: xc/programs/xkbcomp/geometry/pc,v 3.14 2003/08/09 14:30:47 pascal Exp $
 
 default xkb_geometry "pc101" {
 
@@ -667,8 +665,7 @@ xkb_geometry "pc105" {
 }; // End of "pc105" geometry
 
 
-// Added for japanese 106 keyboard
-//                     by tsuka@kawalab.dnj.ynu.ac.jp .
+// Added for Japanese 106 keyboard by <tsuka(at)kawalab.dnj.ynu.ac.jp>.
 xkb_geometry "jp106" {
 
     description= "Japanese 106";
@@ -830,7 +827,7 @@ xkb_geometry "jp106" {
 
 }; // End of "jp106" geometry
 
-// Added for brazilian ABNT2 by Ricardo Y. Igarashi(iga@that.com.br)
+// Added for Brazilian ABNT2 by Ricardo Y. Igarashi <iga(at)that.com.br>.
 xkb_geometry "abnt2" {
     include "pc(pc105)"
 
@@ -1567,4 +1564,4 @@ xkb_geometry "pc104alt" {
     alias <AC00> = <CAPS>;
     alias <AA00> = <LCTL>;
 
-}; // End of "pc104" geometry
+}; // End of "pc104alt" geometry

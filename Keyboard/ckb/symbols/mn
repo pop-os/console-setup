@@ -1,14 +1,12 @@
-// $XKeyboardConfig$
-
 // based on:
 // Mongolian standard keyboard
 // Author Sanlig Badral <badral@chinggis.com>
 // 2002/12/7 Version 1.0
 
-partial default alphanumeric_keys
+default  partial alphanumeric_keys
 xkb_symbols "basic" {
 
-  name[Group1]= "Mongolia";
+  name[Group1]= "Mongolian";
 
   key <TLDE> { [ equal,       	   plus,  		degree          ] };
   key <AE01> { [ 1,                numerosign,        	multiply        ] };
@@ -62,8 +60,6 @@ xkb_symbols "basic" {
   key <AB09> { [ Cyrillic_ve,       Cyrillic_VE,       	guillemotright  ] };
   key <AB10> { [ Cyrillic_yu,       Cyrillic_YU,       	backslash       ] };
 
-  // End alphanumeric section
-
   key <SPCE> { [ space,             space,             	nobreakspace    ] };
 
   include "level3(ralt_switch)"
@@ -76,8 +72,9 @@ xkb_symbols "olpc" {
 
   include "mn(basic)"
 
+  key <AE07> { [ 7,                 semicolon,          ampersand       ] };
+
   key <BKSL> { [ backslash,         bar,     		exclam          ] };
 
   include "group(olpc)"
 };
-

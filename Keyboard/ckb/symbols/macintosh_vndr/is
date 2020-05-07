@@ -1,4 +1,3 @@
-// $XKeyboardConfig$
 //
 // This file describes the differences between a Macintosh US Extended
 // keymap and an Icelandic keyboard layout in the style of Mac OS and Mac OS X
@@ -124,5 +123,5 @@ xkb_symbols "basic" {
 partial alphanumeric_keys
 xkb_symbols "nodeadkeys" {
     include	"macintosh_vndr/is(basic)" // for consistent naming
-    name[Group1]= "Iceland - Mac, eliminate dead keys";
+    name[Group1]= "Iceland - Mac, no dead keys";
 };
