@@ -1,5 +1,6 @@
 console-setup (1.196) UNRELEASED; urgency=medium
 
+  [ Anton Zinoviev ]
   * Keyboard/ckb: update with keyboard data of version 2.29 of xkb files.
     (This change is not relevant for the binary packages in Debian.)
 
