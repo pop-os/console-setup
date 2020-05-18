@@ -147,15 +147,6 @@ Architecture: all
 Description: encoded Linux keyboard layouts for Atari TT keyboards
 Package-Type: udeb
 
-Package: console-setup-macintoshold-ekmap
-Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
-Depends: ${misc:Depends}
-Architecture: all
-Description: encoded Linux keyboard layouts for old-style Macintosh keyboards
-Package-Type: udeb
-
 Package: console-setup-pc-ekmap
 Provides: console-setup-ekmap
 Section: debian-installer

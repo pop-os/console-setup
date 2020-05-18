@@ -1066,13 +1066,6 @@
     </model>
     <model>
       <configItem>
-        <name>macintosh_old</name>
-        <description>Macintosh Old</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>macintosh_hhk</name>
         <description>Happy Hacking for Mac</description>
         <vendor>Fujitsu</vendor>

@@ -54,7 +54,7 @@ debian/kbdnames.gz: $./Keyboard/KeyboardNames.pl
 	&& ./kbdnames-maker ./KeyboardNames.pl \
 		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9n ) >$@
 
-models := amiga ataritt macintosh_old pc105 sun4 sun5
+models := amiga ataritt pc105 sun4 sun5
 
 di-gzipped-ekmaps := $(addprefix $./, $(addsuffix .ekmap.gz, $(models)))
 
@@ -250,7 +250,6 @@ udeb-install: build
 	dh_testroot
 	dh_prep -p console-setup-amiga-ekmap
 	dh_prep -p console-setup-ataritt-ekmap
-	dh_prep -p console-setup-macintoshold-ekmap
 	dh_prep -p console-setup-pc-ekmap
 	dh_prep -p console-setup-sun4-ekmap
 	dh_prep -p console-setup-sun5-ekmap
@@ -283,8 +282,6 @@ udeb-install: build
 	cat amiga.ekmap.gz >debian/console-setup-amiga-ekmap/usr/share/console-setup/amiga.ekmap.gz
 	dh_movefiles -p console-setup-ataritt-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/ataritt.ekmap.gz
 	cat ataritt.ekmap.gz >debian/console-setup-ataritt-ekmap/usr/share/console-setup/ataritt.ekmap.gz
-	dh_movefiles -p console-setup-macintoshold-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/macintosh_old.ekmap.gz
-	cat macintosh_old.ekmap.gz >debian/console-setup-macintoshold-ekmap/usr/share/console-setup/macintosh_old.ekmap.gz
 	dh_movefiles -p console-setup-pc-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/pc105.ekmap.gz
 	cat pc105.ekmap.gz >debian/console-setup-pc-ekmap/usr/share/console-setup/pc105.ekmap.gz
 	dh_movefiles -p console-setup-sun4-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/sun4.ekmap.gz

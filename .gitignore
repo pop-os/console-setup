@@ -75,7 +75,6 @@ Fonts/Thai-Fixed18.fnt
 Fonts/Thai-Fixed18.raw
 Keyboard/amiga.ekmap
 Keyboard/ataritt.ekmap
-Keyboard/macintosh_old.ekmap
 Keyboard/pc105.ekbd
 Keyboard/pc105.ekmap
 Keyboard/sun4.ekmap
@@ -83,7 +82,6 @@ Keyboard/sun5.ekmap
 amiga.ekmap
 ataritt.ekmap
 building_debian
-macintosh_old.ekmap
 pc105.ekbd
 pc105.ekmap
 sun4.ekmap
@@ -687,7 +685,6 @@ Keyboard/linux-keymaps/
 Keyboard/pc105.ekbd.gz
 amiga.ekmap.gz
 ataritt.ekmap.gz
-macintosh_old.ekmap.gz
 pc105.ekbd.gz
 pc105.ekmap.gz
 sun4.ekmap.gz

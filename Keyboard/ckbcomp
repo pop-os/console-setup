@@ -3252,9 +3252,7 @@ if (! $symbols) {
 
 ########### COMPUTE ARCH ###########################################
 
-if ($keycodes =~ /(^|\+|\|)macintosh\(old\)($|\+|\|)/) {
-    $arch = 'macintosh';
-} elsif ($keycodes =~ /(^|\+|\|)ataritt(\([^\)]*\))?($|\+|\|)/) {
+if ($keycodes =~ /(^|\+|\|)ataritt(\([^\)]*\))?($|\+|\|)/) {
     $arch = 'ataritt';
 } elsif ($keycodes =~ /(^|\+|\|)amiga(\([^\)]*\))?($|\+|\|)/) {
     $arch = 'amiga';

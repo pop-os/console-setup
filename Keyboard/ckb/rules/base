@@ -37,7 +37,7 @@
 ! $macbooks = macbook78 macbook79
 ! $maclaptop = ibook powerbook macbook78 macbook79
 ! $applealu = applealu_ansi applealu_iso applealu_jis
-! $macs = macintosh macintosh_old ibook powerbook macbook78 macbook79
+! $macs = macintosh ibook powerbook macbook78 macbook79
 
 ! $macvendorlayouts = ch de dk fi fr gb is it latam nl no pt se us
 
@@ -155,7 +155,6 @@
   pc98		=	xfree98(pc98)
  $applealu	=	macintosh(alukbd)
   macintosh_hhk	=	macintosh(hhk)
-  macintosh_old	=	macintosh(old)
  $macbooks	=	macintosh+macintosh(goodmap)
  $macs   	=	macintosh
   thinkpadz60	=	xfree86(thinkpadz60)
@@ -360,11 +359,6 @@
   jollasbj	*			=	jolla_vndr/sbj(common)+%l%(v)
  $sun		$sun_custom		=	pc+sun_vndr/%l%(v)
   pc98		nec_vndr/jp		=	nec_vndr/jp(pc98)
-  macintosh_old	us			=	macintosh_vndr/us(oldmac)
-  macintosh_old	en_US			=	macintosh_vndr/us(oldmac)
-  macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l%(v)
-  macintosh_old	$nonlatin		=	macintosh_vndr/us(oldmac)+%l%(v):2
-  macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l%(v)
   applealu_jis	jp			=	macintosh_vndr/apple(alukbd)+macintosh_vndr/jp(usmac)+macintosh_vndr/jp(mac):2
   applealu_jis	*			=	macintosh_vndr/apple(alukbd)+%l%(v)+macintosh_vndr/jp(mac):2
  $applealu	$macvendorlayouts	=	macintosh_vndr/apple(alukbd)+macintosh_vndr/%l%(v)
@@ -468,9 +462,6 @@
   amiga		*			=	xfree68_vndr/amiga(usa1)+%l[1]%(v[1])
   jollasbj	*			=	jolla_vndr/sbj(common)+%l[1]%(v[1])
  $sun		$sun_custom	=	pc+sun_vndr/%l[1]%(v[1])
-  macintosh_old	us			=	macintosh_vndr/us(oldmac)
-  macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l[1]%(v[1])
-  macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l[1]%(v[1])
   applealu_jis	us			=	macintosh_vndr/apple(alukbd)+macintosh_vndr/jp(usmac)
  $applealu	$macvendorlayouts	=	macintosh_vndr/apple(alukbd)+macintosh_vndr/%l[1]%(v[1])
  $applealu	*			=	macintosh_vndr/apple(alukbd)+%l[1]%(v[1])
