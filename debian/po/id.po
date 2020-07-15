@@ -18,6 +18,8 @@
 # * Setyo Nugroho (setyo@gmx.net), 2004.
 # * Arief S Fitrianto <arief@gurame.fisika.ui.ac.id>, 2008-2011.
 # * Al Qalit <qal.smith@gmail.com>, 2018.
+# * Andika Triwidada <andika@gmail.com>, 2018, 2019, 2020.
+# * Fahmi Ali <fahmi.ali1945@gmail.com>, 2020.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry <mckinstry@computer.org>, 2002.
@@ -33,7 +35,7 @@ msgstr ""
 "Project-Id-Version: debian-installer (level1)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-06-16 08:13+0000\n"
+"PO-Revision-Date: 2020-04-05 15:40+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Debian Indonesia Translators <debian-l10n-indonesian@lists."
 "debian.org>\n"
@@ -322,9 +324,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1492,12 +1491,3 @@ msgstr "Vietnam"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Peta tombol yang dipakai:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Silakan pilih ukuran fonta untuk konsol. Sebagai acuan, fonta yang "
-#~ "digunakan ketika komputer boot berukuran 8x16.  Beberapa ukuran fonta "
-#~ "membutuhkan paket kbd konsol (bukan console-tools) ditambah framebuffer."

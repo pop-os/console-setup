@@ -348,9 +348,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1532,14 +1529,3 @@ msgstr "Vietnamita"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Mapa de teclado a usar:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Escoja el tamaño para la tipografía de la consola de Linux. Como "
-#~ "referencia, la tipografía que utiliza la máquina en el arranque tiene un "
-#~ "tamaño de 8x16. Algunos tamaños de tipográficas necesitan que esté "
-#~ "instalado el paquete de consola kbd (no «console-tools») además del "
-#~ "«framebuffer»."

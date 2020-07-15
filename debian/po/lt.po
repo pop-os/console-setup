@@ -19,21 +19,26 @@
 # Gediminas Paulauskas <menesis@delfi.lt>, 2000-2001.
 # Alastair McKinstry <mckinstry@computer.org>, 2001,2002.
 # Kęstutis Biliūnas <kebil@kaunas.init.lt>, 2004, 2006, 2008, 2009, 2010.
-# Rimas Kudelis <rq@akl.lt>, 2012, 2017.
+# Rimas Kudelis <rq@akl.lt>, 2012, 2017, 2018.
+# Tautvydas Zukauskas <tautzuk@tutanota.com>, 2020.
+# Andrius Ulrikas <andrius@ulrikas.lt>, 2020.
+# Andrius Majauskas <komitetas@gmail.com>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-03-21 17:01+0000\n"
-"Last-Translator: Moo <hazap@hotmail.com>\n"
+"PO-Revision-Date: 2020-05-15 22:41+0000\n"
+"Last-Translator: Andrius Majauskas <komitetas@gmail.com>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
 
 #. Type: text
 #. Description
@@ -316,9 +321,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1495,12 +1497,3 @@ msgstr "Vietnamiečių"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Naudotinas klavišų išdėstymas:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Pasirinkite tekstinio terminalo šrifto dydį. Pavyzdžiui, kompiuterio "
-#~ "paleidimo metu naudojamas 8x16 dydžio šriftas. Kai kurių dydžių šriftams "
-#~ "būtinas „kbd“ paketas (ne „console-tools“) ir kadrų buferis."

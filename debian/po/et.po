@@ -8,7 +8,7 @@
 # This translation is released under the same licence as the debian-installer.
 #
 # Siim Põder <siim@p6drad-teel.net>, 2007.
-# Kristjan Räts <kristjanrats@gmail.com>, 2017.
+# Kristjan Räts <kristjanrats@gmail.com>, 2017, 2018, 2020.
 #
 # Thanks to following Ubuntu Translators for review and fixes:
 #     Laur Mõtus
@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-04-11 11:13+0300\n"
+"PO-Revision-Date: 2020-04-12 08:11+0000\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -319,9 +319,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1485,12 +1482,3 @@ msgstr "Vietnami"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Kasutatav klahvide asetus:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Vali Linuxi konsoolifondi suurus. Näiteks alglaadimisel kasutatava fondi "
-#~ "suurus on 8x16. Mõned fondisuurused vajavad kbd konsooli pakki (mitte "
-#~ "console-tools) ja framebuffer'it."

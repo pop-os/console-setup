@@ -20,7 +20,7 @@
 # quad-nrg.net <yodesy@quad-nrg.net>, 2006, 2008.
 # QUAD-nrg.net <yodesy@quad-nrg.net>, 2006.
 # galaxico@quad-nrg.net <galaxico@quad-nrg.net>, 2009, 2011.
-# Emmanuel Galatoulas <galaxico@quad-nrg.net>, 2009, 2010, 2013, 2014.
+# Emmanuel Galatoulas <galaxico@quad-nrg.net>, 2009, 2010, 2013, 2014, 2018.
 #   Tobias Quathamer <toddy@debian.org>, 2007.
 #   Free Software Foundation, Inc., 2004.
 #   Alastair McKinstry <mckinstry@computer.org>, 2001.
@@ -33,8 +33,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-11-29 08:08+0000\n"
-"Last-Translator: Vangelis Skarmoutsos <skarmoutsosv@gmail.com>\n"
+"PO-Revision-Date: 2019-06-26 14:09+0200\n"
+"Last-Translator: galaxico <galas@tee.gr>\n"
 "Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -327,9 +327,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1510,13 +1507,3 @@ msgstr "Βιετναμέζικα"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Απεικόνιση πληκτρολογίου για χρήση:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Παρακαλώ επιλέξτε το μέγεθος της γραμματοσειράς για την κονσόλα. Για "
-#~ "αναφορά, η γραμματοσειρά που χρησιμοποιείται κατά την εκκίνηση του "
-#~ "υπολογιστή έχει μέγεθος 8x16. Κάποια μεγέθη γραμματοσειρών απαιτούν το "
-#~ "πακέτο kbd console (όχι το console-tools) και το framebuffer."

@@ -26,8 +26,8 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_bs\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2014-05-21 11:20+0100\n"
-"Last-Translator: Amila Valjevčić <valjevcic.amila@gmail.com>\n"
+"PO-Revision-Date: 2019-08-28 18:10+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,6 @@ msgstr "# Ćirilica - neslavenski jezici"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# Ćirilica - neslavenski jezici"
 
@@ -107,7 +106,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr ""
 "# Ćirilica - Slavenski jezici (uključujući bosanski i latinični srpski)"
@@ -321,9 +319,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1496,12 +1491,3 @@ msgstr "Vijetnamski"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Raspored tipki za upotrebu:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Molimo odaberite veličinu slova za konzolu. Kao referentna, slova "
-#~ "korištena pri podizanju ovog računara su veličine 8x16. Neke veličine "
-#~ "zahtjevaju kbd konzolni paket (ne console-tools) i framebuffer."

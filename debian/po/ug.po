@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2014-03-03 14:41+0600\n"
-"Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
+"PO-Revision-Date: 2018-08-22 12:42+0000\n"
+"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
@@ -82,7 +82,6 @@ msgstr "# سلاۋيانچە - غەيرى سلاۋيان تىللىرى"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# سلاۋيانچە - غەيرى سلاۋيان تىللىرى"
 
@@ -100,7 +99,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr ""
 "# سلاۋيانچە - سلاۋيان تىللىرى (بوسنىيە ۋە سىربىيە لاتىنچىنىمۇ ئۆز ئىچىگە "
@@ -315,9 +313,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1492,12 +1487,3 @@ msgstr "ۋىيېتنامچە"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ئىشلىتىدىغان ھەرپتاختا خەرىتىسى:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "تىزگىن سۇپىسىنىڭ خەت چوڭلۇقىنى تاللاڭ. پايدىلىنىشىڭىز ئۈچۈن: كومپيۇتېر "
-#~ "قوزغالغاندىكى خەتنىڭ چوڭلۇقى 8x16. بەزى خەت نۇسخىلىرىنىڭ چوڭلۇقى kbd "
-#~ "تىزگىن سۇپا بوغچا (console-tools ئەمەس)سىغا كاندۇك يىغلەكنى قوشۇش زۆرۈر."

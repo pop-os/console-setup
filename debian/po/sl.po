@@ -99,7 +99,6 @@ msgstr "# Cirilica- ne-slovanski jeziki"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# Cirilica- ne-slovanski jeziki"
 
@@ -116,7 +115,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr ""
 "# Cirilica - Slovanski jeziki (vključno z bosanščino in srbsko latinico)"
@@ -331,9 +329,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1505,12 +1500,3 @@ msgstr "Vietnamščina"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Postavitev tipkovnice, ki jo želite uporabljati:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Izberite prosim velikost črk za konzolo. Kot merilo: črke pri zagonu "
-#~ "računalnika so velikosti  8x16.  Nekatere velikosti črk zahtevajo paket "
-#~ "kbd (ne console-tools) in slikovni medpomnilnik."

@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: dDz.po\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2012-02-29 04:41-0500\n"
-"Last-Translator: Jurmey Rabgay <jrabgay@dit.gov.bt>\n"
+"PO-Revision-Date: 2019-08-28 18:09+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
 "Language: dz\n"
 "MIME-Version: 1.0\n"
@@ -83,7 +83,6 @@ msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད་ཡིག་མ་ཡིན་པ།"
 
@@ -99,7 +98,6 @@ msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# སི་རི་ལིཀ - སི་ལེ་བིག་སྐད་ཡིག་ (མ་ཚད་ བོསི་ནི་ཡཱན་དང་སར་བི་ཡཱན་ལེ་ཊིན)"
 
@@ -311,9 +309,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1521,12 +1516,3 @@ msgstr ". ལེ་ཊིན་ - ཝེཊི་ན་མིསི།"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ལག་ལེན་འཐབ་ནིའི་དོན་ལུ་ས་ཁྲ་གཙོ་བོ :"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "མ་སྒྲོམ་གྱི་དོན་ལུ་ཡིག་གཟུགས་ཀྱི་ཚད་སེལ་འཐུ་འབད་གནང་། གཞི་བསྟུན་གྱི་དོན་ལུ་ གློག་རིག་བུཊིསི་ལུ་ ཚད་"
-#~ "༡༦ ཡོད་པའི་སྐབས་ལག་ལེན་འཐབ་ཡོད་མི་ཡིག་གཟུགས། ཡིག་གཟུགས་ཀྱི་ཚད་ལ་ལུ་ཅིག་ལུ་  ( མ་སྒྲོམ-ལག་"
-#~ "ཆས་ མ་ཡིན་པའི) kbd མ་སྒྲོམ་ཐུམ་སྒྲིལ་དང་ གཞི་ཁྲམ་གནད་ཁོངས་དགོཔ་ཨིན།"

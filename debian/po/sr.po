@@ -11,7 +11,7 @@
 # Janos Guljas <janos@resenje.org>, 2010-2012.
 # Veselin Mijušković <veselin.mijuskovic@gmail.com>, 2008.
 # Milan Kostic <kosticmilan77@open.telekom.rs>, 2012.
-# Filipovic Dragan <filipovic@tutanota.com>, 2018.
+# Filipovic Dragan <filipovic@tutanota.com>, 2018, 2020.
 #
 # Translations from iso-codes:
 #   Aleksandar Jelenak <aleksandar.jelenak@gmail.com>, 2010.
@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-03-24 10:39+0000\n"
+"PO-Revision-Date: 2020-04-15 09:11+0000\n"
 "Last-Translator: Filipovic Dragan <filipovic@tutanota.com>\n"
 "Language-Team: Serbian <debian-l10n-serbian@lists.debian.org>\n"
 "Language: sr\n"
@@ -315,9 +315,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1479,12 +1476,3 @@ msgstr "вијетнамски"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Распоред тастатуре за употребу:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Изаберите величинну фонта за конзолу. На пример, фонт при бутовању има "
-#~ "величину 8x16.  Неке величине фонтова захтевају kbd конзолни пакет (не "
-#~ "console-tools) плус фрејмбафер."

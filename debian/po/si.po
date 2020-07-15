@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2012-02-28 10:16+0530\n"
-"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
+"PO-Revision-Date: 2019-08-28 18:10+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
 "Language: si\n"
 "MIME-Version: 1.0\n"
@@ -82,7 +82,6 @@ msgstr "# සිරිලික් - සැල්වික් නොවන භ�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# සිරිලික් - සැල්වික් නොවන භාශා"
 
@@ -98,7 +97,6 @@ msgstr "# සිරිලික් - සැල්වික් භාශා (ත�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# සිරිලික් - සැල්වික් භාශා (තවද බොස්නියානු හා සර්බියානු ලතින්)"
 
@@ -309,9 +307,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1466,12 +1461,3 @@ msgstr "වියෙට්නාම"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "භාවිත යතුරු සැකැස්ම:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "කරුණාකර කොන්සෝලු සඳහා අකුරු ප්‍රමාණයක් තෝරන්න, උදාහරණයක් ලෙස පරිගණයක ආරම්භ  වන විට "
-#~ "පවතින අකුරේ ප්‍රමාණය 8x16 වීම ගත හැක. ඇතැම් අකුරු ප්‍රමාණයන්ට kbd කොන්සෝල පැකේජය "
-#~ "(console-tools නොවේ) හා රාමුබෆරය ඇවැසි වේ."

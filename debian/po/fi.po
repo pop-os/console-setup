@@ -316,9 +316,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1522,13 +1519,3 @@ msgstr "vietnamilainen"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Käytettävä näppäinkartta:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Valitse konsolissa käytettävän kirjasimen koko. Vertailukohtana voit "
-#~ "käyttää tietokoneen käynnistyessä käytettävää koon 8x16 kirjasinta.Jotkin "
-#~ "kirjasinkoot vaativat kbd-konsolipaketin (ei console-tools-pakettia) sekä "
-#~ "kuvapuskurin."

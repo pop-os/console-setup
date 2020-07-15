@@ -77,7 +77,6 @@ msgstr "ຊີຣິລລິກ-ພາສາທີ່ບໍ່ແມ່ນພ�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "ຊີຣິລລິກ-ພາສາທີ່ບໍ່ແມ່ນພາສາສະລາບ "
 
@@ -93,7 +92,6 @@ msgstr "ຊີຣິລລິກ-ພາສາສະລາບ(ຍັງບອສ�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "ຊີຣິລລິກ-ພາສາສະລາບ(ຍັງບອສເນຍແລະລາຕິນເຊີເບຍ)"
 
@@ -296,9 +294,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1442,12 +1437,3 @@ msgstr "ພາສາຫວຽດ"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ຜັງແປ້ນພິມທີ່ໃຊ້:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "ກະລຸນາເລືອກຂະໜາດຂອງແບບອັກສອນສຳຫລັບຄອນໂຊລລີນຸກສຳຫລັບການອ້າງອີງອັກສອນທີ່ໃຊ້ເມື່ອມີການບູດເຄື່ອງຄອມພິວເຕີຂະໜາດ  "
-#~ "8x16.ບາງຄົນຂະໜາດຕົວອັກສອນຕ້ອງໃຊ້ແພັກເກັດ ທີ່ຄອນໂຊນ  kbd (ໄມຄອນໂຊນເຄື່ອງມື) ບວກ "
-#~ "framebuffer."

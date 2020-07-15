@@ -7,7 +7,7 @@
 # Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018.
+# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018, 2020.
 #
 # Translations from iso-codes:
 # Copyright (C)
@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-10-27 05:00+0900\n"
+"PO-Revision-Date: 2020-04-21 05:24+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -314,9 +314,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1471,12 +1468,3 @@ msgstr "베트남어"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "사용할 키맵:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "콘솔에 사용할 글꼴 크기를 고르십시오. 참고로 컴퓨터가 부팅할 때 사용하는 "
-#~ "글꼴 크기가 8x16입니다. 글꼴 크기 중 일부는 kbd 콘솔 패키지 (console-"
-#~ "tools 패키지가 아님) 및 프레임버퍼가 필요합니다."

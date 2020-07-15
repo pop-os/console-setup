@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: km\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2012-01-18 15:40+0700\n"
-"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"PO-Revision-Date: 2019-08-28 18:10+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "Language: km\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,6 @@ msgstr "# ស៊ីរីលីក - មិនមែន​ភាសា​ស្�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# ស៊ីរីលីក - មិនមែន​ភាសា​ស្លូវ៉ាគី"
 
@@ -94,7 +93,6 @@ msgstr "# ស៊ីរីលីក - ភាសាស្លូវ៉ាគី (�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# ស៊ីរីលីក - ភាសាស្លូវ៉ាគី (ប៊ូស្នី និង​ស៊ែរប៊ី​ឡាតាំង)"
 
@@ -304,9 +302,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1463,12 +1458,3 @@ msgstr "វៀតណាម"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ផែនទី​គ្រាប់ចុច​ត្រូវ​ប្រើ ៖"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "សូម​ជ្រើស​ទំហំ​ពុម្ពអក្សរ​សម្រាប់​កុង​សូល​លីនុច ។ ចំពោះ​សេចក្ដី​យោង ពុម្ពអក្សរ​ត្រូ​វបាន​ប្រើ​នៅពេល​កុំព្យូទ័រ​"
-#~ "ចាប់ផ្ដើម ​មាន​ទំហំ ៨x១៦ ។ ទំហំ​ពុម្ពអក្សរ​មួយ​ចំនួន​ទាមទារ​កញ្ចប់​កុងសូល kbd (មិន​មែន​ជា​កម្មវិធី​កុងសូល​"
-#~ "ទេ) បូក​នឹង​ framebuffer ។"

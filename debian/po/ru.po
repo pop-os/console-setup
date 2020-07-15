@@ -21,13 +21,14 @@
 # Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2004.
 # Pavel Maryanov <acid@jack.kiev.ua>, 2009,2010.
 # Yuri Kozlov <yuray@komyakino.ru>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018.
+# Lev Lamberov <dogsleg@debian.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-10-07 13:13+0300\n"
-"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"PO-Revision-Date: 2020-02-16 20:47+0100\n"
+"Last-Translator: Lev Lamberov <dogsleg@debian.org>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -317,9 +318,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1494,12 +1492,3 @@ msgstr "Вьетнамская"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Выберите клавиатурную раскладку:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Выберите размер шрифта для консоли. Для справки: шрифт, отображаемый при "
-#~ "загрузке компьютера, имеет размер 8x16. Для некоторых размеров шрифтов "
-#~ "требуется консольный пакет kbd (не console-tools) и фрейм-буфер."

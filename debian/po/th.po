@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2017-02-22 21:24+0700\n"
+"PO-Revision-Date: 2017-02-26 23:19+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -86,7 +86,6 @@ msgstr "# ซีริลลิก - ภาษาที่ไม่ใช่ต�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# ซีริลลิก - ภาษาที่ไม่ใช่ตระกูลสลาฟ"
 
@@ -102,7 +101,6 @@ msgstr "# ซีริลลิก - ภาษาตระกูลสลาฟ 
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# ซีริลลิก - ภาษาตระกูลสลาฟ (รวมถึงบอสเนียและละตินเซอร์เบีย)"
 
@@ -310,9 +308,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1466,12 +1461,3 @@ msgstr "เวียดนาม"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ผังแป้นพิมพ์ที่จะใช้:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซล ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด "
-#~ "8x16  แบบอักษรบางขนาดอาจต้องใช้แพกเกจ kbd สำหรับคอนโซล (ไม่ใช่ console-tools) "
-#~ "และการใช้เฟรมบัฟเฟอร์"

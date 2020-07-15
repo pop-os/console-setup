@@ -309,9 +309,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1481,12 +1478,3 @@ msgstr "Вьетнам"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Қолданылатын пернетақта жаймасы:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Консоль үшін қаріп өлшемін таңдаңыз. Салыстыру үшін, компьютер жүктелген "
-#~ "кезде 8x16 өлшемді қаріп қолданылады. Кейбір қаріп өлшемдері kbd "
-#~ "консольді дестесін (console-tools емес) + фреймбуферді талап етеді."

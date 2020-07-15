@@ -315,9 +315,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1491,13 +1488,3 @@ msgstr "В'єтнамська"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Розкладка клавіатури:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Будь ласка, виберіть розмір шрифту для консолі. Для порівняння, шрифт, що "
-#~ "використовується під час завантаження комп'ютера, має розмір 8x16. Деякі "
-#~ "розміри шрифтів вимагають наявності консольного пакунку kbd (не console-"
-#~ "tools) та фреймбуферу."

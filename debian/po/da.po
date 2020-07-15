@@ -332,9 +332,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1538,13 +1535,3 @@ msgstr "Vietnamesisk"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Tastaturudlæg der skal bruges:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Vælg venligst skrifttypens størrelse i konsollen. Til sammenligning er "
-#~ "den anvendte skrifttypestørrelse 8x16, når computeren starter op. Nogle "
-#~ "skriftstørrelser kræver pakken kbd console (ikke console-tools) samt "
-#~ "framebuffer."

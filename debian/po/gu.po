@@ -313,9 +313,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1473,12 +1470,3 @@ msgstr "વિયેતનામી"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ઉપયોગ કરવાનો કીમેપ:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "મહેરબાની કરી કોન્સોલ માટે ફોન્ટનું માપ પસંદ કરો. સંદર્ભ તરીકે, કોમ્પ્યુટર બૂટ થાય તે વખતે "
-#~ "વપરાતા ફોન્ટનું માપ ૮x૧૬ હોય છે.  કેટલાક ફોન્ટ માપ માટે kbd કોન્સોલ પેકેજો (console-"
-#~ "tools નહી) વત્તા ફ્રેમબફર જરૂરી છે."

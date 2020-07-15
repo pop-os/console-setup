@@ -323,9 +323,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1536,13 +1533,3 @@ msgstr "Vietnamca"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Kullanılacak klavye düzeni:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Lütfen uçbiriminde kullanmak istediğiniz yazıtipi boyutunu seçin.  Fikir "
-#~ "edinmeniz açısından; bilgisayarınızın başlarken kullandığı yazıtipinin "
-#~ "boyutu 8x16'dır.  Bazı yazıtipi boyutları kbd uçbirim paketine ihtiyaç "
-#~ "duyar.(console-tools değil)"

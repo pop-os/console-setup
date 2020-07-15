@@ -84,7 +84,6 @@ msgstr "# Kîrîlî - zimanên neslavî"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# Kîrîlî - zimanên neslavî"
 
@@ -100,7 +99,6 @@ msgstr "# Kîrîlî - zimanên slavî (bosnî û sirbî ya latînî jî)"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# Kîrîlî - zimanên slavî (bosnî û sirbî ya latînî jî)"
 
@@ -1482,12 +1480,3 @@ msgstr "vîyetnamî"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Plana bişkojan a dê were bikaranîn:"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Ji kerema xwe re meznahiya curenivîsa konsola Linux hilbijêre. Wekî "
-#~ "pîvaneke mezinahiya nivîsa komputerê ya di dema bootkirinê de 16 ye."

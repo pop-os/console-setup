@@ -25,14 +25,14 @@ msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2011-03-01 12:49+0400\n"
-"Last-Translator: Aiet Kolkhi <aietkolkhi@gmail.com>\n"
+"PO-Revision-Date: 2019-08-28 18:09+0000\n"
+"Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Georgian\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Type: text
 #. Description
@@ -89,7 +89,6 @@ msgstr "# კირილიცა - არასლავური ენებ
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# კირილიცა - არასლავური ენები"
 
@@ -105,7 +104,6 @@ msgstr "# კირილიცა - სლავური ენები (ა�
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# კირილიცა - სლავური ენები (ასევე ბოსნიური და სერბული ლათინური)"
 
@@ -1469,12 +1467,3 @@ msgstr ". ლათინური - ვიეტნამური"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "სასურველი განლაგება:"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "გთხოვთ ამოირჩიოთ ლინუქსის კონსოლის შრიფტი. შედარებისათვის გაითვალისწინეთ, "
-#~ "რომ ჩატვირთვისას კომპიუტერი 16 ზომის შრიფტს იყენებს."

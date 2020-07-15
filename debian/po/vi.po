@@ -308,9 +308,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the console. For reference, the "
-#| "font used when the computer boots has size 8x16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -1474,12 +1471,3 @@ msgstr "Tiếng Việt"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Bàn phím cần dùng:"
-
-#~ msgid ""
-#~ "Please select the size of the font for the console.  For reference, the "
-#~ "font used when the computer boots has size 8x16.  Some font sizes require "
-#~ "the kbd console package (not console-tools) plus framebuffer."
-#~ msgstr ""
-#~ "Hãy chọn kích cỡ của phông chữ cho bàn giao tiếp Linux. Để so sánh, máy "
-#~ "tính khởi động với phông chữ kích cỡ 8x16. Vài cỡ phông yêu cầu gói "
-#~ "console kbd (không phải console-tools) và framebuffer."
