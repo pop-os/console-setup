@@ -6,6 +6,9 @@ console-setup (1.197) UNRELEASED; urgency=medium
   * sync the Terminus font with the xfonts-terminus package (new upstream
     version with new font size 18x10, apply the patches dv1.diff (modified
     Cyrillic letters d and v) and td1.diff (centered tilde)).
+  * console-setup.templates: remove references for the console-tools
+    package which is no longer in the Debian archive.  Do not refer to the
+    font size at boot time which is irrelevant with framebuffer.
 
  -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Jul 2020 17:59:19 +0300
 

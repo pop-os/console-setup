@@ -71,9 +71,8 @@ Type: select
 Choices: ${CHOICES}
 # :sl3:
 _Description: Font size:
- Please select the size of the font for the console.  For reference,
- the font used when the computer boots has size 8x16.  Some font sizes
- require the kbd console package (not console-tools) plus framebuffer.
+ Please select the size of the font for the console.  Some font sizes
+ require framebuffer.
 
 Template: console-setup/charmap47
 Type: select
