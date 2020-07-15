@@ -1,3 +1,11 @@
+console-setup (1.197) UNRELEASED; urgency=medium
+
+  [ Anton Zinoviev ]
+  * standard.equivalents: map more aggressively the box drawing symbols.
+    Thanks to Nick Black, closes: #965029.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Jul 2020 17:59:19 +0300
+
 console-setup (1.196) unstable; urgency=medium
 
   * Team upload
