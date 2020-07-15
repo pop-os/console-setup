@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-01-13 19:58+0000\n"
 "Last-Translator: nima sahraneshin <unix.nima@gmail.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
@@ -315,14 +315,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. به عنوان مرجع،  قلمی که "
-"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۸x۱۶ دارد. در برخی از اندازه‌های "
-"قلم به بسته kbd console (و نه console-tools) به علاوه freamebuffer نیاز است."
+"هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۸x۱۶ دارد."
 
 #. Type: select
 #. Description
@@ -1480,3 +1482,13 @@ msgstr "ویتنامی"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "چینش کلید مورد استفاده:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "لطفاً اندازه قلم را برای کنسول لینوکس انتخاب نمائید. به عنوان مرجع،  قلمی "
+#~ "که هنگام بوت‌شدن کامپیوتر استفاده شده است اندازهٔ ۸x۱۶ دارد. در برخی از "
+#~ "اندازه‌های قلم به بسته kbd console (و نه console-tools) به علاوه "
+#~ "freamebuffer نیاز است."

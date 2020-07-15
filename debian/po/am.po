@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2014-04-04 22:07+0100\n"
 "Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic <linux-ethiopia@googlegroups.com>\n"
@@ -305,9 +305,8 @@ msgstr ""
 #: ../console-setup.templates:8001
 #, fuzzy
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "የሊኑክስ ኮንሶል የሚጠቀምበትን የፊደልቅርጽ መጥን ይምረጡ። ለማነጻጸር አስሊው ሲነሳ የታየው ፊደልቅርጽ መጠኑ 16 ነው።"
 
@@ -1437,3 +1436,12 @@ msgstr "ቪትናምኛ"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ጥቅም ላይ የሚውልው የፊደል ገበታ፦"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "የሊኑክስ ኮንሶል የሚጠቀምበትን የፊደልቅርጽ መጥን ይምረጡ። ለማነጻጸር አስሊው ሲነሳ የታየው ፊደልቅርጽ መጠኑ 16 "
+#~ "ነው።"

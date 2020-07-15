@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Icelandic (Debian Installer)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-04-04 14:38+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
@@ -314,15 +314,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Veldu leturstærð fyrir stjórnskjáinn. Til samanburðar má geta að letrið sem "
-"notað er þegar vélin ræsir sig upp er í stærðinni 8x16. Sumar leturstærðir "
-"þarfnast kbd stjórnskjáspakkans (elli console-tools) auk skjáminnis "
-"(framebuffer)."
+"notað er þegar vélin ræsir sig upp er í stærðinni 8x16."
 
 #. Type: select
 #. Description
@@ -1490,3 +1491,13 @@ msgstr "Víetnamskt"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Lyklaborðsvörpun sem á að nota:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Veldu leturstærð fyrir stjórnskjáinn. Til samanburðar má geta að letrið "
+#~ "sem notað er þegar vélin ræsir sig upp er í stærðinni 8x16. Sumar "
+#~ "leturstærðir þarfnast kbd stjórnskjáspakkans (elli console-tools) auk "
+#~ "skjáminnis (framebuffer)."

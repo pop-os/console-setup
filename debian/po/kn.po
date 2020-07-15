@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-04-02 06:37+0000\n"
 "Last-Translator: Yogesh <yogesh@kalike.org>\n"
 "Language-Team: Kannada <debian-l10n-kannada@lists.debian.org>\n"
@@ -309,14 +309,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "ದಯಮಾಡಿ ಆಜ್ಞಾಫಲಕದ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕವನ್ನು ಬೂಟ್ ಮಾಡುವಾಗ ಬಳಸುವ "
-"ಫಾಂಟ್ ಗಾತ್ರವು 8x16. ಕೆಲವು ಫಾಂಟ್ ಗಾತ್ರಗಳಿಗೆ kbd ಆಜ್ಞಾಫಲಕ ಮೆದುಸರಕಿನ (ಆಜ್ಞಾಫಲಕ "
-"ಸಲಕರಣೆಗಳಲ್ಲ) ಮತ್ತು ಫ್ರೇಮ್ ಬಫರಿನ್ ಅಗತ್ಯವಿದೆ."
+"ಫಾಂಟ್ ಗಾತ್ರವು 8x16."
 
 #. Type: select
 #. Description
@@ -1476,3 +1478,12 @@ msgstr "ವಿಯೆಟ್ನಾಮೀಸ್"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ಉಪಯೇಗಿಸುವ ಕೀಲಿ ಗಾತ್ರ::"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "ದಯಮಾಡಿ ಆಜ್ಞಾಫಲಕದ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ. ಉದಾಹರಣೆಗೆ ಗಣಕವನ್ನು ಬೂಟ್ ಮಾಡುವಾಗ "
+#~ "ಬಳಸುವ ಫಾಂಟ್ ಗಾತ್ರವು 8x16. ಕೆಲವು ಫಾಂಟ್ ಗಾತ್ರಗಳಿಗೆ kbd ಆಜ್ಞಾಫಲಕ ಮೆದುಸರಕಿನ "
+#~ "(ಆಜ್ಞಾಫಲಕ ಸಲಕರಣೆಗಳಲ್ಲ) ಮತ್ತು ಫ್ರೇಮ್ ಬಫರಿನ್ ಅಗತ್ಯವಿದೆ."

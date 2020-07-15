@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-12-17 22:56+0100\n"
 "Last-Translator: Michał Kułach <michal.kulach@gmail.com>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
@@ -325,14 +325,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Proszę wybrać wielkość czcionki dla konsoli. Przykładowo czcionka używana "
-"podczas uruchamiania systemu ma wielkość 8x16. Niektóre rozmiary czcionki "
-"wymagają pakietu konsoli kbd (a nie console-tools) oraz framebuffera."
+"podczas uruchamiania systemu ma wielkość 8x16."
 
 #. Type: select
 #. Description
@@ -1497,3 +1499,12 @@ msgstr "Wietnamski"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Układ klawiatury:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Proszę wybrać wielkość czcionki dla konsoli. Przykładowo czcionka używana "
+#~ "podczas uruchamiania systemu ma wielkość 8x16. Niektóre rozmiary czcionki "
+#~ "wymagają pakietu konsoli kbd (a nie console-tools) oraz framebuffera."

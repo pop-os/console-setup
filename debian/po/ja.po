@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-10-17 18:49+0900\n"
 "Last-Translator:  Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
@@ -315,15 +315,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "コンソール用のフォントのサイズを選んでください。参考のために、コンピュータの"
-"ブート時に使われるフォントのサイズは、8x16 です。いくつかのフォントサイズは、"
-"kbd コンソールパッケージ (console-tools ではありません) とフレームバッファを"
-"必要とします。"
+"ブート時に使われるフォントのサイズは 8x16 です。"
 
 #. Type: select
 #. Description
@@ -1521,3 +1522,13 @@ msgstr "ベトナム語"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "利用するキーマップ:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "コンソール用のフォントのサイズを選んでください。参考のために、コンピュータ"
+#~ "のブート時に使われるフォントのサイズは、8x16 です。いくつかのフォントサイ"
+#~ "ズは、kbd コンソールパッケージ (console-tools ではありません) とフレーム"
+#~ "バッファを必要とします。"

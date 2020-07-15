@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2019-03-20 22:31+0100\n"
 "Last-Translator: Anton Gladky <gladk@debian.org>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -314,15 +314,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Будь ласка, виберіть розмір шрифту для консолі. Для порівняння, шрифт, що "
-"використовується під час завантаження комп'ютера, має розмір 8x16. Деякі "
-"розміри шрифтів вимагають наявності консольного пакунку kbd (не console-"
-"tools) та фреймбуферу."
+"використовується під час завантаження комп'ютера, має розмір 8x16."
 
 #. Type: select
 #. Description
@@ -1490,3 +1491,13 @@ msgstr "В'єтнамська"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Розкладка клавіатури:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Будь ласка, виберіть розмір шрифту для консолі. Для порівняння, шрифт, що "
+#~ "використовується під час завантаження комп'ютера, має розмір 8x16. Деякі "
+#~ "розміри шрифтів вимагають наявності консольного пакунку kbd (не console-"
+#~ "tools) та фреймбуферу."

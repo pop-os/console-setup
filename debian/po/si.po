@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2012-02-28 10:16+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
@@ -308,14 +308,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
-"කරුණාකර කොන්සෝලු සඳහා අකුරු ප්‍රමාණයක් තෝරන්න, උදාහරණයක් ලෙස පරිගණයක ආරම්භ  වන විට පවතින "
-"අකුරේ ප්‍රමාණය 8x16 වීම ගත හැක. ඇතැම් අකුරු ප්‍රමාණයන්ට kbd කොන්සෝල පැකේජය (console-"
-"tools නොවේ) හා රාමුබෆරය ඇවැසි වේ."
+"කරුණාකර කොන්සෝලය සඳහා අකුරු ප්‍රමාණයක් තෝරන්න, උදාහරණයක් ලෙස පරිගණයක ආරම්භ  වන විට පවතින "
+"අකුරේ ප්‍රමාණය 8x16 වීම ගත හැක."
 
 #. Type: select
 #. Description
@@ -761,8 +763,8 @@ msgid ""
 "Latin mode."
 msgstr ""
 "යතුරු පුවරුව ජාතික ප්‍රකාරයේ තිබෙන විට කිසිවෙකුට ලතින් අකුරු කිහිපයක් ලිවීමට ඇවැසි වූයේ නම් , "
-"තාවකාලිකව ලතින් ප්‍රකාරයට මාරුවීම වඩාත් සුදුසු වේ. තෝරාගත් යතුර ඔබා සිටින තෙක් යතුරුපුවරුව එම "
-"ප්‍රකාරයේ පවතිනු ඇති අතර. යතුරු පුවරුව ලතින් ප්‍රකාරයේ ඇති විට ජාතික ප්‍රකාරයේ අකුරු ඇතුළත් කිරීම "
+"තාවකාලිකව ලතින් ප්‍රකාරයට මාරුවීම වඩාත් සුදුසු වේ. තෝරාගත් යතුර ඔබා සිටින තෙක් යතුරුපුවරුව එම ප්‍"
+"රකාරයේ පවතිනු ඇති අතර. යතුරු පුවරුව ලතින් ප්‍රකාරයේ ඇති විට ජාතික ප්‍රකාරයේ අකුරු ඇතුළත් කිරීම "
 "සඳහාද එම යතුර භාවිත කල හැක."
 
 #. Type: select
@@ -1464,3 +1466,12 @@ msgstr "වියෙට්නාම"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "භාවිත යතුරු සැකැස්ම:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "කරුණාකර කොන්සෝලු සඳහා අකුරු ප්‍රමාණයක් තෝරන්න, උදාහරණයක් ලෙස පරිගණයක ආරම්භ  වන විට "
+#~ "පවතින අකුරේ ප්‍රමාණය 8x16 වීම ගත හැක. ඇතැම් අකුරු ප්‍රමාණයන්ට kbd කොන්සෝල පැකේජය "
+#~ "(console-tools නොවේ) හා රාමුබෆරය ඇවැසි වේ."

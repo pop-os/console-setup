@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-09-24 21:29+0000\n"
 "Last-Translator: Himanshu Awasthi <johim9493@gmail.com>\n"
 "Language-Team: \n"
@@ -320,14 +320,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
-"कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले "
-"फॉन्टका आकार 8x16 है. कुछ फॉन्ट आकार के लिए kbd console पॅकेज (console-tools नहीं) "
-"तथा framebuffer कीआवश्यकता है."
+"कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले फॉन्ट "
+"का आकार 8x16 है."
 
 #. Type: select
 #. Description
@@ -1507,3 +1509,12 @@ msgstr "वियेतनामी"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "कुंजीपट खाका जिसे इस्तेमाल करना है:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "कृपया लिनक्स कंसोल के लिए फॉन्ट आकार चुनें. उदाहरणतः, कम्प्युटरके बूट के समय दिखने वाले "
+#~ "फॉन्टका आकार 8x16 है. कुछ फॉन्ट आकार के लिए kbd console पॅकेज (console-tools "
+#~ "नहीं) तथा framebuffer कीआवश्यकता है."

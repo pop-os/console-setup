@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2014-03-03 14:41+0600\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -314,14 +314,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "تىزگىن سۇپىسىنىڭ خەت چوڭلۇقىنى تاللاڭ. پايدىلىنىشىڭىز ئۈچۈن: كومپيۇتېر "
-"قوزغالغاندىكى خەتنىڭ چوڭلۇقى 8x16. بەزى خەت نۇسخىلىرىنىڭ چوڭلۇقى kbd تىزگىن "
-"سۇپا بوغچا (console-tools ئەمەس)سىغا كاندۇك يىغلەكنى قوشۇش زۆرۈر."
+"قوزغالغاندىكى خەتنىڭ چوڭلۇقى 8x16."
 
 #. Type: select
 #. Description
@@ -1490,3 +1492,12 @@ msgstr "ۋىيېتنامچە"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ئىشلىتىدىغان ھەرپتاختا خەرىتىسى:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "تىزگىن سۇپىسىنىڭ خەت چوڭلۇقىنى تاللاڭ. پايدىلىنىشىڭىز ئۈچۈن: كومپيۇتېر "
+#~ "قوزغالغاندىكى خەتنىڭ چوڭلۇقى 8x16. بەزى خەت نۇسخىلىرىنىڭ چوڭلۇقى kbd "
+#~ "تىزگىن سۇپا بوغچا (console-tools ئەمەس)سىغا كاندۇك يىغلەكنى قوشۇش زۆرۈر."

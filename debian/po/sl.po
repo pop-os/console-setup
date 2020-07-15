@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2017-10-13 10:42+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
@@ -330,14 +330,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
-"Izberite prosim velikost črk za konzolo. Kot merilo: črke pri zagonu "
-"računalnika so velikosti  8x16.  Nekatere velikosti črk zahtevajo paket kbd "
-"(ne console-tools) in slikovni medpomnilnik."
+"Izberite prosim velikost črk za konzolo. Kot merilo; črke pri zagonu "
+"računalnika so velikosti 8x16."
 
 #. Type: select
 #. Description
@@ -1503,3 +1505,12 @@ msgstr "Vietnamščina"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Postavitev tipkovnice, ki jo želite uporabljati:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Izberite prosim velikost črk za konzolo. Kot merilo: črke pri zagonu "
+#~ "računalnika so velikosti  8x16.  Nekatere velikosti črk zahtevajo paket "
+#~ "kbd (ne console-tools) in slikovni medpomnilnik."

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-10-02 21:21+0000\n"
 "Last-Translator: Xuacu Saturio <xuacusk8@gmail.com>\n"
 "Language-Team: Softastur\n"
@@ -311,15 +311,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Por favor, seleiciona'l tamañu de la fonte pa la consola. Pa referencies, la "
-"fonte usada cuando l'ordenador arranca tien un tamañu de 8x16. Dalgunos "
-"tamaños de fonte requier el paquete de consola kbd (non console-tools) estra "
-"framebuffer."
+"fonte usada cuando l'ordenador arranca tien un tamañu de 8x16."
 
 #. Type: select
 #. Description
@@ -1482,3 +1483,13 @@ msgstr "Vietnamín"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Keymap a usar:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Por favor, seleiciona'l tamañu de la fonte pa la consola. Pa referencies, "
+#~ "la fonte usada cuando l'ordenador arranca tien un tamañu de 8x16. "
+#~ "Dalgunos tamaños de fonte requier el paquete de consola kbd (non console-"
+#~ "tools) estra framebuffer."

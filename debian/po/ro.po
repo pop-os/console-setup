@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-11-20 20:14+0200\n"
 "Last-Translator: Andrei Popescu <andreimpopescu@gmail.com>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -329,14 +329,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Alegeți mărimea fontului pentru consolă. Ca referință, fontul folosit la "
-"pornirea calculatorului are mărimea 8x16. Unele mărimi necesită pachetul kbd "
-"(nu console-tools) și framebuffer."
+"pornirea calculatorului are mărimea 8x16."
 
 #. Type: select
 #. Description
@@ -1500,3 +1502,12 @@ msgstr "Vietnameză"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Configurația de taste utilizată:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Alegeți mărimea fontului pentru consolă. Ca referință, fontul folosit la "
+#~ "pornirea calculatorului are mărimea 8x16. Unele mărimi necesită pachetul "
+#~ "kbd (nu console-tools) și framebuffer."

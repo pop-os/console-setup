@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-03-24 14:40+0000\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
@@ -313,14 +313,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Välj teckenstorlek för konsolen. Som referens kan du tänka på att startläget "
-"använder storlek 8x16. Vissa teckenstorlekar kräver konsolpaketet kbd (inte "
-"console-tools) plus framebuffer."
+"använder storlek 8x16."
 
 #. Type: select
 #. Description
@@ -1492,3 +1494,12 @@ msgstr "Vietnamesisk"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Tangentuppsättning som ska användas:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Välj teckenstorlek för konsolen. Som referens kan du tänka på att "
+#~ "startläget använder storlek 8x16. Vissa teckenstorlekar kräver "
+#~ "konsolpaketet kbd (inte console-tools) plus framebuffer."

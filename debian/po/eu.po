@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2012-10-19 19:41+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: debian-l10n-eu@lists.debian.org\n"
@@ -320,15 +320,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
 "Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
-"zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da. Zenbait letra-"
-"tipo tamainak kbd kontsola paketea (ez console-tools) eta framebuffer behar "
-"dituzte."
+"zure ordenagailuak abiaraztean erabiltzen duen tamaina 8x16 da."
 
 #. Type: select
 #. Description
@@ -1495,3 +1496,13 @@ msgstr "Vietnamera"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Erabiliko den teklatu-mapa:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia "
+#~ "gisa: zure ordenagailuak abiaraztean erabiltzen duen tamaina 16 da. "
+#~ "Zenbait letra-tipo tamainak kbd kontsola paketea (ez console-tools) eta "
+#~ "framebuffer behar dituzte."

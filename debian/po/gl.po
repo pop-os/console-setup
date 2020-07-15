@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2019-11-02 19:48+0100\n"
+"POT-Creation-Date: 2020-07-15 20:03+0300\n"
 "PO-Revision-Date: 2018-09-18 21:24+0000\n"
 "Last-Translator: mantinan <github@manty.net>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -311,15 +311,16 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
+#, fuzzy
+#| msgid ""
+#| "Please select the size of the font for the console. For reference, the "
+#| "font used when the computer boots has size 8x16."
 msgid ""
-"Please select the size of the font for the console.  For reference, the font "
-"used when the computer boots has size 8x16.  Some font sizes require the kbd "
-"console package (not console-tools) plus framebuffer."
+"Please select the size of the font for the console.  Some font sizes require "
+"framebuffer."
 msgstr ""
-"Escolla o tamaño do tipo de letra para a consola. Como referencia, o tipo de "
-"letra co que se inicia o computador ten tamaño 8x16. Algúns tamaños de letra "
-"requiren o paquete de consola «kbd» (non «console-tools») máis o "
-"«framebuffer»."
+"Escolla o tamaño de letra para a consola. Como referencia, o tipo de letra "
+"co que se inicia o computador ten tamaño 8x16."
 
 #. Type: select
 #. Description
@@ -1482,3 +1483,13 @@ msgstr "Vietnamita"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Esquema de teclado a empregar:"
+
+#~ msgid ""
+#~ "Please select the size of the font for the console.  For reference, the "
+#~ "font used when the computer boots has size 8x16.  Some font sizes require "
+#~ "the kbd console package (not console-tools) plus framebuffer."
+#~ msgstr ""
+#~ "Escolla o tamaño do tipo de letra para a consola. Como referencia, o tipo "
+#~ "de letra co que se inicia o computador ten tamaño 8x16. Algúns tamaños de "
+#~ "letra requiren o paquete de consola «kbd» (non «console-tools») máis o "
+#~ "«framebuffer»."
