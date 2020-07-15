@@ -26,6 +26,7 @@ FixedOblique13-BDFS := 8x13O.bdf+8x13.bdf
 Terminus12x6-BDFS := ter-u12n.bdf
 Terminus14-BDFS := ter-u14n.bdf
 Terminus16-BDFS := ter-u16n.bdf
+Terminus18x10-BDFS := ter-u18n.bdf
 Terminus20x10-BDFS := ter-u20n.bdf
 Terminus22x11-BDFS := ter-u22n.bdf
 Terminus24x12-BDFS := ter-u24n.bdf
@@ -34,6 +35,7 @@ Terminus32x16-BDFS := ter-u32n.bdf
 TerminusBold12x6-BDFS := ter-u12b.bdf
 TerminusBold14-BDFS := ter-u14b.bdf
 TerminusBold16-BDFS := ter-u16b.bdf
+TerminusBold18x10-BDFS := ter-u18b.bdf
 TerminusBold20x10-BDFS := ter-u20b.bdf
 TerminusBold22x11-BDFS := ter-u22b.bdf
 TerminusBold24x12-BDFS := ter-u24b.bdf
@@ -175,8 +177,9 @@ NONLEGACY_FACES := Fixed13 Fixed14 Fixed15 Fixed16 \
 	FixedBold18 FixedBold24x12  \
 	FixedOblique13 \
 	Terminus12x6 Terminus14 Terminus16 Terminus22x11 Terminus24x12 \
-	Terminus20x10 Terminus28x14 Terminus32x16 \
-	TerminusBold12x6 TerminusBold14 TerminusBold16 TerminusBold20x10 \
+	Terminus18x10 Terminus20x10 Terminus28x14 Terminus32x16 \
+	TerminusBold12x6 TerminusBold14 TerminusBold16 \
+	TerminusBold18x10 TerminusBold20x10 \
 	TerminusBold22x11 TerminusBold24x12 TerminusBold28x14 \
 	TerminusBold32x16 TerminusBoldVGA14 TerminusBoldVGA16 \
 	Courier13 Courier14 Courier15 Courier16 \
@@ -217,13 +220,14 @@ ALL_FONT_NAMES := $(sort $(foreach face, $(FACES), \
 GOOD_FONT_NAMES := $(filter \
 		%-Fixed13 %-Fixed14 %-Fixed15 %-Fixed16 %-Fixed18 \
 		%-Terminus12x6 %-Terminus14 %-Terminus16	\
-		%-Terminus22x11 %-Terminus24x12 %-Terminus20x10 \
+		%-Terminus22x11 %-Terminus24x12                 \
+		%-Terminus18x10 %-Terminus20x10                 \
 		%-Terminus28x14 %-Terminus32x16			\
 		%-TerminusBold14 %-TerminusBold16		\
-		%-TerminusBold20x10 %-TerminusBold22x11         \
-		%-TerminusBold24x12 %-TerminusBold28x14         \
-		%-TerminusBold32x16 %-TerminusBoldVGA14         \
-		%-TerminusBoldVGA16                             \
+		%-TerminusBold18x10 %-TerminusBold20x10         \
+		%-TerminusBold22x11 %-TerminusBold24x12         \
+		%-TerminusBold28x14 %-TerminusBold32x16         \
+		%-TerminusBoldVGA14 %-TerminusBoldVGA16         \
 		%-Goha12 %-Goha14 %-Goha16 \
 		%-GohaClassic12 %-GohaClassic14 %-GohaClassic16 \
 		%-VGA8 %-VGA14 %-VGA16 \
