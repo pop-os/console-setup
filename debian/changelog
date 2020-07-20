@@ -2,7 +2,7 @@ console-setup (1.197) UNRELEASED; urgency=medium
 
   [ Anton Zinoviev ]
   * standard.equivalents: map more aggressively the box drawing symbols.
-    Thanks to Nick Black, closes: #965029.
+    Mappings for ballot symbols.  Thanks to Nick Black, closes: #965029.
   * sync the Terminus font with the xfonts-terminus package (new upstream
     version with new font size 18x10, apply the patches dv1.diff (modified
     Cyrillic letters d and v) and td1.diff (centered tilde)).
