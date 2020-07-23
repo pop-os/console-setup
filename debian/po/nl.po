@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer/sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-04-04 20:09+0200\n"
+"PO-Revision-Date: 2020-07-23 20:41+0200\n"
 "Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
 "Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
 "Language: nl\n"
@@ -319,13 +319,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Selecteer de grootte van het lettertype voor de console. Ter referentie: het "
-"lettertype dat wordt gebruikt bij het opstarten heeft grootte 8x16."
+"Selecteer de grootte van het lettertype voor de console. Sommige "
+"lettertypegroottes vereisen framebuffer."
 
 #. Type: select
 #. Description
