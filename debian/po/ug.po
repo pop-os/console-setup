@@ -3,7 +3,7 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-#
+# Abdusalam <1810010207@s.upc.edu.cn>, 2020.
 #
 # Debian Installer master translation for Uyghur
 # Don't forget to properly fill-in the header of PO files
@@ -19,13 +19,14 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2018-08-22 12:42+0000\n"
-"Last-Translator: ButterflyOfFire <ButterflyOfFire@protonmail.com>\n"
+"PO-Revision-Date: 2020-07-21 17:24+0000\n"
+"Last-Translator: Abdusalam <1810010207@s.upc.edu.cn>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -997,7 +998,7 @@ msgstr "بۇلغارچە (فونېتىكىلىق جايلاشتۇرۇش)"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Burmese"
-msgstr ""
+msgstr "بېرما"
 
 #. Type: select
 #. Choices
@@ -1312,7 +1313,7 @@ msgstr "پارىسچە"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Philippines"
-msgstr ""
+msgstr "فىلىپپىنچە"
 
 #. Type: select
 #. Choices
