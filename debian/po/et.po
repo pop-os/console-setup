@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-04-12 08:11+0000\n"
+"PO-Revision-Date: 2020-07-29 08:41+0000\n"
 "Last-Translator: Kristjan Räts <kristjanrats@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -318,13 +318,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr ""
-"Vali konsoolifondi suurus. Näiteks alglaadimisel kasutatava fondi suurus on "
-"8x16."
+msgstr "Vali konsoolifondi suurus. Mõned fondisuurused vajavad framebuffer'it."
 
 #. Type: select
 #. Description
@@ -410,7 +407,7 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"Praegune klaviatuuripaigutus  on määratud seadistusfailis /etc/default/"
+"Praegune klaviatuuripaigutus on määratud seadistusfailis /etc/default/"
 "keyboard: XKBLAYOUT=\"${XKBLAYOUT}\" ja XKBVARIANT=\"${XKBVARIANT}\"."
 
 #. Type: boolean

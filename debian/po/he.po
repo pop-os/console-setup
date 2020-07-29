@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-05-01 13:11+0000\n"
+"PO-Revision-Date: 2020-07-26 03:41+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew (https://www.transifex.com/yaron/teams/79473/he/)\n"
 "Language: he\n"
@@ -314,13 +314,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr ""
-"נא לבחור בגודל הגופן עבור המסוף. לשם השוואה, בזמן אתחול המחשב, גודל הגופן הוא"
-" ‎8×16."
+msgstr "נא לבחור בגודל הגופן עבור המסוף.  חלק מגדלי הגופן דורשים framebuffer."
 
 #. Type: select
 #. Description
