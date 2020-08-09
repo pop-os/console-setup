@@ -8,6 +8,7 @@
 # This file is distributed under the same license as debian-installer.
 # Nima Sahraneshin <unix.nima@gmail.com>, 2018.
 # Seyed Hany Hosseini <hany1894@gmail.com>, 2020.
+# <soheilkhanalipur@tutanota.com>, 2020.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry - further translations from ICU-3.0
@@ -25,8 +26,8 @@ msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-07-01 07:41+0000\n"
-"Last-Translator: Reg3xp <reg3xp@protonmail.com>\n"
+"PO-Revision-Date: 2020-08-04 18:32+0000\n"
+"Last-Translator: Abbas Baharforoosh <abahar1996@gmail.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -817,7 +818,7 @@ msgstr "هر دو کلید Alt"
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "کلیدی که مانند AltGr عمل کند: "
+msgstr "کلیدی که مانند AltGr عمل کند:"
 
 #. Type: select
 #. Description
