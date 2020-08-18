@@ -278,10 +278,10 @@ msgid ""
 "for programmers."
 msgstr ""
 "« VGA » correspond à l'apparence traditionnelle, elle possède une couverture "
-"moyenne des scripts internationaux. « Fixed » a un aspect simplifié et une "
-"meilleure couverture des scripts internationaux. « Terminus » a pour but de "
-"limiter la fatigue oculaire. Cependant certains symboles peuvent apparaître "
-"presque semblables, ce qui peut représenter un problème pour les "
+"moyenne des écritures internationales. « Fixed » a un aspect simplifié et "
+"une meilleure couverture des écritures internationales. « Terminus » a pour "
+"but de limiter la fatigue oculaire. Cependant certains symboles peuvent "
+"apparaître presque semblables, ce qui peut représenter un problème pour les "
 "programmeurs."
 
 #. Type: select
@@ -329,7 +329,7 @@ msgid ""
 "framebuffer."
 msgstr ""
 "Veuillez choisir la taille de la police pour la console. Certaines tailles "
-"de police nécessite le tampon vidéo (« framebuffer» )."
+"de police nécessitent le tampon vidéo (« framebuffer» )."
 
 #. Type: select
 #. Description
@@ -907,7 +907,7 @@ msgstr ""
 #. :sl3:
 #: ../keyboard-configuration.templates:15001
 msgid "Use Control+Alt+Backspace to terminate the X server?"
-msgstr "Faut-il utiliser Control+Alt+Ret.Arr. pour arrêter le serveur X ?"
+msgstr "Faut-il utiliser Control+Alt+Ret.Arr. pour arrêter le serveur X ?"
 
 #. Type: boolean
 #. Description
@@ -919,7 +919,7 @@ msgid ""
 msgstr ""
 "Par défaut, la combinaison de touches Ctrl+Alt+Ret.Arr. (« Ctrl+Alt"
 "+Backspace ») n'a pas d'action. Vous pouvez choisir de l'utiliser pour "
-"arrêter le serveur X."
+"arrêter le serveur X."
 
 #. Type: select
 #. Choices
