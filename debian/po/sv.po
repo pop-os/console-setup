@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-01-16 19:21+0000\n"
+"PO-Revision-Date: 2020-08-20 09:36+0000\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
@@ -315,13 +315,11 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Välj teckenstorlek för konsolen. Som referens kan du tänka på att startläget "
-"använder storlek 8x16."
+"Välj teckenstorlek för konsolen. Vissa teckenstorlekar kräver framebuffer."
 
 #. Type: select
 #. Description

@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: Icelandic (Debian Installer)\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-06-23 09:41+0000\n"
+"PO-Revision-Date: 2020-08-22 16:36+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -314,13 +314,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Veldu leturstærð fyrir stjórnskjáinn. Til samanburðar má geta að letrið sem "
-"notað er þegar vélin ræsir sig upp er í stærðinni 8x16."
+"Veldu leturstærð fyrir stjórnskjáinn. Sumt letur þarf að nota rammabiðminni "
+"(framebuffer)."
 
 #. Type: select
 #. Description
