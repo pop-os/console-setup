@@ -793,12 +793,12 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"Lorsque le clavier est dans un mode national et qu'il nécessaire de saisir "
-"quelques caractères latins, il peut être souhaitable d'avoir une touche pour "
-"basculer temporairement vers le mode latin. Le clavier reste dans ce mode "
-"tant que cette touche reste appuyée. À l'inverse, cette touche peut "
-"également servir à basculer en mode national lorsque le clavier est en mode "
-"latin."
+"Lorsque le clavier est dans un mode national et qu'il est nécessaire de "
+"saisir quelques caractères latins, il peut être souhaitable d'avoir une "
+"touche pour basculer temporairement vers le mode latin. Le clavier reste "
+"dans ce mode tant que cette touche reste appuyée. À l'inverse, cette touche "
+"peut également servir à basculer en mode national lorsque le clavier est en "
+"mode latin."
 
 #. Type: select
 #. Description
