@@ -28,14 +28,15 @@
 #   Simos Xenitellis <simos@hellug.gr>, 2001.
 #   Konstantinos Margaritis <markos@debian.org>, 2004.
 #   Athanasios Lefteris <alefteris@gmail.com>, 2008, 2012.
+# root <galatoulas@cti.gr>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2019-06-26 14:09+0200\n"
-"Last-Translator: galaxico <galas@tee.gr>\n"
-"Language-Team: el <debian-l10n-greek@lists.debian.org>\n"
+"PO-Revision-Date: 2020-09-10 02:33+0300\n"
+"Last-Translator: root <galatoulas@cti.gr>\n"
+"Language-Team: Greek\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -326,14 +327,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Παρακαλώ επιλέξτε το μέγεθος της γραμματοσειράς για την κονσόλα. Για "
-"αναφορά, η γραμματοσειρά που χρησιμοποιείται κατά την εκκίνηση του "
-"υπολογιστή έχει μέγεθος 8x16."
+"Παρακαλώ επιλέξτε το μέγεθος της γραμματοσειράς για την κονσόλα. Μερικά "
+"μεγέθη γραμματοσειρών απαιτούν framebuffer."
 
 #. Type: select
 #. Description
