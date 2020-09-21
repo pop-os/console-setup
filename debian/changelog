@@ -1,4 +1,6 @@
-console-setup (1.197) UNRELEASED; urgency=medium
+console-setup (1.197) unstable; urgency=medium
+
+  * Team upload
 
   [ Anton Zinoviev ]
   * standard.equivalents: map more aggressively the box drawing symbols.
@@ -10,7 +12,29 @@ console-setup (1.197) UNRELEASED; urgency=medium
     package which is no longer in the Debian archive.  Do not refer to the
     font size at boot time which is irrelevant with framebuffer.
 
- -- Anton Zinoviev <zinoviev@debian.org>  Wed, 15 Jul 2020 17:59:19 +0300
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Greek (el.po) by root
+  * Esperanto (eo.po) by Felipe Castro
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Estonian (et.po) by Kristjan Räts
+  * Persian (fa.po) by Abbas Baharforoosh
+  * French (fr.po) by Baptiste Jammet
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Croatian (hr.po) by Milo Ivir
+  * Indonesian (id.po) by Andika Triwidada
+  * Icelandic (is.po) by Sveinn í Felli
+  * Kannada (kn.po) by Yogesh
+  * Dutch (nl.po) by Frans Spiesschaert
+  * Polish (pl.po) by Bartosz Feński
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Portuguese (Brazil) (pt_BR.po) by Adriano Rafael Gomes
+  * Serbian (sr.po) by Filipovic Dragan
+  * Swedish (sv.po) by Anders Jonsson
+  * Uyghur (ug.po) by Abdusalam
+  * Simplified Chinese (zh_CN.po) by Boyuan Yang
+
+ -- Holger Wansing <hwansing@mailbox.org>  Mon, 21 Sep 2020 21:32:54 +0200
 
 console-setup (1.196) unstable; urgency=medium
 
