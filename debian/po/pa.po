@@ -21,13 +21,13 @@
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2008, 2009.
 # Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
 # A S Alam <aalam@users.sf.net>, 2009, 2012, 2014, 2017.
-# Aman ALam <alam.yellow@gmail.com>, 2018, 2019.
+# Aman ALam <alam.yellow@gmail.com>, 2018, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2019-12-30 18:36+0000\n"
+"PO-Revision-Date: 2020-10-15 04:26+0000\n"
 "Last-Translator: Aman ALam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -312,13 +312,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr ""
-"ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਸਾਈਜ਼ ਚੁਣੋ ਜੀ। ਜਾਣਕਾਰੀ ਲਈ, ਜਦੋਂ ਕੰਪਿਊਟਰ ਬੂਟ ਹੁੰਦਾ ਹੈ ਤਾਂ ਵਰਤੇ ਜਾਂਦੇ ਫੋਂਟ ਦਾ "
-"ਸਾਈਜ਼ 8x16 ਹੈ।"
+msgstr "ਕਨਸੋਲ ਲਈ ਫੋਂਟ ਦਾ ਆਕਾਰ ਚੁਣੋ ਜੀ। ਕੁਝ ਫ਼ੋਂਟ ਆਕਾਰ ਲਈ ਫਰੇਮ-ਬਰਫ਼ ਚਾਹੀਦਾ ਹੈ।"
 
 #. Type: select
 #. Description
@@ -759,10 +756,9 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"ਜੇਕਰ ਕੀ-ਬੋਰਡ ਰਾਸ਼ਟਰੀ ਮੋਡ ਵਿੱਚ ਹੈ ਤੇ ਤੁਸੀਂ ਸਿਰਫ ਕੁਝ ਕੁ ਲਾਤੀਨੀ ਅੱਖਰ ਲਿਖਣੇ ਨੇ, ਤਾਂ ਥੋੜੇ ਚਿਰ ਲਈ "
-"ਲਾਤੀਨੀ ਮੋਡ ਵਿੱਚ ਬਦਲਣਾ ਸੁਭਾਵਿਕ ਕਾਮ ਹੋਵੇਗਾ। ਜਿੰਨਾ ਚਿਰ ਸਵਿੱਚ ਦੱਬੀ ਰਹੇਗੀ, ਕੀ-ਬੋਰਡ ਓਸੇ ਮੋਡ "
-"ਵਿੱਚ ਰਹੇਗਾ।  ਜਦੋਂ ਕੀ-ਬੋਰਡ ਲਾਤੀਨੀ ਮੋਡ ਵਿੱਚ ਹੈ,  ਸਵਿੱਚ ਨਾਲ ਰਾਸ਼ਟਰੀ ਅੱਖਰ ਪਾਉਣ ਲਈ ਵੀ ਵਰਤੀ "
-"ਜਾ ਸਕਦੀ ਏ।"
+"ਜੇਕਰ ਕੀ-ਬੋਰਡ ਕੌਮੀ ਮੋਡ ਵਿੱਚ ਹੈ ਤੇ ਤੁਸੀਂ ਸਿਰਫ ਕੁਝ ਕੁ ਲਾਤੀਨੀ ਅੱਖਰ ਲਿਖਣੇ ਨੇ, ਤਾਂ ਥੋੜੇ ਚਿਰ ਲਈ "
+"ਲਾਤੀਨੀ ਮੋਡ ਵਿੱਚ ਬਦਲਣਾ ਸੁਭਾਵਿਕ ਢੰਗ ਹੋਵੇਗਾ। ਜਿੰਨਾ ਚਿਰ ਸਵਿੱਚ ਦੱਬੀ ਰਹੇਗੀ, ਕੀ-ਬੋਰਡ ਉਸੇ ਮੋਡ ਵਿੱਚ "
+"ਰਹੇਗਾ। ਜਦੋਂ ਕੀ-ਬੋਰਡ ਲਾਤੀਨੀ ਮੋਡ ਵਿੱਚ ਹੈ, ਸਵਿੱਚ ਨਾਲ ਕੌਮੀ ਅੱਖਰ ਪਾਉਣ ਲਈ ਵੀ ਵਰਤੀ ਜਾ ਸਕਦੀ ਏ।"
 
 #. Type: select
 #. Description
@@ -843,8 +839,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"ਸੰਰਚਨਾ ਸਵਿੱਚ (ਜੋ ਕਿ ਬਹੁ-ਸਵਿੱਚ ਵਜੋਂ ਵੀ ਜਾਣਿਆ ਜਾਂਦਾ ਏ )  ਅਗਲੇ ਕੁਝ ਦਬਾਏ ਸਵਿੱਚ ਜੋੜ ਨਾਲ "
-"ਕੰਪਿਊਟਰ ਨੂੰ ਓਹ ਅੱਖਰ ਬਣਾਉਣ ਦੀ ਮਦੱਦ ਕਰਦਾ ਏ ਜੋ ਕੀਬੋਰਡ ਉੱਤੇ ਨਹੀਂ ਲਭਦੇ।"
+"ਸੰਰਚਨਾ ਸਵਿੱਚ (ਜੋ ਕਿ ਬਹੁ-ਸਵਿੱਚ ਵਜੋਂ ਵੀ ਜਾਣਿਆ ਜਾਂਦਾ ਏ ) ਅਗਲੇ ਕੁਝ ਦਬਾਏ ਸਵਿੱਚ ਜੋੜ ਨਾਲ ਕੰਪਿਊਟਰ "
+"ਨੂੰ ਉਹ ਅੱਖਰ ਬਣਾਉਣ ਦੀ ਮੱਦਦ ਕਰਦਾ ਏ, ਜੋ ਕੀਬੋਰਡ ਉੱਤੇ ਨਹੀਂ ਲੱਭਦੇ।"
 
 #. Type: select
 #. Description
@@ -855,8 +851,8 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"ਟੇਕਸਤ ਕੰਸੋਲ ਉੱਤੇ ਸੰਰਚਨਾ ਸਵਿੱਚ ਯੂਨੀਕੋਡ ਮੋਡ ਵਿੱਚ ਕੰਮ ਨਹੀਂ ਕਰਦਾ। ਜੇਕਰ ਯੂਨੀਕੋਡ ਮੋਡ ਵਿੱਚ ਨਹੀਂ ਹੋ , ਤਾਂ "
-"ਇਥੇ ਭਾਵੇਂ ਕੁਝ ਵੀ ਚੁਣ ਲਵੋ, ਤੁਸੀਂ ਕੰਟ੍ਰੋਲ+ਬਿੰਦੀ  ਜੋੜ ਸੰਰਚਨਾ ਸਵਿੱਚ ਵਾਂਗ ਹਮੇਸ਼ਾ ਵਰਤ ਸਕਦੇ ਹੋ ।"
+"ਲਿਖਤ ਕਨਸੋਲ ਉੱਤੇ ਸੰਰਚਨਾ ਸਵਿੱਚ ਯੂਨੀਕੋਡ ਮੋਡ ਵਿੱਚ ਕੰਮ ਨਹੀਂ ਕਰਦਾ। ਜੇਕਰ ਯੂਨੀਕੋਡ ਮੋਡ ਵਿੱਚ ਨਹੀਂ ਹੋ ਤਾਂ "
+"ਇੱਥੇ ਭਾਵੇਂ ਕੁਝ ਵੀ ਚੁਣ ਲਵੋ, ਤੁਸੀਂ ਕੰਟਰੋਲ +ਬਿੰਦੀ ਜੋੜ ਸੰਰਚਨਾ ਸਵਿੱਚ ਵਾਂਗ ਹਮੇਸ਼ਾ ਵਰਤ ਸਕਦੇ ਹੋ ।"
 
 #. Type: boolean
 #. Description
@@ -1378,7 +1374,7 @@ msgstr "ਸਵੀਡਿਸ਼"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss French"
-msgstr "ਸਵਿਸ  ਫ਼ਰੈਂਚ"
+msgstr "ਸਵਿਸ ਫ਼ਰੈਂਚ"
 
 #. Type: select
 #. Choices
