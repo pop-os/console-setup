@@ -1,3 +1,9 @@
+console-setup (1.198) UNRELEASED; urgency=medium
+
+  * Add Berber (Latin) keymap for new language Kabyle.
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 27 Oct 2020 22:30:07 +0100
+
 console-setup (1.197) unstable; urgency=medium
 
   * Team upload
