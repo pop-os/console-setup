@@ -23,11 +23,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fa\n"
+"Project-Id-Version: fa sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-08-04 18:32+0000\n"
-"Last-Translator: Abbas Baharforoosh <abahar1996@gmail.com>\n"
+"PO-Revision-Date: 2020-10-24 17:09+0000\n"
+"Last-Translator: سهیل خانعلی‌پور <soheilkhanalipur@tutanota.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -343,7 +343,7 @@ msgstr "پیکربندی صفحه کلید"
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
 msgid "Other"
-msgstr "سایر"
+msgstr "دیگر"
 
 #. Type: select
 #. Description
@@ -919,7 +919,7 @@ msgstr "عربی"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr "Asturian"
+msgstr "آستوری"
 
 #. Type: select
 #. Choices
@@ -1010,7 +1010,7 @@ msgstr "كانادا چند زبانه"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr "Catalan"
+msgstr "کاتالان"
 
 #. Type: select
 #. Choices
@@ -1108,14 +1108,14 @@ msgstr "گرجی"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "الماني"
+msgstr "آلمانی"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Greek"
-msgstr "يوناني"
+msgstr "یونانی"
 
 #. Type: select
 #. Choices
@@ -1178,7 +1178,7 @@ msgstr "ايتالييايي"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "ژاپني"
+msgstr "ژاپنی"
 
 #. Type: select
 #. Choices
@@ -1290,14 +1290,14 @@ msgstr "سامی شمالی"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
-msgstr "نروژي"
+msgstr "نروژی"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "فارسی"
+msgstr "پارسی"
 
 #. Type: select
 #. Choices
@@ -1325,21 +1325,21 @@ msgstr "پرتغالي"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Punjabi"
-msgstr "Punjabi"
+msgstr "پنجابی"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Romanian"
-msgstr "روماني"
+msgstr "رومانیایی"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "روسي"
+msgstr "روسی"
 
 #. Type: select
 #. Choices
@@ -1458,7 +1458,7 @@ msgstr "تركي"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "اكرايني"
+msgstr "اوکراینی"
 
 #. Type: select
 #. Choices

@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-07-15 20:03+0300\n"
-"PO-Revision-Date: 2020-10-04 13:50+0200\n"
+"PO-Revision-Date: 2020-10-21 18:13+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Occitan (post 1500) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
 "Language: oc\n"
@@ -36,7 +36,7 @@ msgstr "Modificar pas la poliça iniciala del nucli"
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr ""
+msgstr "Daissar lo sistèma causir una poliça adaptada"
 
 #. Type: text
 #. Description
@@ -51,21 +51,21 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Arabic"
-msgstr ". Arabi"
+msgstr ". arabi"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Armenian"
-msgstr "# Armèni"
+msgstr "# armenian"
 
 #. Type: select
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
-msgstr "# Cirillic - KOI8-R e KOI8-U"
+msgstr "# cirillic - KOI8-R e KOI8-U"
 
 #. Type: select
 #. Choices
@@ -78,9 +78,8 @@ msgstr "# cirillic : lengas autras qu'eslavas"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# cirillic : lengas autras qu'eslavas"
+msgstr ". cirillic : lengas autras qu'eslavas (pels utilizaires cècs)"
 
 #. Type: select
 #. Choices
@@ -93,9 +92,8 @@ msgstr "# cirillic : lengas eslavas (e tanben lo bosniac e lo sèrbe latin)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# cirillic : lengas eslavas (e tanben lo bosniac e lo sèrbe latin)"
+msgstr ". cirillic : lengas eslavas (pels utilizaires cècs)"
 
 #. Type: select
 #. Choices
@@ -123,7 +121,7 @@ msgstr "# grèc"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". grèc (pels utilizaires cècs)"
 
 #. Type: select
 #. Choices
@@ -207,7 +205,7 @@ msgstr ". combinat : latin, cirillic eslau e pas eslau"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "Guess optimal character set"
-msgstr ""
+msgstr "Devinar lo jòc de caractèrs optimal"
 
 #. Type: select
 #. Description
