@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: se\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2018-01-22 15:14+0000\n"
 "Last-Translator: Trond Trosterud <trond.trosterud@gmail.com>\n"
 "Language-Team: Northern Sami <i18n-sme@lister.ping.uio.no>\n"
@@ -905,6 +905,13 @@ msgstr "bengalalaš"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "belgialaš"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_ne\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2019-08-28 18:10+0000\n"
 "Last-Translator: leela <53352@protonmail.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -929,6 +929,13 @@ msgstr "बंगाली"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "बेल्जियन"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices

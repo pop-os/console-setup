@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2017-10-13 10:42+0100\n"
 "Last-Translator: Vanja Cvelbar <cvelbar@gmail.com>\n"
 "Language-Team: Slovenian <gnome-si@googlegroups.com>\n"
@@ -969,6 +969,13 @@ msgstr "Bengalščina"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "Belgijska"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices

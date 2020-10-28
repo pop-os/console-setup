@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2020-10-15 04:26+0000\n"
 "Last-Translator: Aman ALam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -927,6 +927,13 @@ msgstr "ਬੰਗਾਲੀ"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "ਬੈਲਜੀਅਨ"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices

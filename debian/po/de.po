@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2020-07-23 22:31+0100\n"
 "Last-Translator: Holger Wansing <hwansing@mailbox.org>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -983,6 +983,13 @@ msgstr "Bengali"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "Belgisch"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices

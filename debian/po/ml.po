@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian Installer Level 1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2020-07-15 20:03+0300\n"
+"POT-Creation-Date: 2020-10-28 20:01+0000\n"
 "PO-Revision-Date: 2020-03-18 06:36+0000\n"
 "Last-Translator: Fahad Shihab <fahadshihab@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
@@ -941,6 +941,13 @@ msgstr "ബംഗാളി"
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
 msgstr "ബെല്‍ജിയന്‍"
+
+#. Type: select
+#. Choices
+#. :sl1:
+#: ../keyboard-configuration.templates:16001
+msgid "Berber (Latin)"
+msgstr ""
 
 #. Type: select
 #. Choices
