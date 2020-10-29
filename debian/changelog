@@ -1,8 +1,24 @@
-console-setup (1.198) UNRELEASED; urgency=medium
+console-setup (1.198) unstable; urgency=medium
+
+  * Team upload
 
   * Add Berber (Latin) keymap for new language Kabyle.
 
- -- Holger Wansing <hwansing@mailbox.org>  Tue, 27 Oct 2020 22:30:07 +0100
+  [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * Czech (cs.po) by Miroslav Kure
+  * Persian (fa.po) by سهیل خانعلی‌پور
+  * Italian (it.po) by Milo Casagrande
+  * Marathi (mr.po) by Prachi Joshi
+  * Norwegian Bokmal (nb.po) by Petter Reinholdtsen
+  * Punjabi (Gurmukhi) (pa.po) by Aman ALam
+  * Traditional Chinese (zh_TW.po) by Walter Cheuk
+
+  [ New translations ]
+  * Kabyle (kab.po) by Slimane Selyan Amiri
+  * Occitan (oc.po) by Quentin PAGÈS
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 29 Oct 2020 18:59:47 +0100
 
 console-setup (1.197) unstable; urgency=medium
 
