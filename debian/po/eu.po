@@ -24,10 +24,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: di-sublevel1_eu\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-10-28 20:33+0100\n"
+"PO-Revision-Date: 2020-11-03 18:23+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -41,7 +41,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Ez aldatu abio/kernel letra-tipoa"
+msgstr "Ez aldatu abioaren/nukleoaren letra-tipoa"
 
 #. Type: text
 #. Description
@@ -90,9 +90,8 @@ msgstr "# Zirilikoa - hizkuntza ez-eslaviarrak"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Zirilikoa - hizkuntza ez-eslaviarrak"
+msgstr ". Zirilikoa - hizkuntza ez-eslaviarrak (erabiltzaile itsuentzako)"
 
 #. Type: select
 #. Choices
@@ -105,9 +104,8 @@ msgstr "# Zirilikoa - Hizkuntza eslaviarrak (Bosnia eta Serbiar Latina barne)"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# Zirilikoa - Hizkuntza eslaviarrak (Bosnia eta Serbiar Latina barne)"
+msgstr ". Zirilikoa - Hizkuntza eslaviarrak (erabiltzaile itsuentzako)"
 
 #. Type: select
 #. Choices
@@ -135,7 +133,7 @@ msgstr "# Grekoa"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Grekoa (erabiltzaile itsuentzako)"
 
 #. Type: select
 #. Choices
@@ -228,7 +226,7 @@ msgstr "Igarri karaktere-joko egokiena"
 #. :sl3:
 #: ../console-setup.templates:5002
 msgid "Character set to support:"
-msgstr "Onartuko den karaktere multzoa:"
+msgstr "Onartuko den karaktere-jokoa:"
 
 #. Type: select
 #. Description
@@ -236,8 +234,7 @@ msgstr "Onartuko den karaktere multzoa:"
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr ""
-"Mesedez hautatu kontsola letra-tipoak onartu behar dituen karaktere multzoa."
+msgstr "Hautatu karaktere-jokoa kontsolaren letra-tipoak onartzeko."
 
 #. Type: select
 #. Description
@@ -247,8 +244,8 @@ msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
 msgstr ""
-"Framebuffer erabiltzen ez baduzu, puntu batez hasten diren aukerek kontsolan "
-"erabilgarri den kolore kopurua gutxiagotuko dute."
+"Framebuffer erabiltzen ez baduzu, puntu batez (\".\") hasten diren aukerek "
+"kontsolan erabilgarri den kolore kopurua gutxiagotuko dute."
 
 #. Type: select
 #. Description
@@ -291,7 +288,7 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"Terminus letra-tipoen bertsio lodia nahiago baduzu hautatu TerminusBold "
+"Terminus letra-tipoaren bertsio lodia nahiago baduzu hautatu TerminusBold "
 "(framebuffer erabiltzen baduzu) edo TerminusBoldVGA (bestela)."
 
 #. Type: select
@@ -302,7 +299,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
-msgstr "Letra-tipo tamaina:"
+msgstr "Letra-tamaina:"
 
 #. Type: select
 #. Description
@@ -312,20 +309,19 @@ msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
-"zure ordenagailuak abiaraztean erabiltzen duen tamaina 8x16 da."
+"Hautatu kontsolaren letra-tipoaren tamaina. Erreferentzia gisa: "
+"ordenagailuak abiaraztean erabiltzen duen tamaina 8x16 da."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Mesedez hautatu Linux kontsolarako letra-tipo tamaina. Erreferentzia gisa: "
-"zure ordenagailuak abiaraztean erabiltzen duen tamaina 8x16 da."
+"Hautatu kontsolaren letra-tipoaren tamaina. Letra-tamaina batzuk framebuffer "
+"eskatzen dute."
 
 #. Type: select
 #. Description
@@ -361,7 +357,7 @@ msgstr "Teklatu modeloa:"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Hautatu ordenagailu honen teklatu mota."
+msgstr "Hautatu ordenagailu honen teklatu modeloa."
 
 #. Type: select
 #. Description
@@ -792,8 +788,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
 msgstr ""
-"Eginbide hau desgaitu dezakezu \"Aldi baterako aldaketarik ez\" aukera "
-"hautatuz."
+"Eginbide hau desgaitu dezakezu \"Aldi baterako aldaketarik ez\" aukeratuz."
 
 #. Type: select
 #. Choices
@@ -842,8 +837,9 @@ msgid ""
 msgstr ""
 "Teklatuaren diseinu batzuetan, AltGr tekla eraldatzaile bat da zenbait "
 "karaktere idazteko, nagusiki teklatuaren diseinuan gutxitan erabiltzen "
-"direnak, hala nola atzerriko diru ikurrak eta azentuak. Tekla batek "
-"hirugarren ikur bat badu AltGR sakatzea ikur hori idazteko modua izan ohi da."
+"direnak, hala nola atzerriko dibisa ikurrak eta azentuak. Tekla batek "
+"hirugarren ikur bat badu AltGR sakatzean ikur hori idazteko modua izan ohi "
+"da."
 
 #. Type: select
 #. Choices
@@ -902,7 +898,7 @@ msgid ""
 "it can be used to terminate the X server."
 msgstr ""
 "Lehenetsi gisa, Ktrl+Alt+Atzera tekla konbinazioak ez du ezer egiten. Nahi "
-"baduzu, X zerbitzaria amaitzeko erabili daiteke."
+"baduzu, X zerbitzaria amaitzeko erabil daiteke."
 
 #. Type: select
 #. Choices
@@ -965,7 +961,7 @@ msgstr "Belgikarra"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "Amazigera (Latina)"
 
 #. Type: select
 #. Choices
