@@ -10,7 +10,6 @@ Vcs-Browser: https://salsa.debian.org/installer-team/console-setup
 Vcs-Git: https://salsa.debian.org/installer-team/console-setup.git
 
 Package: keyboard-configuration
-Section: utils
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, liblocale-gettext-perl
@@ -24,7 +23,6 @@ Description: system-wide keyboard preferences
  console or in X Window.
 
 Package: console-setup
-Section: utils
 Architecture: all
 Multi-Arch: foreign
 Pre-Depends: debconf (>= 1.5.34)
@@ -46,8 +44,6 @@ Description: console font and keymap setup program
  TerminusBold and TerminusBoldVGA.
 
 Package: console-setup-mini
-Section: utils
-Priority: optional
 Architecture: all
 Multi-Arch: foreign
 Recommends: kbd | console-tools
@@ -67,8 +63,6 @@ Description: console font and keymap setup program - reduced version for Linux
  storage space.
 
 Package: console-setup-linux
-Section: utils
-Priority: optional
 Architecture: all
 Multi-Arch: foreign
 Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= ${source:Version}), ${misc:Depends}, init-system-helpers (>= 1.29~) | initscripts
@@ -82,8 +76,6 @@ Description: Linux specific part of console-setup
  8-bit charmaps.
 
 Package: console-setup-freebsd
-Section: utils
-Priority: optional
 Architecture: all
 Multi-Arch: foreign
 Depends: vidcontrol, kbdcontrol, keyboard-configuration (= ${source:Version}), ${misc:Depends}, init-system-helpers (>= 1.29~) | initscripts
@@ -95,8 +87,6 @@ Description: FreeBSD specific part of console-setup
  This package includes raw, uuencoded fonts and various screen maps.
 
 Package: bdf2psf
-Section: utils
-Priority: optional
 Architecture: all
 Multi-Arch: foreign
 Depends: perl, ${misc:Depends}
@@ -119,8 +109,6 @@ Description: font converter to generate console fonts from BDF source fonts
  converter creates fonts suitable for framebuffer only.
 
 Package: console-setup-udeb
-Section: debian-installer
-Priority: optional
 Depends: archdetect, cdebconf-udeb, kbd-udeb | kbdcontrol-udeb | hurd-udeb, ${misc:Depends}
 Provides: keyboard-setup
 Architecture: all
@@ -131,8 +119,6 @@ XB-Installer-Menu-Item: 1200
 
 Package: console-setup-amiga-ekmap
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded Linux keyboard layouts for Amiga keyboards
@@ -140,8 +126,6 @@ Package-Type: udeb
 
 Package: console-setup-ataritt-ekmap
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded Linux keyboard layouts for Atari TT keyboards
@@ -149,8 +133,6 @@ Package-Type: udeb
 
 Package: console-setup-pc-ekmap
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded Linux keyboard layouts for PC keyboards
@@ -158,8 +140,6 @@ Package-Type: udeb
 
 Package: console-setup-sun4-ekmap
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded Linux keyboard layouts for Sun4 keyboards
@@ -167,8 +147,6 @@ Package-Type: udeb
 
 Package: console-setup-sun5-ekmap
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded Linux keyboard layouts for Sun5 keyboards
@@ -176,40 +154,30 @@ Package-Type: udeb
 
 Package: console-setup-pc-ekbd
 Provides: console-setup-ekmap
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: encoded FreeBSD keyboard layouts for PC keyboards
 Package-Type: udeb
 
 Package: console-setup-linux-fonts-udeb
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}, kbd-udeb
 Architecture: all
 Description: Linux console fonts for Debian Installer
 Package-Type: udeb
 
 Package: console-setup-freebsd-fonts-udeb
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: FreeBSD console fonts for Debian Installer
 Package-Type: udeb
 
 Package: console-setup-linux-charmaps-udeb
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: Linux 8-bit charmaps for console-setup-udeb
 Package-Type: udeb
 
 Package: console-setup-freebsd-charmaps-udeb
-Section: debian-installer
-Priority: optional
 Depends: ${misc:Depends}
 Architecture: all
 Description: FreeBSD 8-bit charmaps for console-setup-udeb
