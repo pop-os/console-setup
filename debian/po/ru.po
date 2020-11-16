@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-11-10 10:49+0300\n"
+"PO-Revision-Date: 2020-11-16 07:09+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -92,7 +92,7 @@ msgstr "# кириллица - не славянские языки"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr ". кириллица - не славянские языки (для незрачих)"
+msgstr ". кириллица - не славянские языки (для незрячих)"
 
 #. Type: select
 #. Choices
@@ -317,13 +317,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Выберите размер шрифта для консоли. Для справки: шрифт, отображаемый при "
-"загрузке компьютера, имеет размер 8x16."
+"Выберите размер шрифта для консоли. Для некоторых шрифтов требуется фрейм-"
+"буфер."
 
 #. Type: select
 #. Description
