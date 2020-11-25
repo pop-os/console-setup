@@ -8,9 +8,8 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Rizoyê Xerzî <riza dot seckin at gmail dot com>
-# Erdal Ronahi <erdal dot ronahi at gmail dot com>, 2008.
-# Erdal <erdal.ronahi@gmail.com>, 2010.
-# Erdal Ronahî <erdal.ronahi@gmail.com>, 2010.
+# Erdal Ronahî <erdal.ronahi@gmail.com>, 2008, 2010.
+# Lecwan Munzur <lecwan@riseup.net>, 2020.
 #
 # Translations from iso-codes:
 #   Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
@@ -20,14 +19,14 @@ msgstr ""
 "Project-Id-Version: ku\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2010-08-16 00:19+0200\n"
-"Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
+"PO-Revision-Date: 2020-11-22 12:29+0000\n"
+"Last-Translator: Lecwan Munzur <lecwan@riseup.net>\n"
 "Language-Team: Kurdish Team http://pckurd.net\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!= 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. Type: text
 #. Description
@@ -911,7 +910,7 @@ msgstr "Erebî"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr ""
+msgstr "Awûstrî"
 
 #. Type: select
 #. Choices
@@ -952,9 +951,8 @@ msgstr ""
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Bosnian"
-msgstr "Estonî"
+msgstr "Bosnî"
 
 #. Type: select
 #. Choices
@@ -1011,14 +1009,14 @@ msgstr "Kanada ya Pirzimanî"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Catalan"
-msgstr ""
+msgstr "Katalanî"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr ""
+msgstr "Çîn"
 
 #. Type: select
 #. Choices
@@ -1145,7 +1143,7 @@ msgstr "Îbranî"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Hindi"
-msgstr ""
+msgstr "Hindî"
 
 #. Type: select
 #. Choices
@@ -1166,7 +1164,7 @@ msgstr "Îzlandî"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Irish"
-msgstr ""
+msgstr "Îrlandî"
 
 #. Type: select
 #. Choices
