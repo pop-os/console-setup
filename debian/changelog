@@ -1,3 +1,23 @@
+console-setup (1.199) UNRELEASED; urgency=medium
+
+  * Team upload.
+
+  [ Holger Wansing ]
+  * Remove duplicated Section: and Priority: fields.
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * Greek (el.po) by EG
+  * Esperanto (eo.po) by Felipe Castro
+  * French (fr.po) by Baptiste Jammet
+  * Croatian (hr.po) by Milo Ivir
+  * Kurdish (ku.po) by Lecwan Munzur
+  * Norwegian Bokmal (nb.po) by Allan Nordhøy
+  * Punjabi (Gurmukhi) (pa.po) by Aman Alam
+  * Russian (ru.po) by Yuri Kozlov
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 01 Dec 2020 01:08:22 +0100
+
 console-setup (1.198) unstable; urgency=medium
 
   * Team upload
