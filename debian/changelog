@@ -1,4 +1,4 @@
-console-setup (1.199) UNRELEASED; urgency=medium
+console-setup (1.199) unstable; urgency=medium
 
   * Team upload.
 
@@ -16,7 +16,7 @@ console-setup (1.199) UNRELEASED; urgency=medium
   * Punjabi (Gurmukhi) (pa.po) by Aman Alam
   * Russian (ru.po) by Yuri Kozlov
 
- -- Cyril Brulebois <kibi@debian.org>  Tue, 01 Dec 2020 01:08:22 +0100
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 01 Dec 2020 02:02:30 +0100
 
 console-setup (1.198) unstable; urgency=medium
 
