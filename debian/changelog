@@ -1,3 +1,9 @@
+console-setup (1.200) UNRELEASED; urgency=medium
+
+  * Fix missing changelog entries for 1.199.
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 01 Dec 2020 17:59:20 +0100
+
 console-setup (1.199) unstable; urgency=medium
 
   * Team upload.
@@ -6,15 +12,26 @@ console-setup (1.199) unstable; urgency=medium
   * Remove duplicated Section: and Priority: fields.
 
   [ Updated translations ]
+  * Bulgarian (bg.po) by Damyan Ivanov
   * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
   * Greek (el.po) by EG
   * Esperanto (eo.po) by Felipe Castro
+  * Basque (eu.po) by Iñaki Larrañaga Murgoitio
   * French (fr.po) by Baptiste Jammet
+  * Hebrew (he.po) by Yaron Shahrabani
   * Croatian (hr.po) by Milo Ivir
+  * Indonesian (id.po) by Andika Triwidada
+  * Kabyle (kab.po) by Slimane Selyan Amiri
   * Kurdish (ku.po) by Lecwan Munzur
   * Norwegian Bokmal (nb.po) by Allan Nordhøy
+  * Dutch (nl.po) by Frans Spiesschaert
+  * Occitan (oc.po) by Quentin PAGÈS
   * Punjabi (Gurmukhi) (pa.po) by Aman Alam
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Brazilian Portuguese (pt_BR.po) by Adriano Rafael Gomes
   * Russian (ru.po) by Yuri Kozlov
+  * Swedish (sv.po) by Kristoffer Grundström
 
  -- Cyril Brulebois <kibi@debian.org>  Tue, 01 Dec 2020 02:02:30 +0100
 
