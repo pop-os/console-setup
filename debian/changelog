@@ -1,8 +1,15 @@
-console-setup (1.200) UNRELEASED; urgency=medium
+console-setup (1.200) unstable; urgency=medium
+
+  * Team upload.
 
   * Fix missing changelog entries for 1.199.
 
- -- Holger Wansing <hwansing@mailbox.org>  Tue, 01 Dec 2020 17:59:20 +0100
+  [ Updated translations ]
+  * Icelandic (is.po) by Sveinn Ã Felli
+  * Romanian (ro.po) by Sergiu
+  * Serbian (sr.po) by Filipovic Dragan
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 31 Dec 2020 22:19:38 +0100
 
 console-setup (1.199) unstable; urgency=medium
 
