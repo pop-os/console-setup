@@ -17,14 +17,15 @@
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009.
 # Jorge Barreiro <xurxo@findomundo.es>, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
-# mantinan <github@manty.net>, 2018.
+# mantinan <github@manty.net>, 2018, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-02-27 14:33+0000\n"
-"Last-Translator: riesp <riesp@pm.me>\n"
+"PO-Revision-Date: 2021-01-06 18:53+0000\n"
+"Last-Translator: mantinan <github@manty.net>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -311,13 +312,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Escolla o tamaño de letra para a consola. Como referencia, o tipo de letra "
-"co que se inicia o computador ten tamaño 8x16."
+"Escolla o tamaño de letra para a consola. Alguns tamaños de letra requiren "
+"«framebuffer»."
 
 #. Type: select
 #. Description
@@ -955,7 +955,7 @@ msgstr "Belga"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "Bérber (Latino)"
 
 #. Type: select
 #. Choices
