@@ -27,13 +27,17 @@
 # Kumar Appaiah <kumar.appaiah@gmail.com>, 2008, 2011, 2012.
 # Sruthi Chandran <srud@openmailbox.org>, 2018.
 # Himanshu Awasthi <johim9493@gmail.com>, 2018.
+# KushagraKarira <kushagrakarira@gmail.com>, 2020.
+# षिखर् <dnitesigm@gmail.com>, 2020.
+# Indrani Roy <indrani@scriptek.co.in>, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-05-27 08:41+0000\n"
-"Last-Translator: Sanket Pardhi <sanket002@gmail.com>\n"
+"PO-Revision-Date: 2021-01-09 15:33+0000\n"
+"Last-Translator: Indrani Roy <indrani@scriptek.co.in>\n"
 "Language-Team: \n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -653,14 +657,14 @@ msgstr "बाहिना ऑल्ट"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "बाहिना कन्ट्रोल"
+msgstr "बायाँ कंट्रोल"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "बाहिना शिफ़्ट"
+msgstr "बायाँ शिफ़्ट"
 
 #. Type: select
 #. Choices
