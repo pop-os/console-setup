@@ -8,6 +8,7 @@
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # Jeyanthinath MuthuRam <jeyanthinath10@gmail.com>, 2020.
+# Vasudevan Tirumurti <agnihot3@gmail.com>, 2021.
 #
 #
 # Translations from iso-codes:
@@ -23,8 +24,8 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-03-26 10:46+0000\n"
-"Last-Translator: Jeyanthinath MuthuRam <jeyanthinath10@gmail.com>\n"
+"PO-Revision-Date: 2021-01-17 12:32+0000\n"
+"Last-Translator: Vasudevan Tirumurti <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
@@ -339,7 +340,7 @@ msgstr "விசைப்பலகை அமைப்பை வடிவமை"
 #. :sl1:
 #: ../keyboard-configuration.templates:3001
 msgid "Other"
-msgstr "மற்றது "
+msgstr "மற்றது"
 
 #. Type: select
 #. Description
@@ -373,7 +374,7 @@ msgid ""
 msgstr ""
 "ஒவ்வொரு நாட்டுக்கும் விசைப்பலகை அமைப்புகள் மாறுகின்றன. சில நாடுகளுக்கு ஒன்றுக்கு மேற்பட்ட "
 "பொது இட அமைவுகள் உள்ளன. தயை செய்து இந்த கணினிக்கான விசைப்பலகைக்கு நாட்டை "
-"தேர்ந்தெடுக்கவும்.  "
+"தேர்ந்தெடுக்கவும்."
 
 #. Type: select
 #. Description
@@ -603,7 +604,7 @@ msgstr "மெனு விசை"
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "ஆல்ட்+ஷிப்ட் "
+msgstr "ஆல்ட்+ஷிப்ட்"
 
 #. Type: select
 #. Choices
@@ -700,7 +701,7 @@ msgstr "நிலை மாற்றுதல் இல்லை"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "தேசிய மற்றும் இலத்தீன் பாங்குகளுக்கு நிலை மாற்றுதல் முறை"
+msgstr "தேசிய மற்றும் இலத்தீன் பாங்குகளுக்கு நிலை மாற்றுதல் முறை:"
 
 #. Type: select
 #. Description
@@ -955,7 +956,7 @@ msgstr "பெல்ஜியன்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "பெர்பெர்"
 
 #. Type: select
 #. Choices
@@ -1518,4 +1519,4 @@ msgstr "வியட்னாம்"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
-msgstr "பயன் படுத்த விசைப் பலகை அமைப்பு:"
+msgstr "பயன் படுத்த விசைப்பலகை அமைப்பு:"
