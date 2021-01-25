@@ -6,20 +6,21 @@
 # Kabyle translation for debian-installer
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the debian-installer package.
-# Slimane Selyan Amiri <selyan.kab@gmail.com>, 2020.
+# Slimane Selyan Amiri <selyan.kab@gmail.com>, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-10-28 23:09+0100\n"
-"Last-Translator: Slimane Selyan Amiri <selyan.kab@gmail.com>\n"
+"PO-Revision-Date: 2021-01-22 00:39+0000\n"
+"Last-Translator: Selyan Sliman Amiri <selyan.kab@gmail.com>\n"
 "Language-Team: Kabyle <kab@li.org>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. Type: text
 #. Description
@@ -142,7 +143,7 @@ msgstr "# Talawsit"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
-msgstr "# Latin1 akked  Latin5 - tutlayin n Turuft n umalu akked taṭurkit"
+msgstr "# Latin1 akked Latin5 - tutlayin n Turuft n umalu akked taṭurkit"
 
 #. Type: select
 #. Choices
@@ -862,7 +863,7 @@ msgid ""
 msgstr ""
 "Deg tdiwent i d-iteddun, taqeffalt tuddist ur tetteddu ara deg uskar n "
 "Unicode. Ma yella mačči deg uskar Unicode, ayen yebɣu yili wayen i tferneḍ, "
-"mazal tzemreḍ yal tikkelt ad tesqedceḍ asuddes  Control+period am tqeffalt "
+"mazal tzemreḍ yal tikkelt ad tesqedceḍ asuddes Control+period am tqeffalt "
 "tuddist."
 
 #. Type: boolean

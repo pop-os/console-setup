@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-01-17 12:32+0000\n"
+"PO-Revision-Date: 2021-01-22 11:58+0000\n"
 "Last-Translator: Vasudevan Tirumurti <agnihot3@gmail.com>\n"
 "Language-Team: Tamil <<gnome-tamil-translation@googlegroups.com>>\n"
 "Language: ta\n"
@@ -728,7 +728,7 @@ msgstr ""
 "தேர்ந்தெடுக்கப்படுகின்றன. பின்னதில் வழக்கமான மேல் கீழ் நிலை எழுத்து நிலை மாற்றத்துக்கு ஷிப்ட்"
 "+கேப்ஸ் பூட்டு விசைஜோடியை பயன்படுத்தவும். ஆல்ட்+ஷிப்ட் கூட பரவலான ஜோடியாகும். ஆயின் "
 "ஈமேக்ஸ் மற்றும் சில நிரல்களில் இவைகுறிப்பிட்ட தேவைகளுக்கு பயனாவதால் அவற்றின் வழக்கமான "
-"நடத்தை மாறிவிடும்"
+"நடத்தை மாறிவிடும்."
 
 #. Type: select
 #. Description
@@ -899,7 +899,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "அமெரிக்க ஆங்கிலம் "
+msgstr "அமெரிக்க ஆங்கிலம்"
 
 #. Type: select
 #. Choices
@@ -934,7 +934,7 @@ msgstr "வங்காளதேசம்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "பெலாருசியன் "
+msgstr "பெலாருசியன்"
 
 #. Type: select
 #. Choices
@@ -956,7 +956,7 @@ msgstr "பெல்ஜியன்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr "பெர்பெர்"
+msgstr "பெர்பெர் (இலத்தீன்)"
 
 #. Type: select
 #. Choices
@@ -995,7 +995,7 @@ msgstr "பல்கேரியன் (BDS அமைப்பு)"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Bulgarian (phonetic layout)"
-msgstr "பல்கேரியன்  (phonetic அமைப்பு)"
+msgstr "பல்கேரியன் (ஒலிவடி அமைப்பு)"
 
 #. Type: select
 #. Choices
@@ -1017,7 +1017,7 @@ msgstr "கனடியன் ப்ரென்ச்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Canadian Multilingual"
-msgstr "கனடியன்-பலமொழி"
+msgstr "கனடியன்-பன்மொழி"
 
 #. Type: select
 #. Choices
@@ -1031,7 +1031,7 @@ msgstr "கடலான்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Chinese"
-msgstr "சைனீஸ்"
+msgstr "சீனமொழி"
 
 # console-keymaps-acorn, Croatian
 #. Type: select
@@ -1039,7 +1039,7 @@ msgstr "சைனீஸ்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Croatian"
-msgstr "க்ரோசியன் "
+msgstr "க்ரோசியன்"
 
 # console-keymaps-acorn, Czech
 #. Type: select
@@ -1047,7 +1047,7 @@ msgstr "க்ரோசியன் "
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "செக் "
+msgstr "செக்"
 
 # console-keymaps-acorn, Danish
 #. Type: select
@@ -1129,7 +1129,7 @@ msgstr "ஜியார்ஜியன்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "German"
-msgstr "ஜெர்மன் "
+msgstr "ஜெர்மன்"
 
 #. Type: select
 #. Choices
@@ -1217,7 +1217,7 @@ msgstr "கன்னடம்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Kazakh"
-msgstr "கசாக்ஷ்"
+msgstr "கேஃஜக்"
 
 #. Type: select
 #. Choices
@@ -1327,7 +1327,7 @@ msgstr "நார்வேஜியன்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Persian"
-msgstr "பெர்சியன்"
+msgstr "பாரசீக"
 
 #. Type: select
 #. Choices
@@ -1441,14 +1441,14 @@ msgstr "ஸ்விஸ் ப்ரென்ச்"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Swiss German"
-msgstr "ஸ்விஸ் ஜெர்மன் "
+msgstr "ஸ்விஸ் ஜெர்மன்"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr "தாஜிக் "
+msgstr "தாஜிக்"
 
 #. Type: select
 #. Choices
@@ -1469,14 +1469,14 @@ msgstr "தெலுங்கு"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
-msgstr "தாய் "
+msgstr "தாய்"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr "திபேத்தியன் "
+msgstr "திபேத்தியன்"
 
 # console-keymaps-acorn, Russian
 #. Type: select
