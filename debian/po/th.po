@@ -4,9 +4,9 @@
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
 # Thai translation of debian-installer.
-# Copyright (C) 2006-2017 Software in the Public Interest, Inc.
+# Copyright (C) 2006-2021 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
-# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2006-2015.
+# Theppitak Karoonboonyanan <theppitak@gmail.com>, 2006-2021.
 #
 #
 # Translations from iso-codes:
@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2017-02-26 23:19+0700\n"
+"PO-Revision-Date: 2021-02-03 16:48+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -85,9 +85,8 @@ msgstr "# ซีริลลิก - ภาษาที่ไม่ใช่ต�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# ซีริลลิก - ภาษาที่ไม่ใช่ตระกูลสลาฟ"
+msgstr ". ซีริลลิก - ภาษาที่ไม่ใช่ตระกูลสลาฟ (สำหรับผู้พิการสายตา)"
 
 #. Type: select
 #. Choices
@@ -100,9 +99,8 @@ msgstr "# ซีริลลิก - ภาษาตระกูลสลาฟ 
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# ซีริลลิก - ภาษาตระกูลสลาฟ (รวมถึงบอสเนียและละตินเซอร์เบีย)"
+msgstr ". ซีริลลิก - ภาษาตระกูลสลาฟ (สำหรับผู้พิการสายตา)"
 
 #. Type: select
 #. Choices
@@ -130,7 +128,7 @@ msgstr "# กรีก"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". กรีก (สำหรับผู้พิการสายตา)"
 
 #. Type: select
 #. Choices
@@ -307,12 +305,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr ""
-"กรุณากำหนดขนาดของแบบอักษรสำหรับคอนโซล ข้อมูลอ้างอิง: แบบอักษรที่ใช้ขณะบูตเครื่องมีขนาด 8x16"
+msgstr "กรุณาเลือกขนาดของแบบอักษรสำหรับคอนโซล แบบอักษรบางขนาดอาจต้องใช้เฟรมบัฟเฟอร์"
 
 #. Type: select
 #. Description
@@ -936,7 +932,7 @@ msgstr "เบลเยียม"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "เบอร์เบอร์ (ละติน)"
 
 #. Type: select
 #. Choices
