@@ -1,3 +1,25 @@
+console-setup (1.201) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by zer0-x
+  * Bengali (bn.po) by Indrani Roy
+  * Catalan (ca.po) by d
+  * Danish (da.po) by Michael Millet
+  * Spanish (es.po) by Javier FernÃ¡ndez-Sanguino
+  * Estonian (et.po) by Kristjan RÃ¤ts
+  * Galician (gl.po) by mantinan
+  * Hindi (hi.po) by KushagraKarira
+  * Kabyle (kab.po) by Selyan Sliman Amiri
+  * Latvian (lv.po) by Tranzistors
+  * Tamil (ta.po) by Vasudevan Tirumurti
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Simplified Chinese (zh_CN.po) by TTT DEAL
+  * Traditional Chinese (zh_TW.po) by louies0623
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 18 Feb 2021 22:42:35 +0100
+
 console-setup (1.200) unstable; urgency=medium
 
   * Team upload.
