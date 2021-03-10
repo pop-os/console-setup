@@ -36,8 +36,8 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-01-23 12:32+0000\n"
-"Last-Translator: KushagraKarira <kushagrakarira@gmail.com>\n"
+"PO-Revision-Date: 2021-03-06 11:50+0000\n"
+"Last-Translator: Aryan L <aryan.landge@icloud.com>\n"
 "Language-Team: \n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -362,9 +362,8 @@ msgstr "कीबोर्ड मॉडल:"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "इस यन्त्र के कीबोर्ड का प्रकार चुनें."
+msgstr "इस यंत्र का कीबोर्ड का मॉडल (प्रकार) चुने।"
 
 #. Type: select
 #. Description
