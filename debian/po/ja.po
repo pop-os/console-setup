@@ -29,8 +29,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-04-29 17:54+0000\n"
-"Last-Translator: YOSHINO Yoshihito <yy.y.ja.jp@gmail.com>\n"
+"PO-Revision-Date: 2021-05-06 03:32+0000\n"
+"Last-Translator: Nozomu KURASAWA <nabetaro@caldron.jp>\n"
 "Language-Team: Debian L10n Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -318,13 +318,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"コンソール用のフォントのサイズを選んでください。参考のために、コンピュータの"
-"ブート時に使われるフォントのサイズは 8x16 です。"
+"コンソール用のフォントのサイズを選んでください。いくつかのフォントサイズには"
+"フレームバッファが必要です。"
 
 #. Type: select
 #. Description
