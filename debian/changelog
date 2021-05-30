@@ -1,3 +1,16 @@
+console-setup (1.203) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Fahim Sabah
+  * Greek (el.po) by Michalis
+  * Persian (fa.po) by Sina Carnelious
+  * Japanese (ja.po) by Nozomu KURASAWA
+  * Polish (pl.po) by Matthaiks
+
+ -- Holger Wansing <hwansing@mailbox.org>  Sun, 30 May 2021 22:30:16 +0200
+
 console-setup (1.202) unstable; urgency=medium
 
   * Team upload.
