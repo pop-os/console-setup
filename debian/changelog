@@ -1,3 +1,13 @@
+console-setup (1.204) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Lithuanian (lt.po) by Gediminas Murauskas
+  * Turkish (tr.po) by Fatih Altun
+
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 08 Jul 2021 16:30:43 +0200
+
 console-setup (1.203) unstable; urgency=medium
 
   * Team upload.
