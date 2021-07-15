@@ -15,6 +15,7 @@
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2012.
 # Juhani Numminen <juhaninumminen0@gmail.com>, 2018, 2019.
 # Arto Keiski <arto.keiski@iki.fi>, 2018.
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2021.
 #
 # Translations from iso-codes:
 # Copyright (C) 2007 Tobias Toedter <t.toedter@gmx.net>.
@@ -27,8 +28,8 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2019-02-01 20:18+0000\n"
-"Last-Translator: Juhani Numminen <juhaninumminen0@gmail.com>\n"
+"PO-Revision-Date: 2021-07-12 20:33+0000\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -315,13 +316,10 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr ""
-"Valitse konsolissa käytettävän kirjasimen koko. Vertailukohtana voit käyttää "
-"tietokoneen käynnistyessä käytettävää koon 8x16 kirjasinta."
+msgstr "Valitse konsolin fonttikoko. Jotkin fonttikoot vaativat framebufferin."
 
 #. Type: select
 #. Description
@@ -962,7 +960,7 @@ msgstr "belgialainen"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "Berber (latina)"
 
 #. Type: select
 #. Choices
