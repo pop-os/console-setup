@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-07-12 20:33+0000\n"
+"PO-Revision-Date: 2021-07-17 08:34+0000\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
 "Language: fi\n"
@@ -1452,7 +1452,7 @@ msgstr "sveitsinsaksalainen"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr "tadžikinkielinen"
+msgstr "Tajikl"
 
 #. Type: select
 #. Choices
@@ -1480,7 +1480,7 @@ msgstr "thai"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr "tiibetiläinen"
+msgstr "tiibettiläinen"
 
 # console-keymaps-acorn, Russian
 #. Type: select
