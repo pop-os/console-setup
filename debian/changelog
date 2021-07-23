@@ -1,3 +1,12 @@
+console-setup (1.205) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Finnish (fi.po) by Kimmo Kujansuu
+
+ -- Holger Wansing <hwansing@mailbox.org>  Fri, 23 Jul 2021 19:05:53 +0200
+
 console-setup (1.204) unstable; urgency=medium
 
   * Team upload.
