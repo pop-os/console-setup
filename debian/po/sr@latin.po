@@ -76,7 +76,6 @@ msgstr "# ćirilica - neslovenski jezici"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - non-Slavic languages"
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
 msgstr "# ćirilica - neslovenski jezici"
 
@@ -92,7 +91,6 @@ msgstr "# ćirilica - slovenski jezici (takođe srpska latinica i bosanski)"
 #. :sl3:
 #: ../console-setup.templates:5001
 #, fuzzy
-#| msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgid ". Cyrillic - Slavic languages (for blind users)"
 msgstr "# ćirilica - slovenski jezici (takođe srpska latinica i bosanski)"
 
@@ -293,9 +291,6 @@ msgstr "Veličina fonta:"
 #. :sl3:
 #: ../console-setup.templates:7001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the Linux console. For reference, "
-#| "the font used when the computer boots has size 16."
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
@@ -308,9 +303,6 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:8001
 #, fuzzy
-#| msgid ""
-#| "Please select the size of the font for the Linux console. For reference, "
-#| "the font used when the computer boots has size 16."
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
@@ -491,9 +483,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Podrazumevana vrednost za opcije rasporeda tastature je "
-"XKBOPTIONS=„${XKBOPTIONS}“.  Bazirana je na trenutno definisanim jeziku/"
-"regionu i podešavanjima u /etc/X11/xorg.conf."
+"Podrazumevana vrednost za opcije rasporeda tastature je XKBOPTIONS="
+"„${XKBOPTIONS}“.  Bazirana je na trenutno definisanim jeziku/regionu i "
+"podešavanjima u /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -905,7 +897,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Arabic"
 msgid "Arabic"
 msgstr ". arapski"
 
@@ -1082,7 +1073,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Ethiopic"
 msgid "Ethiopian"
 msgstr ". etiopski"
 
@@ -1105,7 +1095,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Georgian"
 msgid "Georgian"
 msgstr "# gruzijski"
 
@@ -1121,7 +1110,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Greek"
 msgid "Greek"
 msgstr "# grčki"
 
@@ -1144,7 +1132,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Hebrew"
 msgid "Hebrew"
 msgstr "# hebrejski"
 
@@ -1244,7 +1231,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Lao"
 msgid "Lao"
 msgstr "# lao"
 
@@ -1302,7 +1288,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Georgian"
 msgid "Norwegian"
 msgstr "# gruzijski"
 
@@ -1444,7 +1429,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid "# Thai"
 msgid "Thai"
 msgstr "# tai"
 
@@ -1488,7 +1472,6 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 #, fuzzy
-#| msgid ". Latin - Vietnamese"
 msgid "Vietnamese"
 msgstr ". Latin - vijetnamski"
 
@@ -1496,6 +1479,45 @@ msgstr ". Latin - vijetnamski"
 #. Description
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+#, fuzzy
+msgid "Detect keyboard layout?"
+msgstr "Raspored tastature:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+msgid ""
+"You can try to have your keyboard layout detected by pressing a series of "
+"keys. If you do not want to do this, you will be able to select your "
+"keyboard layout from a list."
+msgstr ""
+
+#. Type: detect-keyboard
+#. Description
+#: ../keyboard-configuration.templates:23001
+#, fuzzy
+msgid "Detecting your keyboard layout"
+msgstr "Podrazumevani raspored tastature"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+#, fuzzy
+msgid "Keyboard layout detection complete"
+msgstr "Raspored tastature:"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+msgid ""
+"Based on the keys you pressed, your keyboard layout appears to be "
+"\"${LAYOUT}\". If this is not correct, you can go back and select your "
+"layout from the full list instead."
 msgstr ""
 
 #, fuzzy

@@ -758,8 +758,8 @@ msgid ""
 "Latin mode."
 msgstr ""
 "යතුරු පුවරුව ජාතික ප්‍රකාරයේ තිබෙන විට කිසිවෙකුට ලතින් අකුරු කිහිපයක් ලිවීමට ඇවැසි වූයේ නම් , "
-"තාවකාලිකව ලතින් ප්‍රකාරයට මාරුවීම වඩාත් සුදුසු වේ. තෝරාගත් යතුර ඔබා සිටින තෙක් යතුරුපුවරුව එම ප්‍"
-"රකාරයේ පවතිනු ඇති අතර. යතුරු පුවරුව ලතින් ප්‍රකාරයේ ඇති විට ජාතික ප්‍රකාරයේ අකුරු ඇතුළත් කිරීම "
+"තාවකාලිකව ලතින් ප්‍රකාරයට මාරුවීම වඩාත් සුදුසු වේ. තෝරාගත් යතුර ඔබා සිටින තෙක් යතුරුපුවරුව එම "
+"ප්‍රකාරයේ පවතිනු ඇති අතර. යතුරු පුවරුව ලතින් ප්‍රකාරයේ ඇති විට ජාතික ප්‍රකාරයේ අකුරු ඇතුළත් කිරීම "
 "සඳහාද එම යතුර භාවිත කල හැක."
 
 #. Type: select
@@ -1468,3 +1468,42 @@ msgstr "වියෙට්නාම"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "භාවිත යතුරු සැකැස්ම:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+#, fuzzy
+msgid "Detect keyboard layout?"
+msgstr "යතුරුපුවරු ආකෘතිය:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+msgid ""
+"You can try to have your keyboard layout detected by pressing a series of "
+"keys. If you do not want to do this, you will be able to select your "
+"keyboard layout from a list."
+msgstr ""
+
+#. Type: detect-keyboard
+#. Description
+#: ../keyboard-configuration.templates:23001
+#, fuzzy
+msgid "Detecting your keyboard layout"
+msgstr "යතුරුපුවරු ආකෘතිය සඳහා සම්මතය"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+#, fuzzy
+msgid "Keyboard layout detection complete"
+msgstr "යතුරුපුවරු ආකෘතිය:"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+msgid ""
+"Based on the keys you pressed, your keyboard layout appears to be "
+"\"${LAYOUT}\". If this is not correct, you can go back and select your "
+"layout from the full list instead."
+msgstr ""

@@ -4787,9 +4787,9 @@ if ($freebsd) {
         my $file1 = "/etc/console-setup/dkey.${charmap}.inc";
         my $file2 = "$installdir/etc/console-setup/dkey.${charmap}.inc";
         if (-f $file1) {
-            system("cat $file1");
+            system("cat", $file1);
         } elsif (-f $file2) {
-            system("cat $file2");
+            system("cat", $file2);
         }
     }
 } else {
@@ -4799,18 +4799,18 @@ if ($freebsd) {
         my $file1 = "/etc/console-setup/compose.${charmap}.inc";
         my $file2 = "$installdir/etc/console-setup/compose.${charmap}.inc";
         if (-f $file1) {
-            system("cat $file1");
+            system("cat", $file1);
         } elsif (-f $file2) {
-            system("cat $file2");
+            system("cat", $file2);
         }
     }
 }
 my $file1 = "/etc/console-setup/remap.inc";
 my $file2 = "$installdir/etc/console-setup/remap.inc";
 if (-f $file1) {
-    system("cat $file1");
+    system("cat", $file1);
 } elsif (-f $file2) {
-    system("cat $file2");
+    system("cat", $file2);
 }
 
 exit 0;

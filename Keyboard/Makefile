@@ -12,7 +12,11 @@ gzipped-ekmaps := $./amiga.ekmap.gz $./ataritt.ekmap.gz		\
 
 gzipped-ekbds := $./pc105.ekbd.gz
 
-xkbdir ?= $(kbddir)/ckb
+xkbdir ?= /usr/share/X11/xkb
+
+%.tree : %.ekmap.gz $./keymaptree.use
+	(cd $(kbddir) && set -x && \
+		./keymaptree -output $@ -useonly "$$(cat $./Keyboard/keymaptree.use | grep -v '^#' | xargs | sed 's/ /,/g')" -names ./KeyboardNames.pl $(notdir $(@:%.tree=%)))
 
 $./%.ekmap : model = $(notdir $(@:%.ekmap=%))
 $./%.ekmap :
@@ -61,7 +65,7 @@ $(dkey_files) : $(kbddir)/dkey_sequences
 build-common .PHONY : compose-files dkey-files
 compose-files : $(compose_files)
 dkey-files : $(dkey_files)
-build-mini-linux : gzipped-ekmaps $./charmap_functions.sh
+build-mini-linux : gzipped-ekmaps $./charmap_functions.sh $./pc105.tree
 .PHONY : gzipped-ekmaps
 gzipped-ekmaps : $(gzipped-ekmaps)
 build-mini-freebsd : gzipped-ekbds $./charmap_functions.sh
@@ -77,10 +81,11 @@ kbdcleanfiles := $(wildcard $./*~ $./*.ekmap $./*.ekbd)			\
 clean .PHONY : $~clean
 $~clean:
 	-rm -rf $(kbdcleanfiles)
+	-rm -f *.tree
 
 maintainer-clean .PHONY : $~maintainer-clean
 $~maintainer-clean: $~clean
-	cd $(kbddir) && ./xmlreader >KeyboardNames.pl
+	cd $(kbddir) && ./xmlreader $(xkbdir)/rules/xorg.xml >KeyboardNames.pl
 
-$./KeyboardNames.pl:
+KeyboardNames.pl $./KeyboardNames.pl:
 	$(kbddir)/xmlreader $(xkbdir)/rules/xorg.xml >$@

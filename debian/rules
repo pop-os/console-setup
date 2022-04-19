@@ -7,6 +7,10 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
   MAKEFLAGS += -j$(NUMJOBS)
 endif
 
+ifeq (,$(filter noudeb, $(DEB_BUILD_PROFILES)))
+  with_udeb = yes
+endif
+
 xkbdir := /usr/share/X11/xkb
 
 pre := debian/preprocessor
@@ -54,52 +58,21 @@ debian/kbdnames.gz: $./Keyboard/KeyboardNames.pl
 	&& ./kbdnames-maker ./KeyboardNames.pl \
 		| grep -v '^C[*]' | grep -v '[*]model[*]' | sort | gzip -9n ) >$@
 
-models := amiga ataritt pc105 sun4 sun5
-
-di-gzipped-ekmaps := $(addprefix $./, $(addsuffix .ekmap.gz, $(models)))
-
-di-gzipped-ekbds := $./pc105.ekbd.gz
-
-# di-kbdnames = us al ara es(ast) bd by in(ben) be ba br gb bg bg(phonetic)...
-di-kbdnames := $(shell grep -A 2 keyboard-configuration/xkb-keymap debian/console-setup-udeb.templates | tail -n 1 | cut -d ' ' -f 2- | tr -d , | tr ' ' '\n' | grep -v skip-config)
-
-$./%.ekmap : model = $(notdir $(@:%.ekmap=%))
-$./%.ekmap :
-	(cd Keyboard \
-	&& ./kbdcompiler $(model) ./KeyboardNames.pl $(xkbdir) \
-		"$(di-kbdnames)") >$@
-
-$./%.ekbd : model = $(notdir $(@:%.ekbd=%))
-$./%.ekbd :
-	(cd Keyboard \
-	&& ./kbdcompiler freebsd-$(model) ./KeyboardNames.pl $(xkbdir) \
-		"$(di-kbdnames)") >$@
-
-# The following rules ensure that kbdcompiler is not run
-# simultaneously for normal and udeb kmaps
-$(foreach i,$(gzipped-ekmaps:%.gz=%) $(gzipped-ekbds:%.gz=%),\
-	$(eval $i: $(maindir)/$(notdir $i)))
-
-# A hack so that KeyboardNames.pl is recomputed using the files in
-# /usr/share/X11/xkb instead of the files shipped with console-setup
-$(gzipped-ekmaps:%.gz=%) $(gzipped-ekbds:%.gz=%) $(di-gzipped-ekmaps:%.gz=%) $(di-gzipped-ekbds:%.gz=%) : $./Keyboard/KeyboardNames.pl
-$./Keyboard/KeyboardNames.pl : building_debian
-building_debian :
-	touch building_debian
-
-build: debian/kbdnames.gz $(di-gzipped-ekmaps) $(di-gzipped-ekbds)
+build: debian/kbdnames.gz
 
 clean : maintainer-clean
 	dh_testdir
 	-rm -f *.ekmap *.ekbd *.ekmap.gz *.ekbd.gz
 	debconf-updatepo
+	$(MAKE) maintainer-clean
 	-rm -f build main_build building_debian
 	-rm -f debian/kbdnames.gz
 	-rm -f debian/*~
 	dh_clean
+	ln -sf debian/copyright COPYRIGHT
 
 .PHONY : deb-udeb-install
-deb-udeb-install: deb-install-linux deb-install-freebsd deb-install-main deb-install-bdf2psf udeb-install-linux udeb-install-freebsd udeb-install
+deb-udeb-install: deb-install-linux deb-install-main deb-install-bdf2psf $(if $(with_udeb),udeb-install-linux udeb-install)
 
 .PHONY : deb-install-linux
 deb-install-linux: build
@@ -118,14 +91,20 @@ deb-install-linux: build
 		--name keyboard-setup
 	dh_systemd_enable -p console-setup-linux \
 		--name console-setup
+	dh_systemd_enable -p console-setup-linux \
+		--name setvtrgb
 	dh_installinit -p console-setup-linux \
 		--no-start --name keyboard-setup.sh
 	dh_installinit -p console-setup-linux \
 		--no-start --name console-setup.sh
+	dh_installinit -p console-setup-linux \
+		--no-start --name setvtrgb
 	dh_systemd_start -p console-setup-linux \
 		--no-start --name keyboard-setup
 	dh_systemd_start -p console-setup-linux \
 		--no-start --name console-setup
+	dh_systemd_start -p console-setup-linux \
+		--no-start --name setvtrgb
 	sed -i 's/RUNLEVEL/2 3 4 5/' \
 		debian/console-setup-linux/etc/init.d/console-setup.sh
 
@@ -166,6 +145,12 @@ deb-install-main: build
 		prefix=debian/console-setup/usr install-common
 	$(MAKE) etcdir=debian/console-setup/etc \
 		prefix=debian/console-setup/usr install-ckbcomp
+	dh_install -pconsole-setup Keyboard/pc105.tree \
+		usr/share/console-setup
+ifneq (,$(filter console-setup-linux, $(shell dh_listpackages)))
+	install -m 644 debian/vtrgb debian/console-setup-linux/etc/console-setup/
+	install -m 644 debian/vtrgb.vga debian/console-setup-linux/etc/console-setup/
+endif
 	$(MAKE) etcdir=debian/console-setup-mini/etc \
 		prefix=debian/console-setup-mini/usr install-common
 	$(MAKE) etcdir=debian/console-setup-mini/etc \
@@ -193,6 +178,20 @@ deb-install-main: build
 		usr/share/console-setup/
 	dh_link -pkeyboard-configuration usr/share/X11/xkb/rules/xorg.lst \
 		usr/share/doc/keyboard-configuration/xorg.lst
+	install -d debian/keyboard-configuration/usr/share/initramfs-tools/hooks \
+		debian/keyboard-configuration/usr/share/initramfs-tools/scripts/init-top \
+		debian/keyboard-configuration/usr/share/initramfs-tools/scripts/panic
+	install -m755 debian/console-setup.initramfs-hook \
+		debian/keyboard-configuration/usr/share/initramfs-tools/hooks/console_setup
+	install -m755 debian/console-setup.initramfs-top \
+		debian/keyboard-configuration/usr/share/initramfs-tools/scripts/init-top/console_setup
+	sed -e "/^OPTION=/d" \
+		< debian/console-setup.initramfs-top \
+		> debian/keyboard-configuration/usr/share/initramfs-tools/scripts/panic/console_setup
+	chmod 755 debian/keyboard-configuration/usr/share/initramfs-tools/scripts/panic/console_setup
+	install -d debian/keyboard-configuration/usr/share/apport/package-hooks
+	install -m644 debian/console-setup.apport \
+		debian/keyboard-configuration/usr/share/apport/package-hooks/source_console-setup.py
 
 .PHONY : deb-install-bdf2psf
 deb-install-bdf2psf: build
@@ -277,20 +276,24 @@ udeb-install: build
 	install -m0755 debian/console-setup-udeb.base-installer \
 		debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
 	$(pre) --udeb debian/console-setup-udeb/usr/lib/base-installer.d/20console-setup
+	install -m 644 debian/vtrgb debian/console-setup-udeb/etc/
+	install -m 644 debian/vtrgb.vga debian/console-setup-udeb/etc/
 # console-setup-*-ekmap
 	dh_movefiles -p console-setup-amiga-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/amiga.ekmap.gz
-	cat amiga.ekmap.gz >debian/console-setup-amiga-ekmap/usr/share/console-setup/amiga.ekmap.gz
+	#cat amiga.ekmap.gz >debian/console-setup-amiga-ekmap/usr/share/console-setup/amiga.ekmap.gz
 	dh_movefiles -p console-setup-ataritt-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/ataritt.ekmap.gz
-	cat ataritt.ekmap.gz >debian/console-setup-ataritt-ekmap/usr/share/console-setup/ataritt.ekmap.gz
+	#cat ataritt.ekmap.gz >debian/console-setup-ataritt-ekmap/usr/share/console-setup/ataritt.ekmap.gz
 	dh_movefiles -p console-setup-pc-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/pc105.ekmap.gz
-	cat pc105.ekmap.gz >debian/console-setup-pc-ekmap/usr/share/console-setup/pc105.ekmap.gz
+	#cat pc105.ekmap.gz >debian/console-setup-pc-ekmap/usr/share/console-setup/pc105.ekmap.gz
+	dh_install -pconsole-setup-pc-ekmap Keyboard/pc105.tree \
+		usr/share/console-setup-mini
 	dh_movefiles -p console-setup-sun4-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/sun4.ekmap.gz
-	cat sun4.ekmap.gz >debian/console-setup-sun4-ekmap/usr/share/console-setup/sun4.ekmap.gz
+	#cat sun4.ekmap.gz >debian/console-setup-sun4-ekmap/usr/share/console-setup/sun4.ekmap.gz
 	dh_movefiles -p console-setup-sun5-ekmap --sourcedir=debian/console-setup-udeb usr/share/console-setup/sun5.ekmap.gz
-	cat sun5.ekmap.gz >debian/console-setup-sun5-ekmap/usr/share/console-setup/sun5.ekmap.gz
+	#cat sun5.ekmap.gz >debian/console-setup-sun5-ekmap/usr/share/console-setup/sun5.ekmap.gz
 # console-setup-pc-ekbd
 	dh_movefiles -p console-setup-pc-ekbd --sourcedir=debian/console-setup-udeb usr/share/console-setup/pc105.ekbd.gz
-	cat pc105.ekbd.gz >debian/console-setup-pc-ekbd/usr/share/console-setup/pc105.ekbd.gz
+	#cat pc105.ekbd.gz >debian/console-setup-pc-ekbd/usr/share/console-setup/pc105.ekbd.gz
 
 # Build architecture-independent files here.
 .PHONY : binary-indep
@@ -301,7 +304,6 @@ binary-indep: build deb-udeb-install
 	dh_installdocs -pkeyboard-configuration \
 		FAQ copyright.fonts copyright.xkb
 	dh_installdocs -p console-setup-linux --link-doc=keyboard-configuration
-	dh_installdocs -pconsole-setup-freebsd --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup-mini --link-doc=keyboard-configuration
 	dh_installdocs -p console-setup --link-doc=keyboard-configuration
 	dh_lintian
@@ -317,7 +319,9 @@ binary-indep: build deb-udeb-install
 	$(pre) debian/keyboard-configuration/DEBIAN/postinst
 	$(pre) debian/console-setup/DEBIAN/config
 	$(pre) debian/console-setup/DEBIAN/postinst
+ifeq ($(with_udeb),yes)
 	$(pre) --udeb debian/console-setup-udeb/DEBIAN/postinst
+endif
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb

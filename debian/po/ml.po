@@ -466,8 +466,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"/etc/default/keyboard ക്രമീകരണ ഫയലിലെ ഇപ്പോഴത്തെ കീബോര്‍ഡ് ക്രമീകരണം നിര്‍"
-"വ്വചിച്ചിരിക്കുന്നത് XKBOPTIONS=\"${XKBOPTIONS}\" എന്നാണ്."
+"/etc/default/keyboard ക്രമീകരണ ഫയലിലെ ഇപ്പോഴത്തെ കീബോര്‍ഡ് ക്രമീകരണം "
+"നിര്‍വ്വചിച്ചിരിക്കുന്നത് XKBOPTIONS=\"${XKBOPTIONS}\" എന്നാണ്."
 
 #. Type: boolean
 #. Description
@@ -766,8 +766,8 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"കീബോര്‍ഡ് ദേശീയ ദശയിലായിരിയ്ക്കുമ്പോള്‍ ചില ലാറ്റിന്‍ അക്ഷരങ്ങള്‍ മാത്രം ടൈപ്പ് ചെയ്യേണ്ട സന്ദര്‍"
-"ഭങ്ങളില്‍ താത്കാലികമായി ലാറ്റിന്‍ ദശയിലേയ്ക്കു് മാറുന്നതായിരിയ്ക്കാം കൂടുതല്‍ അനുയോജ്യം. "
+"കീബോര്‍ഡ് ദേശീയ ദശയിലായിരിയ്ക്കുമ്പോള്‍ ചില ലാറ്റിന്‍ അക്ഷരങ്ങള്‍ മാത്രം ടൈപ്പ് ചെയ്യേണ്ട "
+"സന്ദര്‍ഭങ്ങളില്‍ താത്കാലികമായി ലാറ്റിന്‍ ദശയിലേയ്ക്കു് മാറുന്നതായിരിയ്ക്കാം കൂടുതല്‍ അനുയോജ്യം. "
 "തിരഞ്ഞെടുത്ത കീ അമര്‍ത്തിയിരിയ്ക്കുന്നിടത്തോളം ആ ദശയിലിരിയ്ക്കും. അതേ കീ തന്നെ ലാറ്റിന്‍ "
 "ദശയിലായിരിയ്ക്കുമ്പോള്‍ ദേശീയ അക്ഷരങ്ങള്‍ ഇന്‍പുട്ട് ചെയ്യാന്‍ ഉപയോഗിയ്ക്കാം."
 
@@ -862,8 +862,8 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"അടുത്ത കണ്‍സോളില്‍ കോമ്പോസ് കീ യൂണിക്കോഡ് മോഡില്‍ പ്രവര്‍ത്തിക്കില്ല. യൂണിക്കോഡ് മോഡിലല്ലെങ്കില്‍ കണ്‍"
-"ട്രോ‌‌ള്‍ + പിരീഡ് കോമ്പിനേഷന്‍ ഒരു കോമ്പോസ് കീ ആയി ഉപയോഗിക്കാവുന്നതാണ്. ഇവിടെ താങ്കള്‍ "
+"അടുത്ത കണ്‍സോളില്‍ കോമ്പോസ് കീ യൂണിക്കോഡ് മോഡില്‍ പ്രവര്‍ത്തിക്കില്ല. യൂണിക്കോഡ് മോഡിലല്ലെങ്കില്‍ "
+"കണ്‍ട്രോ‌‌ള്‍ + പിരീഡ് കോമ്പിനേഷന്‍ ഒരു കോമ്പോസ് കീ ആയി ഉപയോഗിക്കാവുന്നതാണ്. ഇവിടെ താങ്കള്‍ "
 "തിരഞ്ഞെടുത്തത് അതിനെ ബാധിക്കില്ല"
 
 #. Type: boolean
@@ -1511,3 +1511,42 @@ msgstr "വിയറ്റ്നാമീസ്"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "ഉപയോഗിയ്ക്കേണ്ട കീമാപ്:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+#, fuzzy
+msgid "Detect keyboard layout?"
+msgstr "കീബോര്‍ഡ് വിന്യാസം:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+msgid ""
+"You can try to have your keyboard layout detected by pressing a series of "
+"keys. If you do not want to do this, you will be able to select your "
+"keyboard layout from a list."
+msgstr ""
+
+#. Type: detect-keyboard
+#. Description
+#: ../keyboard-configuration.templates:23001
+#, fuzzy
+msgid "Detecting your keyboard layout"
+msgstr "ഒരു കീബോര്‍ഡ് വിന്യാസത്തിന്റെ സഹജവില"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+#, fuzzy
+msgid "Keyboard layout detection complete"
+msgstr "കീബോര്‍ഡ് വിന്യാസം:"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+msgid ""
+"Based on the keys you pressed, your keyboard layout appears to be "
+"\"${LAYOUT}\". If this is not correct, you can go back and select your "
+"layout from the full list instead."
+msgstr ""

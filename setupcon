@@ -60,11 +60,8 @@ trap 'rm -f $tempfiles >/dev/null 2>&1' 0
 trap "exit 2" 1 2 3 13 15
 tempfile () {
     if \
-        TMPFILE=`mktemp /tmp/tmpkbd.XXXXXX 2>/dev/null` \
-            || TMPFILE=`mktemp /run/tmpkbd.XXXXXX 2>/dev/null` \
-            || TMPFILE=`mktemp /dev/.tmpkbd.XXXXXX 2>/dev/null` \
-            || TMPFILE=`mktemp /lib/init/rw/tmpkbd.XXXXXX 2>/dev/null` \
-            || TMPFILE=`mktemp 2>/dev/null`
+        TMPFILE=`mktemp /run/tmpkbd.XXXXXX 2>/dev/null` \
+            || TMPFILE=`mktemp /tmp/tmpkbd.XXXXXX 2>/dev/null`
     then
         tempfiles="$tempfiles $TMPFILE"
         return 0
@@ -675,12 +672,19 @@ esac
 CONSOLE_MAP=${CONSOLE_MAP:-$ACM}
 [ -z "$CONSOLE_MAP" ] || CONSOLE_MAP=`findfile $mapdir "$CONSOLE_MAP"`
 [ -n "$CONSOLE_MAP" -o "$CHARMAP" = UTF-8 ] || CONSOLE_MAP=`findfile $mapdir $stdmap`
+[ -n "$CONSOLE_MAP" -o "$CHARMAP" = UTF-8 ] || CONSOLE_MAP=`findfile $mapdir ${stdmap%.gz}`
 
 # FONTFILES
 FONTFILES=''
 if [ "$FONT" ]; then
     for f in $FONT; do
         FONTFILES="$FONTFILES `findfile $fontdir $f`"
+        RES=`findfile $fontdir $f`
+        if [ -z "$RES" ]; then
+            fdec="${f%.gz}"
+            RES=`findfile $fontdir $fdec`
+        fi
+        FONTFILES="$FONTFILES $RES"
     done
 fi
 FONTFILES=`echo $FONTFILES` # remove extra spaces
@@ -734,6 +738,11 @@ then
     XKBMODEL='pc105'
 fi
 [ -n "$XKBMODEL" -o -z "$savekbdfile" ] || exit 1
+
+# Backwards-compatibility with Ubuntu-specific preseeding
+if [ "$XKBMODEL" = SKIP ]; then
+    XKBMODEL=
+fi
 
 # do_kbd
 [ "$XKBMODEL$KMAP" ] || do_kbd=''
@@ -858,6 +867,31 @@ for i in /etc/console-setup $CONSOLE_MAP $FONTFILES $FONTMAPFILE $savekbdfile; d
         break
     fi
 done
+
+if [ -n "$do_save" ]; then
+    case "$CONSOLE_MAP" in
+        /etc/console-setup/*) ;;
+        ?*)
+            console_map_dec="${CONSOLE_MAP%.gz}"
+            if [ "$console_map_dec" = "$CONSOLE_MAP" ]; then
+                cp "$CONSOLE_MAP" /etc/console-setup/
+            else
+                gunzip -c "$CONSOLE_MAP" >"/etc/console-setup/${console_map_dec##*/}"
+            fi
+            rm -f "/etc/console-setup/${console_map_dec##*/}.gz"
+            ;;
+    esac
+    for font in $FONTFILES; do
+        case "$font" in
+            /etc/console-setup/*) ;;
+            ?*) cp "$font" /etc/console-setup/ ;;
+        esac
+    done
+    case "$FONTMAPFILE" in
+        /etc/console-setup/*) ;;
+        ?*) cp "$FONTMAPFILE" /etc/console-setup/ ;;
+    esac
+fi
 
 if [ "$savekbdfile" ]; then
     case "$kernel" in
@@ -1263,3 +1297,5 @@ if [ "$setupdir" ]; then
     echo exit 0 >>"$setupdir"/bin/setupcon
     sort $TMPFILE | uniq | grep -v 'printf$' >"$setupdir"/morefiles
 fi
+
+exit 0

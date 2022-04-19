@@ -1521,3 +1521,42 @@ msgstr "Vietnamesisch"
 #: ../keyboard-configuration.templates:16002
 msgid "Keymap to use:"
 msgstr "Wählen Sie das Layout der Tastatur aus:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+#, fuzzy
+msgid "Detect keyboard layout?"
+msgstr "Tastaturbelegung:"
+
+#. Type: boolean
+#. Description
+#: ../keyboard-configuration.templates:22001
+msgid ""
+"You can try to have your keyboard layout detected by pressing a series of "
+"keys. If you do not want to do this, you will be able to select your "
+"keyboard layout from a list."
+msgstr ""
+
+#. Type: detect-keyboard
+#. Description
+#: ../keyboard-configuration.templates:23001
+#, fuzzy
+msgid "Detecting your keyboard layout"
+msgstr "Der Standard für die Tastenbelegung"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+#, fuzzy
+msgid "Keyboard layout detection complete"
+msgstr "Tastaturbelegung:"
+
+#. Type: note
+#. Description
+#: ../keyboard-configuration.templates:24001
+msgid ""
+"Based on the keys you pressed, your keyboard layout appears to be "
+"\"${LAYOUT}\". If this is not correct, you can go back and select your "
+"layout from the full list instead."
+msgstr ""

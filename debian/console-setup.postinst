@@ -131,7 +131,25 @@ db_stop
 # We redirect the output so that postinst does not block when ScrollLock is on
 # This works even if we are not on the console
 setupcon --save-only >/dev/null 2>/dev/null || true
-# This will protest if we are not on the console
-setupcon >/dev/null 2>/dev/null || true
+if type plymouth >/dev/null && plymouth --ping; then
+    # setting the keymap breaks with plymouth in raw mode, and setting the
+    # font will currently also break if on vgacon
+    :
+elif [ -d /lib/debian-installer ]; then
+    setupcon --force >/dev/null 2>/dev/null || true
+else
+    if ! setupcon >/dev/null 2>/dev/null; then
+        cat >&2 <<EOF
+Your console font configuration will be updated the next time your system
+boots. If you want to update it now, run 'setupcon' from a virtual console.
+EOF
+    fi
+fi
 
 #DEBHELPER#
+
+if type update-initramfs >/dev/null 2>&1; then
+    update-initramfs -u
+fi
+
+exit 0
